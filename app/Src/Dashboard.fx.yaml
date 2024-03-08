@@ -1,0 +1,472 @@
+"Dashboard As screen.'phoneBrowseLayout_ver3.0'":
+    LoadingSpinnerColor: =RGBA(135, 100, 184, 1)
+
+    DashTickets As gallery.galleryVertical:
+        BorderColor: =RGBA(0, 134, 208, 1)
+        BorderStyle: =BorderStyle.None
+        DelayItemLoading: =true
+        Fill: =RGBA(255, 255, 255, 1)
+        FocusedBorderThickness: =
+        Height: =708
+        Items: |-
+            =Filter(
+                'Work Progress Tracker',
+                Or(
+                    StartsWith(
+                        Upper(
+                            Concatenate(
+                                Text(Title), 
+                                " ", 
+                                Text(Description),
+                                " ",
+                                Text('Progress/Status'.Value),
+                                " ",
+                                Text('Issued by'.DisplayName),
+                                " ",
+                                Text('Issue Date and Time')
+                            )
+                        ),
+                        Upper(SearchTicket.Text)
+                    ),
+                    StartsWith(
+                        Upper(
+                            Concatenate(
+                                Text(Title), 
+                                " ", 
+                                Text(Description),
+                                " ",
+                                Text('Progress/Status'.Value),
+                                " ",
+                                Text('Issued by'.DisplayName),
+                                " ",
+                                Text('Issue Date and Time')
+                            )
+                        ),
+                        Upper(SearchTicket.Text)
+                    )
+                )
+            )
+        Layout: =Layout.Vertical
+        LoadingSpinner: =LoadingSpinner.Data
+        OnSelect: |-
+            =Set(selectedItem, ThisItem);
+            Navigate(ViewEdit, Transition.None, {selectedItem: DashTickets.Selected})
+        TabIndex: |
+            =3
+        TemplatePadding: =10
+        TemplateSize: =226
+        Transition: =Transition.Push
+        Y: =306
+        ZIndex: =1
+
+        Button6 As button:
+            BorderColor: =RGBA(0, 134, 208, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Fill: =RGBA(0, 0, 0, 0)
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Semibold
+            Height: =216
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =ColorFade(RGBA(135, 100, 184, 1), -10%)
+            OnSelect: =Select(Parent)
+            PressedBorderColor: =ColorFade(RGBA(135, 100, 184, 1), -50%)
+            PressedColor: =RGBA(255, 255, 255, 1)
+            PressedFill: =ColorFade(RGBA(135, 100, 184, 1), -30%)
+            RadiusBottomLeft: =15
+            RadiusBottomRight: =15
+            RadiusTopLeft: =15
+            RadiusTopRight: =15
+            Size: =24
+            Text: =""
+            Width: =607
+            ZIndex: =1
+
+        DashCat As label:
+            AutoHeight: =true
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            Color: =RGBA(51, 51, 51, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FocusedBorderThickness: =4
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Semibold
+            Height: =30
+            LineHeight: =1
+            OnSelect: =Select(Parent)
+            Size: =18
+            Text: =ThisItem.Title
+            Width: =341
+            X: =160
+            Y: =18
+            ZIndex: =2
+
+        DashDesc As label:
+            AutoHeight: =true
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            Color: =RGBA(51, 51, 51, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FocusedBorderThickness: =4
+            Font: =Font.'Segoe UI'
+            Height: =41
+            OnSelect: =Select(Parent)
+            Size: =17
+            Text: =ThisItem.Description
+            Width: =600
+            X: =9
+            Y: =172
+            ZIndex: =3
+
+        DashAuthor As label:
+            AutoHeight: =true
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            Color: =RGBA(51, 51, 51, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FocusedBorderThickness: =4
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Semibold
+            LineHeight: =1
+            OnSelect: =Select(Parent)
+            Size: =17
+            Text: |-
+                ="Posted by:"
+            Width: =138
+            X: =160
+            Y: =53
+            ZIndex: =5
+
+        DashEmail As label:
+            AutoHeight: =true
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            Color: =RGBA(51, 51, 51, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FocusedBorderThickness: =4
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Semibold
+            Height: =30
+            LineHeight: =1
+            OnSelect: =Select(Parent)
+            Size: =17
+            Text: |-
+                ="Email:"
+            Width: =85
+            X: =160
+            Y: =87
+            ZIndex: =6
+
+        DashDnT As label:
+            AutoHeight: =true
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            Color: =RGBA(51, 51, 51, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FocusedBorderThickness: =4
+            Font: =Font.'Segoe UI'
+            Height: =30
+            LineHeight: =1
+            OnSelect: =Select(Parent)
+            Size: =17
+            Text: |-
+                =Text(ThisItem.'Issue Date and Time',    "mm/dd/yyyy        hh:mm AM/PM")
+            Width: =378
+            X: =207
+            Y: =126
+            ZIndex: =7
+
+        Image As image:
+            BorderColor: =RGBA(0, 134, 208, 1)
+            BorderStyle: =BorderStyle.Dotted
+            BorderThickness: =2
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledFill: =RGBA(0, 0, 0, 0)
+            FocusedBorderThickness: =4
+            Height: =141
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            HoverFill: =RGBA(0, 0, 0, 0)
+            Image: =ThisItem.'Image (Optional)'
+            OnSelect: =Select(Parent)
+            PressedBorderColor: =RGBA(0, 0, 0, 0)
+            PressedFill: =RGBA(0, 0, 0, 0)
+            RadiusBottomLeft: =15
+            RadiusBottomRight: =15
+            RadiusTopLeft: =15
+            RadiusTopRight: =15
+            Width: =145
+            X: =9
+            Y: =11
+            ZIndex: =8
+
+        Icon1 As icon.CalendarBlank:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            Color: =RGBA(0, 134, 208, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(220, 220, 220, 1)
+            DisabledFill: =RGBA(0, 0, 0, 0)
+            FocusedBorderThickness: =4
+            Height: =33
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            HoverColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
+            HoverFill: =RGBA(0, 0, 0, 0)
+            Icon: =Icon.CalendarBlank
+            OnSelect: =Select(Parent)
+            PressedBorderColor: =RGBA(0, 0, 0, 0)
+            PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
+            PressedFill: =RGBA(0, 0, 0, 0)
+            Width: =42
+            X: =161
+            Y: =128
+            ZIndex: =9
+
+        Icon2 As icon.Clock:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            Color: =RGBA(0, 134, 208, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(220, 220, 220, 1)
+            DisabledFill: =RGBA(0, 0, 0, 0)
+            FocusedBorderThickness: =4
+            Height: =33
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            HoverColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
+            HoverFill: =RGBA(0, 0, 0, 0)
+            Icon: =Icon.Clock
+            OnSelect: =Select(Parent)
+            PressedBorderColor: =RGBA(0, 0, 0, 0)
+            PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
+            PressedFill: =RGBA(0, 0, 0, 0)
+            Width: =42
+            X: =335
+            Y: =128
+            ZIndex: =10
+
+        DashEmail_1 As label:
+            AutoHeight: =true
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            Color: =RGBA(51, 51, 51, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FocusedBorderThickness: =4
+            Font: =Font.'Segoe UI'
+            Height: =30
+            LineHeight: =1
+            OnSelect: =Select(Parent)
+            Size: =17
+            Text: =User().Email
+            Width: =320
+            X: =236
+            Y: =87
+            ZIndex: =11
+
+        DashAuthor_1 As label:
+            AutoHeight: =true
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            Color: =RGBA(51, 51, 51, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FocusedBorderThickness: =4
+            Font: =Font.'Segoe UI'
+            LineHeight: =1
+            OnSelect: =Select(Parent)
+            Size: =17
+            Text: =User().FullName
+            Width: =200
+            X: =280
+            Y: =53
+            ZIndex: =12
+
+        Label2 As label:
+            Align: =Align.Center
+            AutoHeight: =true
+            BorderColor: =RGBA(0, 134, 208, 1)
+            BorderThickness: =1
+            Color: =RGBA(51, 51, 51, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FocusedBorderThickness: =4
+            Font: =Font.'Segoe UI'
+            Height: =56
+            OnSelect: =Select(Parent)
+            Size: =15
+            Text: =ThisItem.'Progress/Status'.Value
+            Width: =125
+            X: =470
+            Y: =21
+            ZIndex: =13
+
+    PageRefresh As icon.Reload:
+        AccessibleLabel: =Self.Tooltip
+        BorderColor: =RGBA(0, 0, 0, 0)
+        Color: =RGBA(0, 134, 208, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(220, 220, 220, 1)
+        Height: =88
+        Icon: =Icon.Reload
+        OnSelect: =Refresh([@'Work Progress Tracker'])
+        PaddingBottom: =22
+        PaddingLeft: =22
+        PaddingRight: =22
+        PaddingTop: =22
+        PressedFill: =RGBA(0, 0, 0, 0)
+        TabIndex: =0
+        Tooltip: ="Refresh list"
+        Width: =88
+        X: =543
+        Y: =171
+        ZIndex: =3
+
+    SearchTicket As text:
+        BorderColor: =RGBA(0, 134, 208, 1)
+        BorderThickness: =2
+        Color: =RGBA(51, 51, 51, 1)
+        Default: =""
+        DelayOutput: =true
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        Height: =70
+        HintText: ="Search"
+        HoverBorderColor: =ColorFade(RGBA(0, 134, 208, 1), -30%)
+        HoverColor: =RGBA(51, 51, 51, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        PaddingLeft: =70
+        PressedBorderColor: =RGBA(0, 134, 208, 1)
+        PressedColor: =RGBA(51, 51, 51, 1)
+        PressedFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =15
+        RadiusBottomRight: =15
+        RadiusTopLeft: =15
+        RadiusTopRight: =15
+        Size: =21
+        Width: =528
+        X: =13
+        Y: =180
+        ZIndex: =6
+
+    SearchIcon As icon.Search:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        Color: =RGBA(128, 128, 128, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(220, 220, 220, 1)
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        FocusedBorderThickness: =4
+        Height: =Self.Width
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
+        HoverFill: =RGBA(0, 0, 0, 0)
+        Icon: =Icon.Search
+        PaddingBottom: =14
+        PaddingLeft: =14
+        PaddingRight: =14
+        PaddingTop: =14
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
+        PressedFill: =RGBA(0, 0, 0, 0)
+        Tooltip: ="Search"
+        Width: =SearchTicket.Height
+        X: =SearchTicket.X
+        Y: =SearchTicket.Y
+        ZIndex: =7
+
+    AddNew As button:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(255, 255, 255, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(0, 134, 208, 1)
+        FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Semibold
+        Height: =70
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(0, 134, 208, 1), -10%)
+        OnSelect: =NewForm(Form3);Navigate(NewTicket, ScreenTransition.None)
+        PressedBorderColor: =ColorFade(RGBA(135, 100, 184, 1), -50%)
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =ColorFade(RGBA(0, 134, 208, 1), -30%)
+        RadiusBottomLeft: =15
+        RadiusBottomRight: =15
+        RadiusTopLeft: =15
+        RadiusTopRight: =15
+        Size: =24
+        Text: ="Add New Ticket"
+        Width: =614
+        X: =13
+        Y: =1048
+        ZIndex: =10
+
+    Label_Issued As label:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(51, 51, 51, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Bold
+        Height: =56
+        Size: =25
+        Text: ="Tickets"
+        Width: =544
+        X: =13
+        Y: =250
+        ZIndex: =11
+
+    DashLogo As image:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        FocusedBorderThickness: =4
+        Height: =72
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverFill: =RGBA(0, 0, 0, 0)
+        Image: =download_1
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        PressedFill: =RGBA(0, 0, 0, 0)
+        Width: =234
+        X: =198
+        Y: =26
+        ZIndex: =12
+
+    DashHeader As label:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(51, 51, 51, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Bold
+        Height: =75
+        Size: =25
+        Text: ="Ticketing System"
+        Width: =280
+        X: =180
+        Y: =98
+        ZIndex: =13
+

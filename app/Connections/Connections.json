@@ -1,0 +1,62 @@
+{
+  "1f7e6a70-f875-4386-b325-27efc8dca6ed": {
+    "appActions": [],
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "Office 365 Users",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1672/1.0.1672.3545/office365users/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_office365users",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {},
+    "dataSources": [
+      "Office365Users"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "1f7e6a70-f875-4386-b325-27efc8dca6ed"
+  },
+  "8e42ef2b-8545-4a95-a144-f01f5e9266a4": {
+    "appActions": [
+      "providers/PowerPlatform.Governance/Operations/Read",
+      "providers/PowerPlatform.Governance/Operations/Write",
+      "providers/PowerPlatform.Governance/Operations/Delete"
+    ],
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1676/1.0.1676.3617/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {
+      "https://netorg4829107-my.sharepoint.com/personal/zahid_ahsan_technuf_com": {
+        "dataSources": {
+          "Work Progress Tracker": {
+            "tableName": "e9f778b6-9608-457f-8ec6-e0f8cd437713"
+          }
+        }
+      },
+      "https://netorg4829107-my.sharepoint.com/personal/zahid_ahsan_technuf_com/_layouts/15/lists.aspx": {
+        "dataSources": {
+          "Ticketing System": {
+            "tableName": "c6f9b157-7b03-4dbf-9da5-dc2b0c26a05c"
+          },
+          "User List": {
+            "tableName": "d45c2546-15b7-4261-8e19-e9013914ec09"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "Work Progress Tracker",
+      "Ticketing System",
+      "User List"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "8e42ef2b-8545-4a95-a144-f01f5e9266a4"
+  }
+}

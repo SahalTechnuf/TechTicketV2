@@ -1,0 +1,24 @@
+App As appinfo:
+    BackEnabled: =true
+    MinScreenHeight: |
+        =640
+    MinScreenWidth: |
+        =640
+    OnStart: |-
+        =ClearCollect(
+            ConcatenatedList,
+            AddColumns(
+                'Work Progress Tracker',
+                "ConcatenatedText",
+                Title
+            )
+        )
+    Theme: =PowerAppsTheme
+
+    Host As hostControl.DefaultHostControlVariant:
+        OnCancel: =false
+        OnEdit: =false
+        OnNew: =false
+        OnSave: =false
+        OnView: =false
+
