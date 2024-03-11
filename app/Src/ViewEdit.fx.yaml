@@ -672,17 +672,99 @@
                     ZIndex: =1
 
                 Container6 As groupContainer.horizontalAutoLayoutContainer:
-                    DropShadow: =DropShadow.Light
-                    Height: =225
-                    LayoutMinHeight: =90
+                    BorderColor: =RGBA(255, 255, 255, 1)
+                    BorderStyle: =BorderStyle.None
+                    FillPortions: =0
+                    Height: =90
+                    LayoutMinHeight: =50
                     LayoutMinWidth: =250
                     LayoutMode: =LayoutMode.Auto
-                    RadiusBottomLeft: =4
-                    RadiusBottomRight: =4
-                    RadiusTopLeft: =4
-                    RadiusTopRight: =4
                     Width: =150
                     ZIndex: =2
+
+                    Button1 As button:
+                        BorderColor: =RGBA(230, 230, 230, 1)
+                        Color: =RGBA(153, 207, 236, 1)
+                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        DisabledFill: =RGBA(244, 244, 244, 1)
+                        Fill: =RGBA(255, 255, 255, 1)
+                        FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+                        Font: =Font.'Segoe UI'
+                        FontWeight: =FontWeight.Semibold
+                        Height: =70
+                        HoverBorderColor: =RGBA(0, 0, 0, 0)
+                        HoverColor: =RGBA(255, 255, 255, 1)
+                        HoverFill: =ColorFade(RGBA(135, 100, 184, 1), -10%)
+                        LayoutMinHeight: =70
+                        LayoutMinWidth: =280
+                        PressedBorderColor: =ColorFade(RGBA(135, 100, 184, 1), -50%)
+                        PressedColor: =RGBA(255, 255, 255, 1)
+                        PressedFill: =ColorFade(RGBA(135, 100, 184, 1), -30%)
+                        RadiusBottomLeft: =50
+                        RadiusBottomRight: =50
+                        RadiusTopLeft: =50
+                        RadiusTopRight: =50
+                        Size: =24
+                        Text: ="Initiated"
+                        Width: =210
+                        ZIndex: =1
+
+                    Button2 As button:
+                        BorderColor: =RGBA(230, 230, 230, 1)
+                        Color: =RGBA(153, 207, 236, 1)
+                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        DisabledFill: =RGBA(244, 244, 244, 1)
+                        Fill: =RGBA(255, 255, 255, 1)
+                        FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+                        Font: =Font.'Segoe UI'
+                        FontWeight: =FontWeight.Semibold
+                        Height: =70
+                        HoverBorderColor: =RGBA(0, 0, 0, 0)
+                        HoverColor: =RGBA(255, 255, 255, 1)
+                        HoverFill: =ColorFade(RGBA(135, 100, 184, 1), -10%)
+                        LayoutMinHeight: =70
+                        LayoutMinWidth: =280
+                        PressedBorderColor: =ColorFade(RGBA(135, 100, 184, 1), -50%)
+                        PressedColor: =RGBA(255, 255, 255, 1)
+                        PressedFill: =ColorFade(RGBA(135, 100, 184, 1), -30%)
+                        RadiusBottomLeft: =50
+                        RadiusBottomRight: =50
+                        RadiusTopLeft: =50
+                        RadiusTopRight: =50
+                        Size: =24
+                        Text: ="In-progress"
+                        Width: =210
+                        ZIndex: =2
+
+                    Button5 As button:
+                        BorderColor: =RGBA(230, 230, 230, 1)
+                        Color: =RGBA(153, 207, 236, 1)
+                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        DisabledFill: =RGBA(244, 244, 244, 1)
+                        Fill: =RGBA(255, 255, 255, 1)
+                        FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+                        Font: =Font.'Segoe UI'
+                        FontWeight: =FontWeight.Semibold
+                        Height: =70
+                        HoverBorderColor: =RGBA(0, 0, 0, 0)
+                        HoverColor: =RGBA(255, 255, 255, 1)
+                        HoverFill: =ColorFade(RGBA(135, 100, 184, 1), -10%)
+                        LayoutMinHeight: =70
+                        LayoutMinWidth: =280
+                        PressedBorderColor: =ColorFade(RGBA(135, 100, 184, 1), -50%)
+                        PressedColor: =RGBA(255, 255, 255, 1)
+                        PressedFill: =ColorFade(RGBA(135, 100, 184, 1), -30%)
+                        RadiusBottomLeft: =50
+                        RadiusBottomRight: =50
+                        RadiusTopLeft: =50
+                        RadiusTopRight: =50
+                        Size: =24
+                        Text: ="Resolved"
+                        Width: =210
+                        ZIndex: =3
 
             ButtonContainer As groupContainer.horizontalAutoLayoutContainer:
                 AlignInContainer: =AlignInContainer.SetByContainer
