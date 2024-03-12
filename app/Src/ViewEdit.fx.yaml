@@ -823,7 +823,7 @@
                         HoverFill: =ColorFade(RGBA(135, 100, 184, 1), -10%)
                         LayoutMinHeight: =70
                         LayoutMinWidth: =280
-                        OnSelect: =
+                        OnSelect: =If(selectedItem'Progress/Status'.Value),RGBA(153, 207, 236, 1), Gray
                         PressedBorderColor: =ColorFade(RGBA(135, 100, 184, 1), -50%)
                         PressedColor: =RGBA(255, 255, 255, 1)
                         PressedFill: =ColorFade(RGBA(135, 100, 184, 1), -30%)
