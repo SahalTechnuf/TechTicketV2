@@ -95,6 +95,7 @@
                 RadiusBottomRight: =4
                 RadiusTopLeft: =4
                 RadiusTopRight: =4
+                Width: =650
                 ZIndex: =2
 
                 CreatedInfo As groupContainer.horizontalAutoLayoutContainer:
