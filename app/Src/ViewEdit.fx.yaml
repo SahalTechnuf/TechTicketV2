@@ -1,4 +1,5 @@
 "ViewEdit As screen.'phoneDetailViewLayout_ver3.0'":
+    Fill: =
     LoadingSpinnerColor: =RGBA(135, 100, 184, 1)
 
     Container11 As groupContainer.horizontalAutoLayoutContainer:
@@ -688,11 +689,11 @@
 
                     Button1 As button:
                         BorderColor: =RGBA(230, 230, 230, 1)
-                        Color: =RGBA(204, 204, 204, 1)
+                        Color: =RGBA(153, 207, 236, 1)
                         DisabledBorderColor: =RGBA(0, 0, 0, 0)
                         DisabledColor: =RGBA(166, 166, 166, 1)
                         DisabledFill: =RGBA(244, 244, 244, 1)
-                        Fill: =RGBA(255, 255, 255, 1)
+                        Fill: =If(ThisItem.IsSelected, RGBA(255, 255, 255, 1) Gray)
                         FocusedBorderColor: =ColorFade(Self.Fill, -75%)
                         Font: =Font.'Segoe UI'
                         FontWeight: =FontWeight.Semibold
@@ -702,6 +703,7 @@
                         HoverFill: =ColorFade(RGBA(135, 100, 184, 1), -10%)
                         LayoutMinHeight: =70
                         LayoutMinWidth: =280
+                        OnSelect: =
                         PressedBorderColor: =ColorFade(RGBA(135, 100, 184, 1), -50%)
                         PressedColor: =RGBA(255, 255, 255, 1)
                         PressedFill: =ColorFade(RGBA(135, 100, 184, 1), -30%)
