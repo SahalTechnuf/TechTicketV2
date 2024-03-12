@@ -1,7 +1,7 @@
-"Dashboard As screen.'phoneBrowseLayout_ver3.0'":
+"DashboardADMIN As screen.'phoneBrowseLayout_ver3.0'":
     LoadingSpinnerColor: =RGBA(135, 100, 184, 1)
 
-    DashTickets As gallery.galleryVertical:
+    DashTicketsADMIN As gallery.galleryVertical:
         BorderColor: =RGBA(0, 134, 208, 1)
         BorderStyle: =BorderStyle.None
         DelayItemLoading: =true
@@ -26,14 +26,14 @@
                             Text('Issue Date and Time')
                         )
                     ),
-                    Upper(SearchTicket.Text)
+                    Upper(SearchTicketADMIN.Text)
                 )
             ), 'Issue Date and Time', SortOrder.Descending )
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         OnSelect: |-
             =Set(selectedItem, ThisItem);
-            Navigate(ViewEdit, Transition.None, {selectedItem: DashTickets.Selected})
+            Navigate(ViewEdit, Transition.None, {selectedItem: DashTicketsADMIN.Selected})
         TabIndex: |
             =3
         TemplatePadding: =10
@@ -42,7 +42,7 @@
         Y: =295
         ZIndex: =1
 
-        Button6 As button:
+        Button6_1 As button:
             BorderColor: =RGBA(0, 134, 208, 1)
             DisabledBorderColor: =RGBA(0, 0, 0, 0)
             DisabledColor: =RGBA(166, 166, 166, 1)
@@ -68,7 +68,7 @@
             Width: =607
             ZIndex: =1
 
-        DashCat As label:
+        DashCat_1 As label:
             AutoHeight: =true
             BorderColor: =RGBA(0, 0, 0, 0)
             BorderStyle: =BorderStyle.None
@@ -89,7 +89,7 @@
             Y: =18
             ZIndex: =2
 
-        DashDesc As label:
+        DashDesc_1 As label:
             AutoHeight: =true
             BorderColor: =RGBA(0, 0, 0, 0)
             BorderStyle: =BorderStyle.None
@@ -108,7 +108,7 @@
             Y: =172
             ZIndex: =3
 
-        DashAuthor As label:
+        DashAuthor_2 As label:
             AutoHeight: =true
             BorderColor: =RGBA(0, 0, 0, 0)
             BorderStyle: =BorderStyle.None
@@ -129,7 +129,7 @@
             Y: =53
             ZIndex: =5
 
-        DashEmail As label:
+        DashEmail_2 As label:
             AutoHeight: =true
             BorderColor: =RGBA(0, 0, 0, 0)
             BorderStyle: =BorderStyle.None
@@ -151,7 +151,7 @@
             Y: =87
             ZIndex: =6
 
-        DashDnT As label:
+        DashDnT_1 As label:
             AutoHeight: =true
             BorderColor: =RGBA(0, 0, 0, 0)
             BorderStyle: =BorderStyle.None
@@ -172,7 +172,7 @@
             Y: =126
             ZIndex: =7
 
-        Image As image:
+        Image_1 As image:
             BorderColor: =RGBA(0, 134, 208, 1)
             BorderStyle: =BorderStyle.Dotted
             BorderThickness: =2
@@ -195,7 +195,7 @@
             Y: =11
             ZIndex: =8
 
-        Icon1 As icon.CalendarBlank:
+        Icon1_1 As icon.CalendarBlank:
             BorderColor: =RGBA(0, 0, 0, 0)
             Color: =RGBA(0, 134, 208, 1)
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
@@ -216,7 +216,7 @@
             Y: =128
             ZIndex: =9
 
-        Icon2 As icon.Clock:
+        Icon2_1 As icon.Clock:
             BorderColor: =RGBA(0, 0, 0, 0)
             Color: =RGBA(0, 134, 208, 1)
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
@@ -237,7 +237,7 @@
             Y: =128
             ZIndex: =10
 
-        DashEmail_1 As label:
+        DashEmail_3 As label:
             AutoHeight: =true
             BorderColor: =RGBA(0, 0, 0, 0)
             BorderStyle: =BorderStyle.None
@@ -257,7 +257,7 @@
             Y: =87
             ZIndex: =11
 
-        DashAuthor_1 As label:
+        DashAuthor_3 As label:
             AutoHeight: =true
             BorderColor: =RGBA(0, 0, 0, 0)
             BorderStyle: =BorderStyle.None
@@ -276,7 +276,7 @@
             Y: =53
             ZIndex: =12
 
-        Label2 As label:
+        Label2_1 As label:
             Align: =Align.Center
             AutoHeight: =true
             BorderColor: =RGBA(0, 134, 208, 1)
@@ -295,7 +295,7 @@
             Y: =21
             ZIndex: =13
 
-    PageRefresh As icon.Reload:
+    PageRefreshADMIN As icon.Reload:
         AccessibleLabel: =Self.Tooltip
         BorderColor: =RGBA(0, 0, 0, 0)
         Color: =RGBA(0, 134, 208, 1)
@@ -316,7 +316,7 @@
         Y: =171
         ZIndex: =3
 
-    SearchTicket As text:
+    SearchTicketADMIN As text:
         BorderColor: =RGBA(0, 134, 208, 1)
         BorderThickness: =2
         Color: =RGBA(51, 51, 51, 1)
@@ -346,7 +346,7 @@
         Y: =180
         ZIndex: =6
 
-    SearchIcon As icon.Search:
+    SearchIconADMIN As icon.Search:
         BorderColor: =RGBA(0, 0, 0, 0)
         Color: =RGBA(128, 128, 128, 1)
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
@@ -366,12 +366,12 @@
         PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
         PressedFill: =RGBA(0, 0, 0, 0)
         Tooltip: ="Search"
-        Width: =SearchTicket.Height
-        X: =SearchTicket.X
-        Y: =SearchTicket.Y
+        Width: =SearchTicketADMIN.Height
+        X: =SearchTicketADMIN.X
+        Y: =SearchTicketADMIN.Y
         ZIndex: =7
 
-    AddNew As button:
+    AddNewADMIN As button:
         BorderColor: =RGBA(0, 0, 0, 0)
         DisabledBorderColor: =RGBA(0, 0, 0, 0)
         DisabledColor: =RGBA(255, 255, 255, 1)
@@ -399,7 +399,7 @@
         Y: =1048
         ZIndex: =10
 
-    Label_Issued As label:
+    Label_IssuedADMIN As label:
         BorderColor: =RGBA(0, 0, 0, 0)
         BorderStyle: =BorderStyle.None
         BorderThickness: =2
@@ -417,7 +417,7 @@
         Y: =250
         ZIndex: =11
 
-    DashLogo As image:
+    DashLogoADMIN As image:
         BorderColor: =RGBA(0, 0, 0, 0)
         BorderStyle: =BorderStyle.None
         BorderThickness: =2
@@ -435,7 +435,7 @@
         Y: =26
         ZIndex: =12
 
-    DashHeader As label:
+    DashHeaderADMIN As label:
         BorderColor: =RGBA(0, 0, 0, 0)
         BorderStyle: =BorderStyle.None
         BorderThickness: =2
