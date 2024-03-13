@@ -809,11 +809,11 @@
 
                     Button1 As button:
                         BorderColor: =RGBA(230, 230, 230, 1)
-                        Color: =RGBA(153, 207, 236, 1)
+                        Color: =RGBA(102, 182, 227, 1)
                         DisabledBorderColor: =RGBA(0, 0, 0, 0)
                         DisabledColor: =RGBA(166, 166, 166, 1)
                         DisabledFill: =RGBA(244, 244, 244, 1)
-                        Fill: =selectedItem.'Progress/Status'.Value, RGBA(153, 207, 236, 1), Gray
+                        Fill: =RGBA(255, 255, 255, 1)
                         FocusedBorderColor: =ColorFade(Self.Fill, -75%)
                         Font: =Font.'Segoe UI'
                         FontWeight: =FontWeight.Semibold
@@ -823,7 +823,9 @@
                         HoverFill: =ColorFade(RGBA(135, 100, 184, 1), -10%)
                         LayoutMinHeight: =70
                         LayoutMinWidth: =280
-                        OnSelect: =If(selectedItem'Progress/Status'.Value),RGBA(153, 207, 236, 1), Gray)
+                        OnSelect: |-
+                            =If('Work Progress Tracker', selectedItem);
+                            'Progress/Status'.Value),RGBA(153, 207, 236, 1), Gray)
                         PressedBorderColor: =ColorFade(RGBA(135, 100, 184, 1), -50%)
                         PressedColor: =RGBA(255, 255, 255, 1)
                         PressedFill: =ColorFade(RGBA(135, 100, 184, 1), -30%)
@@ -832,7 +834,7 @@
                         RadiusTopLeft: =50
                         RadiusTopRight: =50
                         Size: =24
-                        Text: =""
+                        Text: ="Initiated"
                         Width: =190
                         ZIndex: =1
 
