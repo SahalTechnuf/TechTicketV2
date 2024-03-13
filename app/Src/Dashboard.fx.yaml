@@ -8,27 +8,30 @@
         Fill: =RGBA(255, 255, 255, 1)
         FocusedBorderThickness: =
         Height: =708
-        Items: |
+        Items: |-
             =Sort(
-            Filter(
-                'Work Progress Tracker',
-                StartsWith(
-                    Upper(
-                        Concatenate(
-                            Text(Title), 
-                            " ", 
-                            Text(Description),
-                            " ",
-                            Text('Progress/Status'.Value),
-                            " ",
-                            Text('Issued by'.DisplayName),
-                            " ",
-                            Text('Issue Date and Time')
-                        )
-                    ),
-                    Upper(SearchTicket.Text)
-                )
-            ), 'Issue Date and Time', SortOrder.Descending )
+                Filter(
+                    'Work Progress Tracker',
+                    StartsWith(
+                        Upper(
+                            Concatenate(
+                                Text(Title), 
+                                " ", 
+                                Text(Description),
+                                " ",
+                                Text('Progress/Status'.Value),
+                                " ",
+                                Text('Issued by'.DisplayName),
+                                " ",
+                                Text('Issue Date and Time')
+                            )
+                        ),
+                        Upper(SearchTicket.Text)
+                    ) && 'Issued by'.Email = User().Email  // Filter rows where 'Issued by' field matches current user's email
+                ),
+                'Issue Date and Time',
+                SortOrder.Descending
+            )
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         OnSelect: |-
