@@ -224,7 +224,7 @@
                 },
                 "region": {
                   "charLength": 1,
-                  "charOffset": 67,
+                  "charOffset": 76,
                   "snippet": {
                     "text": ")"
                   }
@@ -341,10 +341,10 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 17,
+                  "charLength": 8,
                   "charOffset": 44,
                   "snippet": {
-                    "text": "'Progress/Status'"
+                    "text": "thisItem"
                   }
                 }
               },
@@ -357,7 +357,7 @@
           ],
           "message": {
             "arguments": [
-              "Progress/Status"
+              "thisItem"
             ],
             "id": "issue"
           },
@@ -381,8 +381,45 @@
                   "relativeAddress": 0
                 },
                 "region": {
+                  "charLength": 18,
+                  "charOffset": 52,
+                  "snippet": {
+                    "text": ".'Progress/Status'"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "ViewEdit",
+                "type": "ViewEdit.Container11.Container12.Container5.Container6.Button1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidDot",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ViewEdit.Container11.Container12.Container5.Container6.Button1.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ViewEdit.Container11.Container12.Container5.Container6.Button1.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
                   "charLength": 6,
-                  "charOffset": 61,
+                  "charOffset": 70,
                   "snippet": {
                     "text": ".Value"
                   }
