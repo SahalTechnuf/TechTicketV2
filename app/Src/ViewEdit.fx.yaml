@@ -420,8 +420,7 @@
                         HoverFill: =ColorFade(RGBA(135, 100, 184, 1), -10%)
                         OnSelect: |-
                             =If(
-                                DataSourceInfo.DisplayName,
-                                "TicketProgress" = "Initiated",
+                                selectedItem.'Progress/Status'.Value = "Initiated",
                                 Color.Blue
                             )
                         PressedBorderColor: =ColorFade(RGBA(135, 100, 184, 1), -50%)
