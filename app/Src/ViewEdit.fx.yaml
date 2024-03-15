@@ -412,11 +412,11 @@
                         FocusedBorderColor: =ColorFade(Self.Fill, -75%)
                         Font: =Font.'Segoe UI'
                         FontWeight: =FontWeight.Semibold
-                        Height: =70
+                        Height: =53
                         HoverBorderColor: =RGBA(0, 0, 0, 0)
                         HoverColor: =RGBA(255, 255, 255, 1)
                         HoverFill: =ColorFade(RGBA(135, 100, 184, 1), -10%)
-                        OnSelect: =([@'Work Progress Tracker'].Progress/Status) 
+                        OnSelect: =If ([@'Work Progress Tracker'].Progress/Status; Color.Blue, display.None)
                         PressedBorderColor: =ColorFade(RGBA(135, 100, 184, 1), -50%)
                         PressedColor: =RGBA(255, 255, 255, 1)
                         PressedFill: =ColorFade(RGBA(135, 100, 184, 1), -30%)
@@ -426,8 +426,8 @@
                         RadiusTopRight: =0
                         Size: =24
                         Text: ="Initiated"
-                        Width: =280
-                        Y: =57
+                        Width: =193
+                        Y: =74
                         ZIndex: =5
 
                 Title_DataCard5 As typedDataCard.textualEditCard:
