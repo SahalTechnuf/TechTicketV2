@@ -678,7 +678,6 @@
                 Container6 As groupContainer.horizontalAutoLayoutContainer:
                     BorderColor: =RGBA(255, 255, 255, 1)
                     BorderStyle: =BorderStyle.None
-                    DropShadow: =DropShadow.Light
                     FillPortions: =0
                     Height: =70
                     LayoutGap: =1
