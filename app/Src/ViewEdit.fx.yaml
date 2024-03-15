@@ -296,7 +296,7 @@
                     Fill: =RGBA(0, 0, 0, 0)
                     Height: =
                     Required: =false
-                    Update: =DataCardValue2.Selected
+                    Update: ='Progress/Status_DataCard2'.Default
                     Width: =640
                     X: =0
                     Y: =3
@@ -354,7 +354,8 @@
                         Size: =21
                         Tooltip: =Parent.DisplayName
                         Width: =316
-                        X: =310
+                        X: =324
+                        Y: =262
                         ZIndex: =2
 
                     ErrorMessage2 As label:
