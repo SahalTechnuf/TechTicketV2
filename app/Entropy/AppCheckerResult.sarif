@@ -224,7 +224,7 @@
                 },
                 "region": {
                   "charLength": 1,
-                  "charOffset": 39,
+                  "charOffset": 31,
                   "snippet": {
                     "text": "="
                   }
@@ -239,7 +239,7 @@
           ],
           "message": {
             "arguments": [
-              "Record",
+              "Control",
               "Text"
             ],
             "id": "issue"

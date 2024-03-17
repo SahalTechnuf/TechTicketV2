@@ -407,8 +407,7 @@
                     Button5 As button:
                         BorderColor: =RGBA(0, 0, 0, 0)
                         Color: |-
-                            =If(
-                                selectedItem.'Progress/Status' = "Initiated",
+                            =If('Progress/Status_DataCard2' = "Initiated",
                                 Color.Blue
                             )
                         DisabledBorderColor: =RGBA(255, 255, 255, 1)
