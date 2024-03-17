@@ -406,7 +406,7 @@
 
                     Button5 As button:
                         BorderColor: =RGBA(0, 0, 0, 0)
-                        Color: =RGBA(0, 0, 0, 1)
+                        Color: =If(ThisItem.'Progress/Status' = "Initiated", Color.Blue)
                         DisabledBorderColor: =RGBA(255, 255, 255, 1)
                         DisabledColor: =
                         DisabledFill: =RGBA(244, 244, 244, 1)
