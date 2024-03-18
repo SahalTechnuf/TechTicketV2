@@ -296,7 +296,7 @@
                     Fill: =RGBA(0, 0, 0, 0)
                     Height: =50
                     Required: =false
-                    Update: =DataCardValue3.Selected
+                    Update: =
                     Width: =640
                     X: =0
                     Y: =3
@@ -323,41 +323,6 @@
                         Y: =10
                         ZIndex: =1
 
-                    DataCardValue3 As combobox:
-                        BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                        ChevronBackground: =RGBA(255, 255, 255, 1)
-                        ChevronDisabledBackground: =RGBA(244, 244, 244, 1)
-                        ChevronDisabledFill: =RGBA(166, 166, 166, 1)
-                        ChevronFill: =RGBA(33, 33, 33, 1)
-                        ChevronHoverBackground: =RGBA(212, 212, 212, 1)
-                        ChevronHoverFill: =RGBA(33, 33, 33, 1)
-                        Color: =RGBA(51, 51, 51, 1)
-                        DefaultSelectedItems: =Parent.Default
-                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                        DisabledColor: =RGBA(166, 166, 166, 1)
-                        DisabledFill: =RGBA(244, 244, 244, 1)
-                        DisplayFields: =["Value"]
-                        DisplayMode: =Parent.DisplayMode
-                        Font: =Font.'Segoe UI'
-                        Height: =93
-                        HoverBorderColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
-                        HoverColor: =RGBA(51, 51, 51, 1)
-                        HoverFill: =RGBA(212, 212, 212, 1)
-                        Items: =Choices([@'Work Progress Tracker'].TicketProgress)
-                        PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
-                        PressedBorderColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
-                        PressedColor: =RGBA(255, 255, 255, 1)
-                        PressedFill: =RGBA(135, 100, 184, 1)
-                        SearchFields: =["Value"]
-                        SearchItems: =Choices('Work Progress Tracker'.TicketProgress,DataCardValue3.SearchText)
-                        SelectionFill: =RGBA(135, 100, 184, 1)
-                        SelectMultiple: =false
-                        Size: =21
-                        Tooltip: =Parent.DisplayName
-                        Width: =170
-                        X: =460
-                        ZIndex: =2
-
                     ErrorMessage3 As label:
                         AutoHeight: =true
                         BorderColor: =RGBA(0, 0, 0, 0)
@@ -380,7 +345,7 @@
                         Visible: =Parent.DisplayMode=DisplayMode.Edit
                         Width: =Parent.Width - 60
                         X: =30
-                        Y: =DataCardValue3.Y + DataCardValue3.Height
+                        Y: ='Progress/Status_DataCard3'.Y + 'Progress/Status_DataCard3'.Height
                         ZIndex: =3
 
                     StarVisible3 As label:
@@ -422,7 +387,7 @@
                         HoverBorderColor: =RGBA(0, 0, 0, 0)
                         HoverColor: =RGBA(255, 255, 255, 1)
                         HoverFill: =ColorFade(RGBA(135, 100, 184, 1), -10%)
-                        OnSelect: =If ('Work Progress Tracker'.TicketProgress = "Initiated")
+                        OnSelect: =
                         PressedBorderColor: =ColorFade(RGBA(135, 100, 184, 1), -50%)
                         PressedColor: =RGBA(255, 255, 255, 1)
                         PressedFill: =ColorFade(RGBA(135, 100, 184, 1), -30%)
