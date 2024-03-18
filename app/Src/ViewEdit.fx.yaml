@@ -291,15 +291,16 @@
                     BorderStyle: =BorderStyle.Solid
                     DataField: ="TicketProgress"
                     Default: =ThisItem.'Progress/Status'
-                    DisplayMode: =Parent.DisplayMode
+                    DisplayMode: =Parent.DisplayMode.Disabled
                     DisplayName: =DataSourceInfo([@'Work Progress Tracker'],DataSourceInfo.DisplayName,"TicketProgress")
                     Fill: =RGBA(0, 0, 0, 0)
-                    Height: =50
+                    Height: =Parent.Height
                     Required: =false
                     Update: =
                     Width: =640
-                    X: =0
-                    Y: =3
+                    WidthFit: =false
+                    X: =300
+                    Y: =200
                     ZIndex: =1
 
                     DataCardKey3 As label:
