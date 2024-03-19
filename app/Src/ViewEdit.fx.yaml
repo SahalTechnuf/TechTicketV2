@@ -294,7 +294,7 @@
                     DisplayMode: =Parent.DisplayMode
                     DisplayName: =DataSourceInfo([@'Work Progress Tracker'],DataSourceInfo.DisplayName,"TicketProgress")
                     Fill: =RGBA(0, 0, 0, 0)
-                    Height: =160
+                    Height: =142
                     Required: =false
                     Update: =
                     Width: =640
