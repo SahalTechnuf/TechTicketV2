@@ -406,7 +406,7 @@
                         BorderColor: =RGBA(0, 0, 0, 0)
                         Color: |-
                             =If(
-                                DashTicketsADMIN.Selected.'Progress/Status'.Value = "In-Progress",
+                                DashTicketsADMIN.Selected.'Progress/Status'.Value = "In Progress",
                                 Color.Blue
                             )
                         DisabledBorderColor: =RGBA(0, 0, 0, 0)
@@ -429,7 +429,7 @@
                         RadiusTopLeft: =0
                         RadiusTopRight: =0
                         Size: =24
-                        Text: ="In-progress"
+                        Text: ="In Progress"
                         Width: =180
                         X: =214
                         Y: =57
