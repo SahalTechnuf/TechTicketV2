@@ -294,13 +294,13 @@
                     DisplayMode: =Parent.DisplayMode
                     DisplayName: =DataSourceInfo([@'Work Progress Tracker'],DataSourceInfo.DisplayName,"TicketProgress")
                     Fill: =RGBA(0, 0, 0, 0)
-                    Height: =Parent.Height
+                    Height: =130
                     Required: =false
                     Update: =
                     Width: =640
                     WidthFit: =false
-                    X: =300
-                    Y: =200
+                    X: =0
+                    Y: =1
                     ZIndex: =1
 
                     DataCardKey3 As label:
@@ -420,6 +420,7 @@
                         HoverBorderColor: =RGBA(0, 0, 0, 0)
                         HoverColor: =RGBA(255, 255, 255, 1)
                         HoverFill: =ColorFade(RGBA(135, 100, 184, 1), -10%)
+                        OnSelect: =
                         PressedBorderColor: =ColorFade(RGBA(135, 100, 184, 1), -50%)
                         PressedColor: =RGBA(255, 255, 255, 1)
                         PressedFill: =ColorFade(RGBA(135, 100, 184, 1), -30%)
@@ -596,7 +597,7 @@
                     Update: =DataCardValue19.Text
                     Width: =640
                     X: =0
-                    Y: =1
+                    Y: =2
                     ZIndex: =3
 
                     DataCardKey25 As label:
@@ -712,7 +713,7 @@
                     Update: =Image5.Image
                     Width: =640
                     X: =0
-                    Y: =2
+                    Y: =3
                     ZIndex: =3
 
                     DataCardKey28 As label:
