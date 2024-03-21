@@ -285,11 +285,11 @@
                 =Switch(
                         Text(ThisItem.'Progress/Status'.Value),
                         "Initiated",
-                        Color.AliceBlue,
+                        Color.Blue,
                         "In Progress",
                         Color.Yellow,
                         "Resolved",
-                        Color.LawnGreen
+                        Color.Green
                     )80%)
             DisabledBorderColor: =RGBA(0, 0, 0, 0)
             DisabledColor: =RGBA(166, 166, 166, 1)

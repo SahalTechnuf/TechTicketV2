@@ -104,7 +104,7 @@
                 },
                 "region": {
                   "charLength": 2,
-                  "charOffset": 196,
+                  "charOffset": 187,
                   "snippet": {
                     "text": "80"
                   }
@@ -141,7 +141,7 @@
                 },
                 "region": {
                   "charLength": 1,
-                  "charOffset": 198,
+                  "charOffset": 189,
                   "snippet": {
                     "text": "%"
                   }
@@ -178,7 +178,7 @@
                 },
                 "region": {
                   "charLength": 1,
-                  "charOffset": 199,
+                  "charOffset": 190,
                   "snippet": {
                     "text": ")"
                   }
@@ -215,7 +215,7 @@
                 },
                 "region": {
                   "charLength": 2,
-                  "charOffset": 196,
+                  "charOffset": 187,
                   "snippet": {
                     "text": "80"
                   }
