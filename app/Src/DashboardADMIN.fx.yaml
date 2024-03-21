@@ -290,7 +290,7 @@
                         Color.LightYellow,
                         "Resolved",
                         Color.LawnGreen
-                    )80%) 
+                    )80%)
             DisabledBorderColor: =RGBA(0, 0, 0, 0)
             DisabledColor: =RGBA(166, 166, 166, 1)
             Fill: |-
