@@ -298,11 +298,11 @@
                     Switch(
                         Text(ThisItem.'Progress/Status'.Value),
                         "Initiated",
-                        Color.AliceBlue,
+                        Color.Blue,
                         "In Progress",
-                        Color.LightYellow,
+                        Color.Yellow,
                         "Resolved",
-                        Color.LawnGreen
+                        Color.Green
                     ),
                     80%
                 )
