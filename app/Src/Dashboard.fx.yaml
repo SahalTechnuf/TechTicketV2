@@ -15,8 +15,8 @@
                     StartsWith(
                         Upper(
                             Concatenate(
-                                Text(Title), 
-                                " ", 
+                                Text(Title),
+                                " ",
                                 Text(Description),
                                 " ",
                                 Text('Progress/Status'.Value),
@@ -27,7 +27,7 @@
                             )
                         ),
                         Upper(SearchTicket.Text)
-                    ) && 'Issued by'.Email = User().Email  // Filter rows where 'Issued by' field matches current user's email
+                    ) && 'Issued by'.Email = User().Email// Filter rows where 'Issued by' field matches current user's email
                 ),
                 'Issue Date and Time',
                 SortOrder.Descending
