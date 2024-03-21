@@ -284,6 +284,15 @@
             Color: =RGBA(51, 51, 51, 1)
             DisabledBorderColor: =RGBA(0, 0, 0, 0)
             DisabledColor: =RGBA(166, 166, 166, 1)
+            Fill: |-
+                =If(
+                    selectedItem.'Progress/Status'.Value = "Initiated",
+                    Color.Blue,
+                    selectedItem.'Progress/Status'.Value = "In Progress",
+                    Color.Yellow,
+                    selectedItem.'Progress/Status'.Value = "Resolved",
+                    Color.Green
+                )
             FocusedBorderThickness: =4
             Font: =Font.'Segoe UI'
             Height: =56

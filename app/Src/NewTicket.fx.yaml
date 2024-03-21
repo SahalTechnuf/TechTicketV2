@@ -284,13 +284,13 @@
                             HoverBorderColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
                             HoverColor: =RGBA(51, 51, 51, 1)
                             HoverFill: =RGBA(212, 212, 212, 1)
-                            Items: =Choices([@'Work Progress Tracker'].TicketProgress)
+                            Items: =Choices([@'Work Progress Tracker'].'Progress/Status')
                             PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                             PressedBorderColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
                             PressedColor: =RGBA(255, 255, 255, 1)
                             PressedFill: =RGBA(135, 100, 184, 1)
                             SearchFields: =["Value"]
-                            SearchItems: =Choices('Work Progress Tracker'.TicketProgress,DataCardValue1.SearchText)
+                            SearchItems: =Choices('Work Progress Tracker'.'Progress/Status',DataCardValue1.SearchText)
                             SelectionFill: =RGBA(135, 100, 184, 1)
                             SelectMultiple: =false
                             Size: =21

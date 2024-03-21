@@ -300,7 +300,7 @@
                     Width: =640
                     WidthFit: =false
                     X: =0
-                    Y: =0
+                    Y: =3
                     ZIndex: =1
 
                     DataCardKey3 As label:
@@ -597,7 +597,7 @@
                     Update: =DataCardValue19.Text
                     Width: =640
                     X: =0
-                    Y: =2
+                    Y: =1
                     ZIndex: =3
 
                     DataCardKey25 As label:
@@ -713,7 +713,7 @@
                     Update: =Image5.Image
                     Width: =640
                     X: =0
-                    Y: =3
+                    Y: =2
                     ZIndex: =3
 
                     DataCardKey28 As label:
