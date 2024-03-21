@@ -296,7 +296,19 @@
                 )
             DisabledBorderColor: =RGBA(0, 0, 0, 0)
             DisabledColor: =RGBA(166, 166, 166, 1)
-            Fill: =ColorFade(Switch(Text(ThisItem.'Progress/Status'), "Initiated",Color.AliceBlue,"In Progress", Color.LightYellow, "Resolved",Color.LawnGreen),80%) 
+            Fill: |-
+                =ColorFade(
+                    Switch(
+                        Text(ThisItem.'Progress/Status'.Value),
+                        "Initiated",
+                        Color.AliceBlue,
+                        "In Progress",
+                        Color.LightYellow,
+                        "Resolved",
+                        Color.LawnGreen
+                    ),
+                    80%
+                )
             FocusedBorderThickness: =4
             Font: =Font.'Segoe UI'
             FontWeight: =FontWeight.Bold
