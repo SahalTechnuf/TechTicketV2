@@ -312,7 +312,7 @@
                         "Initiated",
                         RGBA(153,207,236,1),
                         "In Progress",
-                        RGBA(250,250,202,100),
+                        RGBA(140,98,14,1),
                         "Resolved",
                         RGBA(10,84,48,1)
                     ),
