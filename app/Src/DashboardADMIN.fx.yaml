@@ -287,7 +287,7 @@
                         "Initiated",
                         Color.AliceBlue,
                         "In Progress",
-                        Color.LightYellow,
+                        Color.Yellow,
                         "Resolved",
                         Color.LawnGreen
                     )80%)
