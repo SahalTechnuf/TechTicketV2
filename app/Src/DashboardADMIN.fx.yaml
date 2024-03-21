@@ -279,7 +279,19 @@
         Label2_1 As label:
             Align: =Align.Center
             AutoHeight: =true
-            BorderColor: =RGBA(0, 134, 208, 1)
+            BorderColor: |-
+                =ColorFade(
+                    Switch(
+                        Text(ThisItem.'Progress/Status'.Value),
+                        "Initiated",
+                        RGBA(153,207,236,1),
+                        "In Progress",
+                        RGBA(250,250,202,100),
+                        "Resolved",
+                        RGBA(10,84,48,1)
+                    ),
+                    80%
+                )
             BorderThickness: =1
             Color: |-
                 =Switch(
