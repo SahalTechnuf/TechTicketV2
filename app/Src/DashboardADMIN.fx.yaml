@@ -282,8 +282,7 @@
             BorderColor: =RGBA(0, 134, 208, 1)
             BorderThickness: =1
             Color: |-
-                =ColorFade(
-                    Switch(
+                =Switch(
                         Text(ThisItem.'Progress/Status'.Value),
                         "Initiated",
                         Color.AliceBlue,
@@ -291,9 +290,7 @@
                         Color.LightYellow,
                         "Resolved",
                         Color.LawnGreen
-                    ),
-                    80%
-                )
+                    )
             DisabledBorderColor: =RGBA(0, 0, 0, 0)
             DisabledColor: =RGBA(166, 166, 166, 1)
             Fill: |-
