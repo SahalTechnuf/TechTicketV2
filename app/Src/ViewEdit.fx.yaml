@@ -292,7 +292,7 @@
                     DataField: ="TicketProgress"
                     Default: =ThisItem.'Progress/Status'
                     DisplayMode: =DisplayMode
-                    DisplayName: =DataSourceInfo([@'Work Progress Tracker'],DataSourceInfo.DisplayName,"TicketProgress")
+                    DisplayName: =DataSourceInfo([@'Work Progress Tracker'],DataSourceInfo.DisplayName,"TicketProgress") 
                     Fill: =RGBA(0, 0, 0, 0)
                     Height: =142
                     Required: =false
@@ -388,7 +388,12 @@
                         HoverBorderColor: =RGBA(0, 0, 0, 0)
                         HoverColor: =RGBA(255, 255, 255, 1)
                         HoverFill: =ColorFade(RGBA(135, 100, 184, 1), -10%)
-                        OnSelect: =
+                        OnSelect: |-
+                            =Patch(
+                                    'Work Progress Tracker' // Your data source (e.g., SharePoint list)
+                                    DashTicketsADMIN.Selected, // Selected ticket
+                                    { Status: "Initiated" }{ Status: "Resolved" }  // Update status to Initiated or Reolved
+                                );
                         PressedBorderColor: =ColorFade(RGBA(135, 100, 184, 1), -50%)
                         PressedColor: =RGBA(255, 255, 255, 1)
                         PressedFill: =ColorFade(RGBA(135, 100, 184, 1), -30%)
