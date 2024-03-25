@@ -901,7 +901,7 @@
                                 Title: DataCardValue17.Text,
                                 'Issued by': DashAuthor,
                                 Description: DataCardValue19.Text,
-                                'Progress/Status':Button2,
+                                'Progress/Status':Button7,
                                 'Image (Optional)': Image5.Image,
                                 'Issue Date and Time': Now()
                                 
