@@ -431,8 +431,8 @@
                         Size: =24
                         Text: ="In Progress"
                         Width: =180
-                        X: =214
-                        Y: =57
+                        X: =223
+                        Y: =62
                         ZIndex: =6
 
                     Button7 As button:
@@ -901,7 +901,7 @@
                                 Title: DataCardValue17.Text,
                                 'Issued by': DashAuthor,
                                 Description: DataCardValue19.Text,
-                                //'Progress/Status': 'Progress/Status_DataCard3'
+                                'Progress/Status':Button2,
                                 'Image (Optional)': Image5.Image,
                                 'Issue Date and Time': Now()
                                 
