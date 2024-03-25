@@ -388,12 +388,7 @@
                         HoverBorderColor: =RGBA(0, 0, 0, 0)
                         HoverColor: =RGBA(255, 255, 255, 1)
                         HoverFill: =ColorFade(RGBA(135, 100, 184, 1), -10%)
-                        OnSelect: |-
-                            =Patch(
-                                    'Work Progress Tracker' // Your data source (e.g., SharePoint list)
-                                    DashTicketsADMIN.Selected, // Selected ticket
-                                    { Status: "Initiated" }{ Status: "Resolved" }  // Update status to Initiated or Reolved
-                                );
+                        OnSelect: =Patch('Work Progress Tracker','Progress/Status_DataCard3'.Update)
                         PressedBorderColor: =ColorFade(RGBA(135, 100, 184, 1), -50%)
                         PressedColor: =RGBA(255, 255, 255, 1)
                         PressedFill: =ColorFade(RGBA(135, 100, 184, 1), -30%)
