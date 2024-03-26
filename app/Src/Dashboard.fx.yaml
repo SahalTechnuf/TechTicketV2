@@ -284,7 +284,16 @@
             AutoHeight: =true
             BorderColor: =RGBA(0, 134, 208, 1)
             BorderThickness: =1
-            Color: =RGBA(51, 51, 51, 1)
+            Color: |-
+                =Switch(
+                        Text(ThisItem.'Progress/Status'.Value),
+                        "Initiated",
+                        RGBA(153,207,236,1),
+                        "In Progress",
+                        RGBA(140,98,14,1),
+                        "Resolved",
+                        RGBA(10,84,48,1)
+                    )
             DisabledBorderColor: =RGBA(0, 0, 0, 0)
             DisabledColor: =RGBA(166, 166, 166, 1)
             FocusedBorderThickness: =4
