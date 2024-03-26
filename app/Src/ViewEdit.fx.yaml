@@ -290,7 +290,7 @@
                     BorderColor: =RGBA(166, 166, 166, 1)
                     BorderStyle: =BorderStyle.Solid
                     DataField: ="TicketProgress"
-                    Default: =ThisItem.'Progress/Status'
+                    Default: =selectedItem.'Progress/Status'
                     DisplayMode: =DisplayMode
                     DisplayName: =DataSourceInfo([@'Work Progress Tracker'],DataSourceInfo.DisplayName,"TicketProgress") 
                     Fill: =RGBA(0, 0, 0, 0)
@@ -372,15 +372,11 @@
 
                     Button2 As button:
                         BorderColor: =RGBA(0, 0, 0, 0)
-                        Color: |-
-                            =If(
-                                DashTicketsADMIN.Selected.'Progress/Status'.Value = "Initiated",
-                                Color.Blue
-                            )
+                        Color: =RGBA(0, 0, 0, 1)
                         DisabledBorderColor: =RGBA(0, 0, 0, 0)
                         DisabledColor: =RGBA(166, 166, 166, 1)
                         DisabledFill: =RGBA(244, 244, 244, 1)
-                        Fill: =RGBA(255, 255, 255, 1)
+                        Fill: =If(selectedItem.'Progress/Status'.Value = "Initiated", RGBA(0, 255, 0, 1), RGBA(255, 255, 255, 1))
                         FocusedBorderColor: =ColorFade(Self.Fill, -75%)
                         Font: =Font.'Segoe UI'
                         FontWeight: =FontWeight.Semibold
@@ -404,15 +400,11 @@
 
                     Button5 As button:
                         BorderColor: =RGBA(0, 0, 0, 0)
-                        Color: |-
-                            =If(
-                                DashTicketsADMIN.Selected.'Progress/Status'.Value = "In Progress",
-                                Color.Blue
-                            )
+                        Color: =RGBA(0, 0, 0, 1)
                         DisabledBorderColor: =RGBA(0, 0, 0, 0)
                         DisabledColor: =RGBA(166, 166, 166, 1)
                         DisabledFill: =RGBA(244, 244, 244, 1)
-                        Fill: =RGBA(255, 255, 255, 1)
+                        Fill: =If(selectedItem.'Progress/Status'.Value = "In Progress", RGBA(0, 255, 0, 1), RGBA(255, 255, 255, 1))
                         FocusedBorderColor: =ColorFade(Self.Fill, -75%)
                         Font: =Font.'Segoe UI'
                         FontWeight: =FontWeight.Semibold
@@ -437,15 +429,11 @@
 
                     Button7 As button:
                         BorderColor: =RGBA(0, 0, 0, 0)
-                        Color: |-
-                            =If(
-                                DashTicketsADMIN.Selected.'Progress/Status'.Value = "Resolved",
-                                Color.Blue
-                            )
+                        Color: =RGBA(0, 0, 0, 1)
                         DisabledBorderColor: =RGBA(0, 0, 0, 0)
                         DisabledColor: =RGBA(166, 166, 166, 1)
                         DisabledFill: =RGBA(244, 244, 244, 1)
-                        Fill: =RGBA(255, 255, 255, 1)
+                        Fill: =If(selectedItem.'Progress/Status'.Value = "Resolved", RGBA(0, 255, 0, 1), RGBA(255, 255, 255, 1))
                         FocusedBorderColor: =ColorFade(Self.Fill, -75%)
                         Font: =Font.'Segoe UI'
                         FontWeight: =FontWeight.Semibold
@@ -453,6 +441,8 @@
                         HoverBorderColor: =RGBA(0, 0, 0, 0)
                         HoverColor: =RGBA(255, 255, 255, 1)
                         HoverFill: =ColorFade(RGBA(135, 100, 184, 1), -10%)
+                        OnSelect: |-
+                            =Patch('Work Progress Tracker', LookUp('Work Progress Tracker', ID = Parent.selectedItem.ID ), {'Progress/Status': "In Progress"})
                         PressedBorderColor: =ColorFade(RGBA(135, 100, 184, 1), -50%)
                         PressedColor: =RGBA(255, 255, 255, 1)
                         PressedFill: =ColorFade(RGBA(135, 100, 184, 1), -30%)
@@ -463,7 +453,7 @@
                         Size: =24
                         Text: ="Resolved"
                         Width: =180
-                        X: =446
+                        X: =460
                         Y: =57
                         ZIndex: =7
 
