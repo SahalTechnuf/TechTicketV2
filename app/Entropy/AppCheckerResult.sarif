@@ -423,10 +423,10 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 15,
-                  "charOffset": 268,
+                  "charLength": 9,
+                  "charOffset": 275,
                   "snippet": {
-                    "text": "ButtonInitiated"
+                    "text": ".Selected"
                   }
                 }
               },
@@ -439,7 +439,7 @@
           ],
           "message": {
             "arguments": [
-              "ButtonInitiated"
+              "Selected"
             ],
             "id": "issue"
           },
@@ -464,7 +464,7 @@
                 },
                 "region": {
                   "charLength": 9,
-                  "charOffset": 283,
+                  "charOffset": 350,
                   "snippet": {
                     "text": ".Selected"
                   }
@@ -478,45 +478,8 @@
             }
           ],
           "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "ViewEdit.Container11.Container12.ButtonContainer.Button4_1.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "ViewEdit.Container11.Container12.ButtonContainer.Button4_1.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 16,
-                  "charOffset": 351,
-                  "snippet": {
-                    "text": "ButtonInProgress"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "ViewEdit",
-                "type": "ViewEdit.Container11.Container12.ButtonContainer.Button4_1"
-              }
-            }
-          ],
-          "message": {
             "arguments": [
-              "ButtonInProgress"
+              "Selected"
             ],
             "id": "issue"
           },
@@ -540,47 +503,10 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 9,
-                  "charOffset": 367,
+                  "charLength": 109,
+                  "charOffset": 323,
                   "snippet": {
-                    "text": ".Selected"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "ViewEdit",
-                "type": "ViewEdit.Container11.Container12.ButtonContainer.Button4_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "ViewEdit.Container11.Container12.ButtonContainer.Button4_1.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "ViewEdit.Container11.Container12.ButtonContainer.Button4_1.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 118,
-                  "charOffset": 331,
-                  "snippet": {
-                    "text": "If(\n                ButtonInProgress.Selected,\n                \"In Progress\",\n                \"Resolved\"\n            )"
+                    "text": "If(\n                Button5.Selected,\n                \"In Progress\",\n                \"Resolved\"\n            )"
                   }
                 }
               },
@@ -617,10 +543,10 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 207,
+                  "charLength": 190,
                   "charOffset": 252,
                   "snippet": {
-                    "text": "If(\n            ButtonInitiated.Selected,\n            \"Initiated\",\n            If(\n                ButtonInProgress.Selected,\n                \"In Progress\",\n                \"Resolved\"\n            )\n        )"
+                    "text": "If(\n            Button2.Selected,\n            \"Initiated\",\n            If(\n                Button5.Selected,\n                \"In Progress\",\n                \"Resolved\"\n            )\n        )"
                   }
                 }
               },
@@ -657,10 +583,10 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 571,
+                  "charLength": 554,
                   "charOffset": 0,
                   "snippet": {
-                    "text": "Patch ('Work Progress Tracker', LookUp(\n        'Work Progress Tracker',  \n        ID = selectedItem.ID),\n    {\n        Title: DataCardValue17.Text,\n        'Issued by': DashAuthor,\n        Description: DataCardValue19.Text,\n        'Progress/Status': If(\n            ButtonInitiated.Selected,\n            \"Initiated\",\n            If(\n                ButtonInProgress.Selected,\n                \"In Progress\",\n                \"Resolved\"\n            )\n        ), \n        'Image (Optional)': Image5.Image,\n        'Issue Date and Time': Now()\n        \n        \n    \n    }\n)"
+                    "text": "Patch ('Work Progress Tracker', LookUp(\n        'Work Progress Tracker',  \n        ID = selectedItem.ID),\n    {\n        Title: DataCardValue17.Text,\n        'Issued by': DashAuthor,\n        Description: DataCardValue19.Text,\n        'Progress/Status': If(\n            Button2.Selected,\n            \"Initiated\",\n            If(\n                Button5.Selected,\n                \"In Progress\",\n                \"Resolved\"\n            )\n        ), \n        'Image (Optional)': Image5.Image,\n        'Issue Date and Time': Now()\n        \n        \n    \n    }\n)"
                   }
                 }
               },
@@ -697,10 +623,10 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 459,
+                  "charLength": 442,
                   "charOffset": 110,
                   "snippet": {
-                    "text": "{\n        Title: DataCardValue17.Text,\n        'Issued by': DashAuthor,\n        Description: DataCardValue19.Text,\n        'Progress/Status': If(\n            ButtonInitiated.Selected,\n            \"Initiated\",\n            If(\n                ButtonInProgress.Selected,\n                \"In Progress\",\n                \"Resolved\"\n            )\n        ), \n        'Image (Optional)': Image5.Image,\n        'Issue Date and Time': Now()\n        \n        \n    \n    }"
+                    "text": "{\n        Title: DataCardValue17.Text,\n        'Issued by': DashAuthor,\n        Description: DataCardValue19.Text,\n        'Progress/Status': If(\n            Button2.Selected,\n            \"Initiated\",\n            If(\n                Button5.Selected,\n                \"In Progress\",\n                \"Resolved\"\n            )\n        ), \n        'Image (Optional)': Image5.Image,\n        'Issue Date and Time': Now()\n        \n        \n    \n    }"
                   }
                 }
               },

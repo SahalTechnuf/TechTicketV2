@@ -892,10 +892,10 @@
                                 'Issued by': DashAuthor,
                                 Description: DataCardValue19.Text,
                                 'Progress/Status': If(
-                                    ButtonInitiated.Selected,
+                                    Button2.Selected,
                                     "Initiated",
                                     If(
-                                        ButtonInProgress.Selected,
+                                        Button5.Selected,
                                         "In Progress",
                                         "Resolved"
                                     )
