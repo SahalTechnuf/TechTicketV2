@@ -891,7 +891,15 @@
                                 Title: DataCardValue17.Text,
                                 'Issued by': DashAuthor,
                                 Description: DataCardValue19.Text,
-                                'Progress/Status':Button7,
+                                'Progress/Status': If(
+                                    ButtonInitiated.Selected,
+                                    "Initiated",
+                                    If(
+                                        ButtonInProgress.Selected,
+                                        "In Progress",
+                                        "Resolved"
+                                    )
+                                ), 
                                 'Image (Optional)': Image5.Image,
                                 'Issue Date and Time': Now()
                                 

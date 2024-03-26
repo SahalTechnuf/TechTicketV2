@@ -14,6 +14,86 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "DashboardADMIN.DashTicketsADMIN.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "DashboardADMIN.DashTicketsADMIN.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 343,
+                  "charOffset": 67,
+                  "snippet": {
+                    "text": "Upper(\n            Concatenate(\n                Text(Title), \n                \" \", \n                Text(Description),\n                \" \",\n                Text('Progress/Status'.Value),\n                \" \",\n                Text('Issued by'.DisplayName),\n                \" \",\n                Text('Issue Date and Time')\n            )\n        )"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "DashboardADMIN",
+                "type": "DashboardADMIN.DashTicketsADMIN"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Upper"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DashboardADMIN.DashTicketsADMIN.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "DashboardADMIN.DashTicketsADMIN.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 408,
+                  "charOffset": 47,
+                  "snippet": {
+                    "text": "StartsWith(\n        Upper(\n            Concatenate(\n                Text(Title), \n                \" \", \n                Text(Description),\n                \" \",\n                Text('Progress/Status'.Value),\n                \" \",\n                Text('Issued by'.DisplayName),\n                \" \",\n                Text('Issue Date and Time')\n            )\n        ),\n        Upper(SearchTicketADMIN.Text)\n    )"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "DashboardADMIN",
+                "type": "DashboardADMIN.DashTicketsADMIN"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "StartsWith"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "Dashboard.DashTickets.Items"
                 }
               ],
@@ -120,86 +200,6 @@
           "message": {
             "arguments": [
               "Filter"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-SuggestRemoteExecutionHint",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "DashboardADMIN.DashTicketsADMIN.Items"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "DashboardADMIN.DashTicketsADMIN.Items",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 343,
-                  "charOffset": 67,
-                  "snippet": {
-                    "text": "Upper(\n            Concatenate(\n                Text(Title), \n                \" \", \n                Text(Description),\n                \" \",\n                Text('Progress/Status'.Value),\n                \" \",\n                Text('Issued by'.DisplayName),\n                \" \",\n                Text('Issue Date and Time')\n            )\n        )"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Items",
-                "module": "DashboardADMIN",
-                "type": "DashboardADMIN.DashTicketsADMIN"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Upper"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-SuggestRemoteExecutionHint",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "DashboardADMIN.DashTicketsADMIN.Items"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "DashboardADMIN.DashTicketsADMIN.Items",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 408,
-                  "charOffset": 47,
-                  "snippet": {
-                    "text": "StartsWith(\n        Upper(\n            Concatenate(\n                Text(Title), \n                \" \", \n                Text(Description),\n                \" \",\n                Text('Progress/Status'.Value),\n                \" \",\n                Text('Issued by'.DisplayName),\n                \" \",\n                Text('Issue Date and Time')\n            )\n        ),\n        Upper(SearchTicketADMIN.Text)\n    )"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Items",
-                "module": "DashboardADMIN",
-                "type": "DashboardADMIN.DashTicketsADMIN"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "StartsWith"
             ],
             "id": "issue"
           },
@@ -414,49 +414,66 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Dashboard.SearchTicket.AccessibleLabel"
+                  "fullyQualifiedName": "ViewEdit.Container11.Container12.ButtonContainer.Button4_1.OnSelect"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Dashboard.SearchTicket.AccessibleLabel",
+                  "fullyQualifiedName": "ViewEdit.Container11.Container12.ButtonContainer.Button4_1.OnSelect",
                   "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 15,
+                  "charOffset": 268,
+                  "snippet": {
+                    "text": "ButtonInitiated"
+                  }
                 }
               },
               "properties": {
-                "member": "AccessibleLabel",
-                "module": "Dashboard",
-                "type": "Dashboard.SearchTicket"
+                "member": "OnSelect",
+                "module": "ViewEdit",
+                "type": "ViewEdit.Container11.Container12.ButtonContainer.Button4_1"
               }
             }
           ],
           "message": {
+            "arguments": [
+              "ButtonInitiated"
+            ],
             "id": "issue"
           },
           "properties": {
-            "level": "Medium"
+            "level": "High"
           },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 1
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Dashboard.DashTickets.AccessibleLabel"
+                  "fullyQualifiedName": "ViewEdit.Container11.Container12.ButtonContainer.Button4_1.OnSelect"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Dashboard.DashTickets.AccessibleLabel",
+                  "fullyQualifiedName": "ViewEdit.Container11.Container12.ButtonContainer.Button4_1.OnSelect",
                   "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 9,
+                  "charOffset": 283,
+                  "snippet": {
+                    "text": ".Selected"
+                  }
                 }
               },
               "properties": {
-                "member": "AccessibleLabel",
-                "module": "Dashboard",
-                "type": "Dashboard.DashTickets"
+                "member": "OnSelect",
+                "module": "ViewEdit",
+                "type": "ViewEdit.Container11.Container12.ButtonContainer.Button4_1"
               }
             }
           ],
@@ -464,29 +481,76 @@
             "id": "issue"
           },
           "properties": {
-            "level": "Medium"
+            "level": "High"
           },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6
+          "ruleId": "app-ErrInvalidDot",
+          "ruleIndex": 2
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Dashboard.DashTickets.TabIndex"
+                  "fullyQualifiedName": "ViewEdit.Container11.Container12.ButtonContainer.Button4_1.OnSelect"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Dashboard.DashTickets.TabIndex",
+                  "fullyQualifiedName": "ViewEdit.Container11.Container12.ButtonContainer.Button4_1.OnSelect",
                   "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 16,
+                  "charOffset": 351,
+                  "snippet": {
+                    "text": "ButtonInProgress"
+                  }
                 }
               },
               "properties": {
-                "member": "TabIndex",
-                "module": "Dashboard",
-                "type": "Dashboard.DashTickets"
+                "member": "OnSelect",
+                "module": "ViewEdit",
+                "type": "ViewEdit.Container11.Container12.ButtonContainer.Button4_1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "ButtonInProgress"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ViewEdit.Container11.Container12.ButtonContainer.Button4_1.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ViewEdit.Container11.Container12.ButtonContainer.Button4_1.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 9,
+                  "charOffset": 367,
+                  "snippet": {
+                    "text": ".Selected"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "ViewEdit",
+                "type": "ViewEdit.Container11.Container12.ButtonContainer.Button4_1"
               }
             }
           ],
@@ -494,10 +558,172 @@
             "id": "issue"
           },
           "properties": {
-            "level": "Low"
+            "level": "High"
           },
-          "ruleId": "acc-TabOrderShouldBeChecked",
-          "ruleIndex": 7
+          "ruleId": "app-ErrInvalidDot",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ViewEdit.Container11.Container12.ButtonContainer.Button4_1.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ViewEdit.Container11.Container12.ButtonContainer.Button4_1.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 118,
+                  "charOffset": 331,
+                  "snippet": {
+                    "text": "If(\n                ButtonInProgress.Selected,\n                \"In Progress\",\n                \"Resolved\"\n            )"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "ViewEdit",
+                "type": "ViewEdit.Container11.Container12.ButtonContainer.Button4_1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "If"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ViewEdit.Container11.Container12.ButtonContainer.Button4_1.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ViewEdit.Container11.Container12.ButtonContainer.Button4_1.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 207,
+                  "charOffset": 252,
+                  "snippet": {
+                    "text": "If(\n            ButtonInitiated.Selected,\n            \"Initiated\",\n            If(\n                ButtonInProgress.Selected,\n                \"In Progress\",\n                \"Resolved\"\n            )\n        )"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "ViewEdit",
+                "type": "ViewEdit.Container11.Container12.ButtonContainer.Button4_1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "If"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ViewEdit.Container11.Container12.ButtonContainer.Button4_1.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ViewEdit.Container11.Container12.ButtonContainer.Button4_1.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 571,
+                  "charOffset": 0,
+                  "snippet": {
+                    "text": "Patch ('Work Progress Tracker', LookUp(\n        'Work Progress Tracker',  \n        ID = selectedItem.ID),\n    {\n        Title: DataCardValue17.Text,\n        'Issued by': DashAuthor,\n        Description: DataCardValue19.Text,\n        'Progress/Status': If(\n            ButtonInitiated.Selected,\n            \"Initiated\",\n            If(\n                ButtonInProgress.Selected,\n                \"In Progress\",\n                \"Resolved\"\n            )\n        ), \n        'Image (Optional)': Image5.Image,\n        'Issue Date and Time': Now()\n        \n        \n    \n    }\n)"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "ViewEdit",
+                "type": "ViewEdit.Container11.Container12.ButtonContainer.Button4_1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Patch"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ViewEdit.Container11.Container12.ButtonContainer.Button4_1.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ViewEdit.Container11.Container12.ButtonContainer.Button4_1.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 459,
+                  "charOffset": 110,
+                  "snippet": {
+                    "text": "{\n        Title: DataCardValue17.Text,\n        'Issued by': DashAuthor,\n        Description: DataCardValue19.Text,\n        'Progress/Status': If(\n            ButtonInitiated.Selected,\n            \"Initiated\",\n            If(\n                ButtonInProgress.Selected,\n                \"In Progress\",\n                \"Resolved\"\n            )\n        ), \n        'Image (Optional)': Image5.Image,\n        'Issue Date and Time': Now()\n        \n        \n    \n    }"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "ViewEdit",
+                "type": "ViewEdit.Container11.Container12.ButtonContainer.Button4_1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "TicketProgress",
+              "Record",
+              "Text"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrTypeError-Arg-Expected-Found",
+          "ruleIndex": 5
         },
         {
           "locations": [
@@ -577,6 +803,96 @@
                 "member": "TabIndex",
                 "module": "DashboardADMIN",
                 "type": "DashboardADMIN.DashTicketsADMIN"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Low"
+          },
+          "ruleId": "acc-TabOrderShouldBeChecked",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Dashboard.SearchTicket.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Dashboard.SearchTicket.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Dashboard",
+                "type": "Dashboard.SearchTicket"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Dashboard.DashTickets.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Dashboard.DashTickets.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Dashboard",
+                "type": "Dashboard.DashTickets"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Dashboard.DashTickets.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Dashboard.DashTickets.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Dashboard",
+                "type": "Dashboard.DashTickets"
               }
             }
           ],
