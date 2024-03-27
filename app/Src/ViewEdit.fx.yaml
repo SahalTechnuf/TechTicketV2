@@ -442,7 +442,7 @@
                         HoverColor: =RGBA(255, 255, 255, 1)
                         HoverFill: =ColorFade(RGBA(135, 100, 184, 1), -10%)
                         OnSelect: |-
-                            =If( Button7.Text = "Resolved", { value: "Resolved", color: RGBA(0, 0, 255, 1) }
+                            =If( Button7.Text = "Resolved", { value: "Resolved", color: RGBA(0, 0, 255, 1) })
                         PressedBorderColor: =ColorFade(RGBA(135, 100, 184, 1), -50%)
                         PressedColor: =RGBA(255, 255, 255, 1)
                         PressedFill: =ColorFade(RGBA(135, 100, 184, 1), -30%)
