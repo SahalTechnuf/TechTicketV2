@@ -899,10 +899,9 @@
                                         If(
                                             Button7.Value = "Resolved", RGBA(153, 207, 236, 1),
                                             RGBA(255, 255, 255, 1)
-                                               )
+                                        )
                                     )
                                 ),
-                        
                                 'Image (Optional)': Image5.Image,
                                 'Issue Date and Time': Now()
                                 

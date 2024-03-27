@@ -1127,10 +1127,10 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 703,
+                  "charLength": 695,
                   "charOffset": 0,
                   "snippet": {
-                    "text": "Patch ('Work Progress Tracker', LookUp(\n        'Work Progress Tracker',  \n        ID = selectedItem.ID),\n    {\n        Title: DataCardValue17.Text,\n        'Issued by': DashAuthor,\n        Description: DataCardValue19.Text,\n        'Progress/Status': If(\n            Button2.Value = \"Initiated\", RGBA(153, 207, 236, 1),\n            If(\n                Button5.Value = \"In Progress\", RGBA(153, 207, 236, 1),\n                If(\n                    Button7.Value = \"Resolved\", RGBA(153, 207, 236, 1),\n                    RGBA(255, 255, 255, 1)\n                       )\n            )\n        ),\n\n        'Image (Optional)': Image5.Image,\n        'Issue Date and Time': Now()\n        \n        \n    \n    }\n)"
+                    "text": "Patch ('Work Progress Tracker', LookUp(\n        'Work Progress Tracker',  \n        ID = selectedItem.ID),\n    {\n        Title: DataCardValue17.Text,\n        'Issued by': DashAuthor,\n        Description: DataCardValue19.Text,\n        'Progress/Status': If(\n            Button2.Value = \"Initiated\", RGBA(153, 207, 236, 1),\n            If(\n                Button5.Value = \"In Progress\", RGBA(153, 207, 236, 1),\n                If(\n                    Button7.Value = \"Resolved\", RGBA(153, 207, 236, 1),\n                    RGBA(255, 255, 255, 1)\n                )\n            )\n        ),\n        'Image (Optional)': Image5.Image,\n        'Issue Date and Time': Now()\n        \n        \n    \n    }\n)"
                   }
                 }
               },
@@ -1167,10 +1167,10 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 591,
+                  "charLength": 583,
                   "charOffset": 110,
                   "snippet": {
-                    "text": "{\n        Title: DataCardValue17.Text,\n        'Issued by': DashAuthor,\n        Description: DataCardValue19.Text,\n        'Progress/Status': If(\n            Button2.Value = \"Initiated\", RGBA(153, 207, 236, 1),\n            If(\n                Button5.Value = \"In Progress\", RGBA(153, 207, 236, 1),\n                If(\n                    Button7.Value = \"Resolved\", RGBA(153, 207, 236, 1),\n                    RGBA(255, 255, 255, 1)\n                       )\n            )\n        ),\n\n        'Image (Optional)': Image5.Image,\n        'Issue Date and Time': Now()\n        \n        \n    \n    }"
+                    "text": "{\n        Title: DataCardValue17.Text,\n        'Issued by': DashAuthor,\n        Description: DataCardValue19.Text,\n        'Progress/Status': If(\n            Button2.Value = \"Initiated\", RGBA(153, 207, 236, 1),\n            If(\n                Button5.Value = \"In Progress\", RGBA(153, 207, 236, 1),\n                If(\n                    Button7.Value = \"Resolved\", RGBA(153, 207, 236, 1),\n                    RGBA(255, 255, 255, 1)\n                )\n            )\n        ),\n        'Image (Optional)': Image5.Image,\n        'Issue Date and Time': Now()\n        \n        \n    \n    }"
                   }
                 }
               },
