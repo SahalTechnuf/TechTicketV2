@@ -1015,17 +1015,17 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.ShowNotification"
+                  "fullyQualifiedName": "App.NotificationMessage"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "App.ShowNotification",
+                  "fullyQualifiedName": "App.NotificationMessage",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "ShowNotification",
+                "member": "NotificationMessage",
                 "module": "App",
                 "type": "App"
               }
@@ -1045,17 +1045,17 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.NotificationMessage"
+                  "fullyQualifiedName": "App.ShowNotification"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "App.NotificationMessage",
+                  "fullyQualifiedName": "App.ShowNotification",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "NotificationMessage",
+                "member": "ShowNotification",
                 "module": "App",
                 "type": "App"
               }
