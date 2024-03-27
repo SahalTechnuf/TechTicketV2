@@ -384,7 +384,8 @@
                         HoverBorderColor: =RGBA(0, 0, 0, 0)
                         HoverColor: =RGBA(255, 255, 255, 1)
                         HoverFill: =ColorFade(RGBA(135, 100, 184, 1), -10%)
-                        OnSelect: =Patch('Work Progress Tracker','Progress/Status_DataCard3'.Update)
+                        OnSelect: |-
+                            =Patch('Work Progress Tracker',selectedItem,{Progress/Status:Text}
                         PressedBorderColor: =ColorFade(RGBA(135, 100, 184, 1), -50%)
                         PressedColor: =RGBA(255, 255, 255, 1)
                         PressedFill: =ColorFade(RGBA(135, 100, 184, 1), -30%)
@@ -891,7 +892,17 @@
                                 Title: DataCardValue17.Text,
                                 'Issued by': DashAuthor,
                                 Description: DataCardValue19.Text,
-                                'Progress/Status': {Value:Button2.Selected.Value}
+                                'Progress/Status': If(
+                                        Button2.Selected,
+                                        "Initiated",Color.Blue
+                                        If(
+                                            Button5.Selected,
+                                            "In Progress",Color.Blue
+                                            If(
+                                                Button7.Selected,"Resolved",Color.Blue 
+                                            )
+                                        )
+                                    ),
                                 'Image (Optional)': Image5.Image,
                                 'Issue Date and Time': Now()
                                 
