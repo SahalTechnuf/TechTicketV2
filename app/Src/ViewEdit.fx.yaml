@@ -894,12 +894,12 @@
                                 Description: DataCardValue19.Text,
                                 'Progress/Status': If(
                                         Button2.Selected,
-                                        "Initiated",Color.Blue
+                                        "Initiated", RGBA(153,207,236,1)
                                         If(
                                             Button5.Selected,
-                                            "In Progress",Color.Blue
+                                            "In Progress",RGBA(153,207,236,1)
                                             If(
-                                                Button7.Selected,"Resolved",Color.Blue 
+                                                Button7.Selected,"Resolved",RGBA(153,207,236,1)
                                             )
                                         )
                                     ),

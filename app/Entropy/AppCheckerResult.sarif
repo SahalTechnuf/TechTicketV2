@@ -885,7 +885,7 @@
                 },
                 "region": {
                   "charLength": 2,
-                  "charOffset": 345,
+                  "charOffset": 355,
                   "snippet": {
                     "text": "If"
                   }
@@ -922,7 +922,7 @@
                 },
                 "region": {
                   "charLength": 1,
-                  "charOffset": 385,
+                  "charOffset": 395,
                   "snippet": {
                     "text": ","
                   }
@@ -963,7 +963,7 @@
                 },
                 "region": {
                   "charLength": 2,
-                  "charOffset": 452,
+                  "charOffset": 471,
                   "snippet": {
                     "text": "If"
                   }
@@ -1000,7 +1000,7 @@
                 },
                 "region": {
                   "charLength": 1,
-                  "charOffset": 496,
+                  "charOffset": 515,
                   "snippet": {
                     "text": ","
                   }
@@ -1041,7 +1041,7 @@
                 },
                 "region": {
                   "charLength": 1,
-                  "charOffset": 558,
+                  "charOffset": 585,
                   "snippet": {
                     "text": ")"
                   }
@@ -1082,7 +1082,7 @@
                 },
                 "region": {
                   "charLength": 1,
-                  "charOffset": 572,
+                  "charOffset": 599,
                   "snippet": {
                     "text": ")"
                   }
@@ -1159,7 +1159,7 @@
                 },
                 "region": {
                   "charLength": 9,
-                  "charOffset": 376,
+                  "charOffset": 386,
                   "snippet": {
                     "text": ".Selected"
                   }
@@ -1199,7 +1199,7 @@
                 },
                 "region": {
                   "charLength": 2,
-                  "charOffset": 345,
+                  "charOffset": 355,
                   "snippet": {
                     "text": "If"
                   }
@@ -1236,7 +1236,7 @@
                 },
                 "region": {
                   "charLength": 9,
-                  "charOffset": 487,
+                  "charOffset": 506,
                   "snippet": {
                     "text": ".Selected"
                   }
@@ -1276,7 +1276,7 @@
                 },
                 "region": {
                   "charLength": 2,
-                  "charOffset": 452,
+                  "charOffset": 471,
                   "snippet": {
                     "text": "If"
                   }
@@ -1312,10 +1312,10 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 289,
+                  "charLength": 316,
                   "charOffset": 252,
                   "snippet": {
-                    "text": "If(\n                Button2.Selected,\n                \"Initiated\",Color.Blue\n                If(\n                    Button5.Selected,\n                    \"In Progress\",Color.Blue\n                    If(\n                        Button7.Selected,\"Resolved\",Color.Blue \n                    )"
+                    "text": "If(\n                Button2.Selected,\n                \"Initiated\", RGBA(153,207,236,1)\n                If(\n                    Button5.Selected,\n                    \"In Progress\",RGBA(153,207,236,1)\n                    If(\n                        Button7.Selected,\"Resolved\",RGBA(153,207,236,1)\n                    )"
                   }
                 }
               },
