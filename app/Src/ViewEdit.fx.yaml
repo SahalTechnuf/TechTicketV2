@@ -892,12 +892,12 @@
                                 'Issued by': DashAuthor,
                                 Description: DataCardValue19.Text,
                                 'Progress/Status': If(
-                                    Button2.Text = "Initiated", "Initiated",
+                                    Button2.Text = "Initiated", RGBA(153, 207, 236, 1),
                                     If(
-                                        Button5.Text = "In Progress", "In Progress",
+                                        Button5.Text = "In Progress", RGBA(153, 207, 236, 1),
                                         If(
-                                            Button7.Text = "Resolved", "Resolved",
-                                            ""
+                                            Button7.Text = "Resolved", RGBA(153, 207, 236, 1),
+                                            RGBA(255, 255, 255, 1)
                                         )
                                     )
                                 ),

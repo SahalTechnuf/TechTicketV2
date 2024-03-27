@@ -423,10 +423,10 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 640,
+                  "charLength": 692,
                   "charOffset": 0,
                   "snippet": {
-                    "text": "Patch ('Work Progress Tracker', LookUp(\n        'Work Progress Tracker',  \n        ID = selectedItem.ID),\n    {\n        Title: DataCardValue17.Text,\n        'Issued by': DashAuthor,\n        Description: DataCardValue19.Text,\n        'Progress/Status': If(\n            Button2.Text = \"Initiated\", \"Initiated\",\n            If(\n                Button5.Text = \"In Progress\", \"In Progress\",\n                If(\n                    Button7.Text = \"Resolved\", \"Resolved\",\n                    \"\"\n                )\n            )\n        ),\n        'Image (Optional)': Image5.Image,\n        'Issue Date and Time': Now()\n        \n        \n    \n    }\n)"
+                    "text": "Patch ('Work Progress Tracker', LookUp(\n        'Work Progress Tracker',  \n        ID = selectedItem.ID),\n    {\n        Title: DataCardValue17.Text,\n        'Issued by': DashAuthor,\n        Description: DataCardValue19.Text,\n        'Progress/Status': If(\n            Button2.Text = \"Initiated\", RGBA(153, 207, 236, 1),\n            If(\n                Button5.Text = \"In Progress\", RGBA(153, 207, 236, 1),\n                If(\n                    Button7.Text = \"Resolved\", RGBA(153, 207, 236, 1),\n                    RGBA(255, 255, 255, 1)\n                )\n            )\n        ),\n        'Image (Optional)': Image5.Image,\n        'Issue Date and Time': Now()\n        \n        \n    \n    }\n)"
                   }
                 }
               },
@@ -463,10 +463,10 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 528,
+                  "charLength": 580,
                   "charOffset": 110,
                   "snippet": {
-                    "text": "{\n        Title: DataCardValue17.Text,\n        'Issued by': DashAuthor,\n        Description: DataCardValue19.Text,\n        'Progress/Status': If(\n            Button2.Text = \"Initiated\", \"Initiated\",\n            If(\n                Button5.Text = \"In Progress\", \"In Progress\",\n                If(\n                    Button7.Text = \"Resolved\", \"Resolved\",\n                    \"\"\n                )\n            )\n        ),\n        'Image (Optional)': Image5.Image,\n        'Issue Date and Time': Now()\n        \n        \n    \n    }"
+                    "text": "{\n        Title: DataCardValue17.Text,\n        'Issued by': DashAuthor,\n        Description: DataCardValue19.Text,\n        'Progress/Status': If(\n            Button2.Text = \"Initiated\", RGBA(153, 207, 236, 1),\n            If(\n                Button5.Text = \"In Progress\", RGBA(153, 207, 236, 1),\n                If(\n                    Button7.Text = \"Resolved\", RGBA(153, 207, 236, 1),\n                    RGBA(255, 255, 255, 1)\n                )\n            )\n        ),\n        'Image (Optional)': Image5.Image,\n        'Issue Date and Time': Now()\n        \n        \n    \n    }"
                   }
                 }
               },
@@ -481,7 +481,7 @@
             "arguments": [
               "TicketProgress",
               "Record",
-              "Text"
+              "Color"
             ],
             "id": "issue"
           },
@@ -976,17 +976,17 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.ShowNotification"
+                  "fullyQualifiedName": "App.NotificationMessage"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "App.ShowNotification",
+                  "fullyQualifiedName": "App.NotificationMessage",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "ShowNotification",
+                "member": "NotificationMessage",
                 "module": "App",
                 "type": "App"
               }
@@ -1006,17 +1006,17 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.NotificationMessage"
+                  "fullyQualifiedName": "App.ShowNotification"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "App.NotificationMessage",
+                  "fullyQualifiedName": "App.ShowNotification",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "NotificationMessage",
+                "member": "ShowNotification",
                 "module": "App",
                 "type": "App"
               }
