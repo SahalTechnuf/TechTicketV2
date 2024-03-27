@@ -423,10 +423,10 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 692,
+                  "charLength": 854,
                   "charOffset": 0,
                   "snippet": {
-                    "text": "Patch ('Work Progress Tracker', LookUp(\n        'Work Progress Tracker',  \n        ID = selectedItem.ID),\n    {\n        Title: DataCardValue17.Text,\n        'Issued by': DashAuthor,\n        Description: DataCardValue19.Text,\n        'Progress/Status': If(\n            Button2.Text = \"Initiated\", RGBA(153, 207, 236, 1),\n            If(\n                Button5.Text = \"In Progress\", RGBA(153, 207, 236, 1),\n                If(\n                    Button7.Text = \"Resolved\", RGBA(153, 207, 236, 1),\n                    RGBA(255, 255, 255, 1)\n                )\n            )\n        ),\n        'Image (Optional)': Image5.Image,\n        'Issue Date and Time': Now()\n        \n        \n    \n    }\n)"
+                    "text": "Patch ('Work Progress Tracker', LookUp(\n        'Work Progress Tracker',  \n        ID = selectedItem.ID),\n    {\n        Title: DataCardValue17.Text,\n        'Issued by': DashAuthor,\n        Description: DataCardValue19.Text,\n        'Progress/Status': If(\n            Button2.Text = \"Initiated\", {value: \"Initiated\", color: RGBA(153, 207, 236, 1)},\n            If(\n                Button5.Text = \"In Progress\", {value: \"In Progress\", color: RGBA(153, 207, 236, 1)},\n                If(\n                    Button7.Text = \"Resolved\", {value: \"Resolved\", color: RGBA(153, 207, 236, 1)},\n                    {value: \"\", color: RGBA(255, 255, 255, 1)} // Default case when none of the buttons are selected\n                )\n            )\n        ),\n        'Image (Optional)': Image5.Image,\n        'Issue Date and Time': Now()\n        \n        \n    \n    }\n)"
                   }
                 }
               },
@@ -463,10 +463,10 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 580,
+                  "charLength": 742,
                   "charOffset": 110,
                   "snippet": {
-                    "text": "{\n        Title: DataCardValue17.Text,\n        'Issued by': DashAuthor,\n        Description: DataCardValue19.Text,\n        'Progress/Status': If(\n            Button2.Text = \"Initiated\", RGBA(153, 207, 236, 1),\n            If(\n                Button5.Text = \"In Progress\", RGBA(153, 207, 236, 1),\n                If(\n                    Button7.Text = \"Resolved\", RGBA(153, 207, 236, 1),\n                    RGBA(255, 255, 255, 1)\n                )\n            )\n        ),\n        'Image (Optional)': Image5.Image,\n        'Issue Date and Time': Now()\n        \n        \n    \n    }"
+                    "text": "{\n        Title: DataCardValue17.Text,\n        'Issued by': DashAuthor,\n        Description: DataCardValue19.Text,\n        'Progress/Status': If(\n            Button2.Text = \"Initiated\", {value: \"Initiated\", color: RGBA(153, 207, 236, 1)},\n            If(\n                Button5.Text = \"In Progress\", {value: \"In Progress\", color: RGBA(153, 207, 236, 1)},\n                If(\n                    Button7.Text = \"Resolved\", {value: \"Resolved\", color: RGBA(153, 207, 236, 1)},\n                    {value: \"\", color: RGBA(255, 255, 255, 1)} // Default case when none of the buttons are selected\n                )\n            )\n        ),\n        'Image (Optional)': Image5.Image,\n        'Issue Date and Time': Now()\n        \n        \n    \n    }"
                   }
                 }
               },
@@ -479,17 +479,56 @@
           ],
           "message": {
             "arguments": [
-              "TicketProgress",
-              "Record",
-              "Color"
+              "Record"
             ],
             "id": "issue"
           },
           "properties": {
             "level": "High"
           },
-          "ruleId": "app-ErrTypeError-Arg-Expected-Found",
-          "ruleIndex": 5
+          "ruleId": "app-ErrBadSchema-ExpectedType",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ViewEdit.Container11.Container12.ButtonContainer.Button4_1.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ViewEdit.Container11.Container12.ButtonContainer.Button4_1.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 742,
+                  "charOffset": 110,
+                  "snippet": {
+                    "text": "{\n        Title: DataCardValue17.Text,\n        'Issued by': DashAuthor,\n        Description: DataCardValue19.Text,\n        'Progress/Status': If(\n            Button2.Text = \"Initiated\", {value: \"Initiated\", color: RGBA(153, 207, 236, 1)},\n            If(\n                Button5.Text = \"In Progress\", {value: \"In Progress\", color: RGBA(153, 207, 236, 1)},\n                If(\n                    Button7.Text = \"Resolved\", {value: \"Resolved\", color: RGBA(153, 207, 236, 1)},\n                    {value: \"\", color: RGBA(255, 255, 255, 1)} // Default case when none of the buttons are selected\n                )\n            )\n        ),\n        'Image (Optional)': Image5.Image,\n        'Issue Date and Time': Now()\n        \n        \n    \n    }"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "ViewEdit",
+                "type": "ViewEdit.Container11.Container12.ButtonContainer.Button4_1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Value",
+              "Text"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrColumnMissing-ColName-ExpectedType",
+          "ruleIndex": 7
         },
         {
           "locations": [
@@ -519,7 +558,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6
+          "ruleIndex": 8
         },
         {
           "locations": [
@@ -549,7 +588,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6
+          "ruleIndex": 8
         },
         {
           "locations": [
@@ -579,7 +618,7 @@
             "level": "Low"
           },
           "ruleId": "acc-TabOrderShouldBeChecked",
-          "ruleIndex": 7
+          "ruleIndex": 9
         },
         {
           "locations": [
@@ -609,7 +648,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6
+          "ruleIndex": 8
         },
         {
           "locations": [
@@ -639,7 +678,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6
+          "ruleIndex": 8
         },
         {
           "locations": [
@@ -669,7 +708,7 @@
             "level": "Low"
           },
           "ruleId": "acc-TabOrderShouldBeChecked",
-          "ruleIndex": 7
+          "ruleIndex": 9
         },
         {
           "locations": [
@@ -699,7 +738,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6
+          "ruleIndex": 8
         },
         {
           "locations": [
@@ -729,7 +768,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6
+          "ruleIndex": 8
         },
         {
           "locations": [
@@ -759,7 +798,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6
+          "ruleIndex": 8
         },
         {
           "locations": [
@@ -789,7 +828,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6
+          "ruleIndex": 8
         },
         {
           "locations": [
@@ -819,7 +858,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6
+          "ruleIndex": 8
         },
         {
           "locations": [
@@ -849,7 +888,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 8
+          "ruleIndex": 10
         },
         {
           "locations": [
@@ -879,7 +918,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6
+          "ruleIndex": 8
         },
         {
           "locations": [
@@ -909,7 +948,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6
+          "ruleIndex": 8
         },
         {
           "locations": [
@@ -939,7 +978,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6
+          "ruleIndex": 8
         },
         {
           "locations": [
@@ -969,37 +1008,7 @@
             "level": "Medium"
           },
           "ruleId": "app-UnusedVariables",
-          "ruleIndex": 9
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "App.NotificationMessage"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "App.NotificationMessage",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "NotificationMessage",
-                "module": "App",
-                "type": "App"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 9
+          "ruleIndex": 11
         },
         {
           "locations": [
@@ -1029,7 +1038,37 @@
             "level": "Medium"
           },
           "ruleId": "app-UnusedVariables",
-          "ruleIndex": 9
+          "ruleIndex": 11
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "App.NotificationMessage"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.NotificationMessage",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "NotificationMessage",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 11
         },
         {
           "locations": [
@@ -1059,7 +1098,7 @@
             "level": "Medium"
           },
           "ruleId": "app-UnusedMediaResources",
-          "ruleIndex": 10
+          "ruleIndex": 12
         },
         {
           "locations": [
@@ -1089,7 +1128,7 @@
             "level": "Medium"
           },
           "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 11
+          "ruleIndex": 13
         }
       ],
       "tool": {
@@ -1188,6 +1227,37 @@
               },
               "properties": {
                 "componentType": "app",
+                "level": "High",
+                "primaryCategory": "formula",
+                "whyFix": ""
+              }
+            },
+            {
+              "id": "app-ErrBadSchema-ExpectedType",
+              "messageStrings": {
+                "issue": {
+                  "text": "Invalid argument type. Expecting a {0} value, but of a different schema."
+                }
+              },
+              "properties": {
+                "componentType": "app",
+                "level": "High",
+                "primaryCategory": "formula",
+                "whyFix": ""
+              }
+            },
+            {
+              "id": "app-ErrColumnMissing-ColName-ExpectedType",
+              "messageStrings": {
+                "issue": {
+                  "text": "Missing column. Your formula is missing a column '{0}' with a type of '{1}'."
+                }
+              },
+              "properties": {
+                "componentType": "app",
+                "howToFix": [
+                  "Add a column to your formula."
+                ],
                 "level": "High",
                 "primaryCategory": "formula",
                 "whyFix": ""
