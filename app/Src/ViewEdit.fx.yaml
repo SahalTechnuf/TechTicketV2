@@ -442,7 +442,7 @@
                         HoverColor: =RGBA(255, 255, 255, 1)
                         HoverFill: =ColorFade(RGBA(135, 100, 184, 1), -10%)
                         OnSelect: |-
-                            =Patch('Work Progress Tracker', LookUp('Work Progress Tracker', ID = Parent.selectedItem.ID ), {'Progress/Status': "In Progress"})
+                            =If( Button7.Text = "Resolved", { value: "Resolved", color: RGBA(0, 0, 255, 1) }
                         PressedBorderColor: =ColorFade(RGBA(135, 100, 184, 1), -50%)
                         PressedColor: =RGBA(255, 255, 255, 1)
                         PressedFill: =ColorFade(RGBA(135, 100, 184, 1), -30%)
@@ -893,13 +893,13 @@
                                 Description: DataCardValue19.Text,
                                 'Progress/Status': 
                                     If(
-                                        Button2.Text: "Initiated",
+                                        Button2.Text = "Initiated",
                                         { value: "Initiated", color: RGBA(0, 0, 255, 1) },
                                         If(
-                                            Button5.Text: "In Progress",
+                                            Button5.Text = "In Progress",
                                             { value: "In Progress", color: RGBA(0, 0, 255, 1) },
                                             If(
-                                                Button7.Text: "Resolved",
+                                                Button7.Text = "Resolved",
                                                 { value: "Resolved", color: RGBA(0, 0, 255, 1) },
                                                 Parent.Default // Use the existing status if none of the buttons are selected
                                             )
