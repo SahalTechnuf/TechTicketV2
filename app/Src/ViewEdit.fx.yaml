@@ -406,7 +406,7 @@
                         BorderColor: =RGBA(0, 0, 0, 0)
                         Color: |-
                             =If(
-                                DashTicketsADMIN.Selected.'Progress/Status'.Value = "Initiated",
+                                DashTicketsADMIN.Selected.'Progress/Status'.Value = "In Progress",
                                 Color.Blue,Color.Black
                             )
                         DisabledBorderColor: =RGBA(0, 0, 0, 0)
