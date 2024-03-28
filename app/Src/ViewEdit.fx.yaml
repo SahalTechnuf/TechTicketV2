@@ -372,7 +372,7 @@
 
                     Button2 As button:
                         BorderColor: =RGBA(0, 0, 0, 0)
-                        Color: =If(selectedItem.'Progress/Status'.Value = "Initiated", RGBA(153,207,236,1), RGBA(255, 255, 255, 1))
+                        Color: =If(selectedItem.'Progress/Status'.Value = "Initiated", RGBA(50,86,160,1), RGBA(255, 255, 255, 1))
                         DisabledBorderColor: =RGBA(0, 0, 0, 0)
                         DisabledColor: =RGBA(166, 166, 166, 1)
                         DisabledFill: =RGBA(244, 244, 244, 1)
@@ -901,7 +901,6 @@
                                             If(
                                                 Button7.Text = "Resolved",
                                                 { value: "Resolved", color: RGBA(0, 0, 255, 1) },
-                                                Parent.Default // Use the existing status if none of the buttons are selected
                                             )
                                         )
                                     ),
