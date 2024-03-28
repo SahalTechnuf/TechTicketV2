@@ -445,7 +445,7 @@
                         DisabledBorderColor: =RGBA(0, 0, 0, 0)
                         DisabledColor: =RGBA(166, 166, 166, 1)
                         DisabledFill: =RGBA(244, 244, 244, 1)
-                        Fill: =If(selectedItem.'Progress/Status'.Value = "Resolved", RGBA(0, 255, 0, 1), RGBA(255, 255, 255, 1))
+                        Fill: =RGBA(255, 255, 255, 1)
                         FocusedBorderColor: =ColorFade(Self.Fill, -75%)
                         Font: =Font.'Segoe UI'
                         FontWeight: =FontWeight.Semibold
