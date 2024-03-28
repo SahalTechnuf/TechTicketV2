@@ -1240,6 +1240,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "ViewEdit.Button1Color"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ViewEdit.Button1Color",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Button1Color",
+                "module": "ViewEdit",
+                "type": "ViewEdit"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 12
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "ViewEdit.Container11.Container12.Form5.'Image (Optional)_DataCard4'.Image5.Image"
                 }
               ],
