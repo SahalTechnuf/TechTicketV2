@@ -385,7 +385,9 @@
                         HoverColor: =RGBA(255, 255, 255, 1)
                         HoverFill: =ColorFade(RGBA(135, 100, 184, 1), -10%)
                         OnSelect: |-
-                            =If(selectedItem.'Progress/Status'.Value = "Initiated",{value:"Initiated",color:RGBA(0,0,255,1)})
+                            =Set(selectedStatus, "Initiated" );
+                            
+                            Patch('Work Progress Tracker', LookUp('Work Progress Tracker', ID = Value(Label4.Text)), {'Progress/Status': {Value: selectedStatus }})
                         PressedBorderColor: =ColorFade(RGBA(135, 100, 184, 1), -50%)
                         PressedColor: =RGBA(255, 255, 255, 1)
                         PressedFill: =ColorFade(RGBA(135, 100, 184, 1), -30%)
@@ -413,7 +415,10 @@
                         HoverBorderColor: =RGBA(0, 0, 0, 0)
                         HoverColor: =RGBA(255, 255, 255, 1)
                         HoverFill: =ColorFade(RGBA(135, 100, 184, 1), -10%)
-                        OnSelect: =If( Button2.Text = "In Progress", RGBA(0, 0, 255, 1),Color.Black)
+                        OnSelect: |-
+                            =Set(selectedStatus, "In Progress" );
+                            
+                            Patch('Work Progress Tracker', LookUp('Work Progress Tracker', ID = Value(Label4.Text)), {'Progress/Status': {Value: selectedStatus }})
                         PressedBorderColor: =ColorFade(RGBA(135, 100, 184, 1), -50%)
                         PressedColor: =RGBA(255, 255, 255, 1)
                         PressedFill: =ColorFade(RGBA(135, 100, 184, 1), -30%)
@@ -443,7 +448,9 @@
                         HoverColor: =RGBA(255, 255, 255, 1)
                         HoverFill: =ColorFade(RGBA(135, 100, 184, 1), -10%)
                         OnSelect: |-
-                            =If( selectedItem.'Progress/Status'.Value = "Resolved", { value: "Resolved", color: RGBA(0, 0, 255, 1) })
+                            =Set(selectedStatus, "Resolved" );
+                            
+                            Patch('Work Progress Tracker', LookUp('Work Progress Tracker', ID = Value(Label4.Text)), {'Progress/Status': {Value: selectedStatus }})
                         PressedBorderColor: =ColorFade(RGBA(135, 100, 184, 1), -50%)
                         PressedColor: =RGBA(255, 255, 255, 1)
                         PressedFill: =ColorFade(RGBA(135, 100, 184, 1), -30%)
