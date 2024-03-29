@@ -136,8 +136,8 @@
   },
   "ScreenOrder": [
     "Dashboard",
-    "DashboardADMIN",
     "ViewEdit",
-    "NewTicket"
+    "NewTicket",
+    "DashboardADMIN"
   ]
 }
