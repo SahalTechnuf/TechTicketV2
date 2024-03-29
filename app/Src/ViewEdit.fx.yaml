@@ -372,11 +372,7 @@
 
                     Button2 As button:
                         BorderColor: =RGBA(0, 0, 0, 0)
-                        Color: |-
-                            =If(
-                                DashTicketsADMIN.Selected.'Progress/Status'.Value = "Initiated",
-                                Color.Blue,Color.Black
-                            )
+                        Color: =Color.Black
                         DisabledBorderColor: =RGBA(0, 0, 0, 0)
                         DisabledColor: =RGBA(166, 166, 166, 1)
                         DisabledFill: =RGBA(244, 244, 244, 1)
@@ -405,15 +401,11 @@
 
                     Button5 As button:
                         BorderColor: =RGBA(0, 0, 0, 0)
-                        Color: |-
-                            =If(
-                                DashTicketsADMIN.Selected.'Progress/Status'.Value = "In Progress",
-                                Color.Blue,Color.Black
-                            )
+                        Color: =Color.Black
                         DisabledBorderColor: =RGBA(0, 0, 0, 0)
                         DisabledColor: =RGBA(166, 166, 166, 1)
                         DisabledFill: =RGBA(244, 244, 244, 1)
-                        Fill: =RGBA(255, 255, 255, 1)
+                        Fill: =If(ThisItem.'Progress/Status'.Value = "In Progress", RGBA(0, 255, 0, 1), RGBA(255, 255, 255, 1))
                         FocusedBorderColor: =ColorFade(Self.Fill, -75%)
                         Font: =Font.'Segoe UI'
                         FontWeight: =FontWeight.Semibold
@@ -438,15 +430,11 @@
 
                     Button7 As button:
                         BorderColor: =RGBA(0, 0, 0, 0)
-                        Color: |-
-                            =If(
-                                DashTicketsADMIN.Selected.'Progress/Status'.Value = "Resolved",
-                                Color.Blue,Color.Black
-                            )
+                        Color: =Color.Black
                         DisabledBorderColor: =RGBA(0, 0, 0, 0)
                         DisabledColor: =RGBA(166, 166, 166, 1)
                         DisabledFill: =RGBA(244, 244, 244, 1)
-                        Fill: =RGBA(255, 255, 255, 1)
+                        Fill: =If(ThisItem.'Progress/Status'.Value = "Resolved", RGBA(0, 255, 0, 1), RGBA(255, 255, 255, 1))
                         FocusedBorderColor: =ColorFade(Self.Fill, -75%)
                         Font: =Font.'Segoe UI'
                         FontWeight: =FontWeight.Semibold
