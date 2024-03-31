@@ -372,16 +372,13 @@
 
                     Button2 As button:
                         BorderColor: =RGBA(0, 0, 0, 0)
-                        Color: =RGBA(0, 0, 0, 1)
+                        Color: =Button2Color
                         DisabledBorderColor: =RGBA(0, 0, 0, 0)
                         DisabledColor: =RGBA(166, 166, 166, 1)
                         DisabledFill: =RGBA(244, 244, 244, 1)
-                        Fill: |-
+                        Fill: |+
                             =If(selectedItem.'Progress/Status'.Value = "Initiated", RGBA(0, 255, 0, 1), RGBA(255, 255, 255, 1))
                             
-                            UpdateContext({Button2: RGBA(0, 255, 0, 1)});
-                            UpdateContext({Button5: RGBA(0, 0, 0, 1)});
-                            UpdateContext({Button7: RGBA(0, 0, 0, 1)});
                         FocusedBorderColor: =ColorFade(Self.Fill, -75%)
                         Font: =Font.'Segoe UI'
                         FontWeight: =FontWeight.Semibold
@@ -390,11 +387,11 @@
                         HoverColor: =RGBA(255, 255, 255, 1)
                         HoverFill: =ColorFade(RGBA(135, 100, 184, 1), -10%)
                         OnSelect: |-
-                            =Set(selectedStatus, "Initiated" );
-                            
-                            
-                            
-                            Patch('Work Progress Tracker', LookUp('Work Progress Tracker', ID = Value(Label4.Text)), {'Progress/Status': {Value: selectedStatus }})
+                            =Set(selectedStatus, "Initiated");
+                            Set(Button2Color, Color.Green);
+                            Set(Button5Color, Color.Gray);
+                            Set(Button7Color, Color.Gray);
+                            Patch('Work Progress Tracker', LookUp('Work Progress Tracker', ID = Value(Label4.Text)), {'Progress/Status': {Value: selectedStatus}})
                         PressedBorderColor: =ColorFade(RGBA(135, 100, 184, 1), -50%)
                         PressedColor: =RGBA(255, 255, 255, 1)
                         PressedFill: =ColorFade(RGBA(135, 100, 184, 1), -30%)
@@ -410,11 +407,13 @@
 
                     Button5 As button:
                         BorderColor: =RGBA(0, 0, 0, 0)
-                        Color: =Color.Black
+                        Color: =Button5Color
                         DisabledBorderColor: =RGBA(0, 0, 0, 0)
                         DisabledColor: =RGBA(166, 166, 166, 1)
                         DisabledFill: =RGBA(244, 244, 244, 1)
-                        Fill: =If(selectedItem.'Progress/Status'.Value = "In Progress", RGBA(0, 255, 0, 1), RGBA(255, 255, 255, 1))
+                        Fill: |-
+                            =
+                            If(selectedItem.'Progress/Status'.Value = "In Progress", RGBA(0, 255, 0, 1), RGBA(255, 255, 255, 1))
                         FocusedBorderColor: =ColorFade(Self.Fill, -75%)
                         Font: =Font.'Segoe UI'
                         FontWeight: =FontWeight.Semibold
@@ -424,10 +423,10 @@
                         HoverFill: =ColorFade(RGBA(135, 100, 184, 1), -10%)
                         OnSelect: |-
                             =Set(selectedStatus, "In Progress" );
+                            Set(Button2Color, Color.Gray);
+                            Set(Button5Color, Color.Green);
+                            Set(Button7Color, Color.Gray);
                             
-                            UpdateContext({Button2: RGBA(0, 0, 0, 1)});
-                            UpdateContext({Button5: RGBA(0, 255, 0, 1)});
-                            UpdateContext({Button7: RGBA(0, 0, 0, 1)});
                             
                             
                             Patch('Work Progress Tracker', LookUp('Work Progress Tracker', ID = Value(Label4.Text)), {'Progress/Status': {Value: selectedStatus }})
@@ -441,13 +440,13 @@
                         Size: =24
                         Text: ="In Progress"
                         Width: =180
-                        X: =223
+                        X: =210
                         Y: =62
                         ZIndex: =6
 
                     Button7 As button:
                         BorderColor: =RGBA(0, 0, 0, 0)
-                        Color: =Color.Black
+                        Color: =Button7Color
                         DisabledBorderColor: =RGBA(0, 0, 0, 0)
                         DisabledColor: =RGBA(166, 166, 166, 1)
                         DisabledFill: =RGBA(244, 244, 244, 1)
@@ -461,9 +460,10 @@
                         HoverFill: =ColorFade(RGBA(135, 100, 184, 1), -10%)
                         OnSelect: |-
                             =Set(selectedStatus, "Resolved" );
-                            UpdateContext({Button2: RGBA(0, 0, 0, 1)});
-                            UpdateContext({Button5: RGBA(0, 0, 0, 1)});
-                            UpdateContext({Button7: RGBA(0, 255, 0, 1)});
+                            Set(Button2Color, Color.Gray);
+                            Set(Button5Color, Color.Gray);
+                            Set(Button7Color, Color.Green);
+                            
                             
                             
                             Set(selectedColor, If(selectedItem.'Color Tag' = "In Progress", Color.Blue,If(selectedItem.'Color Tag' = "Initiated",Color.Blue)));
