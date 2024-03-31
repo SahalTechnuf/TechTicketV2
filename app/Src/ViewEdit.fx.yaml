@@ -453,8 +453,9 @@
                         Fill: |
                             =ColorFade(
                                 If(
-                                    selectedItem.'Progress/Status'.Value = "Resolved",
-                                    RGBA(0, 255, 0, 1),
+                                    selectedItem.'Progress/Status'.Value = "Resolved",RGBA(0, 255, 0, 1),
+                                    selectedItem.'Progress/Status'.Value = "Initiated",RGBA(0, 255, 0, 1),
+                                    selectedItem.'Progress/Status'.Value= "In Progress",RGBA(0, 255, 0, 1),
                                     RGBA(255, 255, 255, 1)
                                 ),
                                 0.8
