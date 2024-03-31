@@ -171,8 +171,8 @@
             Text: |-
                 =Text(ThisItem.'Issue Date and Time',    "mm/dd/yyyy        hh:mm AM/PM")
             Width: =378
-            X: =207
-            Y: =126
+            X: =217
+            Y: =116
             ZIndex: =7
 
         Image As image:
