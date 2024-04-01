@@ -752,7 +752,7 @@
                                 Title: DataCardValue16.Selected.Title,
                                 Description: DataCardValue13.Text,
                                 'Image (Optional)': Image4.Image,
-                                'Progress/Status': DataCardValue1.Selected,
+                                'Progress/Status': {Value: selectedStatus},
                                 'Issue Date and Time': Now()
                                 
                             }

@@ -440,7 +440,6 @@
                             Set(Button7Color, Color.Gray);
                             
                             
-                            
                             Patch('Work Progress Tracker', LookUp('Work Progress Tracker', ID = Value(Label4.Text)), {'Progress/Status': {Value: selectedStatus }})
                         PressedBorderColor: =ColorFade(RGBA(135, 100, 184, 1), -50%)
                         PressedColor: =RGBA(255, 255, 255, 1)
@@ -475,8 +474,6 @@
                             Set(Button2Color, Color.Gray);
                             Set(Button5Color, Color.Gray);
                             Set(Button7Color, Color.Green);
-                            
-                            
                             
                             Set(selectedColor, If(selectedItem.'Color Tag' = "In Progress", Color.Blue,If(selectedItem.'Color Tag' = "Initiated",Color.Blue)));
                             Patch('Work Progress Tracker', LookUp('Work Progress Tracker', ID = Value(Label4.Text)), {'Progress/Status': {Value: selectedStatus }})
