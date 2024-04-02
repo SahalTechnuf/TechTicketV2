@@ -500,10 +500,10 @@
         OnSelect: =
         Size: =30
         Text: ="No tickets to display"
-        Visible: =If(CountRows('Technuf Ticketing System')= 0,true,false)
+        Visible: =CountRows('Work Progress Tracker') = 0 
         Width: =560
         X: =40
-        Y: =806
+        Y: =776
         ZIndex: =14
 
     Label6 As label:
