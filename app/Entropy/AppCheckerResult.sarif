@@ -24,7 +24,7 @@
                 },
                 "region": {
                   "charLength": 34,
-                  "charOffset": 0,
+                  "charOffset": 3,
                   "snippet": {
                     "text": "CountRows('Work Progress Tracker')"
                   }

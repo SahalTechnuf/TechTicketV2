@@ -492,6 +492,7 @@
         Color: =RGBA(149, 149, 149, 1)
         DisabledBorderColor: =RGBA(0, 0, 0, 0)
         DisabledColor: =RGBA(166, 166, 166, 1)
+        DisplayMode: =DisplayMode.View
         FocusedBorderThickness: =4
         Font: =Font.'Segoe UI'
         FontWeight: =FontWeight.Bold
@@ -499,7 +500,7 @@
         OnSelect: =
         Size: =30
         Text: ="No tickets to display"
-        Visible: =CountRows('Work Progress Tracker') = 0
+        Visible: =If(CountRows('Work Progress Tracker') = 0, true, false)
         Width: =560
         X: =40
         Y: =806
@@ -513,6 +514,7 @@
         Color: =RGBA(219, 219, 219, 1)
         DisabledBorderColor: =RGBA(0, 0, 0, 0)
         DisabledColor: =RGBA(166, 166, 166, 1)
+        DisplayMode: =DisplayMode.View
         FocusedBorderThickness: =4
         Font: =Font.'Segoe UI'
         FontWeight: =FontWeight.Semibold
