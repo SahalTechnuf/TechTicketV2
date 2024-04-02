@@ -502,6 +502,7 @@
         Height: =70
         Size: =21
         Text: ="Please create your first ticket below"
+        Visible: =CountRows('Work Progress Tracker') = 0 
         Width: =560
         X: =35
         Y: =920
@@ -540,6 +541,7 @@
         Image: =Picture1
         PressedBorderColor: =RGBA(0, 0, 0, 0)
         PressedFill: =RGBA(0, 0, 0, 0)
+        Visible: =CountRows('Work Progress Tracker') = 0 
         Width: =320
         X: =153
         Y: =584
