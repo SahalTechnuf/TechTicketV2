@@ -523,7 +523,7 @@
         Text: ="Please create your first ticket below "
         Visible: =CountRows('Work Progress Tracker') = 0
         Width: =640
-        Y: =863
+        Y: =833
         ZIndex: =15
 
     Image2 As image:
