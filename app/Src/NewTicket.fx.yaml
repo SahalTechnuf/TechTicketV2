@@ -237,7 +237,7 @@
                         Fill: =RGBA(0, 0, 0, 0)
                         Height: =985
                         Required: =false
-                        Update: =DataCardValue1.Selected
+                        Update: =
                         Width: =640
                         X: =0
                         Y: =3
@@ -319,7 +319,7 @@
                             Fill: |-
                                 =ColorFade(
                                     If(
-                                        selectedItem.'Progress/Status'.Value = "Initiated",
+                                        selectedItem.Progress_x002f_Status.Value = "Initiated",
                                         RGBA( 0,255,0,1),
                                         RGBA(255,255,255,1)
                                     ),
@@ -360,7 +360,7 @@
                             Fill: |-
                                 =ColorFade(
                                     If(
-                                        selectedItem.'Progress/Status'.Value = "In Progress",
+                                        selectedItem.Progress_x002f_Status.Value = "In Progress",
                                         RGBA( 0,255,0,1),
                                         RGBA(255,255,255,1)
                                     ),
@@ -402,7 +402,7 @@
                             DisabledBorderColor: =RGBA(0, 0, 0, 0)
                             DisabledColor: =RGBA(166, 166, 166, 1)
                             DisabledFill: =RGBA(244, 244, 244, 1)
-                            Fill: =ColorFade(If(selectedItem.'Progress/Status'.Value="Resolved",RGBA(0,255,0,1),RGBA(255,255,255,1)),0.8)
+                            Fill: =ColorFade(If(selectedItem.Progress_x002f_Status.Value="Resolved",RGBA(0,255,0,1),RGBA(255,255,255,1)),0.8)
                             FocusedBorderColor: =ColorFade(Self.Fill, -75%)
                             Font: =Font.'Segoe UI'
                             FontWeight: =FontWeight.Semibold
@@ -418,7 +418,7 @@
                                 
                                 
                                 
-                                Set(selectedColor, If(selectedItem.'Color Tag' = "In Progress", Color.Blue,If(selectedItem.'Color Tag' = "Initiated",Color.Blue)));
+                                Set(selectedColor, If(selectedItem.OData__ColorTag = "In Progress", Color.Blue,If(selectedItem.OData__ColorTag = "Initiated",Color.Blue)));
                                 Patch('Work Progress Tracker', LookUp('Work Progress Tracker', ID = Value(Label4.Text)), {'Progress/Status': {Value: selectedStatus }})
                             PressedBorderColor: =ColorFade(RGBA(135, 100, 184, 1), -50%)
                             PressedColor: =RGBA(255, 255, 255, 1)

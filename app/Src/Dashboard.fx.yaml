@@ -254,7 +254,7 @@
             LineHeight: =1
             OnSelect: =Select(Parent)
             Size: =17
-            Text: =ThisItem.'Issued by'.Email
+            Text: =ThisItem.'Issued By'.Email
             Width: =320
             X: =236
             Y: =87
@@ -273,7 +273,7 @@
             LineHeight: =1
             OnSelect: =Select(Parent)
             Size: =17
-            Text: =ThisItem.'Issued by'.DisplayName
+            Text: =ThisItem.'Issued By'.DisplayName
             Width: =200
             X: =280
             Y: =53
@@ -539,6 +539,7 @@
         Image: =Picture1
         PressedBorderColor: =RGBA(0, 0, 0, 0)
         PressedFill: =RGBA(0, 0, 0, 0)
+        Visible: =false
         Width: =326
         X: =160
         Y: =570

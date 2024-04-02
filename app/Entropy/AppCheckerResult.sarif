@@ -214,160 +214,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Dashboard.DashTickets.DashAuthor_1.Text"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Dashboard.DashTickets.DashAuthor_1.Text",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 12,
-                  "charOffset": 8,
-                  "snippet": {
-                    "text": ".'Issued by'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Text",
-                "module": "Dashboard",
-                "type": "Dashboard.DashTickets.DashAuthor_1"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Issued by"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Dashboard.DashTickets.DashAuthor_1.Text"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Dashboard.DashTickets.DashAuthor_1.Text",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 12,
-                  "charOffset": 20,
-                  "snippet": {
-                    "text": ".DisplayName"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Text",
-                "module": "Dashboard",
-                "type": "Dashboard.DashTickets.DashAuthor_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Dashboard.DashTickets.DashEmail_1.Text"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Dashboard.DashTickets.DashEmail_1.Text",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 12,
-                  "charOffset": 8,
-                  "snippet": {
-                    "text": ".'Issued by'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Text",
-                "module": "Dashboard",
-                "type": "Dashboard.DashTickets.DashEmail_1"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Issued by"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Dashboard.DashTickets.DashEmail_1.Text"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Dashboard.DashTickets.DashEmail_1.Text",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 6,
-                  "charOffset": 20,
-                  "snippet": {
-                    "text": ".Email"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Text",
-                "module": "Dashboard",
-                "type": "Dashboard.DashTickets.DashEmail_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "Dashboard.Label5.Visible"
                 }
               ],
@@ -401,7 +247,7 @@
             "level": "Medium"
           },
           "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByService",
-          "ruleIndex": 3
+          "ruleIndex": 1
         },
         {
           "locations": [
@@ -441,1390 +287,7 @@
             "level": "Medium"
           },
           "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByService",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "NewTicket.Container1.Container2.MainForm.Form3.'Progress/Status_DataCard1'.Update"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "NewTicket.Container1.Container2.MainForm.Form3.'Progress/Status_DataCard1'.Update",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 14,
-                  "charOffset": 0,
-                  "snippet": {
-                    "text": "DataCardValue1"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Update",
-                "module": "NewTicket",
-                "type": "NewTicket.Container1.Container2.MainForm.Form3.'Progress/Status_DataCard1'"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "DataCardValue1"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
           "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "NewTicket.Container1.Container2.MainForm.Form3.'Progress/Status_DataCard1'.Update"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "NewTicket.Container1.Container2.MainForm.Form3.'Progress/Status_DataCard1'.Update",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 9,
-                  "charOffset": 14,
-                  "snippet": {
-                    "text": ".Selected"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Update",
-                "module": "NewTicket",
-                "type": "NewTicket.Container1.Container2.MainForm.Form3.'Progress/Status_DataCard1'"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "NewTicket.Container1.Container2.MainForm.Form3.'Progress/Status_DataCard1'.Button2_1.Fill"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "NewTicket.Container1.Container2.MainForm.Form3.'Progress/Status_DataCard1'.Button2_1.Fill",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 18,
-                  "charOffset": 39,
-                  "snippet": {
-                    "text": ".'Progress/Status'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Fill",
-                "module": "NewTicket",
-                "type": "NewTicket.Container1.Container2.MainForm.Form3.'Progress/Status_DataCard1'.Button2_1"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Progress/Status"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "NewTicket.Container1.Container2.MainForm.Form3.'Progress/Status_DataCard1'.Button2_1.Fill"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "NewTicket.Container1.Container2.MainForm.Form3.'Progress/Status_DataCard1'.Button2_1.Fill",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 6,
-                  "charOffset": 57,
-                  "snippet": {
-                    "text": ".Value"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Fill",
-                "module": "NewTicket",
-                "type": "NewTicket.Container1.Container2.MainForm.Form3.'Progress/Status_DataCard1'.Button2_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "NewTicket.Container1.Container2.MainForm.Form3.'Progress/Status_DataCard1'.Button2_1.Fill"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "NewTicket.Container1.Container2.MainForm.Form3.'Progress/Status_DataCard1'.Button2_1.Fill",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 1,
-                  "charOffset": 64,
-                  "snippet": {
-                    "text": "="
-                  }
-                }
-              },
-              "properties": {
-                "member": "Fill",
-                "module": "NewTicket",
-                "type": "NewTicket.Container1.Container2.MainForm.Form3.'Progress/Status_DataCard1'.Button2_1"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Error",
-              "Text"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "NewTicket.Container1.Container2.MainForm.Form3.'Progress/Status_DataCard1'.Button7_1.Fill"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "NewTicket.Container1.Container2.MainForm.Form3.'Progress/Status_DataCard1'.Button7_1.Fill",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 18,
-                  "charOffset": 25,
-                  "snippet": {
-                    "text": ".'Progress/Status'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Fill",
-                "module": "NewTicket",
-                "type": "NewTicket.Container1.Container2.MainForm.Form3.'Progress/Status_DataCard1'.Button7_1"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Progress/Status"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "NewTicket.Container1.Container2.MainForm.Form3.'Progress/Status_DataCard1'.Button7_1.Fill"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "NewTicket.Container1.Container2.MainForm.Form3.'Progress/Status_DataCard1'.Button7_1.Fill",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 6,
-                  "charOffset": 43,
-                  "snippet": {
-                    "text": ".Value"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Fill",
-                "module": "NewTicket",
-                "type": "NewTicket.Container1.Container2.MainForm.Form3.'Progress/Status_DataCard1'.Button7_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "NewTicket.Container1.Container2.MainForm.Form3.'Progress/Status_DataCard1'.Button7_1.Fill"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "NewTicket.Container1.Container2.MainForm.Form3.'Progress/Status_DataCard1'.Button7_1.Fill",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 1,
-                  "charOffset": 49,
-                  "snippet": {
-                    "text": "="
-                  }
-                }
-              },
-              "properties": {
-                "member": "Fill",
-                "module": "NewTicket",
-                "type": "NewTicket.Container1.Container2.MainForm.Form3.'Progress/Status_DataCard1'.Button7_1"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Error",
-              "Text"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "NewTicket.Container1.Container2.MainForm.Form3.'Progress/Status_DataCard1'.Button7_1.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "NewTicket.Container1.Container2.MainForm.Form3.'Progress/Status_DataCard1'.Button7_1.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 12,
-                  "charOffset": 165,
-                  "snippet": {
-                    "text": ".'Color Tag'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "NewTicket",
-                "type": "NewTicket.Container1.Container2.MainForm.Form3.'Progress/Status_DataCard1'.Button7_1"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Color Tag"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "NewTicket.Container1.Container2.MainForm.Form3.'Progress/Status_DataCard1'.Button7_1.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "NewTicket.Container1.Container2.MainForm.Form3.'Progress/Status_DataCard1'.Button7_1.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 1,
-                  "charOffset": 178,
-                  "snippet": {
-                    "text": "="
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "NewTicket",
-                "type": "NewTicket.Container1.Container2.MainForm.Form3.'Progress/Status_DataCard1'.Button7_1"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Error",
-              "Text"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "NewTicket.Container1.Container2.MainForm.Form3.'Progress/Status_DataCard1'.Button7_1.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "NewTicket.Container1.Container2.MainForm.Form3.'Progress/Status_DataCard1'.Button7_1.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 12,
-                  "charOffset": 221,
-                  "snippet": {
-                    "text": ".'Color Tag'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "NewTicket",
-                "type": "NewTicket.Container1.Container2.MainForm.Form3.'Progress/Status_DataCard1'.Button7_1"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Color Tag"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "NewTicket.Container1.Container2.MainForm.Form3.'Progress/Status_DataCard1'.Button7_1.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "NewTicket.Container1.Container2.MainForm.Form3.'Progress/Status_DataCard1'.Button7_1.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 1,
-                  "charOffset": 234,
-                  "snippet": {
-                    "text": "="
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "NewTicket",
-                "type": "NewTicket.Container1.Container2.MainForm.Form3.'Progress/Status_DataCard1'.Button7_1"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Error",
-              "Text"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "NewTicket.Container1.Container2.MainForm.Form3.'Progress/Status_DataCard1'.Button5_1.Fill"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "NewTicket.Container1.Container2.MainForm.Form3.'Progress/Status_DataCard1'.Button5_1.Fill",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 18,
-                  "charOffset": 39,
-                  "snippet": {
-                    "text": ".'Progress/Status'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Fill",
-                "module": "NewTicket",
-                "type": "NewTicket.Container1.Container2.MainForm.Form3.'Progress/Status_DataCard1'.Button5_1"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Progress/Status"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "NewTicket.Container1.Container2.MainForm.Form3.'Progress/Status_DataCard1'.Button5_1.Fill"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "NewTicket.Container1.Container2.MainForm.Form3.'Progress/Status_DataCard1'.Button5_1.Fill",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 6,
-                  "charOffset": 57,
-                  "snippet": {
-                    "text": ".Value"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Fill",
-                "module": "NewTicket",
-                "type": "NewTicket.Container1.Container2.MainForm.Form3.'Progress/Status_DataCard1'.Button5_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "NewTicket.Container1.Container2.MainForm.Form3.'Progress/Status_DataCard1'.Button5_1.Fill"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "NewTicket.Container1.Container2.MainForm.Form3.'Progress/Status_DataCard1'.Button5_1.Fill",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 1,
-                  "charOffset": 64,
-                  "snippet": {
-                    "text": "="
-                  }
-                }
-              },
-              "properties": {
-                "member": "Fill",
-                "module": "NewTicket",
-                "type": "NewTicket.Container1.Container2.MainForm.Form3.'Progress/Status_DataCard1'.Button5_1"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Error",
-              "Text"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "ViewEdit.Container11.Container12.Container3.CreatedInfo.CreatedContent.Text"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "ViewEdit.Container11.Container12.Container3.CreatedInfo.CreatedContent.Text",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 22,
-                  "charOffset": 17,
-                  "snippet": {
-                    "text": ".'Issue Date and Time'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Text",
-                "module": "ViewEdit",
-                "type": "ViewEdit.Container11.Container12.Container3.CreatedInfo.CreatedContent"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Issue Date and Time"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "ViewEdit.Container11.Container12.Container3.CreatedInfo.CreatedContent.Text"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "ViewEdit.Container11.Container12.Container3.CreatedInfo.CreatedContent.Text",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 40,
-                  "charOffset": 0,
-                  "snippet": {
-                    "text": "Text(selectedItem.'Issue Date and Time')"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Text",
-                "module": "ViewEdit",
-                "type": "ViewEdit.Container11.Container12.Container3.CreatedInfo.CreatedContent"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Text"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidArgs-Func",
-          "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "ViewEdit.Container11.Container12.Container3.UserInfo.UserContent.Text"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "ViewEdit.Container11.Container12.Container3.UserInfo.UserContent.Text",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 12,
-                  "charOffset": 12,
-                  "snippet": {
-                    "text": ".'Issued by'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Text",
-                "module": "ViewEdit",
-                "type": "ViewEdit.Container11.Container12.Container3.UserInfo.UserContent"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Issued by"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "ViewEdit.Container11.Container12.Container3.UserInfo.UserContent.Text"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "ViewEdit.Container11.Container12.Container3.UserInfo.UserContent.Text",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 12,
-                  "charOffset": 24,
-                  "snippet": {
-                    "text": ".DisplayName"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Text",
-                "module": "ViewEdit",
-                "type": "ViewEdit.Container11.Container12.Container3.UserInfo.UserContent"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "ViewEdit.Container11.Container12.Container3.EmailImfo.EmailContent.Text"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "ViewEdit.Container11.Container12.Container3.EmailImfo.EmailContent.Text",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 12,
-                  "charOffset": 12,
-                  "snippet": {
-                    "text": ".'Issued by'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Text",
-                "module": "ViewEdit",
-                "type": "ViewEdit.Container11.Container12.Container3.EmailImfo.EmailContent"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Issued by"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "ViewEdit.Container11.Container12.Container3.EmailImfo.EmailContent.Text"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "ViewEdit.Container11.Container12.Container3.EmailImfo.EmailContent.Text",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 6,
-                  "charOffset": 24,
-                  "snippet": {
-                    "text": ".Email"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Text",
-                "module": "ViewEdit",
-                "type": "ViewEdit.Container11.Container12.Container3.EmailImfo.EmailContent"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "ViewEdit.Container11.Container12.Form5.'Progress/Status_DataCard3'.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "ViewEdit.Container11.Container12.Form5.'Progress/Status_DataCard3'.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 18,
-                  "charOffset": 12,
-                  "snippet": {
-                    "text": ".'Progress/Status'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "ViewEdit",
-                "type": "ViewEdit.Container11.Container12.Form5.'Progress/Status_DataCard3'"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Progress/Status"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "ViewEdit.Container11.Container12.Form5.'Progress/Status_DataCard3'.Button2.Fill"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "ViewEdit.Container11.Container12.Form5.'Progress/Status_DataCard3'.Button2.Fill",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 18,
-                  "charOffset": 39,
-                  "snippet": {
-                    "text": ".'Progress/Status'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Fill",
-                "module": "ViewEdit",
-                "type": "ViewEdit.Container11.Container12.Form5.'Progress/Status_DataCard3'.Button2"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Progress/Status"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "ViewEdit.Container11.Container12.Form5.'Progress/Status_DataCard3'.Button2.Fill"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "ViewEdit.Container11.Container12.Form5.'Progress/Status_DataCard3'.Button2.Fill",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 6,
-                  "charOffset": 57,
-                  "snippet": {
-                    "text": ".Value"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Fill",
-                "module": "ViewEdit",
-                "type": "ViewEdit.Container11.Container12.Form5.'Progress/Status_DataCard3'.Button2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "ViewEdit.Container11.Container12.Form5.'Progress/Status_DataCard3'.Button2.Fill"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "ViewEdit.Container11.Container12.Form5.'Progress/Status_DataCard3'.Button2.Fill",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 1,
-                  "charOffset": 64,
-                  "snippet": {
-                    "text": "="
-                  }
-                }
-              },
-              "properties": {
-                "member": "Fill",
-                "module": "ViewEdit",
-                "type": "ViewEdit.Container11.Container12.Form5.'Progress/Status_DataCard3'.Button2"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Error",
-              "Text"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "ViewEdit.Container11.Container12.Form5.'Progress/Status_DataCard3'.Button7.Fill"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "ViewEdit.Container11.Container12.Form5.'Progress/Status_DataCard3'.Button7.Fill",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 18,
-                  "charOffset": 25,
-                  "snippet": {
-                    "text": ".'Progress/Status'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Fill",
-                "module": "ViewEdit",
-                "type": "ViewEdit.Container11.Container12.Form5.'Progress/Status_DataCard3'.Button7"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Progress/Status"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "ViewEdit.Container11.Container12.Form5.'Progress/Status_DataCard3'.Button7.Fill"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "ViewEdit.Container11.Container12.Form5.'Progress/Status_DataCard3'.Button7.Fill",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 6,
-                  "charOffset": 43,
-                  "snippet": {
-                    "text": ".Value"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Fill",
-                "module": "ViewEdit",
-                "type": "ViewEdit.Container11.Container12.Form5.'Progress/Status_DataCard3'.Button7"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "ViewEdit.Container11.Container12.Form5.'Progress/Status_DataCard3'.Button7.Fill"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "ViewEdit.Container11.Container12.Form5.'Progress/Status_DataCard3'.Button7.Fill",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 1,
-                  "charOffset": 49,
-                  "snippet": {
-                    "text": "="
-                  }
-                }
-              },
-              "properties": {
-                "member": "Fill",
-                "module": "ViewEdit",
-                "type": "ViewEdit.Container11.Container12.Form5.'Progress/Status_DataCard3'.Button7"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Error",
-              "Text"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "ViewEdit.Container11.Container12.Form5.'Progress/Status_DataCard3'.Button7.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "ViewEdit.Container11.Container12.Form5.'Progress/Status_DataCard3'.Button7.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 12,
-                  "charOffset": 163,
-                  "snippet": {
-                    "text": ".'Color Tag'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "ViewEdit",
-                "type": "ViewEdit.Container11.Container12.Form5.'Progress/Status_DataCard3'.Button7"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Color Tag"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "ViewEdit.Container11.Container12.Form5.'Progress/Status_DataCard3'.Button7.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "ViewEdit.Container11.Container12.Form5.'Progress/Status_DataCard3'.Button7.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 1,
-                  "charOffset": 176,
-                  "snippet": {
-                    "text": "="
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "ViewEdit",
-                "type": "ViewEdit.Container11.Container12.Form5.'Progress/Status_DataCard3'.Button7"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Error",
-              "Text"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "ViewEdit.Container11.Container12.Form5.'Progress/Status_DataCard3'.Button7.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "ViewEdit.Container11.Container12.Form5.'Progress/Status_DataCard3'.Button7.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 12,
-                  "charOffset": 219,
-                  "snippet": {
-                    "text": ".'Color Tag'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "ViewEdit",
-                "type": "ViewEdit.Container11.Container12.Form5.'Progress/Status_DataCard3'.Button7"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Color Tag"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "ViewEdit.Container11.Container12.Form5.'Progress/Status_DataCard3'.Button7.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "ViewEdit.Container11.Container12.Form5.'Progress/Status_DataCard3'.Button7.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 1,
-                  "charOffset": 232,
-                  "snippet": {
-                    "text": "="
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "ViewEdit",
-                "type": "ViewEdit.Container11.Container12.Form5.'Progress/Status_DataCard3'.Button7"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Error",
-              "Text"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "ViewEdit.Container11.Container12.Form5.'Progress/Status_DataCard3'.Button5.Fill"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "ViewEdit.Container11.Container12.Form5.'Progress/Status_DataCard3'.Button5.Fill",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 18,
-                  "charOffset": 39,
-                  "snippet": {
-                    "text": ".'Progress/Status'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Fill",
-                "module": "ViewEdit",
-                "type": "ViewEdit.Container11.Container12.Form5.'Progress/Status_DataCard3'.Button5"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Progress/Status"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "ViewEdit.Container11.Container12.Form5.'Progress/Status_DataCard3'.Button5.Fill"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "ViewEdit.Container11.Container12.Form5.'Progress/Status_DataCard3'.Button5.Fill",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 6,
-                  "charOffset": 57,
-                  "snippet": {
-                    "text": ".Value"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Fill",
-                "module": "ViewEdit",
-                "type": "ViewEdit.Container11.Container12.Form5.'Progress/Status_DataCard3'.Button5"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "ViewEdit.Container11.Container12.Form5.'Progress/Status_DataCard3'.Button5.Fill"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "ViewEdit.Container11.Container12.Form5.'Progress/Status_DataCard3'.Button5.Fill",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 1,
-                  "charOffset": 64,
-                  "snippet": {
-                    "text": "="
-                  }
-                }
-              },
-              "properties": {
-                "member": "Fill",
-                "module": "ViewEdit",
-                "type": "ViewEdit.Container11.Container12.Form5.'Progress/Status_DataCard3'.Button5"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Error",
-              "Text"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
-          "ruleIndex": 4
         },
         {
           "locations": [
@@ -1854,7 +317,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -1884,7 +347,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -1914,7 +377,7 @@
             "level": "Low"
           },
           "ruleId": "acc-TabOrderShouldBeChecked",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -1944,7 +407,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -1974,7 +437,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -2004,7 +467,7 @@
             "level": "Low"
           },
           "ruleId": "acc-TabOrderShouldBeChecked",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -2034,7 +497,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -2064,7 +527,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -2094,7 +557,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -2124,7 +587,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -2154,7 +617,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 8
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -2184,7 +647,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -2214,7 +677,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -2244,7 +707,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -2274,7 +737,7 @@
             "level": "Medium"
           },
           "ruleId": "app-UnusedVariables",
-          "ruleIndex": 9
+          "ruleIndex": 5
         },
         {
           "locations": [
@@ -2304,7 +767,7 @@
             "level": "Medium"
           },
           "ruleId": "app-UnusedVariables",
-          "ruleIndex": 9
+          "ruleIndex": 5
         },
         {
           "locations": [
@@ -2334,7 +797,7 @@
             "level": "Medium"
           },
           "ruleId": "app-UnusedVariables",
-          "ruleIndex": 9
+          "ruleIndex": 5
         },
         {
           "locations": [
@@ -2364,7 +827,7 @@
             "level": "Medium"
           },
           "ruleId": "app-UnusedMediaResources",
-          "ruleIndex": 10
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -2394,7 +857,7 @@
             "level": "Medium"
           },
           "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 11
+          "ruleIndex": 7
         },
         {
           "locations": [
@@ -2424,7 +887,7 @@
             "level": "Medium"
           },
           "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 11
+          "ruleIndex": 7
         }
       ],
       "tool": {
@@ -2452,37 +915,6 @@
               }
             },
             {
-              "id": "app-ErrInvalidName",
-              "messageStrings": {
-                "issue": {
-                  "text": "Name isn't valid. '{0}' isn't recognized."
-                }
-              },
-              "properties": {
-                "componentType": "app",
-                "howToFix": [
-                  "Remove or correct the reference to the name that isn't valid."
-                ],
-                "level": "High",
-                "primaryCategory": "formula",
-                "whyFix": ""
-              }
-            },
-            {
-              "id": "app-ErrInvalidDot",
-              "messageStrings": {
-                "issue": {
-                  "text": "Invalid use of '.'"
-                }
-              },
-              "properties": {
-                "componentType": "app",
-                "level": "High",
-                "primaryCategory": "formula",
-                "whyFix": ""
-              }
-            },
-            {
               "id": "app-SuggestRemoteExecutionHint-OpNotSupportedByService",
               "messageStrings": {
                 "issue": {
@@ -2497,38 +929,6 @@
                   "Try moving your data to a different data source."
                 ],
                 "level": "Medium",
-                "primaryCategory": "formula",
-                "whyFix": ""
-              }
-            },
-            {
-              "id": "app-ErrIncompatibleTypesForEquality-Left-Right",
-              "messageStrings": {
-                "issue": {
-                  "text": "Incompatible types for comparison. These types can't be compared: {0}, {1}."
-                }
-              },
-              "properties": {
-                "componentType": "app",
-                "howToFix": [
-                  "You might need to convert the value to be the same type, such as converting a date string (e.g., \"12/31/2018\") to a date value.",
-                  "If you’re comparing records or tables, the field or column types must match exactly."
-                ],
-                "level": "High",
-                "primaryCategory": "formula",
-                "whyFix": ""
-              }
-            },
-            {
-              "id": "app-ErrInvalidArgs-Func",
-              "messageStrings": {
-                "issue": {
-                  "text": "The function '{0}' has some invalid arguments."
-                }
-              },
-              "properties": {
-                "componentType": "app",
-                "level": "High",
                 "primaryCategory": "formula",
                 "whyFix": ""
               }
