@@ -496,8 +496,10 @@
         Font: =Font.'Segoe UI'
         FontWeight: =FontWeight.Bold
         Height: =70
+        OnSelect: =
         Size: =30
         Text: ="No tickets to display"
+        Visible: =CountRows('Work Progress Tracker') = 0
         Width: =560
         X: =40
         Y: =806
