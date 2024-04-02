@@ -522,7 +522,7 @@
         Height: =70
         Size: =30
         Text: ="No tickets to display"
-        Visible: =CountRows('Work Progress Tracker') = 0 
+        Visible: =CountRows('Technuf Ticketing System') = 0 
         Width: =560
         X: =40
         Y: =850
