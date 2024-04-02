@@ -477,7 +477,7 @@
         Font: =Font.'Segoe UI'
         FontWeight: =FontWeight.Bold
         Height: =75
-        Size: =20
+        Size: =25
         Text: ="Ticketing System"
         Width: =280
         X: =180
