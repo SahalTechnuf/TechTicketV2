@@ -519,6 +519,7 @@
         Height: =79
         Size: =25
         Text: ="Please create your first ticket below "
+        Visible: =CountRows('Work Progress Tracker') = 0
         Width: =640
         Y: =863
         ZIndex: =15
