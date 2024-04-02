@@ -32,6 +32,13 @@
       "parameterHintsV2": {}
     },
     "datasets": {
+      "https://netorg4829107.sharepoint.com/sites/TechnufTicketingSystem": {
+        "dataSources": {
+          "Technuf Ticketing System": {
+            "tableName": "eae1175a-7c7a-4de4-875b-d5ce7785746a"
+          }
+        }
+      },
       "https://netorg4829107-my.sharepoint.com/personal/zahid_ahsan_technuf_com": {
         "dataSources": {
           "Work Progress Tracker": {
@@ -53,7 +60,8 @@
     "dataSources": [
       "Work Progress Tracker",
       "Ticketing System",
-      "User List"
+      "User List",
+      "Technuf Ticketing System"
     ],
     "dependencies": {},
     "dependents": [],
