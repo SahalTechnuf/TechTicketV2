@@ -502,7 +502,7 @@
         Height: =70
         Size: =21
         Text: ="Please create your first ticket below"
-        Visible: =CountRows('Technuf Ticketing System') = 0 
+        Visible: =CountRows(DashTickets.AllItems) = 0 
         Width: =560
         X: =35
         Y: =920
