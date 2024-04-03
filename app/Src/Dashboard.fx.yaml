@@ -521,7 +521,28 @@
         Height: =79
         Size: =25
         Text: ="Please create your first ticket below "
-        Visible: =CountRows('Technuf Ticketing System') = 0
+        Visible: |-
+            =CountRows(
+                Filter(
+                    'Technuf Ticketing System',
+                    StartsWith(
+                        Upper(
+                            Concatenate(
+                                Text(Title),
+                                " ",
+                                Text(Description),
+                                " ",
+                                Text('Progress/Status'.Value),
+                                " ",
+                                Text('Issued By'.DisplayName),
+                                " ",
+                                Text('Issue Date and Time')
+                            )
+                        ),
+                        ""
+                    )
+                )
+            ) = 0 
         Width: =640
         Y: =833
         ZIndex: =15
