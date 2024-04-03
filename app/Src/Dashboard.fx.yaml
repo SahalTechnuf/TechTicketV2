@@ -522,27 +522,9 @@
         Size: =25
         Text: ="Please create your first ticket below "
         Visible: |-
-            =IsEmpty(
-                Filter(
-                    'Technuf Ticketing System',
-                    StartsWith(
-                        Upper(
-                            Concatenate(
-                                Text(Title),
-                                " ",
-                                Text(Description),
-                                " ",
-                                Text('Progress/Status'.Value),
-                                " ",
-                                Text('Issued By'.DisplayName),
-                                " ",
-                                Text('Issue Date and Time')
-                            )
-                        ),
-                        ""
-                    )
-                )
-            )
+            =CountRows(
+                DashTickets.AllItems)
+            =0
         Width: =640
         Y: =833
         ZIndex: =15
