@@ -542,7 +542,7 @@
         Image: =Picture1
         PressedBorderColor: =RGBA(0, 0, 0, 0)
         PressedFill: =RGBA(0, 0, 0, 0)
-        Visible: =CountRows('Technuf Ticketing System') = 0 
+        Visible: =CountRows(DashTickets.AllItems) = 0 
         Width: =326
         X: =160
         Y: =570
