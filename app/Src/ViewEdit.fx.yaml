@@ -164,7 +164,7 @@
                         HoverFill: =RGBA(0, 0, 0, 0)
                         Icon: =Icon.Trash
                         OnSelect: |-
-                            =Remove('Work Progress Tracker', selectedItem);
+                            =Remove('Technuf Ticketing System', selectedItem);
                             ResetForm(Form5);
                             Navigate(Dashboard, Transition.None);
                         PressedBorderColor: =RGBA(0, 0, 0, 0)
