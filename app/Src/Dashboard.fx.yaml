@@ -522,7 +522,7 @@
         Size: =25
         Text: ="Please create your first ticket below "
         Visible: |-
-            =CountRows(
+            =IsEmpty(
                 Filter(
                     'Technuf Ticketing System',
                     StartsWith(
@@ -542,7 +542,7 @@
                         ""
                     )
                 )
-            ) = 0 
+            )
         Width: =640
         Y: =833
         ZIndex: =15
