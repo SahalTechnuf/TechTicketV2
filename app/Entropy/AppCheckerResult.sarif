@@ -211,6 +211,126 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "Dashboard.DashTickets.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Dashboard.DashTickets.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 401,
+                  "charOffset": 90,
+                  "snippet": {
+                    "text": "Upper(\r\n                Concatenate(\r\n                    Text(Title),\r\n                    \" \",\r\n                    Text(Description),\r\n                    \" \",\r\n                    Text('Progress/Status'.Value),\r\n                    \" \",\r\n                    Text('Issued By'.DisplayName),\r\n                    \" \",\r\n                    Text('Issue Date and Time')\r\n                )\r\n            )"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "Dashboard",
+                "type": "Dashboard.DashTickets"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Upper"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Dashboard.DashTickets.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Dashboard.DashTickets.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 476,
+                  "charOffset": 65,
+                  "snippet": {
+                    "text": "StartsWith(\r\n            Upper(\r\n                Concatenate(\r\n                    Text(Title),\r\n                    \" \",\r\n                    Text(Description),\r\n                    \" \",\r\n                    Text('Progress/Status'.Value),\r\n                    \" \",\r\n                    Text('Issued By'.DisplayName),\r\n                    \" \",\r\n                    Text('Issue Date and Time')\r\n                )\r\n            ),\r\n            Upper(SearchTicket.Text)\r\n        )"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "Dashboard",
+                "type": "Dashboard.DashTickets"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "StartsWith"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Dashboard.DashTickets.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Dashboard.DashTickets.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 2,
+                  "charOffset": 542,
+                  "snippet": {
+                    "text": "&&"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "Dashboard",
+                "type": "Dashboard.DashTickets"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Filter"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "DashboardADMIN.SearchTicketADMIN.AccessibleLabel"
                 }
               ],
