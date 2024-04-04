@@ -522,9 +522,9 @@
         Size: =25
         Text: ="Please create your first ticket below "
         Visible: |-
-            =CountRows(
+            =If(CountRows(
                 DashTickets.AllItems)
-            =0
+            =0,true,false)
         Width: =640
         Y: =833
         ZIndex: =15
