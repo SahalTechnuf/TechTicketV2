@@ -500,7 +500,7 @@
         OnSelect: =
         Size: =30
         Text: ="No tickets to display"
-        Visible: =CountRows(DashTickets.AllItems) = 0 
+        Visible: =If(CountRows(DashTickets.AllItems) = 0,true,false)
         Width: =560
         X: =40
         Y: =776
