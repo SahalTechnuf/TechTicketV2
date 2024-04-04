@@ -3474,7 +3474,14 @@
           "IsLockable": false,
           "NameMapSourceSchema": "?"
         },
-        "DelayItemLoading",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "true",
+          "InvariantPropertyName": "DelayItemLoading",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "LoadingSpinner",
         "LoadingSpinnerColor",
         {
@@ -3637,7 +3644,7 @@
         {
           "Category": "Design",
           "PropertyName": "DelayItemLoading",
-          "RuleProviderType": "Unknown"
+          "RuleProviderType": "User"
         },
         {
           "Category": "Design",
