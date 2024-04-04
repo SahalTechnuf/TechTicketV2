@@ -278,7 +278,7 @@
             Height: =56
             OnSelect: =Select(Parent)
             Size: =15
-            Text: =ThisItem.Description
+            Text: =ThisItem.'Progress/Status'.Value
             Width: =125
             X: =470
             Y: =21
