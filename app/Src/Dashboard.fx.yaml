@@ -12,26 +12,12 @@
             =Sort(
                 Filter(
                     'Technuf Ticketing System',
-                    StartsWith(
-                        Upper(
-                            Concatenate(
-                                Text(Title),
-                                " ",
-                                Text(Description),
-                                " ",
-                                Text('Progress/Status'.Value),
-                                " ",
-                                Text('Issued By'.DisplayName),
-                                " ",
-                                Text('Issue Date and Time')
-                            )
-                        ),
-                        Upper(SearchTicket.Text)
-                    ), 'Issued By'.Email = User().Email// Filter rows where 'Issued by' field matches current user's email
+                    
+                    'Issued By'.Email = User().Email// Filter rows where 'Issued by' field matches current user's email
                 ),
                 'Issue Date and Time',
                 SortOrder.Descending
-            )
+            ) 
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         OnSelect: |-
@@ -301,7 +287,7 @@
             Height: =56
             OnSelect: =Select(Parent)
             Size: =15
-            Text: =ThisItem.'Progress/Status'.Value
+            Text: =ThisItem.Description
             Width: =125
             X: =470
             Y: =21
