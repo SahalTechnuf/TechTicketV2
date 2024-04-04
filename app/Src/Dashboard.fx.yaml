@@ -542,7 +542,7 @@
         Image: =Picture1
         PressedBorderColor: =RGBA(0, 0, 0, 0)
         PressedFill: =RGBA(0, 0, 0, 0)
-        Visible: =CountRows(DashTickets.AllItems) = 0 
+        Visible: =If(CountRows(DashTickets.AllItems) = 0,true,false) 
         Width: =326
         X: =160
         Y: =570
