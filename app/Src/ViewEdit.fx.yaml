@@ -857,6 +857,7 @@
                 FillPortions: =0
                 Height: =100
                 LayoutAlignItems: =LayoutAlignItems.End
+                LayoutGap: =20
                 LayoutJustifyContent: =LayoutJustifyContent.Center
                 LayoutMinHeight: =112
                 LayoutMinWidth: =250
