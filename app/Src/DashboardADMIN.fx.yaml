@@ -251,7 +251,7 @@
             LineHeight: =1
             OnSelect: =Select(Parent)
             Size: =17
-            Text: =ThisItem.'Issued by'.Email
+            Text: =ThisItem.'Issued By'.Email
             Width: =320
             X: =236
             Y: =87
