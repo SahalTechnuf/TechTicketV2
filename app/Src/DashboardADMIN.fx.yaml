@@ -270,7 +270,7 @@
             LineHeight: =1
             OnSelect: =Select(Parent)
             Size: =17
-            Text: =ThisItem.'Issued by'.DisplayName
+            Text: =ThisItem.'Issued By'.DisplayName
             Width: =200
             X: =280
             Y: =53
