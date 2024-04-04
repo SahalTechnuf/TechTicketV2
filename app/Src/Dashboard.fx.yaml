@@ -8,7 +8,7 @@
         Fill: =RGBA(255, 255, 255, 1)
         FocusedBorderThickness: =
         Height: =708
-        Items: |
+        Items: |-
             =Sort(
                 Filter('Technuf Ticketing System', 'Issued By'.Email = User().Email ),
                 'Issue Date and Time',
