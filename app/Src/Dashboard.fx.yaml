@@ -12,11 +12,11 @@
             =Sort(
                 Filter(
                     'Technuf Ticketing System',
-                    'Issued By'.Email = User().Email// Filter rows where 'Issued by' field matches current user's email
+                    'Issued By'.Email = User().Email
                 ),
                 'Issue Date and Time',
                 SortOrder.Descending
-            ) 
+            )
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         OnSelect: |-
