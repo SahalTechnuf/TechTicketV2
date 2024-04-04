@@ -10,7 +10,10 @@
         Height: =708
         Items: |-
             =Sort(
-                Filter('Technuf Ticketing System', 'Issued By'.Email = User().Email ),
+                Filter(
+                    'Technuf Ticketing System',
+                    'Issued By'.Email = User().Email
+                ),
                 'Issue Date and Time',
                 SortOrder.Descending
             )
