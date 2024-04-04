@@ -8,12 +8,9 @@
         Fill: =RGBA(255, 255, 255, 1)
         FocusedBorderThickness: =
         Height: =708
-        Items: |-
+        Items: |
             =Sort(
-                Filter(
-                    'Technuf Ticketing System',
-                    'Issued By'.Email = User().Email // Filter rows where 'Issued by' field matches current user's email
-                ),
+                Filter('Technuf Ticketing System', 'Issued By'.Email = User().Email ),
                 'Issue Date and Time',
                 SortOrder.Descending
             )
