@@ -521,10 +521,7 @@
         Height: =79
         Size: =25
         Text: ="Please create your first ticket below "
-        Visible: |-
-            =If(CountRows(
-                DashTickets.AllItems)
-            =0,true,false)
+        Visible: =CountRows(DashTickets.AllItems)=0
         Width: =640
         Y: =833
         ZIndex: =15
