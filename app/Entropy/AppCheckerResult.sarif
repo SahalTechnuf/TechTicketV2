@@ -14,357 +14,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "DashboardADMIN.DashTicketsADMIN.Items"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "DashboardADMIN.DashTicketsADMIN.Items",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 11,
-                  "charOffset": 299,
-                  "snippet": {
-                    "text": "'Issued by'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Items",
-                "module": "DashboardADMIN",
-                "type": "DashboardADMIN.DashTicketsADMIN"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Issued by"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "DashboardADMIN.DashTicketsADMIN.Items"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "DashboardADMIN.DashTicketsADMIN.Items",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 12,
-                  "charOffset": 310,
-                  "snippet": {
-                    "text": ".DisplayName"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Items",
-                "module": "DashboardADMIN",
-                "type": "DashboardADMIN.DashTicketsADMIN"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "DashboardADMIN.DashTicketsADMIN.Items"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "DashboardADMIN.DashTicketsADMIN.Items",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 29,
-                  "charOffset": 294,
-                  "snippet": {
-                    "text": "Text('Issued by'.DisplayName)"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Items",
-                "module": "DashboardADMIN",
-                "type": "DashboardADMIN.DashTicketsADMIN"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Text"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidArgs-Func",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "DashboardADMIN.DashTicketsADMIN.Items"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "DashboardADMIN.DashTicketsADMIN.Items",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 343,
-                  "charOffset": 70,
-                  "snippet": {
-                    "text": "Upper(\n            Concatenate(\n                Text(Title), \n                \" \", \n                Text(Description),\n                \" \",\n                Text('Progress/Status'.Value),\n                \" \",\n                Text('Issued by'.DisplayName),\n                \" \",\n                Text('Issue Date and Time')\n            )\n        )"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Items",
-                "module": "DashboardADMIN",
-                "type": "DashboardADMIN.DashTicketsADMIN"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Upper"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-SuggestRemoteExecutionHint",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "DashboardADMIN.DashTicketsADMIN.Items"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "DashboardADMIN.DashTicketsADMIN.Items",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 408,
-                  "charOffset": 50,
-                  "snippet": {
-                    "text": "StartsWith(\n        Upper(\n            Concatenate(\n                Text(Title), \n                \" \", \n                Text(Description),\n                \" \",\n                Text('Progress/Status'.Value),\n                \" \",\n                Text('Issued by'.DisplayName),\n                \" \",\n                Text('Issue Date and Time')\n            )\n        ),\n        Upper(SearchTicketADMIN.Text)\n    )"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Items",
-                "module": "DashboardADMIN",
-                "type": "DashboardADMIN.DashTicketsADMIN"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "StartsWith"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-SuggestRemoteExecutionHint",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "DashboardADMIN.DashTicketsADMIN.DashAuthor_3.Text"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "DashboardADMIN.DashTicketsADMIN.DashAuthor_3.Text",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 12,
-                  "charOffset": 8,
-                  "snippet": {
-                    "text": ".'Issued by'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Text",
-                "module": "DashboardADMIN",
-                "type": "DashboardADMIN.DashTicketsADMIN.DashAuthor_3"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Issued by"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "DashboardADMIN.DashTicketsADMIN.DashAuthor_3.Text"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "DashboardADMIN.DashTicketsADMIN.DashAuthor_3.Text",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 12,
-                  "charOffset": 20,
-                  "snippet": {
-                    "text": ".DisplayName"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Text",
-                "module": "DashboardADMIN",
-                "type": "DashboardADMIN.DashTicketsADMIN.DashAuthor_3"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "DashboardADMIN.DashTicketsADMIN.DashEmail_3.Text"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "DashboardADMIN.DashTicketsADMIN.DashEmail_3.Text",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 12,
-                  "charOffset": 8,
-                  "snippet": {
-                    "text": ".'Issued by'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Text",
-                "module": "DashboardADMIN",
-                "type": "DashboardADMIN.DashTicketsADMIN.DashEmail_3"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Issued by"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "DashboardADMIN.DashTicketsADMIN.DashEmail_3.Text"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "DashboardADMIN.DashTicketsADMIN.DashEmail_3.Text",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 6,
-                  "charOffset": 20,
-                  "snippet": {
-                    "text": ".Email"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Text",
-                "module": "DashboardADMIN",
-                "type": "DashboardADMIN.DashTicketsADMIN.DashEmail_3"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "Dashboard.DashTickets.Items"
                 }
               ],
@@ -398,7 +47,7 @@
             "level": "Medium"
           },
           "ruleId": "app-SuggestRemoteExecutionHint",
-          "ruleIndex": 3
+          "ruleIndex": 0
         },
         {
           "locations": [
@@ -438,7 +87,7 @@
             "level": "Medium"
           },
           "ruleId": "app-SuggestRemoteExecutionHint",
-          "ruleIndex": 3
+          "ruleIndex": 0
         },
         {
           "locations": [
@@ -478,6 +127,120 @@
             "level": "Medium"
           },
           "ruleId": "app-SuggestRemoteExecutionHint",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Dashboard.DashTickets.galleryTemplate4.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Dashboard.DashTickets.galleryTemplate4.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 27,
+                  "charOffset": 0,
+                  "snippet": {
+                    "text": "Set(selectedItem, ThisItem)"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "Dashboard",
+                "type": "Dashboard.DashTickets.galleryTemplate4"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrIncompatibleCtxtVariableTypes",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DashboardADMIN.DashTicketsADMIN.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "DashboardADMIN.DashTicketsADMIN.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 11,
+                  "charOffset": 299,
+                  "snippet": {
+                    "text": "'Issued by'"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "DashboardADMIN",
+                "type": "DashboardADMIN.DashTicketsADMIN"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Issued by"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DashboardADMIN.DashTicketsADMIN.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "DashboardADMIN.DashTicketsADMIN.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 12,
+                  "charOffset": 310,
+                  "snippet": {
+                    "text": ".DisplayName"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "DashboardADMIN",
+                "type": "DashboardADMIN.DashTicketsADMIN"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidDot",
           "ruleIndex": 3
         },
         {
@@ -485,29 +248,39 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "DashboardADMIN.SearchTicketADMIN.AccessibleLabel"
+                  "fullyQualifiedName": "DashboardADMIN.DashTicketsADMIN.Items"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "DashboardADMIN.SearchTicketADMIN.AccessibleLabel",
+                  "fullyQualifiedName": "DashboardADMIN.DashTicketsADMIN.Items",
                   "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 29,
+                  "charOffset": 294,
+                  "snippet": {
+                    "text": "Text('Issued by'.DisplayName)"
+                  }
                 }
               },
               "properties": {
-                "member": "AccessibleLabel",
+                "member": "Items",
                 "module": "DashboardADMIN",
-                "type": "DashboardADMIN.SearchTicketADMIN"
+                "type": "DashboardADMIN.DashTicketsADMIN"
               }
             }
           ],
           "message": {
+            "arguments": [
+              "Text"
+            ],
             "id": "issue"
           },
           "properties": {
-            "level": "Medium"
+            "level": "High"
           },
-          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleId": "app-ErrInvalidArgs-Func",
           "ruleIndex": 4
         },
         {
@@ -515,17 +288,104 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "DashboardADMIN.DashTicketsADMIN.AccessibleLabel"
+                  "fullyQualifiedName": "DashboardADMIN.DashTicketsADMIN.Items"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "DashboardADMIN.DashTicketsADMIN.AccessibleLabel",
+                  "fullyQualifiedName": "DashboardADMIN.DashTicketsADMIN.Items",
                   "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 343,
+                  "charOffset": 70,
+                  "snippet": {
+                    "text": "Upper(\n            Concatenate(\n                Text(Title), \n                \" \", \n                Text(Description),\n                \" \",\n                Text('Progress/Status'.Value),\n                \" \",\n                Text('Issued by'.DisplayName),\n                \" \",\n                Text('Issue Date and Time')\n            )\n        )"
+                  }
                 }
               },
               "properties": {
-                "member": "AccessibleLabel",
+                "member": "Items",
+                "module": "DashboardADMIN",
+                "type": "DashboardADMIN.DashTicketsADMIN"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Upper"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DashboardADMIN.DashTicketsADMIN.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "DashboardADMIN.DashTicketsADMIN.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 408,
+                  "charOffset": 50,
+                  "snippet": {
+                    "text": "StartsWith(\n        Upper(\n            Concatenate(\n                Text(Title), \n                \" \", \n                Text(Description),\n                \" \",\n                Text('Progress/Status'.Value),\n                \" \",\n                Text('Issued by'.DisplayName),\n                \" \",\n                Text('Issue Date and Time')\n            )\n        ),\n        Upper(SearchTicketADMIN.Text)\n    )"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "DashboardADMIN",
+                "type": "DashboardADMIN.DashTicketsADMIN"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "StartsWith"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DashboardADMIN.DashTicketsADMIN.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "DashboardADMIN.DashTicketsADMIN.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 507,
+                  "charOffset": 0,
+                  "snippet": {
+                    "text": "Sort(\nFilter(\n    'Technuf Ticketing System',\n    StartsWith(\n        Upper(\n            Concatenate(\n                Text(Title), \n                \" \", \n                Text(Description),\n                \" \",\n                Text('Progress/Status'.Value),\n                \" \",\n                Text('Issued by'.DisplayName),\n                \" \",\n                Text('Issue Date and Time')\n            )\n        ),\n        Upper(SearchTicketADMIN.Text)\n    )\n), 'Issue Date and Time', SortOrder.Descending )"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
                 "module": "DashboardADMIN",
                 "type": "DashboardADMIN.DashTicketsADMIN"
               }
@@ -535,40 +395,1743 @@
             "id": "issue"
           },
           "properties": {
-            "level": "Medium"
+            "level": "High"
           },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "DashboardADMIN.DashTicketsADMIN.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "DashboardADMIN.DashTicketsADMIN.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "DashboardADMIN",
-                "type": "DashboardADMIN.DashTicketsADMIN"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Low"
-          },
-          "ruleId": "acc-TabOrderShouldBeChecked",
+          "ruleId": "app-ErrTypeError",
           "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DashboardADMIN.DashTicketsADMIN.galleryTemplate4_1.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "DashboardADMIN.DashTicketsADMIN.galleryTemplate4_1.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 8,
+                  "charOffset": 18,
+                  "snippet": {
+                    "text": "ThisItem"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "DashboardADMIN",
+                "type": "DashboardADMIN.DashTicketsADMIN.galleryTemplate4_1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "ThisItem"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DashboardADMIN.DashTicketsADMIN.Image_1.Image"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "DashboardADMIN.DashTicketsADMIN.Image_1.Image",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 8,
+                  "charOffset": 0,
+                  "snippet": {
+                    "text": "ThisItem"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Image",
+                "module": "DashboardADMIN",
+                "type": "DashboardADMIN.DashTicketsADMIN.Image_1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "ThisItem"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DashboardADMIN.DashTicketsADMIN.Image_1.Image"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "DashboardADMIN.DashTicketsADMIN.Image_1.Image",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 19,
+                  "charOffset": 8,
+                  "snippet": {
+                    "text": ".'Image (Optional)'"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Image",
+                "module": "DashboardADMIN",
+                "type": "DashboardADMIN.DashTicketsADMIN.Image_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidDot",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DashboardADMIN.DashTicketsADMIN.DashCat_1.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "DashboardADMIN.DashTicketsADMIN.DashCat_1.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 8,
+                  "charOffset": 0,
+                  "snippet": {
+                    "text": "ThisItem"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "DashboardADMIN",
+                "type": "DashboardADMIN.DashTicketsADMIN.DashCat_1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "ThisItem"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DashboardADMIN.DashTicketsADMIN.DashCat_1.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "DashboardADMIN.DashTicketsADMIN.DashCat_1.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 6,
+                  "charOffset": 8,
+                  "snippet": {
+                    "text": ".Title"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "DashboardADMIN",
+                "type": "DashboardADMIN.DashTicketsADMIN.DashCat_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidDot",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DashboardADMIN.DashTicketsADMIN.Label2_1.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "DashboardADMIN.DashTicketsADMIN.Label2_1.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 8,
+                  "charOffset": 0,
+                  "snippet": {
+                    "text": "ThisItem"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "DashboardADMIN",
+                "type": "DashboardADMIN.DashTicketsADMIN.Label2_1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "ThisItem"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DashboardADMIN.DashTicketsADMIN.Label2_1.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "DashboardADMIN.DashTicketsADMIN.Label2_1.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 18,
+                  "charOffset": 8,
+                  "snippet": {
+                    "text": ".'Progress/Status'"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "DashboardADMIN",
+                "type": "DashboardADMIN.DashTicketsADMIN.Label2_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidDot",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DashboardADMIN.DashTicketsADMIN.Label2_1.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "DashboardADMIN.DashTicketsADMIN.Label2_1.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 6,
+                  "charOffset": 26,
+                  "snippet": {
+                    "text": ".Value"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "DashboardADMIN",
+                "type": "DashboardADMIN.DashTicketsADMIN.Label2_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidDot",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DashboardADMIN.DashTicketsADMIN.Label2_1.Color"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "DashboardADMIN.DashTicketsADMIN.Label2_1.Color",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 8,
+                  "charOffset": 21,
+                  "snippet": {
+                    "text": "ThisItem"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Color",
+                "module": "DashboardADMIN",
+                "type": "DashboardADMIN.DashTicketsADMIN.Label2_1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "ThisItem"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DashboardADMIN.DashTicketsADMIN.Label2_1.Color"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "DashboardADMIN.DashTicketsADMIN.Label2_1.Color",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 18,
+                  "charOffset": 29,
+                  "snippet": {
+                    "text": ".'Progress/Status'"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Color",
+                "module": "DashboardADMIN",
+                "type": "DashboardADMIN.DashTicketsADMIN.Label2_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidDot",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DashboardADMIN.DashTicketsADMIN.Label2_1.Color"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "DashboardADMIN.DashTicketsADMIN.Label2_1.Color",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 6,
+                  "charOffset": 47,
+                  "snippet": {
+                    "text": ".Value"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Color",
+                "module": "DashboardADMIN",
+                "type": "DashboardADMIN.DashTicketsADMIN.Label2_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidDot",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DashboardADMIN.DashTicketsADMIN.Label2_1.Color"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "DashboardADMIN.DashTicketsADMIN.Label2_1.Color",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 38,
+                  "charOffset": 16,
+                  "snippet": {
+                    "text": "Text(ThisItem.'Progress/Status'.Value)"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Color",
+                "module": "DashboardADMIN",
+                "type": "DashboardADMIN.DashTicketsADMIN.Label2_1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Text"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DashboardADMIN.DashTicketsADMIN.Label2_1.BorderColor"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "DashboardADMIN.DashTicketsADMIN.Label2_1.BorderColor",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 8,
+                  "charOffset": 36,
+                  "snippet": {
+                    "text": "ThisItem"
+                  }
+                }
+              },
+              "properties": {
+                "member": "BorderColor",
+                "module": "DashboardADMIN",
+                "type": "DashboardADMIN.DashTicketsADMIN.Label2_1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "ThisItem"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DashboardADMIN.DashTicketsADMIN.Label2_1.BorderColor"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "DashboardADMIN.DashTicketsADMIN.Label2_1.BorderColor",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 18,
+                  "charOffset": 44,
+                  "snippet": {
+                    "text": ".'Progress/Status'"
+                  }
+                }
+              },
+              "properties": {
+                "member": "BorderColor",
+                "module": "DashboardADMIN",
+                "type": "DashboardADMIN.DashTicketsADMIN.Label2_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidDot",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DashboardADMIN.DashTicketsADMIN.Label2_1.BorderColor"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "DashboardADMIN.DashTicketsADMIN.Label2_1.BorderColor",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 6,
+                  "charOffset": 62,
+                  "snippet": {
+                    "text": ".Value"
+                  }
+                }
+              },
+              "properties": {
+                "member": "BorderColor",
+                "module": "DashboardADMIN",
+                "type": "DashboardADMIN.DashTicketsADMIN.Label2_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidDot",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DashboardADMIN.DashTicketsADMIN.Label2_1.BorderColor"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "DashboardADMIN.DashTicketsADMIN.Label2_1.BorderColor",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 38,
+                  "charOffset": 31,
+                  "snippet": {
+                    "text": "Text(ThisItem.'Progress/Status'.Value)"
+                  }
+                }
+              },
+              "properties": {
+                "member": "BorderColor",
+                "module": "DashboardADMIN",
+                "type": "DashboardADMIN.DashTicketsADMIN.Label2_1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Text"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DashboardADMIN.DashTicketsADMIN.Label2_1.Fill"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "DashboardADMIN.DashTicketsADMIN.Label2_1.Fill",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 8,
+                  "charOffset": 36,
+                  "snippet": {
+                    "text": "ThisItem"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Fill",
+                "module": "DashboardADMIN",
+                "type": "DashboardADMIN.DashTicketsADMIN.Label2_1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "ThisItem"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DashboardADMIN.DashTicketsADMIN.Label2_1.Fill"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "DashboardADMIN.DashTicketsADMIN.Label2_1.Fill",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 18,
+                  "charOffset": 44,
+                  "snippet": {
+                    "text": ".'Progress/Status'"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Fill",
+                "module": "DashboardADMIN",
+                "type": "DashboardADMIN.DashTicketsADMIN.Label2_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidDot",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DashboardADMIN.DashTicketsADMIN.Label2_1.Fill"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "DashboardADMIN.DashTicketsADMIN.Label2_1.Fill",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 6,
+                  "charOffset": 62,
+                  "snippet": {
+                    "text": ".Value"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Fill",
+                "module": "DashboardADMIN",
+                "type": "DashboardADMIN.DashTicketsADMIN.Label2_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidDot",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DashboardADMIN.DashTicketsADMIN.Label2_1.Fill"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "DashboardADMIN.DashTicketsADMIN.Label2_1.Fill",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 38,
+                  "charOffset": 31,
+                  "snippet": {
+                    "text": "Text(ThisItem.'Progress/Status'.Value)"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Fill",
+                "module": "DashboardADMIN",
+                "type": "DashboardADMIN.DashTicketsADMIN.Label2_1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Text"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DashboardADMIN.DashTicketsADMIN.DashAuthor_3.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "DashboardADMIN.DashTicketsADMIN.DashAuthor_3.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 8,
+                  "charOffset": 0,
+                  "snippet": {
+                    "text": "ThisItem"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "DashboardADMIN",
+                "type": "DashboardADMIN.DashTicketsADMIN.DashAuthor_3"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "ThisItem"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DashboardADMIN.DashTicketsADMIN.DashAuthor_3.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "DashboardADMIN.DashTicketsADMIN.DashAuthor_3.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 12,
+                  "charOffset": 8,
+                  "snippet": {
+                    "text": ".'Issued by'"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "DashboardADMIN",
+                "type": "DashboardADMIN.DashTicketsADMIN.DashAuthor_3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidDot",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DashboardADMIN.DashTicketsADMIN.DashAuthor_3.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "DashboardADMIN.DashTicketsADMIN.DashAuthor_3.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 12,
+                  "charOffset": 20,
+                  "snippet": {
+                    "text": ".DisplayName"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "DashboardADMIN",
+                "type": "DashboardADMIN.DashTicketsADMIN.DashAuthor_3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidDot",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DashboardADMIN.DashTicketsADMIN.DashEmail_3.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "DashboardADMIN.DashTicketsADMIN.DashEmail_3.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 8,
+                  "charOffset": 0,
+                  "snippet": {
+                    "text": "ThisItem"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "DashboardADMIN",
+                "type": "DashboardADMIN.DashTicketsADMIN.DashEmail_3"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "ThisItem"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DashboardADMIN.DashTicketsADMIN.DashEmail_3.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "DashboardADMIN.DashTicketsADMIN.DashEmail_3.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 12,
+                  "charOffset": 8,
+                  "snippet": {
+                    "text": ".'Issued by'"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "DashboardADMIN",
+                "type": "DashboardADMIN.DashTicketsADMIN.DashEmail_3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidDot",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DashboardADMIN.DashTicketsADMIN.DashEmail_3.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "DashboardADMIN.DashTicketsADMIN.DashEmail_3.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 6,
+                  "charOffset": 20,
+                  "snippet": {
+                    "text": ".Email"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "DashboardADMIN",
+                "type": "DashboardADMIN.DashTicketsADMIN.DashEmail_3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidDot",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DashboardADMIN.DashTicketsADMIN.DashDnT_1.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "DashboardADMIN.DashTicketsADMIN.DashDnT_1.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 8,
+                  "charOffset": 5,
+                  "snippet": {
+                    "text": "ThisItem"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "DashboardADMIN",
+                "type": "DashboardADMIN.DashTicketsADMIN.DashDnT_1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "ThisItem"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DashboardADMIN.DashTicketsADMIN.DashDnT_1.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "DashboardADMIN.DashTicketsADMIN.DashDnT_1.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 22,
+                  "charOffset": 13,
+                  "snippet": {
+                    "text": ".'Issue Date and Time'"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "DashboardADMIN",
+                "type": "DashboardADMIN.DashTicketsADMIN.DashDnT_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidDot",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DashboardADMIN.DashTicketsADMIN.DashDnT_1.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "DashboardADMIN.DashTicketsADMIN.DashDnT_1.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 72,
+                  "charOffset": 0,
+                  "snippet": {
+                    "text": "Text(ThisItem.'Issue Date and Time',    \"mm/dd/yyyy        hh:mm AM/PM\")"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "DashboardADMIN",
+                "type": "DashboardADMIN.DashTicketsADMIN.DashDnT_1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Text"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DashboardADMIN.DashTicketsADMIN.DashDnT_1.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "DashboardADMIN.DashTicketsADMIN.DashDnT_1.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 31,
+                  "charOffset": 40,
+                  "snippet": {
+                    "text": "\"mm/dd/yyyy        hh:mm AM/PM\""
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "DashboardADMIN",
+                "type": "DashboardADMIN.DashTicketsADMIN.DashDnT_1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Text"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-ErrIncorrectFormat-Func",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DashboardADMIN.DashTicketsADMIN.DashDesc_1.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "DashboardADMIN.DashTicketsADMIN.DashDesc_1.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 8,
+                  "charOffset": 0,
+                  "snippet": {
+                    "text": "ThisItem"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "DashboardADMIN",
+                "type": "DashboardADMIN.DashTicketsADMIN.DashDesc_1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "ThisItem"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DashboardADMIN.DashTicketsADMIN.DashDesc_1.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "DashboardADMIN.DashTicketsADMIN.DashDesc_1.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 12,
+                  "charOffset": 8,
+                  "snippet": {
+                    "text": ".Description"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "DashboardADMIN",
+                "type": "DashboardADMIN.DashTicketsADMIN.DashDesc_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidDot",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "NewTicket.Container1.Container2.MainForm.Form3.'Progress/Status_DataCard1'.Button2_1.Fill"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "NewTicket.Container1.Container2.MainForm.Form3.'Progress/Status_DataCard1'.Button2_1.Fill",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 22,
+                  "charOffset": 39,
+                  "snippet": {
+                    "text": ".Progress_x002f_Status"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Fill",
+                "module": "NewTicket",
+                "type": "NewTicket.Container1.Container2.MainForm.Form3.'Progress/Status_DataCard1'.Button2_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidDot",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "NewTicket.Container1.Container2.MainForm.Form3.'Progress/Status_DataCard1'.Button2_1.Fill"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "NewTicket.Container1.Container2.MainForm.Form3.'Progress/Status_DataCard1'.Button2_1.Fill",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 6,
+                  "charOffset": 61,
+                  "snippet": {
+                    "text": ".Value"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Fill",
+                "module": "NewTicket",
+                "type": "NewTicket.Container1.Container2.MainForm.Form3.'Progress/Status_DataCard1'.Button2_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidDot",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "NewTicket.Container1.Container2.MainForm.Form3.'Progress/Status_DataCard1'.Button2_1.Fill"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "NewTicket.Container1.Container2.MainForm.Form3.'Progress/Status_DataCard1'.Button2_1.Fill",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 1,
+                  "charOffset": 68,
+                  "snippet": {
+                    "text": "="
+                  }
+                }
+              },
+              "properties": {
+                "member": "Fill",
+                "module": "NewTicket",
+                "type": "NewTicket.Container1.Container2.MainForm.Form3.'Progress/Status_DataCard1'.Button2_1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Error",
+              "Text"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "NewTicket.Container1.Container2.MainForm.Form3.'Progress/Status_DataCard1'.Button7_1.Fill"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "NewTicket.Container1.Container2.MainForm.Form3.'Progress/Status_DataCard1'.Button7_1.Fill",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 22,
+                  "charOffset": 25,
+                  "snippet": {
+                    "text": ".Progress_x002f_Status"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Fill",
+                "module": "NewTicket",
+                "type": "NewTicket.Container1.Container2.MainForm.Form3.'Progress/Status_DataCard1'.Button7_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidDot",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "NewTicket.Container1.Container2.MainForm.Form3.'Progress/Status_DataCard1'.Button7_1.Fill"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "NewTicket.Container1.Container2.MainForm.Form3.'Progress/Status_DataCard1'.Button7_1.Fill",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 6,
+                  "charOffset": 47,
+                  "snippet": {
+                    "text": ".Value"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Fill",
+                "module": "NewTicket",
+                "type": "NewTicket.Container1.Container2.MainForm.Form3.'Progress/Status_DataCard1'.Button7_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidDot",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "NewTicket.Container1.Container2.MainForm.Form3.'Progress/Status_DataCard1'.Button7_1.Fill"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "NewTicket.Container1.Container2.MainForm.Form3.'Progress/Status_DataCard1'.Button7_1.Fill",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 1,
+                  "charOffset": 53,
+                  "snippet": {
+                    "text": "="
+                  }
+                }
+              },
+              "properties": {
+                "member": "Fill",
+                "module": "NewTicket",
+                "type": "NewTicket.Container1.Container2.MainForm.Form3.'Progress/Status_DataCard1'.Button7_1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Error",
+              "Text"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "NewTicket.Container1.Container2.MainForm.Form3.'Progress/Status_DataCard1'.Button7_1.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "NewTicket.Container1.Container2.MainForm.Form3.'Progress/Status_DataCard1'.Button7_1.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 16,
+                  "charOffset": 165,
+                  "snippet": {
+                    "text": ".OData__ColorTag"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "NewTicket",
+                "type": "NewTicket.Container1.Container2.MainForm.Form3.'Progress/Status_DataCard1'.Button7_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidDot",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "NewTicket.Container1.Container2.MainForm.Form3.'Progress/Status_DataCard1'.Button7_1.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "NewTicket.Container1.Container2.MainForm.Form3.'Progress/Status_DataCard1'.Button7_1.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 1,
+                  "charOffset": 182,
+                  "snippet": {
+                    "text": "="
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "NewTicket",
+                "type": "NewTicket.Container1.Container2.MainForm.Form3.'Progress/Status_DataCard1'.Button7_1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Error",
+              "Text"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "NewTicket.Container1.Container2.MainForm.Form3.'Progress/Status_DataCard1'.Button7_1.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "NewTicket.Container1.Container2.MainForm.Form3.'Progress/Status_DataCard1'.Button7_1.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 16,
+                  "charOffset": 225,
+                  "snippet": {
+                    "text": ".OData__ColorTag"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "NewTicket",
+                "type": "NewTicket.Container1.Container2.MainForm.Form3.'Progress/Status_DataCard1'.Button7_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidDot",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "NewTicket.Container1.Container2.MainForm.Form3.'Progress/Status_DataCard1'.Button7_1.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "NewTicket.Container1.Container2.MainForm.Form3.'Progress/Status_DataCard1'.Button7_1.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 1,
+                  "charOffset": 242,
+                  "snippet": {
+                    "text": "="
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "NewTicket",
+                "type": "NewTicket.Container1.Container2.MainForm.Form3.'Progress/Status_DataCard1'.Button7_1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Error",
+              "Text"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "NewTicket.Container1.Container2.MainForm.Form3.'Progress/Status_DataCard1'.Button5_1.Fill"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "NewTicket.Container1.Container2.MainForm.Form3.'Progress/Status_DataCard1'.Button5_1.Fill",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 22,
+                  "charOffset": 39,
+                  "snippet": {
+                    "text": ".Progress_x002f_Status"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Fill",
+                "module": "NewTicket",
+                "type": "NewTicket.Container1.Container2.MainForm.Form3.'Progress/Status_DataCard1'.Button5_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidDot",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "NewTicket.Container1.Container2.MainForm.Form3.'Progress/Status_DataCard1'.Button5_1.Fill"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "NewTicket.Container1.Container2.MainForm.Form3.'Progress/Status_DataCard1'.Button5_1.Fill",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 6,
+                  "charOffset": 61,
+                  "snippet": {
+                    "text": ".Value"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Fill",
+                "module": "NewTicket",
+                "type": "NewTicket.Container1.Container2.MainForm.Form3.'Progress/Status_DataCard1'.Button5_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidDot",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "NewTicket.Container1.Container2.MainForm.Form3.'Progress/Status_DataCard1'.Button5_1.Fill"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "NewTicket.Container1.Container2.MainForm.Form3.'Progress/Status_DataCard1'.Button5_1.Fill",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 1,
+                  "charOffset": 68,
+                  "snippet": {
+                    "text": "="
+                  }
+                }
+              },
+              "properties": {
+                "member": "Fill",
+                "module": "NewTicket",
+                "type": "NewTicket.Container1.Container2.MainForm.Form3.'Progress/Status_DataCard1'.Button5_1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Error",
+              "Text"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
+          "ruleIndex": 7
         },
         {
           "locations": [
@@ -598,7 +2161,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 4
+          "ruleIndex": 8
         },
         {
           "locations": [
@@ -628,7 +2191,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 4
+          "ruleIndex": 8
         },
         {
           "locations": [
@@ -658,7 +2221,97 @@
             "level": "Low"
           },
           "ruleId": "acc-TabOrderShouldBeChecked",
-          "ruleIndex": 5
+          "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DashboardADMIN.SearchTicketADMIN.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "DashboardADMIN.SearchTicketADMIN.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "DashboardADMIN",
+                "type": "DashboardADMIN.SearchTicketADMIN"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DashboardADMIN.DashTicketsADMIN.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "DashboardADMIN.DashTicketsADMIN.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "DashboardADMIN",
+                "type": "DashboardADMIN.DashTicketsADMIN"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DashboardADMIN.DashTicketsADMIN.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "DashboardADMIN.DashTicketsADMIN.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "DashboardADMIN",
+                "type": "DashboardADMIN.DashTicketsADMIN"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Low"
+          },
+          "ruleId": "acc-TabOrderShouldBeChecked",
+          "ruleIndex": 9
         },
         {
           "locations": [
@@ -688,7 +2341,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 4
+          "ruleIndex": 8
         },
         {
           "locations": [
@@ -718,7 +2371,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 4
+          "ruleIndex": 8
         },
         {
           "locations": [
@@ -748,7 +2401,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 4
+          "ruleIndex": 8
         },
         {
           "locations": [
@@ -778,7 +2431,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 4
+          "ruleIndex": 8
         },
         {
           "locations": [
@@ -808,7 +2461,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 6
+          "ruleIndex": 10
         },
         {
           "locations": [
@@ -838,7 +2491,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 4
+          "ruleIndex": 8
         },
         {
           "locations": [
@@ -868,7 +2521,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 4
+          "ruleIndex": 8
         },
         {
           "locations": [
@@ -898,7 +2551,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 4
+          "ruleIndex": 8
         },
         {
           "locations": [
@@ -928,7 +2581,7 @@
             "level": "Medium"
           },
           "ruleId": "app-UnusedVariables",
-          "ruleIndex": 7
+          "ruleIndex": 11
         },
         {
           "locations": [
@@ -958,7 +2611,7 @@
             "level": "Medium"
           },
           "ruleId": "app-UnusedVariables",
-          "ruleIndex": 7
+          "ruleIndex": 11
         },
         {
           "locations": [
@@ -988,7 +2641,7 @@
             "level": "Medium"
           },
           "ruleId": "app-UnusedVariables",
-          "ruleIndex": 7
+          "ruleIndex": 11
         },
         {
           "locations": [
@@ -1018,7 +2671,7 @@
             "level": "Medium"
           },
           "ruleId": "app-UnusedMediaResources",
-          "ruleIndex": 8
+          "ruleIndex": 12
         },
         {
           "locations": [
@@ -1048,7 +2701,7 @@
             "level": "Medium"
           },
           "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 9
+          "ruleIndex": 13
         },
         {
           "locations": [
@@ -1078,7 +2731,7 @@
             "level": "Medium"
           },
           "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 9
+          "ruleIndex": 13
         },
         {
           "locations": [
@@ -1108,7 +2761,7 @@
             "level": "Medium"
           },
           "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 9
+          "ruleIndex": 13
         },
         {
           "locations": [
@@ -1138,7 +2791,7 @@
             "level": "Medium"
           },
           "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 9
+          "ruleIndex": 13
         },
         {
           "locations": [
@@ -1168,7 +2821,7 @@
             "level": "Medium"
           },
           "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 9
+          "ruleIndex": 13
         }
       ],
       "tool": {
@@ -1176,6 +2829,42 @@
           "fullName": "PowerApps app checker",
           "name": "PowerApps app checker",
           "rules": [
+            {
+              "id": "app-SuggestRemoteExecutionHint",
+              "messageStrings": {
+                "issue": {
+                  "text": "Delegation warning. The \"{0}\" part of this formula might not work correctly on large data sets."
+                }
+              },
+              "properties": {
+                "componentType": "app",
+                "howToFix": [
+                  "If your data set exceeds the 500 record limit but contains less than 2,000 records, try resetting the limit.",
+                  "Try simplifying the formula.",
+                  "Try moving your data to a different data source."
+                ],
+                "level": "Medium",
+                "primaryCategory": "formula",
+                "whyFix": ""
+              }
+            },
+            {
+              "id": "app-ErrIncompatibleCtxtVariableTypes",
+              "messageStrings": {
+                "issue": {
+                  "text": "Incompatible type. We can't evaluate your formula because the context variable types are incompatible with the types of values in other places in your app."
+                }
+              },
+              "properties": {
+                "componentType": "app",
+                "howToFix": [
+                  "Look at places where you use a context variable and make sure that the type (e.g., text, number, date, record, table) is compatible."
+                ],
+                "level": "High",
+                "primaryCategory": "formula",
+                "whyFix": ""
+              }
+            },
             {
               "id": "app-ErrInvalidName",
               "messageStrings": {
@@ -1222,20 +2911,50 @@
               }
             },
             {
-              "id": "app-SuggestRemoteExecutionHint",
+              "id": "app-ErrTypeError",
               "messageStrings": {
                 "issue": {
-                  "text": "Delegation warning. The \"{0}\" part of this formula might not work correctly on large data sets."
+                  "text": "Incompatible type. We can't evaluate your formula because of a type error."
                 }
               },
               "properties": {
                 "componentType": "app",
                 "howToFix": [
-                  "If your data set exceeds the 500 record limit but contains less than 2,000 records, try resetting the limit.",
-                  "Try simplifying the formula.",
-                  "Try moving your data to a different data source."
+                  "Check the types of the values involved in the formula and ensure the types match."
                 ],
+                "level": "High",
+                "primaryCategory": "formula",
+                "whyFix": ""
+              }
+            },
+            {
+              "id": "app-ErrIncorrectFormat-Func",
+              "messageStrings": {
+                "issue": {
+                  "text": "Incorrect format specifier for '{0}'."
+                }
+              },
+              "properties": {
+                "componentType": "app",
                 "level": "Medium",
+                "primaryCategory": "formula",
+                "whyFix": ""
+              }
+            },
+            {
+              "id": "app-ErrIncompatibleTypesForEquality-Left-Right",
+              "messageStrings": {
+                "issue": {
+                  "text": "Incompatible types for comparison. These types can't be compared: {0}, {1}."
+                }
+              },
+              "properties": {
+                "componentType": "app",
+                "howToFix": [
+                  "You might need to convert the value to be the same type, such as converting a date string (e.g., \"12/31/2018\") to a date value.",
+                  "If you’re comparing records or tables, the field or column types must match exactly."
+                ],
+                "level": "High",
                 "primaryCategory": "formula",
                 "whyFix": ""
               }
