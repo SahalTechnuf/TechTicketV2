@@ -27,7 +27,7 @@
                             )
                         ),
                         Upper(SearchTicket.Text)
-                    ) && 'Issued By'.Email = User().Email// Filter rows where 'Issued by' field matches current user's email
+                    ), 'Issued By'.Email = User().Email// Filter rows where 'Issued by' field matches current user's email
                 ),
                 'Issue Date and Time',
                 SortOrder.Descending
