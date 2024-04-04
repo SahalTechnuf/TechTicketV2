@@ -3474,14 +3474,7 @@
           "IsLockable": false,
           "NameMapSourceSchema": "?"
         },
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "true",
-          "InvariantPropertyName": "DelayItemLoading",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
+        "DelayItemLoading",
         "LoadingSpinner",
         "LoadingSpinnerColor",
         {

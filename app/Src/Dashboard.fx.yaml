@@ -4,15 +4,7 @@
     DashTickets As gallery.galleryVertical:
         BorderColor: =RGBA(0, 134, 208, 1)
         BorderStyle: =BorderStyle.None
-        DelayItemLoading: |-
-            =Sort(
-                Filter(
-                    'Technuf Ticketing System',
-                    'Issued By'.Email = User().Email // Filter rows where 'Issued by' field matches current user's email
-                ),
-                'Issue Date and Time',
-                SortOrder.Descending
-            )
+        DelayItemLoading: =true
         Fill: =RGBA(255, 255, 255, 1)
         FocusedBorderThickness: =
         Height: =708
