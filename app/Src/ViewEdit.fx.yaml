@@ -219,7 +219,7 @@
                         LayoutMinWidth: =560
                         PaddingLeft: =0
                         Size: =17
-                        Text: =selectedItem.IssuedBy.DisplayName
+                        Text: =selectedItem.'Issued By'.DisplayName
                         Width: =560
                         ZIndex: =2
 
