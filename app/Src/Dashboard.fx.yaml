@@ -310,6 +310,7 @@
                     ),
                     80%
                 )
+            FocusedBorderThickness: =20
             Font: =Font.'Segoe UI'
             Height: =56
             OnSelect: =Select(Parent)
