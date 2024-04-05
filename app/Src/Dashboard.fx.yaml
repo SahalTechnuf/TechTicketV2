@@ -9,14 +9,11 @@
         FocusedBorderThickness: =
         Height: =708
         Items: |-
-            =Sort(
+            =
                 Filter(
                     'Technuf Ticketing System',
                     'Issued By'.Email = User().Email
-                ),
-                'Issue Date and Time',
-                SortOrder.Descending
-            )
+                )
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         OnSelect: |-
