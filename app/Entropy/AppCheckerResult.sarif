@@ -14,6 +14,46 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "Dashboard.DashTickets.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Dashboard.DashTickets.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 352,
+                  "charOffset": 62,
+                  "snippet": {
+                    "text": "Concatenate(\n                    Text(Title),\n                    \" \",\n                    Text(Description),\n                    \" \",\n                    Text('Progress/Status'.Value),\n                    \" \",\n                    Text('Issued By'.DisplayName),\n                    \" \",\n                    Text('Issue Date and Time')\n                )"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "Dashboard",
+                "type": "Dashboard.DashTickets"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Concatenate"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "DashboardADMIN.DashTicketsADMIN.Items"
                 }
               ],
