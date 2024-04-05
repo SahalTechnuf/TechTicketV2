@@ -270,7 +270,7 @@
                         LayoutMinWidth: =560
                         PaddingLeft: =0
                         Size: =17
-                        Text: =selectedItem.IssuedBy.Email
+                        Text: =selectedItem.'Issued By'.Email
                         Width: =560
                         ZIndex: =2
 
