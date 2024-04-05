@@ -285,7 +285,6 @@
             Align: =Align.Center
             AutoHeight: =true
             BorderColor: =RGBA(0, 134, 208, 1)
-            BorderThickness: =1
             Color: |-
                 =Switch(
                         Text(ThisItem.'Progress/Status'.Value),
@@ -311,7 +310,6 @@
                     ),
                     80%
                 )
-            FocusedBorderThickness: =4
             Font: =Font.'Segoe UI'
             Height: =56
             OnSelect: =Select(Parent)
