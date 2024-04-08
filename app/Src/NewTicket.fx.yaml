@@ -418,7 +418,7 @@
                                 
                                 
                                 
-                                Set(selectedColor, If(selectedItem.OData__ColorTag = "In Progress", Color.Blue,If(selectedItem.OData__ColorTag = "Initiated",Color.Blue)));
+                                //Set(selectedColor, If(selectedItem.OData__ColorTag = "In Progress", Color.Blue,If(selectedItem.OData__ColorTag = "Initiated",Color.Blue)));
                                 Patch('Work Progress Tracker', LookUp('Work Progress Tracker', ID = Value(Label4.Text)), {'Progress/Status': {Value: selectedStatus }})
                             PressedBorderColor: =ColorFade(RGBA(135, 100, 184, 1), -50%)
                             PressedColor: =RGBA(255, 255, 255, 1)
