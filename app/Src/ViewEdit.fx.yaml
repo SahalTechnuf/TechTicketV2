@@ -346,7 +346,7 @@
                         HoverBorderColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
                         HoverColor: =RGBA(51, 51, 51, 1)
                         HoverFill: =RGBA(212, 212, 212, 1)
-                        Items: ='Work Progress Tracker'
+                        Items: ='Technuf Ticketing System'
                         PaddingBottom: =5
                         PaddingLeft: =12
                         PaddingRight: =5
