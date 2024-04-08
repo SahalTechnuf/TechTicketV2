@@ -282,7 +282,7 @@
             Form5 As form:
                 AlignInContainer: =AlignInContainer.SetByContainer
                 BorderColor: =RGBA(166, 166, 166, 1)
-                DataSource: ='Technuf Ticketing System'
+                DataSource: ='Work Progress Tracker'
                 DefaultMode: =FormMode.New
                 FillPortions: =0
                 Height: =680
@@ -291,23 +291,25 @@
                 Width: =640
                 ZIndex: =3
 
-                "'Progress/Status_DataCard2' As typedDataCard.comboBoxEditCard":
+                Title_DataCard8 As typedDataCard.allowedValuesStringEditCard:
+                    AllowedValues: =DataSourceInfo([@'Work Progress Tracker'], DataSourceInfo.AllowedValues, "Title")
                     BorderColor: =RGBA(166, 166, 166, 1)
                     BorderStyle: =BorderStyle.Solid
-                    DataField: ="Progress_x002f_Status"
-                    Default: =ThisItem.'Progress/Status'
-                    DisplayMode: =If(selectedItem.'Progress/Status'.Value = "Resolved", DisplayMode.View, DisplayMode.Edit)
-                    DisplayName: =DataSourceInfo([@'Technuf Ticketing System'],DataSourceInfo.DisplayName,"Progress_x002f_Status")
+                    DataField: ="Title"
+                    Default: =ThisItem.Title
+                    DisplayMode: =Parent.DisplayMode
+                    DisplayName: =DataSourceInfo([@'Work Progress Tracker'],DataSourceInfo.DisplayName,"Title")
                     Fill: =RGBA(0, 0, 0, 0)
-                    Height: =142
+                    Height: =50
                     Required: =false
-                    Update: =
+                    Update: =DataCardValue11.Selected.Value
                     Width: =640
                     X: =0
-                    Y: =3
+                    Y: =0
                     ZIndex: =1
 
-                    DataCardKey3_2 As label:
+                    DataCardKey13 As label:
+                        AutoHeight: =true
                         BorderColor: =RGBA(0, 0, 0, 0)
                         BorderStyle: =BorderStyle.None
                         BorderThickness: =2
@@ -317,7 +319,7 @@
                         FocusedBorderThickness: =4
                         Font: =Font.'Segoe UI'
                         FontWeight: =FontWeight.Semibold
-                        Height: =37
+                        Height: =48
                         PaddingLeft: =0
                         Size: =21
                         Text: =Parent.DisplayName
@@ -327,7 +329,42 @@
                         Y: =10
                         ZIndex: =1
 
-                    ErrorMessage3_2 As label:
+                    DataCardValue11 As dropdown:
+                        BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                        ChevronBackground: =RGBA(255, 255, 255, 1)
+                        ChevronDisabledBackground: =RGBA(244, 244, 244, 1)
+                        ChevronDisabledFill: =RGBA(166, 166, 166, 1)
+                        ChevronFill: =RGBA(33, 33, 33, 1)
+                        ChevronHoverBackground: =RGBA(212, 212, 212, 1)
+                        ChevronHoverFill: =RGBA(33, 33, 33, 1)
+                        Color: =RGBA(51, 51, 51, 1)
+                        Default: =Parent.Default
+                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        DisabledFill: =RGBA(244, 244, 244, 1)
+                        DisplayMode: =Parent.DisplayMode
+                        Font: =Font.'Segoe UI'
+                        Height: =70
+                        HoverBorderColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
+                        HoverColor: =RGBA(51, 51, 51, 1)
+                        HoverFill: =RGBA(212, 212, 212, 1)
+                        Items: =Parent.AllowedValues
+                        PaddingBottom: =5
+                        PaddingLeft: =12
+                        PaddingRight: =5
+                        PaddingTop: =5
+                        PressedBorderColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
+                        PressedColor: =RGBA(255, 255, 255, 1)
+                        PressedFill: =RGBA(135, 100, 184, 1)
+                        SelectionFill: =RGBA(135, 100, 184, 1)
+                        Size: =21
+                        Tooltip: =Parent.DisplayName
+                        Width: =Parent.Width - 60
+                        X: =30
+                        Y: =DataCardKey13.Y + DataCardKey13.Height + 5
+                        ZIndex: =2
+
+                    ErrorMessage13 As label:
                         AutoHeight: =true
                         BorderColor: =RGBA(0, 0, 0, 0)
                         BorderStyle: =BorderStyle.None
@@ -349,10 +386,10 @@
                         Visible: =Parent.DisplayMode=DisplayMode.Edit
                         Width: =Parent.Width - 60
                         X: =30
-                        Y: =
-                        ZIndex: =2
+                        Y: =DataCardValue11.Y + DataCardValue11.Height
+                        ZIndex: =3
 
-                    StarVisible3_2 As label:
+                    StarVisible13 As label:
                         Align: =Align.Center
                         BorderColor: =RGBA(0, 0, 0, 0)
                         BorderStyle: =BorderStyle.None
@@ -363,158 +400,34 @@
                         FocusedBorderThickness: =4
                         Font: =Font.'Segoe UI'
                         FontWeight: =FontWeight.Semibold
-                        Height: =DataCardKey3_2.Height
+                        Height: =DataCardKey13.Height
                         PaddingLeft: =0
                         Size: =21
                         Text: ="*"
                         Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                         Width: =30
                         Wrap: =false
-                        Y: =DataCardKey3_2.Y
-                        ZIndex: =3
-
-                    Button2_2 As button:
-                        BorderColor: =RGBA(0, 0, 0, 0)
-                        Color: =Button2Color
-                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                        DisabledColor: =RGBA(166, 166, 166, 1)
-                        DisabledFill: =RGBA(244, 244, 244, 1)
-                        Fill: |-
-                            =ColorFade(
-                                If(
-                                    selectedItem.Progress_x002f_Status.Value = "Initiated",
-                                    RGBA( 0,255,0,1),
-                                    RGBA(255,255,255,1)
-                                ),
-                                0.8
-                            )
-                        FocusedBorderColor: =ColorFade(Self.Fill, -75%)
-                        Font: =Font.'Segoe UI'
-                        FontWeight: =FontWeight.Semibold
-                        Height: =80
-                        HoverBorderColor: =RGBA(0, 0, 0, 0)
-                        HoverColor: =RGBA(255, 255, 255, 1)
-                        HoverFill: =ColorFade(RGBA(135, 100, 184, 1), -10%)
-                        OnSelect: |-
-                            =Set(selectedStatus, "Initiated");
-                            Set(Button2Color, Color.Green);
-                            Set(Button5Color, Color.Gray);
-                            Set(Button7Color, Color.Gray);
-                            Patch('Work Progress Tracker', LookUp('Work Progress Tracker', ID = Value(Label4.Text)), {'Progress/Status': {Value: selectedStatus}})
-                        PressedBorderColor: =ColorFade(RGBA(135, 100, 184, 1), -50%)
-                        PressedColor: =RGBA(255, 255, 255, 1)
-                        PressedFill: =ColorFade(RGBA(135, 100, 184, 1), -30%)
-                        RadiusBottomLeft: =0
-                        RadiusBottomRight: =0
-                        RadiusTopLeft: =0
-                        RadiusTopRight: =0
-                        Size: =24
-                        Text: ="Initiated"
-                        Width: =180
-                        Y: =47
+                        Y: =DataCardKey13.Y
                         ZIndex: =4
-
-                    Button5_2 As button:
-                        BorderColor: =RGBA(0, 0, 0, 0)
-                        Color: =Button5Color
-                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                        DisabledColor: =RGBA(166, 166, 166, 1)
-                        DisabledFill: =RGBA(244, 244, 244, 1)
-                        Fill: |-
-                            =ColorFade(
-                                If(
-                                    selectedItem.Progress_x002f_Status.Value = "In Progress",
-                                    RGBA( 0,255,0,1),
-                                    RGBA(255,255,255,1)
-                                ),
-                                0.8
-                            )
-                        FocusedBorderColor: =ColorFade(Self.Fill, -75%)
-                        Font: =Font.'Segoe UI'
-                        FontWeight: =FontWeight.Semibold
-                        Height: =80
-                        HoverBorderColor: =RGBA(0, 0, 0, 0)
-                        HoverColor: =RGBA(255, 255, 255, 1)
-                        HoverFill: =ColorFade(RGBA(135, 100, 184, 1), -10%)
-                        OnSelect: |-
-                            =Set(selectedStatus, "In Progress" );
-                            Set(Button2Color, Color.Gray);
-                            Set(Button5Color, Color.Green);
-                            Set(Button7Color, Color.Gray);
-                            
-                            
-                            
-                            Patch('Work Progress Tracker', LookUp('Work Progress Tracker', ID = Value(Label4.Text)), {'Progress/Status': {Value: selectedStatus }})
-                        PressedBorderColor: =ColorFade(RGBA(135, 100, 184, 1), -50%)
-                        PressedColor: =RGBA(255, 255, 255, 1)
-                        PressedFill: =ColorFade(RGBA(135, 100, 184, 1), -30%)
-                        RadiusBottomLeft: =0
-                        RadiusBottomRight: =0
-                        RadiusTopLeft: =0
-                        RadiusTopRight: =0
-                        Size: =24
-                        Text: ="In Progress"
-                        Width: =180
-                        X: =210
-                        Y: =52
-                        ZIndex: =5
-
-                    Button7_2 As button:
-                        BorderColor: =RGBA(0, 0, 0, 0)
-                        Color: =Button7Color
-                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                        DisabledColor: =RGBA(166, 166, 166, 1)
-                        DisabledFill: =RGBA(244, 244, 244, 1)
-                        Fill: =ColorFade(If(selectedItem.Progress_x002f_Status.Value="Resolved",RGBA(0,255,0,1),RGBA(255,255,255,1)),0.8)
-                        FocusedBorderColor: =ColorFade(Self.Fill, -75%)
-                        Font: =Font.'Segoe UI'
-                        FontWeight: =FontWeight.Semibold
-                        Height: =80
-                        HoverBorderColor: =RGBA(0, 0, 0, 0)
-                        HoverColor: =RGBA(255, 255, 255, 1)
-                        HoverFill: =ColorFade(RGBA(135, 100, 184, 1), -10%)
-                        OnSelect: |-
-                            =Set(selectedStatus, "Resolved" );
-                            Set(Button2Color, Color.Gray);
-                            Set(Button5Color, Color.Gray);
-                            Set(Button7Color, Color.Green);
-                            
-                            
-                            
-                            //Set(selectedColor, If(selectedItem.OData__ColorTag = "In Progress", Color.Blue,If(selectedItem.OData__ColorTag = "Initiated",Color.Blue)));
-                            Patch('Work Progress Tracker', LookUp('Work Progress Tracker', ID = Value(Label4.Text)), {'Progress/Status': {Value: selectedStatus }})
-                        PressedBorderColor: =ColorFade(RGBA(135, 100, 184, 1), -50%)
-                        PressedColor: =RGBA(255, 255, 255, 1)
-                        PressedFill: =ColorFade(RGBA(135, 100, 184, 1), -30%)
-                        RadiusBottomLeft: =0
-                        RadiusBottomRight: =0
-                        RadiusTopLeft: =0
-                        RadiusTopRight: =0
-                        Size: =24
-                        Text: ="Resolved"
-                        Width: =180
-                        X: =460
-                        Y: =47
-                        ZIndex: =6
 
                 Description_DataCard1 As typedDataCard.textualEditCard:
                     BorderColor: =RGBA(166, 166, 166, 1)
                     BorderStyle: =BorderStyle.Solid
                     DataField: ="Description"
                     Default: =ThisItem.Description
-                    DisplayMode: =If(selectedItem.'Progress/Status'.Value = "Resolved", DisplayMode.View, DisplayMode.Edit)
-                    DisplayName: =DataSourceInfo([@'Technuf Ticketing System'],DataSourceInfo.DisplayName,"Description")
+                    DisplayMode: =Parent.DisplayMode
+                    DisplayName: =DataSourceInfo([@'Work Progress Tracker'],DataSourceInfo.DisplayName,"Description")
                     Fill: =RGBA(0, 0, 0, 0)
-                    Height: =524
-                    MaxLength: =DataSourceInfo([@'Technuf Ticketing System'], DataSourceInfo.MaxLength, "Description")
+                    Height: =532
+                    MaxLength: =DataSourceInfo([@'Work Progress Tracker'], DataSourceInfo.MaxLength, "Description")
                     Required: =false
-                    Update: =DataCardValue2.Text
+                    Update: =DataCardValue8.Text
                     Width: =640
                     X: =0
                     Y: =1
                     ZIndex: =4
 
-                    DataCardKey2 As label:
+                    DataCardKey8 As label:
                         AutoHeight: =true
                         BorderColor: =RGBA(0, 0, 0, 0)
                         BorderStyle: =BorderStyle.None
@@ -535,7 +448,7 @@
                         Y: =10
                         ZIndex: =1
 
-                    DataCardValue2 As text:
+                    DataCardValue8 As text:
                         BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                         BorderThickness: =2
                         Color: =RGBA(51, 51, 51, 1)
@@ -547,7 +460,7 @@
                         DisplayMode: =Parent.DisplayMode
                         FocusedBorderThickness: =4
                         Font: =Font.'Segoe UI'
-                        Height: =424
+                        Height: =458
                         HoverBorderColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
                         HoverColor: =RGBA(51, 51, 51, 1)
                         HoverFill: =RGBA(255, 255, 255, 1)
@@ -564,10 +477,10 @@
                         Tooltip: =Parent.DisplayName
                         Width: =Parent.Width - 60
                         X: =30
-                        Y: =DataCardKey2.Y + DataCardKey2.Height + 5
+                        Y: =DataCardKey8.Y + DataCardKey8.Height + 5
                         ZIndex: =2
 
-                    ErrorMessage2 As label:
+                    ErrorMessage8 As label:
                         AutoHeight: =true
                         BorderColor: =RGBA(0, 0, 0, 0)
                         BorderStyle: =BorderStyle.None
@@ -589,10 +502,10 @@
                         Visible: =Parent.DisplayMode=DisplayMode.Edit
                         Width: =Parent.Width - 60
                         X: =30
-                        Y: =DataCardValue2.Y + DataCardValue2.Height
+                        Y: =DataCardValue8.Y + DataCardValue8.Height
                         ZIndex: =3
 
-                    StarVisible2 As label:
+                    StarVisible8 As label:
                         Align: =Align.Center
                         BorderColor: =RGBA(0, 0, 0, 0)
                         BorderStyle: =BorderStyle.None
@@ -603,34 +516,33 @@
                         FocusedBorderThickness: =4
                         Font: =Font.'Segoe UI'
                         FontWeight: =FontWeight.Semibold
-                        Height: =DataCardKey2.Height
+                        Height: =DataCardKey8.Height
                         PaddingLeft: =0
                         Size: =21
                         Text: ="*"
                         Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                         Width: =30
                         Wrap: =false
-                        Y: =DataCardKey2.Y
+                        Y: =DataCardKey8.Y
                         ZIndex: =4
 
-                Title_DataCard1 As typedDataCard.textualEditCard:
+                "'Progress/Status_DataCard2' As typedDataCard.comboBoxEditCard":
                     BorderColor: =RGBA(166, 166, 166, 1)
                     BorderStyle: =BorderStyle.Solid
-                    DataField: ="Title"
-                    Default: =ThisItem.Title
-                    DisplayMode: =If(selectedItem.'Progress/Status'.Value = "Resolved", DisplayMode.View, DisplayMode.Edit)
-                    DisplayName: =DataSourceInfo([@'Technuf Ticketing System'],DataSourceInfo.DisplayName,"Title")
+                    DataField: ="TicketProgress"
+                    Default: =ThisItem.'Progress/Status'
+                    DisplayMode: =Parent.DisplayMode
+                    DisplayName: =DataSourceInfo([@'Work Progress Tracker'],DataSourceInfo.DisplayName,"TicketProgress")
                     Fill: =RGBA(0, 0, 0, 0)
                     Height: =50
-                    MaxLength: =DataSourceInfo([@'Technuf Ticketing System'], DataSourceInfo.MaxLength, "Title")
                     Required: =false
-                    Update: =DataCardValue1.Text
+                    Update: =DataCardValue9.Selected
                     Width: =640
                     X: =0
-                    Y: =0
+                    Y: =3
                     ZIndex: =4
 
-                    DataCardKey1 As label:
+                    DataCardKey9 As label:
                         AutoHeight: =true
                         BorderColor: =RGBA(0, 0, 0, 0)
                         BorderStyle: =BorderStyle.None
@@ -651,39 +563,43 @@
                         Y: =10
                         ZIndex: =1
 
-                    DataCardValue1 As text:
+                    DataCardValue9 As combobox:
                         BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                        BorderThickness: =2
+                        ChevronBackground: =RGBA(255, 255, 255, 1)
+                        ChevronDisabledBackground: =RGBA(244, 244, 244, 1)
+                        ChevronDisabledFill: =RGBA(166, 166, 166, 1)
+                        ChevronFill: =RGBA(33, 33, 33, 1)
+                        ChevronHoverBackground: =RGBA(212, 212, 212, 1)
+                        ChevronHoverFill: =RGBA(33, 33, 33, 1)
                         Color: =RGBA(51, 51, 51, 1)
-                        Default: =Parent.Default
-                        DelayOutput: =true
+                        DefaultSelectedItems: =Parent.Default
                         DisabledBorderColor: =RGBA(0, 0, 0, 0)
                         DisabledColor: =RGBA(166, 166, 166, 1)
                         DisabledFill: =RGBA(244, 244, 244, 1)
+                        DisplayFields: =["Value"]
                         DisplayMode: =Parent.DisplayMode
-                        FocusedBorderThickness: =4
                         Font: =Font.'Segoe UI'
                         Height: =70
                         HoverBorderColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
                         HoverColor: =RGBA(51, 51, 51, 1)
-                        HoverFill: =RGBA(255, 255, 255, 1)
-                        MaxLength: =Parent.MaxLength
-                        PaddingLeft: =5
-                        PressedBorderColor: =RGBA(135, 100, 184, 1)
-                        PressedColor: =RGBA(51, 51, 51, 1)
-                        PressedFill: =RGBA(255, 255, 255, 1)
-                        RadiusBottomLeft: =0
-                        RadiusBottomRight: =0
-                        RadiusTopLeft: =0
-                        RadiusTopRight: =0
+                        HoverFill: =RGBA(212, 212, 212, 1)
+                        Items: =Choices([@'Work Progress Tracker'].TicketProgress)
+                        PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                        PressedBorderColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
+                        PressedColor: =RGBA(255, 255, 255, 1)
+                        PressedFill: =RGBA(135, 100, 184, 1)
+                        SearchFields: =["Value"]
+                        SearchItems: =Choices('Work Progress Tracker'.TicketProgress,DataCardValue9.SearchText)
+                        SelectionFill: =RGBA(135, 100, 184, 1)
+                        SelectMultiple: =false
                         Size: =21
                         Tooltip: =Parent.DisplayName
                         Width: =Parent.Width - 60
                         X: =30
-                        Y: =DataCardKey1.Y + DataCardKey1.Height + 5
+                        Y: =DataCardKey9.Y + DataCardKey9.Height + 5
                         ZIndex: =2
 
-                    ErrorMessage1 As label:
+                    ErrorMessage9 As label:
                         AutoHeight: =true
                         BorderColor: =RGBA(0, 0, 0, 0)
                         BorderStyle: =BorderStyle.None
@@ -705,10 +621,10 @@
                         Visible: =Parent.DisplayMode=DisplayMode.Edit
                         Width: =Parent.Width - 60
                         X: =30
-                        Y: =DataCardValue1.Y + DataCardValue1.Height
+                        Y: =DataCardValue9.Y + DataCardValue9.Height
                         ZIndex: =3
 
-                    StarVisible1 As label:
+                    StarVisible9 As label:
                         Align: =Align.Center
                         BorderColor: =RGBA(0, 0, 0, 0)
                         BorderStyle: =BorderStyle.None
@@ -719,14 +635,14 @@
                         FocusedBorderThickness: =4
                         Font: =Font.'Segoe UI'
                         FontWeight: =FontWeight.Semibold
-                        Height: =DataCardKey1.Height
+                        Height: =DataCardKey9.Height
                         PaddingLeft: =0
                         Size: =21
                         Text: ="*"
                         Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                         Width: =30
                         Wrap: =false
-                        Y: =DataCardKey1.Y
+                        Y: =DataCardKey9.Y
                         ZIndex: =4
 
                 "'Image (Optional)_DataCard1' As typedDataCard.addLargePictureCard":
@@ -734,10 +650,10 @@
                     BorderStyle: =BorderStyle.Solid
                     DataField: ="Image_x0028_Optional_x0029_"
                     Default: =ThisItem.'Image (Optional)'
-                    DisplayMode: =If(selectedItem.'Progress/Status'.Value = "Resolved", DisplayMode.View, DisplayMode.Edit)
-                    DisplayName: =DataSourceInfo([@'Technuf Ticketing System'],DataSourceInfo.DisplayName,"Image_x0028_Optional_x0029_")
+                    DisplayMode: =Parent.DisplayMode
+                    DisplayName: =DataSourceInfo([@'Work Progress Tracker'],DataSourceInfo.DisplayName,"Image_x0028_Optional_x0029_")
                     Fill: =RGBA(0, 0, 0, 0)
-                    Height: =329
+                    Height: =50
                     Required: =false
                     Update: =Image5.Image
                     Width: =640
@@ -745,7 +661,7 @@
                     Y: =2
                     ZIndex: =4
 
-                    DataCardKey6 As label:
+                    DataCardKey11 As label:
                         AutoHeight: =true
                         BorderColor: =RGBA(0, 0, 0, 0)
                         BorderStyle: =BorderStyle.None
@@ -806,10 +722,10 @@
                         Size: =24
                         Width: =Parent.Width - 60
                         X: =30
-                        Y: =DataCardKey6.Y + DataCardKey6.Height + 5
+                        Y: =DataCardKey11.Y + DataCardKey11.Height + 5
                         ZIndex: =3
 
-                    ErrorMessage6 As label:
+                    ErrorMessage11 As label:
                         AutoHeight: =true
                         BorderColor: =RGBA(0, 0, 0, 0)
                         BorderStyle: =BorderStyle.None
@@ -834,7 +750,7 @@
                         Y: =Image5.Y + Image5.Height
                         ZIndex: =4
 
-                    StarVisible6 As label:
+                    StarVisible11 As label:
                         Align: =Align.Center
                         BorderColor: =RGBA(0, 0, 0, 0)
                         BorderStyle: =BorderStyle.None
@@ -845,14 +761,14 @@
                         FocusedBorderThickness: =4
                         Font: =Font.'Segoe UI'
                         FontWeight: =FontWeight.Semibold
-                        Height: =DataCardKey6.Height
+                        Height: =DataCardKey11.Height
                         PaddingLeft: =0
                         Size: =21
                         Text: ="*"
                         Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                         Width: =30
                         Wrap: =false
-                        Y: =DataCardKey6.Y
+                        Y: =DataCardKey11.Y
                         ZIndex: =5
 
             ButtonContainer As groupContainer.horizontalAutoLayoutContainer:
