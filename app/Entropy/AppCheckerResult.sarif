@@ -183,10 +183,10 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 375,
+                  "charLength": 376,
                   "charOffset": 0,
                   "snippet": {
-                    "text": "Patch ('Technuf Ticketing System', LookUp(\n        'Technuf Ticketing System',  \n        ID = selectedItem.ID),\n    {\n        Title: DataCardValue16_1.Text,\n        'Issued by': DashAuthor,\n        Description: DataCardValue13_1.Text,\n        'Progress/Status':{Value: selectedStatus}, \n        'Image (Optional)': Image4_1.Image,\n        'Issue Date and Time': Now()\n    }\n)"
+                    "text": "Patch ('Technuf Ticketing System', LookUp(\n        'Technuf Ticketing System',  \n        ID = selectedItem.ID),\n    {\n        Title: DataCardValue16_1.Text,\n        'Created By': DashAuthor,\n        Description: DataCardValue13_1.Text,\n        'Progress/Status':{Value: selectedStatus}, \n        'Image (Optional)': Image4_1.Image,\n        'Issue Date and Time': Now()\n    }\n)"
                   }
                 }
               },
@@ -223,10 +223,10 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 257,
+                  "charLength": 258,
                   "charOffset": 116,
                   "snippet": {
-                    "text": "{\n        Title: DataCardValue16_1.Text,\n        'Issued by': DashAuthor,\n        Description: DataCardValue13_1.Text,\n        'Progress/Status':{Value: selectedStatus}, \n        'Image (Optional)': Image4_1.Image,\n        'Issue Date and Time': Now()\n    }"
+                    "text": "{\n        Title: DataCardValue16_1.Text,\n        'Created By': DashAuthor,\n        Description: DataCardValue13_1.Text,\n        'Progress/Status':{Value: selectedStatus}, \n        'Image (Optional)': Image4_1.Image,\n        'Issue Date and Time': Now()\n    }"
                   }
                 }
               },

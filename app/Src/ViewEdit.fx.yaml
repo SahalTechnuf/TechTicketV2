@@ -943,7 +943,7 @@
                                 ID = selectedItem.ID),
                             {
                                 Title: DataCardValue16_1.Text,
-                                'Issued by': DashAuthor,
+                                'Created By': DashAuthor,
                                 Description: DataCardValue13_1.Text,
                                 'Progress/Status':{Value: selectedStatus}, 
                                 'Image (Optional)': Image4_1.Image,
