@@ -115,7 +115,7 @@
                         DataField: ="Title"
                         Default: =ThisItem.Title
                         DisplayMode: =Parent.DisplayMode
-                        DisplayName: =DataSourceInfo([@'Work Progress Tracker'],DataSourceInfo.DisplayName,"Title")
+                        DisplayName: =DataSourceInfo([@'Technuf Ticketing System'],DataSourceInfo.DisplayName,"Title")
                         Fill: =RGBA(0, 0, 0, 0)
                         Height: =50
                         Required: =false
@@ -165,7 +165,7 @@
                             HoverBorderColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
                             HoverColor: =RGBA(51, 51, 51, 1)
                             HoverFill: =RGBA(212, 212, 212, 1)
-                            Items: ='Ticketing System'
+                            Items: ='Work Progress Tracker'
                             PaddingBottom: =5
                             PaddingLeft: =12
                             PaddingRight: =5
@@ -286,7 +286,7 @@
                             Visible: =Parent.DisplayMode=DisplayMode.Edit
                             Width: =Parent.Width - 60
                             X: =30
-                            Y: ='Progress/Status_DataCard3'.Y + 'Progress/Status_DataCard3'.Height
+                            Y: =
                             ZIndex: =6
 
                         StarVisible3_1 As label:

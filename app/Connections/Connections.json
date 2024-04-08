@@ -39,6 +39,13 @@
           }
         }
       },
+      "https://netorg4829107-my.sharepoint.com/personal/zahid_ahsan_technuf_com": {
+        "dataSources": {
+          "Work Progress Tracker": {
+            "tableName": "e9f778b6-9608-457f-8ec6-e0f8cd437713"
+          }
+        }
+      },
       "https://netorg4829107-my.sharepoint.com/personal/zahid_ahsan_technuf_com/_layouts/15/lists.aspx": {
         "dataSources": {
           "User List": {
@@ -49,7 +56,8 @@
     },
     "dataSources": [
       "User List",
-      "Technuf Ticketing System"
+      "Technuf Ticketing System",
+      "Work Progress Tracker"
     ],
     "dependencies": {},
     "dependents": [],
