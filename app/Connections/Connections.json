@@ -39,18 +39,8 @@
           }
         }
       },
-      "https://netorg4829107-my.sharepoint.com/personal/zahid_ahsan_technuf_com": {
-        "dataSources": {
-          "Work Progress Tracker": {
-            "tableName": "e9f778b6-9608-457f-8ec6-e0f8cd437713"
-          }
-        }
-      },
       "https://netorg4829107-my.sharepoint.com/personal/zahid_ahsan_technuf_com/_layouts/15/lists.aspx": {
         "dataSources": {
-          "Ticketing System": {
-            "tableName": "c6f9b157-7b03-4dbf-9da5-dc2b0c26a05c"
-          },
           "User List": {
             "tableName": "d45c2546-15b7-4261-8e19-e9013914ec09"
           }
@@ -58,8 +48,6 @@
       }
     },
     "dataSources": [
-      "Work Progress Tracker",
-      "Ticketing System",
       "User List",
       "Technuf Ticketing System"
     ],
