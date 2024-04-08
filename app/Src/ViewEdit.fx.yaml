@@ -296,19 +296,18 @@
                     BorderStyle: =BorderStyle.Solid
                     DataField: ="Progress_x002f_Status"
                     Default: =ThisItem.'Progress/Status'
-                    DisplayMode: =Parent.DisplayMode
+                    DisplayMode: =If(selectedItem.'Progress/Status'.Value = "Resolved", DisplayMode.View, DisplayMode.Edit)
                     DisplayName: =DataSourceInfo([@'Technuf Ticketing System'],DataSourceInfo.DisplayName,"Progress_x002f_Status")
                     Fill: =RGBA(0, 0, 0, 0)
-                    Height: =If(selectedItem.'Progress/Status'.Value = "Resolved", DisplayMode.View, DisplayMode.Edit)
+                    Height: =142
                     Required: =false
-                    Update: =DataCardValue3.Selected
+                    Update: =
                     Width: =640
                     X: =0
                     Y: =3
                     ZIndex: =1
 
                     DataCardKey3_2 As label:
-                        AutoHeight: =true
                         BorderColor: =RGBA(0, 0, 0, 0)
                         BorderStyle: =BorderStyle.None
                         BorderThickness: =2
@@ -318,7 +317,7 @@
                         FocusedBorderThickness: =4
                         Font: =Font.'Segoe UI'
                         FontWeight: =FontWeight.Semibold
-                        Height: =48
+                        Height: =37
                         PaddingLeft: =0
                         Size: =21
                         Text: =Parent.DisplayName
@@ -412,7 +411,7 @@
                         Size: =24
                         Text: ="Initiated"
                         Width: =180
-                        Y: =37
+                        Y: =47
                         ZIndex: =4
 
                     Button5_2 As button:
@@ -457,7 +456,7 @@
                         Text: ="In Progress"
                         Width: =180
                         X: =210
-                        Y: =42
+                        Y: =52
                         ZIndex: =5
 
                     Button7_2 As button:
@@ -495,7 +494,7 @@
                         Text: ="Resolved"
                         Width: =180
                         X: =460
-                        Y: =37
+                        Y: =47
                         ZIndex: =6
 
                 Title_DataCard1 As typedDataCard.textualEditCard:
@@ -738,7 +737,7 @@
                     DisplayMode: =If(selectedItem.'Progress/Status'.Value = "Resolved", DisplayMode.View, DisplayMode.Edit)
                     DisplayName: =DataSourceInfo([@'Technuf Ticketing System'],DataSourceInfo.DisplayName,"Image_x0028_Optional_x0029_")
                     Fill: =RGBA(0, 0, 0, 0)
-                    Height: =50
+                    Height: =329
                     Required: =false
                     Update: =Image5.Image
                     Width: =640
@@ -955,23 +954,4 @@
                     Text: ="Save"
                     Width: =280
                     ZIndex: =2
-
-    Label3 As label:
-        Align: =Align.Center
-        BorderColor: =RGBA(0, 0, 0, 0)
-        BorderStyle: =BorderStyle.None
-        BorderThickness: =2
-        Color: =RGBA(51, 51, 51, 1)
-        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        FocusedBorderThickness: =4
-        Font: =Font.'Segoe UI'
-        Height: =55
-        Size: =21
-        Text: ="Saved Successfully!"
-        Visible: =false
-        Width: =565
-        X: =37
-        Y: =895
-        ZIndex: =4
 
