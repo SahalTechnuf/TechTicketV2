@@ -1741,6 +1741,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "App.DropdownClicked"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.DropdownClicked",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "DropdownClicked",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 13
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App.technufllc_logo"
                 }
               ],
