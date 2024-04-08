@@ -930,7 +930,7 @@
                     LayoutMinHeight: =70
                     LayoutMinWidth: =280
                     OnSelect: |-
-                        =Patch ('Technuf Ticketing System', LookUp(
+                        =Patch (''Technuf Ticketing System', LookUp(
                                 'Technuf Ticketing System',  
                                 ID = selectedItem.ID),
                             {
