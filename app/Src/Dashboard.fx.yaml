@@ -154,8 +154,8 @@
             Text: |-
                 =Text(ThisItem.'Issue Date and Time',    "mm/dd/yyyy        hh:mm AM/PM")
             Width: =378
-            X: =217
-            Y: =116
+            X: =207
+            Y: =129
             ZIndex: =7
 
         Image As image:
@@ -237,7 +237,7 @@
             LineHeight: =1
             OnSelect: =Select(Parent)
             Size: =17
-            Text: =ThisItem.'Issued By'.Email
+            Text: =ThisItem.'Created By'.Email
             Width: =320
             X: =236
             Y: =87
@@ -256,7 +256,7 @@
             LineHeight: =1
             OnSelect: =Select(Parent)
             Size: =17
-            Text: =ThisItem.'Issued By'.DisplayName
+            Text: =ThisItem.'Created By'.DisplayName
             Width: =200
             X: =280
             Y: =53
