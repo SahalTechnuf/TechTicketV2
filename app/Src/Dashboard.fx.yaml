@@ -11,15 +11,13 @@
         Items: ='Technuf Ticketing System'
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
-        OnSelect: |-
-            =//If(
-                //DashTickets.Selected.'Progress/Status'.Value = "Resolved",
-               // Notify("This ticket is resolved and cannot be edited.", NotificationType.Error),
-                //Set(selectedItem, DashTickets.Selected);
-                //Navigate(ViewEdit, Transition.None, {selectedItem: selectedItem})
-            //)
-            Set(selectedItem, DashTickets.Selected);
+        OnSelect: |
+            =If(
+                DashTickets.Selected.'Progress/Status'.Value = "Resolved",
+                Notify("This ticket is resolved and cannot be edited.", NotificationType.Error),
+                Set(selectedItem, DashTickets.Selected);
                 Navigate(ViewEdit, Transition.None, {selectedItem: selectedItem})
+            )
         TabIndex: |
             =3
         TemplatePadding: =10

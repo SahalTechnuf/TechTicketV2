@@ -346,14 +346,7 @@
                         HoverColor: =RGBA(51, 51, 51, 1)
                         HoverFill: =RGBA(212, 212, 212, 1)
                         Items: ='Technuf Ticketing System'
-                        OnSelect: |-
-                            =If(
-                                         !DropdownClicked,
-                                         Set(DropdownClicked, true);  // Set a flag to indicate the dropdown has been clicked
-                                         Reset([@DataCardValue16_1]);  // Reset the dropdown to clear any previous selection
-                                         ClearCollect('Work Progress Tracker'.Title, 'Work Progress Tracker');  // Collect components from alternate data source
-                                         UpdateContext({ DropdownClicked: false })  // Reset the flag after the dropdown is clicked
-                                     )
+                        OnSelect: =
                         PaddingBottom: =5
                         PaddingLeft: =12
                         PaddingRight: =5
@@ -627,7 +620,9 @@
                     BorderStyle: =BorderStyle.Solid
                     DataField: ="Description"
                     Default: =ThisItem.Description
-                    DisplayMode: =Parent.DisplayMode
+                    DisplayMode: |+
+                        =
+                        
                     DisplayName: =DataSourceInfo([@'Work Progress Tracker'],DataSourceInfo.DisplayName,"Description")
                     Fill: =RGBA(0, 0, 0, 0)
                     Height: =50
@@ -941,7 +936,7 @@
                                 'Technuf Ticketing System',  
                                 ID = selectedItem.ID),
                             {
-                                Title: DataCardValue16_1.Text,
+                                Title: DataCardValue16_1.Selected.Title,
                                 'Created By': DashAuthor,
                                 Description: DataCardValue13_1.Text,
                                 'Progress/Status':{Value: selectedStatus}, 
