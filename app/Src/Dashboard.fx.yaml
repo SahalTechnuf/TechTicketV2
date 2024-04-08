@@ -265,6 +265,7 @@
             Align: =Align.Center
             AutoHeight: =true
             BorderColor: =RGBA(0, 134, 208, 1)
+            BorderStyle: =BorderStyle.None
             Color: |-
                 =Switch(
                         Text(ThisItem.'Progress/Status'.Value),
@@ -297,8 +298,8 @@
             Size: =15
             Text: =ThisItem.'Progress/Status'.Value
             Width: =125
-            X: =470
-            Y: =21
+            X: =317
+            Y: =111
             ZIndex: =13
 
         Label4 As label:
@@ -319,6 +320,58 @@
             X: =525
             Y: =74
             ZIndex: =14
+
+        Button7 As button:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderThickness: =0
+            Color: |-
+                =Switch(
+                        Text(ThisItem.'Progress/Status'.Value),
+                        "Initiated",
+                        RGBA(153,207,236,1),
+                        "In Progress",
+                        RGBA(140,98,14,1),
+                        "Resolved",
+                        RGBA(10,84,48,1)
+                    )
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Fill: |-
+                =ColorFade(
+                    Switch(
+                        Text(ThisItem.'Progress/Status'.Value),
+                        "Initiated",
+                        RGBA(153,207,236,1),
+                        "In Progress",
+                        RGBA(140,98,14,1),
+                        "Resolved",
+                        RGBA(10,84,48,1)
+                    ),
+                    80%
+                )
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            FocusedBorderThickness: =0
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Semibold
+            Height: =37
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =ColorFade(RGBA(135, 100, 184, 1), -10%)
+            OnSelect: =Select(Parent)
+            PressedBorderColor: =ColorFade(RGBA(135, 100, 184, 1), -50%)
+            PressedColor: =RGBA(255, 255, 255, 1)
+            PressedFill: =ColorFade(RGBA(135, 100, 184, 1), -30%)
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Size: =15
+            Text: =ThisItem.'Progress/Status'.Value
+            Width: =127
+            X: =458
+            Y: =18
+            ZIndex: =15
 
     PageRefresh As icon.Reload:
         AccessibleLabel: =Self.Tooltip
@@ -538,4 +591,31 @@
         X: =160
         Y: =570
         ZIndex: =16
+
+    Button5 As button:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(135, 100, 184, 1)
+        FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Semibold
+        Height: =70
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(135, 100, 184, 1), -10%)
+        PressedBorderColor: =ColorFade(RGBA(135, 100, 184, 1), -50%)
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =ColorFade(RGBA(135, 100, 184, 1), -30%)
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
+        Size: =24
+        Text: ="Button"
+        Width: =280
+        X: =60
+        Y: =60
+        ZIndex: =17
 
