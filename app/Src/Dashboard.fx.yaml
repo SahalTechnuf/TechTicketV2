@@ -492,7 +492,7 @@
         FontWeight: =FontWeight.Bold
         Height: =75
         Size: =25
-        Text: ="Ticketing System"
+        Text: ="Ticketing system"
         Width: =280
         X: =180
         Y: =98
