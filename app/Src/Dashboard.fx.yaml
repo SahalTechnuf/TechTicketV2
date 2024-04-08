@@ -8,37 +8,16 @@
         Fill: =RGBA(255, 255, 255, 1)
         FocusedBorderThickness: =
         Height: =708
-        Items: |-
-            =Sort(
-                Filter(
-                    'Technuf Ticketing System',
-                    StartsWith(
-                        Upper(
-                            Concatenate(
-                                Text(Title),
-                                " ",
-                                Text(Description),
-                                " ",
-                                Text('Progress/Status'.Value),
-                                " ",
-                                Text('Issued By'.DisplayName),
-                                " ",
-                                Text('Issue Date and Time')
-                            )
-                        ),
-                        Upper(SearchTicket.Text)
-                    ) && 'Issued By'.Email = User().Email// Filter rows where 'Issued by' field matches current user's email
-                ),
-                'Issue Date and Time',
-                SortOrder.Descending
-            )
-            
-                
+        Items: ='Technuf Ticketing System'
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         OnSelect: |-
-            =Set(selectedItem, ThisItem);
-            Navigate(ViewEdit, Transition.None, {selectedItem: DashTickets.Selected})
+            =If(
+                DashTickets.Selected.'Progress/Status'.Value = "Resolved",
+                Notify("This ticket is resolved and cannot be edited.", NotificationType.Error),
+                Set(selectedItem, DashTickets.Selected);
+                Navigate(ViewEdit, Transition.None, {selectedItem: selectedItem})
+            )
         TabIndex: |
             =3
         TemplatePadding: =10
