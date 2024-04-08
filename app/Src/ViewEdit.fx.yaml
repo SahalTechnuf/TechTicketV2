@@ -938,15 +938,15 @@
                     LayoutMinHeight: =70
                     LayoutMinWidth: =280
                     OnSelect: |-
-                        =Patch (''Technuf Ticketing System', LookUp(
+                        =Patch ('Technuf Ticketing System', LookUp(
                                 'Technuf Ticketing System',  
                                 ID = selectedItem.ID),
                             {
-                                Title: DataCardValue1.Text,
+                                Title: DataCardValue16_1.Text,
                                 'Issued by': DashAuthor,
-                                Description: DataCardValue2.Text,
+                                Description: DataCardValue13_1.Text,
                                 'Progress/Status':{Value: selectedStatus}, 
-                                'Image (Optional)': Image5.Image,
+                                'Image (Optional)': Image4_1.Image,
                                 'Issue Date and Time': Now()
                             }
                         );
