@@ -261,47 +261,6 @@
             Y: =53
             ZIndex: =12
 
-        Label2 As label:
-            Align: =Align.Center
-            AutoHeight: =true
-            BorderColor: =RGBA(0, 134, 208, 1)
-            BorderStyle: =BorderStyle.None
-            Color: |-
-                =Switch(
-                        Text(ThisItem.'Progress/Status'.Value),
-                        "Initiated",
-                        RGBA(153,207,236,1),
-                        "In Progress",
-                        RGBA(140,98,14,1),
-                        "Resolved",
-                        RGBA(10,84,48,1)
-                    )
-            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            Fill: |-
-                =ColorFade(
-                    Switch(
-                        Text(ThisItem.'Progress/Status'.Value),
-                        "Initiated",
-                        RGBA(153,207,236,1),
-                        "In Progress",
-                        RGBA(140,98,14,1),
-                        "Resolved",
-                        RGBA(10,84,48,1)
-                    ),
-                    80%
-                )
-            FocusedBorderThickness: =20
-            Font: =Font.'Segoe UI'
-            Height: =56
-            OnSelect: =Select(Parent)
-            Size: =15
-            Text: =ThisItem.'Progress/Status'.Value
-            Width: =125
-            X: =317
-            Y: =111
-            ZIndex: =13
-
         Label4 As label:
             BorderColor: =RGBA(0, 0, 0, 0)
             BorderStyle: =BorderStyle.None
