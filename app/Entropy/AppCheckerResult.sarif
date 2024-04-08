@@ -297,6 +297,83 @@
                   "relativeAddress": 0
                 },
                 "region": {
+                  "charLength": 6,
+                  "charOffset": 309,
+                  "snippet": {
+                    "text": "Image5"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "ViewEdit",
+                "type": "ViewEdit.Container11.Container12.ButtonContainer.Button4_1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Image5"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ViewEdit.Container11.Container12.ButtonContainer.Button4_1.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ViewEdit.Container11.Container12.ButtonContainer.Button4_1.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 6,
+                  "charOffset": 315,
+                  "snippet": {
+                    "text": ".Image"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "ViewEdit",
+                "type": "ViewEdit.Container11.Container12.ButtonContainer.Button4_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidDot",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ViewEdit.Container11.Container12.ButtonContainer.Button4_1.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ViewEdit.Container11.Container12.ButtonContainer.Button4_1.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
                   "charLength": 367,
                   "charOffset": 0,
                   "snippet": {
@@ -730,19 +807,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "ViewEdit.Container11.Container12.Form5.'Progress/Status_DataCard2'.DataCardValue9.AccessibleLabel"
+                  "fullyQualifiedName": "ViewEdit.Container11.Container12.Form5.Description_DataCard2.DataCardValue14.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "ViewEdit.Container11.Container12.Form5.'Progress/Status_DataCard2'.DataCardValue9.AccessibleLabel",
+                  "fullyQualifiedName": "ViewEdit.Container11.Container12.Form5.Description_DataCard2.DataCardValue14.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "ViewEdit",
-                "type": "ViewEdit.Container11.Container12.Form5.'Progress/Status_DataCard2'.DataCardValue9"
+                "type": "ViewEdit.Container11.Container12.Form5.Description_DataCard2.DataCardValue14"
               }
             }
           ],
@@ -760,19 +837,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "ViewEdit.Container11.Container12.Form5.Description_DataCard1.DataCardValue8.AccessibleLabel"
+                  "fullyQualifiedName": "ViewEdit.Container11.Container12.Form5.'Progress/Status_DataCard3'.DataCardValue15.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "ViewEdit.Container11.Container12.Form5.Description_DataCard1.DataCardValue8.AccessibleLabel",
+                  "fullyQualifiedName": "ViewEdit.Container11.Container12.Form5.'Progress/Status_DataCard3'.DataCardValue15.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "ViewEdit",
-                "type": "ViewEdit.Container11.Container12.Form5.Description_DataCard1.DataCardValue8"
+                "type": "ViewEdit.Container11.Container12.Form5.'Progress/Status_DataCard3'.DataCardValue15"
               }
             }
           ],
@@ -790,19 +867,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "ViewEdit.Container11.Container12.Form5.Title_DataCard8.DataCardValue11.AccessibleLabel"
+                  "fullyQualifiedName": "ViewEdit.Container11.Container12.Form5.'Image (Optional)_DataCard2'.AddPicture2.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "ViewEdit.Container11.Container12.Form5.Title_DataCard8.DataCardValue11.AccessibleLabel",
+                  "fullyQualifiedName": "ViewEdit.Container11.Container12.Form5.'Image (Optional)_DataCard2'.AddPicture2.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "ViewEdit",
-                "type": "ViewEdit.Container11.Container12.Form5.Title_DataCard8.DataCardValue11"
+                "type": "ViewEdit.Container11.Container12.Form5.'Image (Optional)_DataCard2'.AddPicture2"
               }
             }
           ],
@@ -820,19 +897,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "ViewEdit.Container11.Container12.Form5.'Image (Optional)_DataCard1'.AddPicture1.AccessibleLabel"
+                  "fullyQualifiedName": "ViewEdit.Container11.Container12.Form5.Title_DataCard9.DataCardValue12.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "ViewEdit.Container11.Container12.Form5.'Image (Optional)_DataCard1'.AddPicture1.AccessibleLabel",
+                  "fullyQualifiedName": "ViewEdit.Container11.Container12.Form5.Title_DataCard9.DataCardValue12.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "ViewEdit",
-                "type": "ViewEdit.Container11.Container12.Form5.'Image (Optional)_DataCard1'.AddPicture1"
+                "type": "ViewEdit.Container11.Container12.Form5.Title_DataCard9.DataCardValue12"
               }
             }
           ],
