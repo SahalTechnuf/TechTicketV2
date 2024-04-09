@@ -448,6 +448,12 @@
         Height: =56
         Size: =25
         Text: ="Tickets"
+        Visible: |-
+            =If(
+                CountRows(DashTickets.AllItems) > 0,
+                true,
+                false
+            )
         Width: =544
         X: =13
         Y: =250
