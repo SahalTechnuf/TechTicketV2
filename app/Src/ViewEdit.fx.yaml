@@ -156,7 +156,7 @@
                         Width: =400
                         ZIndex: =2
 
-                    Icon3 As icon.Trash:
+                    ImageTrashIcon3 As icon.Trash:
                         BorderColor: =RGBA(0, 0, 0, 0)
                         Color: =RGBA(135, 100, 184, 1)
                         DisabledBorderColor: =RGBA(166, 166, 166, 1)
@@ -862,6 +862,27 @@
                         Wrap: =false
                         Y: =DataCardKey20_1.Y
                         ZIndex: =5
+
+                    Icon5 As icon.Trash:
+                        BorderColor: =RGBA(0, 0, 0, 0)
+                        Color: =RGBA(135, 100, 184, 1)
+                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                        DisabledColor: =RGBA(220, 220, 220, 1)
+                        DisabledFill: =RGBA(0, 0, 0, 0)
+                        FocusedBorderThickness: =4
+                        Height: =50
+                        HoverBorderColor: =RGBA(0, 0, 0, 0)
+                        HoverColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
+                        HoverFill: =RGBA(0, 0, 0, 0)
+                        Icon: =Icon.Trash
+                        OnSelect: =ResetForm(Form5)
+                        PressedBorderColor: =RGBA(0, 0, 0, 0)
+                        PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
+                        PressedFill: =RGBA(0, 0, 0, 0)
+                        Width: =44
+                        X: =516
+                        Y: =86
+                        ZIndex: =6
 
             ButtonContainer As groupContainer.horizontalAutoLayoutContainer:
                 AlignInContainer: =AlignInContainer.SetByContainer
