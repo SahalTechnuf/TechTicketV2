@@ -759,8 +759,7 @@
                             }
                         );
                         
-                        
-                        ResetForm(Form3);
+                        ResetForm(Form3); Notify( "Saved Successfully",NotificationType.Success);
                         Navigate(Dashboard, Transition.None);
                     PressedBorderColor: =ColorFade(RGBA(0, 134, 208, 1), -50%)
                     PressedColor: =RGBA(255, 255, 255, 1)
