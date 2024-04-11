@@ -966,7 +966,7 @@
                             }
                         );
                         
-                        ResetForm(Form5);
+                        ResetForm(Form5); Notify( "Saved Successfully",NotificationType.Success);
                         Navigate(Dashboard, Transition.None);
                         
                         Set(ShowNotification, true);
