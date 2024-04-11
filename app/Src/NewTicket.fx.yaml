@@ -118,7 +118,7 @@
                         DisplayName: =DataSourceInfo([@'Technuf Ticketing System'],DataSourceInfo.DisplayName,"Title")
                         Fill: =RGBA(0, 0, 0, 0)
                         Height: =50
-                        Required: =false
+                        Required: =true
                         Update: =DataCardValue16.Selected.Title
                         Width: =640
                         X: =0
@@ -444,7 +444,7 @@
                         Fill: =RGBA(0, 0, 0, 0)
                         Height: =50
                         MaxLength: =DataSourceInfo([@'Work Progress Tracker'], DataSourceInfo.MaxLength, "Description")
-                        Required: =false
+                        Required: =true
                         Update: =DataCardValue13.Text
                         Width: =640
                         X: =0
