@@ -557,7 +557,7 @@
                         OnSelect: |-
                             =Set(selectedStatus, "In Progress" );
                             Set(Button2Color, Color.Gray);
-                            Set(Button5Color, Color.Green);
+                            Set(Button5Color, Color.Blue);
                             Set(Button7Color, Color.Gray);
                             
                             
