@@ -595,7 +595,7 @@
                             =Set(selectedStatus, "Resolved" );
                             Set(Button2Color, Color.Gray);
                             Set(Button5Color, Color.Gray);
-                            Set(Button7Color, Color.Green);
+                            Set(Button7Color, Color.Blue);
                             
                             
                             
