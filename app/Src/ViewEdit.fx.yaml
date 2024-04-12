@@ -515,7 +515,7 @@
                         HoverFill: =ColorFade(RGBA(135, 100, 184, 1), -10%)
                         OnSelect: |-
                             =Set(selectedStatus, "Initiated");
-                            Set(Button2Color, Color.Green);
+                            Set(Button2Color, Color.Blue);
                             Set(Button5Color, Color.Gray);
                             Set(Button7Color, Color.Gray);
                             Patch('Work Progress Tracker', LookUp('Work Progress Tracker', ID = Value(Label4.Text)), {'Progress/Status': {Value: selectedStatus}})
