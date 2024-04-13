@@ -20,7 +20,14 @@
           "NameMapSourceSchema": "?"
         },
         "ConfirmExit",
-        "SizeBreakpoints",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "[1200, 1800, 2400]",
+          "InvariantPropertyName": "SizeBreakpoints",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "BackEnabled",
         "Theme",
         {
@@ -78,7 +85,7 @@
         {
           "Category": "ConstantData",
           "PropertyName": "SizeBreakpoints",
-          "RuleProviderType": "Unknown"
+          "RuleProviderType": "User"
         }
       ],
       "StyleName": "",
