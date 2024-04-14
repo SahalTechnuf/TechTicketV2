@@ -955,7 +955,7 @@
                     OnSelect: |
                         =Patch ('Technuf Ticketing System', LookUp(
                                 'Technuf Ticketing System',  
-                                ID = selectedItem.ID),
+                                ID = Value(selectedItem.ID)),
                             {
                                 Title: DataCardValue16_1.Selected.Title,
                                 'Created By': DashAuthor,
