@@ -170,7 +170,7 @@
                         Icon: =Icon.Trash
                         OnSelect: |-
                             =Remove('Technuf Ticketing System', selectedItem);
-                            ResetForm(Form5);
+                            ResetForm(Form5); Notify( "Delete Successfully",NotificationType.Success);
                             Navigate(Dashboard, Transition.None);
                         PressedBorderColor: =RGBA(0, 0, 0, 0)
                         PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
