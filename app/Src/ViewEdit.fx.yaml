@@ -955,10 +955,10 @@
                     OnSelect: |
                         =Patch ('Technuf Ticketing System', LookUp(
                                 'Technuf Ticketing System',  
-                                ID = Value(selectedItem.ID)),
+                                ID = Value(selectedItem.ID))
                             {
                                 Title: DataCardValue16_1.Selected.Title,
-                                'Created By': DashAuthor,
+                                'Created By': DashAuthor_1,
                                 Description: DataCardValue13_1.Text,
                                 'Progress/Status':{Value: selectedStatus}, 
                                 'Image (Optional)': Image4_1.Image,
