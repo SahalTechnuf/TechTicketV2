@@ -880,8 +880,8 @@
                         PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
                         PressedFill: =RGBA(0, 0, 0, 0)
                         Width: =44
-                        X: =516
-                        Y: =86
+                        X: =552
+                        Y: =84
                         ZIndex: =6
 
             ButtonContainer As groupContainer.horizontalAutoLayoutContainer:
