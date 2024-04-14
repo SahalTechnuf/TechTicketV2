@@ -280,7 +280,7 @@
             ZIndex: =14
 
         StatusButton As button:
-            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderColor: =RGBA(0, 0, 0, 1)
             BorderThickness: =0
             Color: |-
                 =Switch(
@@ -292,9 +292,9 @@
                         "Resolved",
                         RGBA(10,84,48,1)
                     )
-            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledBorderColor: =RGBA(255, 255, 255, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
-            DisabledFill: =RGBA(244, 244, 244, 1)
+            DisabledFill: =RGBA (255, 255, 255, 1)
             Fill: |-
                 =ColorFade(
                     Switch(
@@ -304,7 +304,9 @@
                         "In Progress",
                         RGBA(140,98,14,1),
                         "Resolved",
-                        RGBA(10,84,48,1)
+                        RGBA(10,84,48,1),
+                        "TBD",
+                        RGBA(255, 255, 255, 1)
                     ),
                     80%
                 )
@@ -313,11 +315,11 @@
             Font: =Font.'Segoe UI'
             FontWeight: =FontWeight.Semibold
             Height: =37
-            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            HoverBorderColor: =RGBA(255, 255, 255, 1)
             HoverColor: =RGBA(255, 255, 255, 1)
             HoverFill: =ColorFade(RGBA(135, 100, 184, 1), -10%)
             OnSelect: =Select(Parent)
-            PressedBorderColor: =ColorFade(RGBA(135, 100, 184, 1), -50%)
+            PressedBorderColor: =ColorFade(RGBA(255, 255, 255, 1), -50%)
             PressedColor: =RGBA(255, 255, 255, 1)
             PressedFill: =ColorFade(RGBA(135, 100, 184, 1), -30%)
             RadiusBottomLeft: =30
