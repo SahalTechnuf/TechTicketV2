@@ -963,7 +963,7 @@
                                 'Progress/Status':{Value: selectedStatus}, 
                                 'Image (Optional)': Image4_1.Image,
                                 'Issue Date and Time': Now(),
-                                ID: Value(selectedItem.ID
+                                ID: Value(selectedItem.ID)
                             }
                         );
                         
