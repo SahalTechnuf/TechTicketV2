@@ -958,7 +958,7 @@
                                 ID = Value(selectedItem.ID)),
                             {
                                 Title: DataCardValue16_1.Selected.Title,
-                                'Created By': DashAuthor_1,
+                                'Created By': selectedItem.'Created By',
                                 Description: DataCardValue13_1.Text,
                                 'Progress/Status':{Value: selectedStatus}, 
                                 'Image (Optional)': Image4_1.Image,
