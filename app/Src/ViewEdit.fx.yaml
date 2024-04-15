@@ -865,10 +865,13 @@
                         HoverColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
                         HoverFill: =RGBA(0, 0, 0, 0)
                         Icon: =Icon.Trash
-                        OnSelect: =Set(VarDeleteImg, true)
+                        OnSelect: |-
+                            =//Set(VarDeleteImg, true)
+                            //Clear(Image4_1)
                         PressedBorderColor: =RGBA(0, 0, 0, 0)
                         PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
                         PressedFill: =RGBA(0, 0, 0, 0)
+                        Visible: =If(IsBlank(Image4_1.Image),false,true)
                         Width: =44
                         X: =552
                         Y: =84
