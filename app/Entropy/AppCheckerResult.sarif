@@ -574,19 +574,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "ViewEdit.Container11.Container12.Form5.Title_DataCard4_1.TextInput1.AccessibleLabel"
+                  "fullyQualifiedName": "ViewEdit.Container11.Container12.Form5.Title_DataCard4_1.DataCardValue16_1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "ViewEdit.Container11.Container12.Form5.Title_DataCard4_1.TextInput1.AccessibleLabel",
+                  "fullyQualifiedName": "ViewEdit.Container11.Container12.Form5.Title_DataCard4_1.DataCardValue16_1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "ViewEdit",
-                "type": "ViewEdit.Container11.Container12.Form5.Title_DataCard4_1.TextInput1"
+                "type": "ViewEdit.Container11.Container12.Form5.Title_DataCard4_1.DataCardValue16_1"
               }
             }
           ],

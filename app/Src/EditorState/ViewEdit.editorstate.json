@@ -6981,14 +6981,7 @@
         "Align",
         "VerticalAlign",
         "X",
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "DataCardValue16_1.Y + DataCardValue16_1.Height",
-          "InvariantPropertyName": "Y",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
+        "Y",
         "Width",
         "Height",
         "DisplayMode",
@@ -7143,7 +7136,7 @@
         {
           "Category": "Design",
           "PropertyName": "Y",
-          "RuleProviderType": "User"
+          "RuleProviderType": "Unknown"
         },
         {
           "Category": "Design",
