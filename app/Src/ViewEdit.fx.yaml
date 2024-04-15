@@ -627,7 +627,7 @@
                         
                     DisplayName: =DataSourceInfo([@'Work Progress Tracker'],DataSourceInfo.DisplayName,"Description")
                     Fill: =RGBA(0, 0, 0, 0)
-                    Height: =50
+                    Height: =250
                     MaxLength: =DataSourceInfo([@'Work Progress Tracker'], DataSourceInfo.MaxLength, "Description")
                     Required: =false
                     Update: =DataCardValue13_1.Text
