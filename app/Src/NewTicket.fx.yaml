@@ -233,7 +233,7 @@
                         DataField: ="Description"
                         Default: =ThisItem.Description
                         DisplayMode: =Parent.DisplayMode
-                        DisplayName: =DataSourceInfo([@'Work Progress Tracker'],DataSourceInfo.DisplayName,"Description")
+                        DisplayName: =DataSourceInfo([@'Technuf Ticketing System'],DataSourceInfo.DisplayName,"Description")
                         Fill: =RGBA(0, 0, 0, 0)
                         Height: =50
                         MaxLength: =DataSourceInfo([@'Work Progress Tracker'], DataSourceInfo.MaxLength, "Description")
