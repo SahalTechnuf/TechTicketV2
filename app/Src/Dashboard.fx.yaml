@@ -150,7 +150,7 @@
             OnSelect: =Select(Parent)
             Size: =17
             Text: |-
-                =Text(ThisItem.'Issue Date and Time',    "mm/dd/yyyy          hh:mm AM/PM")
+                =Text(ThisItem.'Issue Date and Time',    "mm/dd/yyyy               hh:mm AM/PM")
             Width: =378
             X: =207
             Y: =129
@@ -217,7 +217,7 @@
             PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
             PressedFill: =RGBA(0, 0, 0, 0)
             Width: =42
-            X: =330
+            X: =343
             Y: =130
             ZIndex: =10
 
