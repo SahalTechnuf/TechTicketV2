@@ -23,7 +23,7 @@
         TemplatePadding: =10
         TemplateSize: =226
         Transition: =Transition.Push
-        Y: =299
+        Y: =319
         ZIndex: =1
 
         Button6 As button:

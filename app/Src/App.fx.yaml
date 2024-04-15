@@ -14,8 +14,8 @@ App As appinfo:
             )
         )
     SizeBreakpoints: |-
-        =//[600, 900, 1200, 1400]
-        [1200, 1400, 1800]
+        =[600, 900, 1200, 1400]
+        //[1200, 1400, 1800]
     Theme: =PowerAppsTheme
 
     Host As hostControl.DefaultHostControlVariant:
