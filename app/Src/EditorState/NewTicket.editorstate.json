@@ -3212,14 +3212,7 @@
         "X",
         "Y",
         "Width",
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "50",
-          "InvariantPropertyName": "Height",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
+        "Height",
         "ZIndex"
       ],
       "HasDynamicProperties": false,
@@ -3294,12 +3287,12 @@
         {
           "Category": "Design",
           "PropertyName": "Width",
-          "RuleProviderType": "User"
+          "RuleProviderType": "Unknown"
         },
         {
           "Category": "Design",
           "PropertyName": "Height",
-          "RuleProviderType": "User"
+          "RuleProviderType": "Unknown"
         },
         {
           "Category": "Design",
