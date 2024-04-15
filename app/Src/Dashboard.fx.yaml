@@ -12,10 +12,7 @@
             =Sort(
                 Filter(
                     'Technuf Ticketing System',
-                    'Issued By'.Email = User().Email && 
-                    (StartsWith(Title, SearchTicket.Text) ||
-                    StartsWith(Description, SearchTicket.Text)
-                    )
+                    'Issued By'.Email = User().Email 
                 ),
                 'Issue Date and Time',
                 SortOrder.Descending
