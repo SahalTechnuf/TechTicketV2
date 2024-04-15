@@ -882,7 +882,7 @@
                         PressedBorderColor: =RGBA(0, 0, 0, 0)
                         PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
                         PressedFill: =RGBA(0, 0, 0, 0)
-                        Visible: =If(IsBlank(VarDeleteImg),false,true) 
+                        Visible: =If(IsBlank(Image4_1.Image),false,true) 
                         Width: =44
                         X: =552
                         Y: =84
