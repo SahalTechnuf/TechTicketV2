@@ -11,7 +11,7 @@
   },
   "Properties": {
     "AppCreationSource": "AppFromData",
-    "AppDescription": "v2",
+    "AppDescription": "V3",
     "AppPreviewFlagsMap": {
       "aibuilderserviceenrollment": false,
       "allowmultiplescreensincanvaspages": false,
@@ -118,13 +118,13 @@
     "InstrumentationKey": "",
     "LocalDatabaseReferences": "",
     "ManualOfflineProfileId": "",
-    "Name": "TechTicketV2",
+    "Name": "TechTicketV3",
     "OriginatingVersion": "1.336",
     "ParserErrorCount": 0,
     "ShowStatusBar": true
   },
   "PublishInfo": {
-    "AppName": "TechTicketV2",
+    "AppName": "TechTicketV3",
     "BackgroundColor": "RGBA(0,176,240,1)",
     "IconColor": "RGBA(255,255,255,1)",
     "IconName": "Edit",

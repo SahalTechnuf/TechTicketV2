@@ -283,7 +283,6 @@
                 BorderColor: =RGBA(166, 166, 166, 1)
                 BorderStyle: =BorderStyle.None
                 DataSource: ='Technuf Ticketing System'
-                DefaultMode: =FormMode.New
                 LayoutMinHeight: =700
                 LayoutMinWidth: =320
                 Width: =640
