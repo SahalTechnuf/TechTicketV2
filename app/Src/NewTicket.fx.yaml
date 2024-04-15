@@ -539,22 +539,24 @@
                     LayoutMinHeight: =70
                     LayoutMinWidth: =280
                     OnSelect: |-
-                        =
-                        Patch(
-                            'Technuf Ticketing System',
-                            Defaults('Technuf Ticketing System'),
-                            {
-                                Title: DataCardValue16.Selected.Title,
-                                Description: DataCardValue13.Text,
-                                'Image (Optional)': Image4.Image,
-                                'Progress/Status': {Value: "TBD"},
-                                'Issue Date and Time': Now()
-                                
-                            }
-                        );
-                        
-                        ResetForm(Form3); If(IsBlank( DataCardValue13.Text), Notify("Required information is missing",NotificationType.Error),Notify( "Saved Successfully",NotificationType.Success));
-                        Navigate(Dashboard, Transition.None);
+                        =If(
+                            IsBlank(DataCardValue16.Selected) || IsBlank(DataCardValue13.Text),
+                            Notify("Please fill in all required fields.", NotificationType.Error),
+                            Patch(
+                                'Technuf Ticketing System',
+                                Defaults('Technuf Ticketing System'),
+                                {
+                                    Title: DataCardValue16.Selected.Title,
+                                    Description: DataCardValue13.Text,
+                                    'Image (Optional)': Image4.Image,
+                                    'Progress/Status': { Value: "TBD" },
+                                    'Issue Date and Time': Now()
+                                }
+                            );
+                            ResetForm(Form3);
+                            Notify("Saved Successfully", NotificationType.Success);
+                            Navigate(Dashboard, Transition.None)
+                        )
                     PressedBorderColor: =ColorFade(RGBA(0, 134, 208, 1), -50%)
                     PressedColor: =RGBA(255, 255, 255, 1)
                     PressedFill: =ColorFade(RGBA(0, 134, 208, 1), -30%)
