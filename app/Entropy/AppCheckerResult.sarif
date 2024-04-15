@@ -674,6 +674,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "App.Button5_2Color"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.Button5_2Color",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Button5_2Color",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App.technufllc_logo"
                 }
               ],
@@ -807,6 +837,36 @@
                 "member": "Color",
                 "module": "ViewEdit",
                 "type": "ViewEdit.Container11.Container12.Form5.'Progress/Status_DataCard1_1'.Button2_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ViewEdit.Container11.Container12.Form5.'Progress/Status_DataCard1_1'.Button5_2.Color"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ViewEdit.Container11.Container12.Form5.'Progress/Status_DataCard1_1'.Button5_2.Color",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Color",
+                "module": "ViewEdit",
+                "type": "ViewEdit.Container11.Container12.Form5.'Progress/Status_DataCard1_1'.Button5_2"
               }
             }
           ],
