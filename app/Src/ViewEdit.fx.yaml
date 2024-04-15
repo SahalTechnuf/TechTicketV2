@@ -686,7 +686,7 @@
                         Size: =21
                         Tooltip: =Parent.DisplayName
                         Width: =Parent.Width - 60
-                        X: =46
+                        X: =30
                         Y: =DataCardKey17_1.Y + DataCardKey17_1.Height + 5
                         ZIndex: =2
 
@@ -755,6 +755,28 @@
                     Y: =2
                     ZIndex: =2
 
+                    Icon5 As icon.Trash:
+                        BorderColor: =RGBA(0, 0, 0, 0)
+                        Color: =RGBA(135, 100, 184, 1)
+                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                        DisabledColor: =RGBA(220, 220, 220, 1)
+                        DisabledFill: =RGBA(0, 0, 0, 0)
+                        FocusedBorderThickness: =4
+                        Height: =50
+                        HoverBorderColor: =RGBA(0, 0, 0, 0)
+                        HoverColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
+                        HoverFill: =RGBA(0, 0, 0, 0)
+                        Icon: =Icon.Trash
+                        OnSelect: =Reset(AddPicture3_1)
+                        PressedBorderColor: =RGBA(0, 0, 0, 0)
+                        PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
+                        PressedFill: =RGBA(0, 0, 0, 0)
+                        Visible: =If(IsBlank(Image4_1.Image),false,true) 
+                        Width: =44
+                        X: =553
+                        Y: =72
+                        ZIndex: =6
+
                     DataCardKey20_1 As label:
                         AutoHeight: =true
                         BorderColor: =RGBA(0, 0, 0, 0)
@@ -772,9 +794,9 @@
                         Text: =Parent.DisplayName
                         Width: =Parent.Width - 60
                         Wrap: =false
-                        X: =30
+                        X: =60
                         Y: =10
-                        ZIndex: =1
+                        ZIndex: =7
 
                     Image4_1 As image:
                         BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
@@ -787,16 +809,14 @@
                         Height: =258
                         HoverBorderColor: =RGBA(0, 0, 0, 0)
                         HoverFill: =RGBA(0, 0, 0, 0)
-                        Image: |-
-                            =//If(IsBlank(AddPicture3_1.Media),If(VarDeleteImg,Blank(), Parent.Default), AddPicture3_1.Media)
-                            If(IsBlank(AddPicture3_1.Media), Parent.Default, AddPicture3_1.Media)
+                        Image: =If(IsBlank(AddPicture3_1.Media), Parent.Default, AddPicture3_1.Media)
                         PressedBorderColor: =RGBA(0, 0, 0, 0)
                         PressedFill: =RGBA(0, 0, 0, 0)
                         Tooltip: =Parent.DisplayName
                         Width: =AddPicture3_1.Width
                         X: =AddPicture3_1.X
-                        Y: =72
-                        ZIndex: =2
+                        Y: =62
+                        ZIndex: =8
 
                     AddPicture3_1 As addMedia:
                         BorderColor: =RGBA(0, 134, 208, 1)
@@ -822,7 +842,7 @@
                         Width: =Parent.Width - 60
                         X: =30
                         Y: =DataCardKey20_1.Y + DataCardKey20_1.Height + 5
-                        ZIndex: =3
+                        ZIndex: =9
 
                     ErrorMessage20_1 As label:
                         AutoHeight: =true
@@ -845,9 +865,9 @@
                         Text: =Parent.Error
                         Visible: =Parent.DisplayMode=DisplayMode.Edit
                         Width: =Parent.Width - 60
-                        X: =30
+                        X: =60
                         Y: =Image4_1.Y + Image4_1.Height
-                        ZIndex: =4
+                        ZIndex: =10
 
                     StarVisible20_1 As label:
                         Align: =Align.Center
@@ -867,31 +887,9 @@
                         Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                         Width: =30
                         Wrap: =false
+                        X: =30
                         Y: =DataCardKey20_1.Y
-                        ZIndex: =5
-
-                    Icon5 As icon.Trash:
-                        AutoDisableOnSelect: =false
-                        BorderColor: =RGBA(0, 0, 0, 0)
-                        Color: =RGBA(135, 100, 184, 1)
-                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                        DisabledColor: =RGBA(220, 220, 220, 1)
-                        DisabledFill: =RGBA(0, 0, 0, 0)
-                        FocusedBorderThickness: =4
-                        Height: =50
-                        HoverBorderColor: =RGBA(0, 0, 0, 0)
-                        HoverColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
-                        HoverFill: =RGBA(0, 0, 0, 0)
-                        Icon: =Icon.Trash
-                        OnSelect: =Reset(AddPicture3_1)
-                        PressedBorderColor: =RGBA(0, 0, 0, 0)
-                        PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
-                        PressedFill: =RGBA(0, 0, 0, 0)
-                        Visible: =If(IsBlank(Image4_1.Image),false,true) 
-                        Width: =44
-                        X: =552
-                        Y: =84
-                        ZIndex: =6
+                        ZIndex: =11
 
             ButtonContainer As groupContainer.horizontalAutoLayoutContainer:
                 AlignInContainer: =AlignInContainer.SetByContainer
