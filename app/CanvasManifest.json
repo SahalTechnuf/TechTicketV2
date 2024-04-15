@@ -11,7 +11,7 @@
   },
   "Properties": {
     "AppCreationSource": "AppFromData",
-    "AppDescription": "V3 admin assignment",
+    "AppDescription": "V3 admin assignment, text input from dropdown",
     "AppPreviewFlagsMap": {
       "aibuilderserviceenrollment": false,
       "allowmultiplescreensincanvaspages": false,

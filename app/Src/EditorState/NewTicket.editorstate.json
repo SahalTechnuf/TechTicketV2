@@ -2573,14 +2573,7 @@
           "IsLockable": false,
           "NameMapSourceSchema": "?"
         },
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "5",
-          "InvariantPropertyName": "PaddingLeft",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
+        "PaddingLeft",
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
@@ -2816,7 +2809,7 @@
         {
           "Category": "Design",
           "PropertyName": "PaddingRight",
-          "RuleProviderType": "User"
+          "RuleProviderType": "Unknown"
         },
         {
           "Category": "Design",
@@ -2826,7 +2819,7 @@
         {
           "Category": "Design",
           "PropertyName": "PaddingLeft",
-          "RuleProviderType": "User"
+          "RuleProviderType": "Unknown"
         },
         {
           "Category": "Design",
