@@ -527,7 +527,7 @@
                         Size: =24
                         Text: ="Initiated"
                         Width: =180
-                        Y: =47
+                        Y: =69
                         ZIndex: =8
 
                     Button5_2 As button:
@@ -570,11 +570,13 @@
                         Text: ="In Progress"
                         Width: =180
                         X: =210
-                        Y: =52
+                        Y: =69
                         ZIndex: =9
 
                     Button7_2 As button:
-                        BorderColor: =RGBA(255, 255, 255, 1)
+                        BorderColor: |-
+                            =//RGBA(255, 255, 255, 1)
+                            If(DashTickets.Selected.'Progress/Status'.Value = "Resolved",Color.Blue) 
                         Color: |-
                             =//Button7_2Color
                             If(DashTickets.Selected.'Progress/Status'.Value = "Resolved",Color.Blue) 
@@ -611,8 +613,8 @@
                         Size: =24
                         Text: ="Resolved"
                         Width: =180
-                        X: =460
-                        Y: =47
+                        X: =444
+                        Y: =69
                         ZIndex: =10
 
                 Description_DataCard3_1 As typedDataCard.textualEditCard:

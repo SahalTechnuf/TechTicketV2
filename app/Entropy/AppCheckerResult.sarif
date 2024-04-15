@@ -914,6 +914,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "ViewEdit.Container11.Container12.Form5.'Progress/Status_DataCard1_1'.Button7_2.BorderColor"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ViewEdit.Container11.Container12.Form5.'Progress/Status_DataCard1_1'.Button7_2.BorderColor",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "BorderColor",
+                "module": "ViewEdit",
+                "type": "ViewEdit.Container11.Container12.Form5.'Progress/Status_DataCard1_1'.Button7_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "ViewEdit.Container11.Container12.Form5.'Progress/Status_DataCard1_1'.Button7_2.Color"
                 }
               ],
