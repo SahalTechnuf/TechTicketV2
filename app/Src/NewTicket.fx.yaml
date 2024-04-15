@@ -235,7 +235,7 @@
                         DisplayMode: =Parent.DisplayMode
                         DisplayName: =DataSourceInfo([@'Technuf Ticketing System'],DataSourceInfo.DisplayName,"Description")
                         Fill: =RGBA(0, 0, 0, 0)
-                        Height: =50
+                        Height: =150
                         MaxLength: =DataSourceInfo([@'Technuf Ticketing System'], DataSourceInfo.MaxLength, "Description")
                         Required: =true
                         Update: =DataCardValue13.Text
