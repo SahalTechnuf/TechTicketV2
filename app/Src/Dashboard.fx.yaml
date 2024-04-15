@@ -8,12 +8,16 @@
         Fill: =RGBA(255, 255, 255, 1)
         FocusedBorderThickness: =
         Height: =708
-        Items: |
+        Items: |-
             =Sort(
                 Filter(
                     'Technuf Ticketing System',
-                    'Created By'.Email = User().Email &&
-                    (StartsWith(Title, SearchTicket.Text) || StartsWith(Description, SearchTicket.Text ))
+                    If(
+                        User().Email = "fahmida.mahjabin@technuf.com", 
+                        true, 
+                        'Created By'.Email = User().Email 
+                    )
+                    && (StartsWith(Title, SearchTicket.Text) || StartsWith(Description, SearchTicket.Text))
                 ),
                 'Issue Date and Time',
                 SortOrder.Descending
