@@ -794,7 +794,7 @@
                         Text: =Parent.DisplayName
                         Width: =Parent.Width - 60
                         Wrap: =false
-                        X: =60
+                        X: =30
                         Y: =10
                         ZIndex: =7
 
