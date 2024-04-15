@@ -531,7 +531,9 @@
                         ZIndex: =8
 
                     Button5_2 As button:
-                        BorderColor: =RGBA(255, 255, 255, 1)
+                        BorderColor: |-
+                            =//RGBA(255, 255, 255, 1)
+                            If(DashTickets.Selected.'Progress/Status'.Value = "In Progress",Color.Blue) 
                         Color: |-
                             =//Button5_2Color
                             If(DashTickets.Selected.'Progress/Status'.Value = "In Progress",Color.Blue) 
