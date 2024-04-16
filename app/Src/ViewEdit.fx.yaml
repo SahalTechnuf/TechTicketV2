@@ -290,7 +290,9 @@
                 BorderStyle: =BorderStyle.None
                 DataSource: ='Technuf Ticketing System'
                 DefaultMode: =FormMode.New
-                LayoutMinHeight: =Parent.Height- Container3.Height - TitleContainer.Height - ButtonContainer.Height
+                FillPortions: =0
+                Height: =Parent.Height - Container3.Height - TitleContainer_1.Height - ButtonContainer.Height
+                LayoutMinHeight: =Parent.Height- Container3.Height - TitleContainer.Height - ButtonContainer.Height -200
                 LayoutMinWidth: =320
                 Width: =640
                 ZIndex: =3
