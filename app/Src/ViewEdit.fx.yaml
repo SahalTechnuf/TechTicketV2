@@ -831,7 +831,7 @@
                             (PNG, JPEG, GIF)"
                         Width: =Parent.Width - 60
                         X: =30
-                        Y: =DataCardKey20_1.Y + DataCardKey20_1.Height + 5
+                        Y: =52
                         ZIndex: =9
 
                     ErrorMessage20_1 As label:
