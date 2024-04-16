@@ -23,10 +23,10 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 139,
+                  "charLength": 131,
                   "charOffset": 62,
                   "snippet": {
-                    "text": "If(\n            User().Email = \"fahmida.mahjabin@technuf.com\", \n            true, \n            'Created By'.Email = User().Email \n        )"
+                    "text": "If(\n            User().Email = \"ali.khan@technuf.com\", \n            true, \n            'Created By'.Email = User().Email \n        )"
                   }
                 }
               },
@@ -64,7 +64,7 @@
                 },
                 "region": {
                   "charLength": 2,
-                  "charOffset": 210,
+                  "charOffset": 202,
                   "snippet": {
                     "text": "&&"
                   }

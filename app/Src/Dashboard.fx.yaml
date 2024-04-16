@@ -13,7 +13,7 @@
                 Filter(
                     'Technuf Ticketing System',
                     If(
-                        User().Email = "fahmida.mahjabin@technuf.com", 
+                        User().Email = "ali.khan@technuf.com", 
                         true, 
                         'Created By'.Email = User().Email 
                     )
