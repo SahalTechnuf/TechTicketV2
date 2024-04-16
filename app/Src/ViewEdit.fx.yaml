@@ -22,12 +22,11 @@
         ZIndex: =2
 
         Container12 As groupContainer.verticalAutoLayoutContainer:
-            AlignInContainer: =AlignInContainer.SetByContainer
+            AlignInContainer: =AlignInContainer.Start
             DropShadow: =DropShadow.Light
-            Height: =225
+            Height: =Parent.Height
             LayoutAlignItems: =LayoutAlignItems.Center
             LayoutDirection: =LayoutDirection.Vertical
-            LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
             LayoutMinHeight: =Parent.Height
             LayoutMinWidth: =250
             LayoutMode: =LayoutMode.Auto
@@ -899,7 +898,8 @@
                 LayoutAlignItems: =LayoutAlignItems.End
                 LayoutGap: =20
                 LayoutJustifyContent: =LayoutJustifyContent.Center
-                LayoutMinHeight: =112
+                LayoutMinHeight: |
+                    =50
                 LayoutMinWidth: =250
                 LayoutMode: =LayoutMode.Auto
                 PaddingBottom: =20

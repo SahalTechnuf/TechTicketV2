@@ -2137,11 +2137,18 @@
           "PropertyName": "LayoutMinWidth"
         },
         {
-          "ControlPropertyState": "LayoutMinHeight",
+          "ControlPropertyState": {
+            "AFDDataSourceName": "",
+            "AutoRuleBindingEnabled": false,
+            "AutoRuleBindingString": "112",
+            "InvariantPropertyName": "LayoutMinHeight",
+            "IsLockable": false,
+            "NameMapSourceSchema": "?"
+          },
           "Property": {
             "Category": "Design",
             "PropertyName": "LayoutMinHeight",
-            "RuleProviderType": "Unknown"
+            "RuleProviderType": "User"
           },
           "PropertyName": "LayoutMinHeight"
         }
@@ -2481,7 +2488,14 @@
         "X",
         "Y",
         "Width",
-        "Height",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "225",
+          "InvariantPropertyName": "Height",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "DisplayMode",
         "ChildTabPriority",
         "LayoutMode",
@@ -2538,7 +2552,14 @@
           "PropertyName": "FillPortions"
         },
         {
-          "ControlPropertyState": "AlignInContainer",
+          "ControlPropertyState": {
+            "AFDDataSourceName": "",
+            "AutoRuleBindingEnabled": false,
+            "AutoRuleBindingString": "",
+            "InvariantPropertyName": "AlignInContainer",
+            "IsLockable": false,
+            "NameMapSourceSchema": "?"
+          },
           "Property": {
             "Category": "Design",
             "PropertyName": "AlignInContainer",
@@ -2619,7 +2640,7 @@
         {
           "Category": "Design",
           "PropertyName": "Height",
-          "RuleProviderType": "Unknown"
+          "RuleProviderType": "User"
         },
         {
           "Category": "Design",
