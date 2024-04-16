@@ -422,12 +422,11 @@
                             PressedColor: =RGBA(255, 255, 255, 1)
                             PressedFill: =ColorFade(RGBA(135, 100, 184, 1), -30%)
                             Size: =18
-                            Text: |-
-                                ="Upload a photo" & "\n" &
-                                "Supported format PNG, JPEG, GIF"
+                            Text: |
+                                ="Upload a photo Supported format PNG, JPEG,GIF"
                             Width: =Parent.Width - 60
                             X: =30
-                            Y: =DataCardKey20.Y + DataCardKey20.Height + 5
+                            Y: =62
                             ZIndex: =3
 
                         ErrorMessage20 As label:
