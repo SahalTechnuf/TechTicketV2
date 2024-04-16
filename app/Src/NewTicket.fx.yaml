@@ -417,7 +417,7 @@
                             Height: =268
                             HoverBorderColor: =RGBA(0, 0, 0, 0)
                             HoverColor: =RGBA(255, 255, 255, 1)
-                            HoverFill: =ColorFade(RGBA(135, 100, 184, 1), -10%)
+                            HoverFill: =ColorFade(RGBA(135, 100, 184, 1), 80%)
                             PressedBorderColor: =ColorFade(RGBA(0, 134, 208, 1), -50%)
                             PressedColor: =RGBA(255, 255, 255, 1)
                             PressedFill: =ColorFade(RGBA(135, 100, 184, 1), -30%)
