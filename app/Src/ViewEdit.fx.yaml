@@ -955,7 +955,7 @@
                     OnSelect: |
                         =Patch ('Technuf Ticketing System', LookUp(
                                 'Technuf Ticketing System',  
-                                ID = Value(selectedItem.ID)),
+                                ID = Value(selectedItem.ID))
                             {
                                 Title: TextInput1,
                                 //'Created By': UserContent,
