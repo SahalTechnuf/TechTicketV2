@@ -234,7 +234,6 @@
             ZIndex: =10
 
         DashEmail_1 As label:
-            AutoHeight: =true
             BorderColor: =RGBA(0, 0, 0, 0)
             BorderStyle: =BorderStyle.None
             BorderThickness: =2
@@ -243,12 +242,12 @@
             DisabledColor: =RGBA(166, 166, 166, 1)
             FocusedBorderThickness: =4
             Font: =Font.'Segoe UI'
-            Height: =30
+            Height: =41
             LineHeight: =1
             OnSelect: =Select(Parent)
             Size: =17
             Text: =ThisItem.'Created By'.Email
-            Width: =320
+            Width: =349
             X: =236
             Y: =87
             ZIndex: =11
