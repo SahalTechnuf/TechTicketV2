@@ -10,6 +10,7 @@
     Container11 As groupContainer.horizontalAutoLayoutContainer:
         DropShadow: =DropShadow.Light
         Height: =Parent.Height
+        LayoutAlignItems: =LayoutAlignItems.Stretch
         LayoutJustifyContent: =LayoutJustifyContent.Center
         LayoutMode: =LayoutMode.Auto
         LayoutOverflowY: =LayoutOverflow.Scroll
@@ -21,10 +22,12 @@
         ZIndex: =2
 
         Container12 As groupContainer.verticalAutoLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
             DropShadow: =DropShadow.Light
             Height: =225
             LayoutAlignItems: =LayoutAlignItems.Center
             LayoutDirection: =LayoutDirection.Vertical
+            LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
             LayoutMinHeight: =Parent.Height
             LayoutMinWidth: =250
             LayoutMode: =LayoutMode.Auto
