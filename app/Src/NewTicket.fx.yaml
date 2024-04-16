@@ -283,7 +283,7 @@
                             HoverFill: =RGBA(255, 255, 255, 1)
                             MaxLength: =Parent.MaxLength
                             Mode: =TextMode.MultiLine
-                            PaddingLeft: =10 
+                            PaddingLeft: =15
                             PaddingTop: =20
                             PressedBorderColor: =RGBA(135, 100, 184, 1)
                             PressedColor: =RGBA(51, 51, 51, 1)
