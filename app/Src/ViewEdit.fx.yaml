@@ -954,7 +954,7 @@
                                 'Technuf Ticketing System',  
                                 ID = Value(selectedItem.ID)),
                             {
-                                Title: TextInput1,
+                                Title: TextInput1.Text,
                                 //'Created By': UserContent,
                                 Description: DataCardValue13_1.Text,
                                 //'Progress/Status':{Value: selectedStatus}, 
@@ -964,7 +964,7 @@
                             }
                         );
                         
-                        ResetForm(Form5); Notify( "Saved Successfully",NotificationType.Success);
+                        ResetForm(Form5); Notify( "Saved Successfully", NotificationType.Success);
                         Navigate(Dashboard, Transition.None);
                     PressedBorderColor: =ColorFade(RGBA(0, 134, 208, 1), -50%)
                     PressedColor: =RGBA(255, 255, 255, 1)
