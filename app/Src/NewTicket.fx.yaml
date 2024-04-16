@@ -423,7 +423,7 @@
                             PressedFill: =ColorFade(RGBA(135, 100, 184, 1), -30%)
                             Size: =18
                             Text: |
-                                ="Upload a photo Supported format PNG, JPEG,GIF"
+                                ="Upload a photo (format PNG, JPEG,GIF)"
                             Width: =Parent.Width - 60
                             X: =30
                             Y: =62
