@@ -36,6 +36,7 @@
         TemplatePadding: =10
         TemplateSize: =226
         Transition: =Transition.Push
+        WrapCount: =Parent.Size
         Y: =319
         ZIndex: =1
 
