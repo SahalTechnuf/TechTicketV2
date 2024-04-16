@@ -509,7 +509,7 @@
                             Set(Button2_2Color, Color.Blue);
                             Set(Button5_2Color, Color.Gray);
                             Set(Button7_2Color, Color.Gray);
-                            //Patch('Technuf Ticketing System', LookUp('Technuf Ticketing System', ID = Value(selectedItem.ID)), {'Progress/Status': {Value: selectedStatus}})
+                            Patch('Technuf Ticketing System', LookUp('Technuf Ticketing System', ID = Value(selectedItem.ID)), {'Progress/Status': {Value: selectedStatus}})
                         PressedBorderColor: =ColorFade(RGBA(135, 100, 184, 1), -50%)
                         PressedColor: =RGBA(255, 255, 255, 1)
                         PressedFill: =ColorFade(RGBA(135, 100, 184, 1), -30%)
@@ -549,7 +549,7 @@
                             Set(Button5_2Color, Color.Blue);
                             Set(Button7_2Color, Color.Gray);
                             
-                            //Patch('Technuf Ticketing System', LookUp('Technuf Ticketing System', ID = Value(selectedItem.ID)), {'Progress/Status': {Value: selectedStatus }})
+                            Patch('Technuf Ticketing System', LookUp('Technuf Ticketing System', ID = Value(selectedItem.ID)), {'Progress/Status': {Value: selectedStatus }})
                         PressedBorderColor: =ColorFade(RGBA(135, 100, 184, 1), -50%)
                         PressedColor: =RGBA(255, 255, 255, 1)
                         PressedFill: =ColorFade(RGBA(135, 100, 184, 1), -30%)
@@ -592,7 +592,7 @@
                             
                             //Set(selectedColor, If(selectedItem.OData__ColorTag = "In Progress", Color.Blue,If(selectedItem.OData__ColorTag = "Initiated",Color.Blue)));
                             
-                            //Patch('Technuf Ticketing System', LookUp('Technuf Ticketing System', ID = Value(selectedItem.ID)), {'Progress/Status': {Value: selectedStatus }})
+                            Patch('Technuf Ticketing System', LookUp('Technuf Ticketing System', ID = Value(selectedItem.ID)), {'Progress/Status': {Value: selectedStatus }})
                         PressedBorderColor: =ColorFade(RGBA(135, 100, 184, 1), -50%)
                         PressedColor: =RGBA(255, 255, 255, 1)
                         PressedFill: =ColorFade(RGBA(135, 100, 184, 1), -30%)
@@ -957,7 +957,7 @@
                                 Title: TextInput1,
                                 //'Created By': UserContent,
                                 Description: DataCardValue13_1.Text,
-                                'Progress/Status':{Value: selectedStatus}, 
+                                //'Progress/Status':{Value: selectedStatus}, 
                                 'Image (Optional)': Image4_1.Image,
                                 'Issue Date and Time': Now(),
                                 ID: Value(selectedItem.ID)
