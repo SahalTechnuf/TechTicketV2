@@ -406,10 +406,12 @@
                             BorderColor: =RGBA(0, 134, 208, 1)
                             BorderStyle: =BorderStyle.Dashed
                             BorderThickness: =2
+                            ChangePictureText: =""
+                            Color: =RGBA(0, 0, 0, 1)
                             DisabledBorderColor: =RGBA(0, 0, 0, 0)
                             DisabledColor: =RGBA(166, 166, 166, 1)
                             DisabledFill: =RGBA(0, 134, 208, 1)
-                            Fill: =RGBA(135, 100, 184, 1)
+                            Fill: =RGBA(230, 244, 250, 1)
                             FocusedBorderThickness: =4
                             Font: =Font.'Segoe UI'
                             Height: =268
@@ -419,10 +421,10 @@
                             PressedBorderColor: =ColorFade(RGBA(0, 134, 208, 1), -50%)
                             PressedColor: =RGBA(255, 255, 255, 1)
                             PressedFill: =ColorFade(RGBA(135, 100, 184, 1), -30%)
-                            Size: =24
+                            Size: =18
                             Text: |-
-                                ="Upload a photo
-                                (PNG, JPEG, GIF)"
+                                ="Upload a photo" & "\n" &
+                                "Supported format PNG, JPEG, GIF"
                             Width: =Parent.Width - 60
                             X: =30
                             Y: =DataCardKey20.Y + DataCardKey20.Height + 5
