@@ -505,11 +505,11 @@
                         HoverColor: =RGBA(255, 255, 255, 1)
                         HoverFill: =ColorFade(RGBA(135, 100, 184, 1), -10%)
                         OnSelect: |-
-                            =Set(selectedStatus, "Initiated");
-                            Set(Button2_2Color, Color.Blue);
-                            Set(Button5_2Color, Color.Gray);
-                            Set(Button7_2Color, Color.Gray);
-                            Patch('Technuf Ticketing System', LookUp('Technuf Ticketing System', ID = Value(selectedItem.ID)), {'Progress/Status': {Value: selectedStatus}});
+                            =//Set(selectedStatus, "Initiated");
+                            //Set(Button2_2Color, Color.Blue);
+                            //Set(Button5_2Color, Color.Gray);
+                            //Set(Button7_2Color, Color.Gray);
+                            //Patch('Technuf Ticketing System', LookUp('Technuf Ticketing System', ID = Value(selectedItem.ID)), {'Progress/Status': {Value: selectedStatus}});
                         PressedBorderColor: =ColorFade(RGBA(135, 100, 184, 1), -50%)
                         PressedColor: =RGBA(255, 255, 255, 1)
                         PressedFill: =ColorFade(RGBA(135, 100, 184, 1), -30%)
