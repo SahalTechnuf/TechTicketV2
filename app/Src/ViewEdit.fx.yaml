@@ -290,7 +290,7 @@
                 DataSource: ='Technuf Ticketing System'
                 DefaultMode: =FormMode.New
                 FillPortions: =0
-                Height: =Parent.Height - Container3.Height - TitleContainer_1.Height - ButtonContainer.Height 
+                Height: =Parent.Height - Container3.Height - TitleContainer_1.Height - ButtonContainer.Height + 2
                 LayoutMinHeight: =Parent.Height- Container3.Height - TitleContainer.Height - ButtonContainer.Height -200
                 LayoutMinWidth: =320
                 Width: =640
