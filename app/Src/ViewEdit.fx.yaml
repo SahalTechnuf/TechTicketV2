@@ -955,15 +955,15 @@
                     OnSelect: |
                         =Patch ('Technuf Ticketing System', LookUp(
                                 'Technuf Ticketing System',  
-                                ID = Value(selectedItem.ID))
+                                ID = Value(selectedItem.ID)),
                             {
                                 Title: TextInput1,
                                 //'Created By': UserContent,
                                 Description: DataCardValue13_1.Text,
                                 'Progress/Status':{Value: selectedStatus}, 
                                 'Image (Optional)': Image4_1.Image,
-                                'Issue Date and Time': Now()
-                                //ID: Value(selectedItem.ID)
+                                'Issue Date and Time': Now(),
+                                ID: Value(selectedItem.ID)
                             }
                         );
                         
