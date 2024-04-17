@@ -547,8 +547,8 @@
                         Image: = If(IsBlank(AddPicture2.Media),If(VarDeleteImg,Blank(), Parent.Default), AddPicture2.Media)
                         PressedBorderColor: =RGBA(0, 0, 0, 0)
                         PressedFill: =RGBA(0, 0, 0, 0)
-                        Width: =527
-                        X: =40
+                        Width: =596
+                        X: =30
                         Y: =57
                         ZIndex: =8
 
