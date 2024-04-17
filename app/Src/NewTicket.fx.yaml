@@ -551,7 +551,7 @@
                                     Title: DataCardValue16.Selected.Title,
                                     Description: DataCardValue13.Text,
                                     'Image (Optional)': Image4.Image,
-                                    'Progress/Status': { Value: "TBD" },
+                                    'Progress/Status': { Value: "New" },
                                     'Issue Date and Time': Now()
                                 }
                             );
