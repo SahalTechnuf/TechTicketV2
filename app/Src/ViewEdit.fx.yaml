@@ -551,7 +551,7 @@
                         DisabledColor: =RGBA(220, 220, 220, 1)
                         DisabledFill: =RGBA(0, 0, 0, 0)
                         FocusedBorderThickness: =4
-                        Height: =50
+                        Height: =44
                         HoverBorderColor: =RGBA(0, 0, 0, 0)
                         HoverColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
                         HoverFill: =RGBA(0, 0, 0, 0)
@@ -561,9 +561,9 @@
                         PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
                         PressedFill: =RGBA(0, 0, 0, 0)
                         Visible: =If(IsBlank(Image4_1.Image),false,true) 
-                        Width: =44
-                        X: =566
-                        Y: =62
+                        Width: =54
+                        X: =520
+                        Y: =8
                         ZIndex: =6
 
                     DataCardKey20_1 As label:
