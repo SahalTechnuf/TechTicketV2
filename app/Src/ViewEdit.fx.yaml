@@ -444,30 +444,6 @@
                         Y: =10
                         ZIndex: =1
 
-                    AddPicture2 As addMedia:
-                        BorderColor: =RGBA(0, 0, 0, 0)
-                        BorderStyle: =BorderStyle.None
-                        BorderThickness: =2
-                        ChangePictureText: =""
-                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                        DisabledColor: =RGBA(166, 166, 166, 1)
-                        DisabledFill: =RGBA(244, 244, 244, 1)
-                        Fill: =RGBA(135, 100, 184, 1)
-                        FocusedBorderThickness: =4
-                        Font: =Font.'Segoe UI'
-                        Height: =320
-                        HoverBorderColor: =RGBA(0, 0, 0, 0)
-                        HoverColor: =RGBA(255, 255, 255, 1)
-                        HoverFill: =ColorFade(RGBA(135, 100, 184, 1), -10%)
-                        PressedBorderColor: =ColorFade(RGBA(135, 100, 184, 1), -50%)
-                        PressedColor: =RGBA(255, 255, 255, 1)
-                        PressedFill: =ColorFade(RGBA(135, 100, 184, 1), -30%)
-                        Size: =24
-                        Width: =Parent.Width - 60
-                        X: =30
-                        Y: =DataCardKey2.Y + DataCardKey2.Height + 5
-                        ZIndex: =4
-
                     ErrorMessage2 As label:
                         AutoHeight: =true
                         BorderColor: =RGBA(0, 0, 0, 0)
@@ -491,7 +467,7 @@
                         Width: =Parent.Width - 60
                         X: =30
                         Y: =Image4_1.Y + Image4_1.Height
-                        ZIndex: =5
+                        ZIndex: =2
 
                     StarVisible2 As label:
                         Align: =Align.Center
@@ -512,7 +488,7 @@
                         Width: =30
                         Wrap: =false
                         Y: =DataCardKey2.Y
-                        ZIndex: =6
+                        ZIndex: =3
 
                     ImageTrashIcon3_1 As icon.Trash:
                         BorderColor: =RGBA(0, 0, 0, 0)
@@ -534,7 +510,31 @@
                         PressedFill: =RGBA(0, 0, 0, 0)
                         X: =567
                         Y: =12
-                        ZIndex: =7
+                        ZIndex: =4
+
+                    AddPicture2 As addMedia:
+                        BorderColor: =RGBA(0, 0, 0, 0)
+                        BorderStyle: =BorderStyle.None
+                        BorderThickness: =2
+                        ChangePictureText: =""
+                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        DisabledFill: =RGBA(244, 244, 244, 1)
+                        Fill: =RGBA(135, 100, 184, 1)
+                        FocusedBorderThickness: =4
+                        Font: =Font.'Segoe UI'
+                        Height: =320
+                        HoverBorderColor: =RGBA(0, 0, 0, 0)
+                        HoverColor: =RGBA(255, 255, 255, 1)
+                        HoverFill: =ColorFade(RGBA(135, 100, 184, 1), -10%)
+                        PressedBorderColor: =ColorFade(RGBA(135, 100, 184, 1), -50%)
+                        PressedColor: =RGBA(255, 255, 255, 1)
+                        PressedFill: =ColorFade(RGBA(135, 100, 184, 1), -30%)
+                        Size: =24
+                        Width: =Parent.Width - 60
+                        X: =30
+                        Y: =DataCardKey2.Y + DataCardKey2.Height + 5
+                        ZIndex: =5
 
                     Image4_1 As image:
                         BorderColor: =RGBA(0, 0, 0, 0)
@@ -552,7 +552,7 @@
                         Width: =596
                         X: =30
                         Y: =57
-                        ZIndex: =8
+                        ZIndex: =6
 
                 Description_DataCard3_1 As typedDataCard.textualEditCard:
                     BorderColor: =RGBA(166, 166, 166, 1)
