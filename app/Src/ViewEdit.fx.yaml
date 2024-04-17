@@ -590,32 +590,6 @@
                         Y: =62
                         ZIndex: =8
 
-                    AddPicture3_1 As addMedia:
-                        BorderColor: =RGBA(0, 134, 208, 1)
-                        BorderStyle: =BorderStyle.Dashed
-                        BorderThickness: =2
-                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                        DisabledColor: =RGBA(166, 166, 166, 1)
-                        DisabledFill: =RGBA(0, 134, 208, 1)
-                        Fill: =RGBA(135, 100, 184, 1)
-                        FocusedBorderThickness: =4
-                        Font: =Font.'Segoe UI'
-                        Height: =268
-                        HoverBorderColor: =RGBA(0, 0, 0, 0)
-                        HoverColor: =RGBA(255, 255, 255, 1)
-                        HoverFill: =ColorFade(RGBA(135, 100, 184, 1), -10%)
-                        PressedBorderColor: =ColorFade(RGBA(0, 134, 208, 1), -50%)
-                        PressedColor: =RGBA(255, 255, 255, 1)
-                        PressedFill: =ColorFade(RGBA(135, 100, 184, 1), -30%)
-                        Size: =24
-                        Text: |-
-                            ="Upload a photo
-                            (PNG, JPEG, GIF)"
-                        Width: =493
-                        X: =60
-                        Y: =52
-                        ZIndex: =9
-
                     ErrorMessage20_1 As label:
                         AutoHeight: =true
                         BorderColor: =RGBA(0, 0, 0, 0)
@@ -773,8 +747,9 @@
         HoverColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
         HoverFill: =RGBA(0, 0, 0, 0)
         Icon: =Icon.Trash
-        OnSelect: |
-            =Set(VarDeleteImg, true)
+        OnSelect: |-
+            =Set(VarDeleteImg, true);
+            Reset(AddPicture3_1)
         PressedBorderColor: =RGBA(0, 0, 0, 0)
         PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
         PressedFill: =RGBA(0, 0, 0, 0)
@@ -783,4 +758,30 @@
         X: =564
         Y: =741
         ZIndex: =3
+
+    AddPicture3_1 As addMedia:
+        BorderColor: =RGBA(0, 134, 208, 1)
+        BorderStyle: =BorderStyle.Dashed
+        BorderThickness: =2
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(0, 134, 208, 1)
+        Fill: =RGBA(135, 100, 184, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        Height: =268
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(135, 100, 184, 1), -10%)
+        PressedBorderColor: =ColorFade(RGBA(0, 134, 208, 1), -50%)
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =ColorFade(RGBA(135, 100, 184, 1), -30%)
+        Size: =24
+        Text: |-
+            ="Upload a photo
+            (PNG, JPEG, GIF)"
+        Width: =493
+        X: =55
+        Y: =785
+        ZIndex: =4
 

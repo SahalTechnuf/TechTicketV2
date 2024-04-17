@@ -711,19 +711,49 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "ViewEdit.Container11.Container12.Form5.'Image (Optional)_DataCard3_1'.AddPicture3_1.AccessibleLabel"
+                  "fullyQualifiedName": "ViewEdit.AddPicture3_1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "ViewEdit.Container11.Container12.Form5.'Image (Optional)_DataCard3_1'.AddPicture3_1.AccessibleLabel",
+                  "fullyQualifiedName": "ViewEdit.AddPicture3_1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "ViewEdit",
-                "type": "ViewEdit.Container11.Container12.Form5.'Image (Optional)_DataCard3_1'.AddPicture3_1"
+                "type": "ViewEdit.AddPicture3_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ViewEdit.Icon5.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ViewEdit.Icon5.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ViewEdit",
+                "type": "ViewEdit.Icon5"
               }
             }
           ],
@@ -765,36 +795,6 @@
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
           "ruleIndex": 6
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "ViewEdit.Icon5.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "ViewEdit.Icon5.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "ViewEdit",
-                "type": "ViewEdit.Icon5"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
         },
         {
           "locations": [
