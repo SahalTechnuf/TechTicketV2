@@ -1,9 +1,7 @@
 "ViewEdit As screen.'phoneDetailViewLayout_ver3.0'":
     Fill: =
     LoadingSpinnerColor: =RGBA(135, 100, 184, 1)
-    OnVisible: |-
-        =//If(selectedItem.'Progress/Status'.Value="Resolved",Notify("This ticket is resolved and cannot be edited.",NotificationType.Error));
-        Set(VarDeleteImg,false)
+    OnVisible: =Set(VarDeleteImg,false)
 
     Container11 As groupContainer.horizontalAutoLayoutContainer:
         DropShadow: =DropShadow.Light
