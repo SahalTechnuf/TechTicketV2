@@ -15,7 +15,7 @@
         RadiusTopLeft: =4
         RadiusTopRight: =4
         Width: =640
-        ZIndex: =2
+        ZIndex: =1
 
         Container12 As groupContainer.verticalAutoLayoutContainer:
             AlignInContainer: =AlignInContainer.Start
@@ -735,28 +735,6 @@
                     Width: =280
                     ZIndex: =2
 
-    ImageTrashIcon3_1 As icon.Trash:
-        BorderColor: =RGBA(0, 0, 0, 0)
-        Color: =RGBA(135, 100, 184, 1)
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledColor: =RGBA(220, 220, 220, 1)
-        DisabledFill: =RGBA(0, 0, 0, 0)
-        FocusedBorderThickness: =4
-        Height: =50
-        HoverBorderColor: =RGBA(0, 0, 0, 0)
-        HoverColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
-        HoverFill: =RGBA(0, 0, 0, 0)
-        Icon: =Icon.Trash
-        OnSelect: |-
-            =Set(VarDeleteImg,true);
-            Reset(AddPicture3_1)
-        PressedBorderColor: =RGBA(0, 0, 0, 0)
-        PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
-        PressedFill: =RGBA(0, 0, 0, 0)
-        X: =556
-        Y: =776
-        ZIndex: =3
-
     AddPicture3_1 As addMedia:
         BorderColor: =RGBA(0, 134, 208, 1)
         BorderStyle: =BorderStyle.Dashed
@@ -781,5 +759,27 @@
         Width: =581
         X: =29
         Y: =776
-        ZIndex: =4
+        ZIndex: =2
+
+    ImageTrashIcon3_1 As icon.Trash:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        Color: =RGBA(135, 100, 184, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(220, 220, 220, 1)
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        FocusedBorderThickness: =4
+        Height: =50
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
+        HoverFill: =RGBA(0, 0, 0, 0)
+        Icon: =Icon.Trash
+        OnSelect: |-
+            =Set(VarDeleteImg,true);
+            Reset(AddPicture3_1)
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
+        PressedFill: =RGBA(0, 0, 0, 0)
+        X: =556
+        Y: =776
+        ZIndex: =3
 
