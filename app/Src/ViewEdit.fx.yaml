@@ -558,7 +558,7 @@
                         PressedBorderColor: =RGBA(0, 0, 0, 0)
                         PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
                         PressedFill: =RGBA(0, 0, 0, 0)
-                        X: =546
+                        X: =567
                         Y: =12
                         ZIndex: =7
 
