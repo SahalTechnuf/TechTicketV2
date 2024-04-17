@@ -529,11 +529,8 @@
                     BorderColor: =RGBA(166, 166, 166, 1)
                     BorderStyle: =BorderStyle.Solid
                     DataField: ="Image_x0028_Optional_x0029_"
-                    Default: |-
-                        =//If(IsBlank(AddPicture3_1.Media), selectedItem.'Image (Optional)'.Medium, AddPicture3_1.Media)
-                        
-                        //selectedItem.'Image (Optional)'
-                        If(IsBlank(AddPicture3_1.Media),If(VarDeleteImg,Blank(), Parent.Default), AddPicture3_1.Media)
+                    Default: |
+                        =selectedItem.'Image (Optional)'
                     DisplayMode: =DisplayMode.View
                     DisplayName: =DataSourceInfo([@'Work Progress Tracker'],DataSourceInfo.DisplayName,"Image_x0028_Optional_x0029_")
                     Fill: =RGBA(0, 0, 0, 0)
