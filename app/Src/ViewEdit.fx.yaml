@@ -413,7 +413,7 @@
                     DisplayMode: =Parent.DisplayMode
                     DisplayName: =DataSourceInfo([@'Technuf Ticketing System'],DataSourceInfo.DisplayName,"Image_x0028_Optional_x0029_")
                     Fill: =RGBA(0, 0, 0, 0)
-                    Height: =50
+                    Height: =342
                     Required: =false
                     Update: =Image4_1.Image
                     Width: =640
