@@ -551,3 +551,219 @@
         Y: =584
         ZIndex: =16
 
+    Form1 As form:
+        BorderColor: =RGBA(166, 166, 166, 1)
+        DataSource: ='Technuf Ticketing System'
+        Width: =640
+        Y: =527
+        ZIndex: =17
+
+        "'Progress/Status_DataCard1' As typedDataCard.comboBoxEditCard":
+            BorderColor: =RGBA(166, 166, 166, 1)
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Progress_x002f_Status"
+            Default: =ThisItem.'Progress/Status'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Technuf Ticketing System'],DataSourceInfo.DisplayName,"Progress_x002f_Status")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =false
+            Update: =DataCardValue3.Selected
+            Width: =640
+            X: =0
+            Y: =0
+            ZIndex: =18
+
+            DataCardKey3_3 As label:
+                AutoHeight: =true
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                Color: =RGBA(51, 51, 51, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FocusedBorderThickness: =4
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Height: =48
+                PaddingLeft: =0
+                Size: =21
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =46
+                Y: =10
+                ZIndex: =5
+
+            ErrorMessage3_3 As label:
+                AutoHeight: =true
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                Color: =RGBA(168, 0, 0, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(168, 0, 0, 1)
+                FocusedBorderThickness: =4
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =21
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =46
+                Y: =
+                ZIndex: =6
+
+            StarVisible3_3 As label:
+                Align: =Align.Center
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                Color: =RGBA(51, 51, 51, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FocusedBorderThickness: =4
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Height: =DataCardKey3_3.Height
+                PaddingLeft: =0
+                Size: =21
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                X: =16
+                Y: =DataCardKey3_3.Y
+                ZIndex: =7
+
+            Button2_3 As button:
+                BorderColor: |-
+                    =//RGBA(0, 0, 0, 0)
+                    If(DashTickets.Selected.'Progress/Status'.Value = "Initiated",Color.Blue) 
+                Color: |-
+                    =//Button2_2Color
+                    If(DashTickets.Selected.'Progress/Status'.Value = "Initiated",Color.Blue) 
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                Fill: |-
+                    =//ColorFade(If(selectedItem.Progress_x002f_Status.Value="Initiated",RGBA(0,255,0,1),RGBA(255,255,255,1)),0.8)
+                    RGBA(255,255,255,1)
+                FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Height: =80
+                HoverBorderColor: =RGBA(0, 0, 0, 0)
+                HoverColor: =RGBA(255, 255, 255, 1)
+                HoverFill: =ColorFade(RGBA(135, 100, 184, 1), -10%)
+                OnSelect: |+
+                    =Set(selectedStatus, "Initiated");
+                    Set(Button2_2Color, Color.Blue);
+                    Set(Button5_2Color, Color.Gray);
+                    Set(Button7_2Color, Color.Gray);
+                    Patch('Technuf Ticketing System', LookUp('Technuf Ticketing System', ID = Value(selectedItem.ID)), {'Progress/Status': {Value: selectedStatus}});
+                    
+                PressedBorderColor: =ColorFade(RGBA(135, 100, 184, 1), -50%)
+                PressedColor: =RGBA(255, 255, 255, 1)
+                PressedFill: =ColorFade(RGBA(135, 100, 184, 1), -30%)
+                RadiusBottomLeft: =50
+                RadiusBottomRight: =50
+                RadiusTopLeft: =50
+                RadiusTopRight: =50
+                Size: =24
+                Text: ="Initiated"
+                Width: =180
+                X: =16
+                Y: =59
+                ZIndex: =8
+
+            Button5_3 As button:
+                BorderColor: |-
+                    =//RGBA(255, 255, 255, 1)
+                    If(DashTickets.Selected.'Progress/Status'.Value = "In Progress",Color.Blue) 
+                Color: |-
+                    =//Button5_2Color
+                    If(DashTickets.Selected.'Progress/Status'.Value = "In Progress",Color.Blue) 
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                Fill: |-
+                    =//ColorFade(If(selectedItem.Progress_x002f_Status.Value="In Progress",RGBA(0,255,0,1),RGBA(255,255,255,1)),0.8)
+                    RGBA(255, 255, 255, 1)
+                FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Height: =80
+                HoverBorderColor: =RGBA(0, 0, 0, 0)
+                HoverColor: =RGBA(255, 255, 255, 1)
+                HoverFill: =ColorFade(RGBA(135, 100, 184, 1), -10%)
+                OnSelect: |-
+                    =Set(selectedStatus, "In Progress" );
+                    Set(Button2_2Color, Color.Gray);
+                    Set(Button5_2Color, Color.Blue);
+                    Set(Button7_2Color, Color.Gray);
+                    
+                    Patch('Technuf Ticketing System', LookUp('Technuf Ticketing System', ID = Value(selectedItem.ID)), {'Progress/Status': {Value: selectedStatus }});
+                PressedBorderColor: =ColorFade(RGBA(135, 100, 184, 1), -50%)
+                PressedColor: =RGBA(255, 255, 255, 1)
+                PressedFill: =ColorFade(RGBA(135, 100, 184, 1), -30%)
+                RadiusBottomLeft: =50
+                RadiusBottomRight: =50
+                RadiusTopLeft: =50
+                RadiusTopRight: =50
+                Size: =24
+                Text: ="In Progress"
+                Width: =180
+                X: =238
+                Y: =59
+                ZIndex: =9
+
+            Button7_3 As button:
+                BorderColor: |-
+                    =//RGBA(255, 255, 255, 1)
+                    If(DashTickets.Selected.'Progress/Status'.Value = "Resolved",Color.Blue) 
+                Color: |-
+                    =//Button7_2Color
+                    If(DashTickets.Selected.'Progress/Status'.Value = "Resolved",Color.Blue) 
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                Fill: |-
+                    =//ColorFade(If(selectedItem.Progress_x002f_Status.Value="Resolved",RGBA(0,255,0,1),RGBA(255,255,255,1)),0.8)
+                    RGBA(255,255,255,1)
+                FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Height: =80
+                HoverBorderColor: =RGBA(0, 0, 0, 0)
+                HoverColor: =RGBA(255, 255, 255, 1)
+                HoverFill: =ColorFade(RGBA(135, 100, 184, 1), -10%)
+                OnSelect: |-
+                    =Set(selectedStatus, "Resolved" );
+                    Set(Button2_2Color, Color.Gray);
+                    Set(Button5_2Color, Color.Gray);
+                    Set(Button7_2Color, Color.Blue);
+                    
+                    //Set(selectedColor, If(selectedItem.OData__ColorTag = "In Progress", Color.Blue,If(selectedItem.OData__ColorTag = "Initiated",Color.Blue)));
+                    
+                    Patch('Technuf Ticketing System', LookUp('Technuf Ticketing System', ID = Value(selectedItem.ID)), {'Progress/Status': {Value: selectedStatus }});
+                PressedBorderColor: =ColorFade(RGBA(135, 100, 184, 1), -50%)
+                PressedColor: =RGBA(255, 255, 255, 1)
+                PressedFill: =ColorFade(RGBA(135, 100, 184, 1), -30%)
+                RadiusBottomLeft: =50
+                RadiusBottomRight: =50
+                RadiusTopLeft: =50
+                RadiusTopRight: =50
+                Size: =24
+                Text: ="Resolved"
+                Width: =180
+                X: =460
+                Y: =59
+                ZIndex: =10
+
