@@ -891,36 +891,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.VarDeleteImg"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "App.VarDeleteImg",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "VarDeleteImg",
-                "module": "App",
-                "type": "App"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 7
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "App.technufllc_logo"
                 }
               ],
