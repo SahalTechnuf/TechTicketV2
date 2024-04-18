@@ -412,7 +412,9 @@
                     Default: |-
                         =//selectedItem.'Image (Optional)'
                         If(IsBlank(AddPicture2.Media),selectedItem.'Image (Optional)'.Medium,AddPicture2.Media)
-                    DisplayMode: =Parent.DisplayMode
+                    DisplayMode: |-
+                        =//Parent.DisplayMode
+                        DisplayMode.View
                     DisplayName: =DataSourceInfo([@'Technuf Ticketing System'],DataSourceInfo.DisplayName,"Image_x0028_Optional_x0029_")
                     Fill: =RGBA(0, 0, 0, 0)
                     Height: =342
