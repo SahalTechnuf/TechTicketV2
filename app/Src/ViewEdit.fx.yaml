@@ -514,6 +514,24 @@
                         Y: =12
                         ZIndex: =4
 
+                    Image4_1 As image:
+                        BorderColor: =RGBA(0, 0, 0, 0)
+                        BorderStyle: =BorderStyle.None
+                        BorderThickness: =2
+                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                        DisabledFill: =RGBA(0, 0, 0, 0)
+                        FocusedBorderThickness: =4
+                        Height: =211
+                        HoverBorderColor: =RGBA(0, 0, 0, 0)
+                        HoverFill: =RGBA(0, 0, 0, 0)
+                        Image: = If(IsBlank(AddPicture2.Media),If(VarDeleteImg,Blank(), Parent.Default), AddPicture2.Media)
+                        PressedBorderColor: =RGBA(0, 0, 0, 0)
+                        PressedFill: =RGBA(0, 0, 0, 0)
+                        Width: =596
+                        X: =30
+                        Y: =103
+                        ZIndex: =5
+
                     AddPicture2 As addMedia:
                         BorderColor: =RGBA(0, 0, 0, 0)
                         BorderStyle: =BorderStyle.None
@@ -536,24 +554,6 @@
                         Width: =Parent.Width - 60
                         X: =30
                         Y: =DataCardKey2.Y + DataCardKey2.Height + 5
-                        ZIndex: =5
-
-                    Image4_1 As image:
-                        BorderColor: =RGBA(0, 0, 0, 0)
-                        BorderStyle: =BorderStyle.None
-                        BorderThickness: =2
-                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                        DisabledFill: =RGBA(0, 0, 0, 0)
-                        FocusedBorderThickness: =4
-                        Height: =211
-                        HoverBorderColor: =RGBA(0, 0, 0, 0)
-                        HoverFill: =RGBA(0, 0, 0, 0)
-                        Image: = If(IsBlank(AddPicture2.Media),If(VarDeleteImg,Blank(), Parent.Default), AddPicture2.Media)
-                        PressedBorderColor: =RGBA(0, 0, 0, 0)
-                        PressedFill: =RGBA(0, 0, 0, 0)
-                        Width: =596
-                        X: =30
-                        Y: =57
                         ZIndex: =6
 
                 Description_DataCard3_1 As typedDataCard.textualEditCard:
