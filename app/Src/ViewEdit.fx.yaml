@@ -515,8 +515,8 @@
                         ZIndex: =4
 
                     Image4_1 As image:
-                        BorderColor: =RGBA(0, 0, 0, 0)
-                        BorderStyle: =BorderStyle.None
+                        BorderColor: =RGBA(153, 207, 236, 1)
+                        BorderStyle: =BorderStyle.Dotted
                         BorderThickness: =2
                         DisabledBorderColor: =RGBA(0, 0, 0, 0)
                         DisabledFill: =RGBA(0, 0, 0, 0)
