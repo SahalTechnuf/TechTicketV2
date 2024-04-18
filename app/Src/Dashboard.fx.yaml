@@ -179,7 +179,7 @@
             Height: =141
             HoverBorderColor: =RGBA(0, 0, 0, 0)
             HoverFill: =RGBA(0, 0, 0, 0)
-            Image: =ThisItem.'Image (Optional)'
+            Image: =ThisItem.'Image (Optional)'.Small
             OnSelect: =Select(Parent)
             PressedBorderColor: =RGBA(0, 0, 0, 0)
             PressedFill: =RGBA(0, 0, 0, 0)
