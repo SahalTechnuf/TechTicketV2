@@ -250,7 +250,7 @@
             Text: =ThisItem.'Created By'.Email
             Width: =349
             X: =236
-            Y: =87
+            Y: =82
             ZIndex: =11
 
         DashAuthor_1 As label:
