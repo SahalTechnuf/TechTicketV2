@@ -351,7 +351,7 @@
                         DataField: ="Image_x0028_Optional_x0029_"
                         Default: =ThisItem.'Image (Optional)'
                         DisplayMode: =Parent.DisplayMode
-                        DisplayName: =DataSourceInfo([@'Work Progress Tracker'],DataSourceInfo.DisplayName,"Image_x0028_Optional_x0029_")
+                        DisplayName: =DataSourceInfo([@'Technuf Ticketing System'],DataSourceInfo.DisplayName,"Image_x0028_Optional_x0029_")
                         Fill: =RGBA(0, 0, 0, 0)
                         Height: =50
                         Required: =false

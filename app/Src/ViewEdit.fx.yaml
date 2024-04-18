@@ -563,10 +563,10 @@
                     DisplayMode: |+
                         =
                         
-                    DisplayName: =DataSourceInfo([@'Work Progress Tracker'],DataSourceInfo.DisplayName,"Description")
+                    DisplayName: =DataSourceInfo([@'Technuf Ticketing System'],DataSourceInfo.DisplayName,"Description")
                     Fill: =RGBA(0, 0, 0, 0)
                     Height: =250
-                    MaxLength: =DataSourceInfo([@'Work Progress Tracker'], DataSourceInfo.MaxLength, "Description")
+                    MaxLength: =DataSourceInfo([@'Technuf Ticketing System'], DataSourceInfo.MaxLength, "Description")
                     Required: =false
                     Update: =DataCardValue13_1.Text
                     Width: =ViewEdit.Width/ViewEdit.Size

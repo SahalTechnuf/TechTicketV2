@@ -28,12 +28,16 @@
         "dataSources": {
           "Technuf Ticketing System": {
             "tableName": "43fb151c-b96a-45ba-868b-2de2bc0843ea"
+          },
+          "Work Progress Tracker": {
+            "tableName": "e5b06766-4277-428d-8d77-cb2c5dd9b0ea"
           }
         }
       }
     },
     "dataSources": [
-      "Technuf Ticketing System"
+      "Technuf Ticketing System",
+      "Work Progress Tracker"
     ],
     "dependencies": {},
     "dependents": [],
