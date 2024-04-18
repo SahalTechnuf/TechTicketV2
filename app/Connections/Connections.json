@@ -17,50 +17,26 @@
     "dependents": [],
     "id": "1f7e6a70-f875-4386-b325-27efc8dca6ed"
   },
-  "8e42ef2b-8545-4a95-a144-f01f5e9266a4": {
-    "appActions": [
-      "providers/PowerPlatform.Governance/Operations/Read",
-      "providers/PowerPlatform.Governance/Operations/Write",
-      "providers/PowerPlatform.Governance/Operations/Delete"
-    ],
+  "c9aba788-6919-4c0f-98e0-23917e9885b9": {
     "connectionRef": {
-      "apiTier": "Standard",
       "displayName": "SharePoint",
-      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1676/1.0.1676.3617/sharepointonline/icon.png",
-      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
-      "parameterHints": {},
-      "parameterHintsV2": {}
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1682/1.0.1682.3676/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline"
     },
     "datasets": {
-      "https://netorg4829107.sharepoint.com/sites/TechnufTicketingSystem": {
+      "https://netorg4829107.sharepoint.com/sites/TechnufTicketingSystem2": {
         "dataSources": {
           "Technuf Ticketing System": {
-            "tableName": "eae1175a-7c7a-4de4-875b-d5ce7785746a"
-          }
-        }
-      },
-      "https://netorg4829107-my.sharepoint.com/personal/zahid_ahsan_technuf_com": {
-        "dataSources": {
-          "Work Progress Tracker": {
-            "tableName": "e9f778b6-9608-457f-8ec6-e0f8cd437713"
-          }
-        }
-      },
-      "https://netorg4829107-my.sharepoint.com/personal/zahid_ahsan_technuf_com/_layouts/15/lists.aspx": {
-        "dataSources": {
-          "User List": {
-            "tableName": "d45c2546-15b7-4261-8e19-e9013914ec09"
+            "tableName": "43fb151c-b96a-45ba-868b-2de2bc0843ea"
           }
         }
       }
     },
     "dataSources": [
-      "User List",
-      "Technuf Ticketing System",
-      "Work Progress Tracker"
+      "Technuf Ticketing System"
     ],
     "dependencies": {},
     "dependents": [],
-    "id": "8e42ef2b-8545-4a95-a144-f01f5e9266a4"
+    "id": "c9aba788-6919-4c0f-98e0-23917e9885b9"
   }
 }

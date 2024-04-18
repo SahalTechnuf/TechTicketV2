@@ -101,7 +101,7 @@
       "zeroalltabindexes": false
     },
     "Author": "",
-    "BindingErrorCount": 2,
+    "BindingErrorCount": 30,
     "ContainsThirdPartyPcfControls": false,
     "DefaultConnectedDataSourceMaxGetRowsCount": 500,
     "DocumentAppType": "Phone",
@@ -116,7 +116,6 @@
     "FileID": "82877603-795e-4211-96fd-78d536d1d379",
     "Id": "82877603-795e-4211-96fd-78d536d1d379",
     "InstrumentationKey": "",
-    "LocalDatabaseReferences": "",
     "ManualOfflineProfileId": "",
     "Name": "TechTicketV3",
     "OriginatingVersion": "1.336",
