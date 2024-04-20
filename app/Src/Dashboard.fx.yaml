@@ -425,7 +425,7 @@
         Y: =SearchTicket.Y
         ZIndex: =7
 
-    AddNew As button:
+    AddNewTicket As button:
         BorderColor: =RGBA(0, 0, 0, 0)
         DisabledBorderColor: =RGBA(0, 0, 0, 0)
         DisabledColor: =RGBA(255, 255, 255, 1)
