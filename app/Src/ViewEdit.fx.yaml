@@ -142,11 +142,13 @@
                     LayoutMinHeight: =10
                     LayoutMinWidth: =250
                     LayoutMode: =LayoutMode.Auto
-                    PaddingLeft: =20
+                    PaddingLeft: =25
                     RadiusBottomLeft: =4
                     RadiusBottomRight: =4
                     RadiusTopLeft: =4
                     RadiusTopRight: =4
+                    Width: |
+                        =Parent.Width
                     ZIndex: =1
 
                     CreatedLabel_1 As label:
@@ -183,29 +185,33 @@
                         PaddingLeft: =0
                         Size: =17
                         Text: =Text(selectedItem.IssueDateandTime)
-                        Width: =450
+                        Width: |
+                            =410
                         ZIndex: =2
 
-                    ImageTrashIcon3_2 As icon.Trash:
+                    ImageTrashIcon3_4 As icon.Trash:
                         BorderColor: =RGBA(0, 0, 0, 0)
-                        Color: =RGBA(135, 100, 184, 1)
+                        Color: =RGBA(0, 134, 208, 1)
                         DisabledBorderColor: =RGBA(166, 166, 166, 1)
                         DisabledColor: =RGBA(220, 220, 220, 1)
                         DisabledFill: =RGBA(0, 0, 0, 0)
                         FocusedBorderThickness: =4
-                        Height: =50
+                        Height: |
+                            =30
                         HoverBorderColor: =RGBA(0, 0, 0, 0)
                         HoverColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
                         HoverFill: =RGBA(0, 0, 0, 0)
                         Icon: =Icon.Trash
                         OnSelect: |-
-                            =Remove('Technuf Ticketing System', selectedItem);
-                            ResetForm(Form5); Notify( "Delete Successfully",NotificationType.Success);
-                            Navigate('Dashboard.', Transition.None);
+                            =Set(VarDeleteImg,true);
+                            Reset(AddPicture2_1)
                         PressedBorderColor: =RGBA(0, 0, 0, 0)
                         PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
                         PressedFill: =RGBA(0, 0, 0, 0)
-                        Width: =Parent.Width * 0.1
+                        Width: |
+                            =100
+                        X: =519
+                        Y: =75
                         ZIndex: =3
 
                 UserInfo_ As groupContainer.horizontalAutoLayoutContainer:
@@ -216,7 +222,7 @@
                     LayoutMinHeight: =112
                     LayoutMinWidth: =250
                     LayoutMode: =LayoutMode.Auto
-                    PaddingLeft: =20
+                    PaddingLeft: =25
                     RadiusBottomLeft: =4
                     RadiusBottomRight: =4
                     RadiusTopLeft: =4
@@ -234,7 +240,7 @@
                         FocusedBorderThickness: =4
                         Font: =Font.'Segoe UI'
                         FontWeight: =FontWeight.Bold
-                        Height: =50
+                        Height: =30
                         LayoutMinHeight: =70
                         LayoutMinWidth: =560
                         Size: =17
@@ -252,13 +258,14 @@
                         DisabledColor: =RGBA(166, 166, 166, 1)
                         FocusedBorderThickness: =4
                         Font: =Font.'Segoe UI'
-                        Height: =50
+                        Height: =30
                         LayoutMinHeight: =70
                         LayoutMinWidth: =560
                         PaddingLeft: =0
                         Size: =17
                         Text: =selectedItem.'Created By'.DisplayName
-                        Width: =560
+                        Width: |
+                            =540
                         ZIndex: =2
 
                 EmailImfo_ As groupContainer.horizontalAutoLayoutContainer:
@@ -269,7 +276,7 @@
                     LayoutMinHeight: =60
                     LayoutMinWidth: =250
                     LayoutMode: =LayoutMode.Auto
-                    PaddingLeft: =20
+                    PaddingLeft: =25
                     RadiusBottomLeft: =4
                     RadiusBottomRight: =4
                     RadiusTopLeft: =4
@@ -287,7 +294,7 @@
                         FocusedBorderThickness: =4
                         Font: =Font.'Segoe UI'
                         FontWeight: =FontWeight.Bold
-                        Height: =50
+                        Height: =30
                         LayoutMinHeight: =70
                         LayoutMinWidth: =560
                         Size: =17
@@ -305,13 +312,15 @@
                         DisabledColor: =RGBA(166, 166, 166, 1)
                         FocusedBorderThickness: =4
                         Font: =Font.'Segoe UI'
-                        Height: =50
+                        Height: |
+                            =30
                         LayoutMinHeight: =70
                         LayoutMinWidth: =560
                         PaddingLeft: =0
                         Size: =17
                         Text: =selectedItem.'Created By'.Email
-                        Width: =560
+                        Width: |
+                            =530
                         ZIndex: =2
 
             Form5_ As form:
@@ -526,12 +535,12 @@
 
                     ImageTrashIcon3_3 As icon.Trash:
                         BorderColor: =RGBA(0, 0, 0, 0)
-                        Color: =RGBA(135, 100, 184, 1)
+                        Color: =RGBA(0, 134, 208, 1)
                         DisabledBorderColor: =RGBA(166, 166, 166, 1)
                         DisabledColor: =RGBA(220, 220, 220, 1)
                         DisabledFill: =RGBA(0, 0, 0, 0)
                         FocusedBorderThickness: =4
-                        Height: =50
+                        Height: =38
                         HoverBorderColor: =RGBA(0, 0, 0, 0)
                         HoverColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
                         HoverFill: =RGBA(0, 0, 0, 0)
@@ -542,7 +551,8 @@
                         PressedBorderColor: =RGBA(0, 0, 0, 0)
                         PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
                         PressedFill: =RGBA(0, 0, 0, 0)
-                        X: =519
+                        Width: =32
+                        X: =552
                         Y: =75
                         ZIndex: =4
 
