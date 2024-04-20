@@ -16,7 +16,7 @@
         FooterContDash As groupContainer.verticalAutoLayoutContainer:
             BorderStyle: =BorderStyle.None
             DropShadow: =DropShadow.Light
-            Height: =Parent.Height/10
+            Height: =115
             LayoutAlignItems: =LayoutAlignItems.Center
             LayoutDirection: =LayoutDirection.Vertical
             LayoutJustifyContent: =LayoutJustifyContent.Center
@@ -26,7 +26,7 @@
             RadiusTopLeft: =4
             RadiusTopRight: =4
             Width: =Parent.Width
-            Y: =1022
+            Y: =1020
             ZIndex: =1
 
             AddNewTicket_1 As button:
@@ -149,8 +149,7 @@
                             Set(selectedItem, DashTickets_.Selected);
                             Navigate('ViewEdit.', Transition.None, {selectedItem: selectedItem})
                         )
-                    TabIndex: |
-                        =3
+                    TabIndex: =3
                     TemplatePadding: =10
                     TemplateSize: =226
                     Transition: =Transition.Push
