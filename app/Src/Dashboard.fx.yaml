@@ -184,7 +184,6 @@
                         ZIndex: =1
 
                     DashCat_1 As label:
-                        AutoHeight: =true
                         BorderColor: =RGBA(0, 0, 0, 0)
                         BorderStyle: =BorderStyle.None
                         BorderThickness: =2
@@ -194,14 +193,13 @@
                         FocusedBorderThickness: =4
                         Font: =Font.'Segoe UI'
                         FontWeight: =FontWeight.Bold
-                        Height: =30
+                        Height: =53
                         LineHeight: =1
                         OnSelect: =Select(Parent)
-                        Size: =20
+                        Size: =18
                         Text: =ThisItem.Title
-                        Width: =341
+                        Width: =331
                         X: =161
-                        Y: =11
                         ZIndex: =2
 
                     DashDesc_1 As label:
