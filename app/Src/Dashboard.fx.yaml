@@ -151,6 +151,7 @@
                             Set(selectedItem, DashTickets.Selected);
                             Navigate('ViewEdit.', Transition.None, {selectedItem: selectedItem})
                         )
+                    ShowScrollbar: =false
                     TabIndex: =3
                     TemplatePadding: =10
                     TemplateSize: =226
