@@ -100,7 +100,7 @@
                         =50
                     LayoutMinHeight: =70
                     LayoutMinWidth: =560
-                    PaddingLeft: =15
+                    PaddingLeft: =20
                     PaddingTop: =15
                     Size: =20
                     Text: ="Tickets"
@@ -544,8 +544,8 @@
             RadiusTopLeft: =15
             RadiusTopRight: =15
             Size: =20
-            Width: =553
-            X: =11
+            Width: =541
+            X: =22
             Y: =193
             ZIndex: =4
 
