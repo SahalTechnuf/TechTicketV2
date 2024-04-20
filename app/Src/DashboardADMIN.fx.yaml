@@ -66,7 +66,7 @@
                 Height: =Parent.Height-60
                 HoverBorderColor: =RGBA(0, 0, 0, 0)
                 HoverFill: =RGBA(0, 0, 0, 0)
-                Image: =download_1
+                Image: =download
                 LayoutMinHeight: =320
                 LayoutMinWidth: =320
                 PaddingTop: =50
