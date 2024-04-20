@@ -105,7 +105,7 @@
                     PaddingTop: =15
                     Size: =20
                     Text: ="Tickets"
-                    Visible: |-
+                    Visible: |
                         =If(
                             CountRows(DashTickets.AllItems) > 0,
                             true,

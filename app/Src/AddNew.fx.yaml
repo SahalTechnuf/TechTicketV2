@@ -45,7 +45,7 @@
                 LayoutMinWidth: =280
                 OnSelect: |
                     =ResetForm(AddForm);
-                    Navigate('Dashboard', Transition.None);
+                    Navigate(Dashboard, Transition.None);
                 PressedBorderColor: =ColorFade(RGBA(0, 94, 146, 1), -50%)
                 PressedColor: =RGBA(255, 255, 255, 1)
                 PressedFill: =ColorFade(RGBA(0, 94, 146, 1), -30%)
@@ -90,7 +90,7 @@
                         );
                         ResetForm(AddForm);
                         Notify("Saved Successfully", NotificationType.Success);
-                        Navigate('Dashboard', Transition.None)
+                        Navigate(Dashboard, Transition.None)
                     )
                 PressedBorderColor: =ColorFade(RGBA(0, 134, 208, 1), -50%)
                 PressedColor: =RGBA(255, 255, 255, 1)
