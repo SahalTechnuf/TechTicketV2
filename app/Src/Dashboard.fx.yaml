@@ -30,7 +30,7 @@
             Y: =1020
             ZIndex: =1
 
-            AddNewTicket_1 As button:
+            Button_AddNew As button:
                 BorderColor: =RGBA(0, 0, 0, 0)
                 DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledColor: =RGBA(255, 255, 255, 1)
@@ -45,7 +45,7 @@
                 HoverFill: =ColorFade(RGBA(0, 134, 208, 1), -10%)
                 LayoutMinHeight: =70
                 LayoutMinWidth: =280
-                OnSelect: =NewForm(Form3);Navigate('NewTicket.', ScreenTransition.None)
+                OnSelect: =NewForm(Form3);Navigate('AddNew', ScreenTransition.None)
                 PressedBorderColor: =ColorFade(RGBA(135, 100, 184, 1), -50%)
                 PressedColor: =RGBA(255, 255, 255, 1)
                 PressedFill: =ColorFade(RGBA(0, 134, 208, 1), -30%)
@@ -75,7 +75,7 @@
             Y: =243
             ZIndex: =2
 
-            Container8 As groupContainer.verticalAutoLayoutContainer:
+            DashGallery As groupContainer.verticalAutoLayoutContainer:
                 BorderStyle: =BorderStyle.None
                 DropShadow: =DropShadow.Light
                 Height: =225
@@ -89,7 +89,7 @@
                 RadiusTopRight: =4
                 ZIndex: =1
 
-                Label_Issued_1 As label:
+                Label_DashTickets As label:
                     BorderColor: =RGBA(0, 0, 0, 0)
                     BorderStyle: =BorderStyle.None
                     BorderThickness: =2
@@ -118,8 +118,8 @@
                     Y: =250
                     ZIndex: =1
 
-                DashTickets_ As gallery.galleryVertical:
-                    AlignInContainer: =AlignInContainer.Center
+                DashTickets As gallery.galleryVertical:
+                    AlignInContainer: =AlignInContainer.SetByContainer
                     BorderColor: =RGBA(0, 134, 208, 1)
                     BorderStyle: =BorderStyle.None
                     DelayItemLoading: =true
@@ -146,9 +146,9 @@
                     LoadingSpinner: =LoadingSpinner.Data
                     OnSelect: |
                         =If(
-                            DashTickets_.Selected.'Progress/Status'.Value = "Resolved",
+                            DashTickets.Selected.'Progress/Status'.Value = "Resolved",
                             Notify("This ticket is resolved and cannot be edited.", NotificationType.Error),
-                            Set(selectedItem, DashTickets_.Selected);
+                            Set(selectedItem, DashTickets.Selected);
                             Navigate('ViewEdit.', Transition.None, {selectedItem: selectedItem})
                         )
                     TabIndex: =3
@@ -159,7 +159,7 @@
                     Y: =319
                     ZIndex: =2
 
-                    Button6_1 As button:
+                    DashClick As button:
                         BorderColor: =RGBA(0, 134, 208, 1)
                         DisabledBorderColor: =RGBA(0, 0, 0, 0)
                         DisabledColor: =RGBA(166, 166, 166, 1)
@@ -185,7 +185,7 @@
                         Width: =590
                         ZIndex: =1
 
-                    DashCat_1 As label:
+                    DashCat As label:
                         BorderColor: =RGBA(0, 0, 0, 0)
                         BorderStyle: =BorderStyle.None
                         BorderThickness: =2
@@ -205,7 +205,7 @@
                         Y: =9
                         ZIndex: =2
 
-                    DashDesc_1 As label:
+                    DashDesc As label:
                         BorderColor: =RGBA(0, 0, 0, 0)
                         BorderStyle: =BorderStyle.None
                         BorderThickness: =2
@@ -224,7 +224,7 @@
                         Y: =155
                         ZIndex: =3
 
-                    DashAuthor_2 As label:
+                    Label_DashAuthor As label:
                         AutoHeight: =true
                         BorderColor: =RGBA(0, 0, 0, 0)
                         BorderStyle: =BorderStyle.None
@@ -245,7 +245,7 @@
                         Y: =54
                         ZIndex: =5
 
-                    DashEmail_2 As label:
+                    Label_DashEmail As label:
                         AutoHeight: =true
                         BorderColor: =RGBA(0, 0, 0, 0)
                         BorderStyle: =BorderStyle.None
@@ -267,7 +267,7 @@
                         Y: =88
                         ZIndex: =6
 
-                    DashDnT_1 As label:
+                    DashDnT As label:
                         BorderColor: =RGBA(0, 0, 0, 0)
                         BorderStyle: =BorderStyle.None
                         BorderThickness: =2
@@ -287,7 +287,7 @@
                         Y: =131
                         ZIndex: =7
 
-                    Image_1 As image:
+                    ImagePreview As image:
                         BorderColor: =RGBA(0, 134, 208, 1)
                         BorderStyle: =BorderStyle.Dotted
                         BorderThickness: =2
@@ -310,7 +310,7 @@
                         Y: =28
                         ZIndex: =8
 
-                    Icon1_1 As icon.CalendarBlank:
+                    Date As icon.CalendarBlank:
                         BorderColor: =RGBA(0, 0, 0, 0)
                         Color: =RGBA(0, 134, 208, 1)
                         DisabledBorderColor: =RGBA(166, 166, 166, 1)
@@ -331,7 +331,7 @@
                         Y: =129
                         ZIndex: =9
 
-                    Icon2_1 As icon.Clock:
+                    Time As icon.Clock:
                         BorderColor: =RGBA(0, 0, 0, 0)
                         Color: =RGBA(0, 134, 208, 1)
                         DisabledBorderColor: =RGBA(166, 166, 166, 1)
@@ -352,7 +352,7 @@
                         Y: =129
                         ZIndex: =10
 
-                    DashEmail_3 As label:
+                    DashEmail As label:
                         BorderColor: =RGBA(0, 0, 0, 0)
                         BorderStyle: =BorderStyle.None
                         BorderThickness: =2
@@ -371,7 +371,7 @@
                         Y: =83
                         ZIndex: =11
 
-                    DashAuthor_3 As label:
+                    DashAuthor As label:
                         AutoHeight: =true
                         BorderColor: =RGBA(0, 0, 0, 0)
                         BorderStyle: =BorderStyle.None
@@ -390,7 +390,7 @@
                         Y: =54
                         ZIndex: =12
 
-                    Label4_1 As label:
+                    ID As label:
                         BorderColor: =RGBA(0, 0, 0, 0)
                         BorderStyle: =BorderStyle.None
                         BorderThickness: =2
@@ -409,7 +409,7 @@
                         Y: =74
                         ZIndex: =14
 
-                    StatusButton_1 As button:
+                    StatusButton As button:
                         BorderColor: =RGBA(0, 0, 0, 1)
                         BorderThickness: =0
                         Color: |-
@@ -494,6 +494,8 @@
                 HoverBorderColor: =RGBA(0, 0, 0, 0)
                 HoverFill: =RGBA(0, 0, 0, 0)
                 Image: =download
+                LayoutMinHeight: =320
+                LayoutMinWidth: =320
                 PaddingTop: =30
                 PressedBorderColor: =RGBA(0, 0, 0, 0)
                 PressedFill: =RGBA(0, 0, 0, 0)
@@ -522,7 +524,7 @@
                 Y: =72
                 ZIndex: =2
 
-        SearchTicket_ As text:
+        SearchTicket As text:
             BorderColor: =RGBA(0, 134, 208, 1)
             BorderThickness: =2
             Color: =RGBA(51, 51, 51, 1)
@@ -552,7 +554,7 @@
             Y: =193
             ZIndex: =4
 
-        SearchIcon_ As icon.Search:
+        SearchIcon As icon.Search:
             BorderColor: =RGBA(0, 0, 0, 0)
             Color: =RGBA(128, 128, 128, 1)
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
@@ -577,7 +579,7 @@
             Y: =193
             ZIndex: =5
 
-        PageRefresh_ As icon.Reload:
+        PageRefresh As icon.Reload:
             AccessibleLabel: =Self.Tooltip
             BorderColor: =RGBA(0, 0, 0, 0)
             Color: =RGBA(0, 134, 208, 1)

@@ -101,7 +101,7 @@
       "zeroalltabindexes": false
     },
     "Author": "",
-    "BindingErrorCount": 8,
+    "BindingErrorCount": 68,
     "ContainsThirdPartyPcfControls": false,
     "DefaultConnectedDataSourceMaxGetRowsCount": 500,
     "DocumentAppType": "Phone",
@@ -135,9 +135,6 @@
     "UserLocale": "en-US"
   },
   "ScreenOrder": [
-    "Dashboard.",
-    "ViewEdit.",
-    "NewTicket.",
     "Dashboard",
     "ViewEdit",
     "AddNew"
