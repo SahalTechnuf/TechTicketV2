@@ -390,7 +390,7 @@
                         Y: =54
                         ZIndex: =12
 
-                    ID As label:
+                    ID_Dash As label:
                         BorderColor: =RGBA(0, 0, 0, 0)
                         BorderStyle: =BorderStyle.None
                         BorderThickness: =2
