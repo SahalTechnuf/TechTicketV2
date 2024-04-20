@@ -56,7 +56,7 @@
             Width: =Parent.Width
             ZIndex: =3
 
-            DashLogo__1 As image:
+            DashLogoV As image:
                 BorderColor: =RGBA(0, 0, 0, 0)
                 BorderStyle: =BorderStyle.None
                 BorderThickness: =2
@@ -75,7 +75,7 @@
                 Width: =Parent.Width
                 ZIndex: =1
 
-            DashHeader__1 As label:
+            DashHeaderV As label:
                 Align: =Align.Center
                 BorderColor: =RGBA(0, 0, 0, 0)
                 BorderStyle: =BorderStyle.None
@@ -86,7 +86,7 @@
                 FocusedBorderThickness: =4
                 Font: =Font.'Segoe UI'
                 FontWeight: =FontWeight.Bold
-                Height: =Parent.Height - DashLogo__1.Height
+                Height: =Parent.Height - DashLogoV.Height
                 LayoutMinHeight: =70
                 LayoutMinWidth: =560
                 Size: =25
