@@ -3170,7 +3170,7 @@
       "MetaDataIDKey": "",
       "Name": "DashEmail_3",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 7,
+      "ParentIndex": 8,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5268,7 +5268,7 @@
       "MetaDataIDKey": "",
       "Name": "Image_1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 3,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5858,7 +5858,7 @@
       "MetaDataIDKey": "",
       "Name": "Label4_1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 8,
+      "ParentIndex": 7,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -7210,7 +7210,7 @@
       "MetaDataIDKey": "",
       "Name": "StatusButton_1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 4,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
