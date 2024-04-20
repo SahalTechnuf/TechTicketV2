@@ -183,6 +183,7 @@
                         Size: =24
                         Text: =""
                         Width: =590
+                        X: =10
                         ZIndex: =1
 
                     DashCat As label:
@@ -201,7 +202,7 @@
                         Size: =18
                         Text: =ThisItem.Title
                         Width: =331
-                        X: =161
+                        X: =171
                         Y: =9
                         ZIndex: =2
 
@@ -221,6 +222,7 @@
                         Text: =ThisItem.Description
                         Width: =570
                         Wrap: =false
+                        X: =10
                         Y: =155
                         ZIndex: =3
 
@@ -241,7 +243,7 @@
                         Text: |-
                             ="Posted by:"
                         Width: =138
-                        X: =161
+                        X: =171
                         Y: =54
                         ZIndex: =5
 
@@ -263,7 +265,7 @@
                         Text: |-
                             ="Email:"
                         Width: =85
-                        X: =160
+                        X: =170
                         Y: =88
                         ZIndex: =6
 
@@ -283,7 +285,7 @@
                         Text: |-
                             =Text(ThisItem.'Issue Date and Time',    "mm/dd/yyyy          hh:mm AM/PM")
                         Width: =323
-                        X: =202
+                        X: =212
                         Y: =131
                         ZIndex: =7
 
@@ -306,7 +308,7 @@
                         RadiusTopLeft: =15
                         RadiusTopRight: =15
                         Width: =139
-                        X: =12
+                        X: =22
                         Y: =28
                         ZIndex: =8
 
@@ -327,7 +329,7 @@
                         PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
                         PressedFill: =RGBA(0, 0, 0, 0)
                         Width: =42
-                        X: =161
+                        X: =171
                         Y: =129
                         ZIndex: =9
 
@@ -348,7 +350,7 @@
                         PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
                         PressedFill: =RGBA(0, 0, 0, 0)
                         Width: =50
-                        X: =335
+                        X: =345
                         Y: =129
                         ZIndex: =10
 
@@ -367,7 +369,7 @@
                         Size: =17
                         Text: =ThisItem.'Created By'.Email
                         Width: =349
-                        X: =231
+                        X: =241
                         Y: =83
                         ZIndex: =11
 
@@ -386,7 +388,7 @@
                         Size: =17
                         Text: =ThisItem.'Created By'.DisplayName
                         Width: =200
-                        X: =281
+                        X: =291
                         Y: =54
                         ZIndex: =12
 
@@ -405,7 +407,7 @@
                         Text: =ThisItem.ID
                         Visible: =false
                         Width: =60
-                        X: =525
+                        X: =510
                         Y: =74
                         ZIndex: =14
 
@@ -463,7 +465,7 @@
                         Size: =12
                         Text: =ThisItem.'Progress/Status'.Value
                         Width: =95
-                        X: =484
+                        X: =495
                         Y: =25
                         ZIndex: =15
 
