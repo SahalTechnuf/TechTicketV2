@@ -15,7 +15,6 @@
 
         FooterContAdd As groupContainer.verticalAutoLayoutContainer:
             BorderStyle: =BorderStyle.None
-            DropShadow: =DropShadow.Light
             Height: =Parent.Height/10
             LayoutAlignItems: =LayoutAlignItems.Center
             LayoutJustifyContent: =LayoutJustifyContent.Center
@@ -107,7 +106,6 @@
 
         BodyContAdd As groupContainer.verticalAutoLayoutContainer:
             BorderStyle: =BorderStyle.None
-            DropShadow: =DropShadow.Light
             Height: |
                 =Parent.Height*11/15
             LayoutDirection: =LayoutDirection.Vertical
@@ -503,7 +501,6 @@
 
         HeaderContAdd As groupContainer.verticalAutoLayoutContainer:
             BorderStyle: =BorderStyle.None
-            DropShadow: =DropShadow.Light
             Height: =Parent.Height/6
             LayoutAlignItems: =LayoutAlignItems.Center
             LayoutDirection: =LayoutDirection.Vertical

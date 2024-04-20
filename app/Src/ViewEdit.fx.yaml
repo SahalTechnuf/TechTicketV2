@@ -15,7 +15,6 @@
 
         FooterContView As groupContainer.verticalAutoLayoutContainer:
             BorderStyle: =BorderStyle.None
-            DropShadow: =DropShadow.Light
             Height: =Parent.Height/10
             LayoutAlignItems: =LayoutAlignItems.Center
             LayoutJustifyContent: =LayoutJustifyContent.Center
@@ -108,7 +107,6 @@
         BodyContView As groupContainer.verticalAutoLayoutContainer:
             BorderColor: =RGBA(255, 255, 255, 1)
             BorderStyle: =BorderStyle.None
-            DropShadow: =DropShadow.Light
             Height: =Parent.Height*11/15
             LayoutDirection: =LayoutDirection.Vertical
             LayoutMode: =LayoutMode.Auto
@@ -729,7 +727,6 @@
         HeaderContView As groupContainer.verticalAutoLayoutContainer:
             BorderColor: =RGBA(255, 255, 255, 1)
             BorderStyle: =BorderStyle.None
-            DropShadow: =DropShadow.Light
             Height: =Parent.Height/6
             LayoutAlignItems: =LayoutAlignItems.Center
             LayoutDirection: =LayoutDirection.Vertical

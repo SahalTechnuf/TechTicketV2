@@ -16,7 +16,6 @@
 
         FooterContDash As groupContainer.verticalAutoLayoutContainer:
             BorderStyle: =BorderStyle.None
-            DropShadow: =DropShadow.Light
             Height: =115
             LayoutAlignItems: =LayoutAlignItems.Center
             LayoutDirection: =LayoutDirection.Vertical
@@ -63,7 +62,6 @@
 
         BodyContDash As groupContainer.verticalAutoLayoutContainer:
             BorderStyle: =BorderStyle.None
-            DropShadow: =DropShadow.Light
             Height: =777
             LayoutDirection: =LayoutDirection.Vertical
             LayoutMode: =LayoutMode.Auto
@@ -473,7 +471,6 @@
         HeaderContDash As groupContainer.verticalAutoLayoutContainer:
             BorderColor: =RGBA(255, 255, 255, 1)
             BorderStyle: =BorderStyle.None
-            DropShadow: =DropShadow.Light
             Height: =Parent.Height/6
             LayoutAlignItems: =LayoutAlignItems.Center
             LayoutDirection: =LayoutDirection.Vertical
