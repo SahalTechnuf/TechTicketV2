@@ -8,7 +8,7 @@
         DelayItemLoading: =true
         Fill: =RGBA(255, 255, 255, 1)
         FocusedBorderThickness: =
-        Height: =708
+        Height: =721
         Items: |-
             =Sort(
                 Filter(
@@ -37,7 +37,7 @@
         TemplatePadding: =10
         TemplateSize: =226
         Transition: =Transition.Push
-        Y: =319
+        Y: =306
         ZIndex: =1
 
         Button6 As button:
@@ -463,7 +463,7 @@
         FocusedBorderThickness: =4
         Font: =Font.'Segoe UI'
         FontWeight: =FontWeight.Bold
-        Height: =56
+        Height: =67
         Size: =25
         Text: ="Tickets"
         Visible: |-
@@ -472,8 +472,9 @@
                 true,
                 false
             )
-        Width: =544
-        X: =13
+        Width: =Parent.Width
+        X: |
+            =0
         Y: =250
         ZIndex: =11
 
