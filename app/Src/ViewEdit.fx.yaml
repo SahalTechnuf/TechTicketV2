@@ -106,6 +106,7 @@
                 ZIndex: =2
 
         BodyContView As groupContainer.verticalAutoLayoutContainer:
+            BorderColor: =RGBA(255, 255, 255, 1)
             BorderStyle: =BorderStyle.None
             DropShadow: =DropShadow.Light
             Height: =Parent.Height*11/15
@@ -137,6 +138,7 @@
 
                 CreatedInfo_ As groupContainer.horizontalAutoLayoutContainer:
                     AlignInContainer: =AlignInContainer.SetByContainer
+                    BorderStyle: =BorderStyle.None
                     FillPortions: =0
                     Height: =30
                     LayoutAlignItems: =LayoutAlignItems.Center
@@ -192,6 +194,7 @@
 
                     ImageTrashIcon3_4 As icon.Trash:
                         BorderColor: =RGBA(0, 0, 0, 0)
+                        BorderStyle: =BorderStyle.None
                         Color: =RGBA(0, 134, 208, 1)
                         DisabledBorderColor: =RGBA(166, 166, 166, 1)
                         DisabledColor: =RGBA(220, 220, 220, 1)
@@ -206,6 +209,7 @@
                         OnSelect: |-
                             =Set(VarDeleteImg,true);
                             Reset(AddPicture2_1)
+                        PaddingRight: =25
                         PressedBorderColor: =RGBA(0, 0, 0, 0)
                         PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
                         PressedFill: =RGBA(0, 0, 0, 0)

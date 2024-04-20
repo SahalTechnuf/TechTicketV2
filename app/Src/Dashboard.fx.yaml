@@ -2,6 +2,7 @@
     LoadingSpinnerColor: =RGBA(135, 100, 184, 1)
 
     ParentContDash As groupContainer.manualLayoutContainer:
+        BorderStyle: =BorderStyle.None
         DropShadow: =DropShadow.Light
         Height: =Parent.Height
         RadiusBottomLeft: =4
@@ -75,6 +76,7 @@
             ZIndex: =2
 
             Container8 As groupContainer.verticalAutoLayoutContainer:
+                BorderStyle: =BorderStyle.None
                 DropShadow: =DropShadow.Light
                 Height: =225
                 LayoutDirection: =LayoutDirection.Vertical
@@ -466,6 +468,7 @@
                         ZIndex: =15
 
         HeaderContDash As groupContainer.verticalAutoLayoutContainer:
+            BorderColor: =RGBA(255, 255, 255, 1)
             BorderStyle: =BorderStyle.None
             DropShadow: =DropShadow.Light
             Height: =Parent.Height/6
