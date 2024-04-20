@@ -375,7 +375,7 @@
                     DisplayMode: =Parent.DisplayMode
                     DisplayName: =DataSourceInfo([@'Technuf Ticketing System'],DataSourceInfo.DisplayName,"Image_x0028_Optional_x0029_")
                     Fill: =RGBA(0, 0, 0, 0)
-                    Height: =50
+                    Height: =384
                     Required: =false
                     Update: =ImageImage_Add.Image
                     Width: =AddNew.Width/AddNew.Size
@@ -405,28 +405,32 @@
                         ZIndex: =1
 
                     ImageImage_Add As image:
-                        BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                        BorderStyle: =BorderStyle.None
+                        BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Blue)
+                        BorderStyle: =BorderStyle.Dashed
                         BorderThickness: =2
                         DisabledBorderColor: =RGBA(0, 0, 0, 0)
                         DisabledFill: =RGBA(0, 0, 0, 0)
                         DisplayMode: =Parent.DisplayMode
                         FocusedBorderThickness: =4
-                        Height: =258
+                        Height: =302
                         HoverBorderColor: =RGBA(0, 0, 0, 0)
                         HoverFill: =RGBA(0, 0, 0, 0)
                         Image: =If(IsBlank(AddPictureImage_Add.Media), Parent.Default, AddPictureImage_Add.Media)
                         PressedBorderColor: =RGBA(0, 0, 0, 0)
                         PressedFill: =RGBA(0, 0, 0, 0)
+                        RadiusBottomLeft: =15
+                        RadiusBottomRight: =15
+                        RadiusTopLeft: =15
+                        RadiusTopRight: =15
                         Tooltip: =Parent.DisplayName
                         Width: =AddPictureImage_Add.Width
                         X: =AddPictureImage_Add.X
-                        Y: =72
+                        Y: =62
                         ZIndex: =2
 
                     AddPictureImage_Add As addMedia:
-                        BorderColor: =RGBA(0, 134, 208, 1)
-                        BorderStyle: =BorderStyle.Dashed
+                        BorderColor: =RGBA(255, 255, 255, 1)
+                        BorderStyle: =BorderStyle.None
                         BorderThickness: =2
                         ChangePictureText: =""
                         Color: =RGBA(0, 0, 0, 1)
@@ -436,7 +440,7 @@
                         Fill: =RGBA(230, 244, 250, 1)
                         FocusedBorderThickness: =4
                         Font: =Font.'Segoe UI'
-                        Height: =268
+                        Height: =302
                         HoverBorderColor: =RGBA(0, 0, 0, 0)
                         HoverColor: =RGBA(255, 255, 255, 1)
                         HoverFill: =ColorFade(RGBA(135, 100, 184, 1), 80%)
@@ -547,7 +551,7 @@
                 LayoutMinWidth: =560
                 PaddingBottom: =20
                 Size: =22
-                Text: ="  Ticketing System"
+                Text: ="  Add New Ticket"
                 Width: =Parent.Width
                 X: =180
                 Y: =72
