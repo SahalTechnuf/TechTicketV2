@@ -14,1292 +14,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "AddNew.ParentContAdd.BodyContAdd.Form3_1.Title_DataCard4_3.Width"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "AddNew.ParentContAdd.BodyContAdd.Form3_1.Title_DataCard4_3.Width",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 12,
-                  "charOffset": 0,
-                  "snippet": {
-                    "text": "'NewTicket.'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Width",
-                "module": "AddNew",
-                "type": "AddNew.ParentContAdd.BodyContAdd.Form3_1.Title_DataCard4_3"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "NewTicket."
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "AddNew.ParentContAdd.BodyContAdd.Form3_1.Title_DataCard4_3.Width"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "AddNew.ParentContAdd.BodyContAdd.Form3_1.Title_DataCard4_3.Width",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 6,
-                  "charOffset": 12,
-                  "snippet": {
-                    "text": ".Width"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Width",
-                "module": "AddNew",
-                "type": "AddNew.ParentContAdd.BodyContAdd.Form3_1.Title_DataCard4_3"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "AddNew.ParentContAdd.BodyContAdd.Form3_1.Title_DataCard4_3.Width"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "AddNew.ParentContAdd.BodyContAdd.Form3_1.Title_DataCard4_3.Width",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 12,
-                  "charOffset": 19,
-                  "snippet": {
-                    "text": "'NewTicket.'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Width",
-                "module": "AddNew",
-                "type": "AddNew.ParentContAdd.BodyContAdd.Form3_1.Title_DataCard4_3"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "NewTicket."
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "AddNew.ParentContAdd.BodyContAdd.Form3_1.Title_DataCard4_3.Width"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "AddNew.ParentContAdd.BodyContAdd.Form3_1.Title_DataCard4_3.Width",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 5,
-                  "charOffset": 31,
-                  "snippet": {
-                    "text": ".Size"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Width",
-                "module": "AddNew",
-                "type": "AddNew.ParentContAdd.BodyContAdd.Form3_1.Title_DataCard4_3"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "AddNew.ParentContAdd.BodyContAdd.Form3_1.Description_DataCard3_3.Width"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "AddNew.ParentContAdd.BodyContAdd.Form3_1.Description_DataCard3_3.Width",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 12,
-                  "charOffset": 0,
-                  "snippet": {
-                    "text": "'NewTicket.'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Width",
-                "module": "AddNew",
-                "type": "AddNew.ParentContAdd.BodyContAdd.Form3_1.Description_DataCard3_3"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "NewTicket."
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "AddNew.ParentContAdd.BodyContAdd.Form3_1.Description_DataCard3_3.Width"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "AddNew.ParentContAdd.BodyContAdd.Form3_1.Description_DataCard3_3.Width",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 6,
-                  "charOffset": 12,
-                  "snippet": {
-                    "text": ".Width"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Width",
-                "module": "AddNew",
-                "type": "AddNew.ParentContAdd.BodyContAdd.Form3_1.Description_DataCard3_3"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "AddNew.ParentContAdd.BodyContAdd.Form3_1.Description_DataCard3_3.Width"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "AddNew.ParentContAdd.BodyContAdd.Form3_1.Description_DataCard3_3.Width",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 12,
-                  "charOffset": 19,
-                  "snippet": {
-                    "text": "'NewTicket.'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Width",
-                "module": "AddNew",
-                "type": "AddNew.ParentContAdd.BodyContAdd.Form3_1.Description_DataCard3_3"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "NewTicket."
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "AddNew.ParentContAdd.BodyContAdd.Form3_1.Description_DataCard3_3.Width"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "AddNew.ParentContAdd.BodyContAdd.Form3_1.Description_DataCard3_3.Width",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 5,
-                  "charOffset": 31,
-                  "snippet": {
-                    "text": ".Size"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Width",
-                "module": "AddNew",
-                "type": "AddNew.ParentContAdd.BodyContAdd.Form3_1.Description_DataCard3_3"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "AddNew.ParentContAdd.BodyContAdd.Form3_1.'Image (Optional)_DataCard3_1'.Width"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "AddNew.ParentContAdd.BodyContAdd.Form3_1.'Image (Optional)_DataCard3_1'.Width",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 12,
-                  "charOffset": 0,
-                  "snippet": {
-                    "text": "'NewTicket.'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Width",
-                "module": "AddNew",
-                "type": "AddNew.ParentContAdd.BodyContAdd.Form3_1.'Image (Optional)_DataCard3_1'"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "NewTicket."
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "AddNew.ParentContAdd.BodyContAdd.Form3_1.'Image (Optional)_DataCard3_1'.Width"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "AddNew.ParentContAdd.BodyContAdd.Form3_1.'Image (Optional)_DataCard3_1'.Width",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 6,
-                  "charOffset": 12,
-                  "snippet": {
-                    "text": ".Width"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Width",
-                "module": "AddNew",
-                "type": "AddNew.ParentContAdd.BodyContAdd.Form3_1.'Image (Optional)_DataCard3_1'"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "AddNew.ParentContAdd.BodyContAdd.Form3_1.'Image (Optional)_DataCard3_1'.Width"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "AddNew.ParentContAdd.BodyContAdd.Form3_1.'Image (Optional)_DataCard3_1'.Width",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 12,
-                  "charOffset": 19,
-                  "snippet": {
-                    "text": "'NewTicket.'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Width",
-                "module": "AddNew",
-                "type": "AddNew.ParentContAdd.BodyContAdd.Form3_1.'Image (Optional)_DataCard3_1'"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "NewTicket."
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "AddNew.ParentContAdd.BodyContAdd.Form3_1.'Image (Optional)_DataCard3_1'.Width"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "AddNew.ParentContAdd.BodyContAdd.Form3_1.'Image (Optional)_DataCard3_1'.Width",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 5,
-                  "charOffset": 31,
-                  "snippet": {
-                    "text": ".Size"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Width",
-                "module": "AddNew",
-                "type": "AddNew.ParentContAdd.BodyContAdd.Form3_1.'Image (Optional)_DataCard3_1'"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "AddNew.ParentContAdd.FooterContAdd.Button3_3.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "AddNew.ParentContAdd.FooterContAdd.Button3_3.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 5,
-                  "charOffset": 10,
-                  "snippet": {
-                    "text": "Form3"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "AddNew",
-                "type": "AddNew.ParentContAdd.FooterContAdd.Button3_3"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Form3"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "AddNew.ParentContAdd.FooterContAdd.Button3_3.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "AddNew.ParentContAdd.FooterContAdd.Button3_3.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 16,
-                  "charOffset": 0,
-                  "snippet": {
-                    "text": "ResetForm(Form3)"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "AddNew",
-                "type": "AddNew.ParentContAdd.FooterContAdd.Button3_3"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "ResetForm"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidArgs-Func",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "AddNew.ParentContAdd.FooterContAdd.Button3_3.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "AddNew.ParentContAdd.FooterContAdd.Button3_3.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 12,
-                  "charOffset": 27,
-                  "snippet": {
-                    "text": "'Dashboard.'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "AddNew",
-                "type": "AddNew.ParentContAdd.FooterContAdd.Button3_3"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Dashboard."
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "AddNew.ParentContAdd.FooterContAdd.Button4_3.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "AddNew.ParentContAdd.FooterContAdd.Button4_3.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 15,
-                  "charOffset": 16,
-                  "snippet": {
-                    "text": "DataCardValue16"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "AddNew",
-                "type": "AddNew.ParentContAdd.FooterContAdd.Button4_3"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "DataCardValue16"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "AddNew.ParentContAdd.FooterContAdd.Button4_3.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "AddNew.ParentContAdd.FooterContAdd.Button4_3.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 9,
-                  "charOffset": 31,
-                  "snippet": {
-                    "text": ".Selected"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "AddNew",
-                "type": "AddNew.ParentContAdd.FooterContAdd.Button4_3"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "AddNew.ParentContAdd.FooterContAdd.Button4_3.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "AddNew.ParentContAdd.FooterContAdd.Button4_3.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 33,
-                  "charOffset": 8,
-                  "snippet": {
-                    "text": "IsBlank(DataCardValue16.Selected)"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "AddNew",
-                "type": "AddNew.ParentContAdd.FooterContAdd.Button4_3"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "IsBlank"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidArgs-Func",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "AddNew.ParentContAdd.FooterContAdd.Button4_3.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "AddNew.ParentContAdd.FooterContAdd.Button4_3.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 15,
-                  "charOffset": 53,
-                  "snippet": {
-                    "text": "DataCardValue13"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "AddNew",
-                "type": "AddNew.ParentContAdd.FooterContAdd.Button4_3"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "DataCardValue13"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "AddNew.ParentContAdd.FooterContAdd.Button4_3.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "AddNew.ParentContAdd.FooterContAdd.Button4_3.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 5,
-                  "charOffset": 68,
-                  "snippet": {
-                    "text": ".Text"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "AddNew",
-                "type": "AddNew.ParentContAdd.FooterContAdd.Button4_3"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "AddNew.ParentContAdd.FooterContAdd.Button4_3.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "AddNew.ParentContAdd.FooterContAdd.Button4_3.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 29,
-                  "charOffset": 45,
-                  "snippet": {
-                    "text": "IsBlank(DataCardValue13.Text)"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "AddNew",
-                "type": "AddNew.ParentContAdd.FooterContAdd.Button4_3"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "IsBlank"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidArgs-Func",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "AddNew.ParentContAdd.FooterContAdd.Button4_3.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "AddNew.ParentContAdd.FooterContAdd.Button4_3.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 15,
-                  "charOffset": 273,
-                  "snippet": {
-                    "text": "DataCardValue16"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "AddNew",
-                "type": "AddNew.ParentContAdd.FooterContAdd.Button4_3"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "DataCardValue16"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "AddNew.ParentContAdd.FooterContAdd.Button4_3.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "AddNew.ParentContAdd.FooterContAdd.Button4_3.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 9,
-                  "charOffset": 288,
-                  "snippet": {
-                    "text": ".Selected"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "AddNew",
-                "type": "AddNew.ParentContAdd.FooterContAdd.Button4_3"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "AddNew.ParentContAdd.FooterContAdd.Button4_3.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "AddNew.ParentContAdd.FooterContAdd.Button4_3.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 6,
-                  "charOffset": 297,
-                  "snippet": {
-                    "text": ".Title"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "AddNew",
-                "type": "AddNew.ParentContAdd.FooterContAdd.Button4_3"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "AddNew.ParentContAdd.FooterContAdd.Button4_3.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "AddNew.ParentContAdd.FooterContAdd.Button4_3.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 15,
-                  "charOffset": 330,
-                  "snippet": {
-                    "text": "DataCardValue13"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "AddNew",
-                "type": "AddNew.ParentContAdd.FooterContAdd.Button4_3"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "DataCardValue13"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "AddNew.ParentContAdd.FooterContAdd.Button4_3.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "AddNew.ParentContAdd.FooterContAdd.Button4_3.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 5,
-                  "charOffset": 345,
-                  "snippet": {
-                    "text": ".Text"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "AddNew",
-                "type": "AddNew.ParentContAdd.FooterContAdd.Button4_3"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "AddNew.ParentContAdd.FooterContAdd.Button4_3.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "AddNew.ParentContAdd.FooterContAdd.Button4_3.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 6,
-                  "charOffset": 384,
-                  "snippet": {
-                    "text": "Image4"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "AddNew",
-                "type": "AddNew.ParentContAdd.FooterContAdd.Button4_3"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Image4"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "AddNew.ParentContAdd.FooterContAdd.Button4_3.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "AddNew.ParentContAdd.FooterContAdd.Button4_3.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 6,
-                  "charOffset": 390,
-                  "snippet": {
-                    "text": ".Image"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "AddNew",
-                "type": "AddNew.ParentContAdd.FooterContAdd.Button4_3"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "AddNew.ParentContAdd.FooterContAdd.Button4_3.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "AddNew.ParentContAdd.FooterContAdd.Button4_3.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 348,
-                  "charOffset": 155,
-                  "snippet": {
-                    "text": "Patch(\n        'Technuf Ticketing System',\n        Defaults('Technuf Ticketing System'),\n        {\n            Title: DataCardValue16.Selected.Title,\n            Description: DataCardValue13.Text,\n            'Image (Optional)': Image4.Image,\n            'Progress/Status': { Value: \"New\" },\n            'Issue Date and Time': Now()\n        }\n    )"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "AddNew",
-                "type": "AddNew.ParentContAdd.FooterContAdd.Button4_3"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Patch"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidArgs-Func",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "AddNew.ParentContAdd.FooterContAdd.Button4_3.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "AddNew.ParentContAdd.FooterContAdd.Button4_3.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 245,
-                  "charOffset": 252,
-                  "snippet": {
-                    "text": "{\n            Title: DataCardValue16.Selected.Title,\n            Description: DataCardValue13.Text,\n            'Image (Optional)': Image4.Image,\n            'Progress/Status': { Value: \"New\" },\n            'Issue Date and Time': Now()\n        }"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "AddNew",
-                "type": "AddNew.ParentContAdd.FooterContAdd.Button4_3"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Description",
-              "Text",
-              "Error"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrTypeError-Arg-Expected-Found",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "AddNew.ParentContAdd.FooterContAdd.Button4_3.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "AddNew.ParentContAdd.FooterContAdd.Button4_3.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 5,
-                  "charOffset": 519,
-                  "snippet": {
-                    "text": "Form3"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "AddNew",
-                "type": "AddNew.ParentContAdd.FooterContAdd.Button4_3"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Form3"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "AddNew.ParentContAdd.FooterContAdd.Button4_3.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "AddNew.ParentContAdd.FooterContAdd.Button4_3.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 16,
-                  "charOffset": 509,
-                  "snippet": {
-                    "text": "ResetForm(Form3)"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "AddNew",
-                "type": "AddNew.ParentContAdd.FooterContAdd.Button4_3"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "ResetForm"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidArgs-Func",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "AddNew.ParentContAdd.FooterContAdd.Button4_3.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "AddNew.ParentContAdd.FooterContAdd.Button4_3.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 12,
-                  "charOffset": 600,
-                  "snippet": {
-                    "text": "'Dashboard.'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "AddNew",
-                "type": "AddNew.ParentContAdd.FooterContAdd.Button4_3"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Dashboard."
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "Dashboard.ParentContDash.BodyContDash.DashGallery.DashTickets.Items"
                 }
               ],
@@ -1333,7 +47,7 @@
             "level": "Medium"
           },
           "ruleId": "app-SuggestRemoteExecutionHint",
-          "ruleIndex": 4
+          "ruleIndex": 0
         },
         {
           "locations": [
@@ -1373,7 +87,7 @@
             "level": "Medium"
           },
           "ruleId": "app-SuggestRemoteExecutionHint",
-          "ruleIndex": 4
+          "ruleIndex": 0
         },
         {
           "locations": [
@@ -1413,7 +127,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
+          "ruleIndex": 1
         },
         {
           "locations": [
@@ -1453,7 +167,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
+          "ruleIndex": 1
         },
         {
           "locations": [
@@ -1483,7 +197,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -1513,26 +227,26 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 6
+          "ruleIndex": 3
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "ViewEdit.ParentContView.BodyContView.EditForm.Edit_Title.TextInputTitle.AccessibleLabel"
+                  "fullyQualifiedName": "ViewEdit.ParentContView.BodyContView.EditForm.Edit_Title.TextInputTitle_Edit.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "ViewEdit.ParentContView.BodyContView.EditForm.Edit_Title.TextInputTitle.AccessibleLabel",
+                  "fullyQualifiedName": "ViewEdit.ParentContView.BodyContView.EditForm.Edit_Title.TextInputTitle_Edit.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "ViewEdit",
-                "type": "ViewEdit.ParentContView.BodyContView.EditForm.Edit_Title.TextInputTitle"
+                "type": "ViewEdit.ParentContView.BodyContView.EditForm.Edit_Title.TextInputTitle_Edit"
               }
             }
           ],
@@ -1543,26 +257,26 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 2
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "ViewEdit.ParentContView.BodyContView.EditForm.Edit_Desc.DataCardValueDesc.AccessibleLabel"
+                  "fullyQualifiedName": "ViewEdit.ParentContView.BodyContView.EditForm.Edit_Desc.DataCardValueDesc_Edit.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "ViewEdit.ParentContView.BodyContView.EditForm.Edit_Desc.DataCardValueDesc.AccessibleLabel",
+                  "fullyQualifiedName": "ViewEdit.ParentContView.BodyContView.EditForm.Edit_Desc.DataCardValueDesc_Edit.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "ViewEdit",
-                "type": "ViewEdit.ParentContView.BodyContView.EditForm.Edit_Desc.DataCardValueDesc"
+                "type": "ViewEdit.ParentContView.BodyContView.EditForm.Edit_Desc.DataCardValueDesc_Edit"
               }
             }
           ],
@@ -1573,26 +287,26 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 2
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "ViewEdit.ParentContView.BodyContView.EditForm.Edit_Image.AddPictureImage.AccessibleLabel"
+                  "fullyQualifiedName": "ViewEdit.ParentContView.BodyContView.EditForm.Edit_Image.AddPictureImage_Edit.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "ViewEdit.ParentContView.BodyContView.EditForm.Edit_Image.AddPictureImage.AccessibleLabel",
+                  "fullyQualifiedName": "ViewEdit.ParentContView.BodyContView.EditForm.Edit_Image.AddPictureImage_Edit.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "ViewEdit",
-                "type": "ViewEdit.ParentContView.BodyContView.EditForm.Edit_Image.AddPictureImage"
+                "type": "ViewEdit.ParentContView.BodyContView.EditForm.Edit_Image.AddPictureImage_Edit"
               }
             }
           ],
@@ -1603,26 +317,26 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 2
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "ViewEdit.ParentContView.BodyContView.EditForm.Edit_Image.ImageTrashIconImage.AccessibleLabel"
+                  "fullyQualifiedName": "ViewEdit.ParentContView.BodyContView.EditForm.Edit_Image.ImageTrashIconImage_Edit.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "ViewEdit.ParentContView.BodyContView.EditForm.Edit_Image.ImageTrashIconImage.AccessibleLabel",
+                  "fullyQualifiedName": "ViewEdit.ParentContView.BodyContView.EditForm.Edit_Image.ImageTrashIconImage_Edit.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "ViewEdit",
-                "type": "ViewEdit.ParentContView.BodyContView.EditForm.Edit_Image.ImageTrashIconImage"
+                "type": "ViewEdit.ParentContView.BodyContView.EditForm.Edit_Image.ImageTrashIconImage_Edit"
               }
             }
           ],
@@ -1633,26 +347,26 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 2
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "ViewEdit.ParentContView.BodyContView.EditForm.Edit_Image.ImageTrashIconImage.TabIndex"
+                  "fullyQualifiedName": "ViewEdit.ParentContView.BodyContView.EditForm.Edit_Image.ImageTrashIconImage_Edit.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "ViewEdit.ParentContView.BodyContView.EditForm.Edit_Image.ImageTrashIconImage.TabIndex",
+                  "fullyQualifiedName": "ViewEdit.ParentContView.BodyContView.EditForm.Edit_Image.ImageTrashIconImage_Edit.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "ViewEdit",
-                "type": "ViewEdit.ParentContView.BodyContView.EditForm.Edit_Image.ImageTrashIconImage"
+                "type": "ViewEdit.ParentContView.BodyContView.EditForm.Edit_Image.ImageTrashIconImage_Edit"
               }
             }
           ],
@@ -1663,26 +377,26 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 6
+          "ruleIndex": 3
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "AddNew.ParentContAdd.BodyContAdd.Form3_1.Title_DataCard4_3.DataCardValue16_1.AccessibleLabel"
+                  "fullyQualifiedName": "AddNew.ParentContAdd.BodyContAdd.AddForm.Add_Title.DataCardValueTitle_Add.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "AddNew.ParentContAdd.BodyContAdd.Form3_1.Title_DataCard4_3.DataCardValue16_1.AccessibleLabel",
+                  "fullyQualifiedName": "AddNew.ParentContAdd.BodyContAdd.AddForm.Add_Title.DataCardValueTitle_Add.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "AddNew",
-                "type": "AddNew.ParentContAdd.BodyContAdd.Form3_1.Title_DataCard4_3.DataCardValue16_1"
+                "type": "AddNew.ParentContAdd.BodyContAdd.AddForm.Add_Title.DataCardValueTitle_Add"
               }
             }
           ],
@@ -1693,26 +407,26 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 2
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "AddNew.ParentContAdd.BodyContAdd.Form3_1.Description_DataCard3_3.DataCardValue13_3.AccessibleLabel"
+                  "fullyQualifiedName": "AddNew.ParentContAdd.BodyContAdd.AddForm.Add_Desc.DataCardValueDesc_Add.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "AddNew.ParentContAdd.BodyContAdd.Form3_1.Description_DataCard3_3.DataCardValue13_3.AccessibleLabel",
+                  "fullyQualifiedName": "AddNew.ParentContAdd.BodyContAdd.AddForm.Add_Desc.DataCardValueDesc_Add.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "AddNew",
-                "type": "AddNew.ParentContAdd.BodyContAdd.Form3_1.Description_DataCard3_3.DataCardValue13_3"
+                "type": "AddNew.ParentContAdd.BodyContAdd.AddForm.Add_Desc.DataCardValueDesc_Add"
               }
             }
           ],
@@ -1723,26 +437,26 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 2
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "AddNew.ParentContAdd.BodyContAdd.Form3_1.'Image (Optional)_DataCard3_1'.AddPicture3_1.AccessibleLabel"
+                  "fullyQualifiedName": "AddNew.ParentContAdd.BodyContAdd.AddForm.Add_Image.AddPictureImage_Add.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "AddNew.ParentContAdd.BodyContAdd.Form3_1.'Image (Optional)_DataCard3_1'.AddPicture3_1.AccessibleLabel",
+                  "fullyQualifiedName": "AddNew.ParentContAdd.BodyContAdd.AddForm.Add_Image.AddPictureImage_Add.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "AddNew",
-                "type": "AddNew.ParentContAdd.BodyContAdd.Form3_1.'Image (Optional)_DataCard3_1'.AddPicture3_1"
+                "type": "AddNew.ParentContAdd.BodyContAdd.AddForm.Add_Image.AddPictureImage_Add"
               }
             }
           ],
@@ -1753,7 +467,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -1783,7 +497,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -1813,7 +527,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -1843,7 +557,7 @@
             "level": "Low"
           },
           "ruleId": "acc-TabOrderShouldBeChecked",
-          "ruleIndex": 7
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -1873,7 +587,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-FocusBorderShouldBeVisible",
-          "ruleIndex": 8
+          "ruleIndex": 5
         },
         {
           "locations": [
@@ -1903,7 +617,7 @@
             "level": "Medium"
           },
           "ruleId": "app-UnusedMediaResources",
-          "ruleIndex": 9
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -1933,7 +647,7 @@
             "level": "Medium"
           },
           "ruleId": "app-UnusedMediaResources",
-          "ruleIndex": 9
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -1963,7 +677,7 @@
             "level": "Medium"
           },
           "ruleId": "app-UnusedMediaResources",
-          "ruleIndex": 9
+          "ruleIndex": 6
         }
       ],
       "tool": {
@@ -1971,65 +685,6 @@
           "fullName": "PowerApps app checker",
           "name": "PowerApps app checker",
           "rules": [
-            {
-              "id": "app-ErrInvalidName",
-              "messageStrings": {
-                "issue": {
-                  "text": "Name isn't valid. '{0}' isn't recognized."
-                }
-              },
-              "properties": {
-                "componentType": "app",
-                "howToFix": [
-                  "Remove or correct the reference to the name that isn't valid."
-                ],
-                "level": "High",
-                "primaryCategory": "formula",
-                "whyFix": ""
-              }
-            },
-            {
-              "id": "app-ErrInvalidDot",
-              "messageStrings": {
-                "issue": {
-                  "text": "Invalid use of '.'"
-                }
-              },
-              "properties": {
-                "componentType": "app",
-                "level": "High",
-                "primaryCategory": "formula",
-                "whyFix": ""
-              }
-            },
-            {
-              "id": "app-ErrInvalidArgs-Func",
-              "messageStrings": {
-                "issue": {
-                  "text": "The function '{0}' has some invalid arguments."
-                }
-              },
-              "properties": {
-                "componentType": "app",
-                "level": "High",
-                "primaryCategory": "formula",
-                "whyFix": ""
-              }
-            },
-            {
-              "id": "app-ErrTypeError-Arg-Expected-Found",
-              "messageStrings": {
-                "issue": {
-                  "text": "The type of this argument '{0}' does not match the expected type '{1}'. Found type '{2}'."
-                }
-              },
-              "properties": {
-                "componentType": "app",
-                "level": "High",
-                "primaryCategory": "formula",
-                "whyFix": ""
-              }
-            },
             {
               "id": "app-SuggestRemoteExecutionHint",
               "messageStrings": {
@@ -2045,6 +700,23 @@
                   "Try moving your data to a different data source."
                 ],
                 "level": "Medium",
+                "primaryCategory": "formula",
+                "whyFix": ""
+              }
+            },
+            {
+              "id": "app-ErrInvalidName",
+              "messageStrings": {
+                "issue": {
+                  "text": "Name isn't valid. '{0}' isn't recognized."
+                }
+              },
+              "properties": {
+                "componentType": "app",
+                "howToFix": [
+                  "Remove or correct the reference to the name that isn't valid."
+                ],
+                "level": "High",
                 "primaryCategory": "formula",
                 "whyFix": ""
               }

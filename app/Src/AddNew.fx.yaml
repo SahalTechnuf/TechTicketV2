@@ -28,7 +28,7 @@
             Y: =1022
             ZIndex: =1
 
-            Button3_3 As button:
+            Button_Cancel_Add As button:
                 BorderColor: =RGBA(39, 113, 194, 1)
                 Color: =RGBA(0, 134, 208, 1)
                 DisabledBorderColor: =RGBA(204, 231, 246, 1)
@@ -45,8 +45,8 @@
                 LayoutMinHeight: =70
                 LayoutMinWidth: =280
                 OnSelect: |
-                    =ResetForm(Form3);
-                    Navigate('Dashboard.', Transition.None);
+                    =ResetForm(AddForm);
+                    Navigate('Dashboard', Transition.None);
                 PressedBorderColor: =ColorFade(RGBA(0, 94, 146, 1), -50%)
                 PressedColor: =RGBA(255, 255, 255, 1)
                 PressedFill: =ColorFade(RGBA(0, 94, 146, 1), -30%)
@@ -59,7 +59,7 @@
                 Width: =280
                 ZIndex: =1
 
-            Button4_3 As button:
+            Button_Save_Add As button:
                 BorderColor: =RGBA(0, 0, 0, 0)
                 DisabledBorderColor: =RGBA(153, 207, 236, 1)
                 DisabledColor: =RGBA(255, 255, 255, 1)
@@ -76,22 +76,22 @@
                 LayoutMinWidth: =280
                 OnSelect: |-
                     =If(
-                        IsBlank(DataCardValue16.Selected) || IsBlank(DataCardValue13.Text),
+                        IsBlank(DataCardValueTitle_Add.Selected) || IsBlank(DataCardKeyDesc_Add.Text),
                         Notify("Please fill in all required fields.", NotificationType.Error),
                         Patch(
                             'Technuf Ticketing System',
                             Defaults('Technuf Ticketing System'),
                             {
-                                Title: DataCardValue16.Selected.Title,
-                                Description: DataCardValue13.Text,
-                                'Image (Optional)': Image4.Image,
+                                Title: DataCardValueTitle_Add.Selected.Title,
+                                Description: DataCardValueDesc_Add.Text,
+                                'Image (Optional)': ImageImage_Add.Image,
                                 'Progress/Status': { Value: "New" },
                                 'Issue Date and Time': Now()
                             }
                         );
-                        ResetForm(Form3);
+                        ResetForm(AddForm);
                         Notify("Saved Successfully", NotificationType.Success);
-                        Navigate('Dashboard.', Transition.None)
+                        Navigate('Dashboard', Transition.None)
                     )
                 PressedBorderColor: =ColorFade(RGBA(0, 134, 208, 1), -50%)
                 PressedColor: =RGBA(255, 255, 255, 1)
@@ -120,7 +120,7 @@
             Y: =188
             ZIndex: =2
 
-            Form3_1 As form:
+            AddForm As form:
                 BorderColor: =RGBA(166, 166, 166, 1)
                 BorderStyle: =BorderStyle.None
                 DataSource: ='Technuf Ticketing System'
@@ -130,7 +130,7 @@
                 Width: =640
                 ZIndex: =1
 
-                Title_DataCard4_3 As typedDataCard.allowedValuesStringEditCard:
+                Add_Title As typedDataCard.allowedValuesStringEditCard:
                     AllowedValues: =DataSourceInfo([@'Work Progress Tracker'], DataSourceInfo.AllowedValues, "Title")
                     BorderColor: =RGBA(166, 166, 166, 1)
                     BorderStyle: =BorderStyle.Solid
@@ -141,13 +141,13 @@
                     Fill: =RGBA(0, 0, 0, 0)
                     Height: =50
                     Required: =true
-                    Update: =DataCardValue16_1.Selected.Title
-                    Width: ='NewTicket.'.Width/'NewTicket.'.Size
+                    Update: =DataCardValueTitle_Add.Selected.Title
+                    Width: =AddNew.Width/AddNew.Size
                     X: =0
                     Y: =0
                     ZIndex: =1
 
-                    DataCardKey22_3 As label:
+                    DataCardKeyTitle_Add As label:
                         AutoHeight: =true
                         BorderColor: =RGBA(0, 0, 0, 0)
                         BorderStyle: =BorderStyle.None
@@ -168,7 +168,7 @@
                         Y: =10
                         ZIndex: =1
 
-                    DataCardValue16_1 As dropdown:
+                    DataCardValueTitle_Add As dropdown:
                         BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                         ChevronBackground: =RGBA(255, 255, 255, 1)
                         ChevronDisabledBackground: =RGBA(244, 244, 244, 1)
@@ -200,10 +200,10 @@
                         Tooltip: =Parent.DisplayName
                         Width: =Parent.Width - 60
                         X: =30
-                        Y: =DataCardKey22_3.Y + DataCardKey22_3.Height + 5
+                        Y: =DataCardKeyTitle_Add.Y + DataCardKeyTitle_Add.Height + 5
                         ZIndex: =2
 
-                    ErrorMessage22_3 As label:
+                    ErrorMessageTitle_Add As label:
                         AutoHeight: =true
                         BorderColor: =RGBA(0, 0, 0, 0)
                         BorderStyle: =BorderStyle.None
@@ -225,10 +225,10 @@
                         Visible: =Parent.DisplayMode=DisplayMode.Edit
                         Width: =Parent.Width - 60
                         X: =30
-                        Y: =DataCardValue16_1.Y + DataCardValue16_1.Height
+                        Y: =DataCardValueTitle_Add.Y + DataCardValueTitle_Add.Height
                         ZIndex: =3
 
-                    StarVisible22_3 As label:
+                    StarVisibleTitle_Add As label:
                         Align: =Align.Center
                         BorderColor: =RGBA(0, 0, 0, 0)
                         BorderStyle: =BorderStyle.None
@@ -239,17 +239,17 @@
                         FocusedBorderThickness: =4
                         Font: =Font.'Segoe UI'
                         FontWeight: =FontWeight.Semibold
-                        Height: =DataCardKey22_3.Height
+                        Height: =DataCardKeyTitle_Add.Height
                         PaddingLeft: =0
                         Size: =21
                         Text: ="*"
                         Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                         Width: =30
                         Wrap: =false
-                        Y: =DataCardKey22_3.Y
+                        Y: =DataCardKeyTitle_Add.Y
                         ZIndex: =4
 
-                Description_DataCard3_3 As typedDataCard.textualEditCard:
+                Add_Desc As typedDataCard.textualEditCard:
                     BorderColor: =RGBA(166, 166, 166, 1)
                     BorderStyle: =BorderStyle.Solid
                     DataField: ="Description"
@@ -260,13 +260,13 @@
                     Height: =150
                     MaxLength: =DataSourceInfo([@'Technuf Ticketing System'], DataSourceInfo.MaxLength, "Description")
                     Required: =true
-                    Update: =DataCardValue13_3.Text
-                    Width: ='NewTicket.'.Width/'NewTicket.'.Size
+                    Update: =DataCardValueDesc_Add.Text
+                    Width: =AddNew.Width/AddNew.Size
                     X: =0
                     Y: =1
                     ZIndex: =2
 
-                    DataCardKey17_3 As label:
+                    DataCardKeyDesc_Add As label:
                         AutoHeight: =true
                         BorderColor: =RGBA(0, 0, 0, 0)
                         BorderStyle: =BorderStyle.None
@@ -287,7 +287,7 @@
                         Y: =10
                         ZIndex: =1
 
-                    DataCardValue13_3 As text:
+                    DataCardValueDesc_Add As text:
                         BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                         BorderThickness: =2
                         Color: =RGBA(51, 51, 51, 1)
@@ -318,10 +318,10 @@
                         Tooltip: =Parent.DisplayName
                         Width: =Parent.Width - 60
                         X: =30
-                        Y: =DataCardKey17_3.Y + DataCardKey17_3.Height + 5
+                        Y: =DataCardKeyDesc_Add.Y + DataCardKeyDesc_Add.Height + 5
                         ZIndex: =2
 
-                    ErrorMessage17_3 As label:
+                    ErrorMessageDesc_Add As label:
                         AutoHeight: =true
                         BorderColor: =RGBA(0, 0, 0, 0)
                         BorderStyle: =BorderStyle.None
@@ -343,10 +343,10 @@
                         Visible: =Parent.DisplayMode=DisplayMode.Edit
                         Width: =Parent.Width - 60
                         X: =30
-                        Y: =DataCardValue13_3.Y + DataCardValue13_3.Height
+                        Y: =DataCardValueDesc_Add.Y + DataCardValueDesc_Add.Height
                         ZIndex: =3
 
-                    StarVisible17_3 As label:
+                    StarVisibleDesc_Add As label:
                         Align: =Align.Center
                         BorderColor: =RGBA(0, 0, 0, 0)
                         BorderStyle: =BorderStyle.None
@@ -357,17 +357,17 @@
                         FocusedBorderThickness: =4
                         Font: =Font.'Segoe UI'
                         FontWeight: =FontWeight.Semibold
-                        Height: =DataCardKey17_3.Height
+                        Height: =DataCardKeyDesc_Add.Height
                         PaddingLeft: =0
                         Size: =21
                         Text: ="*"
                         Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                         Width: =30
                         Wrap: =false
-                        Y: =DataCardKey17_3.Y
+                        Y: =DataCardKeyDesc_Add.Y
                         ZIndex: =4
 
-                "'Image (Optional)_DataCard3_1' As typedDataCard.addLargePictureCard":
+                Add_Image As typedDataCard.addLargePictureCard:
                     BorderColor: =RGBA(166, 166, 166, 1)
                     BorderStyle: =BorderStyle.Solid
                     DataField: ="Image_x0028_Optional_x0029_"
@@ -377,13 +377,13 @@
                     Fill: =RGBA(0, 0, 0, 0)
                     Height: =50
                     Required: =false
-                    Update: =Image4_3.Image
-                    Width: ='NewTicket.'.Width/'NewTicket.'.Size
+                    Update: =ImageImage_Add.Image
+                    Width: =AddNew.Width/AddNew.Size
                     X: =0
                     Y: =2
                     ZIndex: =2
 
-                    DataCardKey20_1 As label:
+                    DataCardKeyImage_Add As label:
                         AutoHeight: =true
                         BorderColor: =RGBA(0, 0, 0, 0)
                         BorderStyle: =BorderStyle.None
@@ -404,7 +404,7 @@
                         Y: =10
                         ZIndex: =1
 
-                    Image4_3 As image:
+                    ImageImage_Add As image:
                         BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                         BorderStyle: =BorderStyle.None
                         BorderThickness: =2
@@ -415,16 +415,16 @@
                         Height: =258
                         HoverBorderColor: =RGBA(0, 0, 0, 0)
                         HoverFill: =RGBA(0, 0, 0, 0)
-                        Image: =If(IsBlank(AddPicture3_1.Media), Parent.Default, AddPicture3_1.Media)
+                        Image: =If(IsBlank(AddPictureImage_Add.Media), Parent.Default, AddPictureImage_Add.Media)
                         PressedBorderColor: =RGBA(0, 0, 0, 0)
                         PressedFill: =RGBA(0, 0, 0, 0)
                         Tooltip: =Parent.DisplayName
-                        Width: =AddPicture3_1.Width
-                        X: =AddPicture3_1.X
+                        Width: =AddPictureImage_Add.Width
+                        X: =AddPictureImage_Add.X
                         Y: =72
                         ZIndex: =2
 
-                    AddPicture3_1 As addMedia:
+                    AddPictureImage_Add As addMedia:
                         BorderColor: =RGBA(0, 134, 208, 1)
                         BorderStyle: =BorderStyle.Dashed
                         BorderThickness: =2
@@ -451,7 +451,7 @@
                         Y: =62
                         ZIndex: =3
 
-                    ErrorMessage20_1 As label:
+                    ErrorMessageImage_Add As label:
                         AutoHeight: =true
                         BorderColor: =RGBA(0, 0, 0, 0)
                         BorderStyle: =BorderStyle.None
@@ -473,10 +473,10 @@
                         Visible: =Parent.DisplayMode=DisplayMode.Edit
                         Width: =Parent.Width - 60
                         X: =30
-                        Y: =Image4_3.Y + Image4_3.Height
+                        Y: =ImageImage_Add.Y + ImageImage_Add.Height
                         ZIndex: =4
 
-                    StarVisible20_1 As label:
+                    StarVisibleImage_Add As label:
                         Align: =Align.Center
                         BorderColor: =RGBA(0, 0, 0, 0)
                         BorderStyle: =BorderStyle.None
@@ -487,14 +487,14 @@
                         FocusedBorderThickness: =4
                         Font: =Font.'Segoe UI'
                         FontWeight: =FontWeight.Semibold
-                        Height: =DataCardKey20_1.Height
+                        Height: =DataCardKeyImage_Add.Height
                         PaddingLeft: =0
                         Size: =21
                         Text: ="*"
                         Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                         Width: =30
                         Wrap: =false
-                        Y: =DataCardKey20_1.Y
+                        Y: =DataCardKeyImage_Add.Y
                         ZIndex: =5
 
         HeaderContAdd As groupContainer.verticalAutoLayoutContainer:
