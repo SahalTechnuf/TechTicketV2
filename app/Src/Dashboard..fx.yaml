@@ -49,7 +49,7 @@
             FocusedBorderColor: =ColorFade(Self.Fill, -75%)
             Font: =Font.'Segoe UI'
             FontWeight: =FontWeight.Semibold
-            Height: =226
+            Height: =213
             HoverBorderColor: =RGBA(0, 0, 0, 0)
             HoverColor: =RGBA(255, 255, 255, 1)
             HoverFill: =ColorFade(RGBA(135, 100, 184, 1), -10%)
@@ -84,7 +84,7 @@
             Text: =ThisItem.Title
             Width: =341
             X: =160
-            Y: =18
+            Y: =9
             ZIndex: =2
 
         DashDesc As label:
@@ -102,7 +102,7 @@
             Width: =600
             Wrap: =false
             X: =9
-            Y: =172
+            Y: =154
             ZIndex: =3
 
         DashAuthor As label:
@@ -123,7 +123,7 @@
                 ="Posted by:"
             Width: =138
             X: =160
-            Y: =53
+            Y: =44
             ZIndex: =5
 
         DashEmail As label:
@@ -145,7 +145,7 @@
                 ="Email:"
             Width: =85
             X: =160
-            Y: =87
+            Y: =78
             ZIndex: =6
 
         DashDnT As label:
@@ -166,7 +166,7 @@
                 =Text(ThisItem.'Issue Date and Time',    "mm/dd/yyyy              hh:mm AM/PM")
             Width: =378
             X: =207
-            Y: =130
+            Y: =121
             ZIndex: =7
 
         Image As image:
@@ -176,7 +176,7 @@
             DisabledBorderColor: =RGBA(0, 0, 0, 0)
             DisabledFill: =RGBA(0, 0, 0, 0)
             FocusedBorderThickness: =4
-            Height: =141
+            Height: =122
             HoverBorderColor: =RGBA(0, 0, 0, 0)
             HoverFill: =RGBA(0, 0, 0, 0)
             Image: =ThisItem.'Image (Optional)'.Small
@@ -187,9 +187,9 @@
             RadiusBottomRight: =15
             RadiusTopLeft: =15
             RadiusTopRight: =15
-            Width: =145
-            X: =9
-            Y: =11
+            Width: =133
+            X: =18
+            Y: =18
             ZIndex: =8
 
         Icon1 As icon.CalendarBlank:
@@ -210,7 +210,7 @@
             PressedFill: =RGBA(0, 0, 0, 0)
             Width: =42
             X: =161
-            Y: =128
+            Y: =119
             ZIndex: =9
 
         Icon2 As icon.Clock:
@@ -231,7 +231,7 @@
             PressedFill: =RGBA(0, 0, 0, 0)
             Width: =42
             X: =343
-            Y: =130
+            Y: =121
             ZIndex: =10
 
         DashEmail_1 As label:
@@ -250,7 +250,7 @@
             Text: =ThisItem.'Created By'.Email
             Width: =349
             X: =236
-            Y: =82
+            Y: =73
             ZIndex: =11
 
         DashAuthor_1 As label:
@@ -269,7 +269,7 @@
             Text: =ThisItem.'Created By'.DisplayName
             Width: =200
             X: =280
-            Y: =53
+            Y: =44
             ZIndex: =12
 
         Label4 As label:
@@ -344,8 +344,8 @@
             RadiusTopRight: =30
             Size: =15
             Text: =ThisItem.'Progress/Status'.Value
-            Width: =127
-            X: =458
+            Width: =119
+            X: =480
             Y: =18
             ZIndex: =15
 
