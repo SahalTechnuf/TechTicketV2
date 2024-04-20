@@ -336,6 +336,168 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "ViewEdit.ParentContView.FooterContView.Button4_2.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ViewEdit.ParentContView.FooterContView.Button4_2.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 14,
+                  "charOffset": 273,
+                  "snippet": {
+                    "text": "selectedStatus"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "ViewEdit",
+                "type": "ViewEdit.ParentContView.FooterContView.Button4_2"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "selectedStatus"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ViewEdit.ParentContView.FooterContView.Button4_2.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ViewEdit.ParentContView.FooterContView.Button4_2.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 416,
+                  "charOffset": 0,
+                  "snippet": {
+                    "text": "Patch ('Technuf Ticketing System', LookUp(\n        'Technuf Ticketing System',  \n        ID = Value(selectedItem.ID)),\n    {\n        Title: TextInput1.Text,\n        //'Created By': UserContent,\n        Description: DataCardValue13_1.Text,\n        'Progress/Status':{Value: selectedStatus}, \n        'Image (Optional)': Image4_1.Image,\n        'Issue Date and Time': Now()\n        //ID: Value(selectedItem.ID)\n    }\n)"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "ViewEdit",
+                "type": "ViewEdit.ParentContView.FooterContView.Button4_2"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Patch"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ViewEdit.ParentContView.FooterContView.Button4_2.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ViewEdit.ParentContView.FooterContView.Button4_2.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 291,
+                  "charOffset": 123,
+                  "snippet": {
+                    "text": "{\n        Title: TextInput1.Text,\n        //'Created By': UserContent,\n        Description: DataCardValue13_1.Text,\n        'Progress/Status':{Value: selectedStatus}, \n        'Image (Optional)': Image4_1.Image,\n        'Issue Date and Time': Now()\n        //ID: Value(selectedItem.ID)\n    }"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "ViewEdit",
+                "type": "ViewEdit.ParentContView.FooterContView.Button4_2"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Record"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrBadSchema-ExpectedType",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ViewEdit.ParentContView.FooterContView.Button4_2.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ViewEdit.ParentContView.FooterContView.Button4_2.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 291,
+                  "charOffset": 123,
+                  "snippet": {
+                    "text": "{\n        Title: TextInput1.Text,\n        //'Created By': UserContent,\n        Description: DataCardValue13_1.Text,\n        'Progress/Status':{Value: selectedStatus}, \n        'Image (Optional)': Image4_1.Image,\n        'Issue Date and Time': Now()\n        //ID: Value(selectedItem.ID)\n    }"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "ViewEdit",
+                "type": "ViewEdit.ParentContView.FooterContView.Button4_2"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Value",
+              "Text",
+              "Error"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrColumnTypeMismatch-ColName-ExpectedType-ActualType",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "'Dashboard.'.SearchTicket.AccessibleLabel"
                 }
               ],
