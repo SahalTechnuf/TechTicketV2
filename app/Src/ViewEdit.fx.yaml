@@ -204,9 +204,11 @@
                         HoverColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
                         HoverFill: =RGBA(0, 0, 0, 0)
                         Icon: =Icon.Trash
-                        OnSelect: |-
-                            =Set(VarDeleteImg,true);
-                            Reset(AddPictureImage_Edit)
+                        OnSelect: |
+                            =//Set(VarDeleteImg,true);
+                            Remove('Technuf Ticketing System', selectedItem);
+                            ResetForm(EditForm);
+                            Navigate(Dashboard, Transition.None);
                         PaddingRight: =25
                         PressedBorderColor: =RGBA(0, 0, 0, 0)
                         PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
