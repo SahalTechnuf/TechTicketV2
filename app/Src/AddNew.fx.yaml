@@ -30,7 +30,8 @@
         BodyContAdd As groupContainer.verticalAutoLayoutContainer:
             BorderStyle: =BorderStyle.None
             DropShadow: =DropShadow.Light
-            Height: =Parent.Height*7/10
+            Height: |
+                =Parent.Height*11/15
             LayoutDirection: =LayoutDirection.Vertical
             LayoutMode: =LayoutMode.Auto
             RadiusBottomLeft: =4
@@ -38,13 +39,13 @@
             RadiusTopLeft: =4
             RadiusTopRight: =4
             Width: =Parent.Width
-            Y: =226
+            Y: =188
             ZIndex: =2
 
         HeaderContAdd As groupContainer.verticalAutoLayoutContainer:
             BorderStyle: =BorderStyle.None
             DropShadow: =DropShadow.Light
-            Height: =Parent.Height/5
+            Height: =Parent.Height/6
             LayoutAlignItems: =LayoutAlignItems.Center
             LayoutDirection: =LayoutDirection.Vertical
             LayoutJustifyContent: =LayoutJustifyContent.Center
@@ -63,13 +64,13 @@
                 DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledFill: =RGBA(0, 0, 0, 0)
                 FocusedBorderThickness: =4
-                Height: =Parent.Height-60
+                Height: =Parent.Height-80
                 HoverBorderColor: =RGBA(0, 0, 0, 0)
                 HoverFill: =RGBA(0, 0, 0, 0)
                 Image: =download
                 LayoutMinHeight: =320
                 LayoutMinWidth: =320
-                PaddingTop: =50
+                PaddingTop: =30
                 PressedBorderColor: =RGBA(0, 0, 0, 0)
                 PressedFill: =RGBA(0, 0, 0, 0)
                 Width: =Parent.Width
@@ -89,7 +90,8 @@
                 Height: =Parent.Height - DashLogoA.Height
                 LayoutMinHeight: =70
                 LayoutMinWidth: =560
-                Size: =25
+                PaddingBottom: =20
+                Size: =22
                 Text: ="  Ticketing System"
                 Width: =Parent.Width
                 X: =180

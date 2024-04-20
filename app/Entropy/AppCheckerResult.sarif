@@ -876,6 +876,216 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "ViewEdit.ParentContView.BodyContView.Container3_.CreatedInfo_.ImageTrashIcon3_2.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ViewEdit.ParentContView.BodyContView.Container3_.CreatedInfo_.ImageTrashIcon3_2.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ViewEdit",
+                "type": "ViewEdit.ParentContView.BodyContView.Container3_.CreatedInfo_.ImageTrashIcon3_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ViewEdit.ParentContView.BodyContView.Container3_.CreatedInfo_.ImageTrashIcon3_2.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ViewEdit.ParentContView.BodyContView.Container3_.CreatedInfo_.ImageTrashIcon3_2.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "ViewEdit",
+                "type": "ViewEdit.ParentContView.BodyContView.Container3_.CreatedInfo_.ImageTrashIcon3_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ViewEdit.ParentContView.BodyContView.Form5_.Title_DataCard4_2.TextInput1_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ViewEdit.ParentContView.BodyContView.Form5_.Title_DataCard4_2.TextInput1_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ViewEdit",
+                "type": "ViewEdit.ParentContView.BodyContView.Form5_.Title_DataCard4_2.TextInput1_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ViewEdit.ParentContView.BodyContView.Form5_.Description_DataCard3_2.DataCardValue13_2.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ViewEdit.ParentContView.BodyContView.Form5_.Description_DataCard3_2.DataCardValue13_2.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ViewEdit",
+                "type": "ViewEdit.ParentContView.BodyContView.Form5_.Description_DataCard3_2.DataCardValue13_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ViewEdit.ParentContView.BodyContView.Form5_.'Image (Optional)_DataCard2_1'.ImageTrashIcon3_3.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ViewEdit.ParentContView.BodyContView.Form5_.'Image (Optional)_DataCard2_1'.ImageTrashIcon3_3.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ViewEdit",
+                "type": "ViewEdit.ParentContView.BodyContView.Form5_.'Image (Optional)_DataCard2_1'.ImageTrashIcon3_3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ViewEdit.ParentContView.BodyContView.Form5_.'Image (Optional)_DataCard2_1'.ImageTrashIcon3_3.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ViewEdit.ParentContView.BodyContView.Form5_.'Image (Optional)_DataCard2_1'.ImageTrashIcon3_3.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "ViewEdit",
+                "type": "ViewEdit.ParentContView.BodyContView.Form5_.'Image (Optional)_DataCard2_1'.ImageTrashIcon3_3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ViewEdit.ParentContView.BodyContView.Form5_.'Image (Optional)_DataCard2_1'.AddPicture2_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ViewEdit.ParentContView.BodyContView.Form5_.'Image (Optional)_DataCard2_1'.AddPicture2_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ViewEdit",
+                "type": "ViewEdit.ParentContView.BodyContView.Form5_.'Image (Optional)_DataCard2_1'.AddPicture2_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App.technufllc_logo"
                 }
               ],
@@ -949,6 +1159,96 @@
                 "member": "LayoutMinHeight",
                 "module": "ViewEdit.",
                 "type": "'ViewEdit.'.Container11.Container12.Form5"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 10
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ViewEdit.ParentContView.BodyContView.Form5_.Description_DataCard3_2.Width"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ViewEdit.ParentContView.BodyContView.Form5_.Description_DataCard3_2.Width",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Width",
+                "module": "ViewEdit",
+                "type": "ViewEdit.ParentContView.BodyContView.Form5_.Description_DataCard3_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 10
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ViewEdit.ParentContView.BodyContView.Form5_.Title_DataCard4_2.Width"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ViewEdit.ParentContView.BodyContView.Form5_.Title_DataCard4_2.Width",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Width",
+                "module": "ViewEdit",
+                "type": "ViewEdit.ParentContView.BodyContView.Form5_.Title_DataCard4_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 10
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ViewEdit.ParentContView.BodyContView.Form5_.LayoutMinHeight"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ViewEdit.ParentContView.BodyContView.Form5_.LayoutMinHeight",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "LayoutMinHeight",
+                "module": "ViewEdit",
+                "type": "ViewEdit.ParentContView.BodyContView.Form5_"
               }
             }
           ],
