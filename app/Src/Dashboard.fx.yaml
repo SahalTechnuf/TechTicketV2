@@ -147,7 +147,7 @@
                             DashTickets.Selected.'Progress/Status'.Value = "Resolved",
                             Notify("This ticket is resolved and cannot be edited.", NotificationType.Error),
                             Set(selectedItem, DashTickets.Selected);
-                            Navigate('ViewEdit.', Transition.None, {selectedItem: selectedItem})
+                            Navigate('ViewEdit', Transition.None, {selectedItem: selectedItem})
                         )
                     ShowScrollbar: =false
                     TabIndex: =3
