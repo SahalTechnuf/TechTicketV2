@@ -383,7 +383,7 @@
         DisabledFill: =RGBA(244, 244, 244, 1)
         FocusedBorderThickness: =4
         Font: =Font.'Segoe UI'
-        Height: =70
+        Height: =56
         HintText: ="Search"
         HoverBorderColor: =ColorFade(RGBA(0, 134, 208, 1), -30%)
         HoverColor: =RGBA(51, 51, 51, 1)
@@ -397,9 +397,9 @@
         RadiusTopLeft: =15
         RadiusTopRight: =15
         Size: =21
-        Width: =528
-        X: =13
-        Y: =180
+        Width: =527
+        X: =22
+        Y: =187
         ZIndex: =6
 
     SearchIcon As icon.Search:
@@ -466,7 +466,7 @@
         Font: =Font.'Segoe UI'
         FontWeight: =FontWeight.Bold
         Height: =67
-        PaddingLeft: =15
+        PaddingLeft: =20
         Size: =22
         Text: ="Tickets"
         Visible: |-
