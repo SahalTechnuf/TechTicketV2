@@ -458,7 +458,7 @@
                         =Parent.DisplayMode
                     DisplayName: =DataSourceInfo([@'Technuf Ticketing System'],DataSourceInfo.DisplayName,"Image_x0028_Optional_x0029_")
                     Fill: =RGBA(0, 0, 0, 0)
-                    Height: =368
+                    Height: =295
                     Required: =false
                     Update: =Image4_2.Image
                     Width: =640
@@ -563,7 +563,7 @@
                         DisabledBorderColor: =RGBA(0, 0, 0, 0)
                         DisabledFill: =RGBA(0, 0, 0, 0)
                         FocusedBorderThickness: =4
-                        Height: =300
+                        Height: =282
                         HoverBorderColor: =RGBA(0, 0, 0, 0)
                         HoverFill: =RGBA(0, 0, 0, 0)
                         Image: = If(IsBlank(AddPicture2_1.Media),If(VarDeleteImg,Blank(), Parent.Default), AddPicture2_1.Media)
