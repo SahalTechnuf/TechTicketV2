@@ -135,9 +135,11 @@
     "UserLocale": "en-US"
   },
   "ScreenOrder": [
+    "Dashboard.",
+    "ViewEdit.",
+    "NewTicket.",
     "Dashboard",
     "ViewEdit",
-    "NewTicket",
-    "DashboardADMIN"
+    "DashboardADMIN_2"
   ]
 }

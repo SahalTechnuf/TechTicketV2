@@ -1,6 +1,6 @@
 {
   "ControlStates": {
-    "BodyCont": {
+    "BodyCont_2": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         "BorderColor",
@@ -57,7 +57,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "BodyCont",
+      "Name": "BodyCont_2",
       "OptimizeForDevices": "Off",
       "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
@@ -181,7 +181,7 @@
       "StyleName": "defaultGroupContainerStyle",
       "Type": "ControlInfo"
     },
-    "DashboardADMIN": {
+    "DashboardADMIN_2": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         "Fill",
@@ -201,7 +201,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "DashboardADMIN",
+      "Name": "DashboardADMIN_2",
       "OptimizeForDevices": "Off",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
@@ -250,7 +250,7 @@
       "StyleName": "defaultScreenStyle",
       "Type": "ControlInfo"
     },
-    "DashHeader_": {
+    "DashHeader__2": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         "Live",
@@ -382,7 +382,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "DashHeader_",
+      "Name": "DashHeader__2",
       "OptimizeForDevices": "Off",
       "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
@@ -586,7 +586,7 @@
       "StyleName": "defaultLabelStyle",
       "Type": "ControlInfo"
     },
-    "DashLogo_": {
+    "DashLogo__2": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         {
@@ -715,7 +715,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "DashLogo_",
+      "Name": "DashLogo__2",
       "OptimizeForDevices": "Off",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
@@ -869,7 +869,7 @@
       "StyleName": "defaultImageStyle",
       "Type": "ControlInfo"
     },
-    "FooterCont": {
+    "FooterCont_2": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         "BorderColor",
@@ -926,7 +926,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "FooterCont",
+      "Name": "FooterCont_2",
       "OptimizeForDevices": "Off",
       "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
@@ -1050,7 +1050,7 @@
       "StyleName": "defaultGroupContainerStyle",
       "Type": "ControlInfo"
     },
-    "HeaderCont": {
+    "HeaderCont_2": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         "BorderColor",
@@ -1121,7 +1121,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "HeaderCont",
+      "Name": "HeaderCont_2",
       "OptimizeForDevices": "Off",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
@@ -1245,7 +1245,7 @@
       "StyleName": "defaultGroupContainerStyle",
       "Type": "ControlInfo"
     },
-    "ParentCont": {
+    "ParentCont_2": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         "BorderColor",
@@ -1308,7 +1308,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "ParentCont",
+      "Name": "ParentCont_2",
       "OptimizeForDevices": "Off",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
@@ -1428,5 +1428,5 @@
       "Type": "ControlInfo"
     }
   },
-  "TopParentName": "DashboardADMIN"
+  "TopParentName": "DashboardADMIN_2"
 }

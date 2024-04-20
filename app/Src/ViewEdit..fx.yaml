@@ -1,0 +1,774 @@
+"'ViewEdit.' As screen.'phoneDetailViewLayout_ver3.0'":
+    Fill: =
+    LoadingSpinnerColor: =RGBA(135, 100, 184, 1)
+    OnVisible: =Set(VarDeleteImg,false)
+
+    Container11 As groupContainer.horizontalAutoLayoutContainer:
+        DropShadow: =DropShadow.Light
+        Height: =Parent.Height
+        LayoutAlignItems: =LayoutAlignItems.Stretch
+        LayoutJustifyContent: =LayoutJustifyContent.Center
+        LayoutMode: =LayoutMode.Auto
+        LayoutOverflowY: =LayoutOverflow.Scroll
+        RadiusBottomLeft: =4
+        RadiusBottomRight: =4
+        RadiusTopLeft: =4
+        RadiusTopRight: =4
+        Width: =640
+        ZIndex: =1
+
+        Container12 As groupContainer.verticalAutoLayoutContainer:
+            AlignInContainer: =AlignInContainer.Start
+            DropShadow: =DropShadow.Light
+            Height: =Parent.Height
+            LayoutAlignItems: =LayoutAlignItems.Center
+            LayoutDirection: =LayoutDirection.Vertical
+            LayoutMinHeight: =Parent.Height
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            LayoutOverflowY: =LayoutOverflow.Scroll
+            RadiusBottomLeft: =4
+            RadiusBottomRight: =4
+            RadiusTopLeft: =4
+            RadiusTopRight: =4
+            ZIndex: =2
+
+            TitleContainer_1 As groupContainer.verticalAutoLayoutContainer:
+                AlignInContainer: =AlignInContainer.SetByContainer
+                BorderColor: =RGBA(0, 108, 191, 0.01)
+                BorderStyle: =BorderStyle.None
+                ContentLanguage: =
+                FillPortions: =0
+                Height: =180
+                LayoutAlignItems: =LayoutAlignItems.Center
+                LayoutDirection: =LayoutDirection.Vertical
+                LayoutMinHeight: =145
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                PaddingTop: =40
+                RadiusBottomLeft: =4
+                RadiusBottomRight: =4
+                RadiusTopLeft: =4
+                RadiusTopRight: =4
+                Width: =608
+                ZIndex: =1
+
+                Image1_1 As image:
+                    BorderColor: =RGBA(0, 0, 0, 0)
+                    BorderStyle: =BorderStyle.None
+                    BorderThickness: =2
+                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                    DisabledFill: =RGBA(0, 0, 0, 0)
+                    FocusedBorderThickness: =4
+                    Height: =80
+                    HoverBorderColor: =RGBA(0, 0, 0, 0)
+                    HoverFill: =RGBA(0, 0, 0, 0)
+                    Image: =download
+                    LayoutMinHeight: =320
+                    LayoutMinWidth: =320
+                    PressedBorderColor: =RGBA(0, 0, 0, 0)
+                    PressedFill: =RGBA(0, 0, 0, 0)
+                    Width: =608
+                    ZIndex: =2
+
+                Label1_1 As label:
+                    Align: =Align.Center
+                    BorderColor: =RGBA(0, 0, 0, 0)
+                    BorderStyle: =BorderStyle.None
+                    BorderThickness: =2
+                    Color: =RGBA(51, 51, 51, 1)
+                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    FocusedBorderThickness: =4
+                    Font: =Font.'Segoe UI'
+                    FontWeight: =FontWeight.Bold
+                    Height: =70
+                    LayoutMinHeight: =70
+                    LayoutMinWidth: =560
+                    Size: =22
+                    Text: ="View/Edit Ticket"
+                    Width: =560
+                    ZIndex: =3
+
+            Container3 As groupContainer.verticalAutoLayoutContainer:
+                AlignInContainer: =AlignInContainer.SetByContainer
+                FillPortions: =0
+                Height: =150
+                LayoutDirection: =LayoutDirection.Vertical
+                LayoutMinHeight: =180
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                RadiusBottomLeft: =4
+                RadiusBottomRight: =4
+                RadiusTopLeft: =4
+                RadiusTopRight: =4
+                Width: =650
+                ZIndex: =2
+
+                CreatedInfo As groupContainer.horizontalAutoLayoutContainer:
+                    FillPortions: =0
+                    Height: =50
+                    LayoutAlignItems: =LayoutAlignItems.Center
+                    LayoutMinHeight: =10
+                    LayoutMinWidth: =250
+                    LayoutMode: =LayoutMode.Auto
+                    PaddingLeft: =20
+                    RadiusBottomLeft: =4
+                    RadiusBottomRight: =4
+                    RadiusTopLeft: =4
+                    RadiusTopRight: =4
+                    ZIndex: =1
+
+                    CreatedLabel As label:
+                        AlignInContainer: =AlignInContainer.Center
+                        BorderColor: =RGBA(0, 0, 0, 0)
+                        BorderStyle: =BorderStyle.None
+                        BorderThickness: =2
+                        Color: =RGBA(51, 51, 51, 1)
+                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        FocusedBorderThickness: =4
+                        Font: =Font.'Segoe UI'
+                        FontWeight: =FontWeight.Bold
+                        Height: =50
+                        LayoutMinHeight: =70
+                        LayoutMinWidth: =560
+                        Size: =17
+                        Text: |-
+                            ="Created:"
+                        Width: =100
+                        ZIndex: =1
+
+                    CreatedContent As label:
+                        BorderColor: =RGBA(0, 0, 0, 0)
+                        BorderStyle: =BorderStyle.None
+                        BorderThickness: =2
+                        Color: =RGBA(51, 51, 51, 1)
+                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        FocusedBorderThickness: =4
+                        Font: =Font.'Segoe UI'
+                        Height: =50
+                        LayoutMinHeight: =70
+                        LayoutMinWidth: =560
+                        PaddingLeft: =0
+                        Size: =17
+                        Text: =Text(selectedItem.IssueDateandTime)
+                        Width: =450
+                        ZIndex: =2
+
+                    ImageTrashIcon3 As icon.Trash:
+                        BorderColor: =RGBA(0, 0, 0, 0)
+                        Color: =RGBA(135, 100, 184, 1)
+                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                        DisabledColor: =RGBA(220, 220, 220, 1)
+                        DisabledFill: =RGBA(0, 0, 0, 0)
+                        FocusedBorderThickness: =4
+                        Height: =50
+                        HoverBorderColor: =RGBA(0, 0, 0, 0)
+                        HoverColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
+                        HoverFill: =RGBA(0, 0, 0, 0)
+                        Icon: =Icon.Trash
+                        OnSelect: |-
+                            =Remove('Technuf Ticketing System', selectedItem);
+                            ResetForm(Form5); Notify( "Delete Successfully",NotificationType.Success);
+                            Navigate('Dashboard.', Transition.None);
+                        PressedBorderColor: =RGBA(0, 0, 0, 0)
+                        PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
+                        PressedFill: =RGBA(0, 0, 0, 0)
+                        Width: =Parent.Width * 0.1
+                        ZIndex: =3
+
+                UserInfo As groupContainer.horizontalAutoLayoutContainer:
+                    FillPortions: =0
+                    Height: =50
+                    LayoutAlignItems: =LayoutAlignItems.Center
+                    LayoutMinHeight: =112
+                    LayoutMinWidth: =250
+                    LayoutMode: =LayoutMode.Auto
+                    PaddingLeft: =20
+                    RadiusBottomLeft: =4
+                    RadiusBottomRight: =4
+                    RadiusTopLeft: =4
+                    RadiusTopRight: =4
+                    ZIndex: =2
+
+                    UserLabel As label:
+                        BorderColor: =RGBA(0, 0, 0, 0)
+                        BorderStyle: =BorderStyle.None
+                        BorderThickness: =2
+                        Color: =RGBA(51, 51, 51, 1)
+                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        FocusedBorderThickness: =4
+                        Font: =Font.'Segoe UI'
+                        FontWeight: =FontWeight.Bold
+                        Height: =50
+                        LayoutMinHeight: =70
+                        LayoutMinWidth: =560
+                        Size: =17
+                        Text: |-
+                            ="User:"
+                        Width: =70
+                        ZIndex: =1
+
+                    UserContent As label:
+                        BorderColor: =RGBA(0, 0, 0, 0)
+                        BorderStyle: =BorderStyle.None
+                        BorderThickness: =2
+                        Color: =RGBA(51, 51, 51, 1)
+                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        FocusedBorderThickness: =4
+                        Font: =Font.'Segoe UI'
+                        Height: =50
+                        LayoutMinHeight: =70
+                        LayoutMinWidth: =560
+                        PaddingLeft: =0
+                        Size: =17
+                        Text: =selectedItem.'Created By'.DisplayName
+                        Width: =560
+                        ZIndex: =2
+
+                EmailImfo As groupContainer.horizontalAutoLayoutContainer:
+                    FillPortions: =0
+                    Height: =50
+                    LayoutAlignItems: =LayoutAlignItems.Center
+                    LayoutMinHeight: =60
+                    LayoutMinWidth: =250
+                    LayoutMode: =LayoutMode.Auto
+                    PaddingLeft: =20
+                    RadiusBottomLeft: =4
+                    RadiusBottomRight: =4
+                    RadiusTopLeft: =4
+                    RadiusTopRight: =4
+                    ZIndex: =3
+
+                    EmailLabel As label:
+                        BorderColor: =RGBA(0, 0, 0, 0)
+                        BorderStyle: =BorderStyle.None
+                        BorderThickness: =2
+                        Color: =RGBA(51, 51, 51, 1)
+                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        FocusedBorderThickness: =4
+                        Font: =Font.'Segoe UI'
+                        FontWeight: =FontWeight.Bold
+                        Height: =50
+                        LayoutMinHeight: =70
+                        LayoutMinWidth: =560
+                        Size: =17
+                        Text: |-
+                            ="Email:"
+                        Width: =80
+                        ZIndex: =1
+
+                    EmailContent As label:
+                        BorderColor: =RGBA(0, 0, 0, 0)
+                        BorderStyle: =BorderStyle.None
+                        BorderThickness: =2
+                        Color: =RGBA(51, 51, 51, 1)
+                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        FocusedBorderThickness: =4
+                        Font: =Font.'Segoe UI'
+                        Height: =50
+                        LayoutMinHeight: =70
+                        LayoutMinWidth: =560
+                        PaddingLeft: =0
+                        Size: =17
+                        Text: =selectedItem.'Created By'.Email
+                        Width: =560
+                        ZIndex: =2
+
+            Form5 As form:
+                BorderColor: =RGBA(166, 166, 166, 1)
+                BorderStyle: =BorderStyle.None
+                DataSource: ='Technuf Ticketing System'
+                DefaultMode: =FormMode.New
+                FillPortions: =0
+                Height: =Parent.Height - Container3.Height - TitleContainer_1.Height - ButtonContainer.Height 
+                LayoutMinHeight: =Parent.Height- Container3.Height - TitleContainer.Height - ButtonContainer.Height -200
+                LayoutMinWidth: =320
+                Width: =640
+                ZIndex: =3
+
+                Title_DataCard4_1 As typedDataCard.allowedValuesStringEditCard:
+                    AllowedValues: =DataSourceInfo([@'Work Progress Tracker'], DataSourceInfo.AllowedValues, "Title")
+                    BorderColor: =RGBA(166, 166, 166, 1)
+                    BorderStyle: =BorderStyle.Solid
+                    DataField: ="Title"
+                    Default: =ThisItem.Title
+                    DisplayMode: =Parent.DisplayMode
+                    DisplayName: =DataSourceInfo([@'Technuf Ticketing System'],DataSourceInfo.DisplayName,"Title")
+                    Fill: =RGBA(0, 0, 0, 0)
+                    Height: =122
+                    Required: =false
+                    Update: =TextInput1.Text
+                    Width: ='ViewEdit.'.Width/'ViewEdit.'.Size
+                    X: =0
+                    Y: =0
+                    ZIndex: =1
+
+                    DataCardKey22_1 As label:
+                        AutoHeight: =true
+                        BorderColor: =RGBA(0, 0, 0, 0)
+                        BorderStyle: =BorderStyle.None
+                        BorderThickness: =2
+                        Color: =RGBA(51, 51, 51, 1)
+                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        FocusedBorderThickness: =4
+                        Font: =Font.'Segoe UI'
+                        FontWeight: =FontWeight.Semibold
+                        Height: =48
+                        PaddingLeft: =0
+                        Size: =21
+                        Text: ="Category"
+                        Width: =Parent.Width - 60
+                        Wrap: =false
+                        X: =30
+                        Y: =10
+                        ZIndex: =1
+
+                    ErrorMessage22_1 As label:
+                        AutoHeight: =true
+                        BorderColor: =RGBA(0, 0, 0, 0)
+                        BorderStyle: =BorderStyle.None
+                        BorderThickness: =2
+                        Color: =RGBA(168, 0, 0, 1)
+                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                        DisabledColor: =RGBA(168, 0, 0, 1)
+                        FocusedBorderThickness: =4
+                        Font: =Font.'Segoe UI'
+                        FontWeight: =FontWeight.Semibold
+                        Height: =10
+                        Live: =Live.Assertive
+                        PaddingBottom: =0
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        Size: =21
+                        Text: =Parent.Error
+                        Visible: =Parent.DisplayMode=DisplayMode.Edit
+                        Width: =Parent.Width - 60
+                        X: =30
+                        Y: =TextInput1.Y + TextInput1.Height
+                        ZIndex: =3
+
+                    StarVisible22_1 As label:
+                        Align: =Align.Center
+                        BorderColor: =RGBA(0, 0, 0, 0)
+                        BorderStyle: =BorderStyle.None
+                        BorderThickness: =2
+                        Color: =RGBA(51, 51, 51, 1)
+                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        FocusedBorderThickness: =4
+                        Font: =Font.'Segoe UI'
+                        FontWeight: =FontWeight.Semibold
+                        Height: =DataCardKey22_1.Height
+                        PaddingLeft: =0
+                        Size: =21
+                        Text: ="*"
+                        Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                        Width: =30
+                        Wrap: =false
+                        Y: =DataCardKey22_1.Y
+                        ZIndex: =4
+
+                    TextInput1 As text:
+                        BorderColor: =RGBA(166, 166, 166, 1)
+                        BorderThickness: =2
+                        Color: =RGBA(51, 51, 51, 1)
+                        Default: =selectedItem.Title
+                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        DisabledFill: =RGBA(244, 244, 244, 1)
+                        FocusedBorderThickness: =4
+                        Font: =Font.'Segoe UI'
+                        Height: =70
+                        HoverBorderColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
+                        HoverColor: =RGBA(51, 51, 51, 1)
+                        HoverFill: =RGBA(255, 255, 255, 1)
+                        OnSelect: =Reset(TextInput1)
+                        PressedBorderColor: =RGBA(135, 100, 184, 1)
+                        PressedColor: =RGBA(51, 51, 51, 1)
+                        PressedFill: =RGBA(255, 255, 255, 1)
+                        RadiusBottomLeft: =0
+                        RadiusBottomRight: =0
+                        RadiusTopLeft: =0
+                        RadiusTopRight: =0
+                        Size: =21
+                        Width: =560
+                        X: =30
+                        Y: =57
+                        ZIndex: =5
+
+                "'Image (Optional)_DataCard2' As typedDataCard.addLargePictureCard":
+                    BorderColor: =RGBA(166, 166, 166, 1)
+                    BorderStyle: =BorderStyle.Solid
+                    DataField: ="Image_x0028_Optional_x0029_"
+                    Default: |-
+                        =//selectedItem.'Image (Optional)'
+                        If(IsBlank(AddPicture2.Media),selectedItem.'Image (Optional)'.Medium,AddPicture2.Media)
+                    DisplayMode: |
+                        =Parent.DisplayMode
+                    DisplayName: =DataSourceInfo([@'Technuf Ticketing System'],DataSourceInfo.DisplayName,"Image_x0028_Optional_x0029_")
+                    Fill: =RGBA(0, 0, 0, 0)
+                    Height: =342
+                    Required: =false
+                    Update: =Image4_1.Image
+                    Width: =640
+                    X: =0
+                    Y: =2
+                    ZIndex: =1
+
+                    DataCardKey2 As label:
+                        AutoHeight: =true
+                        BorderColor: =RGBA(0, 0, 0, 0)
+                        BorderStyle: =BorderStyle.None
+                        BorderThickness: =2
+                        Color: =RGBA(51, 51, 51, 1)
+                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        FocusedBorderThickness: =4
+                        Font: =Font.'Segoe UI'
+                        FontWeight: =FontWeight.Semibold
+                        Height: =48
+                        PaddingLeft: =0
+                        Size: =21
+                        Text: =Parent.DisplayName
+                        Width: =Parent.Width - 60
+                        Wrap: =false
+                        X: =30
+                        Y: =10
+                        ZIndex: =1
+
+                    ErrorMessage2 As label:
+                        AutoHeight: =true
+                        BorderColor: =RGBA(0, 0, 0, 0)
+                        BorderStyle: =BorderStyle.None
+                        BorderThickness: =2
+                        Color: =RGBA(168, 0, 0, 1)
+                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                        DisabledColor: =RGBA(168, 0, 0, 1)
+                        FocusedBorderThickness: =4
+                        Font: =Font.'Segoe UI'
+                        FontWeight: =FontWeight.Semibold
+                        Height: =10
+                        Live: =Live.Assertive
+                        PaddingBottom: =0
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        Size: =21
+                        Text: =Parent.Error
+                        Visible: =Parent.DisplayMode=DisplayMode.Edit
+                        Width: =Parent.Width - 60
+                        X: =30
+                        Y: =Image4_1.Y + Image4_1.Height
+                        ZIndex: =2
+
+                    StarVisible2 As label:
+                        Align: =Align.Center
+                        BorderColor: =RGBA(0, 0, 0, 0)
+                        BorderStyle: =BorderStyle.None
+                        BorderThickness: =2
+                        Color: =RGBA(51, 51, 51, 1)
+                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        FocusedBorderThickness: =4
+                        Font: =Font.'Segoe UI'
+                        FontWeight: =FontWeight.Semibold
+                        Height: =DataCardKey2.Height
+                        PaddingLeft: =0
+                        Size: =21
+                        Text: ="*"
+                        Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                        Width: =30
+                        Wrap: =false
+                        Y: =DataCardKey2.Y
+                        ZIndex: =3
+
+                    ImageTrashIcon3_1 As icon.Trash:
+                        BorderColor: =RGBA(0, 0, 0, 0)
+                        Color: =RGBA(135, 100, 184, 1)
+                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                        DisabledColor: =RGBA(220, 220, 220, 1)
+                        DisabledFill: =RGBA(0, 0, 0, 0)
+                        FocusedBorderThickness: =4
+                        Height: =50
+                        HoverBorderColor: =RGBA(0, 0, 0, 0)
+                        HoverColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
+                        HoverFill: =RGBA(0, 0, 0, 0)
+                        Icon: =Icon.Trash
+                        OnSelect: |-
+                            =Set(VarDeleteImg,true);
+                            Reset(AddPicture2)
+                        PressedBorderColor: =RGBA(0, 0, 0, 0)
+                        PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
+                        PressedFill: =RGBA(0, 0, 0, 0)
+                        X: =567
+                        Y: =12
+                        ZIndex: =4
+
+                    Image4_1 As image:
+                        BorderColor: =RGBA(153, 207, 236, 1)
+                        BorderStyle: =BorderStyle.Dotted
+                        BorderThickness: =2
+                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                        DisabledFill: =RGBA(0, 0, 0, 0)
+                        FocusedBorderThickness: =4
+                        Height: =211
+                        HoverBorderColor: =RGBA(0, 0, 0, 0)
+                        HoverFill: =RGBA(0, 0, 0, 0)
+                        Image: = If(IsBlank(AddPicture2.Media),If(VarDeleteImg,Blank(), Parent.Default), AddPicture2.Media)
+                        PressedBorderColor: =RGBA(0, 0, 0, 0)
+                        PressedFill: =RGBA(0, 0, 0, 0)
+                        Width: =596
+                        X: =30
+                        Y: =103
+                        ZIndex: =5
+
+                    AddPicture2 As addMedia:
+                        BorderColor: =RGBA(0, 0, 0, 0)
+                        BorderStyle: =BorderStyle.None
+                        BorderThickness: =2
+                        ChangePictureText: =""
+                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        DisabledFill: =RGBA(244, 244, 244, 1)
+                        Fill: =RGBA(135, 100, 184, 1)
+                        FocusedBorderThickness: =4
+                        Font: =Font.'Segoe UI'
+                        Height: =320
+                        HoverBorderColor: =RGBA(0, 0, 0, 0)
+                        HoverColor: =RGBA(255, 255, 255, 1)
+                        HoverFill: =ColorFade(RGBA(135, 100, 184, 1), -10%)
+                        PressedBorderColor: =ColorFade(RGBA(135, 100, 184, 1), -50%)
+                        PressedColor: =RGBA(255, 255, 255, 1)
+                        PressedFill: =ColorFade(RGBA(135, 100, 184, 1), -30%)
+                        Size: =24
+                        Width: =Parent.Width - 60
+                        X: =30
+                        Y: =DataCardKey2.Y + DataCardKey2.Height + 5
+                        ZIndex: =6
+
+                Description_DataCard3_1 As typedDataCard.textualEditCard:
+                    BorderColor: =RGBA(166, 166, 166, 1)
+                    BorderStyle: =BorderStyle.Solid
+                    DataField: ="Description"
+                    Default: =ThisItem.Description
+                    DisplayMode: |+
+                        =
+                        
+                    DisplayName: =DataSourceInfo([@'Technuf Ticketing System'],DataSourceInfo.DisplayName,"Description")
+                    Fill: =RGBA(0, 0, 0, 0)
+                    Height: =250
+                    MaxLength: =DataSourceInfo([@'Technuf Ticketing System'], DataSourceInfo.MaxLength, "Description")
+                    Required: =false
+                    Update: =DataCardValue13_1.Text
+                    Width: ='ViewEdit.'.Width/'ViewEdit.'.Size
+                    X: =0
+                    Y: =1
+                    ZIndex: =2
+
+                    DataCardKey17_1 As label:
+                        AutoHeight: =true
+                        BorderColor: =RGBA(0, 0, 0, 0)
+                        BorderStyle: =BorderStyle.None
+                        BorderThickness: =2
+                        Color: =RGBA(51, 51, 51, 1)
+                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        FocusedBorderThickness: =4
+                        Font: =Font.'Segoe UI'
+                        FontWeight: =FontWeight.Semibold
+                        Height: =48
+                        PaddingLeft: =0
+                        Size: =21
+                        Text: =Parent.DisplayName
+                        Width: =Parent.Width - 60
+                        Wrap: =false
+                        X: =30
+                        Y: =10
+                        ZIndex: =1
+
+                    DataCardValue13_1 As text:
+                        BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                        BorderThickness: =2
+                        Color: =RGBA(51, 51, 51, 1)
+                        Default: =selectedItem.Description
+                        DelayOutput: =true
+                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        DisabledFill: =RGBA(244, 244, 244, 1)
+                        DisplayMode: =Parent.DisplayMode
+                        FocusedBorderThickness: =4
+                        Font: =Font.'Segoe UI'
+                        Height: =230
+                        HoverBorderColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
+                        HoverColor: =RGBA(51, 51, 51, 1)
+                        HoverFill: =RGBA(255, 255, 255, 1)
+                        MaxLength: =Parent.MaxLength
+                        Mode: =TextMode.MultiLine
+                        PaddingLeft: =5
+                        PressedBorderColor: =RGBA(135, 100, 184, 1)
+                        PressedColor: =RGBA(51, 51, 51, 1)
+                        PressedFill: =RGBA(255, 255, 255, 1)
+                        RadiusBottomLeft: =15
+                        RadiusBottomRight: =15
+                        RadiusTopLeft: =15
+                        RadiusTopRight: =15
+                        Size: =21
+                        Tooltip: =Parent.DisplayName
+                        Width: =Parent.Width - 60
+                        X: =30
+                        Y: =DataCardKey17_1.Y + DataCardKey17_1.Height + 5
+                        ZIndex: =2
+
+                    ErrorMessage17_1 As label:
+                        AutoHeight: =true
+                        BorderColor: =RGBA(0, 0, 0, 0)
+                        BorderStyle: =BorderStyle.None
+                        BorderThickness: =2
+                        Color: =RGBA(168, 0, 0, 1)
+                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                        DisabledColor: =RGBA(168, 0, 0, 1)
+                        FocusedBorderThickness: =4
+                        Font: =Font.'Segoe UI'
+                        FontWeight: =FontWeight.Semibold
+                        Height: =10
+                        Live: =Live.Assertive
+                        PaddingBottom: =0
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        Size: =21
+                        Text: =Parent.Error
+                        Visible: =Parent.DisplayMode=DisplayMode.Edit
+                        Width: =Parent.Width - 60
+                        X: =30
+                        Y: =DataCardValue13_1.Y + DataCardValue13_1.Height
+                        ZIndex: =3
+
+                    StarVisible17_1 As label:
+                        Align: =Align.Center
+                        BorderColor: =RGBA(0, 0, 0, 0)
+                        BorderStyle: =BorderStyle.None
+                        BorderThickness: =2
+                        Color: =RGBA(51, 51, 51, 1)
+                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        FocusedBorderThickness: =4
+                        Font: =Font.'Segoe UI'
+                        FontWeight: =FontWeight.Semibold
+                        Height: =DataCardKey17_1.Height
+                        PaddingLeft: =0
+                        Size: =21
+                        Text: ="*"
+                        Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                        Width: =30
+                        Wrap: =false
+                        Y: =DataCardKey17_1.Y
+                        ZIndex: =4
+
+            ButtonContainer As groupContainer.horizontalAutoLayoutContainer:
+                AlignInContainer: =AlignInContainer.SetByContainer
+                BorderColor: =RGBA(255, 255, 255, 1)
+                BorderStyle: =BorderStyle.None
+                FillPortions: =0
+                Height: =100
+                LayoutAlignItems: =LayoutAlignItems.End
+                LayoutGap: =20
+                LayoutJustifyContent: =LayoutJustifyContent.Center
+                LayoutMinHeight: |
+                    =50
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                PaddingBottom: =20
+                RadiusBottomLeft: =4
+                RadiusBottomRight: =4
+                RadiusTopLeft: =4
+                RadiusTopRight: =4
+                Width: =650
+                ZIndex: =4
+
+                Button3_1 As button:
+                    BorderColor: =RGBA(39, 113, 194, 1)
+                    Color: =RGBA(0, 134, 208, 1)
+                    DisabledBorderColor: =RGBA(204, 231, 246, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    DisabledFill: =RGBA(244, 244, 244, 1)
+                    Fill: =RGBA(255, 255, 255, 1)
+                    FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+                    Font: =Font.'Segoe UI'
+                    FontWeight: =FontWeight.Semibold
+                    Height: =70
+                    HoverBorderColor: =RGBA(0, 134, 208, 1)
+                    HoverColor: =RGBA(255, 255, 255, 1)
+                    HoverFill: =ColorFade(RGBA(0, 134, 208, 1), -10%)
+                    LayoutMinHeight: =70
+                    LayoutMinWidth: =280
+                    OnSelect: |
+                        =ResetForm(Form5);
+                        Navigate('Dashboard.', Transition.None);
+                    PressedBorderColor: =ColorFade(RGBA(0, 94, 146, 1), -50%)
+                    PressedColor: =RGBA(255, 255, 255, 1)
+                    PressedFill: =ColorFade(RGBA(0, 94, 146, 1), -30%)
+                    RadiusBottomLeft: =15
+                    RadiusBottomRight: =15
+                    RadiusTopLeft: =15
+                    RadiusTopRight: =15
+                    Size: =24
+                    Text: ="Cancel"
+                    Width: =280
+                    X: |
+                        =0
+                    ZIndex: =1
+
+                Button4_1 As button:
+                    BorderColor: =RGBA(0, 0, 0, 0)
+                    DisabledBorderColor: =RGBA(153, 207, 236, 1)
+                    DisabledColor: =RGBA(255, 255, 255, 1)
+                    DisabledFill: =RGBA(0, 134, 208, 1)
+                    Fill: =RGBA(0, 134, 208, 1)
+                    FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+                    Font: =Font.'Segoe UI'
+                    FontWeight: =FontWeight.Semibold
+                    Height: =70
+                    HoverBorderColor: =RGBA(0, 134, 208, 1)
+                    HoverColor: =RGBA(255, 255, 255, 1)
+                    HoverFill: =ColorFade(RGBA(0, 134, 208, 1), -10%)
+                    LayoutMinHeight: =70
+                    LayoutMinWidth: =280
+                    OnSelect: |
+                        =Patch ('Technuf Ticketing System', LookUp(
+                                'Technuf Ticketing System',  
+                                ID = Value(selectedItem.ID)),
+                            {
+                                Title: TextInput1.Text,
+                                //'Created By': UserContent,
+                                Description: DataCardValue13_1.Text,
+                                'Progress/Status':{Value: selectedStatus}, 
+                                'Image (Optional)': Image4_1.Image,
+                                'Issue Date and Time': Now()
+                                //ID: Value(selectedItem.ID)
+                            }
+                        );
+                        
+                        ResetForm(Form5); Notify( "Saved Successfully", NotificationType.Success);
+                        Navigate('Dashboard.', Transition.None);
+                    PressedBorderColor: =ColorFade(RGBA(0, 134, 208, 1), -50%)
+                    PressedColor: =RGBA(255, 255, 255, 1)
+                    PressedFill: =ColorFade(RGBA(0, 134, 208, 1), -30%)
+                    RadiusBottomLeft: =15
+                    RadiusBottomRight: =15
+                    RadiusTopLeft: =15
+                    RadiusTopRight: =15
+                    Size: =24
+                    Text: ="Save"
+                    Width: =280
+                    ZIndex: =2
+

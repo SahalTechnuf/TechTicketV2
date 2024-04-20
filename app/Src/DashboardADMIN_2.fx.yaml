@@ -1,7 +1,7 @@
-"DashboardADMIN As screen.'phoneBrowseLayout_ver3.0'":
+"DashboardADMIN_2 As screen.'phoneBrowseLayout_ver3.0'":
     LoadingSpinnerColor: =RGBA(135, 100, 184, 1)
 
-    ParentCont As groupContainer.manualLayoutContainer:
+    ParentCont_2 As groupContainer.manualLayoutContainer:
         DropShadow: =DropShadow.Light
         Height: =Parent.Height
         RadiusBottomLeft: =4
@@ -13,7 +13,7 @@
             =0
         ZIndex: =1
 
-        FooterCont As groupContainer.verticalAutoLayoutContainer:
+        FooterCont_2 As groupContainer.verticalAutoLayoutContainer:
             BorderStyle: =BorderStyle.None
             DropShadow: =DropShadow.Light
             Height: =Parent.Height/10
@@ -27,7 +27,7 @@
             Y: =1022
             ZIndex: =1
 
-        BodyCont As groupContainer.verticalAutoLayoutContainer:
+        BodyCont_2 As groupContainer.verticalAutoLayoutContainer:
             BorderStyle: =BorderStyle.None
             DropShadow: =DropShadow.Light
             Height: =Parent.Height*7/10
@@ -41,7 +41,7 @@
             Y: =226
             ZIndex: =2
 
-        HeaderCont As groupContainer.verticalAutoLayoutContainer:
+        HeaderCont_2 As groupContainer.verticalAutoLayoutContainer:
             BorderStyle: =BorderStyle.None
             DropShadow: =DropShadow.Light
             Height: =Parent.Height/5
@@ -56,7 +56,7 @@
             Width: =Parent.Width
             ZIndex: =3
 
-            DashLogo_ As image:
+            DashLogo__2 As image:
                 BorderColor: =RGBA(0, 0, 0, 0)
                 BorderStyle: =BorderStyle.None
                 BorderThickness: =2
@@ -75,7 +75,7 @@
                 Width: =Parent.Width
                 ZIndex: =1
 
-            DashHeader_ As label:
+            DashHeader__2 As label:
                 Align: =Align.Center
                 BorderColor: =RGBA(0, 0, 0, 0)
                 BorderStyle: =BorderStyle.None
@@ -86,7 +86,7 @@
                 FocusedBorderThickness: =4
                 Font: =Font.'Segoe UI'
                 FontWeight: =FontWeight.Bold
-                Height: =Parent.Height - DashLogo_.Height
+                Height: =Parent.Height - DashLogo__2.Height
                 LayoutMinHeight: =70
                 LayoutMinWidth: =560
                 Size: =25
