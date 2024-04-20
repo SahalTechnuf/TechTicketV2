@@ -121,6 +121,7 @@
 
             Container3_ As groupContainer.verticalAutoLayoutContainer:
                 AlignInContainer: =AlignInContainer.SetByContainer
+                BorderStyle: =BorderStyle.None
                 FillPortions: =0
                 Height: =90
                 LayoutDirection: =LayoutDirection.Vertical
@@ -722,6 +723,7 @@
                         ZIndex: =4
 
         HeaderContView As groupContainer.verticalAutoLayoutContainer:
+            BorderColor: =RGBA(255, 255, 255, 1)
             BorderStyle: =BorderStyle.None
             DropShadow: =DropShadow.Light
             Height: =Parent.Height/6
