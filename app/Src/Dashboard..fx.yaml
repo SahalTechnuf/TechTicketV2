@@ -63,7 +63,8 @@
             RadiusTopRight: =15
             Size: =24
             Text: =""
-            Width: =607
+            Width: =598
+            X: =9
             ZIndex: =1
 
         DashCat As label:
@@ -97,6 +98,7 @@
             FocusedBorderThickness: =4
             Font: =Font.'Segoe UI'
             OnSelect: =Select(Parent)
+            PaddingLeft: =15
             Size: =17
             Text: =ThisItem.Description
             Width: =600
@@ -464,7 +466,8 @@
         Font: =Font.'Segoe UI'
         FontWeight: =FontWeight.Bold
         Height: =67
-        Size: =25
+        PaddingLeft: =15
+        Size: =22
         Text: ="Tickets"
         Visible: |-
             =If(
