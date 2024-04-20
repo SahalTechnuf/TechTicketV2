@@ -173,7 +173,7 @@
                         HoverFill: =ColorFade(RGBA(135, 100, 184, 1), -10%)
                         OnSelect: |-
                             =//Select(Parent)
-                            NewForm(EditForm);Navigate(ViewEdit, ScreenTransition.None)
+                            Navigate(ViewEdit, Transition.None, {selectedItem: DashClick})
                         PressedBorderColor: =ColorFade(RGBA(135, 100, 184, 1), -50%)
                         PressedColor: =RGBA(255, 255, 255, 1)
                         PressedFill: =ColorFade(RGBA(135, 100, 184, 1), -30%)
