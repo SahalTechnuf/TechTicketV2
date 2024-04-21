@@ -595,7 +595,7 @@
                         HoverBorderColor: =RGBA(0, 0, 0, 0)
                         HoverColor: =Color.Transparent
                         HoverFill: =Color.Transparent
-                        OnSelect: =AddPictureImage_Add
+                        OnSelect: =
                         PressedBorderColor: =Color.Transparent
                         PressedColor: =Color.Transparent
                         PressedFill: =Color.Transparent
