@@ -856,7 +856,7 @@
                 Y: =72
                 ZIndex: =2
 
-    Icon1 As icon.Trash:
+    Button_DeleteImage_View As icon.Trash:
         BorderColor: =RGBA(0, 0, 0, 0)
         Color: =RGBA(0, 121, 187, 1)
         DisabledBorderColor: =RGBA(166, 166, 166, 1)

@@ -414,7 +414,10 @@
                         Height: =302
                         HoverBorderColor: =RGBA(0, 0, 0, 0)
                         HoverFill: =RGBA(0, 0, 0, 0)
-                        Image: =If(IsBlank(AddPictureImage_Add.Media), Parent.Default, AddPictureImage_Add.Media)
+                        Image: |-
+                            =If(ClearImage, Blank(), If(IsBlank(AddPictureImage_Edit.Media), Parent.Default, AddPictureImage_Edit.Media))
+                            
+                            //If(IsBlank(AddPictureImage_Add.Media), Parent.Default, AddPictureImage_Add.Media)
                         PressedBorderColor: =RGBA(0, 0, 0, 0)
                         PressedFill: =RGBA(0, 0, 0, 0)
                         RadiusBottomLeft: =15
@@ -601,6 +604,7 @@
                         HoverBorderColor: =RGBA(0, 0, 0, 0)
                         HoverColor: =RGBA(255, 255, 255, 1)
                         HoverFill: =ColorFade(RGBA(135, 100, 184, 1), 80%)
+                        OnSelect: =Set(ClearImage, false)
                         PressedBorderColor: =ColorFade(RGBA(0, 134, 208, 1), -50%)
                         PressedColor: =RGBA(255, 255, 255, 1)
                         PressedFill: =ColorFade(RGBA(135, 100, 184, 1), -30%)
@@ -665,4 +669,26 @@
                 X: =180
                 Y: =72
                 ZIndex: =2
+
+    Button_DeleteImage_Add As icon.Trash:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        Color: =RGBA(0, 121, 187, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(220, 220, 220, 1)
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        FocusedBorderThickness: =4
+        Height: =36
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverColor: =Color.DarkGray
+        HoverFill: =RGBA(0, 0, 0, 0)
+        Icon: =Icon.Trash
+        OnSelect: =Set(ClearImage, true)
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
+        PressedFill: =RGBA(0, 0, 0, 0)
+        Visible: =!IsBlank(ImageImage_Add.Image)
+        Width: =46
+        X: =532
+        Y: =712
+        ZIndex: =2
 
