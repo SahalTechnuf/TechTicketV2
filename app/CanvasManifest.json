@@ -11,7 +11,7 @@
   },
   "Properties": {
     "AppCreationSource": "AppFromData",
-    "AppDescription": "V3.1 Image control conquest.",
+    "AppDescription": "V3.2 Container, Image Upload, UI",
     "AppPreviewFlagsMap": {
       "aibuilderserviceenrollment": false,
       "allowmultiplescreensincanvaspages": false,

@@ -294,6 +294,7 @@
                     ZIndex: =3
 
                     Label_Email As label:
+                        AlignInContainer: =AlignInContainer.Center
                         BorderColor: =RGBA(0, 0, 0, 0)
                         BorderStyle: =BorderStyle.None
                         BorderThickness: =2
