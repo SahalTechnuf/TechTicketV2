@@ -196,8 +196,8 @@
                         SelectionFill: =RGBA(135, 100, 184, 1)
                         Size: =21
                         Tooltip: =Parent.DisplayName
-                        Width: =Parent.Width - 60
-                        X: =30
+                        Width: =Parent.Width - 80
+                        X: =40
                         Y: =DataCardKeyTitle_Add.Y + DataCardKeyTitle_Add.Height + 5
                         ZIndex: =2
 
@@ -314,8 +314,8 @@
                         RadiusTopRight: =15
                         Size: =21
                         Tooltip: =Parent.DisplayName
-                        Width: =Parent.Width - 60
-                        X: =30
+                        Width: =Parent.Width - 80
+                        X: =40
                         Y: =DataCardKeyDesc_Add.Y + DataCardKeyDesc_Add.Height + 5
                         ZIndex: =2
 
@@ -421,7 +421,7 @@
                         RadiusTopLeft: =15
                         RadiusTopRight: =15
                         Tooltip: =Parent.DisplayName
-                        Width: =AddPictureImage_Add.Width
+                        Width: =Parent.Width - 80
                         X: =AddPictureImage_Add.X
                         Y: =62
                         ZIndex: =2
@@ -448,8 +448,8 @@
                         Size: =18
                         Text: |
                             ="Upload a photo (format PNG, JPEG,GIF)"
-                        Width: =Parent.Width - 60
-                        X: =30
+                        Width: =Parent.Width - 80
+                        X: =40
                         Y: =62
                         ZIndex: =3
 
