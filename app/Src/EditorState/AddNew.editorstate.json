@@ -818,7 +818,7 @@
       "MetaDataIDKey": "%AddPicture.ID%",
       "Name": "AddPictureImage_Add",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 4,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5201,7 +5201,14 @@
         },
         "BorderColor",
         "DisabledBorderColor",
-        "PressedBorderColor",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "ColorFade(RGBA(135, 100, 184, 1), -50%)",
+          "InvariantPropertyName": "PressedBorderColor",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "HoverBorderColor",
         {
           "AFDDataSourceName": "",
@@ -5247,7 +5254,14 @@
           "NameMapSourceSchema": "?"
         },
         "DisabledFill",
-        "PressedFill",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "ColorFade(RGBA(135, 100, 184, 1), -30%)",
+          "InvariantPropertyName": "PressedFill",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
@@ -5453,7 +5467,7 @@
         {
           "Category": "Design",
           "PropertyName": "PressedFill",
-          "RuleProviderType": "Unknown"
+          "RuleProviderType": "User"
         },
         {
           "Category": "Design",
@@ -5503,7 +5517,7 @@
         {
           "Category": "Design",
           "PropertyName": "PressedBorderColor",
-          "RuleProviderType": "Unknown"
+          "RuleProviderType": "User"
         },
         {
           "Category": "Design",
@@ -5829,7 +5843,7 @@
       "MetaDataIDKey": "",
       "Name": "Icon_upload",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 5,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6118,7 +6132,7 @@
       "MetaDataIDKey": "%FieldValue.ID%",
       "Name": "ImageImage_Add",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 3,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -7330,9 +7344,23 @@
         },
         "BorderColor",
         "DisabledBorderColor",
-        "PressedBorderColor",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "ColorFade(RGBA(135, 100, 184, 1), -50%)",
+          "InvariantPropertyName": "PressedBorderColor",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "HoverBorderColor",
-        "BorderStyle",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "BorderStyle",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "FocusedBorderColor",
         {
           "AFDDataSourceName": "",
@@ -7368,8 +7396,22 @@
           "IsLockable": false,
           "NameMapSourceSchema": "?"
         },
-        "DisabledFill",
-        "PressedFill",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "DisabledFill",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "ColorFade(RGBA(135, 100, 184, 1), -30%)",
+          "InvariantPropertyName": "PressedFill",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
@@ -7575,7 +7617,7 @@
         {
           "Category": "Design",
           "PropertyName": "PressedFill",
-          "RuleProviderType": "Unknown"
+          "RuleProviderType": "User"
         },
         {
           "Category": "Design",
@@ -7625,7 +7667,7 @@
         {
           "Category": "Design",
           "PropertyName": "PressedBorderColor",
-          "RuleProviderType": "Unknown"
+          "RuleProviderType": "User"
         },
         {
           "Category": "Design",
@@ -7652,7 +7694,14 @@
         "Text",
         "BorderColor",
         "DisabledBorderColor",
-        "PressedBorderColor",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "ColorFade(RGBA(135, 100, 184, 1), -50%)",
+          "InvariantPropertyName": "PressedBorderColor",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "HoverBorderColor",
         "BorderStyle",
         "FocusedBorderColor",
@@ -7697,8 +7746,22 @@
           "IsLockable": false,
           "NameMapSourceSchema": "?"
         },
-        "DisabledFill",
-        "PressedFill",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "DisabledFill",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "ColorFade(RGBA(135, 100, 184, 1), -30%)",
+          "InvariantPropertyName": "PressedFill",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
@@ -7788,7 +7851,7 @@
       "MetaDataIDKey": "",
       "Name": "upload_1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 2,
+      "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -7904,7 +7967,7 @@
         {
           "Category": "Design",
           "PropertyName": "PressedFill",
-          "RuleProviderType": "Unknown"
+          "RuleProviderType": "User"
         },
         {
           "Category": "Design",
@@ -7954,7 +8017,7 @@
         {
           "Category": "Design",
           "PropertyName": "PressedBorderColor",
-          "RuleProviderType": "Unknown"
+          "RuleProviderType": "User"
         },
         {
           "Category": "Design",
