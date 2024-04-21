@@ -856,23 +856,24 @@
                 Y: =72
                 ZIndex: =2
 
-    Icon1 As icon.Trash:
+    Button_DeleteImage_View As icon.Trash:
         BorderColor: =RGBA(0, 0, 0, 0)
-        Color: =RGBA(135, 100, 184, 1)
+        Color: =RGBA(0, 121, 187, 1)
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(220, 220, 220, 1)
         DisabledFill: =RGBA(0, 0, 0, 0)
         FocusedBorderThickness: =4
-        Height: =42
+        Height: =36
         HoverBorderColor: =RGBA(0, 0, 0, 0)
-        HoverColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
+        HoverColor: =Color.DarkGray
         HoverFill: =RGBA(0, 0, 0, 0)
         Icon: =Icon.Trash
         OnSelect: =Set(ClearImage, true)
         PressedBorderColor: =RGBA(0, 0, 0, 0)
         PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
         PressedFill: =RGBA(0, 0, 0, 0)
-        Width: =44
+        Visible: =!IsBlank(ImageImage_Edit.Image)
+        Width: =46
         X: =531
         Y: =747
         ZIndex: =2
