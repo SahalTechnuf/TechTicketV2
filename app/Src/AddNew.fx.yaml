@@ -202,9 +202,8 @@
                         DisabledColor: =RGBA(166, 166, 166, 1)
                         DisabledFill: =RGBA(244, 244, 244, 1)
                         DisplayMode: =Parent.DisplayMode
-                        Fill: |-
+                        Fill: |
                             =//RGBA(255, 255, 255, 1)
-                            Color.Transparent
                         Font: =Font.'Segoe UI'
                         Height: =70
                         HoverBorderColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
