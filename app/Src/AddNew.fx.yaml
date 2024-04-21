@@ -593,10 +593,10 @@
                         FontWeight: =FontWeight.Bold
                         Height: =71
                         HoverBorderColor: =RGBA(0, 0, 0, 0)
-                        HoverColor: =RGBA(0, 0, 0, 1)
+                        HoverColor: =Color.Transparent
                         HoverFill: =Color.Transparent
                         PressedBorderColor: =ColorFade(RGBA(135, 100, 184, 1), -50%)
-                        PressedColor: =RGBA(255, 255, 255, 1)
+                        PressedColor: =Color.Transparent
                         PressedFill: =ColorFade(RGBA(135, 100, 184, 1), -30%)
                         RadiusBottomLeft: =0
                         RadiusBottomRight: =0
