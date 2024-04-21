@@ -457,7 +457,7 @@
                         HoverColor: =RGBA(153, 207, 236, 1)
                         HoverFill: =RGBA(0, 0, 0, 0)
                         OnSelect: =Select(Parent)
-                        PressedBorderColor: =Color.Transparent
+                        PressedBorderColor: =Color.LightSkyBlue
                         PressedColor: =RGBA(255, 255, 255, 1)
                         PressedFill: =RGBA(0, 0, 0, 0)
                         RadiusBottomLeft: =15
