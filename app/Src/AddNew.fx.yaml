@@ -1,4 +1,6 @@
 "AddNew As screen.'phoneBrowseLayout_ver3.0'":
+    Fill: |
+        =RGBA(255, 255, 255, 1)
     LoadingSpinnerColor: =RGBA(135, 100, 184, 1)
 
     ParentContAdd As groupContainer.manualLayoutContainer:
