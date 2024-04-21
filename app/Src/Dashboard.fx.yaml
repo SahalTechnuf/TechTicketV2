@@ -156,7 +156,7 @@
                     TemplatePadding: =10
                     TemplateSize: =226
                     Transition: =Transition.Push
-                    Width: =620
+                    Width: =Parent.Width
                     Y: =319
                     ZIndex: =2
 
@@ -466,7 +466,7 @@
                         RadiusTopRight: =15
                         Size: =24
                         Text: =""
-                        Width: =590
+                        Width: =600
                         X: =10
                         ZIndex: =13
 
@@ -602,7 +602,7 @@
             Y: =179
             ZIndex: =6
 
-        Image2 As image:
+        NoImage As image:
             BorderColor: =RGBA(0, 0, 0, 0)
             BorderStyle: =BorderStyle.None
             BorderThickness: =2
@@ -621,7 +621,7 @@
             Y: =399
             ZIndex: =7
 
-        Label1 As label:
+        NoImage_Label1 As label:
             Align: =Align.Center
             BorderColor: =RGBA(0, 0, 0, 0)
             BorderStyle: =BorderStyle.None
@@ -641,7 +641,7 @@
             Y: =710
             ZIndex: =8
 
-        Label2 As label:
+        NoImage_Label2 As label:
             Align: =Align.Center
             BorderColor: =RGBA(0, 0, 0, 0)
             BorderStyle: =BorderStyle.None

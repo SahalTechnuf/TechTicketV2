@@ -184,6 +184,66 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "AddNew.ParentContAdd.BodyContAdd.AddForm.Add_Image.Icon_upload.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "AddNew.ParentContAdd.BodyContAdd.AddForm.Add_Image.Icon_upload.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "AddNew",
+                "type": "AddNew.ParentContAdd.BodyContAdd.AddForm.Add_Image.Icon_upload"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "AddNew.ParentContAdd.BodyContAdd.AddForm.Add_Image.Icon_upload.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "AddNew.ParentContAdd.BodyContAdd.AddForm.Add_Image.Icon_upload.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "AddNew",
+                "type": "AddNew.ParentContAdd.BodyContAdd.AddForm.Add_Image.Icon_upload"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "Dashboard.ParentContDash.SearchTicket.AccessibleLabel"
                 }
               ],
@@ -267,7 +327,7 @@
             "level": "Low"
           },
           "ruleId": "acc-TabOrderShouldBeChecked",
-          "ruleIndex": 2
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -297,7 +357,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-FocusBorderShouldBeVisible",
-          "ruleIndex": 3
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -357,7 +417,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 4
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -424,19 +484,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "ViewEdit.ParentContView.BodyContView.EditForm.Edit_Image.ImageTrashIconImage_Edit.TabIndex"
+                  "fullyQualifiedName": "ViewEdit.ParentContView.BodyContView.EditForm.Edit_Image.AddPictureImage_Edit.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "ViewEdit.ParentContView.BodyContView.EditForm.Edit_Image.ImageTrashIconImage_Edit.TabIndex",
+                  "fullyQualifiedName": "ViewEdit.ParentContView.BodyContView.EditForm.Edit_Image.AddPictureImage_Edit.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "TabIndex",
+                "member": "AccessibleLabel",
                 "module": "ViewEdit",
-                "type": "ViewEdit.ParentContView.BodyContView.EditForm.Edit_Image.ImageTrashIconImage_Edit"
+                "type": "ViewEdit.ParentContView.BodyContView.EditForm.Edit_Image.AddPictureImage_Edit"
               }
             }
           ],
@@ -446,8 +506,8 @@
           "properties": {
             "level": "Medium"
           },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 4
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
         },
         {
           "locations": [
@@ -484,19 +544,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "ViewEdit.ParentContView.BodyContView.EditForm.Edit_Image.AddPictureImage_Edit.AccessibleLabel"
+                  "fullyQualifiedName": "ViewEdit.ParentContView.BodyContView.EditForm.Edit_Image.ImageTrashIconImage_Edit.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "ViewEdit.ParentContView.BodyContView.EditForm.Edit_Image.AddPictureImage_Edit.AccessibleLabel",
+                  "fullyQualifiedName": "ViewEdit.ParentContView.BodyContView.EditForm.Edit_Image.ImageTrashIconImage_Edit.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "AccessibleLabel",
+                "member": "TabIndex",
                 "module": "ViewEdit",
-                "type": "ViewEdit.ParentContView.BodyContView.EditForm.Edit_Image.AddPictureImage_Edit"
+                "type": "ViewEdit.ParentContView.BodyContView.EditForm.Edit_Image.ImageTrashIconImage_Edit"
               }
             }
           ],
@@ -506,8 +566,8 @@
           "properties": {
             "level": "Medium"
           },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -567,67 +627,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "AddNew.ParentContAdd.BodyContAdd.AddForm.Add_Image.Icon_upload.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "AddNew.ParentContAdd.BodyContAdd.AddForm.Add_Image.Icon_upload.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "AddNew",
-                "type": "AddNew.ParentContAdd.BodyContAdd.AddForm.Add_Image.Icon_upload"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "AddNew.ParentContAdd.BodyContAdd.AddForm.Add_Image.Icon_upload.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "AddNew.ParentContAdd.BodyContAdd.AddForm.Add_Image.Icon_upload.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "AddNew",
-                "type": "AddNew.ParentContAdd.BodyContAdd.AddForm.Add_Image.Icon_upload"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 4
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -852,6 +852,23 @@
               }
             },
             {
+              "id": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+              "messageStrings": {
+                "issue": {
+                  "text": "Missing tab stop"
+                }
+              },
+              "properties": {
+                "componentType": "app",
+                "howToFix": [
+                  "Set TabIndex to 0 or greater to ensure that interactive elements have a tab stop."
+                ],
+                "level": "Medium",
+                "primaryCategory": "accessibility",
+                "whyFix": "People who use the keyboard with your app will not be able to access this element without a tab stop."
+              }
+            },
+            {
               "id": "acc-TabOrderShouldBeChecked",
               "messageStrings": {
                 "issue": {
@@ -883,23 +900,6 @@
                 "level": "Medium",
                 "primaryCategory": "accessibility",
                 "whyFix": "If the focus isn't visible, people who don't use a mouse won't be able to see it when they're interacting with the app."
-              }
-            },
-            {
-              "id": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-              "messageStrings": {
-                "issue": {
-                  "text": "Missing tab stop"
-                }
-              },
-              "properties": {
-                "componentType": "app",
-                "howToFix": [
-                  "Set TabIndex to 0 or greater to ensure that interactive elements have a tab stop."
-                ],
-                "level": "Medium",
-                "primaryCategory": "accessibility",
-                "whyFix": "People who use the keyboard with your app will not be able to access this element without a tab stop."
               }
             },
             {
