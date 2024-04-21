@@ -169,6 +169,7 @@
 
                     DataCardValueTitle_Add As dropdown:
                         BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                        BorderStyle: =BorderStyle.None
                         ChevronBackground: =RGBA(255, 255, 255, 1)
                         ChevronDisabledBackground: =RGBA(244, 244, 244, 1)
                         ChevronDisabledFill: =RGBA(166, 166, 166, 1)
@@ -247,6 +248,21 @@
                         Wrap: =false
                         Y: =DataCardKeyTitle_Add.Y
                         ZIndex: =4
+
+                    Rectangle1 As rectangle:
+                        BorderColor: =RGBA(166, 166, 166, 1)
+                        BorderThickness: =2
+                        DisabledFill: =RGBA(166, 166, 166, 1)
+                        Fill: =RGBA(0, 0, 0, 0)
+                        FocusedBorderThickness: =4
+                        Height: |
+                            =70
+                        HoverFill: =RGBA(135, 100, 184, 1)
+                        PressedFill: =RGBA(135, 100, 184, 1)
+                        Width: =Parent.Width - 80
+                        X: =40
+                        Y: =62
+                        ZIndex: =5
 
                 Add_Desc As typedDataCard.textualEditCard:
                     BorderColor: =RGBA(166, 166, 166, 1)
