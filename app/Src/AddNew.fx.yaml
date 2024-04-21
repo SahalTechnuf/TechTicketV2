@@ -187,44 +187,6 @@
                         Y: =62
                         ZIndex: =2
 
-                    DataCardValueTitle_Add As dropdown:
-                        AllowEmptySelection: =true
-                        BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                        ChevronBackground: =RGBA(255, 255, 255, 1)
-                        ChevronDisabledBackground: =RGBA(244, 244, 244, 1)
-                        ChevronDisabledFill: =RGBA(166, 166, 166, 1)
-                        ChevronFill: =RGBA(33, 33, 33, 1)
-                        ChevronHoverBackground: =RGBA(212, 212, 212, 1)
-                        ChevronHoverFill: =RGBA(33, 33, 33, 1)
-                        Color: =RGBA(51, 51, 51, 1)
-                        Default: ="Select category"
-                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                        DisabledColor: =RGBA(166, 166, 166, 1)
-                        DisabledFill: =RGBA(244, 244, 244, 1)
-                        DisplayMode: =Parent.DisplayMode
-                        Fill: |
-                            =//RGBA(255, 255, 255, 1)
-                        Font: =Font.'Segoe UI'
-                        Height: =70
-                        HoverBorderColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
-                        HoverColor: =RGBA(51, 51, 51, 1)
-                        HoverFill: =RGBA(212, 212, 212, 1)
-                        Items: ='Work Progress Tracker'.Title
-                        PaddingBottom: =5
-                        PaddingLeft: =12
-                        PaddingRight: =5
-                        PaddingTop: =5
-                        PressedBorderColor: =ColorFade(Color.AliceBlue, -30%)
-                        PressedColor: =RGBA(0, 0, 0, 1)
-                        PressedFill: =RGBA(153, 207, 236, 1)
-                        SelectionFill: =RGBA(153, 207, 236, 1)
-                        Size: =21
-                        Tooltip: =Parent.DisplayName
-                        Width: =Parent.Width - 80
-                        X: =40
-                        Y: =DataCardKeyTitle_Add.Y + DataCardKeyTitle_Add.Height + 5
-                        ZIndex: =3
-
                     ErrorMessageTitle_Add As label:
                         AutoHeight: =true
                         BorderColor: =RGBA(0, 0, 0, 0)
@@ -248,7 +210,7 @@
                         Width: =Parent.Width - 60
                         X: =30
                         Y: =DataCardValueTitle_Add.Y + DataCardValueTitle_Add.Height
-                        ZIndex: =4
+                        ZIndex: =3
 
                     StarVisibleTitle_Add As label:
                         Align: =Align.Center
@@ -268,6 +230,44 @@
                         Width: =30
                         Wrap: =false
                         Y: =DataCardKeyTitle_Add.Y
+                        ZIndex: =4
+
+                    DataCardValueTitle_Add As dropdown:
+                        AllowEmptySelection: =true
+                        BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                        ChevronBackground: =RGBA(219, 219, 219, 1)
+                        ChevronDisabledBackground: =RGBA(255, 255, 255, 1)
+                        ChevronDisabledFill: =RGBA(237, 237, 237, 1)
+                        ChevronFill: =RGBA(33, 33, 33, 1)
+                        ChevronHoverBackground: =RGBA(212, 212, 212, 1)
+                        ChevronHoverFill: =RGBA(33, 33, 33, 1)
+                        Color: =RGBA(51, 51, 51, 1)
+                        Default: ="Select category"
+                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        DisabledFill: =RGBA(244, 244, 244, 1)
+                        DisplayMode: =Parent.DisplayMode
+                        Fill: |
+                            =//RGBA(255, 255, 255, 1)
+                        Font: =Font.'Segoe UI'
+                        Height: =70
+                        HoverBorderColor: =Color.LightSkyBlue
+                        HoverColor: =RGBA(51, 51, 51, 1)
+                        HoverFill: =RGBA(0, 0, 0, 0)
+                        Items: ='Work Progress Tracker'.Title
+                        PaddingBottom: =5
+                        PaddingLeft: =12
+                        PaddingRight: =5
+                        PaddingTop: =5
+                        PressedBorderColor: =ColorFade(Color.AliceBlue, -30%)
+                        PressedColor: =RGBA(0, 0, 0, 1)
+                        PressedFill: =RGBA(153, 207, 236, 1)
+                        SelectionFill: =RGBA(153, 207, 236, 1)
+                        Size: =21
+                        Tooltip: =Parent.DisplayName
+                        Width: =Parent.Width - 80
+                        X: =40
+                        Y: =DataCardKeyTitle_Add.Y + DataCardKeyTitle_Add.Height + 5
                         ZIndex: =5
 
                 Add_Desc As typedDataCard.textualEditCard:
@@ -438,7 +438,7 @@
                         HoverBorderColor: =RGBA(0, 0, 0, 0)
                         HoverFill: =RGBA(0, 0, 0, 0)
                         Image: |-
-                            =If(ClearImage, Blank(), If(IsBlank(AddPictureImage_Edit.Media), Parent.Default, AddPictureImage_Edit.Media))
+                            =If(ClearImage, Blank(), If(IsBlank(AddPictureImage_Add.Media), Parent.Default, AddPictureImage_Add.Media))
                             
                             //If(IsBlank(AddPictureImage_Add.Media), Parent.Default, AddPictureImage_Add.Media)
                         PressedBorderColor: =RGBA(0, 0, 0, 0)

@@ -64,7 +64,7 @@
 
         BodyContDash As groupContainer.verticalAutoLayoutContainer:
             BorderStyle: =BorderStyle.None
-            Height: =777
+            Height: =Parent.Height - HeaderContDash.Height - FooterContDash.Height - SearchTicket.Height
             LayoutDirection: =LayoutDirection.Vertical
             LayoutMode: =LayoutMode.Auto
             RadiusBottomLeft: =4
@@ -526,82 +526,6 @@
                 Y: =72
                 ZIndex: =2
 
-        SearchTicket As text:
-            BorderColor: =RGBA(0, 134, 208, 1)
-            BorderThickness: =2
-            Color: =RGBA(51, 51, 51, 1)
-            Default: =""
-            DelayOutput: =true
-            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            DisabledFill: =RGBA(244, 244, 244, 1)
-            FocusedBorderThickness: =4
-            Font: =Font.'Segoe UI'
-            Height: =50
-            HintText: ="Search"
-            HoverBorderColor: =ColorFade(RGBA(0, 134, 208, 1), -30%)
-            HoverColor: =RGBA(51, 51, 51, 1)
-            HoverFill: =RGBA(255, 255, 255, 1)
-            PaddingLeft: =70
-            PressedBorderColor: =RGBA(0, 134, 208, 1)
-            PressedColor: =RGBA(51, 51, 51, 1)
-            PressedFill: =RGBA(255, 255, 255, 1)
-            RadiusBottomLeft: =15
-            RadiusBottomRight: =15
-            RadiusTopLeft: =15
-            RadiusTopRight: =15
-            Size: =20
-            Width: =541
-            X: =22
-            Y: =193
-            ZIndex: =4
-
-        SearchIcon As icon.Search:
-            BorderColor: =RGBA(0, 0, 0, 0)
-            Color: =RGBA(128, 128, 128, 1)
-            DisabledBorderColor: =RGBA(166, 166, 166, 1)
-            DisabledColor: =RGBA(220, 220, 220, 1)
-            DisabledFill: =RGBA(0, 0, 0, 0)
-            FocusedBorderThickness: =4
-            Height: =50
-            HoverBorderColor: =RGBA(0, 0, 0, 0)
-            HoverColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
-            HoverFill: =RGBA(0, 0, 0, 0)
-            Icon: =Icon.Search
-            PaddingBottom: =14
-            PaddingLeft: =14
-            PaddingRight: =14
-            PaddingTop: =14
-            PressedBorderColor: =RGBA(0, 0, 0, 0)
-            PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
-            PressedFill: =RGBA(0, 0, 0, 0)
-            Tooltip: ="Search"
-            Width: =69
-            X: =11
-            Y: =193
-            ZIndex: =5
-
-        PageRefresh As icon.Reload:
-            AccessibleLabel: =Self.Tooltip
-            BorderColor: =RGBA(0, 0, 0, 0)
-            Color: =RGBA(0, 134, 208, 1)
-            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-            DisabledColor: =RGBA(220, 220, 220, 1)
-            Height: =78
-            Icon: =Icon.Reload
-            OnSelect: =Refresh([@'Technuf Ticketing System'])
-            PaddingBottom: =22
-            PaddingLeft: =22
-            PaddingRight: =22
-            PaddingTop: =22
-            PressedFill: =RGBA(0, 0, 0, 0)
-            TabIndex: =0
-            Tooltip: ="Refresh list"
-            Width: =76
-            X: =564
-            Y: =179
-            ZIndex: =6
-
         NoImage As image:
             BorderColor: =RGBA(0, 0, 0, 0)
             BorderStyle: =BorderStyle.None
@@ -659,4 +583,89 @@
             X: =40
             Y: =758
             ZIndex: =9
+
+        SearchBarCont As groupContainer.manualLayoutContainer:
+            Height: =54
+            RadiusBottomLeft: =4
+            RadiusBottomRight: =4
+            RadiusTopLeft: =4
+            RadiusTopRight: =4
+            Width: =Parent.Width
+            Y: |
+                =Parent.Height/6
+            ZIndex: =10
+
+            SearchTicket As text:
+                BorderColor: =RGBA(0, 134, 208, 1)
+                BorderThickness: =2
+                Color: =RGBA(51, 51, 51, 1)
+                Default: =""
+                DelayOutput: =true
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                FocusedBorderThickness: =4
+                Font: =Font.'Segoe UI'
+                Height: =50
+                HintText: ="Search"
+                HoverBorderColor: =ColorFade(RGBA(0, 134, 208, 1), -30%)
+                HoverColor: =RGBA(51, 51, 51, 1)
+                HoverFill: =RGBA(255, 255, 255, 1)
+                PaddingLeft: =70
+                PressedBorderColor: =RGBA(0, 134, 208, 1)
+                PressedColor: =RGBA(51, 51, 51, 1)
+                PressedFill: =RGBA(255, 255, 255, 1)
+                RadiusBottomLeft: =15
+                RadiusBottomRight: =15
+                RadiusTopLeft: =15
+                RadiusTopRight: =15
+                Size: =20
+                Width: =500
+                X: =20
+                ZIndex: =1
+
+            SearchIcon As icon.Search:
+                BorderColor: =RGBA(0, 0, 0, 0)
+                Color: =RGBA(128, 128, 128, 1)
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(220, 220, 220, 1)
+                DisabledFill: =RGBA(0, 0, 0, 0)
+                FocusedBorderThickness: =4
+                Height: =50
+                HoverBorderColor: =RGBA(0, 0, 0, 0)
+                HoverColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
+                HoverFill: =RGBA(0, 0, 0, 0)
+                Icon: =Icon.Search
+                PaddingBottom: =14
+                PaddingLeft: =14
+                PaddingRight: =14
+                PaddingTop: =14
+                PressedBorderColor: =RGBA(0, 0, 0, 0)
+                PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
+                PressedFill: =RGBA(0, 0, 0, 0)
+                Tooltip: ="Search"
+                Width: =69
+                X: =32
+                ZIndex: =2
+
+            RefreshIcon As icon.Reload:
+                BorderColor: =RGBA(0, 0, 0, 0)
+                Color: =RGBA(102, 182, 227, 1)
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(220, 220, 220, 1)
+                DisabledFill: =RGBA(0, 0, 0, 0)
+                FocusedBorderThickness: =4
+                Height: =50
+                HoverBorderColor: =RGBA(0, 0, 0, 0)
+                HoverColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
+                HoverFill: =RGBA(0, 0, 0, 0)
+                Icon: =Icon.Reload
+                OnSelect: =Refresh([@'Technuf Ticketing System'])
+                PressedBorderColor: =RGBA(0, 0, 0, 0)
+                PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
+                PressedFill: =RGBA(0, 0, 0, 0)
+                Rotation: =90
+                Width: =120
+                X: =520
+                ZIndex: =3
 
