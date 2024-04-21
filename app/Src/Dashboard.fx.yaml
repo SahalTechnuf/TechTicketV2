@@ -616,7 +616,7 @@
             Visible: =CountRows(DashTickets.AllItems) = 0
             Width: =242
             X: =199
-            Y: =520
+            Y: =476
             ZIndex: =7
 
         Label1 As label:
