@@ -133,7 +133,7 @@
                     AllowedValues: =DataSourceInfo([@'Technuf Ticketing System'], DataSourceInfo.AllowedValues, "Title")
                     BorderColor: =RGBA(166, 166, 166, 1)
                     BorderStyle: =BorderStyle.Solid
-                    DataField: ="Title"
+                    DataField: ="Select category"
                     Default: ="Select category"
                     DisplayMode: =Parent.DisplayMode
                     DisplayName: =DataSourceInfo([@'Technuf Ticketing System'],DataSourceInfo.DisplayName,"Title")
