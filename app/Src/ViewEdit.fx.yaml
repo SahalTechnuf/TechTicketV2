@@ -530,7 +530,7 @@
                         HoverBorderColor: =RGBA(0, 0, 0, 0)
                         HoverFill: =RGBA(0, 0, 0, 0)
                         Image: |-
-                            =If(ClearImage , Parent.Default, AddPictureImage_Edit.Media)
+                            =If(ClearImage , Blank(), AddPictureImage_Edit.Media)
                             
                             //IsBlank(AddPictureImage_Edit.Media)
                         PressedBorderColor: =RGBA(0, 0, 0, 0)
