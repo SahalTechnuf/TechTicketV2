@@ -609,16 +609,16 @@
             DisabledBorderColor: =RGBA(0, 0, 0, 0)
             DisabledFill: =RGBA(0, 0, 0, 0)
             FocusedBorderThickness: =4
-            Height: =190
+            Height: =311
             HoverBorderColor: =RGBA(0, 0, 0, 0)
             HoverFill: =RGBA(0, 0, 0, 0)
             Image: =Picture1
             PressedBorderColor: =RGBA(0, 0, 0, 0)
             PressedFill: =RGBA(0, 0, 0, 0)
             Visible: =CountRows(DashTickets.AllItems) = 0
-            Width: =242
-            X: =199
-            Y: =476
+            Width: =376
+            X: =132
+            Y: =399
             ZIndex: =7
 
         Label1 As label:
@@ -632,7 +632,7 @@
             FocusedBorderThickness: =4
             Font: =Font.'Segoe UI'
             FontWeight: =FontWeight.Bold
-            Height: =70
+            Height: =48
             Size: =25
             Text: ="No tickets to display"
             Visible: =CountRows(DashTickets.AllItems)=0
@@ -651,12 +651,12 @@
             DisabledColor: =RGBA(166, 166, 166, 1)
             FocusedBorderThickness: =4
             Font: =Font.'Segoe UI'
-            Height: =70
+            Height: =38
             Size: =18
             Text: ="Please create your first ticket below"
             Visible: =CountRows(DashTickets.AllItems)=0
             Width: =560
             X: =40
-            Y: =780
+            Y: =758
             ZIndex: =9
 
