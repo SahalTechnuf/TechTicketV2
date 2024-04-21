@@ -808,6 +808,36 @@
           },
           "ruleId": "app-UnusedMediaResources",
           "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ViewEdit.ClearImage"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ViewEdit.ClearImage",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "ClearImage",
+                "module": "ViewEdit",
+                "type": "ViewEdit"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 5
         }
       ],
       "tool": {
