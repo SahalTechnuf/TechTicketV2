@@ -603,7 +603,7 @@
                         PressedFill: =RGBA(0, 0, 0, 0)
                         Visible: =IsBlank(ImageImage_Edit.Image)
                         Width: =104
-                        X: =255
+                        X: =265
                         Y: =132
                         ZIndex: =6
 
@@ -743,7 +743,7 @@
                         RadiusTopRight: =15
                         Size: =21
                         Tooltip: =Parent.DisplayName
-                        Width: =564
+                        Width: =560
                         X: =40
                         Y: =DataCardKeyDesc_Edit.Y + DataCardKeyDesc_Edit.Height + 5
                         ZIndex: =2
