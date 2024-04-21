@@ -1,6 +1,8 @@
 "ViewEdit As screen.'phoneBrowseLayout_ver3.0'":
     LoadingSpinnerColor: =RGBA(135, 100, 184, 1)
-    OnVisible: =Set(VarDeleteImg,false)
+    OnVisible: |-
+        =Set(VarDeleteImg,false);
+        Set(ClearImage, false)
 
     ParentContView As groupContainer.manualLayoutContainer:
         DropShadow: =DropShadow.Light
@@ -668,6 +670,7 @@
                         HoverBorderColor: =RGBA(0, 0, 0, 0)
                         HoverColor: =RGBA(255, 255, 255, 1)
                         HoverFill: =ColorFade(RGBA(135, 100, 184, 1), 80%)
+                        OnSelect: =Set(ClearImage, false)
                         PressedBorderColor: =ColorFade(RGBA(0, 134, 208, 1), -50%)
                         PressedColor: =RGBA(255, 255, 255, 1)
                         PressedFill: =ColorFade(RGBA(135, 100, 184, 1), -30%)
