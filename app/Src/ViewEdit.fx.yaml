@@ -465,80 +465,13 @@
                         =Parent.DisplayMode
                     DisplayName: =DataSourceInfo([@'Technuf Ticketing System'],DataSourceInfo.DisplayName,"Image_x0028_Optional_x0029_")
                     Fill: =RGBA(0, 0, 0, 0)
-                    Height: =295
+                    Height: =338
                     Required: =false
                     Update: =ImageImage_Edit.Image
                     Width: =ViewEdit.Width/ViewEdit.Size
                     X: =0
                     Y: =2
                     ZIndex: =1
-
-                    DataCardKeyImage_Edit As label:
-                        AutoHeight: =true
-                        BorderColor: =RGBA(0, 0, 0, 0)
-                        BorderStyle: =BorderStyle.None
-                        BorderThickness: =2
-                        Color: =RGBA(51, 51, 51, 1)
-                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                        DisabledColor: =RGBA(166, 166, 166, 1)
-                        FocusedBorderThickness: =4
-                        Font: =Font.'Segoe UI'
-                        FontWeight: =FontWeight.Semibold
-                        Height: =48
-                        PaddingLeft: =0
-                        Size: =21
-                        Text: =Parent.DisplayName
-                        Width: =Parent.Width - 60
-                        Wrap: =false
-                        X: =30
-                        Y: =10
-                        ZIndex: =1
-
-                    ErrorMessageImage_Edit As label:
-                        AutoHeight: =true
-                        BorderColor: =RGBA(0, 0, 0, 0)
-                        BorderStyle: =BorderStyle.None
-                        BorderThickness: =2
-                        Color: =RGBA(168, 0, 0, 1)
-                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                        DisabledColor: =RGBA(168, 0, 0, 1)
-                        FocusedBorderThickness: =4
-                        Font: =Font.'Segoe UI'
-                        FontWeight: =FontWeight.Semibold
-                        Height: =10
-                        Live: =Live.Assertive
-                        PaddingBottom: =0
-                        PaddingLeft: =0
-                        PaddingRight: =0
-                        PaddingTop: =0
-                        Size: =21
-                        Text: =Parent.Error
-                        Visible: =Parent.DisplayMode=DisplayMode.Edit
-                        Width: =Parent.Width - 60
-                        X: =30
-                        Y: =ImageImage_Edit.Y + ImageImage_Edit.Height
-                        ZIndex: =2
-
-                    StarVisibleImage_Edit As label:
-                        Align: =Align.Center
-                        BorderColor: =RGBA(0, 0, 0, 0)
-                        BorderStyle: =BorderStyle.None
-                        BorderThickness: =2
-                        Color: =RGBA(51, 51, 51, 1)
-                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                        DisabledColor: =RGBA(166, 166, 166, 1)
-                        FocusedBorderThickness: =4
-                        Font: =Font.'Segoe UI'
-                        FontWeight: =FontWeight.Semibold
-                        Height: =DataCardKeyImage_Edit.Height
-                        PaddingLeft: =0
-                        Size: =21
-                        Text: ="*"
-                        Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                        Width: =30
-                        Wrap: =false
-                        Y: =DataCardKeyImage_Edit.Y
-                        ZIndex: =3
 
                     ImageTrashIconImage_Edit As icon.Trash:
                         BorderColor: =RGBA(0, 0, 0, 0)
@@ -563,33 +496,58 @@
                         Y: =89
                         ZIndex: =4
 
+                    DataCardKeyImage_Edit As label:
+                        AutoHeight: =true
+                        BorderColor: =RGBA(0, 0, 0, 0)
+                        BorderStyle: =BorderStyle.None
+                        BorderThickness: =2
+                        Color: =RGBA(51, 51, 51, 1)
+                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        FocusedBorderThickness: =4
+                        Font: =Font.'Segoe UI'
+                        FontWeight: =FontWeight.Semibold
+                        Height: =48
+                        PaddingLeft: =0
+                        Size: =21
+                        Text: =Parent.DisplayName
+                        Width: =Parent.Width - 60
+                        Wrap: =false
+                        X: =30
+                        Y: =10
+                        ZIndex: =5
+
                     ImageImage_Edit As image:
                         BorderColor: =RGBA(153, 207, 236, 1)
-                        BorderStyle: =BorderStyle.Dotted
+                        BorderStyle: =BorderStyle.Dashed
                         BorderThickness: =2
                         DisabledBorderColor: =RGBA(0, 0, 0, 0)
                         DisabledFill: =RGBA(0, 0, 0, 0)
+                        DisplayMode: =Parent.DisplayMode
+                        Fill: =RGBA(204, 231, 246, 1)
                         FocusedBorderThickness: =4
                         Height: =282
                         HoverBorderColor: =RGBA(0, 0, 0, 0)
                         HoverFill: =RGBA(0, 0, 0, 0)
-                        Image: = If(IsBlank(AddPictureImage_Edit.Media),If(VarDeleteImg,Blank(), Parent.Default), AddPictureImage_Edit.Media)
+                        Image: =If(IsBlank(AddPictureImage_Edit.Media), Parent.Default, AddPictureImage_Edit.Media)
                         PressedBorderColor: =RGBA(0, 0, 0, 0)
                         PressedFill: =RGBA(0, 0, 0, 0)
                         RadiusBottomLeft: =15
                         RadiusBottomRight: =15
                         RadiusTopLeft: =15
                         RadiusTopRight: =15
-                        Width: =564
+                        Tooltip: =Parent.DisplayName
+                        Width: =Parent.Width - 80
                         X: =40
-                        Y: =62
-                        ZIndex: =5
+                        Y: =72
+                        ZIndex: =6
 
                     AddPictureImage_Edit As addMedia:
-                        BorderColor: =RGBA(0, 0, 0, 0)
+                        BorderColor: =RGBA(153, 207, 236, 1)
                         BorderStyle: =BorderStyle.None
                         BorderThickness: =2
                         ChangePictureText: =""
+                        Color: =RGBA(0, 0, 0, 1)
                         DisabledBorderColor: =RGBA(0, 0, 0, 0)
                         DisabledColor: =RGBA(166, 166, 166, 1)
                         DisabledFill: =RGBA(0, 134, 208, 1)
@@ -599,15 +557,123 @@
                         Height: =282
                         HoverBorderColor: =RGBA(0, 0, 0, 0)
                         HoverColor: =RGBA(255, 255, 255, 1)
-                        HoverFill: =ColorFade(RGBA(0, 134, 208, 1), -10%)
+                        HoverFill: =ColorFade(RGBA(135, 100, 184, 1), 80%)
                         PressedBorderColor: =ColorFade(RGBA(0, 134, 208, 1), -50%)
                         PressedColor: =RGBA(255, 255, 255, 1)
-                        PressedFill: =ColorFade(RGBA(0, 134, 208, 1), -30%)
-                        Size: =24
-                        Width: =562
+                        PressedFill: =ColorFade(RGBA(135, 100, 184, 1), -30%)
+                        Size: =18
+                        Text: =""
+                        Width: =Parent.Width - 80
                         X: =40
-                        Y: =62
-                        ZIndex: =6
+                        Y: =72
+                        ZIndex: =7
+
+                    ErrorMessageImage_Edit As label:
+                        AutoHeight: =true
+                        BorderColor: =RGBA(0, 0, 0, 0)
+                        BorderStyle: =BorderStyle.None
+                        BorderThickness: =2
+                        Color: =RGBA(168, 0, 0, 1)
+                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                        DisabledColor: =RGBA(168, 0, 0, 1)
+                        FocusedBorderThickness: =4
+                        Font: =Font.'Segoe UI'
+                        FontWeight: =FontWeight.Semibold
+                        Height: =10
+                        Live: =Live.Assertive
+                        PaddingBottom: =0
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        Size: =21
+                        Text: =Parent.Error
+                        Visible: =Parent.DisplayMode=DisplayMode.Edit
+                        Width: =Parent.Width - 60
+                        X: =30
+                        Y: =ImageImage_Edit.Y + ImageImage_Edit.Height
+                        ZIndex: =8
+
+                    StarVisibleImage_Edit As label:
+                        Align: =Align.Center
+                        BorderColor: =RGBA(0, 0, 0, 0)
+                        BorderStyle: =BorderStyle.None
+                        BorderThickness: =2
+                        Color: =RGBA(51, 51, 51, 1)
+                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        FocusedBorderThickness: =4
+                        Font: =Font.'Segoe UI'
+                        FontWeight: =FontWeight.Semibold
+                        Height: =DataCardKeyImage_Edit.Height
+                        PaddingLeft: =0
+                        Size: =21
+                        Text: ="*"
+                        Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                        Width: =30
+                        Wrap: =false
+                        Y: =DataCardKeyImage_Edit.Y
+                        ZIndex: =9
+
+                    Icon_upload_Edit As image:
+                        BorderColor: =RGBA(0, 0, 0, 0)
+                        BorderStyle: =BorderStyle.None
+                        BorderThickness: =2
+                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                        DisabledFill: =RGBA(0, 0, 0, 0)
+                        FocusedBorderThickness: =4
+                        Height: =71
+                        HoverBorderColor: =RGBA(0, 0, 0, 0)
+                        HoverFill: =RGBA(0, 0, 0, 0)
+                        Image: ='file-upload_10015516'
+                        PressedBorderColor: =RGBA(0, 0, 0, 0)
+                        PressedFill: =RGBA(0, 0, 0, 0)
+                        Visible: =IsBlank(ImageImage_Edit.Image)
+                        Width: =104
+                        X: =255
+                        Y: =132
+                        ZIndex: =10
+
+                    upload_Edit As label:
+                        Align: =Align.Center
+                        BorderColor: =RGBA(0, 0, 0, 0)
+                        BorderStyle: =BorderStyle.None
+                        BorderThickness: =2
+                        Color: =RGBA(51, 51, 51, 1)
+                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        FocusedBorderThickness: =4
+                        Font: =Font.'Segoe UI'
+                        FontWeight: =FontWeight.Bold
+                        Height: =35
+                        Size: =18
+                        Text: ="Upload a photo"
+                        Visible: =IsBlank(ImageImage_Edit.Image)
+                        Width: =560
+                        X: =40
+                        Y: =213
+                        ZIndex: =11
+
+                    format_Edit As label:
+                        Align: =Align.Center
+                        BorderColor: =RGBA(0, 0, 0, 0)
+                        BorderStyle: =BorderStyle.None
+                        BorderThickness: =2
+                        Color: =RGBA(51, 51, 51, 1)
+                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        FocusedBorderThickness: =4
+                        Font: =Font.'Segoe UI'
+                        FontWeight: =FontWeight.Lighter
+                        Height: =35
+                        PaddingLeft: =20
+                        Size: =18
+                        Text: |-
+                            ="Supported format: PNG, JPEG, GIF"
+                        Visible: =IsBlank(ImageImage_Edit.Image)
+                        Width: =560
+                        X: =40
+                        Y: =248
+                        ZIndex: =12
 
                 Edit_Desc As typedDataCard.textualEditCard:
                     BorderColor: =RGBA(166, 166, 166, 1)

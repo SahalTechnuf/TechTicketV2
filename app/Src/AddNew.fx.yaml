@@ -510,6 +510,7 @@
                         HoverBorderColor: =RGBA(0, 0, 0, 0)
                         HoverFill: =RGBA(0, 0, 0, 0)
                         Image: ='file-upload_10015516'
+                        OnSelect: =AddPictureImage_Add
                         PressedBorderColor: =RGBA(0, 0, 0, 0)
                         PressedFill: =RGBA(0, 0, 0, 0)
                         Visible: =IsBlank(ImageImage_Add.Image)
@@ -530,6 +531,7 @@
                         Font: =Font.'Segoe UI'
                         FontWeight: =FontWeight.Bold
                         Height: =35
+                        OnSelect: =AddPictureImage_Add
                         Size: =18
                         Text: ="Upload a photo"
                         Visible: =IsBlank(ImageImage_Add.Image)
@@ -550,6 +552,7 @@
                         Font: =Font.'Segoe UI'
                         FontWeight: =FontWeight.Lighter
                         Height: =35
+                        OnSelect: =AddPictureImage_Add
                         PaddingLeft: =20
                         Size: =18
                         Text: |-
