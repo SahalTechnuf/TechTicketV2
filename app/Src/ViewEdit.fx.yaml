@@ -189,7 +189,7 @@
                         LayoutMinWidth: =560
                         PaddingLeft: =0
                         Size: =17
-                        Text: =Text(selectedItem.IssueDateandTime)
+                        Text: =Text(selectedItem.)
                         Width: |
                             =410
                         ZIndex: =2

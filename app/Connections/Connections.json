@@ -1,13 +1,9 @@
 {
-  "1f7e6a70-f875-4386-b325-27efc8dca6ed": {
-    "appActions": [],
+  "0187e4a0-d356-4e03-9fb3-2b07cd44e52d": {
     "connectionRef": {
-      "apiTier": "Standard",
       "displayName": "Office 365 Users",
-      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1672/1.0.1672.3545/office365users/icon.png",
-      "id": "/providers/microsoft.powerapps/apis/shared_office365users",
-      "parameterHints": {},
-      "parameterHintsV2": {}
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1677/1.0.1677.3637/office365users/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_office365users"
     },
     "datasets": {},
     "dataSources": [
@@ -15,9 +11,9 @@
     ],
     "dependencies": {},
     "dependents": [],
-    "id": "1f7e6a70-f875-4386-b325-27efc8dca6ed"
+    "id": "0187e4a0-d356-4e03-9fb3-2b07cd44e52d"
   },
-  "c9aba788-6919-4c0f-98e0-23917e9885b9": {
+  "31542835-9102-43de-9b1d-5a1ce7fde00a": {
     "connectionRef": {
       "displayName": "SharePoint",
       "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1682/1.0.1682.3676/sharepointonline/icon.png",
@@ -26,7 +22,10 @@
     "datasets": {
       "https://netorg4829107.sharepoint.com/sites/TechnufTicketingSystem2": {
         "dataSources": {
-          "Technuf Ticketing System": {
+          "Documents": {
+            "tableName": "ee086139-93f7-4d12-b142-2cd2dd71bb05"
+          },
+          "Technuf Service Request": {
             "tableName": "43fb151c-b96a-45ba-868b-2de2bc0843ea"
           },
           "Work Progress Tracker": {
@@ -36,11 +35,12 @@
       }
     },
     "dataSources": [
-      "Technuf Ticketing System",
+      "Technuf Service Request",
+      "Documents",
       "Work Progress Tracker"
     ],
     "dependencies": {},
     "dependents": [],
-    "id": "c9aba788-6919-4c0f-98e0-23917e9885b9"
+    "id": "31542835-9102-43de-9b1d-5a1ce7fde00a"
   }
 }

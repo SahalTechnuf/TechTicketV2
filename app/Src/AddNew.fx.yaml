@@ -81,8 +81,8 @@
                         IsBlank(DataCardValueTitle_Add.Selected) || IsBlank(DataCardValueDesc_Add.Text),
                         Notify("Please fill in all required fields.", NotificationType.Error),
                         Patch(
-                            'Technuf Ticketing System',
-                            Defaults('Technuf Ticketing System'),
+                            'Technuf Service Request',
+                            Defaults('Technuf Service Request'),
                             {
                                 Title: DataCardValueTitle_Add.Selected.Title,
                                 Description: DataCardValueDesc_Add.Text,
@@ -124,7 +124,7 @@
             AddForm As form:
                 BorderColor: =RGBA(166, 166, 166, 1)
                 BorderStyle: =BorderStyle.None
-                DataSource: ='Technuf Ticketing System'
+                DataSource: ='Technuf Service Request'
                 DefaultMode: =FormMode.New
                 LayoutMinHeight: =700
                 LayoutMinWidth: =320
@@ -132,13 +132,13 @@
                 ZIndex: =1
 
                 Add_Title As typedDataCard.allowedValuesStringEditCard:
-                    AllowedValues: =DataSourceInfo([@'Technuf Ticketing System'], DataSourceInfo.AllowedValues, "Title")
+                    AllowedValues: =DataSourceInfo([@'Technuf Service Request'], DataSourceInfo.AllowedValues, "Title")
                     BorderColor: =RGBA(166, 166, 166, 1)
                     BorderStyle: =BorderStyle.Solid
                     DataField: ="Select category"
                     Default: =
                     DisplayMode: =Parent.DisplayMode
-                    DisplayName: =DataSourceInfo([@'Technuf Ticketing System'],DataSourceInfo.DisplayName,"Title")
+                    DisplayName: =DataSourceInfo([@'Technuf Service Request'],DataSourceInfo.DisplayName,"Title")
                     Fill: =RGBA(0, 0, 0, 0)
                     Height: =50
                     Required: =false
@@ -258,10 +258,10 @@
                     DataField: ="Description"
                     Default: =ThisItem.Description
                     DisplayMode: =Parent.DisplayMode
-                    DisplayName: =DataSourceInfo([@'Technuf Ticketing System'],DataSourceInfo.DisplayName,"Description")
+                    DisplayName: =DataSourceInfo([@'Technuf Service Request'],DataSourceInfo.DisplayName,"Description")
                     Fill: =RGBA(0, 0, 0, 0)
                     Height: =150
-                    MaxLength: =DataSourceInfo([@'Technuf Ticketing System'], DataSourceInfo.MaxLength, "Description")
+                    MaxLength: =DataSourceInfo([@'Technuf Service Request'], DataSourceInfo.MaxLength, "Description")
                     Required: =true
                     Update: =DataCardValueDesc_Add.Text
                     Width: =AddNew.Width/AddNew.Size
@@ -376,7 +376,7 @@
                     DataField: ="Image_x0028_Optional_x0029_"
                     Default: =ThisItem.'Image (Optional)'
                     DisplayMode: =Parent.DisplayMode
-                    DisplayName: =DataSourceInfo([@'Technuf Ticketing System'],DataSourceInfo.DisplayName,"Image_x0028_Optional_x0029_")
+                    DisplayName: =DataSourceInfo([@'Technuf Service Request'],DataSourceInfo.DisplayName,"Image_x0028_Optional_x0029_")
                     Fill: =RGBA(0, 0, 0, 0)
                     Height: =384
                     Required: =false
