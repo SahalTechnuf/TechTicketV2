@@ -94,6 +94,96 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "AddNew.ParentContAdd.BodyContAdd.AddForm.Add_Title.DataCardValueTitle_Add.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "AddNew.ParentContAdd.BodyContAdd.AddForm.Add_Title.DataCardValueTitle_Add.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "AddNew",
+                "type": "AddNew.ParentContAdd.BodyContAdd.AddForm.Add_Title.DataCardValueTitle_Add"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "AddNew.ParentContAdd.BodyContAdd.AddForm.Add_Desc.DataCardValueDesc_Add.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "AddNew.ParentContAdd.BodyContAdd.AddForm.Add_Desc.DataCardValueDesc_Add.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "AddNew",
+                "type": "AddNew.ParentContAdd.BodyContAdd.AddForm.Add_Desc.DataCardValueDesc_Add"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "AddNew.ParentContAdd.BodyContAdd.AddForm.Add_Image.AddPictureImage_Add.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "AddNew.ParentContAdd.BodyContAdd.AddForm.Add_Image.AddPictureImage_Add.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "AddNew",
+                "type": "AddNew.ParentContAdd.BodyContAdd.AddForm.Add_Image.AddPictureImage_Add"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "Dashboard.ParentContDash.SearchTicket.AccessibleLabel"
                 }
               ],
@@ -208,66 +298,6 @@
           },
           "ruleId": "acc-FocusBorderShouldBeVisible",
           "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "AddNew.ParentContAdd.BodyContAdd.AddForm.Add_Desc.DataCardValueDesc_Add.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "AddNew.ParentContAdd.BodyContAdd.AddForm.Add_Desc.DataCardValueDesc_Add.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "AddNew",
-                "type": "AddNew.ParentContAdd.BodyContAdd.AddForm.Add_Desc.DataCardValueDesc_Add"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "AddNew.ParentContAdd.BodyContAdd.AddForm.Add_Image.AddPictureImage_Add.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "AddNew.ParentContAdd.BodyContAdd.AddForm.Add_Image.AddPictureImage_Add.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "AddNew",
-                "type": "AddNew.ParentContAdd.BodyContAdd.AddForm.Add_Image.AddPictureImage_Add"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
         },
         {
           "locations": [
@@ -478,36 +508,6 @@
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
           "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "AddNew.ParentContAdd.BodyContAdd.AddForm.Add_Title.DataCardValueTitle_Add.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "AddNew.ParentContAdd.BodyContAdd.AddForm.Add_Title.DataCardValueTitle_Add.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "AddNew",
-                "type": "AddNew.ParentContAdd.BodyContAdd.AddForm.Add_Title.DataCardValueTitle_Add"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
         },
         {
           "locations": [

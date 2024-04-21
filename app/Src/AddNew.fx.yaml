@@ -232,7 +232,7 @@
                         BorderColor: =RGBA(0, 0, 0, 0)
                         BorderStyle: =BorderStyle.None
                         BorderThickness: =2
-                        Color: =RGBA(51, 51, 51, 1)
+                        Color: =RGBA(255, 0, 0, 1)
                         DisabledBorderColor: =RGBA(0, 0, 0, 0)
                         DisabledColor: =RGBA(166, 166, 166, 1)
                         FocusedBorderThickness: =4
@@ -242,7 +242,6 @@
                         PaddingLeft: =0
                         Size: =21
                         Text: ="*"
-                        Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                         Width: =30
                         Wrap: =false
                         Y: =DataCardKeyTitle_Add.Y
