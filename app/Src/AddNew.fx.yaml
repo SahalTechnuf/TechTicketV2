@@ -512,9 +512,10 @@
                         Image: ='file-upload_10015516'
                         PressedBorderColor: =RGBA(0, 0, 0, 0)
                         PressedFill: =RGBA(0, 0, 0, 0)
+                        Visible: =IsBlank(ImageImage_Add.Image)
                         Width: =104
-                        X: =268
-                        Y: =125
+                        X: =255
+                        Y: =132
                         ZIndex: =6
 
                     upload As label:
@@ -531,6 +532,7 @@
                         Height: =35
                         Size: =18
                         Text: ="Upload a photo"
+                        Visible: =IsBlank(ImageImage_Add.Image)
                         Width: =560
                         X: =40
                         Y: =213
@@ -552,6 +554,7 @@
                         Size: =18
                         Text: |-
                             ="Supported format: PNG, JPEG, GIF"
+                        Visible: =IsBlank(ImageImage_Add.Image)
                         Width: =560
                         X: =40
                         Y: =248
