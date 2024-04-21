@@ -55,7 +55,7 @@
                 RadiusTopLeft: =15
                 RadiusTopRight: =15
                 Size: =24
-                Text: ="New Ticket"
+                Text: ="Add New Ticket"
                 Width: |
                     =600
                 X: =13
