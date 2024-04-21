@@ -521,7 +521,7 @@
                         Y: =132
                         ZIndex: =6
 
-                    upload As button:
+                    button_text_upload As button:
                         BorderColor: =RGBA(0, 0, 0, 0)
                         BorderStyle: =BorderStyle.None
                         Color: =RGBA(0, 0, 0, 1)
@@ -537,7 +537,7 @@
                         HoverColor: =RGBA(0, 0, 0, 1)
                         HoverFill: =Color.Transparent
                         PressedBorderColor: =Color.Transparent
-                        PressedColor: =RGBA(255, 255, 255, 1)
+                        PressedColor: =RGBA(0, 0, 0, 1)
                         PressedFill: =Color.Transparent
                         RadiusBottomLeft: =0
                         RadiusBottomRight: =0
@@ -551,7 +551,7 @@
                         Y: =213
                         ZIndex: =9
 
-                    format As button:
+                    button_text_format As button:
                         BorderColor: =RGBA(0, 0, 0, 0)
                         BorderStyle: =BorderStyle.None
                         Color: =RGBA(0, 0, 0, 1)
@@ -567,7 +567,7 @@
                         HoverColor: =RGBA(0, 0, 0, 1)
                         HoverFill: =Color.Transparent
                         PressedBorderColor: =Color.Transparent
-                        PressedColor: =RGBA(255, 255, 255, 1)
+                        PressedColor: =RGBA(0, 0, 0, 1)
                         PressedFill: =Color.Transparent
                         RadiusBottomLeft: =0
                         RadiusBottomRight: =0
@@ -582,7 +582,7 @@
                         Y: =248
                         ZIndex: =10
 
-                    upload_1 As button:
+                    button_upload As button:
                         BorderColor: =RGBA(0, 0, 0, 0)
                         Color: =RGBA(0, 0, 0, 0)
                         DisabledBorderColor: =RGBA(0, 0, 0, 0)
@@ -596,6 +596,7 @@
                         HoverBorderColor: =RGBA(0, 0, 0, 0)
                         HoverColor: =Color.Transparent
                         HoverFill: =Color.Transparent
+                        OnSelect: =If(IsBlank(AddPictureImage_Add.Media), Parent.Default, AddPictureImage_Add.Media)
                         PressedBorderColor: =Color.Transparent
                         PressedColor: =Color.Transparent
                         PressedFill: =Color.Transparent
