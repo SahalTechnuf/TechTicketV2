@@ -1,5 +1,7 @@
 "Dashboard As screen.'phoneBrowseLayout_ver3.0'":
     LoadingSpinnerColor: =RGBA(135, 100, 184, 1)
+    Width: |
+        =Max(App.Width, App.MinScreenWidth)
 
     ParentContDash As groupContainer.manualLayoutContainer:
         BorderStyle: =BorderStyle.None
