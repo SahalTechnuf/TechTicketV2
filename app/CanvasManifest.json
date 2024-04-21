@@ -118,13 +118,13 @@
     "InstrumentationKey": "",
     "LocalDatabaseReferences": "",
     "ManualOfflineProfileId": "",
-    "Name": "TechTicketV3",
+    "Name": "Technuf Service Request",
     "OriginatingVersion": "1.336",
     "ParserErrorCount": 0,
     "ShowStatusBar": true
   },
   "PublishInfo": {
-    "AppName": "TechTicketV3",
+    "AppName": "Technuf Service Request",
     "BackgroundColor": "RGBA(0,176,240,1)",
     "IconColor": "RGBA(255,255,255,1)",
     "IconName": "Edit",
