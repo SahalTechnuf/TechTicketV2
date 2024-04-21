@@ -134,10 +134,12 @@
                     BorderColor: =RGBA(166, 166, 166, 1)
                     BorderStyle: =BorderStyle.Solid
                     DataField: ="Title"
-                    Default: =Select Category
+                    Default: =""
                     DisplayMode: =Parent.DisplayMode
                     DisplayName: =DataSourceInfo([@'Technuf Ticketing System'],DataSourceInfo.DisplayName,"Title")
-                    Fill: =RGBA(0, 0, 0, 0)
+                    Fill: |-
+                        =//RGBA(0, 0, 0, 0)
+                        RGBA(255, 255, 255, 1)
                     Height: =50
                     Required: =true
                     Update: =DataCardValueTitle_Add.Selected.Title
