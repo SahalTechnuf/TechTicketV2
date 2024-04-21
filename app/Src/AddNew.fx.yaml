@@ -194,7 +194,7 @@
                         PressedBorderColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
                         PressedColor: =RGBA(255, 255, 255, 1)
                         PressedFill: =RGBA(135, 100, 184, 1)
-                        SelectionFill: =RGBA(135, 100, 184, 1)
+                        SelectionFill: =RGBA(153, 207, 236, 1)
                         Size: =21
                         Tooltip: =Parent.DisplayName
                         Width: =Parent.Width - 80
