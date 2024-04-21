@@ -17,6 +17,7 @@
             BorderStyle: =BorderStyle.None
             Height: =Parent.Height/10
             LayoutAlignItems: =LayoutAlignItems.Center
+            LayoutGap: =20
             LayoutJustifyContent: =LayoutJustifyContent.Center
             LayoutMode: =LayoutMode.Auto
             RadiusBottomLeft: =4
