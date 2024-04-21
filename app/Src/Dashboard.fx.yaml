@@ -318,7 +318,7 @@
                         DisabledColor: =RGBA(220, 220, 220, 1)
                         DisabledFill: =RGBA(0, 0, 0, 0)
                         FocusedBorderThickness: =4
-                        Height: =33
+                        Height: =35
                         HoverBorderColor: =RGBA(0, 0, 0, 0)
                         HoverColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
                         HoverFill: =RGBA(0, 0, 0, 0)
@@ -327,9 +327,9 @@
                         PressedBorderColor: =RGBA(0, 0, 0, 0)
                         PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
                         PressedFill: =RGBA(0, 0, 0, 0)
-                        Width: =42
-                        X: =171
-                        Y: =129
+                        Width: =28
+                        X: =172
+                        Y: =133
                         ZIndex: =9
 
                     Time As icon.Clock:
@@ -339,7 +339,7 @@
                         DisabledColor: =RGBA(220, 220, 220, 1)
                         DisabledFill: =RGBA(0, 0, 0, 0)
                         FocusedBorderThickness: =4
-                        Height: =35
+                        Height: =26
                         HoverBorderColor: =RGBA(0, 0, 0, 0)
                         HoverColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
                         HoverFill: =RGBA(0, 0, 0, 0)
@@ -348,9 +348,9 @@
                         PressedBorderColor: =RGBA(0, 0, 0, 0)
                         PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
                         PressedFill: =RGBA(0, 0, 0, 0)
-                        Width: =50
-                        X: =345
-                        Y: =129
+                        Width: =38
+                        X: =363
+                        Y: =138
                         ZIndex: =10
 
                     DashEmail As label:
