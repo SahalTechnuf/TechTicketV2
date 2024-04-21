@@ -134,7 +134,7 @@
                     BorderColor: =RGBA(166, 166, 166, 1)
                     BorderStyle: =BorderStyle.Solid
                     DataField: ="Title"
-                    Default: =ThisItem.Title
+                    Default: =Select Category
                     DisplayMode: =Parent.DisplayMode
                     DisplayName: =DataSourceInfo([@'Technuf Ticketing System'],DataSourceInfo.DisplayName,"Title")
                     Fill: =RGBA(0, 0, 0, 0)
@@ -167,42 +167,6 @@
                         Y: =10
                         ZIndex: =1
 
-                    DataCardValueTitle_Add As dropdown:
-                        BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                        BorderStyle: =BorderStyle.None
-                        ChevronBackground: =RGBA(255, 255, 255, 1)
-                        ChevronDisabledBackground: =RGBA(244, 244, 244, 1)
-                        ChevronDisabledFill: =RGBA(166, 166, 166, 1)
-                        ChevronFill: =RGBA(33, 33, 33, 1)
-                        ChevronHoverBackground: =RGBA(212, 212, 212, 1)
-                        ChevronHoverFill: =RGBA(33, 33, 33, 1)
-                        Color: =RGBA(51, 51, 51, 1)
-                        Default: =Parent.Default
-                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                        DisabledColor: =RGBA(166, 166, 166, 1)
-                        DisabledFill: =RGBA(244, 244, 244, 1)
-                        DisplayMode: =Parent.DisplayMode
-                        Font: =Font.'Segoe UI'
-                        Height: =70
-                        HoverBorderColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
-                        HoverColor: =RGBA(51, 51, 51, 1)
-                        HoverFill: =RGBA(212, 212, 212, 1)
-                        Items: ='Work Progress Tracker'
-                        PaddingBottom: =5
-                        PaddingLeft: =12
-                        PaddingRight: =5
-                        PaddingTop: =5
-                        PressedBorderColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
-                        PressedColor: =RGBA(255, 255, 255, 1)
-                        PressedFill: =RGBA(135, 100, 184, 1)
-                        SelectionFill: =RGBA(135, 100, 184, 1)
-                        Size: =21
-                        Tooltip: =Parent.DisplayName
-                        Width: =Parent.Width - 80
-                        X: =40
-                        Y: =DataCardKeyTitle_Add.Y + DataCardKeyTitle_Add.Height + 5
-                        ZIndex: =2
-
                     ErrorMessageTitle_Add As label:
                         AutoHeight: =true
                         BorderColor: =RGBA(0, 0, 0, 0)
@@ -226,7 +190,7 @@
                         Width: =Parent.Width - 60
                         X: =30
                         Y: =DataCardValueTitle_Add.Y + DataCardValueTitle_Add.Height
-                        ZIndex: =3
+                        ZIndex: =2
 
                     StarVisibleTitle_Add As label:
                         Align: =Align.Center
@@ -247,7 +211,7 @@
                         Width: =30
                         Wrap: =false
                         Y: =DataCardKeyTitle_Add.Y
-                        ZIndex: =4
+                        ZIndex: =3
 
                     Rectangle1 As rectangle:
                         BorderColor: =RGBA(166, 166, 166, 1)
@@ -262,7 +226,62 @@
                         Width: =Parent.Width - 80
                         X: =40
                         Y: =62
+                        ZIndex: =4
+
+                    Label4 As label:
+                        BorderColor: =RGBA(0, 0, 0, 0)
+                        BorderStyle: =BorderStyle.None
+                        BorderThickness: =2
+                        Color: =RGBA(51, 51, 51, 1)
+                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        FocusedBorderThickness: =4
+                        Font: =Font.'Segoe UI'
+                        Height: =72
+                        Size: =21
+                        Text: ="Select Category"
+                        Visible: =IsBlank(DataCardValueTitle_Add.Selected.Title)
+                        Width: =456
+                        X: =40
+                        Y: =60
                         ZIndex: =5
+
+                    DataCardValueTitle_Add As dropdown:
+                        BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                        BorderStyle: =BorderStyle.None
+                        ChevronBackground: =RGBA(255, 255, 255, 1)
+                        ChevronDisabledBackground: =RGBA(244, 244, 244, 1)
+                        ChevronDisabledFill: =RGBA(166, 166, 166, 1)
+                        ChevronFill: =RGBA(33, 33, 33, 1)
+                        ChevronHoverBackground: =RGBA(212, 212, 212, 1)
+                        ChevronHoverFill: =RGBA(33, 33, 33, 1)
+                        Color: =RGBA(51, 51, 51, 1)
+                        Default: =Parent.Default
+                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        DisabledFill: =RGBA(244, 244, 244, 1)
+                        DisplayMode: =Parent.DisplayMode
+                        Fill: =Color.Transparent
+                        Font: =Font.'Segoe UI'
+                        Height: =70
+                        HoverBorderColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
+                        HoverColor: =RGBA(51, 51, 51, 1)
+                        HoverFill: =RGBA(212, 212, 212, 1)
+                        Items: ='Work Progress Tracker'
+                        PaddingBottom: =5
+                        PaddingLeft: =12
+                        PaddingRight: =5
+                        PaddingTop: =5
+                        PressedBorderColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
+                        PressedColor: =RGBA(255, 255, 255, 1)
+                        PressedFill: =RGBA(135, 100, 184, 1)
+                        SelectionFill: =RGBA(135, 100, 184, 1)
+                        Size: =21
+                        Tooltip: =Parent.DisplayName
+                        Width: =Parent.Width - 80
+                        X: =40
+                        Y: =DataCardKeyTitle_Add.Y + DataCardKeyTitle_Add.Height + 5
+                        ZIndex: =6
 
                 Add_Desc As typedDataCard.textualEditCard:
                     BorderColor: =RGBA(166, 166, 166, 1)
