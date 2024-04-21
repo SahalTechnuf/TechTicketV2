@@ -169,24 +169,6 @@
                         Y: =10
                         ZIndex: =1
 
-                    Label1 As label:
-                        BorderColor: =RGBA(0, 0, 0, 0)
-                        BorderStyle: =BorderStyle.None
-                        BorderThickness: =2
-                        Color: =RGBA(51, 51, 51, 1)
-                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                        DisabledColor: =RGBA(166, 166, 166, 1)
-                        FocusedBorderThickness: =4
-                        Font: =Font.'Segoe UI'
-                        Height: =70
-                        Size: =21
-                        Text: ="Select Category"
-                        Visible: =IsBlank(DataCardValueTitle_Add.Selected.Title)
-                        Width: =502
-                        X: =40
-                        Y: =62
-                        ZIndex: =2
-
                     ErrorMessageTitle_Add As label:
                         AutoHeight: =true
                         BorderColor: =RGBA(0, 0, 0, 0)
@@ -210,7 +192,7 @@
                         Width: =Parent.Width - 60
                         X: =30
                         Y: =DataCardValueTitle_Add.Y + DataCardValueTitle_Add.Height
-                        ZIndex: =3
+                        ZIndex: =2
 
                     StarVisibleTitle_Add As label:
                         Align: =Align.Center
@@ -230,6 +212,24 @@
                         Width: =30
                         Wrap: =false
                         Y: =DataCardKeyTitle_Add.Y
+                        ZIndex: =3
+
+                    Label1 As label:
+                        BorderColor: =RGBA(0, 0, 0, 0)
+                        BorderStyle: =BorderStyle.None
+                        BorderThickness: =2
+                        Color: =RGBA(51, 51, 51, 1)
+                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        FocusedBorderThickness: =4
+                        Font: =Font.'Segoe UI'
+                        Height: =70
+                        Size: =21
+                        Text: ="Select Category"
+                        Visible: =IsBlank(DataCardValueTitle_Add.Selected.Title)
+                        Width: =502
+                        X: =40
+                        Y: =62
                         ZIndex: =4
 
                     DataCardValueTitle_Add As dropdown:
