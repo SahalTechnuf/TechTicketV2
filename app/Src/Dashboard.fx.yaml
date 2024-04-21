@@ -631,7 +631,7 @@
             Font: =Font.'Segoe UI'
             FontWeight: =FontWeight.Bold
             Height: =70
-            Size: =21
+            Size: =25
             Text: ="No tickets to display"
             Visible: =CountRows(DashTickets.AllItems)=0
             Width: =560
@@ -650,7 +650,7 @@
             FocusedBorderThickness: =4
             Font: =Font.'Segoe UI'
             Height: =70
-            Size: =21
+            Size: =18
             Text: ="Please create your first ticket below"
             Visible: =CountRows(DashTickets.AllItems)=0
             Width: =560
