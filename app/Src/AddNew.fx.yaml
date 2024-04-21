@@ -168,6 +168,7 @@
                         ZIndex: =1
 
                     DataCardValueTitle_Add As dropdown:
+                        AllowEmptySelection: =true
                         BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                         ChevronBackground: =RGBA(255, 255, 255, 1)
                         ChevronDisabledBackground: =RGBA(244, 244, 244, 1)
