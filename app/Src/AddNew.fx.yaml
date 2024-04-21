@@ -512,7 +512,6 @@
                         HoverBorderColor: =RGBA(0, 0, 0, 0)
                         HoverFill: =RGBA(0, 0, 0, 0)
                         Image: ='file-upload_10015516'
-                        OnSelect: =AddPictureImage_Add.Media
                         PressedBorderColor: =RGBA(0, 0, 0, 0)
                         PressedFill: =RGBA(0, 0, 0, 0)
                         Visible: =IsBlank(ImageImage_Add.Image)
@@ -596,7 +595,7 @@
                         HoverBorderColor: =RGBA(0, 0, 0, 0)
                         HoverColor: =Color.Transparent
                         HoverFill: =Color.Transparent
-                        OnSelect: =If(IsBlank(AddPictureImage_Add.Media), Parent.Default, AddPictureImage_Add.Media)
+                        OnSelect: =AddPictureImage_Add
                         PressedBorderColor: =Color.Transparent
                         PressedColor: =Color.Transparent
                         PressedFill: =Color.Transparent
