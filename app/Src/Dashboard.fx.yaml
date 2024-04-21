@@ -518,7 +518,7 @@
                 LayoutMinWidth: =560
                 PaddingBottom: =20
                 Size: =22
-                Text: ="  Ticketing System"
+                Text: ="  Technuf Service Request"
                 Width: =Parent.Width
                 X: =180
                 Y: =72
