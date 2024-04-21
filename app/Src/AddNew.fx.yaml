@@ -504,7 +504,7 @@
                         Y: =DataCardKeyImage_Add.Y
                         ZIndex: =5
 
-                    Image1 As image:
+                    Icon_upload As image:
                         BorderColor: =RGBA(0, 0, 0, 0)
                         BorderStyle: =BorderStyle.None
                         BorderThickness: =2
@@ -522,7 +522,7 @@
                         Y: =125
                         ZIndex: =6
 
-                    Label3 As label:
+                    upload As label:
                         Align: =Align.Center
                         BorderColor: =RGBA(0, 0, 0, 0)
                         BorderStyle: =BorderStyle.None
@@ -541,7 +541,7 @@
                         Y: =213
                         ZIndex: =7
 
-                    Label3_1 As label:
+                    format As label:
                         Align: =Align.Center
                         BorderColor: =RGBA(0, 0, 0, 0)
                         BorderStyle: =BorderStyle.None
