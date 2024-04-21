@@ -1,5 +1,6 @@
 "ViewEdit As screen.'phoneBrowseLayout_ver3.0'":
     LoadingSpinnerColor: =RGBA(135, 100, 184, 1)
+    OnVisible: =Set(VarDeleteImg,false)
 
     ParentContView As groupContainer.manualLayoutContainer:
         DropShadow: =DropShadow.Light
