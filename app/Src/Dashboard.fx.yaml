@@ -119,13 +119,13 @@
                     ZIndex: =1
 
                 DashTickets As gallery.galleryVertical:
-                    AlignInContainer: =AlignInContainer.SetByContainer
+                    AlignInContainer: =AlignInContainer.Center
                     BorderColor: =RGBA(0, 134, 208, 1)
                     BorderStyle: =BorderStyle.None
                     DelayItemLoading: =true
                     Fill: =RGBA(255, 255, 255, 1)
                     FocusedBorderThickness: =
-                    Height: =708
+                    Height: =Parent.Height
                     Items: |-
                         =Sort(
                             Filter(
