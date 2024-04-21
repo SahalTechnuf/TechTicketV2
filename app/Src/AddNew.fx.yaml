@@ -215,22 +215,6 @@
                         Y: =DataCardKeyTitle_Add.Y
                         ZIndex: =3
 
-                    Label4 As label:
-                        BorderColor: =RGBA(166, 166, 166, 1)
-                        BorderThickness: =2
-                        Color: =RGBA(51, 51, 51, 1)
-                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                        DisabledColor: =RGBA(166, 166, 166, 1)
-                        FocusedBorderThickness: =4
-                        Font: =Font.'Segoe UI'
-                        Height: =70
-                        Size: =21
-                        Text: ="Select Category"
-                        Width: =560
-                        X: =40
-                        Y: =62
-                        ZIndex: =5
-
                     DataCardValueTitle_Add As dropdown:
                         BorderColor: =RGBA(0, 0, 0, 1)
                         BorderStyle: =BorderStyle.None
