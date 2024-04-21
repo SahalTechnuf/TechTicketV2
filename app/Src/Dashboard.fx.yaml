@@ -160,33 +160,6 @@
                     Y: =319
                     ZIndex: =2
 
-                    DashClick As button:
-                        BorderColor: =RGBA(0, 134, 208, 1)
-                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                        DisabledColor: =RGBA(166, 166, 166, 1)
-                        DisabledFill: =RGBA(244, 244, 244, 1)
-                        Fill: =RGBA(0, 0, 0, 0)
-                        FocusedBorderColor: =ColorFade(Self.Fill, -75%)
-                        Font: =Font.'Segoe UI'
-                        FontWeight: =FontWeight.Semibold
-                        Height: =212
-                        HoverBorderColor: =RGBA(0, 0, 0, 0)
-                        HoverColor: =RGBA(255, 255, 255, 1)
-                        HoverFill: =ColorFade(RGBA(135, 100, 184, 1), -10%)
-                        OnSelect: =Select(Parent)
-                        PressedBorderColor: =ColorFade(RGBA(135, 100, 184, 1), -50%)
-                        PressedColor: =RGBA(255, 255, 255, 1)
-                        PressedFill: =ColorFade(RGBA(135, 100, 184, 1), -30%)
-                        RadiusBottomLeft: =15
-                        RadiusBottomRight: =15
-                        RadiusTopLeft: =15
-                        RadiusTopRight: =15
-                        Size: =24
-                        Text: =""
-                        Width: =590
-                        X: =10
-                        ZIndex: =1
-
                     DashCat As label:
                         BorderColor: =RGBA(0, 0, 0, 0)
                         BorderStyle: =BorderStyle.None
@@ -205,7 +178,7 @@
                         Width: =331
                         X: =171
                         Y: =9
-                        ZIndex: =2
+                        ZIndex: =1
 
                     DashDesc As label:
                         BorderColor: =RGBA(0, 0, 0, 0)
@@ -225,7 +198,7 @@
                         Wrap: =false
                         X: =10
                         Y: =155
-                        ZIndex: =3
+                        ZIndex: =2
 
                     Label_DashAuthor As label:
                         AutoHeight: =true
@@ -246,7 +219,7 @@
                         Width: =138
                         X: =171
                         Y: =54
-                        ZIndex: =5
+                        ZIndex: =3
 
                     Label_DashEmail As label:
                         AutoHeight: =true
@@ -268,7 +241,7 @@
                         Width: =85
                         X: =170
                         Y: =88
-                        ZIndex: =6
+                        ZIndex: =4
 
                     DashDnT As label:
                         BorderColor: =RGBA(0, 0, 0, 0)
@@ -288,7 +261,7 @@
                         Width: =323
                         X: =212
                         Y: =131
-                        ZIndex: =7
+                        ZIndex: =5
 
                     ImagePreview As image:
                         BorderColor: =RGBA(0, 134, 208, 1)
@@ -311,7 +284,7 @@
                         Width: =139
                         X: =22
                         Y: =28
-                        ZIndex: =8
+                        ZIndex: =6
 
                     Date As icon.CalendarBlank:
                         BorderColor: =RGBA(0, 0, 0, 0)
@@ -332,7 +305,7 @@
                         Width: =28
                         X: =172
                         Y: =133
-                        ZIndex: =9
+                        ZIndex: =7
 
                     Time As icon.Clock:
                         BorderColor: =RGBA(0, 0, 0, 0)
@@ -353,7 +326,7 @@
                         Width: =38
                         X: =363
                         Y: =138
-                        ZIndex: =10
+                        ZIndex: =8
 
                     DashEmail As label:
                         BorderColor: =RGBA(0, 0, 0, 0)
@@ -372,7 +345,7 @@
                         Width: =349
                         X: =241
                         Y: =83
-                        ZIndex: =11
+                        ZIndex: =9
 
                     DashAuthor As label:
                         AutoHeight: =true
@@ -391,7 +364,7 @@
                         Width: =200
                         X: =291
                         Y: =54
-                        ZIndex: =12
+                        ZIndex: =10
 
                     ID_Dash As label:
                         BorderColor: =RGBA(0, 0, 0, 0)
@@ -410,7 +383,7 @@
                         Width: =60
                         X: =510
                         Y: =74
-                        ZIndex: =14
+                        ZIndex: =11
 
                     StatusButton As button:
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -468,7 +441,34 @@
                         Width: =95
                         X: =495
                         Y: =25
-                        ZIndex: =15
+                        ZIndex: =12
+
+                    DashClick As button:
+                        BorderColor: =RGBA(0, 134, 208, 1)
+                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        DisabledFill: =RGBA(244, 244, 244, 1)
+                        Fill: =RGBA(0, 0, 0, 0)
+                        FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+                        Font: =Font.'Segoe UI'
+                        FontWeight: =FontWeight.Semibold
+                        Height: =212
+                        HoverBorderColor: =RGBA(255, 255, 255, 1)
+                        HoverColor: =RGBA(153, 207, 236, 1)
+                        HoverFill: =RGBA(0, 0, 0, 0)
+                        OnSelect: =Select(Parent)
+                        PressedBorderColor: =Color.Transparent
+                        PressedColor: =RGBA(255, 255, 255, 1)
+                        PressedFill: =RGBA(0, 0, 0, 0)
+                        RadiusBottomLeft: =15
+                        RadiusBottomRight: =15
+                        RadiusTopLeft: =15
+                        RadiusTopRight: =15
+                        Size: =24
+                        Text: =""
+                        Width: =590
+                        X: =10
+                        ZIndex: =13
 
         HeaderContDash As groupContainer.verticalAutoLayoutContainer:
             BorderColor: =RGBA(255, 255, 255, 1)
