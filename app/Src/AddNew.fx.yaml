@@ -148,7 +148,7 @@
                     Height: =50
                     Required: =false
                     Update: =DataCardValueTitle_Add.Selected.Title
-                    Width: =640
+                    Width: =Parent.Width
                     X: =0
                     Y: =0
                     ZIndex: =1
@@ -271,7 +271,9 @@
                     MaxLength: =DataSourceInfo([@'Technuf Service Request'], DataSourceInfo.MaxLength, "Description")
                     Required: =true
                     Update: =DataCardValueDesc_Add.Text
-                    Width: =AddNew.Width/AddNew.Size
+                    Width: |-
+                        =//AddNew.Width/AddNew.Size
+                        Parent.Width
                     X: =0
                     Y: =1
                     ZIndex: =2
@@ -388,7 +390,9 @@
                     Height: =384
                     Required: =false
                     Update: =ImageImage_Add.Image
-                    Width: =AddNew.Width/AddNew.Size
+                    Width: |-
+                        =//AddNew.Width/AddNew.Size
+                        Parent.Width
                     X: =0
                     Y: =2
                     ZIndex: =2
