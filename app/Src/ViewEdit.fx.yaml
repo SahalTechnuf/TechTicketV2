@@ -154,8 +154,7 @@
                     RadiusBottomRight: =4
                     RadiusTopLeft: =4
                     RadiusTopRight: =4
-                    Width: |
-                        =Parent.Width
+                    Width: =Parent.Width
                     ZIndex: =1
 
                     Label_Created As label:

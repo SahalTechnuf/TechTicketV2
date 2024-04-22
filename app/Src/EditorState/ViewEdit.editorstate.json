@@ -2005,7 +2005,7 @@
         {
           "Category": "Design",
           "PropertyName": "Width",
-          "RuleProviderType": "Unknown"
+          "RuleProviderType": "User"
         },
         {
           "Category": "Design",
@@ -5098,7 +5098,7 @@
         {
           "Category": "Design",
           "PropertyName": "Width",
-          "RuleProviderType": "Unknown"
+          "RuleProviderType": "User"
         },
         {
           "Category": "Design",
@@ -10678,7 +10678,7 @@
         {
           "Category": "Design",
           "PropertyName": "Width",
-          "RuleProviderType": "Unknown"
+          "RuleProviderType": "User"
         },
         {
           "Category": "Design",
