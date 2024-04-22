@@ -29,7 +29,7 @@
             RadiusTopLeft: =4
             RadiusTopRight: =4
             Width: =Parent.Width
-            Y: =1020
+            Y: =Parent.Height - 115
             ZIndex: =1
 
             Button_AddNew As button:
@@ -59,7 +59,8 @@
                 Text: ="Add New Ticket"
                 Width: |
                     =600
-                X: =13
+                X: |
+                    =23
                 Y: =1048
                 ZIndex: =1
 
@@ -73,7 +74,7 @@
             RadiusTopLeft: =4
             RadiusTopRight: =4
             Width: =Parent.Width
-            Y: =243
+            Y: =Parent.Height/6 + 50
             ZIndex: =2
 
             DashGallery As groupContainer.verticalAutoLayoutContainer:
@@ -440,7 +441,7 @@
                         Size: =12
                         Text: =ThisItem.'Progress/Status'.Value
                         Width: =95
-                        X: =495
+                        X: =Parent.TemplateWidth - 120
                         Y: =25
                         ZIndex: =12
 
@@ -467,7 +468,8 @@
                         RadiusTopRight: =15
                         Size: =24
                         Text: =""
-                        Width: =600
+                        Width: |
+                            =Parent.TemplateWidth - 20
                         X: =10
                         ZIndex: =13
 
@@ -484,6 +486,7 @@
             RadiusTopLeft: =4
             RadiusTopRight: =4
             Width: =Parent.Width
+            X: =Parent.Width/2 - Self.Width/2
             ZIndex: =3
 
             DashLogoD As image:
@@ -586,7 +589,8 @@
             ZIndex: =9
 
         SearchBarCont As groupContainer.manualLayoutContainer:
-            Height: =54
+            Height: |
+                =50
             RadiusBottomLeft: =4
             RadiusBottomRight: =4
             RadiusTopLeft: =4
@@ -621,7 +625,7 @@
                 RadiusTopLeft: =15
                 RadiusTopRight: =15
                 Size: =20
-                Width: =500
+                Width: =Parent.Width - RefreshIcon.Width - 20 //Left Padding
                 X: =20
                 ZIndex: =1
 
@@ -667,6 +671,6 @@
                 PressedFill: =RGBA(0, 0, 0, 0)
                 Rotation: =90
                 Width: =120
-                X: =520
+                X: =SearchBarCont.Width - RefreshIcon.Width
                 ZIndex: =3
 
