@@ -119,7 +119,7 @@
             RadiusTopLeft: =4
             RadiusTopRight: =4
             Width: =Parent.Width
-            Y: =189
+            Y: =Parent.Height/6
             ZIndex: =2
 
             UserInfoCont As groupContainer.verticalAutoLayoutContainer:

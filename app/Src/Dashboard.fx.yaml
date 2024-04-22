@@ -507,7 +507,9 @@
                 PaddingTop: =30
                 PressedBorderColor: =RGBA(0, 0, 0, 0)
                 PressedFill: =RGBA(0, 0, 0, 0)
-                Width: =Parent.Width
+                Width: |-
+                    =Parent.Width
+                    //If(App.Width > 1000, 300, If(App.Width > 700, 200, 100))
                 ZIndex: =1
 
             DashHeaderD As label:
