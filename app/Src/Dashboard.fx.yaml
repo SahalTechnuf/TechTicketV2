@@ -497,8 +497,8 @@
                 DisabledFill: =RGBA(0, 0, 0, 0)
                 FocusedBorderThickness: =4
                 Height: |-
-                    =//Parent.Height-80
-                    Min(Parent.Width, 120)
+                    =Parent.Height-80
+                    //Min(Parent.Width, 120)
                 HoverBorderColor: =RGBA(0, 0, 0, 0)
                 HoverFill: =RGBA(0, 0, 0, 0)
                 Image: =download
