@@ -126,7 +126,20 @@
                     Fill: =RGBA(255, 255, 255, 1)
                     FocusedBorderThickness: =
                     Height: =Parent.Height
-                    Items: ='Technuf Service Request'
+                    Items: |-
+                        =Sort(
+                            Filter(
+                                'Technuf Service Request',
+                                If(
+                                    User().Email = "ali.khan@technuf.com",
+                                    true,
+                                    'Created By'.Email = User().Email
+                                )
+                                && (StartsWith(Title, SearchTicket.Text) || StartsWith(Description, SearchTicket.Text))
+                            ),
+                            'Issue Date and Time',
+                            SortOrder.Descending
+                        )
                     Layout: =Layout.Vertical
                     LayoutMinHeight: =287
                     LayoutMinWidth: =320
