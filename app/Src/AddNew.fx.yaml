@@ -238,7 +238,7 @@
                         HoverFill: =RGBA(0, 0, 0, 0)
                         Items: ='Work Progress Tracker'.Title
                         PaddingBottom: =5
-                        PaddingLeft: =12
+                        PaddingLeft: =15
                         PaddingRight: =5
                         PaddingTop: =5
                         PressedBorderColor: =ColorFade(Color.AliceBlue, -30%)

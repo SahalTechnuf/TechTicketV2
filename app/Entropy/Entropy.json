@@ -112,7 +112,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "04/22/2024 00:19:24",
+  "HeaderLastSavedDateTimeUTC": "04/22/2024 00:20:49",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "0187e4a0-d356-4e03-9fb3-2b07cd44e52d": "\"/providers/microsoft.powerapps/apis/shared_office365users/connections/7cc1f91031284a34a73d13333cc5bae4\"",
@@ -292,7 +292,7 @@
     "Button_AddNew": 30,
     "Button_Cancel_Add": 99,
     "Button_Cancel_Edit": 69,
-    "Button_DeleteImage_Add": 102,
+    "Button_DeleteImage_Add": 101,
     "Button_DeleteImage_View": 71,
     "Button_DeleteTicket": 40,
     "Button_Save_Add": 100,
