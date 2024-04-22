@@ -18,7 +18,7 @@
 
         FooterContView As groupContainer.verticalAutoLayoutContainer:
             BorderStyle: =BorderStyle.None
-            Height: =Parent.Height/10
+            Height: =115
             LayoutAlignItems: =LayoutAlignItems.Center
             LayoutGap: =20
             LayoutJustifyContent: =LayoutJustifyContent.Center
