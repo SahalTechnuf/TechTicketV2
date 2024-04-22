@@ -29,7 +29,7 @@
             Width: =Parent.Width
             Y: |-
                 =//1022
-                Parent.Height - FooterContDash.Height
+                Parent.Height - FooterContAdd.Height
             ZIndex: =1
 
             Button_Cancel_Add As button:
@@ -130,9 +130,10 @@
                 BorderStyle: =BorderStyle.None
                 DataSource: ='Technuf Service Request'
                 DefaultMode: =FormMode.New
+                Height: =Parent.Height
                 LayoutMinHeight: =700
                 LayoutMinWidth: =320
-                Width: =640
+                Width: =Parent.Width
                 ZIndex: =1
 
                 Add_Title As typedDataCard.allowedValuesStringEditCard:
