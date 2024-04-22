@@ -361,7 +361,9 @@
                     Height: =51
                     Required: =false
                     Update: =TextInputTitle_Edit.Text
-                    Width: =ViewEdit.Width/ViewEdit.Size
+                    Width: |-
+                        =//ViewEdit.Width/ViewEdit.Size
+                        Parent.Width
                     X: =0
                     Y: =0
                     ZIndex: =1
@@ -456,7 +458,9 @@
                         RadiusTopLeft: =15
                         RadiusTopRight: =15
                         Size: =21
-                        Width: =560
+                        Width: |-
+                            =//560
+                            Parent.Width - 80
                         X: =40
                         Y: =57
                         ZIndex: =5
@@ -756,7 +760,9 @@
                         RadiusTopRight: =15
                         Size: =21
                         Tooltip: =Parent.DisplayName
-                        Width: =560
+                        Width: |-
+                            =//560
+                            Parent.Width - 80
                         X: =40
                         Y: =DataCardKeyDesc_Edit.Y + DataCardKeyDesc_Edit.Height + 5
                         ZIndex: =2
