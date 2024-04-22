@@ -74,7 +74,7 @@
             RadiusTopLeft: =4
             RadiusTopRight: =4
             Width: =Parent.Width
-            Y: =Parent.Height/6 + 50
+            Y: =Parent.Height/6 + SearchBarCont.Height
             ZIndex: =2
 
             DashGallery As groupContainer.verticalAutoLayoutContainer:
