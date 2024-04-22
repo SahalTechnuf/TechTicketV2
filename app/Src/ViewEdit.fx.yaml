@@ -358,7 +358,9 @@
                     DisplayMode: =Parent.DisplayMode
                     DisplayName: =DataSourceInfo([@'Technuf Service Request'],DataSourceInfo.DisplayName,"Title")
                     Fill: =RGBA(0, 0, 0, 0)
-                    Height: =51
+                    Height: |-
+                        =//51
+                        EditForm.Height*0.069
                     Required: =false
                     Update: =TextInputTitle_Edit.Text
                     Width: |-
@@ -445,7 +447,8 @@
                         DisabledFill: =RGBA(244, 244, 244, 1)
                         FocusedBorderThickness: =4
                         Font: =Font.'Segoe UI'
-                        Height: =70
+                        Height: |
+                            =70
                         HoverBorderColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
                         HoverColor: =RGBA(51, 51, 51, 1)
                         HoverFill: =RGBA(255, 255, 255, 1)
@@ -476,7 +479,9 @@
                         =Parent.DisplayMode
                     DisplayName: =DataSourceInfo([@'Technuf Service Request'],DataSourceInfo.DisplayName,"Image_x0028_Optional_x0029_")
                     Fill: =RGBA(0, 0, 0, 0)
-                    Height: =364
+                    Height: |-
+                        =//364
+                        EditForm.Height*0.491
                     Required: =false
                     Update: =ImageImage_Edit.Image
                     Width: |-
@@ -702,7 +707,9 @@
                         
                     DisplayName: =DataSourceInfo([@'Technuf Service Request'],DataSourceInfo.DisplayName,"Description")
                     Fill: =RGBA(0, 0, 0, 0)
-                    Height: =EditForm.Height - Edit_Title.Height - Edit_Image.Height
+                    Height: |-
+                        =//EditForm.Height - Edit_Title.Height - Edit_Image.Height
+                        EditForm.Height*0.324
                     MaxLength: =DataSourceInfo([@'Technuf Service Request'], DataSourceInfo.MaxLength, "Description")
                     Required: =false
                     Update: =DataCardValueDesc_Edit.Text
