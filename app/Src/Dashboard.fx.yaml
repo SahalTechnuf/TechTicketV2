@@ -57,8 +57,9 @@
                 RadiusTopRight: =15
                 Size: =24
                 Text: ="Add New Ticket"
-                Width: |
-                    =600
+                Width: |-
+                    =//600
+                    Parent.Width-40
                 X: |
                     =23
                 Y: =1048
