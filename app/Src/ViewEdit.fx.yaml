@@ -80,8 +80,8 @@
                 LayoutMinHeight: =70
                 LayoutMinWidth: =280
                 OnSelect: |
-                    =Patch ('Technuf Ticketing System', LookUp(
-                            'Technuf Ticketing System',  
+                    =Patch ('Technuf Service Request', LookUp(
+                            'Technuf Service Request',  
                             ID = Value(selectedItem.ID)),
                         {
                             Title: TextInputTitle_Edit.Text,
@@ -189,7 +189,7 @@
                         LayoutMinWidth: =560
                         PaddingLeft: =0
                         Size: =17
-                        Text: =Text(selectedItem.)
+                        Text: =Text(selectedItem.'Issue Date and Time')
                         Width: |
                             =410
                         ZIndex: =2
@@ -336,7 +336,7 @@
             EditForm As form:
                 BorderColor: =RGBA(166, 166, 166, 1)
                 BorderStyle: =BorderStyle.None
-                DataSource: ='Technuf Ticketing System'
+                DataSource: ='Technuf Service Request'
                 DefaultMode: =FormMode.New
                 FillPortions: =0
                 Height: =Parent.Height - UserInfoCont.Height
@@ -352,7 +352,7 @@
                     DataField: ="Title"
                     Default: =ThisItem.Title
                     DisplayMode: =Parent.DisplayMode
-                    DisplayName: =DataSourceInfo([@'Technuf Ticketing System'],DataSourceInfo.DisplayName,"Title")
+                    DisplayName: =DataSourceInfo([@'Technuf Service Request'],DataSourceInfo.DisplayName,"Title")
                     Fill: =RGBA(0, 0, 0, 0)
                     Height: =51
                     Required: =false
@@ -466,7 +466,7 @@
                         If(IsBlank(AddPictureImage_Edit.Media),selectedItem.'Image (Optional)'.Medium,AddPictureImage_Edit.Media)
                     DisplayMode: |
                         =Parent.DisplayMode
-                    DisplayName: =DataSourceInfo([@'Technuf Ticketing System'],DataSourceInfo.DisplayName,"Image_x0028_Optional_x0029_")
+                    DisplayName: =DataSourceInfo([@'Technuf Service Request'],DataSourceInfo.DisplayName,"Image_x0028_Optional_x0029_")
                     Fill: =RGBA(0, 0, 0, 0)
                     Height: =338
                     Required: =false
@@ -690,10 +690,10 @@
                     DisplayMode: |+
                         =
                         
-                    DisplayName: =DataSourceInfo([@'Technuf Ticketing System'],DataSourceInfo.DisplayName,"Description")
+                    DisplayName: =DataSourceInfo([@'Technuf Service Request'],DataSourceInfo.DisplayName,"Description")
                     Fill: =RGBA(0, 0, 0, 0)
                     Height: =190
-                    MaxLength: =DataSourceInfo([@'Technuf Ticketing System'], DataSourceInfo.MaxLength, "Description")
+                    MaxLength: =DataSourceInfo([@'Technuf Service Request'], DataSourceInfo.MaxLength, "Description")
                     Required: =false
                     Update: =DataCardValueDesc_Edit.Text
                     Width: =ViewEdit.Width/ViewEdit.Size

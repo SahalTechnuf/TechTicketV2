@@ -126,20 +126,7 @@
                     Fill: =RGBA(255, 255, 255, 1)
                     FocusedBorderThickness: =
                     Height: =Parent.Height
-                    Items: |-
-                        =Sort(
-                            Filter(
-                                'Technuf Ticketing System',
-                                If(
-                                    User().Email = "ali.khan@technuf.com", 
-                                    true, 
-                                    'Created By'.Email = User().Email 
-                                )
-                                && (StartsWith(Title, SearchTicket.Text) || StartsWith(Description, SearchTicket.Text))
-                            ),
-                            'Issue Date and Time',
-                            SortOrder.Descending
-                        )
+                    Items: ='Technuf Service Request'
                     Layout: =Layout.Vertical
                     LayoutMinHeight: =287
                     LayoutMinWidth: =320
@@ -660,7 +647,7 @@
                 HoverColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
                 HoverFill: =RGBA(0, 0, 0, 0)
                 Icon: =Icon.Reload
-                OnSelect: =Refresh([@'Technuf Ticketing System'])
+                OnSelect: =Refresh([@'Technuf Service Request'])
                 PressedBorderColor: =RGBA(0, 0, 0, 0)
                 PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
                 PressedFill: =RGBA(0, 0, 0, 0)
