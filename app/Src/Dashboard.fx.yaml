@@ -1,4 +1,5 @@
 "Dashboard As screen.'phoneBrowseLayout_ver3.0'":
+    Height: =Screen
     LoadingSpinnerColor: =RGBA(135, 100, 184, 1)
     Width: |
         =Max(App.Width, App.MinScreenWidth)
@@ -6,7 +7,7 @@
     ParentContDash As groupContainer.manualLayoutContainer:
         BorderStyle: =BorderStyle.None
         DropShadow: =DropShadow.Light
-        Height: =Parent.Height
+        Height: =App.Height
         RadiusBottomLeft: =4
         RadiusBottomRight: =4
         RadiusTopLeft: =4

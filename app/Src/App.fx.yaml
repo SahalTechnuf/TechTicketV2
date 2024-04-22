@@ -1,9 +1,11 @@
 App As appinfo:
     BackEnabled: =true
-    MinScreenHeight: |
-        =640
-    MinScreenWidth: |
-        =640
+    MinScreenHeight: |-
+        =// 640
+        App.Height
+    MinScreenWidth: |-
+        =// 640
+        App.Width
     OnStart: |-
         =ClearCollect(
             ConcatenatedList,
