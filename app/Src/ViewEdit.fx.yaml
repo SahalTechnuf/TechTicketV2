@@ -700,7 +700,9 @@
                     MaxLength: =DataSourceInfo([@'Technuf Service Request'], DataSourceInfo.MaxLength, "Description")
                     Required: =false
                     Update: =DataCardValueDesc_Edit.Text
-                    Width: =ViewEdit.Width/ViewEdit.Size
+                    Width: |-
+                        =//ViewEdit.Width/ViewEdit.Size
+                        Parent.Width
                     X: =0
                     Y: =1
                     ZIndex: =2
