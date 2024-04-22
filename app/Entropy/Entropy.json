@@ -112,7 +112,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "04/22/2024 20:39:27",
+  "HeaderLastSavedDateTimeUTC": "04/22/2024 20:40:19",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "0187e4a0-d356-4e03-9fb3-2b07cd44e52d": "\"/providers/microsoft.powerapps/apis/shared_office365users/connections/7cc1f91031284a34a73d13333cc5bae4\"",
@@ -161,10 +161,10 @@
     "form": 7,
     "gallery": 5,
     "groupContainer": 0,
-    "icon": 3,
+    "icon": 4,
     "image": 1,
     "label": 2,
-    "text": 4
+    "text": 3
   },
   "OverridablePropertiesEntry": {
     "Add_Desc": {},
@@ -367,10 +367,10 @@
     "ParentContAdd": 72,
     "ParentContDash": 0,
     "ParentContView": 31,
-    "RefreshIcon": 5,
+    "RefreshIcon": 7,
     "SearchBarCont": 4,
-    "SearchIcon": 7,
-    "SearchTicket": 6,
+    "SearchIcon": 6,
+    "SearchTicket": 5,
     "StarVisibleDesc_Add": 84,
     "StarVisibleDesc_Edit": 54,
     "StarVisibleImage_Add": 89,
