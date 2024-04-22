@@ -28,7 +28,7 @@
             RadiusTopLeft: =4
             RadiusTopRight: =4
             Width: =Parent.Width
-            Y: =1022
+            Y: =Parent.Height - FooterContView.Height
             ZIndex: =1
 
             Button_Cancel_Edit As button:
@@ -111,7 +111,9 @@
         BodyContView As groupContainer.verticalAutoLayoutContainer:
             BorderColor: =RGBA(255, 255, 255, 1)
             BorderStyle: =BorderStyle.None
-            Height: =Parent.Height*11/15
+            Height: |-
+                =//Parent.Height*11/15
+                Parent.Height - HeaderContView.Height - FooterContView.Height
             LayoutDirection: =LayoutDirection.Vertical
             LayoutMode: =LayoutMode.Auto
             RadiusBottomLeft: =4

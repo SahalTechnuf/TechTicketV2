@@ -29,7 +29,7 @@
             RadiusTopLeft: =4
             RadiusTopRight: =4
             Width: =Parent.Width
-            Y: =Parent.Height - 115
+            Y: =Parent.Height - FooterContDash.Height
             ZIndex: =1
 
             Button_AddNew As button:
@@ -80,7 +80,9 @@
             DashGallery As groupContainer.verticalAutoLayoutContainer:
                 BorderStyle: =BorderStyle.None
                 DropShadow: =DropShadow.Light
-                Height: =225
+                Height: |-
+                    =//225
+                    BodyContDash.Height
                 LayoutDirection: =LayoutDirection.Vertical
                 LayoutMinHeight: =112
                 LayoutMinWidth: =250
