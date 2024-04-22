@@ -344,7 +344,9 @@
                 Height: =Parent.Height - UserInfoCont.Height
                 LayoutMinHeight: =Parent.Height- HeaderContView.Height - UserInfoCont.Height - FooterContView.Height -200
                 LayoutMinWidth: =320
-                Width: =640
+                Width: |-
+                    =//640
+                    Parent.Width
                 ZIndex: =2
 
                 Edit_Title As typedDataCard.allowedValuesStringEditCard:
