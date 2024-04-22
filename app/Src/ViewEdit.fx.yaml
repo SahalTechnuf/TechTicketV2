@@ -476,7 +476,7 @@
                         =Parent.DisplayMode
                     DisplayName: =DataSourceInfo([@'Technuf Service Request'],DataSourceInfo.DisplayName,"Image_x0028_Optional_x0029_")
                     Fill: =RGBA(0, 0, 0, 0)
-                    Height: =338
+                    Height: =364
                     Required: =false
                     Update: =ImageImage_Edit.Image
                     Width: |-
@@ -702,7 +702,7 @@
                         
                     DisplayName: =DataSourceInfo([@'Technuf Service Request'],DataSourceInfo.DisplayName,"Description")
                     Fill: =RGBA(0, 0, 0, 0)
-                    Height: =190
+                    Height: =EditForm.Height - Edit_Title.Height - Edit_Image.Height
                     MaxLength: =DataSourceInfo([@'Technuf Service Request'], DataSourceInfo.MaxLength, "Description")
                     Required: =false
                     Update: =DataCardValueDesc_Edit.Text
