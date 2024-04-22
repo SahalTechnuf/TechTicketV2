@@ -210,7 +210,7 @@
                         Icon: =Icon.Trash
                         OnSelect: |
                             =//Set(VarDeleteImg,true)
-                            Remove('Technuf Ticketing System', selectedItem);
+                            Remove('Technuf Service Request', selectedItem);
                             ResetForm(EditForm);
                             Navigate(Dashboard, Transition.None);
                         PaddingRight: =25
