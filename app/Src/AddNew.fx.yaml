@@ -27,7 +27,9 @@
             RadiusTopLeft: =4
             RadiusTopRight: =4
             Width: =Parent.Width
-            Y: =1022
+            Y: |-
+                =//1022
+                Parent.Height - FooterContDash.Height
             ZIndex: =1
 
             Button_Cancel_Add As button:
@@ -118,7 +120,9 @@
             RadiusTopLeft: =4
             RadiusTopRight: =4
             Width: =Parent.Width
-            Y: =188
+            Y: |-
+                =//188
+                Parent.Height/6
             ZIndex: =2
 
             AddForm As form:
@@ -634,6 +638,7 @@
             RadiusTopLeft: =4
             RadiusTopRight: =4
             Width: =Parent.Width
+            X: =Parent.Width/2 - Self.Width/2
             ZIndex: =3
 
             DashLogoA As image:
