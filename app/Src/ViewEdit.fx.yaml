@@ -619,7 +619,7 @@
                         PressedFill: =RGBA(0, 0, 0, 0)
                         Visible: =IsBlank(ImageImage_Edit.Image)
                         Width: =104
-                        X: =265
+                        X: =Parent.Width/2 - Self.Width/2
                         Y: =132
                         ZIndex: =6
 
@@ -639,7 +639,7 @@
                         Text: ="Upload a photo"
                         Visible: =IsBlank(ImageImage_Edit.Image)
                         Width: =560
-                        X: =40
+                        X: =Parent.Width/2 - Self.Width/2
                         Y: =213
                         ZIndex: =7
 
@@ -661,7 +661,7 @@
                             ="Supported format: PNG, JPEG, GIF"
                         Visible: =IsBlank(ImageImage_Edit.Image)
                         Width: =560
-                        X: =40
+                        X: =Parent.Width/2 - Self.Width/2
                         Y: =248
                         ZIndex: =8
 
