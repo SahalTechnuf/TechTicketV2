@@ -479,7 +479,9 @@
                     Height: =338
                     Required: =false
                     Update: =ImageImage_Edit.Image
-                    Width: =ViewEdit.Width/ViewEdit.Size
+                    Width: |-
+                        =//ViewEdit.Width/ViewEdit.Size
+                        Parent.Width
                     X: =0
                     Y: =2
                     ZIndex: =1
