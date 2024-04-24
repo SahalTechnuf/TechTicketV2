@@ -223,7 +223,7 @@
                             ="Posted by:"
                         Width: =138
                         X: =171
-                        Y: =54
+                        Y: =64
                         ZIndex: =3
 
                     Label_DashEmail As label:
@@ -245,7 +245,7 @@
                             ="Email:"
                         Width: =85
                         X: =170
-                        Y: =88
+                        Y: =98
                         ZIndex: =4
 
                     DashDnT As label:
@@ -349,7 +349,7 @@
                         Text: ="" & ThisItem.'Created By'.Email
                         Width: =349
                         X: =241
-                        Y: =83
+                        Y: =93
                         ZIndex: =9
 
                     DashAuthor As label:
@@ -368,7 +368,7 @@
                         Text: =" " & ThisItem.'Created By'.DisplayName
                         Width: =200
                         X: =291
-                        Y: =54
+                        Y: =64
                         ZIndex: =10
 
                     ID_Dash As label:
