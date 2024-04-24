@@ -60,7 +60,7 @@
                 RadiusTopRight: =15
                 Size: =24
                 Text: ="Cancel"
-                Width: =280
+                Width: =Parent.Width * 0.5 - 50
                 ZIndex: =1
 
             Button_Save_Add As button:
@@ -106,7 +106,7 @@
                 RadiusTopRight: =15
                 Size: =24
                 Text: ="Save"
-                Width: =280
+                Width: =Parent.Width * 0.5 - 50
                 ZIndex: =2
 
         BodyContAdd As groupContainer.verticalAutoLayoutContainer:
