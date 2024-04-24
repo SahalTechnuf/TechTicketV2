@@ -14,6 +14,302 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "ViewEdit_1.ParentContView_1.BodyContView_1.EditForm_1.Edit_Title_1.DataCardKeyTitle_Edit_1.Y"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ViewEdit_1.ParentContView_1.BodyContView_1.EditForm_1.Edit_Title_1.DataCardKeyTitle_Edit_1.Y",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 1,
+                  "charOffset": 6,
+                  "snippet": {
+                    "text": "%"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Y",
+                "module": "ViewEdit_1",
+                "type": "ViewEdit_1.ParentContView_1.BodyContView_1.EditForm_1.Edit_Title_1.DataCardKeyTitle_Edit_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrBadToken",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ViewEdit_1.ParentContView_1.BodyContView_1.EditForm_1.Edit_Title_1.DataCardKeyTitle_Edit_1.Y"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ViewEdit_1.ParentContView_1.BodyContView_1.EditForm_1.Edit_Title_1.DataCardKeyTitle_Edit_1.Y",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 10,
+                  "charOffset": 7,
+                  "snippet": {
+                    "text": "FieldValue"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Y",
+                "module": "ViewEdit_1",
+                "type": "ViewEdit_1.ParentContView_1.BodyContView_1.EditForm_1.Edit_Title_1.DataCardKeyTitle_Edit_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrOperatorExpected",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ViewEdit_1.ParentContView_1.BodyContView_1.EditForm_1.Edit_Title_1.DataCardKeyTitle_Edit_1.Y"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ViewEdit_1.ParentContView_1.BodyContView_1.EditForm_1.Edit_Title_1.DataCardKeyTitle_Edit_1.Y",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 1,
+                  "charOffset": 17,
+                  "snippet": {
+                    "text": "."
+                  }
+                }
+              },
+              "properties": {
+                "member": "Y",
+                "module": "ViewEdit_1",
+                "type": "ViewEdit_1.ParentContView_1.BodyContView_1.EditForm_1.Edit_Title_1.DataCardKeyTitle_Edit_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrBadToken",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ViewEdit_1.ParentContView_1.BodyContView_1.EditForm_1.Edit_Title_1.DataCardKeyTitle_Edit_1.Y"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ViewEdit_1.ParentContView_1.BodyContView_1.EditForm_1.Edit_Title_1.DataCardKeyTitle_Edit_1.Y",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 2,
+                  "charOffset": 18,
+                  "snippet": {
+                    "text": "ID"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Y",
+                "module": "ViewEdit_1",
+                "type": "ViewEdit_1.ParentContView_1.BodyContView_1.EditForm_1.Edit_Title_1.DataCardKeyTitle_Edit_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrOperatorExpected",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ViewEdit_1.ParentContView_1.BodyContView_1.EditForm_1.Edit_Title_1.DataCardKeyTitle_Edit_1.Y"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ViewEdit_1.ParentContView_1.BodyContView_1.EditForm_1.Edit_Title_1.DataCardKeyTitle_Edit_1.Y",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 1,
+                  "charOffset": 20,
+                  "snippet": {
+                    "text": "%"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Y",
+                "module": "ViewEdit_1",
+                "type": "ViewEdit_1.ParentContView_1.BodyContView_1.EditForm_1.Edit_Title_1.DataCardKeyTitle_Edit_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrBadToken",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ViewEdit_1.ParentContView_1.BodyContView_1.EditForm_1.Edit_Title_1.DataCardKeyTitle_Edit_1.Y"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ViewEdit_1.ParentContView_1.BodyContView_1.EditForm_1.Edit_Title_1.DataCardKeyTitle_Edit_1.Y",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 7,
+                  "charOffset": 21,
+                  "snippet": {
+                    "text": ".Height"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Y",
+                "module": "ViewEdit_1",
+                "type": "ViewEdit_1.ParentContView_1.BodyContView_1.EditForm_1.Edit_Title_1.DataCardKeyTitle_Edit_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidDot",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ViewEdit_1.ParentContView_1.BodyContView_1.EditForm_1.Edit_Title_1.DataCardKeyTitle_Edit_1.Y"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ViewEdit_1.ParentContView_1.BodyContView_1.EditForm_1.Edit_Title_1.DataCardKeyTitle_Edit_1.Y",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 2,
+                  "charOffset": 18,
+                  "snippet": {
+                    "text": "ID"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Y",
+                "module": "ViewEdit_1",
+                "type": "ViewEdit_1.ParentContView_1.BodyContView_1.EditForm_1.Edit_Title_1.DataCardKeyTitle_Edit_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrOperatorExpected",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ViewEdit_1.ParentContView_1.BodyContView_1.EditForm_1.Edit_Title_1.DataCardKeyTitle_Edit_1.Y"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ViewEdit_1.ParentContView_1.BodyContView_1.EditForm_1.Edit_Title_1.DataCardKeyTitle_Edit_1.Y",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 10,
+                  "charOffset": 7,
+                  "snippet": {
+                    "text": "FieldValue"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Y",
+                "module": "ViewEdit_1",
+                "type": "ViewEdit_1.ParentContView_1.BodyContView_1.EditForm_1.Edit_Title_1.DataCardKeyTitle_Edit_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrOperatorExpected",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "Dashboard.ParentContDash.BodyContDash.DashGallery.DashTickets.Items"
                 }
               ],
@@ -47,7 +343,7 @@
             "level": "Medium"
           },
           "ruleId": "app-SuggestRemoteExecutionHint",
-          "ruleIndex": 0
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -87,228 +383,6 @@
             "level": "Medium"
           },
           "ruleId": "app-SuggestRemoteExecutionHint",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "ViewEdit_1.ParentContView_1.BodyContView_1.EditForm_1.Edit_Title_1.DataCardKeyTitle_Edit_1.Y"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "ViewEdit_1.ParentContView_1.BodyContView_1.EditForm_1.Edit_Title_1.DataCardKeyTitle_Edit_1.Y",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 1,
-                  "charOffset": 6,
-                  "snippet": {
-                    "text": "%"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Y",
-                "module": "ViewEdit_1",
-                "type": "ViewEdit_1.ParentContView_1.BodyContView_1.EditForm_1.Edit_Title_1.DataCardKeyTitle_Edit_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrBadToken",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "ViewEdit_1.ParentContView_1.BodyContView_1.EditForm_1.Edit_Title_1.DataCardKeyTitle_Edit_1.Y"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "ViewEdit_1.ParentContView_1.BodyContView_1.EditForm_1.Edit_Title_1.DataCardKeyTitle_Edit_1.Y",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 10,
-                  "charOffset": 7,
-                  "snippet": {
-                    "text": "FieldValue"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Y",
-                "module": "ViewEdit_1",
-                "type": "ViewEdit_1.ParentContView_1.BodyContView_1.EditForm_1.Edit_Title_1.DataCardKeyTitle_Edit_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrOperatorExpected",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "ViewEdit_1.ParentContView_1.BodyContView_1.EditForm_1.Edit_Title_1.DataCardKeyTitle_Edit_1.Y"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "ViewEdit_1.ParentContView_1.BodyContView_1.EditForm_1.Edit_Title_1.DataCardKeyTitle_Edit_1.Y",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 1,
-                  "charOffset": 17,
-                  "snippet": {
-                    "text": "."
-                  }
-                }
-              },
-              "properties": {
-                "member": "Y",
-                "module": "ViewEdit_1",
-                "type": "ViewEdit_1.ParentContView_1.BodyContView_1.EditForm_1.Edit_Title_1.DataCardKeyTitle_Edit_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrBadToken",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "ViewEdit_1.ParentContView_1.BodyContView_1.EditForm_1.Edit_Title_1.DataCardKeyTitle_Edit_1.Y"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "ViewEdit_1.ParentContView_1.BodyContView_1.EditForm_1.Edit_Title_1.DataCardKeyTitle_Edit_1.Y",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 2,
-                  "charOffset": 18,
-                  "snippet": {
-                    "text": "ID"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Y",
-                "module": "ViewEdit_1",
-                "type": "ViewEdit_1.ParentContView_1.BodyContView_1.EditForm_1.Edit_Title_1.DataCardKeyTitle_Edit_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrOperatorExpected",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "ViewEdit_1.ParentContView_1.BodyContView_1.EditForm_1.Edit_Title_1.DataCardKeyTitle_Edit_1.Y"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "ViewEdit_1.ParentContView_1.BodyContView_1.EditForm_1.Edit_Title_1.DataCardKeyTitle_Edit_1.Y",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 1,
-                  "charOffset": 20,
-                  "snippet": {
-                    "text": "%"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Y",
-                "module": "ViewEdit_1",
-                "type": "ViewEdit_1.ParentContView_1.BodyContView_1.EditForm_1.Edit_Title_1.DataCardKeyTitle_Edit_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrBadToken",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "ViewEdit_1.ParentContView_1.BodyContView_1.EditForm_1.Edit_Title_1.DataCardKeyTitle_Edit_1.Y"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "ViewEdit_1.ParentContView_1.BodyContView_1.EditForm_1.Edit_Title_1.DataCardKeyTitle_Edit_1.Y",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 7,
-                  "charOffset": 21,
-                  "snippet": {
-                    "text": ".Height"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Y",
-                "module": "ViewEdit_1",
-                "type": "ViewEdit_1.ParentContView_1.BodyContView_1.EditForm_1.Edit_Title_1.DataCardKeyTitle_Edit_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
           "ruleIndex": 3
         },
         {
@@ -316,93 +390,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "ViewEdit_1.ParentContView_1.BodyContView_1.EditForm_1.Edit_Title_1.DataCardKeyTitle_Edit_1.Y"
+                  "fullyQualifiedName": "ViewEdit_1.ParentContView_1.BodyContView_1.UserInfoCont_1.CreatedCont_1.Button_DeleteTicket_1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "ViewEdit_1.ParentContView_1.BodyContView_1.EditForm_1.Edit_Title_1.DataCardKeyTitle_Edit_1.Y",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 2,
-                  "charOffset": 18,
-                  "snippet": {
-                    "text": "ID"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Y",
-                "module": "ViewEdit_1",
-                "type": "ViewEdit_1.ParentContView_1.BodyContView_1.EditForm_1.Edit_Title_1.DataCardKeyTitle_Edit_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrOperatorExpected",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "ViewEdit_1.ParentContView_1.BodyContView_1.EditForm_1.Edit_Title_1.DataCardKeyTitle_Edit_1.Y"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "ViewEdit_1.ParentContView_1.BodyContView_1.EditForm_1.Edit_Title_1.DataCardKeyTitle_Edit_1.Y",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 10,
-                  "charOffset": 7,
-                  "snippet": {
-                    "text": "FieldValue"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Y",
-                "module": "ViewEdit_1",
-                "type": "ViewEdit_1.ParentContView_1.BodyContView_1.EditForm_1.Edit_Title_1.DataCardKeyTitle_Edit_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrOperatorExpected",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Dashboard.ParentContDash.SearchBarCont.SearchTicket.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Dashboard.ParentContDash.SearchBarCont.SearchTicket.AccessibleLabel",
+                  "fullyQualifiedName": "ViewEdit_1.ParentContView_1.BodyContView_1.UserInfoCont_1.CreatedCont_1.Button_DeleteTicket_1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Dashboard",
-                "type": "Dashboard.ParentContDash.SearchBarCont.SearchTicket"
+                "module": "ViewEdit_1",
+                "type": "ViewEdit_1.ParentContView_1.BodyContView_1.UserInfoCont_1.CreatedCont_1.Button_DeleteTicket_1"
               }
             }
           ],
@@ -420,49 +420,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Dashboard.ParentContDash.SearchBarCont.RefreshIcon.AccessibleLabel"
+                  "fullyQualifiedName": "ViewEdit_1.ParentContView_1.BodyContView_1.UserInfoCont_1.CreatedCont_1.Button_DeleteTicket_1.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Dashboard.ParentContDash.SearchBarCont.RefreshIcon.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Dashboard",
-                "type": "Dashboard.ParentContDash.SearchBarCont.RefreshIcon"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Dashboard.ParentContDash.SearchBarCont.RefreshIcon.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Dashboard.ParentContDash.SearchBarCont.RefreshIcon.TabIndex",
+                  "fullyQualifiedName": "ViewEdit_1.ParentContView_1.BodyContView_1.UserInfoCont_1.CreatedCont_1.Button_DeleteTicket_1.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "Dashboard",
-                "type": "Dashboard.ParentContDash.SearchBarCont.RefreshIcon"
+                "module": "ViewEdit_1",
+                "type": "ViewEdit_1.ParentContView_1.BodyContView_1.UserInfoCont_1.CreatedCont_1.Button_DeleteTicket_1"
               }
             }
           ],
@@ -480,19 +450,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Dashboard.ParentContDash.BodyContDash.DashGallery.DashTickets.AccessibleLabel"
+                  "fullyQualifiedName": "ViewEdit_1.ParentContView_1.BodyContView_1.EditForm_1.Edit_Title_1.TextInputTitle_Edit_1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Dashboard.ParentContDash.BodyContDash.DashGallery.DashTickets.AccessibleLabel",
+                  "fullyQualifiedName": "ViewEdit_1.ParentContView_1.BodyContView_1.EditForm_1.Edit_Title_1.TextInputTitle_Edit_1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Dashboard",
-                "type": "Dashboard.ParentContDash.BodyContDash.DashGallery.DashTickets"
+                "module": "ViewEdit_1",
+                "type": "ViewEdit_1.ParentContView_1.BodyContView_1.EditForm_1.Edit_Title_1.TextInputTitle_Edit_1"
               }
             }
           ],
@@ -510,49 +480,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Dashboard.ParentContDash.BodyContDash.DashGallery.DashTickets.TabIndex"
+                  "fullyQualifiedName": "ViewEdit_1.ParentContView_1.BodyContView_1.EditForm_1.Edit_Desc_1.DataCardValueDesc_Edit_1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Dashboard.ParentContDash.BodyContDash.DashGallery.DashTickets.TabIndex",
+                  "fullyQualifiedName": "ViewEdit_1.ParentContView_1.BodyContView_1.EditForm_1.Edit_Desc_1.DataCardValueDesc_Edit_1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "TabIndex",
-                "module": "Dashboard",
-                "type": "Dashboard.ParentContDash.BodyContDash.DashGallery.DashTickets"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Low"
-          },
-          "ruleId": "acc-TabOrderShouldBeChecked",
-          "ruleIndex": 6
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Dashboard.ParentContDash.BodyContDash.DashGallery.DashTickets.StatusButton.FocusedBorderThickness"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Dashboard.ParentContDash.BodyContDash.DashGallery.DashTickets.StatusButton.FocusedBorderThickness",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "FocusedBorderThickness",
-                "module": "Dashboard",
-                "type": "Dashboard.ParentContDash.BodyContDash.DashGallery.DashTickets.StatusButton"
+                "member": "AccessibleLabel",
+                "module": "ViewEdit_1",
+                "type": "ViewEdit_1.ParentContView_1.BodyContView_1.EditForm_1.Edit_Desc_1.DataCardValueDesc_Edit_1"
               }
             }
           ],
@@ -562,8 +502,158 @@
           "properties": {
             "level": "Medium"
           },
-          "ruleId": "acc-FocusBorderShouldBeVisible",
-          "ruleIndex": 7
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ViewEdit_1.ParentContView_1.BodyContView_1.EditForm_1.Edit_Image_1.AddPictureImage_Edit_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ViewEdit_1.ParentContView_1.BodyContView_1.EditForm_1.Edit_Image_1.AddPictureImage_Edit_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ViewEdit_1",
+                "type": "ViewEdit_1.ParentContView_1.BodyContView_1.EditForm_1.Edit_Image_1.AddPictureImage_Edit_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ViewEdit_1.ParentContView_1.BodyContView_1.EditForm_1.Edit_Image_1.ImageTrashIconImage_Edit_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ViewEdit_1.ParentContView_1.BodyContView_1.EditForm_1.Edit_Image_1.ImageTrashIconImage_Edit_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ViewEdit_1",
+                "type": "ViewEdit_1.ParentContView_1.BodyContView_1.EditForm_1.Edit_Image_1.ImageTrashIconImage_Edit_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ViewEdit_1.ParentContView_1.BodyContView_1.EditForm_1.Edit_Image_1.ImageTrashIconImage_Edit_1.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ViewEdit_1.ParentContView_1.BodyContView_1.EditForm_1.Edit_Image_1.ImageTrashIconImage_Edit_1.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "ViewEdit_1",
+                "type": "ViewEdit_1.ParentContView_1.BodyContView_1.EditForm_1.Edit_Image_1.ImageTrashIconImage_Edit_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ViewEdit_1.Button_DeleteImage_View_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ViewEdit_1.Button_DeleteImage_View_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ViewEdit_1",
+                "type": "ViewEdit_1.Button_DeleteImage_View_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ViewEdit_1.Button_DeleteImage_View_1.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ViewEdit_1.Button_DeleteImage_View_1.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "ViewEdit_1",
+                "type": "ViewEdit_1.Button_DeleteImage_View_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 5
         },
         {
           "locations": [
@@ -774,6 +864,186 @@
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
           "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Dashboard.ParentContDash.SearchBarCont.SearchTicket.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Dashboard.ParentContDash.SearchBarCont.SearchTicket.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Dashboard",
+                "type": "Dashboard.ParentContDash.SearchBarCont.SearchTicket"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Dashboard.ParentContDash.SearchBarCont.RefreshIcon.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Dashboard.ParentContDash.SearchBarCont.RefreshIcon.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Dashboard",
+                "type": "Dashboard.ParentContDash.SearchBarCont.RefreshIcon"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Dashboard.ParentContDash.SearchBarCont.RefreshIcon.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Dashboard.ParentContDash.SearchBarCont.RefreshIcon.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Dashboard",
+                "type": "Dashboard.ParentContDash.SearchBarCont.RefreshIcon"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Dashboard.ParentContDash.BodyContDash.DashGallery.DashTickets.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Dashboard.ParentContDash.BodyContDash.DashGallery.DashTickets.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Dashboard",
+                "type": "Dashboard.ParentContDash.BodyContDash.DashGallery.DashTickets"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Dashboard.ParentContDash.BodyContDash.DashGallery.DashTickets.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Dashboard.ParentContDash.BodyContDash.DashGallery.DashTickets.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Dashboard",
+                "type": "Dashboard.ParentContDash.BodyContDash.DashGallery.DashTickets"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Low"
+          },
+          "ruleId": "acc-TabOrderShouldBeChecked",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Dashboard.ParentContDash.BodyContDash.DashGallery.DashTickets.StatusButton.FocusedBorderThickness"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Dashboard.ParentContDash.BodyContDash.DashGallery.DashTickets.StatusButton.FocusedBorderThickness",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "FocusedBorderThickness",
+                "module": "Dashboard",
+                "type": "Dashboard.ParentContDash.BodyContDash.DashGallery.DashTickets.StatusButton"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-FocusBorderShouldBeVisible",
+          "ruleIndex": 7
         },
         {
           "locations": [
@@ -1050,287 +1320,17 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "ViewEdit_1.Button_DeleteImage_View_1.AccessibleLabel"
+                  "fullyQualifiedName": "App.lol"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "ViewEdit_1.Button_DeleteImage_View_1.AccessibleLabel",
+                  "fullyQualifiedName": "App.lol",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "AccessibleLabel",
-                "module": "ViewEdit_1",
-                "type": "ViewEdit_1.Button_DeleteImage_View_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "ViewEdit_1.Button_DeleteImage_View_1.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "ViewEdit_1.Button_DeleteImage_View_1.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "ViewEdit_1",
-                "type": "ViewEdit_1.Button_DeleteImage_View_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "ViewEdit_1.ParentContView_1.BodyContView_1.UserInfoCont_1.CreatedCont_1.Button_DeleteTicket_1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "ViewEdit_1.ParentContView_1.BodyContView_1.UserInfoCont_1.CreatedCont_1.Button_DeleteTicket_1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "ViewEdit_1",
-                "type": "ViewEdit_1.ParentContView_1.BodyContView_1.UserInfoCont_1.CreatedCont_1.Button_DeleteTicket_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "ViewEdit_1.ParentContView_1.BodyContView_1.UserInfoCont_1.CreatedCont_1.Button_DeleteTicket_1.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "ViewEdit_1.ParentContView_1.BodyContView_1.UserInfoCont_1.CreatedCont_1.Button_DeleteTicket_1.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "ViewEdit_1",
-                "type": "ViewEdit_1.ParentContView_1.BodyContView_1.UserInfoCont_1.CreatedCont_1.Button_DeleteTicket_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "ViewEdit_1.ParentContView_1.BodyContView_1.EditForm_1.Edit_Title_1.TextInputTitle_Edit_1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "ViewEdit_1.ParentContView_1.BodyContView_1.EditForm_1.Edit_Title_1.TextInputTitle_Edit_1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "ViewEdit_1",
-                "type": "ViewEdit_1.ParentContView_1.BodyContView_1.EditForm_1.Edit_Title_1.TextInputTitle_Edit_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "ViewEdit_1.ParentContView_1.BodyContView_1.EditForm_1.Edit_Desc_1.DataCardValueDesc_Edit_1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "ViewEdit_1.ParentContView_1.BodyContView_1.EditForm_1.Edit_Desc_1.DataCardValueDesc_Edit_1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "ViewEdit_1",
-                "type": "ViewEdit_1.ParentContView_1.BodyContView_1.EditForm_1.Edit_Desc_1.DataCardValueDesc_Edit_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "ViewEdit_1.ParentContView_1.BodyContView_1.EditForm_1.Edit_Image_1.AddPictureImage_Edit_1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "ViewEdit_1.ParentContView_1.BodyContView_1.EditForm_1.Edit_Image_1.AddPictureImage_Edit_1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "ViewEdit_1",
-                "type": "ViewEdit_1.ParentContView_1.BodyContView_1.EditForm_1.Edit_Image_1.AddPictureImage_Edit_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "ViewEdit_1.ParentContView_1.BodyContView_1.EditForm_1.Edit_Image_1.ImageTrashIconImage_Edit_1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "ViewEdit_1.ParentContView_1.BodyContView_1.EditForm_1.Edit_Image_1.ImageTrashIconImage_Edit_1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "ViewEdit_1",
-                "type": "ViewEdit_1.ParentContView_1.BodyContView_1.EditForm_1.Edit_Image_1.ImageTrashIconImage_Edit_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "ViewEdit_1.ParentContView_1.BodyContView_1.EditForm_1.Edit_Image_1.ImageTrashIconImage_Edit_1.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "ViewEdit_1.ParentContView_1.BodyContView_1.EditForm_1.Edit_Image_1.ImageTrashIconImage_Edit_1.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "ViewEdit_1",
-                "type": "ViewEdit_1.ParentContView_1.BodyContView_1.EditForm_1.Edit_Image_1.ImageTrashIconImage_Edit_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "App.VarDeleteImg"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "App.VarDeleteImg",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "VarDeleteImg",
+                "member": "lol",
                 "module": "App",
                 "type": "App"
               }
@@ -1350,17 +1350,17 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.lol"
+                  "fullyQualifiedName": "App.VarDeleteImg"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "App.lol",
+                  "fullyQualifiedName": "App.VarDeleteImg",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "lol",
+                "member": "VarDeleteImg",
                 "module": "App",
                 "type": "App"
               }
@@ -1532,25 +1532,6 @@
           "name": "PowerApps app checker",
           "rules": [
             {
-              "id": "app-SuggestRemoteExecutionHint",
-              "messageStrings": {
-                "issue": {
-                  "text": "Delegation warning. The \"{0}\" part of this formula might not work correctly on large data sets."
-                }
-              },
-              "properties": {
-                "componentType": "app",
-                "howToFix": [
-                  "If your data set exceeds the 500 record limit but contains less than 2,000 records, try resetting the limit.",
-                  "Try simplifying the formula.",
-                  "Try moving your data to a different data source."
-                ],
-                "level": "Medium",
-                "primaryCategory": "formula",
-                "whyFix": ""
-              }
-            },
-            {
               "id": "app-ErrBadToken",
               "messageStrings": {
                 "issue": {
@@ -1594,6 +1575,25 @@
               "properties": {
                 "componentType": "app",
                 "level": "High",
+                "primaryCategory": "formula",
+                "whyFix": ""
+              }
+            },
+            {
+              "id": "app-SuggestRemoteExecutionHint",
+              "messageStrings": {
+                "issue": {
+                  "text": "Delegation warning. The \"{0}\" part of this formula might not work correctly on large data sets."
+                }
+              },
+              "properties": {
+                "componentType": "app",
+                "howToFix": [
+                  "If your data set exceeds the 500 record limit but contains less than 2,000 records, try resetting the limit.",
+                  "Try simplifying the formula.",
+                  "Try moving your data to a different data source."
+                ],
+                "level": "Medium",
                 "primaryCategory": "formula",
                 "whyFix": ""
               }
