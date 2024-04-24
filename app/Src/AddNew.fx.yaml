@@ -133,6 +133,7 @@
                 Height: =Parent.Height
                 LayoutMinHeight: =700
                 LayoutMinWidth: =320
+                NumberOfColumns: =2
                 Width: =Parent.Width
                 ZIndex: =1
 
@@ -147,12 +148,13 @@
                     Fill: =RGBA(0, 0, 0, 0)
                     Height: |-
                         =//50
-                        AddForm.Height*0.0600
+                        //AddForm.Height*0.0600
+                        If((AddForm.Height * 0.15) < 140, 140, AddForm.Height * 0.15)
                     Required: =false
                     Update: =DataCardValueTitle_Add.Selected.Title
                     Width: =Parent.Width
-                    X: =0
-                    Y: =0
+                    X: =If((App.Width / App.Height) > 2, 0, 0)
+                    Y: =If((App.Width / App.Height) > 2, 0, 0)
                     ZIndex: =1
 
                     DataCardKeyTitle_Add As label:
@@ -271,15 +273,16 @@
                     Fill: =RGBA(0, 0, 0, 0)
                     Height: |-
                         =//150
-                        AddForm.Height*0.180
+                        //AddForm.Height*0.180
+                        If((App.Width / App.Height) > 2, Parent.Height - Add_Title.Height, (AddForm.Height - Add_Title.Height) * 0.5)
                     MaxLength: =DataSourceInfo([@'Technuf Service Request'], DataSourceInfo.MaxLength, Description)
                     Required: =true
                     Update: =DataCardValueDesc_Add.Text
                     Width: |-
-                        =//AddNew.Width/AddNew.Size
-                        Parent.Width
+                        =//320
+                        If((App.Width / App.Height) > 2, Parent.Width*0.6, Parent.Width)
                     X: =0
-                    Y: =1
+                    Y: =If((App.Width / App.Height) < 2, 1, 1)
                     ZIndex: =2
 
                     DataCardKeyDesc_Add As label:
@@ -393,14 +396,13 @@
                     Fill: =RGBA(0, 0, 0, 0)
                     Height: |-
                         =//384
-                        AddForm.Height*0.461
+                        //AddForm.Height*0.461
+                        If((App.Width / App.Height) > 2, Parent.Height - Add_Title.Height, (AddForm.Height - Add_Title.Height) * 0.5)
                     Required: =false
                     Update: =ImageImage_Add.Image
-                    Width: |-
-                        =//AddNew.Width/AddNew.Size
-                        Parent.Width
-                    X: =0
-                    Y: =2
+                    Width: =If((App.Width / App.Height) > 2, Parent.Width*0.4, Parent.Width)
+                    X: =If((App.Width / App.Height) > 2, 1, 0)
+                    Y: =If((App.Width / App.Height) > 2, 1, 2)
                     ZIndex: =2
 
                     DataCardKeyImage_Add As label:

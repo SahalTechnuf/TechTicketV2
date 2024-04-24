@@ -137,7 +137,7 @@
   "ScreenOrder": [
     "Dashboard",
     "ViewEdit",
-    "ViewEdit_1",
-    "AddNew"
+    "AddNew",
+    "ViewEdit_1"
   ]
 }
