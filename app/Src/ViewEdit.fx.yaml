@@ -195,7 +195,7 @@
                         LayoutMinWidth: =560
                         PaddingLeft: =0
                         Size: =17
-                        Text: ="  " & Text(selectedItem.'Issue Date and Time')
+                        Text: =Text(selectedItem.'Issue Date and Time')
                         Width: =Parent.Width - Button_DeleteTicket.Width - Label_Created.Width - 30
                         X: =130
                         ZIndex: =2
@@ -280,7 +280,7 @@
                         LayoutMinWidth: =560
                         PaddingLeft: =0
                         Size: =17
-                        Text: =" " & selectedItem.'Created By'.DisplayName
+                        Text: =selectedItem.'Created By'.DisplayName
                         Width: |
                             =535
                         ZIndex: =2
@@ -337,7 +337,7 @@
                         LayoutMinWidth: =560
                         PaddingLeft: =0
                         Size: =17
-                        Text: =" " & selectedItem.'Created By'.Email
+                        Text: =selectedItem.'Created By'.Email
                         Width: |
                             =525
                         ZIndex: =2
