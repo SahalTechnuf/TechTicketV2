@@ -539,7 +539,8 @@
                         Width: =Parent.Width - 60
                         Wrap: =false
                         X: =30
-                        Y: =7
+                        Y: |
+                            =10
                         ZIndex: =2
 
                     ImageImage_Edit As image:
@@ -567,7 +568,9 @@
                         Tooltip: =Parent.DisplayName
                         Width: =Parent.Width - 80
                         X: =40
-                        Y: =60
+                        Y: |-
+                            =//60
+                            DataCardKeyImage_Edit.Y + DataCardKeyImage_Edit.Height + 5
                         ZIndex: =3
 
                     ErrorMessageImage_Edit As label:
@@ -710,7 +713,9 @@
                         Text: =""
                         Width: =Parent.Width - 80
                         X: =40
-                        Y: =60
+                        Y: |-
+                            =//60
+                            DataCardKeyImage_Edit.Y + DataCardKeyImage_Edit.Height + 5
                         ZIndex: =9
 
                 Edit_Desc As typedDataCard.textualEditCard:
