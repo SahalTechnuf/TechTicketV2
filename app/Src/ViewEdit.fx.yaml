@@ -524,8 +524,8 @@
                         PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
                         PressedFill: =RGBA(0, 0, 0, 0)
                         Width: =32
-                        X: =Parent.Width - 100
-                        Y: =Parent.Height - Edit_Image.Height + 80
+                        X: =AddPictureImage_Edit.Width - 10
+                        Y: =AddPictureImage_Edit.Height - 180
                         ZIndex: =1
 
                     DataCardKeyImage_Edit As label:
@@ -928,7 +928,7 @@
         PressedFill: =RGBA(0, 0, 0, 0)
         Visible: =!IsBlank(ImageImage_Edit.Image)
         Width: =46
-        X: =531
-        Y: =747
+        X: =532
+        Y: =808
         ZIndex: =2
 
