@@ -363,7 +363,7 @@
                     Height: |
                         =// If((EditForm.Height * 0.2) < 140, 140, EditForm.Height * 0.2)
                         
-                        If((EditForm.Height * 0.2) < 140, 140, EditForm.Height * 0.2)
+                        If((EditForm.Height * 0.15) < 140, 140, EditForm.Height * 0.15)
                     Required: =false
                     Update: =TextInputTitle_Edit.Text
                     Width: =Parent.Width
@@ -483,15 +483,16 @@
                     DisplayName: =DataSourceInfo([@'Technuf Service Request'],DataSourceInfo.DisplayName,Image_x0028_Optional_x0029_)
                     Fill: =RGBA(0, 0, 0, 0)
                     Height: |-
-                        =//364
-                        EditForm.Height*0.2
+                        =//If((App.Width / App.Height) > 2, EditForm.Height - Edit_Title.Height, EditForm.Height*0.2)
+                        
+                        (EditForm.Height - Edit_Title.Height) * 0.5
                     Required: =false
                     Update: =ImageImage_Edit.Image
-                    Width: |-
-                        =// If((App.Width / App.Height) > 2, Parent.Width*0.5, Parent.Width)
-                        Parent.Width * 0.5
-                    X: =If((App.Width / App.Height) < 2, 1, 0)
-                    Y: =If((App.Width / App.Height) < 2, 2, 0)
+                    Width: =If((App.Width / App.Height) > 2, Parent.Width*0.4, Parent.Width)
+                    X: |
+                        =If((App.Width / App.Height) > 2, 1, 0)
+                    Y: |
+                        =If((App.Width / App.Height) > 2, 1, 2)
                     ZIndex: =1
 
                     ImageTrashIconImage_Edit As icon.Trash:
@@ -534,8 +535,8 @@
                         Text: =Parent.DisplayName
                         Width: =Parent.Width - 60
                         Wrap: =false
-                        X: =30
-                        Y: =10
+                        X: =37
+                        Y: =7
                         ZIndex: =2
 
                     ImageImage_Edit As image:
@@ -547,7 +548,7 @@
                         DisplayMode: =Parent.DisplayMode
                         Fill: =RGBA(204, 231, 246, 1)
                         FocusedBorderThickness: =4
-                        Height: =282
+                        Height: =AddPictureImage_Edit.Height
                         HoverBorderColor: =RGBA(0, 0, 0, 0)
                         HoverFill: =RGBA(0, 0, 0, 0)
                         Image: |-
@@ -563,7 +564,7 @@
                         Tooltip: =Parent.DisplayName
                         Width: =Parent.Width - 80
                         X: =40
-                        Y: =72
+                        Y: =60
                         ZIndex: =3
 
                     ErrorMessageImage_Edit As label:
@@ -588,7 +589,7 @@
                         Visible: =Parent.DisplayMode=DisplayMode.Edit
                         Width: =Parent.Width - 60
                         X: =30
-                        Y: =ImageImage_Edit.Y + ImageImage_Edit.Height
+                        Y: =342
                         ZIndex: =4
 
                     StarVisibleImage_Edit As label:
@@ -628,7 +629,10 @@
                         Visible: =IsBlank(ImageImage_Edit.Image)
                         Width: =104
                         X: =Parent.Width/2 - Self.Width/2
-                        Y: =132
+                        Y: |-
+                            =AddPictureImage_Edit.Y + AddPictureImage_Edit.Height/2 - Self.Height
+                            
+                            //120
                         ZIndex: =6
 
                     upload_Edit As label:
@@ -648,7 +652,8 @@
                         Visible: =IsBlank(ImageImage_Edit.Image)
                         Width: =560
                         X: =Parent.Width/2 - Self.Width/2
-                        Y: =213
+                        Y: |
+                            =AddPictureImage_Edit.Y + AddPictureImage_Edit.Height/2
                         ZIndex: =7
 
                     format_Edit As label:
@@ -670,7 +675,8 @@
                         Visible: =IsBlank(ImageImage_Edit.Image)
                         Width: =560
                         X: =Parent.Width/2 - Self.Width/2
-                        Y: =248
+                        Y: |
+                            =AddPictureImage_Edit.Y + AddPictureImage_Edit.Height/2 + Self.Height
                         ZIndex: =8
 
                     AddPictureImage_Edit As addMedia:
@@ -685,8 +691,10 @@
                         Fill: =RGBA(102, 182, 227, 1)
                         FocusedBorderThickness: =4
                         Font: =Font.'Segoe UI'
-                        Height: |
-                            =Edit_Image.Height - DataCardKeyImage_Edit.Height - 35
+                        Height: |-
+                            =//Edit_Image.Height - DataCardKeyImage_Edit.Height - 135
+                            // If((Edit_Image.Height - DataCardKeyImage_Edit.Height - 135) < 142, 142, Edit_Image.Height - DataCardKeyImage_Edit.Height - 135)
+                            Edit_Image.Height - DataCardKeyImage_Edit.Height - 40
                         HoverBorderColor: =RGBA(0, 0, 0, 0)
                         HoverColor: =RGBA(255, 255, 255, 1)
                         HoverFill: =ColorFade(RGBA(135, 100, 184, 1), 80%)
@@ -698,7 +706,7 @@
                         Text: =""
                         Width: =Parent.Width - 80
                         X: =40
-                        Y: =72
+                        Y: =60
                         ZIndex: =9
 
                 Edit_Desc As typedDataCard.textualEditCard:
@@ -713,15 +721,17 @@
                     Fill: =RGBA(0, 0, 0, 0)
                     Height: |-
                         =//EditForm.Height - Edit_Title.Height - Edit_Image.Height
-                        If((EditForm.Height*0.3) < 300, 300, EditForm.Height*0.3)
+                        //If((App.Width / App.Height) > 2,  EditForm.Height - Edit_Title.Height - 100, If((EditForm.Height*0.3) < 300, 300, EditForm.Height*0.3))
+                        (EditForm.Height - Edit_Title.Height) * 0.5
                     MaxLength: =DataSourceInfo([@'Technuf Service Request'], DataSourceInfo.MaxLength, Description)
                     Required: =false
                     Update: =DataCardValueDesc_Edit.Text
-                    Width: |-
-                        =// If((App.Width / App.Height) > 2, Parent.Width*0.5, Parent.Width)
-                        Parent.Width * 0.5
-                    X: =If((App.Width / App.Height) < 2, 1, 0)
-                    Y: =If((App.Width / App.Height) > 2, 1, 0)
+                    Width: =If((App.Width / App.Height) > 2, Parent.Width*0.6, Parent.Width)
+                    X: |
+                        =//If((App.Width / App.Height) < 2, 1, 0)
+                        0
+                    Y: |
+                        =If((App.Width / App.Height) < 2, 1, 1)
                     ZIndex: =2
 
                     DataCardKeyDesc_Edit As label:
@@ -774,8 +784,8 @@
                         RadiusTopRight: =15
                         Size: =21
                         Tooltip: =Parent.DisplayName
-                        Width: =Parent.Width - 60
-                        X: =30
+                        Width: =Parent.Width - 80
+                        X: =40
                         Y: =DataCardKeyDesc_Edit.Y + DataCardKeyDesc_Edit.Height + 5
                         ZIndex: =2
 
