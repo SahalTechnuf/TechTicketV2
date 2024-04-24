@@ -181,6 +181,7 @@
                         Size: =18
                         Text: =ThisItem.Title
                         Width: =331
+                        Wrap: =false
                         X: =171
                         Y: =9
                         ZIndex: =1

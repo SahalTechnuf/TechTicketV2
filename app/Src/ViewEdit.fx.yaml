@@ -175,6 +175,7 @@
                         Text: |-
                             ="Created: "
                         Width: =105
+                        Wrap: =false
                         X: |+
                             =30
                             
