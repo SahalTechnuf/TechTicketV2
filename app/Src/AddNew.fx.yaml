@@ -516,7 +516,7 @@
                         Image: ='file-upload_10015516'
                         PressedBorderColor: =RGBA(0, 0, 0, 0)
                         PressedFill: =RGBA(0, 0, 0, 0)
-                        Visible: =IsBlank(ImageImage_Edit.Image)
+                        Visible: =IsBlank(ImageImage_Add.Image)
                         Width: =104
                         X: =Parent.Width/2 - Self.Width/2
                         Y: |-
@@ -539,7 +539,7 @@
                         Height: =35
                         Size: =18
                         Text: ="Upload a photo"
-                        Visible: =IsBlank(ImageImage_Edit.Image)
+                        Visible: =IsBlank(ImageImage_Add.Image)
                         Width: =560
                         X: =Parent.Width/2 - Self.Width/2
                         Y: |
@@ -562,7 +562,7 @@
                         Size: =18
                         Text: |-
                             ="Supported format: PNG, JPEG, GIF"
-                        Visible: =IsBlank(ImageImage_Edit.Image)
+                        Visible: =IsBlank(ImageImage_Add.Image)
                         Width: =560
                         X: =Parent.Width/2 - Self.Width/2
                         Y: |
@@ -614,10 +614,10 @@
                         PressedBorderColor: =RGBA(0, 0, 0, 0)
                         PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
                         PressedFill: =RGBA(0, 0, 0, 0)
-                        Visible: =!IsBlank(ImageImage_Edit.Image)
+                        Visible: =!IsBlank(ImageImage_Add.Image)
                         Width: =46
-                        X: =AddPictureImage_Edit.Width - 10
-                        Y: =AddPictureImage_Edit.Height - 190
+                        X: =AddPictureImage_Add.Width - 10
+                        Y: =AddPictureImage_Add.Height - 190
                         ZIndex: =10
 
         HeaderContAdd As groupContainer.verticalAutoLayoutContainer:
