@@ -1758,7 +1758,7 @@
       "MetaDataIDKey": "",
       "Name": "Button_DeleteImage_Add",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 4,
+      "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6214,7 +6214,7 @@
       "MetaDataIDKey": "",
       "Name": "Icon_upload_Add",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 5,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {

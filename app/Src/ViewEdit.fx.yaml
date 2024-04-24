@@ -281,7 +281,7 @@
                         Size: =17
                         Text: =" " & selectedItem.'Created By'.DisplayName
                         Width: |
-                            =540
+                            =535
                         ZIndex: =2
 
                 EmailCont As groupContainer.horizontalAutoLayoutContainer:
@@ -338,7 +338,7 @@
                         Size: =17
                         Text: =" " & selectedItem.'Created By'.Email
                         Width: |
-                            =530
+                            =525
                         ZIndex: =2
 
             EditForm As form:
