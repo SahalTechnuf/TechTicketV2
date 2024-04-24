@@ -1500,36 +1500,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "AddNew.ParentContAdd.BodyContAdd.AddForm.Add_Image.format_Add.Y"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "AddNew.ParentContAdd.BodyContAdd.AddForm.Add_Image.format_Add.Y",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "Y",
-                "module": "AddNew",
-                "type": "AddNew.ParentContAdd.BodyContAdd.AddForm.Add_Image.format_Add"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 10
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "AddNew.ParentContAdd.BodyContAdd.AddForm.Add_Image.format_Add.Visible"
                 }
               ],
@@ -1560,36 +1530,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "AddNew.ParentContAdd.BodyContAdd.AddForm.Add_Image.Icon_upload_Add.Y"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "AddNew.ParentContAdd.BodyContAdd.AddForm.Add_Image.Icon_upload_Add.Y",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "Y",
-                "module": "AddNew",
-                "type": "AddNew.ParentContAdd.BodyContAdd.AddForm.Add_Image.Icon_upload_Add"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 10
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "AddNew.ParentContAdd.BodyContAdd.AddForm.Add_Image.Icon_upload_Add.Visible"
                 }
               ],
@@ -1603,36 +1543,6 @@
                 "member": "Visible",
                 "module": "AddNew",
                 "type": "AddNew.ParentContAdd.BodyContAdd.AddForm.Add_Image.Icon_upload_Add"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 10
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "AddNew.ParentContAdd.BodyContAdd.AddForm.Add_Image.upload_Add.Y"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "AddNew.ParentContAdd.BodyContAdd.AddForm.Add_Image.upload_Add.Y",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "Y",
-                "module": "AddNew",
-                "type": "AddNew.ParentContAdd.BodyContAdd.AddForm.Add_Image.upload_Add"
               }
             }
           ],

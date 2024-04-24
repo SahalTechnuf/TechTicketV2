@@ -520,7 +520,7 @@
                         Width: =104
                         X: =Parent.Width/2 - Self.Width/2
                         Y: |-
-                            =AddPictureImage_Edit.Y + AddPictureImage_Edit.Height/2 - Self.Height
+                            =AddPictureImage_Add.Y + AddPictureImage_Add.Height/2 - Self.Height
                             
                             //120
                         ZIndex: =6
@@ -543,7 +543,7 @@
                         Width: =560
                         X: =Parent.Width/2 - Self.Width/2
                         Y: |
-                            =AddPictureImage_Edit.Y + AddPictureImage_Edit.Height/2
+                            =AddPictureImage_Add.Y + AddPictureImage_Add.Height/2
                         ZIndex: =7
 
                     format_Add As label:
@@ -566,7 +566,7 @@
                         Width: =560
                         X: =Parent.Width/2 - Self.Width/2
                         Y: |
-                            =AddPictureImage_Edit.Y + AddPictureImage_Edit.Height/2 + Self.Height
+                            =AddPictureImage_Add.Y + AddPictureImage_Add.Height/2 + Self.Height
                         ZIndex: =8
 
                     AddPictureImage_Add As addMedia:
