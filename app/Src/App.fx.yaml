@@ -5,11 +5,13 @@ App As appinfo:
     MinScreenWidth: |
         =640
     OnStart: |-
-        =ClearCollect(
+        =Set(lol, 100);
+        
+        ClearCollect(
             ConcatenatedList,
             AddColumns(
                 'Work Progress Tracker',
-                "ConcatenatedText",
+                ConcatenatedText,
                 Title
             )
         )

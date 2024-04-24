@@ -137,13 +137,13 @@
                 ZIndex: =1
 
                 Add_Title As typedDataCard.allowedValuesStringEditCard:
-                    AllowedValues: =DataSourceInfo([@'Technuf Service Request'], DataSourceInfo.AllowedValues, "Title")
+                    AllowedValues: =DataSourceInfo([@'Technuf Service Request'], DataSourceInfo.AllowedValues, Title)
                     BorderColor: =RGBA(166, 166, 166, 1)
                     BorderStyle: =BorderStyle.Solid
                     DataField: ="Select category"
                     Default: =
                     DisplayMode: =Parent.DisplayMode
-                    DisplayName: =DataSourceInfo([@'Technuf Service Request'],DataSourceInfo.DisplayName,"Title")
+                    DisplayName: =DataSourceInfo([@'Technuf Service Request'],DataSourceInfo.DisplayName,Title)
                     Fill: =RGBA(0, 0, 0, 0)
                     Height: |-
                         =//50
@@ -267,12 +267,12 @@
                     DataField: ="Description"
                     Default: =ThisItem.Description
                     DisplayMode: =Parent.DisplayMode
-                    DisplayName: =DataSourceInfo([@'Technuf Service Request'],DataSourceInfo.DisplayName,"Description")
+                    DisplayName: =DataSourceInfo([@'Technuf Service Request'],DataSourceInfo.DisplayName,Description)
                     Fill: =RGBA(0, 0, 0, 0)
                     Height: |-
                         =//150
                         AddForm.Height*0.180
-                    MaxLength: =DataSourceInfo([@'Technuf Service Request'], DataSourceInfo.MaxLength, "Description")
+                    MaxLength: =DataSourceInfo([@'Technuf Service Request'], DataSourceInfo.MaxLength, Description)
                     Required: =true
                     Update: =DataCardValueDesc_Add.Text
                     Width: |-
@@ -389,7 +389,7 @@
                     DataField: ="Image_x0028_Optional_x0029_"
                     Default: =ThisItem.'Image (Optional)'
                     DisplayMode: =Parent.DisplayMode
-                    DisplayName: =DataSourceInfo([@'Technuf Service Request'],DataSourceInfo.DisplayName,"Image_x0028_Optional_x0029_")
+                    DisplayName: =DataSourceInfo([@'Technuf Service Request'],DataSourceInfo.DisplayName,Image_x0028_Optional_x0029_)
                     Fill: =RGBA(0, 0, 0, 0)
                     Height: |-
                         =//384
@@ -659,7 +659,8 @@
                 DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledFill: =RGBA(0, 0, 0, 0)
                 FocusedBorderThickness: =4
-                Height: =Parent.Height-80
+                Height: |
+                    =Parent.Height-80
                 HoverBorderColor: =RGBA(0, 0, 0, 0)
                 HoverFill: =RGBA(0, 0, 0, 0)
                 Image: =download
