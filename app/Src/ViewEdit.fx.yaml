@@ -505,29 +505,6 @@
                         =If((App.Width / App.Height) > 2, 1, 2)
                     ZIndex: =1
 
-                    ImageTrashIconImage_Edit As icon.Trash:
-                        BorderColor: =RGBA(0, 0, 0, 0)
-                        Color: =RGBA(0, 134, 208, 1)
-                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                        DisabledColor: =RGBA(220, 220, 220, 1)
-                        DisabledFill: =RGBA(0, 0, 0, 0)
-                        FocusedBorderThickness: =4
-                        Height: =29
-                        HoverBorderColor: =RGBA(0, 0, 0, 0)
-                        HoverColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
-                        HoverFill: =RGBA(0, 0, 0, 0)
-                        Icon: =Icon.Trash
-                        OnSelect: |-
-                            =Set(VarDeleteImg,true);
-                            Reset(AddPictureImage_Edit)
-                        PressedBorderColor: =RGBA(0, 0, 0, 0)
-                        PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
-                        PressedFill: =RGBA(0, 0, 0, 0)
-                        Width: =32
-                        X: =AddPictureImage_Edit.Width - 10
-                        Y: =AddPictureImage_Edit.Height - 180
-                        ZIndex: =1
-
                     DataCardKeyImage_Edit As label:
                         AutoHeight: =true
                         BorderColor: =RGBA(0, 0, 0, 0)
@@ -725,6 +702,28 @@
                             DataCardKeyImage_Edit.Y + DataCardKeyImage_Edit.Height + 5
                         ZIndex: =9
 
+                    Button_DeleteImage_View As icon.Trash:
+                        BorderColor: =RGBA(0, 0, 0, 0)
+                        Color: =RGBA(0, 121, 187, 1)
+                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                        DisabledColor: =RGBA(220, 220, 220, 1)
+                        DisabledFill: =RGBA(0, 0, 0, 0)
+                        FocusedBorderThickness: =4
+                        Height: =36
+                        HoverBorderColor: =RGBA(0, 0, 0, 0)
+                        HoverColor: =Color.DarkGray
+                        HoverFill: =RGBA(0, 0, 0, 0)
+                        Icon: =Icon.Trash
+                        OnSelect: =Set(ClearImage, true)
+                        PressedBorderColor: =RGBA(0, 0, 0, 0)
+                        PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
+                        PressedFill: =RGBA(0, 0, 0, 0)
+                        Visible: =!IsBlank(ImageImage_Edit.Image)
+                        Width: =46
+                        X: =AddPictureImage_Edit.Width - 10
+                        Y: =AddPictureImage_Edit.Height - 190
+                        ZIndex: =10
+
                 Edit_Desc As typedDataCard.textualEditCard:
                     BorderColor: =RGBA(166, 166, 166, 1)
                     BorderStyle: =BorderStyle.Solid
@@ -909,26 +908,4 @@
                 Width: =Parent.Width
                 Y: =72
                 ZIndex: =2
-
-    Button_DeleteImage_View As icon.Trash:
-        BorderColor: =RGBA(0, 0, 0, 0)
-        Color: =RGBA(0, 121, 187, 1)
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledColor: =RGBA(220, 220, 220, 1)
-        DisabledFill: =RGBA(0, 0, 0, 0)
-        FocusedBorderThickness: =4
-        Height: =36
-        HoverBorderColor: =RGBA(0, 0, 0, 0)
-        HoverColor: =Color.DarkGray
-        HoverFill: =RGBA(0, 0, 0, 0)
-        Icon: =Icon.Trash
-        OnSelect: =Set(ClearImage, true)
-        PressedBorderColor: =RGBA(0, 0, 0, 0)
-        PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
-        PressedFill: =RGBA(0, 0, 0, 0)
-        Visible: =!IsBlank(ImageImage_Edit.Image)
-        Width: =46
-        X: =532
-        Y: =808
-        ZIndex: =2
 
