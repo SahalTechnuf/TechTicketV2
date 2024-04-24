@@ -175,6 +175,9 @@
                         Text: |-
                             ="Created:"
                         Width: =100
+                        X: |+
+                            =30
+                            
                         ZIndex: =1
 
                     CreatedInfo As label:
@@ -192,7 +195,7 @@
                         PaddingLeft: =0
                         Size: =17
                         Text: =Text(selectedItem.'Issue Date and Time')
-                        Width: =Parent.Width - Button_DeleteTicket.Width - 100 - 30
+                        Width: =Parent.Width - Button_DeleteTicket.Width - Label_Created.Width - 30
                         X: =130
                         ZIndex: =2
 
@@ -258,6 +261,8 @@
                         Text: |-
                             ="User:"
                         Width: =70
+                        X: |
+                            =30
                         ZIndex: =1
 
                     UserInfo As label:
@@ -312,6 +317,8 @@
                         Text: |-
                             ="Email:"
                         Width: =80
+                        X: |
+                            =30
                         ZIndex: =1
 
                     EmailInfo As label:
