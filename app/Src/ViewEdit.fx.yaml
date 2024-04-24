@@ -360,12 +360,15 @@
                     DisplayMode: =Parent.DisplayMode
                     DisplayName: =DataSourceInfo([@'Technuf Service Request'],DataSourceInfo.DisplayName,Title)
                     Fill: =RGBA(0, 0, 0, 0)
-                    Height: =If((EditForm.Height * 0.2) < 140, 140, EditForm.Height * 0.2)
+                    Height: |
+                        =// If((EditForm.Height * 0.2) < 140, 140, EditForm.Height * 0.2)
+                        
+                        If((EditForm.Height * 0.2) < 140, 140, EditForm.Height * 0.2)
                     Required: =false
                     Update: =TextInputTitle_Edit.Text
-                    Width: =320
-                    X: =0
-                    Y: =0
+                    Width: =If((App.Width / App.Height) > 2, Parent.Width*0.5, Parent.Width)
+                    X: =If((App.Width / App.Height) > 2, 0, 0)
+                    Y: =If((App.Width / App.Height) > 2, 0, 0)
                     ZIndex: =1
 
                     DataCardKeyTitle_Edit As label:
@@ -484,9 +487,9 @@
                         EditForm.Height*0.2
                     Required: =false
                     Update: =ImageImage_Edit.Image
-                    Width: =320
-                    X: =0
-                    Y: =0
+                    Width: =If((App.Width / App.Height) > 2, Parent.Width*0.5, Parent.Width)
+                    X: =If((App.Width / App.Height) > 2, 1, 0)
+                    Y: =If((App.Width / App.Height) > 2, 0, 2)
                     ZIndex: =1
 
                     ImageTrashIconImage_Edit As icon.Trash:
@@ -712,10 +715,9 @@
                     MaxLength: =DataSourceInfo([@'Technuf Service Request'], DataSourceInfo.MaxLength, Description)
                     Required: =false
                     Update: =DataCardValueDesc_Edit.Text
-                    Width: =320
+                    Width: =If((App.Width / App.Height) > 2, Parent.Width*0.5, Parent.Width)
                     X: =0
-                    Y: |
-                        =1
+                    Y: =If((App.Width / App.Height) > 2, 1, 0)
                     ZIndex: =2
 
                     DataCardKeyDesc_Edit As label:
