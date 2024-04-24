@@ -488,7 +488,7 @@
                         //(EditForm.Height - Edit_Title.Height) * 0.5
                         
                         
-                        If((App.Width / App.Height) > 2, EditForm.Height - Edit_Title.Height - 150, (EditForm.Height - Edit_Title.Height) * 0.5)
+                        If((App.Width / App.Height) > 2, Parent.Height - Edit_Title.Height, (EditForm.Height - Edit_Title.Height) * 0.5)
                     Required: =false
                     Update: =ImageImage_Edit.Image
                     Width: =If((App.Width / App.Height) > 2, Parent.Width*0.4, Parent.Width)
@@ -538,7 +538,7 @@
                         Text: =Parent.DisplayName
                         Width: =Parent.Width - 60
                         Wrap: =false
-                        X: =37
+                        X: =30
                         Y: =7
                         ZIndex: =2
 
@@ -697,7 +697,8 @@
                         Height: |-
                             =//Edit_Image.Height - DataCardKeyImage_Edit.Height - 135
                             // If((Edit_Image.Height - DataCardKeyImage_Edit.Height - 135) < 142, 142, Edit_Image.Height - DataCardKeyImage_Edit.Height - 135)
-                            Edit_Image.Height - DataCardKeyImage_Edit.Height - 40
+                            //Edit_Image.Height - DataCardKeyImage_Edit.Height - 40
+                            DataCardValueDesc_Edit.Height
                         HoverBorderColor: =RGBA(0, 0, 0, 0)
                         HoverColor: =RGBA(255, 255, 255, 1)
                         HoverFill: =ColorFade(RGBA(135, 100, 184, 1), 80%)
@@ -727,7 +728,7 @@
                         //If((App.Width / App.Height) > 2,  EditForm.Height - Edit_Title.Height - 100, If((EditForm.Height*0.3) < 300, 300, EditForm.Height*0.3))
                         //(EditForm.Height - Edit_Title.Height) * 0.5
                         
-                        If((App.Width / App.Height) > 2, EditForm.Height - Edit_Title.Height - 150, (EditForm.Height - Edit_Title.Height) * 0.5)
+                        If((App.Width / App.Height) > 2, Parent.Height - Edit_Title.Height, (EditForm.Height - Edit_Title.Height) * 0.5)
                     MaxLength: =DataSourceInfo([@'Technuf Service Request'], DataSourceInfo.MaxLength, Description)
                     Required: =false
                     Update: =DataCardValueDesc_Edit.Text

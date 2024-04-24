@@ -368,7 +368,7 @@
       "MetaDataIDKey": "",
       "Name": "BodyContView_1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 1,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3052,7 +3052,7 @@
       "MetaDataIDKey": "%FieldName.ID%",
       "Name": "DataCardKeyDesc_Edit_1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 2,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3964,7 +3964,7 @@
       "MetaDataIDKey": "%FieldValue.ID%",
       "Name": "DataCardValueDesc_Edit_1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 0,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4284,7 +4284,7 @@
       "MetaDataIDKey": "",
       "Name": "Edit_Desc_1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 1,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4458,7 +4458,7 @@
       "MetaDataIDKey": "",
       "Name": "Edit_Image_1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 2,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5512,7 +5512,7 @@
       "MetaDataIDKey": "%ErrorMessage.ID%",
       "Name": "ErrorMessageDesc_Edit_1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 3,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6076,7 +6076,7 @@
       "MetaDataIDKey": "%ErrorMessage.ID%",
       "Name": "ErrorMessageTitle_Edit_1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 3,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6389,7 +6389,7 @@
       "MetaDataIDKey": "",
       "Name": "FooterContView_1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 2,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -9055,7 +9055,7 @@
       "MetaDataIDKey": "%FieldRequired.ID%",
       "Name": "StarVisibleDesc_Edit_1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 1,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -9941,7 +9941,7 @@
       "MetaDataIDKey": "",
       "Name": "TextInputTitle_Edit_1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 2,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
