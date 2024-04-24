@@ -876,7 +876,7 @@
                 DisabledFill: =RGBA(0, 0, 0, 0)
                 FocusedBorderThickness: =4
                 Height: |
-                    =Parent.Height - 60
+                    =110
                 HoverBorderColor: =RGBA(0, 0, 0, 0)
                 HoverFill: =RGBA(0, 0, 0, 0)
                 Image: =download
@@ -885,7 +885,7 @@
                 PaddingTop: =30
                 PressedBorderColor: =RGBA(0, 0, 0, 0)
                 PressedFill: =RGBA(0, 0, 0, 0)
-                Width: =Parent.Width
+                Width: =Parent.Width - 40
                 ZIndex: =1
 
             DashHeaderV As label:
@@ -899,13 +899,13 @@
                 FocusedBorderThickness: =4
                 Font: =Font.'Segoe UI'
                 FontWeight: =FontWeight.Bold
-                Height: =Parent.Height - DashLogoV.Height
+                Height: =60
                 LayoutMinHeight: =70
                 LayoutMinWidth: =560
                 PaddingBottom: =20
                 Size: =If((App.Width / App.Height) > 2, 18, 22)
                 Text: =" View/Edit Ticket"
-                Width: =Parent.Width
+                Width: =Parent.Width - 40
                 Y: =72
                 ZIndex: =2
 
