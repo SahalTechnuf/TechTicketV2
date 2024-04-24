@@ -708,7 +708,7 @@
                             =//Edit_Image.Height - DataCardKeyImage_Edit.Height - 135
                             // If((Edit_Image.Height - DataCardKeyImage_Edit.Height - 135) < 142, 142, Edit_Image.Height - DataCardKeyImage_Edit.Height - 135)
                             //Edit_Image.Height - DataCardKeyImage_Edit.Height - 40
-                            DataCardValueDesc_Edit.Height
+                            Edit_Image.Height - DataCardKeyImage_Edit.Height - 35
                         HoverBorderColor: =RGBA(0, 0, 0, 0)
                         HoverColor: =RGBA(255, 255, 255, 1)
                         HoverFill: =ColorFade(RGBA(135, 100, 184, 1), 80%)
