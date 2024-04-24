@@ -500,7 +500,7 @@
                 DisabledFill: =RGBA(0, 0, 0, 0)
                 FocusedBorderThickness: =4
                 Height: |-
-                    =Parent.Height-80
+                    =110
                     //Min(Parent.Width, 120)
                 HoverBorderColor: =RGBA(0, 0, 0, 0)
                 HoverFill: =RGBA(0, 0, 0, 0)
@@ -526,7 +526,7 @@
                 FocusedBorderThickness: =4
                 Font: =Font.'Segoe UI'
                 FontWeight: =FontWeight.Bold
-                Height: =Parent.Height - DashLogoD.Height
+                Height: =60
                 LayoutMinHeight: =70
                 LayoutMinWidth: =560
                 PaddingBottom: =20
