@@ -502,7 +502,7 @@
                         Height: =Add_Title.Height - DataCardKeyTitle_Add.Height - 35
                         HoverBorderColor: =Color.LightSkyBlue
                         HoverColor: =RGBA(51, 51, 51, 1)
-                        HoverFill: =RGBA(0, 0, 0, 0)
+                        HoverFill: =RGBA(153, 207, 236, 1)
                         Items: ='Work Progress Tracker'.Title
                         PaddingBottom: =5
                         PaddingLeft: =15
