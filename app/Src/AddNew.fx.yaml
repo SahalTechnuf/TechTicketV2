@@ -394,7 +394,7 @@
                     DataField: ="Image_x0028_Optional_x0029_"
                     Default: =ThisItem.'Image (Optional)'
                     DisplayMode: =Parent.DisplayMode
-                    DisplayName: =DataSourceInfo([@'Technuf Service Request'],DataSourceInfo.DisplayName,Image_x0028_Optional_x0029_)
+                    DisplayName: =DataSourceInfo([@'Technuf Service Request'],DataSourceInfo.DisplayName,'Image (Optional)')
                     Fill: =RGBA(0, 0, 0, 0)
                     Height: |-
                         =//384

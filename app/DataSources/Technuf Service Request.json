@@ -3,7 +3,7 @@
     "ApiId": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
     "CdpRevision": {
       "BaseUrl": "/",
-      "LastChangedTimeString": "2024-03-28T20:39:59.8460000Z",
+      "LastChangedTimeString": "2024-04-24T17:00:22.2290000Z",
       "RevisionNumber": 1
     },
     "ConnectedDataSourceInfoNameMapping": {
@@ -23,6 +23,9 @@
       "{TriggerWindowEndToken}": "Trigger Window End Token",
       "{TriggerWindowStartToken}": "Trigger Window Start Token",
       "{VersionNumber}": "Version number",
+      "Admin": "Admin",
+      "Admin#Claims": "Admin Claims",
+      "Admin@odata.type": "Admin (Admin@odata.type)",
       "Author": "Created By",
       "Author#Claims": "Created By Claims",
       "ComplianceAssetId": "Compliance Asset Id",
