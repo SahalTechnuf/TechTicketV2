@@ -120,7 +120,7 @@
             RadiusTopLeft: =4
             RadiusTopRight: =4
             Width: =Parent.Width
-            Y: =Parent.Height/6
+            Y: =HeaderContView.Height
             ZIndex: =2
 
             EditForm As form:
@@ -152,7 +152,7 @@
                     Height: |
                         =// If((EditForm.Height * 0.2) < 140, 140, EditForm.Height * 0.2)
                         
-                        If((EditForm.Height * 0.15) < 140, 140, EditForm.Height * 0.15)
+                        If((EditForm.Height * 0.15) < 130, 130, EditForm.Height * 0.15)
                     Required: =false
                     Update: =TextInputTitle_Edit.Text
                     Width: =Parent.Width
@@ -677,7 +677,7 @@
         HeaderContView As groupContainer.verticalAutoLayoutContainer:
             BorderColor: =RGBA(255, 255, 255, 1)
             BorderStyle: =BorderStyle.None
-            Height: =If(App.Width < App.Height, Parent.Height/6, Parent.Height/6)
+            Height: =If(App.Width < App.Height, (DashLogoV.Height+DashHeaderV.Height+UserInfoCont.Height), Parent.Height/6)
             LayoutAlignItems: =LayoutAlignItems.Center
             LayoutDirection: =LayoutDirection.Vertical
             LayoutJustifyContent: =LayoutJustifyContent.Center
