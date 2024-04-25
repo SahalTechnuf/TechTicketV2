@@ -277,7 +277,7 @@
                     Height: |-
                         =//150
                         //AddForm.Height*0.180
-                        If((App.Width > App.Height), Parent.Height - Add_Title.Height, (AddForm.Height - Add_Title.Height) * 0.5)
+                        If((App.Width > App.Height), AddForm.Height - Add_Title.Height, (AddForm.Height - Add_Title.Height) * 0.5)
                     MaxLength: =DataSourceInfo([@'Technuf Service Request'], DataSourceInfo.MaxLength, Description)
                     Required: =true
                     Update: =DataCardValueDesc_Add.Text
