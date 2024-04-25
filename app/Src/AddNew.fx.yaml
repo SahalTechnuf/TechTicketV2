@@ -130,6 +130,7 @@
                 BorderStyle: =BorderStyle.None
                 DataSource: ='Technuf Service Request'
                 DefaultMode: =FormMode.New
+                FillPortions: =0
                 Height: =Parent.Height
                 LayoutMinHeight: =700
                 LayoutMinWidth: =320
