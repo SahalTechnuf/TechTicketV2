@@ -276,7 +276,7 @@
                     Height: |-
                         =//150
                         //AddForm.Height*0.180
-                        If((App.Width / App.Height) > 2, Parent.Height - Add_Title.Height, (AddForm.Height - Add_Title.Height) * 0.5)
+                        If((App.Width > App.Height), Parent.Height - Add_Title.Height, (AddForm.Height - Add_Title.Height) * 0.5)
                     MaxLength: =DataSourceInfo([@'Technuf Service Request'], DataSourceInfo.MaxLength, Description)
                     Required: =true
                     Update: =DataCardValueDesc_Add.Text
@@ -399,7 +399,7 @@
                     Height: |-
                         =//384
                         //AddForm.Height*0.461
-                        If((App.Width / App.Height) > 2, Parent.Height - Add_Title.Height, (AddForm.Height - Add_Title.Height) * 0.5)
+                        If((App.Width > App.Height), Parent.Height - Add_Title.Height, (AddForm.Height - Add_Title.Height) * 0.5)
                     Required: =false
                     Update: =ImageImage_Add.Image
                     Width: =If((App.Width / App.Height) > 2, Parent.Width*0.4, Parent.Width)
