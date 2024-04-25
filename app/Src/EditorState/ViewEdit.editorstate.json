@@ -133,7 +133,7 @@
       "MetaDataIDKey": "",
       "Name": "AddPictureImage_Edit",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 3,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -961,7 +961,7 @@
       "MetaDataIDKey": "",
       "Name": "Button_DeleteImage_Edit",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 5,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1384,7 +1384,7 @@
         {
           "Category": "Design",
           "PropertyName": "Width",
-          "RuleProviderType": "User"
+          "RuleProviderType": "Unknown"
         },
         {
           "Category": "Design",
@@ -2677,7 +2677,7 @@
         {
           "Category": "Design",
           "PropertyName": "Height",
-          "RuleProviderType": "User"
+          "RuleProviderType": "Unknown"
         },
         {
           "Category": "Design",
@@ -3410,7 +3410,7 @@
       "MetaDataIDKey": "",
       "Name": "DataCardKeyImage_Edit",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 1,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4792,7 +4792,7 @@
       "MetaDataIDKey": "",
       "Name": "Edit_Desc",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 1,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4973,7 +4973,7 @@
       "MetaDataIDKey": "",
       "Name": "Edit_Image",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 2,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -7706,7 +7706,7 @@
       "MetaDataIDKey": "",
       "Name": "Icon_upload_Edit",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 4,
+      "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -7992,7 +7992,7 @@
       "MetaDataIDKey": "",
       "Name": "ImageImage_Edit",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 2,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -8473,7 +8473,7 @@
         {
           "Category": "Design",
           "PropertyName": "Width",
-          "RuleProviderType": "User"
+          "RuleProviderType": "Unknown"
         },
         {
           "Category": "Design",
@@ -9772,7 +9772,7 @@
       "MetaDataIDKey": "",
       "Name": "StarVisibleImage_Edit",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 0,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
