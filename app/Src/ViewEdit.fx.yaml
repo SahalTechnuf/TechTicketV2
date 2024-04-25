@@ -317,7 +317,7 @@
                         //(EditForm.Height - Edit_Title.Height) * 0.5
                         
                         
-                        If((App.Width / App.Height) > 1, EditForm.Height - Edit_Title.Height, (EditForm.Height - Edit_Title.Height) * 0.5)
+                        If((App.Width > App.Height), (EditForm.Height - Edit_Title.Height), ((EditForm.Height - Edit_Title.Height) * 0.5))
                     Required: =false
                     Update: =ImageImage_Edit.Image
                     Width: =If((App.Width / App.Height) > 2, Parent.Width*0.4, Parent.Width)
