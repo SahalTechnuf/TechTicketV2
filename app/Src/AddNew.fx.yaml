@@ -150,7 +150,7 @@
                     Height: |-
                         =//50
                         //AddForm.Height*0.0600
-                        If((AddForm.Height * 0.15) < 140, 140, AddForm.Height * 0.15)
+                        If((AddForm.Height * 0.15) < 130, 130, AddForm.Height * 0.15)
                     Required: =false
                     Update: =DataCardValueTitle_Add.Selected.Title
                     Width: =Parent.Width

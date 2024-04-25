@@ -152,7 +152,7 @@
                     Height: |
                         =// If((EditForm.Height * 0.2) < 140, 140, EditForm.Height * 0.2)
                         
-                        If((EditForm.Height * 0.15) < 140, 140, EditForm.Height * 0.15)
+                        If((EditForm.Height * 0.15) < 130, 130, EditForm.Height * 0.15)
                     Required: =false
                     Update: =TextInputTitle_Edit.Text
                     Width: =Parent.Width
