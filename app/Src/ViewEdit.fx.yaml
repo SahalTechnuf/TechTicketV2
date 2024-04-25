@@ -324,7 +324,7 @@
                     X: |
                         =If((App.Width / App.Height) > 2, 1, 0)
                     Y: |
-                        =If((App.Width / App.Height) > 2, 1, 2)
+                        =If((App.Width > App.Height), 1, 2)
                     ZIndex: =1
 
                     DataCardKeyImage_Edit As label:
@@ -570,7 +570,7 @@
                         =//If((App.Width / App.Height) < 2, 1, 0)
                         0
                     Y: |
-                        =If((App.Width / App.Height) < 2, 1, 1)
+                        =If((App.Width > App.Height), 1, 1)
                     ZIndex: =2
 
                     DataCardKeyDesc_Edit As label:
