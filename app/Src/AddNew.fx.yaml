@@ -282,7 +282,7 @@
                     Update: =DataCardValueDesc_Add.Text
                     Width: |-
                         =//320
-                        If((App.Width / App.Height) > 2, Parent.Width*0.6, Parent.Width)
+                        If((App.Width > App.Height), EditForm.Width/2, Parent.Width)
                     X: =0
                     Y: =If((App.Width > App.Height), 1, 1)
                     ZIndex: =2

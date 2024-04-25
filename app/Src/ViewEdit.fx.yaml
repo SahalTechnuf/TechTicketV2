@@ -320,7 +320,7 @@
                         If((App.Width > App.Height), (EditForm.Height - Edit_Title.Height), ((EditForm.Height - Edit_Title.Height) * 0.5))
                     Required: =false
                     Update: =ImageImage_Edit.Image
-                    Width: =If((App.Width / App.Height) > 2, Parent.Width*0.4, Parent.Width)
+                    Width: =If((App.Width > App.Height), EditForm.Width/2, Parent.Width)
                     X: |
                         =If((App.Width > App.Height), 1, 0)
                     Y: |
@@ -565,7 +565,7 @@
                     MaxLength: =DataSourceInfo([@'Technuf Service Request'], DataSourceInfo.MaxLength, Description)
                     Required: =false
                     Update: =DataCardValueDesc_Edit.Text
-                    Width: =If((App.Width / App.Height) > 2, Parent.Width*0.6, Parent.Width)
+                    Width: =If((App.Width > App.Height), EditForm.Width/2, Parent.Width)
                     X: |
                         =//If((App.Width / App.Height) < 2, 1, 0)
                         0
