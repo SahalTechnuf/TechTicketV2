@@ -677,7 +677,9 @@
         HeaderContView As groupContainer.verticalAutoLayoutContainer:
             BorderColor: =RGBA(255, 255, 255, 1)
             BorderStyle: =BorderStyle.None
-            Height: =If(App.Width < App.Height, (DashLogoV.Height+DashHeaderV.Height+UserInfoCont.Height), Parent.Height/6)
+            Height: |-
+                =//If(App.Width < App.Height, (DashLogoV.Height+DashHeaderV.Height+UserInfoCont.Height), Parent.Height/6)
+                DashLogoV.Height + DashHeaderV.Height + UserInfoCont.Height
             LayoutAlignItems: =LayoutAlignItems.Center
             LayoutDirection: =LayoutDirection.Vertical
             LayoutJustifyContent: =LayoutJustifyContent.Center
