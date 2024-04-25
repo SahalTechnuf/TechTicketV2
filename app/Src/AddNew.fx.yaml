@@ -112,7 +112,7 @@
         BodyContAdd As groupContainer.verticalAutoLayoutContainer:
             BorderStyle: =BorderStyle.None
             Height: |
-                =Parent.Height*11/15
+                =Parent.Height - HeaderContAdd.Height - FooterContAdd.Height
             LayoutDirection: =LayoutDirection.Vertical
             LayoutMode: =LayoutMode.Auto
             RadiusBottomLeft: =4
