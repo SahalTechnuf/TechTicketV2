@@ -322,7 +322,7 @@
                     Update: =ImageImage_Edit.Image
                     Width: =If((App.Width / App.Height) > 2, Parent.Width*0.4, Parent.Width)
                     X: |
-                        =If((App.Width > App.Height), 1, 0)
+                        =If((App.Width > App.Height), 2, 0)
                     Y: |
                         =If((App.Width > App.Height), 1, 2)
                     ZIndex: =1
