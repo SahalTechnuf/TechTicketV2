@@ -622,7 +622,7 @@
 
         HeaderContAdd As groupContainer.verticalAutoLayoutContainer:
             BorderStyle: =BorderStyle.None
-            Height: =Parent.Height/6
+            Height: =DashLogoA.Height + DashHeaderA.Height
             LayoutAlignItems: =LayoutAlignItems.Center
             LayoutDirection: =LayoutDirection.Vertical
             LayoutJustifyContent: =LayoutJustifyContent.Center
