@@ -80,7 +80,7 @@
                 LayoutMinWidth: =280
                 OnSelect: |-
                     =If(
-                        IsBlank(DataCardValueTitle_Add.Selected.Title) || IsBlank(DataCardValueDesc_Add.Text),
+                        IsBlank(DataCardValueTitle_Add.Selected) || IsBlank(DataCardValueDesc_Add.Text),
                         Notify("Please fill in all required fields.", NotificationType.Error),
                         Patch(
                             'Technuf Service Request',
