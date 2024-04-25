@@ -122,7 +122,7 @@
             Width: =Parent.Width
             Y: |-
                 =//188
-                Parent.Height/6
+                HeaderContAdd.Height
             ZIndex: =2
 
             AddForm As form:
