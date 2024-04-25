@@ -399,7 +399,7 @@
                     Height: |-
                         =//384
                         //AddForm.Height*0.461
-                        If((App.Width > App.Height), Parent.Height - Add_Title.Height, (AddForm.Height - Add_Title.Height) * 0.5)
+                        If((App.Width > App.Height), AddForm.Height - Add_Title.Height, (AddForm.Height - Add_Title.Height) * 0.5)
                     Required: =false
                     Update: =ImageImage_Add.Image
                     Width: =If((App.Width > App.Height), AddForm.Width/2, Parent.Width)
