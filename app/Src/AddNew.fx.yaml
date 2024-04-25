@@ -153,8 +153,8 @@
                     Required: =false
                     Update: =DataCardValueTitle_Add.Selected.Title
                     Width: =Parent.Width
-                    X: =If((App.Width / App.Height) > 2, 0, 0)
-                    Y: =If((App.Width / App.Height) > 2, 0, 0)
+                    X: =If((App.Width > App.Height), 0, 0)
+                    Y: =If((App.Width > App.Height), 0, 0)
                     ZIndex: =1
 
                     DataCardKeyTitle_Add As label:
@@ -284,7 +284,7 @@
                         =//320
                         If((App.Width / App.Height) > 2, Parent.Width*0.6, Parent.Width)
                     X: =0
-                    Y: =If((App.Width / App.Height) < 2, 1, 1)
+                    Y: =If((App.Width > App.Height), 1, 1)
                     ZIndex: =2
 
                     DataCardKeyDesc_Add As label:
@@ -403,8 +403,8 @@
                     Required: =false
                     Update: =ImageImage_Add.Image
                     Width: =If((App.Width / App.Height) > 2, Parent.Width*0.4, Parent.Width)
-                    X: =If((App.Width / App.Height) > 2, 1, 0)
-                    Y: =If((App.Width / App.Height) > 2, 1, 2)
+                    X: =If((App.Width > App.Height), 1, 0)
+                    Y: =If((App.Width > App.Height), 1, 2)
                     ZIndex: =2
 
                     DataCardKeyImage_Add As label:

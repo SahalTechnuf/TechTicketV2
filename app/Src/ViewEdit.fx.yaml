@@ -156,8 +156,8 @@
                     Required: =false
                     Update: =TextInputTitle_Edit.Text
                     Width: =Parent.Width
-                    X: =If((App.Width / App.Height) > 2, 0, 0)
-                    Y: =If((App.Width / App.Height) > 2, 0, 0)
+                    X: =If((App.Width > App.Height), 0, 0)
+                    Y: =If((App.Width > App.Height), 0, 0)
                     ZIndex: =1
 
                     DataCardKeyTitle_Edit As label:
