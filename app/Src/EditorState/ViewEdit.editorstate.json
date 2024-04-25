@@ -961,7 +961,7 @@
       "MetaDataIDKey": "",
       "Name": "Button_DeleteImage_Edit",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 8,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6368,7 +6368,7 @@
       "MetaDataIDKey": "",
       "Name": "ErrorMessageImage_Edit",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 4,
+      "ParentIndex": 8,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
