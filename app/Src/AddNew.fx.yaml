@@ -5,12 +5,12 @@
 
     ParentContAdd As groupContainer.manualLayoutContainer:
         DropShadow: =DropShadow.Light
-        Height: =Parent.Height
+        Height: =App.Height
         RadiusBottomLeft: =4
         RadiusBottomRight: =4
         RadiusTopLeft: =4
         RadiusTopRight: =4
-        Width: =Parent.Width
+        Width: =App.Width
         X: |
             =0
         ZIndex: =1
