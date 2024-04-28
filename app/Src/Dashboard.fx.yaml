@@ -133,14 +133,25 @@
                     Height: =Parent.Height
                     Items: |-
                         =Sort(
-                            Filter(
-                                'Technuf Service Request',
-                                If(
-                                    User().Email = "ali.khan@technuf.com",
-                                    true,
-                                    'Created By'.Email = User().Email
+                            ForAll(
+                                Filter(
+                                    'Technuf Service Request',
+                                    If(
+                                        User().Email = "ali.khan@technuf.com",
+                                        true,
+                                        'Created By'.Email = User().Email
+                                    )
+                                    && (StartsWith(Title, SearchTicket.Text) || StartsWith(Description, SearchTicket.Text))
+                                ),
+                                Patch(
+                                    'Technuf Service Request',
+                                    LookUp(
+                                        'Work Progress Tracker',
+                                        Title = Title,
+                                        Admin
+                                    ),
+                                    {ID: ID, Admin Info : LookUp('Work Progress Tracker', Title = Title, Admin)}
                                 )
-                                && (StartsWith(Title, SearchTicket.Text) || StartsWith(Description, SearchTicket.Text))
                             ),
                             'Issue Date and Time',
                             SortOrder.Descending
