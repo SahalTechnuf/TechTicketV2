@@ -124,6 +124,7 @@
                     ZIndex: =1
 
                 DashTickets As gallery.galleryVertical:
+                    '#CopilotOverlayLabel': ="Filtered"
                     AlignInContainer: =AlignInContainer.Center
                     BorderColor: =RGBA(0, 134, 208, 1)
                     BorderStyle: =BorderStyle.None
@@ -133,25 +134,14 @@
                     Height: =Parent.Height
                     Items: |-
                         =Sort(
-                            ForAll(
-                                Filter(
-                                    'Technuf Service Request',
-                                    If(
-                                        User().Email = "ali.khan@technuf.com",
-                                        true,
-                                        'Created By'.Email = User().Email
-                                    )
-                                    && (StartsWith(Title, SearchTicket.Text) || StartsWith(Description, SearchTicket.Text))
-                                ),
-                                Patch(
-                                    'Technuf Service Request',
-                                    LookUp(
-                                        'Work Progress Tracker',
-                                        Title = Title,
-                                        Admin
-                                    ),
-                                    {ID: ID, Admin Info : LookUp('Work Progress Tracker', Title = Title, Admin)}
+                            Filter(
+                                'Technuf Service Request',
+                                If(
+                                    User().Email = "ali.khan@technuf.com",
+                                    true,
+                                    'Created By'.Email = User().Email
                                 )
+                                && (StartsWith(Title, SearchTicket.Text) || StartsWith(Description, SearchTicket.Text))
                             ),
                             'Issue Date and Time',
                             SortOrder.Descending

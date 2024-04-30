@@ -22,6 +22,7 @@
       "blockmovingcontrol": true,
       "cdsdataformatting": false,
       "classiccontrols": false,
+      "commentgeneratedformulas": true,
       "consistentreturnschemafortabularfunctions": true,
       "copyandmerge": true,
       "dataflowanalysisenabled": false,
@@ -101,7 +102,7 @@
       "zeroalltabindexes": false
     },
     "Author": "",
-    "BindingErrorCount": 57,
+    "BindingErrorCount": 0,
     "ContainsThirdPartyPcfControls": false,
     "DefaultConnectedDataSourceMaxGetRowsCount": 500,
     "DocumentAppType": "Phone",
@@ -120,7 +121,7 @@
     "ManualOfflineProfileId": "",
     "Name": "Technuf Service Request",
     "OriginatingVersion": "1.336",
-    "ParserErrorCount": 7,
+    "ParserErrorCount": 0,
     "ShowStatusBar": true
   },
   "PublishInfo": {
