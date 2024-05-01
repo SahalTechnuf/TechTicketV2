@@ -434,8 +434,8 @@
                         HoverColor: =RGBA(255, 255, 255, 1)
                         HoverFill: =ColorFade(RGBA(135, 100, 184, 1), -10%)
                         OnSelect: |-
-                            =//Select(Parent)
-                            ThisItem.'Progress/Status'
+                            =Select(Parent)
+                            //ThisItem.'Progress/Status'
                         PressedBorderColor: =ColorFade(RGBA(255, 255, 255, 1), -50%)
                         PressedColor: =RGBA(255, 255, 255, 1)
                         PressedFill: =ColorFade(RGBA(135, 100, 184, 1), -30%)
