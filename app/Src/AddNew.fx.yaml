@@ -153,8 +153,8 @@
                     Required: =false
                     Update: =DataCardValueTitle_Add.Selected.Title
                     Width: =Parent.Width
-                    X: =If((App.Width > App.Height), 0, 0)
-                    Y: =If((App.Width > App.Height), 0, 0)
+                    X: =0
+                    Y: =0
                     ZIndex: =1
 
                     DataCardKeyTitle_Add As label:
@@ -276,9 +276,9 @@
                     Height: =50
                     Required: =false
                     Update: =DataCardValue3.SelectedItems
-                    Width: =320
-                    X: =1
-                    Y: =2
+                    Width: =640
+                    X: =0
+                    Y: =3
                     ZIndex: =1
 
                     DataCardKey3 As label:
@@ -315,7 +315,7 @@
                         DisabledBorderColor: =RGBA(0, 0, 0, 0)
                         DisabledColor: =RGBA(166, 166, 166, 1)
                         DisabledFill: =RGBA(244, 244, 244, 1)
-                        DisplayFields: =["DisplayName","Email","Picture"]
+                        DisplayFields: =["{Name}","Email","Picture"]
                         DisplayMode: =Parent.DisplayMode
                         Font: =Font.'Segoe UI'
                         Height: =70
@@ -407,7 +407,7 @@
                         =//320
                         If((App.Width > App.Height), AddForm.Width/2, Parent.Width)
                     X: =0
-                    Y: =If((App.Width > App.Height), 1, 1)
+                    Y: =1
                     ZIndex: =2
 
                     DataCardKeyDesc_Add As label:
@@ -526,8 +526,8 @@
                     Required: =false
                     Update: =ImageImage_Add.Image
                     Width: =If((App.Width > App.Height), AddForm.Width/2, Parent.Width)
-                    X: =If((App.Width > App.Height), 1, 0)
-                    Y: =If((App.Width > App.Height), 1, 2)
+                    X: =0
+                    Y: =2
                     ZIndex: =2
 
                     DataCardKeyImage_Add As label:
