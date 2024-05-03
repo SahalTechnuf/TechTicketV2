@@ -492,11 +492,11 @@
                         OnSelect: =Select(Parent)
                         PressedBorderColor: =RGBA(0, 0, 0, 0)
                         PressedFill: =RGBA(0, 0, 0, 0)
-                        Visible: |-
+                        Visible: |
                             =If(
-                                IsBlank(ThisItem.'Image (Optional)'.Small),  // Check if the ticket has an uploaded image
-                                true,                     // If image is blank, display the placeholder image
-                                false                     // If image is uploaded, hide the placeholder image
+                                IsBlank(ThisItem.'Image (Optional)'.Small),// Check if the ticket has an uploaded image
+                                true,// If image is blank, display the placeholder image
+                                false// If image is uploaded, hide the placeholder image
                             )
                         Width: =104
                         X: =40
