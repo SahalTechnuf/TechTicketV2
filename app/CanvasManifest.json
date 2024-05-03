@@ -119,13 +119,13 @@
     "InstrumentationKey": "",
     "LocalDatabaseReferences": "",
     "ManualOfflineProfileId": "",
-    "Name": "Technuf Service Request - copy",
+    "Name": "Technuf Service Request",
     "OriginatingVersion": "1.336",
     "ParserErrorCount": 5,
     "ShowStatusBar": true
   },
   "PublishInfo": {
-    "AppName": "541ffb3e-56c3-40c0-9702-42d89239a221",
+    "AppName": "fac09743-00b5-4ef8-b0d1-abe63e9e94d2",
     "BackgroundColor": "RGBA(0,176,240,1)",
     "IconColor": "RGBA(255,255,255,1)",
     "IconName": "Edit",
