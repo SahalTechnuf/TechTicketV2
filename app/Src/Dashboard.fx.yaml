@@ -478,7 +478,7 @@
                         X: =10
                         ZIndex: =13
 
-                    Image1 As image:
+                    PHimage As image:
                         BorderColor: =RGBA(0, 0, 0, 0)
                         BorderStyle: =BorderStyle.None
                         BorderThickness: =2
@@ -492,6 +492,12 @@
                         OnSelect: =Select(Parent)
                         PressedBorderColor: =RGBA(0, 0, 0, 0)
                         PressedFill: =RGBA(0, 0, 0, 0)
+                        Visible: |-
+                            =If(
+                                IsBlank(ThisItem.'Image (Optional)'.Small),  // Check if the ticket has an uploaded image
+                                true,                     // If image is blank, display the placeholder image
+                                false                     // If image is uploaded, hide the placeholder image
+                            )
                         Width: =104
                         X: =40
                         Y: =54
