@@ -740,7 +740,7 @@
                 AlignInContainer: =AlignInContainer.SetByContainer
                 BorderStyle: =BorderStyle.None
                 FillPortions: =0
-                Height: =300
+                Height: =CreatedCont.Height + UserCont.Height + EmailCont.Height
                 LayoutDirection: =LayoutDirection.Vertical
                 LayoutMinHeight: =180
                 LayoutMinWidth: =250
@@ -952,28 +952,4 @@
                         Width: |
                             =525
                         ZIndex: =2
-
-                Gallery5 As gallery.galleryHorizontal:
-                    BorderColor: =RGBA(166, 166, 166, 1)
-                    DelayItemLoading: =true
-                    Items: =CustomGallerySample
-                    LayoutMinHeight: =200
-                    LayoutMinWidth: =320
-                    LoadingSpinner: =LoadingSpinner.Data
-                    TemplateSize: =If(Self.Layout = Layout.Horizontal, Min(320, Self.Width - 60), Min(320, Self.Height - 60))
-                    ZIndex: =4
-
-                    Circle3 As circle:
-                        BorderColor: =RGBA(166, 166, 166, 1)
-                        BorderStyle: =BorderStyle.None
-                        BorderThickness: =2
-                        DisabledFill: =RGBA(135, 100, 184, 1)
-                        Fill: =RGBA(135, 100, 184, 1)
-                        HoverFill: =RGBA(135, 100, 184, 1)
-                        OnSelect: =Select(Parent)
-                        PressedFill: =RGBA(135, 100, 184, 1)
-                        Width: =74
-                        X: =40
-                        Y: =40
-                        ZIndex: =1
 
