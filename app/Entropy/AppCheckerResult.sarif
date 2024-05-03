@@ -597,6 +597,66 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "ViewEdit.ParentContView.HeaderContView.UserInfoCont.Gallery5.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ViewEdit.ParentContView.HeaderContView.UserInfoCont.Gallery5.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ViewEdit",
+                "type": "ViewEdit.ParentContView.HeaderContView.UserInfoCont.Gallery5"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ViewEdit.ParentContView.HeaderContView.UserInfoCont.Gallery5.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ViewEdit.ParentContView.HeaderContView.UserInfoCont.Gallery5.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "ViewEdit",
+                "type": "ViewEdit.ParentContView.HeaderContView.UserInfoCont.Gallery5"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "ViewEdit.ParentContView.BodyContView.EditForm.Edit_Title.TextInputTitle_Edit.AccessibleLabel"
                 }
               ],
