@@ -89,8 +89,8 @@
                                 Description: DataCardValueDesc_Add.Text,
                                 'Image (Optional)': ImageImage_Add.Image,
                                 'Progress/Status': { Value: "New" },
-                                'Issue Date and Time': Now(),
-                                'Admin Info': DataCardValue2
+                                'Issue Date and Time': Now()
+                                //'Admin Info': DataCardValue2
                             }
                         );
                         ResetForm(AddForm);
