@@ -89,8 +89,8 @@
                                 Description: DataCardValueDesc_Add.Text,
                                 'Image (Optional)': ImageImage_Add.Image,
                                 'Progress/Status': { Value: "New" },
-                                'Issue Date and Time': Now()
-                                //'Admin Info': DataCardValue2
+                                'Issue Date and Time': Now(),
+                                'Admin Info': LookUp('Work Progress Tracker', Title = DataCardValueTitle_Add.Selected.Title).Admin
                             }
                         );
                         ResetForm(AddForm);
@@ -250,14 +250,14 @@
                         HoverFill: =RGBA(153, 207, 236, 1)
                         Items: ='Work Progress Tracker'.Title
                         OnChange: |-
-                            =Patch(
+                            =/*Patch(
                                 'Technuf Service Request',
                                 Defaults('Technuf Service Request'),
                                 {
                                     Title: DataCardValueTitle_Add.Selected.Title, // Assuming TicketCategory is the column name for ticket category
                                     'Admin Info': LookUp('Work Progress Tracker', Title = DataCardValueTitle_Add.Selected.Title).Admin // Assuming CategoryColumn is the column name for ticket category in Work Progress Tracker list
                                 }
-                            )
+                            )*/
                         PaddingBottom: =5
                         PaddingLeft: =15
                         PaddingRight: =5
