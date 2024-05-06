@@ -524,7 +524,8 @@
                         PressedFill: =ColorFade(RGBA(135, 100, 184, 1), -30%)
                         Size: =18
                         Text: =""
-                        Width: =Parent.Width
+                        Width: =Parent.Width - 80
+                        X: =40
                         Y: =57
                         ZIndex: =9
 
