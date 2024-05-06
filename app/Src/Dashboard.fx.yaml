@@ -264,7 +264,7 @@
                         OnSelect: =Select(Parent)
                         Size: =17
                         Text: |-
-                            =Text(ThisItem.'Issue Date and Time',    "mm/dd/yyyy             hh:mm AM/PM")
+                            =Text(ThisItem.'Issue Date and Time',    "mm/dd/yyyy            hh:mm AM/PM")
                         Width: =323
                         X: =212
                         Y: =131
