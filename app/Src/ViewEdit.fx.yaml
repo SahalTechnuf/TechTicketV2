@@ -383,10 +383,7 @@
                                     Parent.Height * ImageImage_Edit.OriginalWidth / ImageImage_Edit.OriginalHeight  // Adjust width to maintain aspect ratio
                                 )
                             )
-                        X: =40
-                        Y: |-
-                            =//60
-                            DataCardKeyImage_Edit.Y + DataCardKeyImage_Edit.Height + 5
+                        Y: =62
                         ZIndex: =3
 
                     ErrorMessageImage_Edit As label:
