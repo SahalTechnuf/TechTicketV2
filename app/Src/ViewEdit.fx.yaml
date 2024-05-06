@@ -377,10 +377,10 @@
                             =//Parent.Width - 80
                             If(
                                 IsBlank(ThisItem.'Image (Optional)'), // Check if an image is uploaded
-                                Parent.Width,      // If no image uploaded, set width to match field width
+                                true,      // If no image uploaded, set width to match field width
                              Min(
-                                    Parent.Width,                     // Limit the width to match the field width
-                                    ImagePosition.Fill   // Adjust width to maintain aspect ratio
+                                    Parent.Width,                     
+                                    ImagePosition.Fill   
                                 )
                             )
                         Y: =62
