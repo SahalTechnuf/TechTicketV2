@@ -373,7 +373,17 @@
                         RadiusTopLeft: =15
                         RadiusTopRight: =15
                         Tooltip: =Parent.DisplayName
-                        Width: =Parent.Width - 80
+                        Width: |-
+                            =Parent.Width - 80
+                            //If(
+                                //IsBlank(ThisItem.'Image (Optional)'), // Check if an image is uploaded
+                                //Parent.Width - 80,      // If no image uploaded, set width to match field width
+                                //Min(
+                                //Parent.Width - 80,                     // Limit the width to match the field width
+                                //(Parent.Width - 80) * 2,               // Limit the width to twice the field width
+                                //Parent.Height * 0.8 / ImageImage_Add.Height    // Adjust width to maintain aspect ratio
+                                //)
+                            //)
                         X: =40
                         Y: |-
                             =//60
