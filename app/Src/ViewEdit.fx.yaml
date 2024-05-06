@@ -519,7 +519,7 @@
                         Text: =""
                         Width: =Parent.Width - 80
                         X: =40
-                        Y: =57
+                        Y: =DataCardKeyImage_Edit.Y + DataCardKeyImage_Edit.Height + 5
                         ZIndex: =9
 
                     Button_DeleteImage_Edit As icon.Trash:
