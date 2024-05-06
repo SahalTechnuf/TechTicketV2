@@ -374,15 +374,15 @@
                         RadiusTopRight: =15
                         Tooltip: =Parent.DisplayName
                         Width: |-
-                            =//Parent.Width - 80
-                            If(
-                                IsBlank(ThisItem.'Image (Optional)'), // Check if an image is uploaded
-                                true,      // If no image uploaded, set width to match field width
-                             Min(
-                                    Parent.Width,                     
-                                    ImagePosition.Fill   
-                                )
-                            )
+                            =Parent.Width 
+                            //f(
+                               // IsBlank(ThisItem.'Image (Optional)'), // Check if an image is uploaded
+                                //Parent.Width,      // If no image uploaded, set width to match field width
+                             //Min(
+                                    //Parent.Width,                     
+                                    //ImagePosition.Fill   
+                               //)
+                            //)
                         Y: =62
                         ZIndex: =3
 
