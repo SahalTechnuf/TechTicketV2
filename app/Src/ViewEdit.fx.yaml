@@ -380,7 +380,7 @@
                                 Parent.Width,      // If no image uploaded, set width to match field width
                              Min(
                                     Parent.Width,                     // Limit the width to match the field width
-                                    Parent.Height * ImageImage_Edit.OriginalWidth / ImageImage_Edit.OriginalHeight  // Adjust width to maintain aspect ratio
+                                    ImagePosition.Fill   // Adjust width to maintain aspect ratio
                                 )
                             )
                         Y: =62
@@ -524,11 +524,8 @@
                         PressedFill: =ColorFade(RGBA(135, 100, 184, 1), -30%)
                         Size: =18
                         Text: =""
-                        Width: =Parent.Width - 80
-                        X: =40
-                        Y: |-
-                            =//60
-                            DataCardKeyImage_Edit.Y + DataCardKeyImage_Edit.Height + 5
+                        Width: =Parent.Width
+                        Y: =57
                         ZIndex: =9
 
                     Button_DeleteImage_Edit As icon.Trash:
