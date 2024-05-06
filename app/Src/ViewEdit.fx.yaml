@@ -374,7 +374,7 @@
                         RadiusTopRight: =15
                         Tooltip: =Parent.DisplayName
                         Width: |-
-                            =Parent.Width 
+                            =Parent.Width - 80
                             //f(
                                // IsBlank(ThisItem.'Image (Optional)'), // Check if an image is uploaded
                                 //Parent.Width,      // If no image uploaded, set width to match field width
@@ -383,7 +383,8 @@
                                     //ImagePosition.Fill   
                                //)
                             //)
-                        Y: =62
+                        X: =40
+                        Y: =57
                         ZIndex: =3
 
                     ErrorMessageImage_Edit As label:
