@@ -307,7 +307,7 @@
                     DataField: ="Image_x0028_Optional_x0029_"
                     Default: |-
                         =//selectedItem.'Image (Optional)'
-                        If(IsBlank(AddPictureImage_Edit.Media),selectedItem.'Image (Optional)'.Medium,AddPictureImage_Edit.Media)
+                        If(IsBlank(AddPictureImage_Edit.Media),selectedItem.'Image (Optional)'.Full,AddPictureImage_Edit.Media)
                     DisplayMode: |
                         =Parent.DisplayMode
                     DisplayName: =DataSourceInfo([@'Technuf Service Request'],DataSourceInfo.DisplayName,'Image (Optional)')
