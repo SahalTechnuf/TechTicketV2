@@ -290,8 +290,8 @@
                     Required: =false
                     Update: =ImageImage_Add.Image
                     Width: =If((App.Width > App.Height), AddForm.Width/2, Parent.Width)
-                    X: =0
-                    Y: =If((App.Width > App.Height), 2, 1)
+                    X: =If((App.Width > App.Height), 1, 0)
+                    Y: =If((App.Width > App.Height), 1, 2)
                     ZIndex: =2
 
                     DataCardKeyImage_Add As label:
