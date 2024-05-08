@@ -331,6 +331,7 @@
                             =If(ClearImage, Blank(), If(IsBlank(AddPictureImage_Add.Media), Parent.Default, AddPictureImage_Add.Media))
                             
                             //If(IsBlank(AddPictureImage_Add.Media), Parent.Default, AddPictureImage_Add.Media)
+                        ImagePosition: =ImagePosition.Fill
                         PressedBorderColor: =RGBA(0, 0, 0, 0)
                         PressedFill: =RGBA(0, 0, 0, 0)
                         RadiusBottomLeft: =15
