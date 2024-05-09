@@ -360,8 +360,8 @@
                         Fill: =RGBA(204, 231, 246, 1)
                         FocusedBorderThickness: =4
                         Height: |-
-                            =//AddPictureImage_Edit.Height
-                            Parent.Height - (DataCardKeyImage_Edit.Y + DataCardKeyImage_Edit.Height + 5)
+                            =AddPictureImage_Edit.Height
+                            //Parent.Height - (DataCardKeyImage_Edit.Y + DataCardKeyImage_Edit.Height + 5)
                         HoverBorderColor: =RGBA(0, 0, 0, 0)
                         HoverFill: =RGBA(0, 0, 0, 0)
                         Image: |-
