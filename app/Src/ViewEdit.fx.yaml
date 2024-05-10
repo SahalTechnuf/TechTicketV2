@@ -984,6 +984,7 @@
                         HoverFill: =RGBA(135, 100, 184, 1)
                         OnSelect: =Select(Parent)
                         PressedFill: =RGBA(135, 100, 184, 1)
+                        Visible: =If(ThisItem.'Progress/Status'.Value = "New",true,false) 
                         Y: =25
                         ZIndex: =1
 
