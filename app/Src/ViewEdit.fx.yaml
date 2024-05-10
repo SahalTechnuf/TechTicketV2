@@ -81,7 +81,17 @@
                 LayoutMinHeight: =70
                 LayoutMinWidth: =280
                 OnSelect: |
-                    =Patch ('Technuf Service Request', LookUp(
+                    =Set(VarBreadCrumbs,
+                    Table(
+                        {Stage:1, Status:"New", Color: Color.Blue},
+                        {Stage:2, Status:"Initiated", Color: Color.Blue},
+                        {Stage:3, Status:"In progress", Color: Color.Blue},
+                        {Stage:4, Status:"Resolved", Color: Color.Blue}
+                    ))
+                    
+                    
+                    
+                    Patch ('Technuf Service Request', LookUp(
                             'Technuf Service Request',  
                             ID = Value(selectedItem.ID)),
                         {
@@ -740,7 +750,7 @@
                 AlignInContainer: =AlignInContainer.SetByContainer
                 BorderStyle: =BorderStyle.None
                 FillPortions: =0
-                Height: =90
+                Height: =160
                 LayoutDirection: =LayoutDirection.Vertical
                 LayoutMinHeight: =180
                 LayoutMinWidth: =250
