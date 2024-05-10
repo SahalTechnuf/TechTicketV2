@@ -85,7 +85,7 @@
                     Table(
                         {Stage:1, Status:"New", Color: Color.Blue},
                         {Stage:2, Status:"Initiated", Color: Color.Blue},
-                        {Stage:3, Status:"In progress", Color: Color.Blue},
+                        {Stage:3, Status:"In Progress", Color: Color.Blue},
                         {Stage:4, Status:"Resolved", Color: Color.Blue}
                     ));
                     
@@ -750,7 +750,7 @@
                 AlignInContainer: =AlignInContainer.SetByContainer
                 BorderStyle: =BorderStyle.None
                 FillPortions: =0
-                Height: =160
+                Height: =180
                 LayoutDirection: =LayoutDirection.Vertical
                 LayoutMinHeight: =180
                 LayoutMinWidth: =250
@@ -966,12 +966,26 @@
                 Gallery1 As gallery.galleryHorizontal:
                     BorderColor: =RGBA(166, 166, 166, 1)
                     DelayItemLoading: =true
-                    Items: =CustomGallerySample
+                    Items: ='Technuf Service Request'
                     LayoutMinHeight: =287
                     LayoutMinWidth: =320
                     LoadingSpinner: =LoadingSpinner.Data
                     TemplateSize: =If(Self.Layout = Layout.Horizontal, Min(170, Self.Width - 60), Min(170, Self.Height - 60))
                     ZIndex: =4
+
+                    Rectangle2 As rectangle:
+                        BorderColor: =RGBA(0, 0, 0, 0)
+                        BorderStyle: =BorderStyle.None
+                        BorderThickness: =2
+                        DisabledFill: =RGBA(166, 166, 166, 1)
+                        Fill: =RGBA(13, 100, 184, 1)
+                        FocusedBorderThickness: =4
+                        Height: =18
+                        HoverFill: =RGBA(135, 100, 184, 1)
+                        OnSelect: =Select(Parent)
+                        PressedFill: =RGBA(135, 100, 184, 1)
+                        Y: =25
+                        ZIndex: =1
 
                     Circle1 As circle:
                         BorderColor: =RGBA(166, 166, 166, 1)
@@ -984,9 +998,9 @@
                         OnSelect: =Select(Parent)
                         PressedFill: =RGBA(135, 100, 184, 1)
                         Width: =50
-                        X: =30
+                        X: =16
                         Y: =15
-                        ZIndex: =1
+                        ZIndex: =2
 
                     Rectangle1 As rectangle:
                         BorderColor: =RGBA(0, 0, 0, 0)
@@ -995,12 +1009,30 @@
                         DisabledFill: =RGBA(166, 166, 166, 1)
                         Fill: =RGBA(13, 100, 184, 1)
                         FocusedBorderThickness: =4
-                        Height: =76
+                        Height: =18
                         HoverFill: =RGBA(135, 100, 184, 1)
                         OnSelect: =Select(Parent)
                         PressedFill: =RGBA(135, 100, 184, 1)
                         Width: =124
                         X: =46
-                        Y: =39
-                        ZIndex: =2
+                        Y: =25
+                        ZIndex: =3
+
+                    Label4 As label:
+                        BorderColor: =RGBA(0, 0, 0, 0)
+                        BorderStyle: =BorderStyle.None
+                        BorderThickness: =2
+                        Color: =RGBA(51, 51, 51, 1)
+                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        FocusedBorderThickness: =4
+                        Font: =Font.'Segoe UI'
+                        Height: =56
+                        OnSelect: =Select(Parent)
+                        Size: =15
+                        Text: =ThisItem.'Progress/Status'.Value
+                        Width: =154
+                        X: =16
+                        Y: =43
+                        ZIndex: =4
 
