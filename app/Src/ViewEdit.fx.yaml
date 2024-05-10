@@ -963,3 +963,44 @@
                             =525
                         ZIndex: =2
 
+                Gallery1 As gallery.galleryHorizontal:
+                    BorderColor: =RGBA(166, 166, 166, 1)
+                    DelayItemLoading: =true
+                    Items: =CustomGallerySample
+                    LayoutMinHeight: =287
+                    LayoutMinWidth: =320
+                    LoadingSpinner: =LoadingSpinner.Data
+                    TemplateSize: =If(Self.Layout = Layout.Horizontal, Min(170, Self.Width - 60), Min(170, Self.Height - 60))
+                    ZIndex: =4
+
+                    Circle1 As circle:
+                        BorderColor: =RGBA(166, 166, 166, 1)
+                        BorderStyle: =BorderStyle.None
+                        BorderThickness: =2
+                        DisabledFill: =RGBA(135, 100, 184, 1)
+                        Fill: =RGBA(13, 100, 184, 1)
+                        Height: =38
+                        HoverFill: =RGBA(135, 100, 184, 1)
+                        OnSelect: =Select(Parent)
+                        PressedFill: =RGBA(135, 100, 184, 1)
+                        Width: =50
+                        X: =30
+                        Y: =15
+                        ZIndex: =1
+
+                    Rectangle1 As rectangle:
+                        BorderColor: =RGBA(0, 0, 0, 0)
+                        BorderStyle: =BorderStyle.None
+                        BorderThickness: =2
+                        DisabledFill: =RGBA(166, 166, 166, 1)
+                        Fill: =RGBA(13, 100, 184, 1)
+                        FocusedBorderThickness: =4
+                        Height: =76
+                        HoverFill: =RGBA(135, 100, 184, 1)
+                        OnSelect: =Select(Parent)
+                        PressedFill: =RGBA(135, 100, 184, 1)
+                        Width: =124
+                        X: =46
+                        Y: =39
+                        ZIndex: =2
+
