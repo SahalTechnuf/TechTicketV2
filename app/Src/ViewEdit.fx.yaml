@@ -87,7 +87,7 @@
                         {Stage:2, Status:"Initiated", Color: Color.Blue},
                         {Stage:3, Status:"In progress", Color: Color.Blue},
                         {Stage:4, Status:"Resolved", Color: Color.Blue}
-                    ))
+                    ));
                     
                     
                     
