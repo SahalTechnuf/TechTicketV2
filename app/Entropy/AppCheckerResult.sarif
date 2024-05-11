@@ -484,19 +484,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "ViewEdit.ParentContView.HeaderContView.UserInfoCont.Gallery1.AccessibleLabel"
+                  "fullyQualifiedName": "ViewEdit.ParentContView.HeaderContView.UserInfoCont.BreadCrumbGallery.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "ViewEdit.ParentContView.HeaderContView.UserInfoCont.Gallery1.AccessibleLabel",
+                  "fullyQualifiedName": "ViewEdit.ParentContView.HeaderContView.UserInfoCont.BreadCrumbGallery.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "ViewEdit",
-                "type": "ViewEdit.ParentContView.HeaderContView.UserInfoCont.Gallery1"
+                "type": "ViewEdit.ParentContView.HeaderContView.UserInfoCont.BreadCrumbGallery"
               }
             }
           ],
@@ -514,19 +514,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "ViewEdit.ParentContView.HeaderContView.UserInfoCont.Gallery1.TabIndex"
+                  "fullyQualifiedName": "ViewEdit.ParentContView.HeaderContView.UserInfoCont.BreadCrumbGallery.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "ViewEdit.ParentContView.HeaderContView.UserInfoCont.Gallery1.TabIndex",
+                  "fullyQualifiedName": "ViewEdit.ParentContView.HeaderContView.UserInfoCont.BreadCrumbGallery.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "ViewEdit",
-                "type": "ViewEdit.ParentContView.HeaderContView.UserInfoCont.Gallery1"
+                "type": "ViewEdit.ParentContView.HeaderContView.UserInfoCont.BreadCrumbGallery"
               }
             }
           ],

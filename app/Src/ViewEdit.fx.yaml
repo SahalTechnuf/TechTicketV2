@@ -963,7 +963,7 @@
                             =525
                         ZIndex: =2
 
-                Gallery1 As gallery.galleryHorizontal:
+                BreadCrumbGallery As gallery.galleryHorizontal:
                     BorderColor: =RGBA(166, 166, 166, 1)
                     DelayItemLoading: =true
                     Fill: |
@@ -974,6 +974,8 @@
                     LoadingSpinner: =LoadingSpinner.Data
                     TemplatePadding: =0
                     TemplateSize: =If(Self.Layout = Layout.Horizontal, Min(170, Self.Width - 60), Min(170, Self.Height - 60))
+                    Visible: |
+                        =true
                     ZIndex: =4
 
                     Rectangle2 As rectangle:
@@ -987,7 +989,7 @@
                         HoverFill: =RGBA(135, 100, 184, 1)
                         OnSelect: =Select(Parent)
                         PressedFill: =RGBA(135, 100, 184, 1)
-                        Width: =124
+                        Width: =80
                         Y: =25
                         ZIndex: =1
 
@@ -1017,6 +1019,8 @@
                         HoverFill: =RGBA(135, 100, 184, 1)
                         OnSelect: =Select(Parent)
                         PressedFill: =RGBA(135, 100, 184, 1)
+                        Visible: |
+                            =true
                         Width: =104
                         X: =66
                         Y: =25
