@@ -970,6 +970,7 @@
                     LayoutMinHeight: =287
                     LayoutMinWidth: =320
                     LoadingSpinner: =LoadingSpinner.Data
+                    TemplatePadding: =0
                     TemplateSize: =If(Self.Layout = Layout.Horizontal, Min(170, Self.Width - 60), Min(170, Self.Height - 60))
                     ZIndex: =4
 
@@ -978,13 +979,13 @@
                         BorderStyle: =BorderStyle.None
                         BorderThickness: =2
                         DisabledFill: =RGBA(166, 166, 166, 1)
-                        Fill: =RGBA(13, 100, 184, 1)
+                        Fill: =RGBA(237, 237, 237, 1)
                         FocusedBorderThickness: =4
                         Height: =18
                         HoverFill: =RGBA(135, 100, 184, 1)
                         OnSelect: =Select(Parent)
                         PressedFill: =RGBA(135, 100, 184, 1)
-                        Visible: =If(ThisItem.'Progress/Status'.Value = "New",true,false) 
+                        Width: =124
                         Y: =25
                         ZIndex: =1
 
@@ -993,7 +994,7 @@
                         BorderStyle: =BorderStyle.None
                         BorderThickness: =2
                         DisabledFill: =RGBA(135, 100, 184, 1)
-                        Fill: =RGBA(13, 100, 184, 1)
+                        Fill: =RGBA(237, 237, 237, 1)
                         Height: =38
                         HoverFill: =RGBA(135, 100, 184, 1)
                         OnSelect: =Select(Parent)
@@ -1008,14 +1009,14 @@
                         BorderStyle: =BorderStyle.None
                         BorderThickness: =2
                         DisabledFill: =RGBA(166, 166, 166, 1)
-                        Fill: =RGBA(13, 100, 184, 1)
+                        Fill: =RGBA(237, 237, 237, 1)
                         FocusedBorderThickness: =4
                         Height: =18
                         HoverFill: =RGBA(135, 100, 184, 1)
                         OnSelect: =Select(Parent)
                         PressedFill: =RGBA(135, 100, 184, 1)
-                        Width: =124
-                        X: =46
+                        Width: =104
+                        X: =66
                         Y: =25
                         ZIndex: =3
 
