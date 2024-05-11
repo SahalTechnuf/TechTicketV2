@@ -966,9 +966,10 @@
                 Gallery1 As gallery.galleryHorizontal:
                     BorderColor: =RGBA(166, 166, 166, 1)
                     DelayItemLoading: =true
+                    Fill: =RGBA(0,0,0,0)
                     Items: ='Technuf Service Request'
                     LayoutMinHeight: =287
-                    LayoutMinWidth: =320
+                    LayoutMinWidth: =300
                     LoadingSpinner: =LoadingSpinner.Data
                     TemplatePadding: =0
                     TemplateSize: =If(Self.Layout = Layout.Horizontal, Min(170, Self.Width - 60), Min(170, Self.Height - 60))
