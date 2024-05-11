@@ -966,7 +966,8 @@
                 Gallery1 As gallery.galleryHorizontal:
                     BorderColor: =RGBA(166, 166, 166, 1)
                     DelayItemLoading: =true
-                    Fill: =RGBA(0,0,0,0)
+                    Fill: |
+                        =RGBA(0,0,0,0)
                     Items: ='Technuf Service Request'
                     LayoutMinHeight: =287
                     LayoutMinWidth: =300
