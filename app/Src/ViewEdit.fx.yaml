@@ -965,11 +965,13 @@
 
                 BreadCrumbGallery As gallery.galleryHorizontal:
                     BorderColor: =RGBA(166, 166, 166, 1)
+                    BorderStyle: =BorderStyle.None
                     DelayItemLoading: =true
+                    DisplayMode: =DisplayMode.View
                     Fill: |
                         =RGBA(0,0,0,0)
                     Items: ='Technuf Service Request'
-                    LayoutMinHeight: =287
+                    LayoutMinHeight: =120
                     LayoutMinWidth: =300
                     LoadingSpinner: =LoadingSpinner.Data
                     TemplatePadding: =0
