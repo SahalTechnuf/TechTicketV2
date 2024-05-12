@@ -966,7 +966,6 @@
                 BreadCrumbGallery As gallery.galleryHorizontal:
                     BorderColor: =RGBA(166, 166, 166, 1)
                     BorderStyle: =BorderStyle.None
-                    Default: ="New"
                     DelayItemLoading: =true
                     DisplayMode: =DisplayMode.View
                     Fill: |
@@ -979,6 +978,8 @@
                     TemplateSize: =If(Self.Layout = Layout.Horizontal, Min(170, Self.Width - 60), Min(170, Self.Height - 60))
                     Visible: |
                         =true
+                        //Set(selectedStatus, Patch('Technuf Service Request',  LookUp('Technuf Service Request', ID = Value(ID_Dash.Text)); {'Progress/Status': {Value: selectedStatus }})
+                         
                     ZIndex: =4
 
                     Rectangle2 As rectangle:
