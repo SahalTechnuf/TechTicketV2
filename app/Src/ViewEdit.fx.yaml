@@ -1004,7 +1004,7 @@
                         OnSelect: =Select(Parent)
                         PressedFill: =RGBA(135, 100, 184, 1)
                         Width: =50
-                        X: =16
+                        X: =46
                         Y: =15
                         ZIndex: =2
 
@@ -1027,6 +1027,7 @@
                         ZIndex: =3
 
                     Label4 As label:
+                        Align: =Align.Center
                         BorderColor: =RGBA(0, 0, 0, 0)
                         BorderStyle: =BorderStyle.None
                         BorderThickness: =2
@@ -1036,12 +1037,11 @@
                         FocusedBorderThickness: =4
                         Font: =Font.'Segoe UI'
                         FontWeight: =FontWeight.Bold
-                        Height: =56
+                        Height: =44
                         OnSelect: =Select(Parent)
                         Size: =15
                         Text: =ThisItem.'Progress/Status'.Value
                         Width: =154
-                        X: =16
                         Y: =43
                         ZIndex: =4
 
