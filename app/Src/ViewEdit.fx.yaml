@@ -994,7 +994,7 @@
                         HoverFill: =RGBA(135, 100, 184, 1)
                         OnSelect: =Select(Parent)
                         PressedFill: =RGBA(135, 100, 184, 1)
-                        Width: =80
+                        Width: =46
                         Y: =25
                         ZIndex: =1
 
@@ -1023,8 +1023,7 @@
                         DisabledFill: =RGBA(166, 166, 166, 1)
                         Fill: |-
                             =If(ThisItem.Value = DashTickets.Selected.'Progress/Status'.Value, 
-                                    If(
-                                    ThisItem.Value, 
+                                    If(VarBreadCrumbs > 3, 
                                     Color.LightGray,
                                     Color.Blue 
                                 ),
@@ -1059,4 +1058,28 @@
                         Width: =154
                         Y: =43
                         ZIndex: =4
+
+                    Icon1 As icon.CheckBadge:
+                        BorderColor: =RGBA(0, 0, 0, 0)
+                        BorderStyle: =BorderStyle.None
+                        Color: |-
+                            =//RGBA(135, 100, 184, 1)
+                            If(ThisItem.Value = DashTickets.Selected.'Progress/Status'.Value, Color.DarkBlue, Color.LightGray) 
+                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                        DisabledColor: =RGBA(220, 220, 220, 1)
+                        DisabledFill: =RGBA(0, 0, 0, 0)
+                        FocusedBorderThickness: =0
+                        Height: =38
+                        HoverBorderColor: =RGBA(0, 0, 0, 0)
+                        HoverColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
+                        HoverFill: =RGBA(0, 0, 0, 0)
+                        Icon: =Icon.CheckBadge
+                        OnSelect: =Select(Parent)
+                        PressedBorderColor: =RGBA(0, 0, 0, 0)
+                        PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
+                        PressedFill: =RGBA(0, 0, 0, 0)
+                        Width: =50
+                        X: =45
+                        Y: =17
+                        ZIndex: =5
 
