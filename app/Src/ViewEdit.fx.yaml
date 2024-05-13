@@ -1005,7 +1005,8 @@
                         DisabledFill: =RGBA(135, 100, 184, 1)
                         Fill: |-
                             =//RGBA(237, 237, 237, 1)
-                            If( DashTickets.Selected.'Progress/Status'.Value = "New", Color.Blue, Color.Gray)
+                            //If( DashTickets.Selected.'Progress/Status'.Value = "New", Color.Blue, Color.Gray)
+                            If(ThisItem.Value = DashTickets.Selected.'Progress/Status'.Value, Color.Blue, Color.Gray) 
                         Height: =38
                         HoverFill: =RGBA(135, 100, 184, 1)
                         OnSelect: =Select(Parent)
