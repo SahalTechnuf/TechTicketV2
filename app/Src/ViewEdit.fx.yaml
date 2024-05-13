@@ -978,8 +978,8 @@
                     LoadingSpinner: =LoadingSpinner.Data
                     TemplatePadding: =0
                     TemplateSize: |-
-                        =If(Self.Layout = Layout.Horizontal, Min(160, (Parent.Width - 60)), 
-                            Min(160, Self.Height - 60)
+                        =If(Self.Layout = Layout.Horizontal, Min(160, (Parent.Width)), 
+                            Min(160, Self.Height)
                         )
                         // Min(160, Self.Width - 60), Min(160, Self.Height - 60))
                     Visible: |
