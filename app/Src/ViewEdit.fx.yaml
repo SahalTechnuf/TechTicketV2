@@ -983,7 +983,7 @@
                         =true
                         //Set(selectedStatus, Patch('Technuf Service Request',  LookUp('Technuf Service Request', ID = Value(ID_Dash.Text)); {'Progress/Status': {Value: selectedStatus }})
                          
-                    Width: =Parent.Width
+                    Width: =App.Width
                     ZIndex: =4
 
                     Rectangle2 As rectangle:
