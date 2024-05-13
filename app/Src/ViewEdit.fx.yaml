@@ -964,7 +964,6 @@
                         ZIndex: =2
 
                 BreadCrumbGallery As gallery.galleryHorizontal:
-                    AlignInContainer: =AlignInContainer.SetByContainer
                     BorderColor: =RGBA(166, 166, 166, 1)
                     BorderStyle: =BorderStyle.None
                     DelayItemLoading: =true
