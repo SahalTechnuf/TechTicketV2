@@ -974,7 +974,7 @@
                         =
                         Choices('Technuf Service Request'.'Progress/Status')
                     LayoutMinHeight: =120
-                    LayoutMinWidth: =300
+                    LayoutMinWidth: =640
                     LoadingSpinner: =LoadingSpinner.Data
                     TemplatePadding: =0
                     TemplateSize: =If(Self.Layout = Layout.Horizontal, Min(170, Self.Width - 60), Min(170, Self.Height - 60))
