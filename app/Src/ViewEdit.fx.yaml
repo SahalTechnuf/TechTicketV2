@@ -1029,8 +1029,8 @@
                         PressedFill: =RGBA(135, 100, 184, 1)
                         Visible: |
                             =true
-                        Width: =104
-                        X: =66
+                        Width: =74
+                        X: =96
                         Y: =25
                         ZIndex: =3
 
