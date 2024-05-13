@@ -83,10 +83,10 @@
                 OnSelect: |
                     =Set(VarBreadCrumbs,
                     Table(
-                        {Stage:1, Status:"New", Color: Color.Blue},
-                        {Stage:2, Status:"Initiated", Color: Color.Blue},
-                        {Stage:3, Status:"In Progress", Color: Color.Blue},
-                        {Stage:4, Status:"Resolved", Color: Color.Blue}
+                        {Stage:1, Status:"New"},
+                        {Stage:2, Status:"Initiated"},
+                        {Stage:3, Status:"In Progress"},
+                        {Stage:4, Status:"Resolved"}
                     ));
                     
                     
@@ -1019,15 +1019,8 @@
                     Rectangle1 As rectangle:
                         BorderColor: =RGBA(0, 0, 0, 0)
                         BorderStyle: =BorderStyle.None
-                        BorderThickness: =2
                         DisabledFill: =RGBA(166, 166, 166, 1)
-                        Fill: |-
-                            =If(ThisItem.Value = DashTickets.Selected.'Progress/Status'.Value, 
-                                    If(VarBreadCrumbs > 3, 
-                                    Color.LightGray,
-                                    Color.Blue 
-                                ),
-                                Color.LightGray) 
+                        Fill: =If(ThisItem.Value > DashTickets.Selected.'Progress/Status'.Value, Color.Blue, Color.LightGray) 
                         FocusedBorderThickness: =4
                         Height: =18
                         HoverFill: =RGBA(135, 100, 184, 1)

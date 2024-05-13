@@ -103,10 +103,50 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 14,
-                  "charOffset": 79,
+                  "charLength": 6,
+                  "charOffset": 11,
                   "snippet": {
-                    "text": "VarBreadCrumbs"
+                    "text": ".Value"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Fill",
+                "module": "ViewEdit",
+                "type": "ViewEdit.ParentContView.HeaderContView.UserInfoCont.BreadCrumbGallery.Rectangle1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Number, Decimal, Date, Time, DateTime, UntypedObject"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrBadType-ExpectedTypesCSV",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ViewEdit.ParentContView.HeaderContView.UserInfoCont.BreadCrumbGallery.Rectangle1.Fill"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ViewEdit.ParentContView.HeaderContView.UserInfoCont.BreadCrumbGallery.Rectangle1.Fill",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 6,
+                  "charOffset": 58,
+                  "snippet": {
+                    "text": ".Value"
                   }
                 }
               },
@@ -805,6 +845,36 @@
               },
               "properties": {
                 "member": "VarDeleteImg",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "App.VarBreadCrumbs"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.VarBreadCrumbs",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "VarBreadCrumbs",
                 "module": "App",
                 "type": "App"
               }
