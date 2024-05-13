@@ -1022,7 +1022,7 @@
                         BorderColor: =RGBA(0, 0, 0, 0)
                         BorderStyle: =BorderStyle.None
                         DisabledFill: =RGBA(166, 166, 166, 1)
-                        Fill: =If(ThisItem.Stage > DashTickets.Selected.Stage, Color.Blue, Color.LightGray) 
+                        Fill: =If(ThisItem.Value < DashTickets.Selected.Stage, Color.Blue, Color.LightGray) 
                         FocusedBorderThickness: =4
                         Height: =18
                         HoverFill: =RGBA(135, 100, 184, 1)
@@ -1056,15 +1056,14 @@
 
                     Icon1 As icon.CheckBadge:
                         BorderColor: =RGBA(0, 0, 0, 0)
-                        BorderStyle: =BorderStyle.None
                         Color: |-
                             =//RGBA(135, 100, 184, 1)
-                            If(ThisItem.Value = DashTickets.Selected.'Progress/Status'.Value, Color.DarkBlue, Color.LightGray) 
+                            If(ThisItem.Value = DashTickets.Selected.'Progress/Status'.Value, Color.Black, Color.LightGray) 
                         DisabledBorderColor: =RGBA(166, 166, 166, 1)
                         DisabledColor: =RGBA(220, 220, 220, 1)
                         DisabledFill: =RGBA(0, 0, 0, 0)
-                        FocusedBorderThickness: =0
-                        Height: =38
+                        FocusedBorderThickness: =4
+                        Height: =26
                         HoverBorderColor: =RGBA(0, 0, 0, 0)
                         HoverColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
                         HoverFill: =RGBA(0, 0, 0, 0)
@@ -1073,8 +1072,8 @@
                         PressedBorderColor: =RGBA(0, 0, 0, 0)
                         PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
                         PressedFill: =RGBA(0, 0, 0, 0)
-                        Width: =50
+                        Width: =51
                         X: =45
-                        Y: =17
+                        Y: =21
                         ZIndex: =5
 
