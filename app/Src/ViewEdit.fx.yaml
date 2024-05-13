@@ -964,6 +964,7 @@
                         ZIndex: =2
 
                 BreadCrumbGallery As gallery.galleryHorizontal:
+                    AlignInContainer: =AlignInContainer.SetByContainer
                     BorderColor: =RGBA(166, 166, 166, 1)
                     BorderStyle: =BorderStyle.None
                     DelayItemLoading: =true
@@ -1022,7 +1023,7 @@
                         BorderColor: =RGBA(0, 0, 0, 0)
                         BorderStyle: =BorderStyle.None
                         DisabledFill: =RGBA(166, 166, 166, 1)
-                        Fill: =If(ThisItem.Value < DashTickets.Selected.Stage, Color.Blue, Color.LightGray) 
+                        Fill: =RGBA(237, 237, 237, 1)
                         FocusedBorderThickness: =4
                         Height: =18
                         HoverFill: =RGBA(135, 100, 184, 1)
