@@ -983,17 +983,18 @@
                         =true
                         //Set(selectedStatus, Patch('Technuf Service Request',  LookUp('Technuf Service Request', ID = Value(ID_Dash.Text)); {'Progress/Status': {Value: selectedStatus }})
                          
-                    Width: =App.Width
+                    Width: |-
+                        =App.Width
+                        //Parent.width
                     ZIndex: =4
 
                     Rectangle2 As rectangle:
                         BorderColor: =RGBA(0, 0, 0, 0)
                         BorderStyle: =BorderStyle.None
-                        BorderThickness: =2
                         DisabledFill: =RGBA(166, 166, 166, 1)
                         Fill: =RGBA(237, 237, 237, 1)
                         FocusedBorderThickness: =4
-                        Height: =18
+                        Height: =19
                         HoverFill: =RGBA(135, 100, 184, 1)
                         OnSelect: =Select(Parent)
                         PressedFill: =RGBA(135, 100, 184, 1)
