@@ -970,7 +970,9 @@
                     DisplayMode: =DisplayMode.View
                     Fill: |
                         =RGBA(0,0,0,0)
-                    Items: =Choices('Technuf Service Request'.'Progress/Status')
+                    Items: |-
+                        =
+                        Choices('Technuf Service Request'.'Progress/Status')
                     LayoutMinHeight: =120
                     LayoutMinWidth: =300
                     LoadingSpinner: =LoadingSpinner.Data
@@ -1020,7 +1022,7 @@
                         BorderColor: =RGBA(0, 0, 0, 0)
                         BorderStyle: =BorderStyle.None
                         DisabledFill: =RGBA(166, 166, 166, 1)
-                        Fill: =If(ThisItem.Value > DashTickets.Selected.'Progress/Status'.Value, Color.Blue, Color.LightGray) 
+                        Fill: =If(ThisItem.Stage > DashTickets.Selected.Stage, Color.Blue, Color.LightGray) 
                         FocusedBorderThickness: =4
                         Height: =18
                         HoverFill: =RGBA(135, 100, 184, 1)
