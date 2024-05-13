@@ -970,7 +970,7 @@
                     DisplayMode: =DisplayMode.View
                     Fill: |
                         =RGBA(0,0,0,0)
-                    Items: ='Technuf Service Request'
+                    Items: =Choices('Technuf Service Request'.'Progress/Status')
                     LayoutMinHeight: =120
                     LayoutMinWidth: =300
                     LoadingSpinner: =LoadingSpinner.Data
@@ -1045,7 +1045,7 @@
                         Height: =44
                         OnSelect: =Select(Parent)
                         Size: =15
-                        Text: =ThisItem.'Progress/Status'.Value
+                        Text: =ThisItem.Value
                         Width: =154
                         Y: =43
                         ZIndex: =4
