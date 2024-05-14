@@ -977,6 +977,8 @@
                     LayoutMinHeight: =120
                     LayoutMinWidth: =Parent.Width
                     LoadingSpinner: =LoadingSpinner.Data
+                    ShowScrollbar: =false
+                    TabIndex: =1
                     TemplatePadding: =0
                     TemplateSize: |-
                         =If(Self.Layout = Layout.Horizontal, Min(160, Parent.Width), Min(160, Self.Height))

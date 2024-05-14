@@ -534,10 +534,10 @@
             "id": "issue"
           },
           "properties": {
-            "level": "Medium"
+            "level": "Low"
           },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 2
+          "ruleId": "acc-TabOrderShouldBeChecked",
+          "ruleIndex": 3
         },
         {
           "locations": [
