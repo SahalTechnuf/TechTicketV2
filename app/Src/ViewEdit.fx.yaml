@@ -1004,7 +1004,7 @@
                         OnSelect: =Select(Parent)
                         PressedFill: =RGBA(135, 100, 184, 1)
                         Width: =46
-                        Y: =25
+                        Y: =Rectangle1.Y
                         ZIndex: =1
 
                     Circle1 As circle:
