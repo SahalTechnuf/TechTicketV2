@@ -975,7 +975,7 @@
                         =
                         Choices('Technuf Service Request'.'Progress/Status')
                     LayoutMinHeight: =120
-                    LayoutMinWidth: =Parent.Width
+                    LayoutMinWidth: =160
                     LoadingSpinner: =LoadingSpinner.Data
                     ShowScrollbar: =false
                     TabIndex: =1
@@ -990,6 +990,8 @@
                         //Set(selectedStatus, Patch('Technuf Service Request',  LookUp('Technuf Service Request', ID = Value(ID_Dash.Text)); {'Progress/Status': {Value: selectedStatus }})
                          
                     Width: =Parent.Width
+                    X: =If((App.Width > App.Height), 0, 0)
+                    Y: =If((App.Width > App.Height), 0, 0)
                     ZIndex: =4
 
                     Rectangle2 As rectangle:
