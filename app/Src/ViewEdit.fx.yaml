@@ -1028,7 +1028,26 @@
                         Fill: |-
                             =//RGBA(237, 237, 237, 1)
                             //If( DashTickets.Selected.'Progress/Status'.Value = "New", Color.Blue, Color.Gray)
-                            If(ThisItem.Value = DashTickets.Selected.'Progress/Status'.Value, Color.Blue, Color.LightGray) 
+                            //If(ThisItem.Value = DashTickets.Selected.'Progress/Status'.Value, Color.Blue, Color.LightGray);
+                            If(
+                                Switch(
+                                    ThisItem.Value,
+                                    "New", 1,
+                                    "Initiated", 2,
+                                    "In Progress", 3,
+                                    "Resolved", 4,
+                                    0
+                                ) <= Switch(
+                                    DashTickets.Selected.'Progress/Status'.Value,
+                                    "New", 1,
+                                    "Initiated", 2,
+                                    "In Progress", 3,
+                                    "Resolved", 4,
+                                    0
+                                ),
+                                Color.Blue,
+                                Color.LightGray
+                            )
                         Height: =39
                         HoverFill: =RGBA(135, 100, 184, 1)
                         OnSelect: =Select(Parent)
@@ -1099,7 +1118,7 @@
                         BorderColor: =RGBA(0, 0, 0, 0)
                         Color: |-
                             =//RGBA(135, 100, 184, 1)
-                            If(ThisItem.Value = DashTickets.Selected.'Progress/Status'.Value, Color.Black, Color.LightGray) 
+                            If(ThisItem.Value <= DashTickets.Selected.'Progress/Status'.Value, Color.Black, Color.LightGray) 
                         DisabledBorderColor: =RGBA(166, 166, 166, 1)
                         DisabledColor: =RGBA(220, 220, 220, 1)
                         DisabledFill: =RGBA(0, 0, 0, 0)
