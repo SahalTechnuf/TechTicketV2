@@ -1004,14 +1004,14 @@
                                     ThisItem.Value,
                                     "New", 1,
                                     "Initiated", 2,
-                                    "Inprogress", 3,
+                                    "In Pprogress", 3,
                                     "Resolved", 4,
                                     0
                                 ) > Switch(
                                     DashTickets.Selected.'Progress/Status'.Value,
                                     "New", 1,
                                     "Initiated", 2,
-                                    "Inprogress", 3,
+                                    "In Progress", 3,
                                     "Resolved", 4,
                                     0
                                 ),
