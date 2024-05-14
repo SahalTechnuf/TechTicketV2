@@ -1135,7 +1135,7 @@
                                     "Resolved", 4,
                                     0
                                 ),
-                                Color.Blue,
+                                Color.Black,
                                 Color.LightGray
                             )
                         DisabledBorderColor: =RGBA(166, 166, 166, 1)
