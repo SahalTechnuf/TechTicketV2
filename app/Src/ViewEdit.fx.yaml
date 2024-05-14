@@ -997,27 +997,8 @@
                         BorderColor: =RGBA(0, 0, 0, 0)
                         BorderStyle: =BorderStyle.None
                         DisabledFill: =RGBA(166, 166, 166, 1)
-                        Fill: |-
+                        Fill: |
                             =//RGBA(237, 237, 237, 1)
-                            If(
-                                Switch(
-                                    ThisItem.Value,
-                                    "New", 1,
-                                    "Initiated", 2,
-                                    "In Pprogress", 3,
-                                    "Resolved", 4,
-                                    0
-                                ) > Switch(
-                                    DashTickets.Selected.'Progress/Status'.Value,
-                                    "New", 1,
-                                    "Initiated", 2,
-                                    "In Progress", 3,
-                                    "Resolved", 4,
-                                    0
-                                ),
-                                Color.Blue,
-                                Color.LightGray
-                            )
                         FocusedBorderThickness: =4
                         Height: =Rectangle1.Height
                         HoverFill: =RGBA(135, 100, 184, 1)
@@ -1060,14 +1041,14 @@
                                     ThisItem.Value,
                                     "New", 1,
                                     "Initiated", 2,
-                                    "Inprogress", 3,
+                                    "In Progress", 3,
                                     "Resolved", 4,
                                     0
                                 ) > Switch(
                                     DashTickets.Selected.'Progress/Status'.Value,
                                     "New", 1,
                                     "Initiated", 2,
-                                    "Inprogress", 3,
+                                    "In Progress", 3,
                                     "Resolved", 4,
                                     0
                                 ),
