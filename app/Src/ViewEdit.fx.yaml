@@ -979,7 +979,7 @@
                     TemplatePadding: =0
                     TemplateSize: |-
                         =//If(Self.Layout = Layout.Horizontal,
-                         Min(160,Parent.Width)
+                         Min(160,EmailCont.Width)
                         
                         // Min(160, Self.Width - 60), Min(160, Self.Height - 60))
                     Visible: |
@@ -1035,7 +1035,7 @@
                         PressedFill: =RGBA(135, 100, 184, 1)
                         Visible: |
                             =true
-                        Width: =74
+                        Width: =64
                         X: =96
                         Y: =25
                         ZIndex: =3
