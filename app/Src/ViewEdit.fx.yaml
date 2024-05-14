@@ -1017,6 +1017,7 @@
                             =//true
                             If (ThisItem.Value = "New", false,true)
                         Width: =46
+                        X: =2
                         Y: =Rectangle1.Y
                         ZIndex: =1
 
@@ -1092,7 +1093,7 @@
                             =If (ThisItem.Value = "Resolved", false,true)
                         Width: =50
                         X: =93
-                        Y: =27
+                        Y: =26
                         ZIndex: =3
 
                     Label4 As label:
