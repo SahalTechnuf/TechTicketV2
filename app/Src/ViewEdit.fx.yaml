@@ -81,16 +81,7 @@
                 LayoutMinHeight: =70
                 LayoutMinWidth: =280
                 OnSelect: |
-                    =Set(VarBreadCrumbs,
-                    Table(
-                        {Stage:1, Status:"New"},
-                        {Stage:2, Status:"Initiated"},
-                        {Stage:3, Status:"In Progress"},
-                        {Stage:4, Status:"Resolved"}
-                    ));
-                    
-                    
-                    
+                    =
                     Patch ('Technuf Service Request', LookUp(
                             'Technuf Service Request',  
                             ID = Value(selectedItem.ID)),
@@ -998,21 +989,20 @@
                         BorderStyle: =BorderStyle.None
                         DisabledFill: =RGBA(166, 166, 166, 1)
                         Fill: |-
-                            =//RGBA(237, 237, 237, 1)
-                            If(
+                            =If(
                                 Switch(
                                     ThisItem.Value,
-                                    "New", 0,
-                                    "Initiated", 1,
-                                    "In Progress", 2,
-                                    "Resolved", 3,
+                                    "New", 1,
+                                    "Initiated", 2,
+                                    "In Progress", 3,
+                                    "Resolved", 4,
                                     0
                                 ) < Switch(
                                     DashTickets.Selected.'Progress/Status'.Value,
-                                    "New", 0,
-                                    "Initiated", 1,
-                                    "In Progress", 2,
-                                    "Resolved", 3,
+                                    "New", 1,
+                                    "Initiated", 2,
+                                    "In Progress", 3,
+                                    "Resolved", 4,
                                     0
                                 ),
                                 Color.Blue,
