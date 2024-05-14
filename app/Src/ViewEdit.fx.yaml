@@ -997,7 +997,8 @@
                         BorderColor: =RGBA(0, 0, 0, 0)
                         BorderStyle: =BorderStyle.None
                         DisabledFill: =RGBA(166, 166, 166, 1)
-                        Fill: =RGBA(237, 237, 237, 1)
+                        Fill: |
+                            =RGBA(237, 237, 237, 1)
                         FocusedBorderThickness: =4
                         Height: =Rectangle1.Height
                         HoverFill: =RGBA(135, 100, 184, 1)
@@ -1029,7 +1030,8 @@
                         BorderColor: =RGBA(0, 0, 0, 0)
                         BorderStyle: =BorderStyle.None
                         DisabledFill: =RGBA(166, 166, 166, 1)
-                        Fill: =RGBA(237, 237, 237, 1)
+                        Fill: |
+                            =RGBA(237, 237, 237, 1)
                         FocusedBorderThickness: =4
                         Height: =18
                         HoverFill: =RGBA(135, 100, 184, 1)
