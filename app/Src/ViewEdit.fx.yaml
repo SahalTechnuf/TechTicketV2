@@ -980,7 +980,7 @@
                     ShowScrollbar: =false
                     TemplatePadding: =0
                     TemplateSize: |-
-                        =If(Self.Layout = Layout.Horizontal, Min(160, Parent.Width), Min(160, Self.Height))
+                        =If(Self.Layout = Layout.Horizontal, Min(140, Parent.Width), Min(140, Self.Height))
                         
                         
                         // Min(160, Self.Width - 60), Min(160, Self.Height - 60))
