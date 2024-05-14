@@ -989,7 +989,8 @@
                         BorderStyle: =BorderStyle.None
                         DisabledFill: =RGBA(166, 166, 166, 1)
                         Fill: |-
-                            =If(
+                            =
+                            If(
                                 Switch(
                                     ThisItem.Value,
                                     "New", 1,
