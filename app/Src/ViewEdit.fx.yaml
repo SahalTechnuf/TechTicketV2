@@ -988,7 +988,7 @@
                         =true
                         //Set(selectedStatus, Patch('Technuf Service Request',  LookUp('Technuf Service Request', ID = Value(ID_Dash.Text)); {'Progress/Status': {Value: selectedStatus }})
                          
-                    Width: =Parent.Width - 80
+                    Width: =Parent.Width -80
                     X: =If((App.Width > App.Height), 0, 0)
                     Y: =If((App.Width > App.Height), 0, 0)
                     ZIndex: =4
