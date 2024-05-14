@@ -1063,7 +1063,7 @@
                         Size: =15
                         Text: =ThisItem.Value 
                         Width: =154
-                        Y: =43
+                        Y: =54
                         ZIndex: =4
 
                     Icon1 As icon.CheckBadge:
