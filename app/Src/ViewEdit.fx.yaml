@@ -1016,11 +1016,11 @@
                             =//RGBA(237, 237, 237, 1)
                             //If( DashTickets.Selected.'Progress/Status'.Value = "New", Color.Blue, Color.Gray)
                             If(ThisItem.Value = DashTickets.Selected.'Progress/Status'.Value, Color.Blue, Color.LightGray) 
-                        Height: =38
+                        Height: =39
                         HoverFill: =RGBA(135, 100, 184, 1)
                         OnSelect: =Select(Parent)
                         PressedFill: =RGBA(135, 100, 184, 1)
-                        Width: =50
+                        Width: =48
                         X: =46
                         Y: =15
                         ZIndex: =2
@@ -1069,6 +1069,7 @@
                         DisabledBorderColor: =RGBA(166, 166, 166, 1)
                         DisabledColor: =RGBA(220, 220, 220, 1)
                         DisabledFill: =RGBA(0, 0, 0, 0)
+                        DisplayMode: =DisplayMode.View
                         FocusedBorderThickness: =4
                         Height: =26
                         HoverBorderColor: =RGBA(0, 0, 0, 0)
@@ -1076,6 +1077,7 @@
                         HoverFill: =RGBA(0, 0, 0, 0)
                         Icon: =Icon.CheckBadge
                         OnSelect: =Select(Parent)
+                        PaddingRight: =1
                         PressedBorderColor: =RGBA(0, 0, 0, 0)
                         PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
                         PressedFill: =RGBA(0, 0, 0, 0)
