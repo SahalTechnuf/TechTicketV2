@@ -984,13 +984,12 @@
                     Y: =If((App.Width > App.Height), 0, 0)
                     ZIndex: =4
 
-                    Rectangle2 As rectangle:
+                    BackRectangle2 As rectangle:
                         BorderColor: =RGBA(0, 0, 0, 0)
                         BorderStyle: =BorderStyle.None
                         DisabledFill: =RGBA(166, 166, 166, 1)
                         Fill: |-
-                            =
-                            If(
+                            =If(
                                 Switch(
                                     ThisItem.Value,
                                     "New", 1,
@@ -998,7 +997,7 @@
                                     "In Progress", 3,
                                     "Resolved", 4,
                                     0
-                                ) < Switch(
+                                ) <= Switch(
                                     DashTickets.Selected.'Progress/Status'.Value,
                                     "New", 1,
                                     "Initiated", 2,
