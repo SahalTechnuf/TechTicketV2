@@ -1070,7 +1070,7 @@
                         DisabledColor: =RGBA(220, 220, 220, 1)
                         DisabledFill: =RGBA(0, 0, 0, 0)
                         DisplayMode: =DisplayMode.View
-                        FocusedBorderThickness: =4
+                        FocusedBorderThickness: =0
                         Height: =26
                         HoverBorderColor: =RGBA(0, 0, 0, 0)
                         HoverColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
