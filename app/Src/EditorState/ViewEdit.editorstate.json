@@ -840,7 +840,7 @@
         {
           "Category": "Design",
           "PropertyName": "TabIndex",
-          "RuleProviderType": "Unknown"
+          "RuleProviderType": "User"
         }
       ],
       "StyleName": "defaultGalleryStyle",
