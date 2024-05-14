@@ -1038,10 +1038,11 @@
                         OnSelect: =Select(Parent)
                         PressedFill: =RGBA(135, 100, 184, 1)
                         Visible: |
-                            =true
-                        Width: =64
-                        X: =96
-                        Y: =25
+                            =//true
+                            If (ThisItem.Value = "Resolved", false,true)
+                        Width: =50
+                        X: =93
+                        Y: =27
                         ZIndex: =3
 
                     Label4 As label:
