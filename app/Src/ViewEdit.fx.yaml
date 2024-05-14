@@ -1117,9 +1117,7 @@
                     Icon1 As icon.CheckBadge:
                         BorderColor: =RGBA(0, 0, 0, 0)
                         Color: |-
-                            =//RGBA(135, 100, 184, 1)
-                            //If(ThisItem.Value <= DashTickets.Selected.'Progress/Status'.Value, Color.Black, Color.LightGray) 
-                            If(
+                            =If(
                                 Switch(
                                     ThisItem.Value,
                                     "New", 1,
