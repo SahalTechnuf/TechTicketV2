@@ -636,7 +636,7 @@
           "Property": {
             "Category": "Design",
             "PropertyName": "LayoutMinWidth",
-            "RuleProviderType": "Unknown"
+            "RuleProviderType": "User"
           },
           "PropertyName": "LayoutMinWidth"
         },
