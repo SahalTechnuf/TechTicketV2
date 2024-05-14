@@ -1004,6 +1004,9 @@
                         HoverFill: =RGBA(135, 100, 184, 1)
                         OnSelect: =Select(Parent)
                         PressedFill: =RGBA(135, 100, 184, 1)
+                        Visible: |
+                            =//true
+                            If (ThisItem.Value = "New", false,true)
                         Width: =46
                         Y: =Rectangle1.Y
                         ZIndex: =1
