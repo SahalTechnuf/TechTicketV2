@@ -1033,8 +1033,9 @@
                         BorderColor: =RGBA(0, 0, 0, 0)
                         BorderStyle: =BorderStyle.None
                         DisabledFill: =RGBA(166, 166, 166, 1)
-                        Fill: |
+                        Fill: |-
                             =RGBA(237, 237, 237, 1)
+                            //If(ThisItem.Value < DashTickets.Selected.'Progress/Status'.Value, Color.Blue, Color.LightGray)
                         FocusedBorderThickness: =4
                         Height: =18
                         HoverFill: =RGBA(135, 100, 184, 1)
