@@ -1007,7 +1007,7 @@
                                     "Inprogress", 3,
                                     "Resolved", 4,
                                     0
-                                ) < Switch(
+                                ) > Switch(
                                     DashTickets.Selected.'Progress/Status'.Value,
                                     "New", 1,
                                     "Initiated", 2,
