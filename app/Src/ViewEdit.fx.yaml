@@ -756,7 +756,8 @@
 
                 Container2 As groupContainer.horizontalAutoLayoutContainer:
                     FillPortions: =0
-                    Height: =80
+                    Height: |
+                        =90
                     LayoutMinHeight: =112
                     LayoutMinWidth: =250
                     LayoutMode: =LayoutMode.Auto
