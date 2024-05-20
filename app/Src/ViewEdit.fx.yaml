@@ -970,8 +970,8 @@
                             PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
                             PressedFill: =RGBA(0, 0, 0, 0)
                             Width: =51
-                            X: =30
-                            Y: =17
+                            X: =29
+                            Y: =18
                             ZIndex: =5
 
                     Button_DeleteTicket As icon.Trash:
