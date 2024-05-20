@@ -1073,7 +1073,7 @@
                             ZIndex: =2
 
                         Label4 As label:
-                            Align: =If(ThisItem.Value = "New",,Align.Center)
+                            Align: =If(ThisItem.Value = "New",Align.Center)
                             BorderColor: =RGBA(0, 0, 0, 0)
                             BorderStyle: =BorderStyle.None
                             BorderThickness: =2
