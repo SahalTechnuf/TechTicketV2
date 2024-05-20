@@ -753,212 +753,255 @@
                 Width: =Parent.Width
                 ZIndex: =3
 
-                BreadCrumbGallery As gallery.galleryHorizontal:
-                    AlignInContainer: =AlignInContainer.Center
-                    BorderColor: =RGBA(166, 166, 166, 1)
-                    BorderStyle: =BorderStyle.None
-                    DelayItemLoading: =true
-                    DisplayMode: =DisplayMode.View
-                    Fill: |
-                        =RGBA(0,0,0,0)
+                Container2 As groupContainer.horizontalAutoLayoutContainer:
                     FillPortions: =0
-                    Height: |
-                        =80
-                    Items: |-
-                        =
-                        Choices('Technuf Service Request'.'Progress/Status')
-                    LayoutMinHeight: =120
-                    LayoutMinWidth: =160
-                    LoadingSpinner: =LoadingSpinner.Data
-                    ShowScrollbar: =false
-                    TemplatePadding: =0
-                    TemplateSize: |-
-                        =If(Self.Layout = Layout.Horizontal, Min(140, Parent.Width), Min(140, Self.Height))
-                        
-                        
-                        // Min(160, Self.Width - 60), Min(160, Self.Height - 60))
-                    Visible: |
-                        =true
-                        //Set(selectedStatus, Patch('Technuf Service Request',  LookUp('Technuf Service Request', ID = Value(ID_Dash.Text)); {'Progress/Status': {Value: selectedStatus }})
-                         
-                    Width: =Parent.Width -80
-                    X: =If((App.Width > App.Height), 0, 0)
-                    Y: =If((App.Width > App.Height), 0, 0)
+                    Height: =80
+                    LayoutMinHeight: =112
+                    LayoutMinWidth: =250
+                    LayoutMode: =LayoutMode.Auto
+                    RadiusBottomLeft: =4
+                    RadiusBottomRight: =4
+                    RadiusTopLeft: =4
+                    RadiusTopRight: =4
                     ZIndex: =1
 
-                    BackRectangle2 As rectangle:
-                        BorderColor: =RGBA(0, 0, 0, 0)
-                        BorderStyle: =BorderStyle.None
-                        DisabledFill: =RGBA(166, 166, 166, 1)
-                        Fill: |-
-                            =If(
-                                Switch(
-                                    ThisItem.Value,
-                                    "New", 1,
-                                    "Initiated", 2,
-                                    "In Progress", 3,
-                                    "Resolved", 4,
-                                    0
-                                ) <= Switch(
-                                    DashTickets.Selected.'Progress/Status'.Value,
-                                    "New", 1,
-                                    "Initiated", 2,
-                                    "In Progress", 3,
-                                    "Resolved", 4,
-                                    0
-                                ),
-                                Color.LightBlue,
-                                Color.LightGray
-                            )
-                        FocusedBorderThickness: =4
-                        Height: =Rectangle1.Height
-                        HoverFill: =RGBA(135, 100, 184, 1)
-                        OnSelect: =Select(Parent)
-                        PressedFill: =RGBA(135, 100, 184, 1)
-                        Visible: |
-                            =//true
-                            If (ThisItem.Value = "New", false,true)
-                        Width: =50
-                        X: =2
-                        Y: =Rectangle1.Y
-                        ZIndex: =1
-
-                    Circle1 As circle:
+                    BreadCrumbGallery As gallery.galleryHorizontal:
+                        AlignInContainer: =AlignInContainer.Center
                         BorderColor: =RGBA(166, 166, 166, 1)
                         BorderStyle: =BorderStyle.None
-                        BorderThickness: =2
-                        DisabledFill: =RGBA(135, 100, 184, 1)
-                        Fill: |-
-                            =//RGBA(237, 237, 237, 1)
-                            //If( DashTickets.Selected.'Progress/Status'.Value = "New", Color.Blue, Color.Gray)
-                            //If(ThisItem.Value = DashTickets.Selected.'Progress/Status'.Value, Color.Blue, Color.LightGray);
-                            If(
-                                Switch(
-                                    ThisItem.Value,
-                                    "New", 1,
-                                    "Initiated", 2,
-                                    "In Progress", 3,
-                                    "Resolved", 4,
-                                    0
-                                ) <= Switch(
-                                    DashTickets.Selected.'Progress/Status'.Value,
-                                    "New", 1,
-                                    "Initiated", 2,
-                                    "In Progress", 3,
-                                    "Resolved", 4,
-                                    0
-                                ),
-                                Color.LightBlue,
-                                Color.LightGray
-                            )
-                        Height: =39
-                        HoverFill: =RGBA(135, 100, 184, 1)
-                        OnSelect: =Select(Parent)
-                        PressedFill: =RGBA(135, 100, 184, 1)
-                        Width: =48
-                        X: =46
-                        Y: =8
-                        ZIndex: =2
-
-                    Rectangle1 As rectangle:
-                        BorderColor: =RGBA(0, 0, 0, 0)
-                        BorderStyle: =BorderStyle.None
-                        DisabledFill: =RGBA(166, 166, 166, 1)
-                        Fill: |-
-                            =//RGBA(237, 237, 237, 1)
-                            //If(ThisItem.Value < DashTickets.Selected.'Progress/Status'.Value, Color.Blue, Color.LightGray)
-                            If(
-                                Switch(
-                                    ThisItem.Value,
-                                    "New", 1,
-                                    "Initiated", 2,
-                                    "In Progress", 3,
-                                    "Resolved", 4,
-                                    0
-                                ) < Switch(
-                                    DashTickets.Selected.'Progress/Status'.Value,
-                                    "New", 1,
-                                    "Initiated", 2,
-                                    "In Progress", 3,
-                                    "Resolved", 4,
-                                    0
-                                ),
-                                Color.LightBlue,
-                                Color.LightGray
-                            )
-                        FocusedBorderThickness: =4
-                        Height: =18
-                        HoverFill: =RGBA(135, 100, 184, 1)
-                        OnSelect: =Select(Parent)
-                        PressedFill: =RGBA(135, 100, 184, 1)
-                        Visible: |
-                            =If (ThisItem.Value = "Resolved", false,true)
-                        Width: =55
-                        X: =90
-                        Y: =18
-                        ZIndex: =3
-
-                    Label4 As label:
-                        Align: =Align.Center
-                        BorderColor: =RGBA(0, 0, 0, 0)
-                        BorderStyle: =BorderStyle.None
-                        BorderThickness: =2
-                        Color: =RGBA(51, 51, 51, 1)
-                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                        DisabledColor: =RGBA(166, 166, 166, 1)
-                        FocusedBorderThickness: =4
-                        Font: =Font.'Segoe UI'
-                        FontWeight: =FontWeight.Bold
+                        DelayItemLoading: =true
+                        DisplayMode: =DisplayMode.View
+                        Fill: |
+                            =RGBA(0,0,0,0)
+                        FillPortions: =0
                         Height: |
-                            =30
-                        OnSelect: =Select(Parent)
-                        Size: =15
-                        Text: =ThisItem.Value 
-                        Width: =140
-                        Y: =54
-                        ZIndex: =4
+                            =80
+                        Items: |-
+                            =
+                            Choices('Technuf Service Request'.'Progress/Status')
+                        LayoutMinHeight: =120
+                        LayoutMinWidth: =160
+                        LoadingSpinner: =LoadingSpinner.Data
+                        ShowScrollbar: =false
+                        TemplatePadding: =0
+                        TemplateSize: |-
+                            =If(Self.Layout = Layout.Horizontal, Min(160, Parent.Width), Min(160, Self.Height))
+                            
+                            
+                            // Min(160, Self.Width - 60), Min(160, Self.Height - 60))
+                        Visible: |
+                            =true
+                            //Set(selectedStatus, Patch('Technuf Service Request',  LookUp('Technuf Service Request', ID = Value(ID_Dash.Text)); {'Progress/Status': {Value: selectedStatus }})
+                             
+                        Width: |
+                            =Parent.Width -45
+                        X: =If((App.Width > App.Height), 0, 0)
+                        Y: =If((App.Width > App.Height), 0, 0)
+                        ZIndex: =1
 
-                    CheckIcon As icon.CheckBadge:
+                        BackRectangle2 As rectangle:
+                            BorderColor: =RGBA(0, 0, 0, 0)
+                            BorderStyle: =BorderStyle.None
+                            DisabledFill: =RGBA(166, 166, 166, 1)
+                            Fill: |-
+                                =If(
+                                    Switch(
+                                        ThisItem.Value,
+                                        "New", 1,
+                                        "Initiated", 2,
+                                        "In Progress", 3,
+                                        "Resolved", 4,
+                                        0
+                                    ) <= Switch(
+                                        DashTickets.Selected.'Progress/Status'.Value,
+                                        "New", 1,
+                                        "Initiated", 2,
+                                        "In Progress", 3,
+                                        "Resolved", 4,
+                                        0
+                                    ),
+                                    Color.LightBlue,
+                                    Color.LightGray
+                                )
+                            FocusedBorderThickness: =4
+                            Height: =Rectangle1.Height
+                            HoverFill: =RGBA(135, 100, 184, 1)
+                            OnSelect: =Select(Parent)
+                            PressedFill: =RGBA(135, 100, 184, 1)
+                            Visible: |
+                                =//true
+                                If (ThisItem.Value = "New", false,true)
+                            Width: =50
+                            X: =2
+                            Y: =Rectangle1.Y
+                            ZIndex: =1
+
+                        Rectangle1 As rectangle:
+                            BorderColor: =RGBA(0, 0, 0, 0)
+                            BorderStyle: =BorderStyle.None
+                            DisabledFill: =RGBA(166, 166, 166, 1)
+                            Fill: |-
+                                =//RGBA(237, 237, 237, 1)
+                                //If(ThisItem.Value < DashTickets.Selected.'Progress/Status'.Value, Color.Blue, Color.LightGray)
+                                If(
+                                    Switch(
+                                        ThisItem.Value,
+                                        "New", 1,
+                                        "Initiated", 2,
+                                        "In Progress", 3,
+                                        "Resolved", 4,
+                                        0
+                                    ) < Switch(
+                                        DashTickets.Selected.'Progress/Status'.Value,
+                                        "New", 1,
+                                        "Initiated", 2,
+                                        "In Progress", 3,
+                                        "Resolved", 4,
+                                        0
+                                    ),
+                                    Color.LightBlue,
+                                    Color.LightGray
+                                )
+                            FocusedBorderThickness: =4
+                            Height: =18
+                            HoverFill: =RGBA(135, 100, 184, 1)
+                            OnSelect: =Select(Parent)
+                            PressedFill: =RGBA(135, 100, 184, 1)
+                            Visible: |
+                                =If (ThisItem.Value = "Resolved", false,true)
+                            Width: =85
+                            X: =80
+                            Y: =21
+                            ZIndex: =2
+
+                        Label4 As label:
+                            Align: =Align.Center
+                            BorderColor: =RGBA(0, 0, 0, 0)
+                            BorderStyle: =BorderStyle.None
+                            BorderThickness: =2
+                            Color: =RGBA(51, 51, 51, 1)
+                            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            FocusedBorderThickness: =4
+                            Font: =Font.'Segoe UI'
+                            FontWeight: =FontWeight.Bold
+                            Height: =28
+                            OnSelect: =Select(Parent)
+                            PaddingLeft: =0
+                            Size: =15
+                            Text: =ThisItem.Value 
+                            Width: =115
+                            X: =3
+                            Y: =50
+                            ZIndex: =3
+
+                        Circle1 As circle:
+                            BorderColor: =RGBA(166, 166, 166, 1)
+                            BorderStyle: =BorderStyle.None
+                            BorderThickness: =2
+                            DisabledFill: =RGBA(135, 100, 184, 1)
+                            Fill: |-
+                                =//RGBA(237, 237, 237, 1)
+                                //If( DashTickets.Selected.'Progress/Status'.Value = "New", Color.Blue, Color.Gray)
+                                //If(ThisItem.Value = DashTickets.Selected.'Progress/Status'.Value, Color.Blue, Color.LightGray);
+                                If(
+                                    Switch(
+                                        ThisItem.Value,
+                                        "New", 1,
+                                        "Initiated", 2,
+                                        "In Progress", 3,
+                                        "Resolved", 4,
+                                        0
+                                    ) <= Switch(
+                                        DashTickets.Selected.'Progress/Status'.Value,
+                                        "New", 1,
+                                        "Initiated", 2,
+                                        "In Progress", 3,
+                                        "Resolved", 4,
+                                        0
+                                    ),
+                                    Color.LightBlue,
+                                    Color.LightGray
+                                )
+                            Height: =39
+                            HoverFill: =RGBA(135, 100, 184, 1)
+                            OnSelect: =Select(Parent)
+                            PressedFill: =RGBA(135, 100, 184, 1)
+                            Width: =48
+                            X: =37
+                            Y: =11
+                            ZIndex: =4
+
+                        CheckIcon As icon.CheckBadge:
+                            BorderColor: =RGBA(0, 0, 0, 0)
+                            Color: |-
+                                =If(
+                                    Switch(
+                                        ThisItem.Value,
+                                        "New", 1,
+                                        "Initiated", 2,
+                                        "In Progress", 3,
+                                        "Resolved", 4,
+                                        0
+                                    ) <= Switch(
+                                        DashTickets.Selected.'Progress/Status'.Value,
+                                        "New", 1,
+                                        "Initiated", 2,
+                                        "In Progress", 3,
+                                        "Resolved", 4,
+                                        0
+                                    ),
+                                    Color.Green,
+                                    Color.LightGray
+                                )
+                            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                            DisabledColor: =RGBA(220, 220, 220, 1)
+                            DisabledFill: =RGBA(0, 0, 0, 0)
+                            DisplayMode: =DisplayMode.View
+                            FocusedBorderThickness: =0
+                            Height: =26
+                            HoverBorderColor: =RGBA(0, 0, 0, 0)
+                            HoverColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
+                            HoverFill: =RGBA(0, 0, 0, 0)
+                            Icon: =Icon.CheckBadge
+                            OnSelect: =Select(Parent)
+                            PaddingRight: =1
+                            PressedBorderColor: =RGBA(0, 0, 0, 0)
+                            PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
+                            PressedFill: =RGBA(0, 0, 0, 0)
+                            Width: =51
+                            X: =35
+                            Y: =18
+                            ZIndex: =5
+
+                    Button_DeleteTicket As icon.Trash:
                         BorderColor: =RGBA(0, 0, 0, 0)
-                        Color: |-
-                            =If(
-                                Switch(
-                                    ThisItem.Value,
-                                    "New", 1,
-                                    "Initiated", 2,
-                                    "In Progress", 3,
-                                    "Resolved", 4,
-                                    0
-                                ) <= Switch(
-                                    DashTickets.Selected.'Progress/Status'.Value,
-                                    "New", 1,
-                                    "Initiated", 2,
-                                    "In Progress", 3,
-                                    "Resolved", 4,
-                                    0
-                                ),
-                                Color.Green,
-                                Color.LightGray
-                            )
+                        BorderStyle: =BorderStyle.None
+                        Color: =RGBA(0, 134, 208, 1)
                         DisabledBorderColor: =RGBA(166, 166, 166, 1)
                         DisabledColor: =RGBA(220, 220, 220, 1)
                         DisabledFill: =RGBA(0, 0, 0, 0)
-                        DisplayMode: =DisplayMode.View
-                        FocusedBorderThickness: =0
-                        Height: =26
-                        HoverBorderColor: =RGBA(0, 0, 0, 0)
-                        HoverColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
+                        FocusedBorderThickness: =4
+                        Height: |
+                            =30
+                        HoverBorderColor: =RGBA(0, 94, 146, 1)
+                        HoverColor: =ColorFade(RGBA(0, 94, 146, 1), -30%)
                         HoverFill: =RGBA(0, 0, 0, 0)
-                        Icon: =Icon.CheckBadge
-                        OnSelect: =Select(Parent)
-                        PaddingRight: =1
+                        Icon: =Icon.Trash
+                        OnSelect: |
+                            =//Set(VarDeleteImg,true)
+                            Remove('Technuf Service Request', selectedItem);
+                            ResetForm(EditForm);
+                            Navigate(Dashboard, Transition.None);
+                        PaddingRight: =25
                         PressedBorderColor: =RGBA(0, 0, 0, 0)
                         PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
                         PressedFill: =RGBA(0, 0, 0, 0)
-                        Width: =51
-                        X: =45
-                        Y: =13
-                        ZIndex: =5
+                        Width: =60
+                        X: =519
+                        Y: |
+                            =0
+                        ZIndex: =2
 
                 CreatedCont As groupContainer.horizontalAutoLayoutContainer:
                     AlignInContainer: =AlignInContainer.SetByContainer
@@ -975,7 +1018,7 @@
                     RadiusTopLeft: =4
                     RadiusTopRight: =4
                     Width: =Parent.Width
-                    ZIndex: =2
+                    ZIndex: =4
 
                     Label_Created As label:
                         BorderColor: =RGBA(0, 0, 0, 0)
@@ -1019,35 +1062,6 @@
                         X: =130
                         ZIndex: =2
 
-                    Button_DeleteTicket As icon.Trash:
-                        BorderColor: =RGBA(0, 0, 0, 0)
-                        BorderStyle: =BorderStyle.None
-                        Color: =RGBA(0, 134, 208, 1)
-                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                        DisabledColor: =RGBA(220, 220, 220, 1)
-                        DisabledFill: =RGBA(0, 0, 0, 0)
-                        FocusedBorderThickness: =4
-                        Height: |
-                            =30
-                        HoverBorderColor: =RGBA(0, 94, 146, 1)
-                        HoverColor: =ColorFade(RGBA(0, 94, 146, 1), -30%)
-                        HoverFill: =RGBA(0, 0, 0, 0)
-                        Icon: =Icon.Trash
-                        OnSelect: |
-                            =//Set(VarDeleteImg,true)
-                            Remove('Technuf Service Request', selectedItem);
-                            ResetForm(EditForm);
-                            Navigate(Dashboard, Transition.None);
-                        PaddingRight: =25
-                        PressedBorderColor: =RGBA(0, 0, 0, 0)
-                        PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
-                        PressedFill: =RGBA(0, 0, 0, 0)
-                        Width: =60
-                        X: =519
-                        Y: |
-                            =0
-                        ZIndex: =3
-
                 UserCont As groupContainer.horizontalAutoLayoutContainer:
                     AlignInContainer: =AlignInContainer.SetByContainer
                     FillPortions: =0
@@ -1062,7 +1076,7 @@
                     RadiusTopLeft: =4
                     RadiusTopRight: =4
                     Width: =Parent.Width
-                    ZIndex: =3
+                    ZIndex: =5
 
                     Label_User As label:
                         BorderColor: =RGBA(0, 0, 0, 0)
@@ -1118,7 +1132,7 @@
                     RadiusTopLeft: =4
                     RadiusTopRight: =4
                     Width: =Parent.Width
-                    ZIndex: =4
+                    ZIndex: =6
 
                     Label_Email As label:
                         BorderColor: =RGBA(0, 0, 0, 0)
