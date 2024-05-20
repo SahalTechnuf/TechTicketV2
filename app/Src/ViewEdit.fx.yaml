@@ -1067,7 +1067,7 @@
                             PressedFill: =RGBA(135, 100, 184, 1)
                             Visible: |
                                 =If (ThisItem.Value = "Resolved", false,true)
-                            Width: =Parent.TemplateWidth - (Circle1.X + Circle1.Width) + 10
+                            Width: =If(ThisItem.Value = "Resolved",0,Parent.TemplateWidth - (Circle1.X + Circle1.Width) + 10)
                             X: =73
                             Y: =21
                             ZIndex: =2
