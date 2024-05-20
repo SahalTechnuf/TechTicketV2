@@ -424,49 +424,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "ViewEdit.ParentContView.HeaderContView.UserInfoCont.Container2.Button_DeleteTicket.TabIndex"
+                  "fullyQualifiedName": "ViewEdit.ParentContView.HeaderContView.UserInfoCont.CreatedCont.Button_DeleteTicket.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "ViewEdit.ParentContView.HeaderContView.UserInfoCont.Container2.Button_DeleteTicket.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "ViewEdit",
-                "type": "ViewEdit.ParentContView.HeaderContView.UserInfoCont.Container2.Button_DeleteTicket"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "ViewEdit.ParentContView.HeaderContView.UserInfoCont.Container2.Button_DeleteTicket.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "ViewEdit.ParentContView.HeaderContView.UserInfoCont.Container2.Button_DeleteTicket.AccessibleLabel",
+                  "fullyQualifiedName": "ViewEdit.ParentContView.HeaderContView.UserInfoCont.CreatedCont.Button_DeleteTicket.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "ViewEdit",
-                "type": "ViewEdit.ParentContView.HeaderContView.UserInfoCont.Container2.Button_DeleteTicket"
+                "type": "ViewEdit.ParentContView.HeaderContView.UserInfoCont.CreatedCont.Button_DeleteTicket"
               }
             }
           ],
@@ -478,6 +448,36 @@
           },
           "ruleId": "acc-AccessibleLabelNeeded",
           "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ViewEdit.ParentContView.HeaderContView.UserInfoCont.CreatedCont.Button_DeleteTicket.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ViewEdit.ParentContView.HeaderContView.UserInfoCont.CreatedCont.Button_DeleteTicket.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "ViewEdit",
+                "type": "ViewEdit.ParentContView.HeaderContView.UserInfoCont.CreatedCont.Button_DeleteTicket"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 2
         },
         {
           "locations": [

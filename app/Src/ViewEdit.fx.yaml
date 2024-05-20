@@ -795,8 +795,7 @@
                             =true
                             //Set(selectedStatus, Patch('Technuf Service Request',  LookUp('Technuf Service Request', ID = Value(ID_Dash.Text)); {'Progress/Status': {Value: selectedStatus }})
                              
-                        Width: |
-                            =Parent.Width -45
+                        Width: =Parent.Width 
                         X: =If((App.Width > App.Height), 0, 0)
                         Y: =If((App.Width > App.Height), 0, 0)
                         ZIndex: =1
@@ -833,7 +832,7 @@
                             Visible: |
                                 =//true
                                 If (ThisItem.Value = "New", false,true)
-                            Width: =50
+                            Width: =Parent.Width * 0.05
                             X: =2
                             Y: =Rectangle1.Y
                             ZIndex: =1
@@ -871,7 +870,7 @@
                             PressedFill: =RGBA(135, 100, 184, 1)
                             Visible: |
                                 =If (ThisItem.Value = "Resolved", false,true)
-                            Width: =90
+                            Width: =Parent.Width * 0.14
                             X: =73
                             Y: =21
                             ZIndex: =2
@@ -976,35 +975,6 @@
                             Y: =18
                             ZIndex: =5
 
-                    Button_DeleteTicket As icon.Trash:
-                        BorderColor: =RGBA(0, 0, 0, 0)
-                        BorderStyle: =BorderStyle.None
-                        Color: =RGBA(0, 134, 208, 1)
-                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                        DisabledColor: =RGBA(220, 220, 220, 1)
-                        DisabledFill: =RGBA(0, 0, 0, 0)
-                        FocusedBorderThickness: =4
-                        Height: |
-                            =30
-                        HoverBorderColor: =RGBA(0, 94, 146, 1)
-                        HoverColor: =ColorFade(RGBA(0, 94, 146, 1), -30%)
-                        HoverFill: =RGBA(0, 0, 0, 0)
-                        Icon: =Icon.Trash
-                        OnSelect: |
-                            =//Set(VarDeleteImg,true)
-                            Remove('Technuf Service Request', selectedItem);
-                            ResetForm(EditForm);
-                            Navigate(Dashboard, Transition.None);
-                        PaddingRight: =25
-                        PressedBorderColor: =RGBA(0, 0, 0, 0)
-                        PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
-                        PressedFill: =RGBA(0, 0, 0, 0)
-                        Width: =60
-                        X: =519
-                        Y: |
-                            =0
-                        ZIndex: =2
-
                 CreatedCont As groupContainer.horizontalAutoLayoutContainer:
                     AlignInContainer: =AlignInContainer.SetByContainer
                     BorderStyle: =BorderStyle.None
@@ -1063,6 +1033,35 @@
                         Width: =Parent.Width - Button_DeleteTicket.Width - Label_Created.Width - 30
                         X: =130
                         ZIndex: =2
+
+                    Button_DeleteTicket As icon.Trash:
+                        BorderColor: =RGBA(0, 0, 0, 0)
+                        BorderStyle: =BorderStyle.None
+                        Color: =RGBA(0, 134, 208, 1)
+                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                        DisabledColor: =RGBA(220, 220, 220, 1)
+                        DisabledFill: =RGBA(0, 0, 0, 0)
+                        FocusedBorderThickness: =4
+                        Height: |
+                            =30
+                        HoverBorderColor: =RGBA(0, 94, 146, 1)
+                        HoverColor: =ColorFade(RGBA(0, 94, 146, 1), -30%)
+                        HoverFill: =RGBA(0, 0, 0, 0)
+                        Icon: =Icon.Trash
+                        OnSelect: |
+                            =//Set(VarDeleteImg,true)
+                            Remove('Technuf Service Request', selectedItem);
+                            ResetForm(EditForm);
+                            Navigate(Dashboard, Transition.None);
+                        PaddingRight: =25
+                        PressedBorderColor: =RGBA(0, 0, 0, 0)
+                        PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
+                        PressedFill: =RGBA(0, 0, 0, 0)
+                        Width: =60
+                        X: =519
+                        Y: |
+                            =0
+                        ZIndex: =3
 
                 UserCont As groupContainer.horizontalAutoLayoutContainer:
                     AlignInContainer: =AlignInContainer.SetByContainer
