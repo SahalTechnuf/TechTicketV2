@@ -770,6 +770,7 @@
                 AlignInContainer: =AlignInContainer.SetByContainer
                 BorderStyle: =BorderStyle.None
                 FillPortions: =0
+                Height: =240
                 LayoutDirection: =LayoutDirection.Vertical
                 LayoutMinHeight: =180
                 LayoutMinWidth: =250
@@ -786,7 +787,7 @@
                     AlignInContainer: =AlignInContainer.SetByContainer
                     BorderStyle: =BorderStyle.None
                     FillPortions: =0
-                    Height: =30
+                    Height: =35
                     LayoutAlignItems: =LayoutAlignItems.Center
                     LayoutMinHeight: =10
                     LayoutMinWidth: =250
@@ -844,7 +845,7 @@
                 UserCont As groupContainer.horizontalAutoLayoutContainer:
                     AlignInContainer: =AlignInContainer.SetByContainer
                     FillPortions: =0
-                    Height: =30
+                    Height: =35
                     LayoutAlignItems: =LayoutAlignItems.Center
                     LayoutMinHeight: =112
                     LayoutMinWidth: =250
@@ -900,7 +901,7 @@
                 EmailCont As groupContainer.horizontalAutoLayoutContainer:
                     AlignInContainer: =AlignInContainer.SetByContainer
                     FillPortions: =0
-                    Height: =30
+                    Height: =35
                     LayoutAlignItems: =LayoutAlignItems.Center
                     LayoutMinHeight: =60
                     LayoutMinWidth: =250
