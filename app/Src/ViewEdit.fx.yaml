@@ -1061,7 +1061,7 @@
                                     Color.LightGray
                                 )
                             FocusedBorderThickness: =4
-                            Height: =18
+                            Height: =3
                             HoverFill: =RGBA(135, 100, 184, 1)
                             OnSelect: =Select(Parent)
                             PressedFill: =RGBA(135, 100, 184, 1)
@@ -1069,7 +1069,7 @@
                                 =If (ThisItem.Value = "Resolved", false,true)
                             Width: =If(ThisItem.Value = "Resolved",0,Parent.TemplateWidth - (Circle1.X + Circle1.Width) + 10)
                             X: =73
-                            Y: =21
+                            Y: =30
                             ZIndex: =2
 
                         Label4 As label:
