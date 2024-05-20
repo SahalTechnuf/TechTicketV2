@@ -38,8 +38,6 @@
       "IssueDateandTime": "Issue Date and Time",
       "Modified": "Modified",
       "OData__ColorTag": "Color Tag",
-      "Priority": "Priority",
-      "Priority#Id": "Priority Id",
       "Progress_x002f_Status": "Progress/Status",
       "Progress_x002f_Status#Id": "Progress/Status Id",
       "Title": "Title"
