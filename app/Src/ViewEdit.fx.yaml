@@ -875,7 +875,7 @@
                             ZIndex: =2
 
                         Label4 As label:
-                            Align: =Align.Center
+                            Align: =If(ThisItem.Value = "New",Align.Left,Align.Center)
                             BorderColor: =RGBA(0, 0, 0, 0)
                             BorderStyle: =BorderStyle.None
                             BorderThickness: =2
@@ -890,8 +890,8 @@
                             PaddingLeft: =0
                             Size: =17
                             Text: =ThisItem.Value 
-                            Width: =133
-                            X: =3
+                            Width: =128
+                            X: =If(ThisItem.Value = "New",30,2)
                             Y: =50
                             ZIndex: =3
 

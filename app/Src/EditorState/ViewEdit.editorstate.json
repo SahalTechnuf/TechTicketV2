@@ -10653,7 +10653,7 @@
         {
           "Category": "Design",
           "PropertyName": "Align",
-          "RuleProviderType": "Unknown"
+          "RuleProviderType": "User"
         },
         {
           "Category": "Design",
@@ -10663,7 +10663,7 @@
         {
           "Category": "Design",
           "PropertyName": "X",
-          "RuleProviderType": "Unknown"
+          "RuleProviderType": "User"
         },
         {
           "Category": "Design",
@@ -10743,7 +10743,7 @@
         {
           "Category": "Design",
           "PropertyName": "PaddingLeft",
-          "RuleProviderType": "Unknown"
+          "RuleProviderType": "User"
         },
         {
           "Category": "Behavior",
