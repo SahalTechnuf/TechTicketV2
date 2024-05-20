@@ -742,11 +742,11 @@
                 AlignInContainer: =AlignInContainer.SetByContainer
                 BorderStyle: =BorderStyle.None
                 FillPortions: =0
-                Height: =180
                 LayoutDirection: =LayoutDirection.Vertical
                 LayoutMinHeight: =180
                 LayoutMinWidth: =250
                 LayoutMode: =LayoutMode.Auto
+                PaddingTop: =20
                 RadiusBottomLeft: =4
                 RadiusBottomRight: =4
                 RadiusTopLeft: =4
