@@ -869,8 +869,8 @@
                             PressedFill: =RGBA(135, 100, 184, 1)
                             Visible: |
                                 =If (ThisItem.Value = "Resolved", false,true)
-                            Width: =85
-                            X: =80
+                            Width: =90
+                            X: =73
                             Y: =21
                             ZIndex: =2
 
@@ -928,7 +928,7 @@
                             OnSelect: =Select(Parent)
                             PressedFill: =RGBA(135, 100, 184, 1)
                             Width: =48
-                            X: =37
+                            X: =30
                             Y: =11
                             ZIndex: =4
 
@@ -970,8 +970,8 @@
                             PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
                             PressedFill: =RGBA(0, 0, 0, 0)
                             Width: =51
-                            X: =35
-                            Y: =18
+                            X: =30
+                            Y: =17
                             ZIndex: =5
 
                     Button_DeleteTicket As icon.Trash:
