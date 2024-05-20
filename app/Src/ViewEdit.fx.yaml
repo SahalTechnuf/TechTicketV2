@@ -115,8 +115,9 @@
                             Description: DataCardValueDesc_Edit.Text,
                             //'Progress/Status':{Value: selectedStatus}, 
                             'Image (Optional)': ImageImage_Edit.Image,
-                            'Issue Date and Time': Now()
+                            'Issue Date and Time': Now(),
                             //ID: Value(selectedItem.ID)
+                            Priority: Radio_Edit.Selected
                         }
                     );
                     
@@ -578,6 +579,7 @@
                 Edit_Radio As typedDataCard.blankCard:
                     BorderColor: =RGBA(166, 166, 166, 1)
                     BorderStyle: =BorderStyle.Solid
+                    DataField: =ThisItem.Priority.Value
                     DisplayMode: =DisplayMode.Edit
                     Fill: =RGBA(0, 0, 0, 0)
                     Height: =Radio_Edit.Height + DataCardKeyRadio_Edit.Height + 10
@@ -632,9 +634,9 @@
                         Y: =DataCardKeyRadio_Edit.Y + DataCardKeyRadio_Edit.Height + 5
                         ZIndex: =2
 
-                    Button1 As button:
+                    Radio_Hint As button:
                         BorderColor: =RGBA(250, 155, 112, 1)
-                        BorderThickness: =5
+                        BorderThickness: =3
                         Color: =RGBA(250, 155, 112, 1)
                         DisabledBorderColor: =RGBA(0, 0, 0, 0)
                         DisabledColor: =RGBA(166, 166, 166, 1)
@@ -642,8 +644,8 @@
                         Fill: =RGBA(0, 0, 0, 0)
                         FocusedBorderColor: =ColorFade(Self.Fill, -75%)
                         Font: =Font.'Segoe UI'
-                        FontWeight: =FontWeight.Semibold
-                        Height: =29
+                        FontWeight: =FontWeight.Bold
+                        Height: =25
                         HoverBorderColor: =RGBA(0, 0, 0, 0)
                         HoverColor: =RGBA(255, 255, 255, 1)
                         HoverFill: =ColorFade(RGBA(135, 100, 184, 1), -10%)
@@ -656,8 +658,8 @@
                         RadiusTopRight: =45
                         Size: =18
                         Text: ="!"
-                        Width: =32
-                        X: =213
+                        Width: =26
+                        X: =216
                         Y: =72
                         ZIndex: =3
 
