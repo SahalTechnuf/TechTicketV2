@@ -424,66 +424,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "ViewEdit.ParentContView.HeaderContView.UserInfoCont.CreatedCont.Button_DeleteTicket.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "ViewEdit.ParentContView.HeaderContView.UserInfoCont.CreatedCont.Button_DeleteTicket.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "ViewEdit",
-                "type": "ViewEdit.ParentContView.HeaderContView.UserInfoCont.CreatedCont.Button_DeleteTicket"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "ViewEdit.ParentContView.HeaderContView.UserInfoCont.CreatedCont.Button_DeleteTicket.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "ViewEdit.ParentContView.HeaderContView.UserInfoCont.CreatedCont.Button_DeleteTicket.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "ViewEdit",
-                "type": "ViewEdit.ParentContView.HeaderContView.UserInfoCont.CreatedCont.Button_DeleteTicket"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "ViewEdit.ParentContView.HeaderContView.UserInfoCont.Container2.BreadCrumbGallery.AccessibleLabel"
                 }
               ],
@@ -724,19 +664,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "ViewEdit.ParentContView.FooterContView.Icon1.AccessibleLabel"
+                  "fullyQualifiedName": "ViewEdit.ParentContView.FooterContView.Button_DeleteTicket1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "ViewEdit.ParentContView.FooterContView.Icon1.AccessibleLabel",
+                  "fullyQualifiedName": "ViewEdit.ParentContView.FooterContView.Button_DeleteTicket1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "ViewEdit",
-                "type": "ViewEdit.ParentContView.FooterContView.Icon1"
+                "type": "ViewEdit.ParentContView.FooterContView.Button_DeleteTicket1"
               }
             }
           ],
@@ -754,19 +694,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "ViewEdit.ParentContView.FooterContView.Icon1.TabIndex"
+                  "fullyQualifiedName": "ViewEdit.ParentContView.FooterContView.Button_DeleteTicket1.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "ViewEdit.ParentContView.FooterContView.Icon1.TabIndex",
+                  "fullyQualifiedName": "ViewEdit.ParentContView.FooterContView.Button_DeleteTicket1.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "ViewEdit",
-                "type": "ViewEdit.ParentContView.FooterContView.Icon1"
+                "type": "ViewEdit.ParentContView.FooterContView.Button_DeleteTicket1"
               }
             }
           ],

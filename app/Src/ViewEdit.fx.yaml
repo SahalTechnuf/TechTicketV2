@@ -33,7 +33,7 @@
             Y: =Parent.Height - FooterContView.Height
             ZIndex: =1
 
-            Icon1 As icon.Trash:
+            Button_DeleteTicket1 As icon.Trash:
                 BorderColor: =RGBA(0, 0, 0, 0)
                 Color: =RGBA(255, 255, 255, 1)
                 DisabledBorderColor: =RGBA(166, 166, 166, 1)
@@ -837,38 +837,9 @@
                         PaddingLeft: =0
                         Size: =17
                         Text: =Text(selectedItem.'Issue Date and Time')
-                        Width: =Parent.Width - Button_DeleteTicket.Width - Label_Created.Width - 30
+                        Width: =Parent.Width -  Label_Created.Width - 30
                         X: =130
                         ZIndex: =2
-
-                    Button_DeleteTicket As icon.Trash:
-                        BorderColor: =RGBA(0, 0, 0, 0)
-                        BorderStyle: =BorderStyle.None
-                        Color: =RGBA(0, 134, 208, 1)
-                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                        DisabledColor: =RGBA(220, 220, 220, 1)
-                        DisabledFill: =RGBA(0, 0, 0, 0)
-                        FocusedBorderThickness: =4
-                        Height: |
-                            =30
-                        HoverBorderColor: =RGBA(0, 94, 146, 1)
-                        HoverColor: =ColorFade(RGBA(0, 94, 146, 1), -30%)
-                        HoverFill: =RGBA(0, 0, 0, 0)
-                        Icon: =Icon.Trash
-                        OnSelect: |
-                            =//Set(VarDeleteImg,true)
-                            Remove('Technuf Service Request', selectedItem);
-                            ResetForm(EditForm);
-                            Navigate(Dashboard, Transition.None);
-                        PaddingRight: =25
-                        PressedBorderColor: =RGBA(0, 0, 0, 0)
-                        PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
-                        PressedFill: =RGBA(0, 0, 0, 0)
-                        Width: =60
-                        X: =519
-                        Y: |
-                            =0
-                        ZIndex: =3
 
                 UserCont As groupContainer.horizontalAutoLayoutContainer:
                     AlignInContainer: =AlignInContainer.SetByContainer
