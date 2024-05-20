@@ -446,7 +446,7 @@
                         RadiusTopRight: =30
                         Size: =12
                         Text: =ThisItem.'Progress/Status'.Value
-                        Width: =95
+                        Width: =100
                         X: =Parent.TemplateWidth - 120
                         Y: =25
                         ZIndex: =12

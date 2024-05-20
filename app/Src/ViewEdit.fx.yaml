@@ -754,7 +754,7 @@
                 FocusedBorderThickness: =4
                 Font: =Font.'Segoe UI'
                 FontWeight: =FontWeight.Bold
-                Height: =30
+                Height: =45
                 LayoutMinHeight: =70
                 LayoutMinWidth: =560
                 PaddingBottom: =0
@@ -1047,7 +1047,7 @@
                                         "In Progress", 3,
                                         "Resolved", 4,
                                         0
-                                    ) < Switch(
+                                    ) <= Switch(
                                         DashTickets.Selected.'Progress/Status'.Value,
                                         "New", 1,
                                         "Initiated", 2,
