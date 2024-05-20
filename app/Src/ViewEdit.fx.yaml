@@ -987,7 +987,7 @@
                         LoadingSpinner: =LoadingSpinner.Data
                         ShowScrollbar: =false
                         TemplatePadding: =0
-                        TemplateSize: =Parent.Width * 0.28
+                        TemplateSize: =Parent.Width * 0.265
                         Visible: |
                             =true
                             //Set(selectedStatus, Patch('Technuf Service Request',  LookUp('Technuf Service Request', ID = Value(ID_Dash.Text)); {'Progress/Status': {Value: selectedStatus }})
