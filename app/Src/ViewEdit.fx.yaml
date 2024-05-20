@@ -27,9 +27,7 @@
             RadiusBottomRight: =4
             RadiusTopLeft: =4
             RadiusTopRight: =4
-            Width: |-
-                =//Parent.Width
-                640
+            Width: =Parent.Width
             Y: =Parent.Height - FooterContView.Height
             ZIndex: =1
 
