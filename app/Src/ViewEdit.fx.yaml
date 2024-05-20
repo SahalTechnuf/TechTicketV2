@@ -1005,7 +1005,7 @@
                                     "Resolved", 4,
                                     0
                                 ),
-                                Color.Blue,
+                                Color.LightBlue,
                                 Color.LightGray
                             )
                         FocusedBorderThickness: =4
@@ -1016,7 +1016,7 @@
                         Visible: |
                             =//true
                             If (ThisItem.Value = "New", false,true)
-                        Width: =46
+                        Width: =50
                         X: =2
                         Y: =Rectangle1.Y
                         ZIndex: =1
@@ -1046,7 +1046,7 @@
                                     "Resolved", 4,
                                     0
                                 ),
-                                Color.Blue,
+                                Color.LightBlue,
                                 Color.LightGray
                             )
                         Height: =39
@@ -1081,7 +1081,7 @@
                                     "Resolved", 4,
                                     0
                                 ),
-                                Color.Blue,
+                                Color.LightBlue,
                                 Color.LightGray
                             )
                         FocusedBorderThickness: =4
@@ -1091,8 +1091,8 @@
                         PressedFill: =RGBA(135, 100, 184, 1)
                         Visible: |
                             =If (ThisItem.Value = "Resolved", false,true)
-                        Width: =50
-                        X: =93
+                        Width: =55
+                        X: =90
                         Y: =26
                         ZIndex: =3
 
@@ -1115,7 +1115,7 @@
                         Y: =54
                         ZIndex: =4
 
-                    Icon1 As icon.CheckBadge:
+                    CheckIcon As icon.CheckBadge:
                         BorderColor: =RGBA(0, 0, 0, 0)
                         Color: |-
                             =If(
@@ -1134,7 +1134,7 @@
                                     "Resolved", 4,
                                     0
                                 ),
-                                Color.Black,
+                                Color.Green,
                                 Color.LightGray
                             )
                         DisabledBorderColor: =RGBA(166, 166, 166, 1)
