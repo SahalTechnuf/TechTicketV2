@@ -1067,13 +1067,13 @@
                             PressedFill: =RGBA(135, 100, 184, 1)
                             Visible: |
                                 =If (ThisItem.Value = "Resolved", false,true)
-                            Width: =Parent.Width * 0.17
+                            Width: =Parent.Width * 0.18
                             X: =73
                             Y: =21
                             ZIndex: =2
 
                         Label4 As label:
-                            Align: =If(ThisItem.Value = "New",,Align.Center)
+                            Align: =If(ThisItem.Value = "New" Or ThisItem.Value = "Resolved",Align.Left,Align.Center)
                             BorderColor: =RGBA(0, 0, 0, 0)
                             BorderStyle: =BorderStyle.None
                             BorderThickness: =2
@@ -1083,13 +1083,13 @@
                             FocusedBorderThickness: =4
                             Font: =Font.'Segoe UI'
                             FontWeight: =FontWeight.Bold
-                            Height: =28
+                            Height: =29
                             OnSelect: =Select(Parent)
                             PaddingLeft: =0
                             Size: =17
                             Text: =ThisItem.Value 
-                            Width: =149.20000000000002
-                            X: =30
+                            Width: =139
+                            X: =If(ThisItem.Value = "New",30,0)
                             Y: =50
                             ZIndex: =3
 
