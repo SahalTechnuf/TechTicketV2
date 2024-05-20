@@ -754,6 +754,207 @@
                 Width: =Parent.Width
                 ZIndex: =3
 
+                CreatedCont As groupContainer.horizontalAutoLayoutContainer:
+                    AlignInContainer: =AlignInContainer.SetByContainer
+                    BorderStyle: =BorderStyle.None
+                    FillPortions: =0
+                    Height: =30
+                    LayoutAlignItems: =LayoutAlignItems.Center
+                    LayoutMinHeight: =10
+                    LayoutMinWidth: =250
+                    LayoutMode: =LayoutMode.Auto
+                    PaddingLeft: =25
+                    RadiusBottomLeft: =4
+                    RadiusBottomRight: =4
+                    RadiusTopLeft: =4
+                    RadiusTopRight: =4
+                    Width: =Parent.Width
+                    ZIndex: =1
+
+                    Label_Created As label:
+                        BorderColor: =RGBA(0, 0, 0, 0)
+                        BorderStyle: =BorderStyle.None
+                        BorderThickness: =2
+                        Color: =RGBA(51, 51, 51, 1)
+                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        FocusedBorderThickness: =4
+                        Font: =Font.'Segoe UI'
+                        FontWeight: =FontWeight.Bold
+                        Height: =30
+                        LayoutMinHeight: =70
+                        LayoutMinWidth: =560
+                        Size: =17
+                        Text: |-
+                            ="Created:"
+                        Width: =110
+                        Wrap: =false
+                        X: |+
+                            =30
+                            
+                        ZIndex: =1
+
+                    CreatedInfo As label:
+                        BorderColor: =RGBA(0, 0, 0, 0)
+                        BorderStyle: =BorderStyle.None
+                        BorderThickness: =2
+                        Color: =RGBA(51, 51, 51, 1)
+                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        FocusedBorderThickness: =4
+                        Font: =Font.'Segoe UI'
+                        Height: =30
+                        LayoutMinHeight: =70
+                        LayoutMinWidth: =560
+                        PaddingLeft: =0
+                        Size: =17
+                        Text: =Text(selectedItem.'Issue Date and Time')
+                        Width: =Parent.Width - Button_DeleteTicket.Width - Label_Created.Width - 30
+                        X: =130
+                        ZIndex: =2
+
+                    Button_DeleteTicket As icon.Trash:
+                        BorderColor: =RGBA(0, 0, 0, 0)
+                        BorderStyle: =BorderStyle.None
+                        Color: =RGBA(0, 134, 208, 1)
+                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                        DisabledColor: =RGBA(220, 220, 220, 1)
+                        DisabledFill: =RGBA(0, 0, 0, 0)
+                        FocusedBorderThickness: =4
+                        Height: |
+                            =30
+                        HoverBorderColor: =RGBA(0, 94, 146, 1)
+                        HoverColor: =ColorFade(RGBA(0, 94, 146, 1), -30%)
+                        HoverFill: =RGBA(0, 0, 0, 0)
+                        Icon: =Icon.Trash
+                        OnSelect: |
+                            =//Set(VarDeleteImg,true)
+                            Remove('Technuf Service Request', selectedItem);
+                            ResetForm(EditForm);
+                            Navigate(Dashboard, Transition.None);
+                        PaddingRight: =25
+                        PressedBorderColor: =RGBA(0, 0, 0, 0)
+                        PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
+                        PressedFill: =RGBA(0, 0, 0, 0)
+                        Width: =60
+                        X: =519
+                        Y: |
+                            =0
+                        ZIndex: =3
+
+                UserCont As groupContainer.horizontalAutoLayoutContainer:
+                    AlignInContainer: =AlignInContainer.SetByContainer
+                    FillPortions: =0
+                    Height: =30
+                    LayoutAlignItems: =LayoutAlignItems.Center
+                    LayoutMinHeight: =112
+                    LayoutMinWidth: =250
+                    LayoutMode: =LayoutMode.Auto
+                    PaddingLeft: =25
+                    RadiusBottomLeft: =4
+                    RadiusBottomRight: =4
+                    RadiusTopLeft: =4
+                    RadiusTopRight: =4
+                    Width: =Parent.Width
+                    ZIndex: =2
+
+                    Label_User As label:
+                        BorderColor: =RGBA(0, 0, 0, 0)
+                        BorderStyle: =BorderStyle.None
+                        BorderThickness: =2
+                        Color: =RGBA(51, 51, 51, 1)
+                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        FocusedBorderThickness: =4
+                        Font: =Font.'Segoe UI'
+                        FontWeight: =FontWeight.Bold
+                        Height: =30
+                        LayoutMinHeight: =70
+                        LayoutMinWidth: =560
+                        Size: =17
+                        Text: |-
+                            ="User: "
+                        Width: =75
+                        X: |
+                            =30
+                        ZIndex: =1
+
+                    UserInfo As label:
+                        BorderColor: =RGBA(0, 0, 0, 0)
+                        BorderStyle: =BorderStyle.None
+                        BorderThickness: =2
+                        Color: =RGBA(51, 51, 51, 1)
+                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        FocusedBorderThickness: =4
+                        Font: =Font.'Segoe UI'
+                        Height: =30
+                        LayoutMinHeight: =70
+                        LayoutMinWidth: =560
+                        PaddingLeft: =0
+                        Size: =17
+                        Text: =selectedItem.'Created By'.DisplayName
+                        Width: |
+                            =535
+                        ZIndex: =2
+
+                EmailCont As groupContainer.horizontalAutoLayoutContainer:
+                    AlignInContainer: =AlignInContainer.SetByContainer
+                    FillPortions: =0
+                    Height: =30
+                    LayoutAlignItems: =LayoutAlignItems.Center
+                    LayoutMinHeight: =60
+                    LayoutMinWidth: =250
+                    LayoutMode: =LayoutMode.Auto
+                    PaddingLeft: =25
+                    RadiusBottomLeft: =4
+                    RadiusBottomRight: =4
+                    RadiusTopLeft: =4
+                    RadiusTopRight: =4
+                    Width: =Parent.Width
+                    ZIndex: =3
+
+                    Label_Email As label:
+                        BorderColor: =RGBA(0, 0, 0, 0)
+                        BorderStyle: =BorderStyle.None
+                        BorderThickness: =2
+                        Color: =RGBA(51, 51, 51, 1)
+                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        FocusedBorderThickness: =4
+                        Font: =Font.'Segoe UI'
+                        FontWeight: =FontWeight.Bold
+                        Height: =30
+                        LayoutMinHeight: =70
+                        LayoutMinWidth: =560
+                        Size: =17
+                        Text: |-
+                            ="Email: "
+                        Width: =85
+                        X: |
+                            =30
+                        ZIndex: =1
+
+                    EmailInfo As label:
+                        BorderColor: =RGBA(0, 0, 0, 0)
+                        BorderStyle: =BorderStyle.None
+                        BorderThickness: =2
+                        Color: =RGBA(51, 51, 51, 1)
+                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        FocusedBorderThickness: =4
+                        Font: =Font.'Segoe UI'
+                        Height: |
+                            =30
+                        LayoutMinHeight: =70
+                        LayoutMinWidth: =560
+                        PaddingLeft: =0
+                        Size: =17
+                        Text: =selectedItem.'Created By'.Email
+                        Width: |
+                            =525
+                        ZIndex: =2
+
                 Container2 As groupContainer.horizontalAutoLayoutContainer:
                     FillPortions: =0
                     Height: |
@@ -765,7 +966,7 @@
                     RadiusBottomRight: =4
                     RadiusTopLeft: =4
                     RadiusTopRight: =4
-                    ZIndex: =1
+                    ZIndex: =4
 
                     BreadCrumbGallery As gallery.galleryHorizontal:
                         AlignInContainer: =AlignInContainer.Center
@@ -974,205 +1175,4 @@
                             X: =29
                             Y: =18
                             ZIndex: =5
-
-                CreatedCont As groupContainer.horizontalAutoLayoutContainer:
-                    AlignInContainer: =AlignInContainer.SetByContainer
-                    BorderStyle: =BorderStyle.None
-                    FillPortions: =0
-                    Height: =30
-                    LayoutAlignItems: =LayoutAlignItems.Center
-                    LayoutMinHeight: =10
-                    LayoutMinWidth: =250
-                    LayoutMode: =LayoutMode.Auto
-                    PaddingLeft: =25
-                    RadiusBottomLeft: =4
-                    RadiusBottomRight: =4
-                    RadiusTopLeft: =4
-                    RadiusTopRight: =4
-                    Width: =Parent.Width
-                    ZIndex: =4
-
-                    Label_Created As label:
-                        BorderColor: =RGBA(0, 0, 0, 0)
-                        BorderStyle: =BorderStyle.None
-                        BorderThickness: =2
-                        Color: =RGBA(51, 51, 51, 1)
-                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                        DisabledColor: =RGBA(166, 166, 166, 1)
-                        FocusedBorderThickness: =4
-                        Font: =Font.'Segoe UI'
-                        FontWeight: =FontWeight.Bold
-                        Height: =30
-                        LayoutMinHeight: =70
-                        LayoutMinWidth: =560
-                        Size: =17
-                        Text: |-
-                            ="Created:"
-                        Width: =110
-                        Wrap: =false
-                        X: |+
-                            =30
-                            
-                        ZIndex: =1
-
-                    CreatedInfo As label:
-                        BorderColor: =RGBA(0, 0, 0, 0)
-                        BorderStyle: =BorderStyle.None
-                        BorderThickness: =2
-                        Color: =RGBA(51, 51, 51, 1)
-                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                        DisabledColor: =RGBA(166, 166, 166, 1)
-                        FocusedBorderThickness: =4
-                        Font: =Font.'Segoe UI'
-                        Height: =30
-                        LayoutMinHeight: =70
-                        LayoutMinWidth: =560
-                        PaddingLeft: =0
-                        Size: =17
-                        Text: =Text(selectedItem.'Issue Date and Time')
-                        Width: =Parent.Width - Button_DeleteTicket.Width - Label_Created.Width - 30
-                        X: =130
-                        ZIndex: =2
-
-                    Button_DeleteTicket As icon.Trash:
-                        BorderColor: =RGBA(0, 0, 0, 0)
-                        BorderStyle: =BorderStyle.None
-                        Color: =RGBA(0, 134, 208, 1)
-                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                        DisabledColor: =RGBA(220, 220, 220, 1)
-                        DisabledFill: =RGBA(0, 0, 0, 0)
-                        FocusedBorderThickness: =4
-                        Height: |
-                            =30
-                        HoverBorderColor: =RGBA(0, 94, 146, 1)
-                        HoverColor: =ColorFade(RGBA(0, 94, 146, 1), -30%)
-                        HoverFill: =RGBA(0, 0, 0, 0)
-                        Icon: =Icon.Trash
-                        OnSelect: |
-                            =//Set(VarDeleteImg,true)
-                            Remove('Technuf Service Request', selectedItem);
-                            ResetForm(EditForm);
-                            Navigate(Dashboard, Transition.None);
-                        PaddingRight: =25
-                        PressedBorderColor: =RGBA(0, 0, 0, 0)
-                        PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
-                        PressedFill: =RGBA(0, 0, 0, 0)
-                        Width: =60
-                        X: =519
-                        Y: |
-                            =0
-                        ZIndex: =3
-
-                UserCont As groupContainer.horizontalAutoLayoutContainer:
-                    AlignInContainer: =AlignInContainer.SetByContainer
-                    FillPortions: =0
-                    Height: =30
-                    LayoutAlignItems: =LayoutAlignItems.Center
-                    LayoutMinHeight: =112
-                    LayoutMinWidth: =250
-                    LayoutMode: =LayoutMode.Auto
-                    PaddingLeft: =25
-                    RadiusBottomLeft: =4
-                    RadiusBottomRight: =4
-                    RadiusTopLeft: =4
-                    RadiusTopRight: =4
-                    Width: =Parent.Width
-                    ZIndex: =5
-
-                    Label_User As label:
-                        BorderColor: =RGBA(0, 0, 0, 0)
-                        BorderStyle: =BorderStyle.None
-                        BorderThickness: =2
-                        Color: =RGBA(51, 51, 51, 1)
-                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                        DisabledColor: =RGBA(166, 166, 166, 1)
-                        FocusedBorderThickness: =4
-                        Font: =Font.'Segoe UI'
-                        FontWeight: =FontWeight.Bold
-                        Height: =30
-                        LayoutMinHeight: =70
-                        LayoutMinWidth: =560
-                        Size: =17
-                        Text: |-
-                            ="User: "
-                        Width: =75
-                        X: |
-                            =30
-                        ZIndex: =1
-
-                    UserInfo As label:
-                        BorderColor: =RGBA(0, 0, 0, 0)
-                        BorderStyle: =BorderStyle.None
-                        BorderThickness: =2
-                        Color: =RGBA(51, 51, 51, 1)
-                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                        DisabledColor: =RGBA(166, 166, 166, 1)
-                        FocusedBorderThickness: =4
-                        Font: =Font.'Segoe UI'
-                        Height: =30
-                        LayoutMinHeight: =70
-                        LayoutMinWidth: =560
-                        PaddingLeft: =0
-                        Size: =17
-                        Text: =selectedItem.'Created By'.DisplayName
-                        Width: |
-                            =535
-                        ZIndex: =2
-
-                EmailCont As groupContainer.horizontalAutoLayoutContainer:
-                    AlignInContainer: =AlignInContainer.SetByContainer
-                    FillPortions: =0
-                    Height: =30
-                    LayoutAlignItems: =LayoutAlignItems.Center
-                    LayoutMinHeight: =60
-                    LayoutMinWidth: =250
-                    LayoutMode: =LayoutMode.Auto
-                    PaddingLeft: =25
-                    RadiusBottomLeft: =4
-                    RadiusBottomRight: =4
-                    RadiusTopLeft: =4
-                    RadiusTopRight: =4
-                    Width: =Parent.Width
-                    ZIndex: =6
-
-                    Label_Email As label:
-                        BorderColor: =RGBA(0, 0, 0, 0)
-                        BorderStyle: =BorderStyle.None
-                        BorderThickness: =2
-                        Color: =RGBA(51, 51, 51, 1)
-                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                        DisabledColor: =RGBA(166, 166, 166, 1)
-                        FocusedBorderThickness: =4
-                        Font: =Font.'Segoe UI'
-                        FontWeight: =FontWeight.Bold
-                        Height: =30
-                        LayoutMinHeight: =70
-                        LayoutMinWidth: =560
-                        Size: =17
-                        Text: |-
-                            ="Email: "
-                        Width: =85
-                        X: |
-                            =30
-                        ZIndex: =1
-
-                    EmailInfo As label:
-                        BorderColor: =RGBA(0, 0, 0, 0)
-                        BorderStyle: =BorderStyle.None
-                        BorderThickness: =2
-                        Color: =RGBA(51, 51, 51, 1)
-                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                        DisabledColor: =RGBA(166, 166, 166, 1)
-                        FocusedBorderThickness: =4
-                        Font: =Font.'Segoe UI'
-                        Height: |
-                            =30
-                        LayoutMinHeight: =70
-                        LayoutMinWidth: =560
-                        PaddingLeft: =0
-                        Size: =17
-                        Text: =selectedItem.'Created By'.Email
-                        Width: |
-                            =525
-                        ZIndex: =2
 
