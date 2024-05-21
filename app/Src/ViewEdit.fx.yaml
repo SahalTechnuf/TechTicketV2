@@ -1247,8 +1247,8 @@
                         Height: =39
                         OnSelect: =Select(Parent)
                         PressedFill: =RGBA(0, 134, 208, 1)
-                        Width: =48
-                        X: =37
+                        Width: =39
+                        X: =40
                         Y: =6
                         ZIndex: =4
 
@@ -1330,8 +1330,8 @@
                         PressedFill: =RGBA(135, 100, 184, 1)
                         Visible: =If(ThisItem.Value = DashTickets.Selected.'Progress/Status'.Value  And ThisItem.Value <> "Resolved",true,false)
                         Width: =10
-                        X: =57
-                        Y: =20
+                        X: =54
+                        Y: =Rectangle1.Y - 4
                         ZIndex: =6
 
         RadioHintCont_View As groupContainer.manualLayoutContainer:
