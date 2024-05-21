@@ -1174,8 +1174,29 @@
                         ZIndex: =3
 
                     Circle1 As circle:
-                        BorderColor: =RGBA(127, 17, 224, 1)
-                        BorderStyle: =BorderStyle.None
+                        BorderColor: |-
+                            =//RGBA(237, 237, 237, 1)
+                            //If( DashTickets.Selected.'Progress/Status'.Value = "New", Color.Blue, Color.Gray)
+                            //If(ThisItem.Value = DashTickets.Selected.'Progress/Status'.Value, Color.Blue, Color.LightGray);
+                            If(
+                                Switch(
+                                    ThisItem.Value,
+                                    "New", 1,
+                                    "Initiated", 2,
+                                    "In Progress", 3,
+                                    "Resolved", 4,
+                                    0
+                                ) <= Switch(
+                                    DashTickets.Selected.'Progress/Status'.Value,
+                                    "New", 1,
+                                    "Initiated", 2,
+                                    "In Progress", 3,
+                                    "Resolved", 4,
+                                    0
+                                ),
+                                If(ThisItem.Value =  DashTickets.Selected.'Progress/Status'.Value,ColorValue("#044dc2"), Color.White),
+                                Color.LightGray
+                            )
                         BorderThickness: =2
                         DisabledFill: =RGBA(135, 100, 184, 1)
                         Fill: |-
@@ -1198,7 +1219,7 @@
                                     "Resolved", 4,
                                     0
                                 ),
-                                ColorValue("#044dc2"),
+                                If(ThisItem.Value =  DashTickets.Selected.'Progress/Status'.Value, Color.White,ColorValue("#044dc2")),
                                 Color.LightGray
                             )
                         Height: =39
@@ -1247,10 +1268,50 @@
                         PressedBorderColor: =RGBA(0, 0, 0, 0)
                         PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
                         PressedFill: =RGBA(0, 0, 0, 0)
+                        Visible: =If(ThisItem.Value = DashTickets.Selected.'Progress/Status'.Value,false,true)
                         Width: =51
                         X: =37
                         Y: =13
                         ZIndex: =5
+
+                    Circle1_2 As circle:
+                        BorderColor: =RGBA(127, 17, 224, 1)
+                        BorderStyle: =BorderStyle.None
+                        BorderThickness: =2
+                        DisabledFill: =RGBA(135, 100, 184, 1)
+                        Fill: |-
+                            =//RGBA(237, 237, 237, 1)
+                            //If( DashTickets.Selected.'Progress/Status'.Value = "New", Color.Blue, Color.Gray)
+                            //If(ThisItem.Value = DashTickets.Selected.'Progress/Status'.Value, Color.Blue, Color.LightGray);
+                            If(
+                                Switch(
+                                    ThisItem.Value,
+                                    "New", 1,
+                                    "Initiated", 2,
+                                    "In Progress", 3,
+                                    "Resolved", 4,
+                                    0
+                                ) <= Switch(
+                                    DashTickets.Selected.'Progress/Status'.Value,
+                                    "New", 1,
+                                    "Initiated", 2,
+                                    "In Progress", 3,
+                                    "Resolved", 4,
+                                    0
+                                ),
+                                If(ThisItem.Value =  DashTickets.Selected.'Progress/Status'.Value, ColorValue("#044dc2"))
+                                ,
+                                Color.LightGray
+                            )
+                        Height: =10
+                        HoverFill: =RGBA(135, 100, 184, 1)
+                        OnSelect: =Select(Parent)
+                        PressedFill: =RGBA(135, 100, 184, 1)
+                        Visible: =If(ThisItem.Value = DashTickets.Selected.'Progress/Status'.Value,true,false)
+                        Width: =10
+                        X: =57
+                        Y: =20
+                        ZIndex: =6
 
         RadioHintCont_View As groupContainer.manualLayoutContainer:
             DropShadow: =DropShadow.Light
