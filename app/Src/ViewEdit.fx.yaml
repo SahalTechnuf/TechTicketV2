@@ -1102,6 +1102,77 @@
                         Y: =45
                         ZIndex: =1
 
+                    Rectangle1 As rectangle:
+                        BorderColor: =RGBA(0, 0, 0, 0)
+                        BorderStyle: =BorderStyle.None
+                        DisabledFill: =RGBA(166, 166, 166, 1)
+                        Fill: |-
+                            =If(
+                                Switch(
+                                    ThisItem.Value,
+                                    "New", 1,
+                                    "Initiated", 2,
+                                    "In Progress", 3,
+                                    "Resolved", 4,
+                                    0
+                                ) < Switch(
+                                    DashTickets.Selected.'Progress/Status'.Value,
+                                    "New", 1,
+                                    "Initiated", 2,
+                                    "In Progress", 3,
+                                    "Resolved", 4,
+                                    0
+                                ),
+                                ColorValue("#044dc2"),
+                                Color.LightGray
+                            )
+                        FocusedBorderThickness: =4
+                        Height: =2
+                        HoverFill: =RGBA(135, 100, 184, 1)
+                        OnSelect: =Select(Parent)
+                        PressedFill: =RGBA(135, 100, 184, 1)
+                        Visible: |
+                            =If (ThisItem.Value = "Resolved", false,true)
+                        Width: =Parent.TemplateWidth - (Circle1.X + Circle1.Width) + 10
+                        X: =82
+                        Y: =25
+                        ZIndex: =2
+
+                    Rectangle1_1 As rectangle:
+                        BorderColor: =RGBA(0, 0, 0, 0)
+                        BorderStyle: =BorderStyle.None
+                        DisabledFill: =RGBA(166, 166, 166, 1)
+                        Fill: |-
+                            =If(
+                                Switch(
+                                    ThisItem.Value,
+                                    "New", 1,
+                                    "Initiated", 2,
+                                    "In Progress", 3,
+                                    "Resolved", 4,
+                                    0
+                                ) <= Switch(
+                                    DashTickets.Selected.'Progress/Status'.Value,
+                                    "New", 1,
+                                    "Initiated", 2,
+                                    "In Progress", 3,
+                                    "Resolved", 4,
+                                    0
+                                ),
+                                ColorValue("#044dc2"),
+                                Color.LightGray
+                            )
+                        FocusedBorderThickness: =4
+                        Height: =2
+                        HoverFill: =RGBA(135, 100, 184, 1)
+                        OnSelect: =Select(Parent)
+                        PressedFill: =RGBA(135, 100, 184, 1)
+                        Visible: |
+                            =If (ThisItem.Value = "New", false,true)
+                        Width: =Parent.TemplateWidth - (Circle1.Width + Rectangle1.Width) + 12
+                        Y: =Rectangle1.Y
+                        ZIndex: =3
+
                     Circle1 As circle:
                         BorderColor: =RGBA(127, 17, 224, 1)
                         BorderStyle: =BorderStyle.None
@@ -1137,7 +1208,7 @@
                         Width: =48
                         X: =37
                         Y: =6
-                        ZIndex: =2
+                        ZIndex: =4
 
                     CheckIcon As icon.CheckBadge:
                         BorderColor: =RGBA(0, 0, 0, 0)
@@ -1179,77 +1250,6 @@
                         Width: =51
                         X: =37
                         Y: =13
-                        ZIndex: =3
-
-                    Rectangle1 As rectangle:
-                        BorderColor: =RGBA(0, 0, 0, 0)
-                        BorderStyle: =BorderStyle.None
-                        DisabledFill: =RGBA(166, 166, 166, 1)
-                        Fill: |-
-                            =If(
-                                Switch(
-                                    ThisItem.Value,
-                                    "New", 1,
-                                    "Initiated", 2,
-                                    "In Progress", 3,
-                                    "Resolved", 4,
-                                    0
-                                ) < Switch(
-                                    DashTickets.Selected.'Progress/Status'.Value,
-                                    "New", 1,
-                                    "Initiated", 2,
-                                    "In Progress", 3,
-                                    "Resolved", 4,
-                                    0
-                                ),
-                                ColorValue("#044dc2"),
-                                Color.LightGray
-                            )
-                        FocusedBorderThickness: =4
-                        Height: =2
-                        HoverFill: =RGBA(135, 100, 184, 1)
-                        OnSelect: =Select(Parent)
-                        PressedFill: =RGBA(135, 100, 184, 1)
-                        Visible: |
-                            =If (ThisItem.Value = "Resolved", false,true)
-                        Width: =Parent.TemplateWidth - (Circle1.X + Circle1.Width) + 10
-                        X: =84
-                        Y: =25
-                        ZIndex: =4
-
-                    Rectangle1_1 As rectangle:
-                        BorderColor: =RGBA(0, 0, 0, 0)
-                        BorderStyle: =BorderStyle.None
-                        DisabledFill: =RGBA(166, 166, 166, 1)
-                        Fill: |-
-                            =If(
-                                Switch(
-                                    ThisItem.Value,
-                                    "New", 1,
-                                    "Initiated", 2,
-                                    "In Progress", 3,
-                                    "Resolved", 4,
-                                    0
-                                ) <= Switch(
-                                    DashTickets.Selected.'Progress/Status'.Value,
-                                    "New", 1,
-                                    "Initiated", 2,
-                                    "In Progress", 3,
-                                    "Resolved", 4,
-                                    0
-                                ),
-                                ColorValue("#044dc2"),
-                                Color.LightGray
-                            )
-                        FocusedBorderThickness: =4
-                        Height: =2
-                        HoverFill: =RGBA(135, 100, 184, 1)
-                        OnSelect: =Select(Parent)
-                        PressedFill: =RGBA(135, 100, 184, 1)
-                        Visible: |
-                            =If (ThisItem.Value = "New", false,true)
-                        Width: =Parent.TemplateWidth - (Circle1.Width + Rectangle1.Width) + 10
-                        Y: =Rectangle1.Y
                         ZIndex: =5
 
         RadioHintCont_View As groupContainer.manualLayoutContainer:
