@@ -43,6 +43,7 @@
                 HoverColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
                 HoverFill: =RGBA(0, 0, 0, 0)
                 Icon: =Icon.Trash
+                LayoutMinHeight: =80 
                 OnSelect: |-
                     =Remove('Technuf Service Request', selectedItem);
                     ResetForm(EditForm);
@@ -138,7 +139,7 @@
                 Width: |-
                     =//Parent.Width * 0.5 - 50
                     Parent.Width * 0.5 - 60
-                X: =Parent.Width - (64 + (Parent.Width * 0.5 - 60)+ 10)
+                X: =Parent.Width - (Button_Save_Edit.Width + 64) - 10
                 ZIndex: =3
 
         BodyContView As groupContainer.verticalAutoLayoutContainer:
