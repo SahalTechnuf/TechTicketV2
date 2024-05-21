@@ -814,6 +814,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "App.images"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.images",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "images",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedMediaResources",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App.technufllc_logo"
                 }
               ],
