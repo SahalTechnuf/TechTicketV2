@@ -843,9 +843,10 @@
                 FocusedBorderThickness: =4
                 Font: =Font.'Segoe UI'
                 FontWeight: =FontWeight.Bold
-                Height: =45
+                Height: =70
                 LayoutMinHeight: =70
                 LayoutMinWidth: =560
+                LineHeight: =20
                 PaddingBottom: =0
                 Size: =If((App.Width / App.Height) > 2, 18, 22)
                 Text: ="Service Request Details"
