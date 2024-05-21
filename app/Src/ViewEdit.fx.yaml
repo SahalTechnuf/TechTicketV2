@@ -134,7 +134,7 @@
                 Text: ="Save"
                 Width: |-
                     =//Parent.Width * 0.5 - 50
-                    Parent.Width * 0.5 - 50
+                    Parent.Width * 0.5 - 60
                 ZIndex: =3
 
         BodyContView As groupContainer.verticalAutoLayoutContainer:
