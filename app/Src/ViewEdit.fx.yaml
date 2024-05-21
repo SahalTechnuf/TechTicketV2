@@ -89,7 +89,7 @@
                 Text: ="Cancel"
                 Width: |-
                     =//Parent.Width * 0.5 - 60
-                    Parent.Width * 0.5 - 50
+                    Parent.Width * 0.5 - 60
                 X: |
                     =0
                 ZIndex: =2
@@ -142,7 +142,7 @@
                 Width: |-
                     =//Parent.Width * 0.5 - 50
                     Parent.Width * 0.5 - 60
-                X: =Parent.Width - (Button_Save_Edit.Width + 64 + 10)
+                X: =Parent.Width - (Button_Save_Edit.Width + 10)
                 ZIndex: =3
 
         BodyContView As groupContainer.verticalAutoLayoutContainer:
@@ -426,7 +426,7 @@
                         Text: ="!"
                         Width: =26
                         X: =240
-                        Y: =77
+                        Y: =79
                         ZIndex: =3
 
                 Edit_Image As typedDataCard.addLargePictureCard:
