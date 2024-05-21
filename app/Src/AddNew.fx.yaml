@@ -285,7 +285,7 @@
                     Height: =Radio_Add.Height + DataCardKeyRadio_Add.Height + 10
                     Width: =Parent.Width
                     X: =0
-                    Y: =2
+                    Y: =If(App.Width>App.Height, 2, 2)
                     ZIndex: =1
 
                     DataCardKeyRadio_Add As label:
@@ -385,7 +385,7 @@
                         =//320
                         If((App.Width > App.Height), AddForm.Width/2, Parent.Width)
                     X: =0
-                    Y: =1
+                    Y: =If(App.Width>App.Height, 1, 1)
                     ZIndex: =2
 
                     DataCardKeyDesc_Add As label:
@@ -504,8 +504,8 @@
                     Required: =false
                     Update: =ImageImage_Add.Image
                     Width: =If((App.Width > App.Height), AddForm.Width/2, Parent.Width)
-                    X: =0
-                    Y: =3
+                    X: =If(App.Width>App.Height, 1, 0)
+                    Y: =If(App.Width>App.Height, 1, 3)
                     ZIndex: =2
 
                     DataCardKeyImage_Add As label:
