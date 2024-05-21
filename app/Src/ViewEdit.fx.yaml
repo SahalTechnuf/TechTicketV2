@@ -33,6 +33,7 @@
 
             Button_DeleteTicket1 As icon.Trash:
                 BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =
                 Color: =RGBA(255, 255, 255, 1)
                 DisabledBorderColor: =RGBA(166, 166, 166, 1)
                 DisabledColor: =RGBA(220, 220, 220, 1)
@@ -51,8 +52,9 @@
                 PressedBorderColor: =RGBA(0, 0, 0, 0)
                 PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
                 PressedFill: =RGBA(0, 0, 0, 0)
+                Visible: =true 
                 Width: |-
-                    =64
+                    =Parent.Width *.1
                      
                 ZIndex: =1
 
@@ -93,6 +95,7 @@
                 ZIndex: =2
 
             Button_Save_Edit As button:
+                AlignInContainer: =AlignInContainer.Center
                 BorderColor: =RGBA(0, 0, 0, 0)
                 DisabledBorderColor: =RGBA(153, 207, 236, 1)
                 DisabledColor: =RGBA(255, 255, 255, 1)
@@ -139,7 +142,7 @@
                 Width: |-
                     =//Parent.Width * 0.5 - 50
                     Parent.Width * 0.5 - 60
-                X: =Parent.Width - (Button_Save_Edit.Width + 64) - 10
+                X: =Parent.Width - (Button_Save_Edit.Width + 64 + 10)
                 ZIndex: =3
 
         BodyContView As groupContainer.verticalAutoLayoutContainer:
@@ -422,7 +425,7 @@
                         Size: =18
                         Text: ="!"
                         Width: =26
-                        X: =233
+                        X: =240
                         Y: =77
                         ZIndex: =3
 
