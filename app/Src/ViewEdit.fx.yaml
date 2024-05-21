@@ -799,7 +799,7 @@
         HeaderContView As groupContainer.verticalAutoLayoutContainer:
             BorderColor: =RGBA(255, 255, 255, 1)
             BorderStyle: =BorderStyle.None
-            Height: =350
+            Height: =400
             LayoutAlignItems: =LayoutAlignItems.Center
             LayoutDirection: =LayoutDirection.Vertical
             LayoutJustifyContent: =LayoutJustifyContent.Center
@@ -857,7 +857,7 @@
                 AlignInContainer: =AlignInContainer.SetByContainer
                 BorderStyle: =BorderStyle.None
                 FillPortions: =0
-                Height: =CreatedCont.Height+ UserCont.Height + EmailCont.Height 
+                Height: =CreatedCont.Height+ UserCont.Height + EmailCont.Height +50
                 LayoutDirection: =LayoutDirection.Vertical
                 LayoutJustifyContent: =LayoutJustifyContent.End
                 LayoutMinHeight: =180
