@@ -1053,6 +1053,7 @@
                     RadiusBottomRight: =4
                     RadiusTopLeft: =4
                     RadiusTopRight: =4
+                    Width: =Parent.Width
                     ZIndex: =4
 
                     BreadCrumbGallery As gallery.galleryHorizontal:
@@ -1079,7 +1080,7 @@
                             =true
                             
                              
-                        Width: =Parent.Width -010
+                        Width: =Parent.Width
                         X: =If((App.Width > App.Height), 0, 0)
                         Y: =If((App.Width > App.Height), 0, 0)
                         ZIndex: =1
