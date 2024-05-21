@@ -424,49 +424,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "ViewEdit.ParentContView.HeaderContView.UserInfoCont.Container2.BreadCrumbGallery.AccessibleLabel"
+                  "fullyQualifiedName": "ViewEdit.ParentContView.HeaderContView.ProgressBar.BreadCrumbGallery.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "ViewEdit.ParentContView.HeaderContView.UserInfoCont.Container2.BreadCrumbGallery.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "ViewEdit",
-                "type": "ViewEdit.ParentContView.HeaderContView.UserInfoCont.Container2.BreadCrumbGallery"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "ViewEdit.ParentContView.HeaderContView.UserInfoCont.Container2.BreadCrumbGallery.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "ViewEdit.ParentContView.HeaderContView.UserInfoCont.Container2.BreadCrumbGallery.TabIndex",
+                  "fullyQualifiedName": "ViewEdit.ParentContView.HeaderContView.ProgressBar.BreadCrumbGallery.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "ViewEdit",
-                "type": "ViewEdit.ParentContView.HeaderContView.UserInfoCont.Container2.BreadCrumbGallery"
+                "type": "ViewEdit.ParentContView.HeaderContView.ProgressBar.BreadCrumbGallery"
               }
             }
           ],
@@ -478,6 +448,36 @@
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
           "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ViewEdit.ParentContView.HeaderContView.ProgressBar.BreadCrumbGallery.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ViewEdit.ParentContView.HeaderContView.ProgressBar.BreadCrumbGallery.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ViewEdit",
+                "type": "ViewEdit.ParentContView.HeaderContView.ProgressBar.BreadCrumbGallery"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
         },
         {
           "locations": [
