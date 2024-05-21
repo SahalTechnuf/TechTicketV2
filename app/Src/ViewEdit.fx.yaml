@@ -50,6 +50,9 @@
                 PressedBorderColor: =RGBA(0, 0, 0, 0)
                 PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
                 PressedFill: =RGBA(0, 0, 0, 0)
+                Width: |-
+                    =64
+                     
                 ZIndex: =1
 
             Button_Cancel_Edit As button:
@@ -135,6 +138,7 @@
                 Width: |-
                     =//Parent.Width * 0.5 - 50
                     Parent.Width * 0.5 - 60
+                X: =Parent.Width * 0.5 + 10 
                 ZIndex: =3
 
         BodyContView As groupContainer.verticalAutoLayoutContainer:
