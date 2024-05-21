@@ -21,7 +21,7 @@
             Height: =115
             LayoutAlignItems: =LayoutAlignItems.Center
             LayoutGap: =15
-            LayoutJustifyContent: =LayoutJustifyContent.End
+            LayoutJustifyContent: =LayoutJustifyContent.Center
             LayoutMode: =LayoutMode.Auto
             RadiusBottomLeft: =4
             RadiusBottomRight: =4
