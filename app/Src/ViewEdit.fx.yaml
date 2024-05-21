@@ -1374,7 +1374,19 @@
                 Text: |-
                     ="For immediate emergencies, please call 911.
                     
-                    For emergency maintenance requests, please call the office at (301) 678-9995 and follow the prompts."
+                    For emergency maintenance requests, please call the office at (301) 678-9995.
+                    Emergencies include:
+                     . Fire 
+                     . Water Leak/Flooding
+                     . Gas Leak
+                     . Non-Functional Toilet
+                     . Broken/nonfunctional door, windows
+                       or locks
+                     . No AC/Heat
+                     . No water
+                     . No electricity
+                     . Brocken Refrigerator
+                     . Sewer backup "
                 Width: =560
                 X: =Parent.Width/2 - Self.Width/2
                 Y: =Parent.Height/2 - Self.Height/2
