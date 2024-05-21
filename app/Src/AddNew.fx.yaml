@@ -362,8 +362,8 @@
                         Size: =18
                         Text: ="!"
                         Width: =26
-                        X: =233
-                        Y: =67
+                        X: =240
+                        Y: =80
                         ZIndex: =3
 
                 Add_Desc As typedDataCard.textualEditCard:
@@ -770,7 +770,7 @@
                 Height: =60
                 LayoutMinHeight: =70
                 LayoutMinWidth: =560
-                PaddingBottom: =20
+                PaddingBottom: =0
                 Size: =22
                 Text: ="  Add New Ticket"
                 Width: =Parent.Width - 40

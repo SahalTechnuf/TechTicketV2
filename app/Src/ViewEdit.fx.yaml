@@ -20,7 +20,7 @@
             BorderStyle: =BorderStyle.None
             Height: =115
             LayoutAlignItems: =LayoutAlignItems.Center
-            LayoutGap: =15
+            LayoutGap: =13
             LayoutJustifyContent: =LayoutJustifyContent.Center
             LayoutMode: =LayoutMode.Auto
             RadiusBottomLeft: =4
@@ -31,32 +31,46 @@
             Y: =Parent.Height - FooterContView.Height
             ZIndex: =1
 
-            Button_DeleteTicket1 As icon.Trash:
+            Image3 As image:
                 BorderColor: =RGBA(0, 0, 0, 0)
-                BorderStyle: =
-                Color: =RGBA(255, 255, 255, 1)
-                DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                DisabledColor: =RGBA(220, 220, 220, 1)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledFill: =RGBA(0, 0, 0, 0)
-                Fill: =RGBA(246, 88, 16, 1)
                 FocusedBorderThickness: =4
+                Height: =70
                 HoverBorderColor: =RGBA(0, 0, 0, 0)
-                HoverColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
                 HoverFill: =RGBA(0, 0, 0, 0)
-                Icon: =Icon.Trash
-                LayoutMinHeight: =80 
-                OnSelect: |-
-                    =Remove('Technuf Service Request', selectedItem);
-                    ResetForm(EditForm);
-                    Navigate(Dashboard, Transition.None);
+                Image: =images
+                LayoutMinHeight: =320
+                LayoutMinWidth: =320
                 PressedBorderColor: =RGBA(0, 0, 0, 0)
-                PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
                 PressedFill: =RGBA(0, 0, 0, 0)
-                Visible: =true 
-                Width: |-
-                    =Parent.Width *.1
-                     
+                Width: =65
                 ZIndex: =1
+
+            Button1 As button:
+                BorderColor: =RGBA(0, 0, 0, 0)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                Fill: =RGBA(252, 53, 53, 1)
+                FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Height: =70
+                HoverBorderColor: =RGBA(0, 0, 0, 0)
+                HoverColor: =RGBA(255, 255, 255, 1)
+                HoverFill: =ColorFade(RGBA(135, 100, 184, 1), -10%)
+                LayoutMinHeight: =70
+                LayoutMinWidth: =280
+                PressedBorderColor: =ColorFade(RGBA(135, 100, 184, 1), -50%)
+                PressedColor: =RGBA(255, 255, 255, 1)
+                PressedFill: =ColorFade(RGBA(135, 100, 184, 1), -30%)
+                Size: =24
+                Text: =""
+                Width: =65
+                ZIndex: =2
 
             Button_Cancel_Edit As button:
                 AlignInContainer: =AlignInContainer.Center
@@ -69,7 +83,7 @@
                 FocusedBorderColor: =ColorFade(Self.Fill, -75%)
                 Font: =Font.'Segoe UI'
                 FontWeight: =FontWeight.Semibold
-                Height: =70
+                Height: =73
                 HoverBorderColor: =RGBA(0, 134, 208, 1)
                 HoverColor: =RGBA(255, 255, 255, 1)
                 HoverFill: =ColorFade(RGBA(0, 134, 208, 1), -10%)
@@ -92,7 +106,7 @@
                     Parent.Width * 0.5 - 60
                 X: |
                     =0
-                ZIndex: =2
+                ZIndex: =3
 
             Button_Save_Edit As button:
                 AlignInContainer: =AlignInContainer.Center
@@ -143,7 +157,7 @@
                     =//Parent.Width * 0.5 - 50
                     Parent.Width * 0.5 - 60
                 X: =Parent.Width - (Button_Save_Edit.Width + 10)
-                ZIndex: =3
+                ZIndex: =4
 
         BodyContView As groupContainer.verticalAutoLayoutContainer:
             BorderColor: =RGBA(255, 255, 255, 1)
@@ -817,19 +831,19 @@
             ZIndex: =3
 
             DashLogoV As image:
+                AlignInContainer: =AlignInContainer.Center
                 BorderColor: =RGBA(0, 0, 0, 0)
                 BorderStyle: =BorderStyle.None
                 BorderThickness: =2
                 DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledFill: =RGBA(0, 0, 0, 0)
                 FocusedBorderThickness: =4
-                Height: |
-                    =110
+                Height: =110
                 HoverBorderColor: =RGBA(0, 0, 0, 0)
                 HoverFill: =RGBA(0, 0, 0, 0)
                 Image: =download
                 LayoutMinHeight: =320
-                LayoutMinWidth: =320
+                LayoutMinWidth: =600
                 PaddingTop: =30
                 PressedBorderColor: =RGBA(0, 0, 0, 0)
                 PressedFill: =RGBA(0, 0, 0, 0)
@@ -847,7 +861,7 @@
                 FocusedBorderThickness: =4
                 Font: =Font.'Segoe UI'
                 FontWeight: =FontWeight.Bold
-                Height: =70
+                Height: =55
                 LayoutMinHeight: =70
                 LayoutMinWidth: =560
                 LineHeight: =20
@@ -862,12 +876,13 @@
                 AlignInContainer: =AlignInContainer.SetByContainer
                 BorderStyle: =BorderStyle.None
                 FillPortions: =0
-                Height: =CreatedCont.Height+ UserCont.Height + EmailCont.Height +50
+                Height: =CreatedCont.Height+ UserCont.Height + EmailCont.Height +30
                 LayoutDirection: =LayoutDirection.Vertical
                 LayoutJustifyContent: =LayoutJustifyContent.End
                 LayoutMinHeight: =180
                 LayoutMinWidth: =250
                 LayoutMode: =LayoutMode.Auto
+                PaddingBottom: =15
                 PaddingTop: =20
                 RadiusBottomLeft: =4
                 RadiusBottomRight: =4
@@ -1072,7 +1087,7 @@
                     Fill: |
                         =RGBA(0,0,0,0)
                     FillPortions: =0
-                    Height: =150
+                    Height: =120
                     Items: |-
                         =
                         Choices('Technuf Service Request'.'Progress/Status')

@@ -554,7 +554,7 @@
                 FocusedBorderThickness: =4
                 Font: =Font.'Segoe UI'
                 FontWeight: =FontWeight.Bold
-                Height: =60
+                Height: =70
                 LayoutMinHeight: =70
                 LayoutMinWidth: =560
                 PaddingBottom: =20
@@ -624,8 +624,7 @@
             ZIndex: =9
 
         SearchBarCont As groupContainer.manualLayoutContainer:
-            Height: |
-                =50
+            Height: =56
             RadiusBottomLeft: =4
             RadiusBottomRight: =4
             RadiusTopLeft: =4
@@ -662,6 +661,7 @@
                 Size: =20
                 Width: =Parent.Width - RefreshIcon.Width - 20 //Left Padding
                 X: =20
+                Y: =5
                 ZIndex: =1
 
             SearchIcon As icon.Search:
