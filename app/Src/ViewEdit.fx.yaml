@@ -1123,7 +1123,7 @@
                                     "Resolved", 4,
                                     0
                                 ),
-                                ColorValue("#044dc2"),
+                                RGBA(0, 134, 208, 1),
                                 Color.LightGray
                             )
                         FocusedBorderThickness: =4
@@ -1159,7 +1159,7 @@
                                     "Resolved", 4,
                                     0
                                 ),
-                                ColorValue("#044dc2"),
+                                RGBA(0, 134, 208, 1),
                                 Color.LightGray
                             )
                         FocusedBorderThickness: =4
@@ -1194,7 +1194,7 @@
                                     "Resolved", 4,
                                     0
                                 ),
-                                If(ThisItem.Value =  DashTickets.Selected.'Progress/Status'.Value,ColorValue("#044dc2"), Color.White),
+                                If(ThisItem.Value =  DashTickets.Selected.'Progress/Status'.Value,RGBA(0, 134, 208, 1), Color.White),
                                 Color.LightGray
                             )
                         BorderThickness: =2
@@ -1219,7 +1219,7 @@
                                     "Resolved", 4,
                                     0
                                 ),
-                                If(ThisItem.Value =  DashTickets.Selected.'Progress/Status'.Value, Color.White,ColorValue("#044dc2")),
+                                If(ThisItem.Value =  DashTickets.Selected.'Progress/Status'.Value, Color.White,RGBA(0, 134, 208, 1)),
                                 Color.LightGray
                             )
                         Height: =39
@@ -1299,7 +1299,7 @@
                                     "Resolved", 4,
                                     0
                                 ),
-                                If(ThisItem.Value =  DashTickets.Selected.'Progress/Status'.Value, ColorValue("#044dc2"))
+                                If(ThisItem.Value =  DashTickets.Selected.'Progress/Status'.Value, RGBA(0, 134, 208, 1))
                                 ,
                                 Color.LightGray
                             )
