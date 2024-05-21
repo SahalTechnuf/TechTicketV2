@@ -1222,7 +1222,7 @@
                         Y: =18
                         ZIndex: =5
 
-        RadioHintCont As groupContainer.manualLayoutContainer:
+        RadioHintCont_View As groupContainer.manualLayoutContainer:
             DropShadow: =DropShadow.Light
             Height: =Parent.Height
             RadiusBottomLeft: =4
