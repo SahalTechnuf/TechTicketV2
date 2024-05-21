@@ -623,6 +623,7 @@
                         Items: =["Emergency", "High", "Medium", "Low"]
                         OnSelect: =Radio_Edit.Selected.Value
                         PaddingBottom: =5
+                        PaddingLeft: =20
                         PaddingTop: =5
                         PressedColor: =RGBA(51, 51, 51, 1)
                         PressedFill: =RGBA(0, 0, 0, 0)
@@ -659,8 +660,8 @@
                         Size: =18
                         Text: ="!"
                         Width: =26
-                        X: =216
-                        Y: =72
+                        X: =233
+                        Y: =77
                         ZIndex: =3
 
                 Edit_Desc As typedDataCard.textualEditCard:
