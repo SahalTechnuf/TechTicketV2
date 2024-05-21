@@ -284,7 +284,7 @@
                     Fill: =RGBA(0, 0, 0, 0)
                     Height: =Radio_Add.Height + DataCardKeyRadio_Add.Height + 10
                     Width: =Parent.Width
-                    X: =1
+                    X: =0
                     Y: =2
                     ZIndex: =1
 
@@ -504,8 +504,8 @@
                     Required: =false
                     Update: =ImageImage_Add.Image
                     Width: =If((App.Width > App.Height), AddForm.Width/2, Parent.Width)
-                    X: =If((App.Width > App.Height), 1, 0)
-                    Y: =If((App.Width > App.Height), 1, 2)
+                    X: =0
+                    Y: =3
                     ZIndex: =2
 
                     DataCardKeyImage_Add As label:

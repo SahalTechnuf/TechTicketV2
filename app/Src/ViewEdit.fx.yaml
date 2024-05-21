@@ -185,8 +185,8 @@
                     Update: =TextInputTitle_Edit.Text
                     Visible: =true
                     Width: =Parent.Width
-                    X: =If((App.Width > App.Height), 0, 0)
-                    Y: =If((App.Width > App.Height), 0, 0)
+                    X: =0
+                    Y: =0
                     ZIndex: =1
 
                     DataCardKeyTitle_Edit As label:
@@ -351,10 +351,8 @@
                     Required: =false
                     Update: =ImageImage_Edit.Image
                     Width: =If((App.Width > App.Height), EditForm.Width/2, Parent.Width)
-                    X: |
-                        =If((App.Width > App.Height), 1, 0)
-                    Y: |
-                        =If((App.Width > App.Height), 1, 2)
+                    X: =0
+                    Y: =3
                     ZIndex: =1
 
                     DataCardKeyImage_Edit As label:
@@ -584,8 +582,8 @@
                     Fill: =RGBA(0, 0, 0, 0)
                     Height: =Radio_Edit.Height + DataCardKeyRadio_Edit.Height + 10
                     Width: =Parent.Width
-                    X: =1
-                    Y: =2
+                    X: =0
+                    Y: =1
                     ZIndex: =1
 
                     DataCardKeyRadio_Edit As label:
@@ -686,11 +684,8 @@
                     Required: =false
                     Update: =DataCardValueDesc_Edit.Text
                     Width: =If((App.Width > App.Height), EditForm.Width/2, Parent.Width)
-                    X: |
-                        =//If((App.Width / App.Height) < 2, 1, 0)
-                        0
-                    Y: |
-                        =If((App.Width > App.Height), 1, 1)
+                    X: =0
+                    Y: =2
                     ZIndex: =2
 
                     DataCardKeyDesc_Edit As label:
