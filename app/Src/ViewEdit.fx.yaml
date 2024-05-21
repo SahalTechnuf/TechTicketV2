@@ -1268,7 +1268,7 @@
                         PressedBorderColor: =RGBA(0, 0, 0, 0)
                         PressedColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
                         PressedFill: =RGBA(0, 0, 0, 0)
-                        Visible: =If(ThisItem.Value = DashTickets.Selected.'Progress/Status'.Value,false,true)
+                        Visible: =If(ThisItem.Value = DashTickets.Selected.'Progress/Status'.Value And ThisItem.Value <> "Resolved",false,true)
                         Width: =51
                         X: =37
                         Y: =13
