@@ -107,7 +107,7 @@
       "MetaDataIDKey": "",
       "Name": "Add_Desc",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 1,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -418,7 +418,7 @@
       "MetaDataIDKey": "",
       "Name": "Add_Radio",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 2,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1040,7 +1040,7 @@
       "MetaDataIDKey": "%AddPicture.ID%",
       "Name": "AddPictureImage_Add",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 3,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1290,7 +1290,7 @@
       "MetaDataIDKey": "",
       "Name": "BodyContAdd",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 2,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1861,7 +1861,7 @@
       "MetaDataIDKey": "",
       "Name": "Button_DeleteImage_Add",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 4,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3352,7 +3352,7 @@
       "MetaDataIDKey": "%FieldName.ID%",
       "Name": "DataCardKeyImage_Add",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 1,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5912,7 +5912,7 @@
       "MetaDataIDKey": "",
       "Name": "FooterContAdd",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 3,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6948,7 +6948,7 @@
       "MetaDataIDKey": "%FieldValue.ID%",
       "Name": "ImageImage_Add",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 2,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -7383,7 +7383,7 @@
       "MetaDataIDKey": "",
       "Name": "Popup_Add",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 2,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -7757,7 +7757,7 @@
       "MetaDataIDKey": "",
       "Name": "Popup_Close_Add",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 1,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -8708,7 +8708,7 @@
       "MetaDataIDKey": "",
       "Name": "RadioHint_Add",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 0,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -9344,7 +9344,7 @@
       "MetaDataIDKey": "%FieldRequired.ID%",
       "Name": "StarVisibleImage_Add",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 0,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
