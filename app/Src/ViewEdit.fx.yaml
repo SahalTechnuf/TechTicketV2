@@ -1098,7 +1098,7 @@
                         Size: =17
                         Text: =ThisItem.Value 
                         Width: =131.6
-                        X: =37
+                        X: =If(ThisItem.Value = "New", 37,10)
                         Y: =45
                         ZIndex: =1
 
