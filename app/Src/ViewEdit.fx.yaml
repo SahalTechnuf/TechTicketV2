@@ -1232,8 +1232,8 @@
                         Height: =39
                         OnSelect: =Select(Parent)
                         PressedFill: =RGBA(0, 134, 208, 1)
-                        Width: =48
-                        X: =37
+                        Width: =39
+                        X: =40
                         Y: =6
                         ZIndex: =4
 
