@@ -1219,7 +1219,7 @@
                                     "Resolved", 4,
                                     0
                                 ),
-                                If(ThisItem.Value =  DashTickets.Selected.'Progress/Status'.Value, Color.White,RGBA(0, 134, 208, 1)),
+                                If(ThisItem.Value =  DashTickets.Selected.'Progress/Status'.Value And ThisItem.Value <> "Resolved", Color.White,RGBA(0, 134, 208, 1)),
                                 Color.LightGray
                             )
                         Height: =39
