@@ -386,7 +386,7 @@
                         Text: ="*"
                         Width: =30
                         Wrap: =false
-                        Y: =25
+                        Y: =16
                         ZIndex: =4
 
                 Add_Desc As typedDataCard.textualEditCard:
