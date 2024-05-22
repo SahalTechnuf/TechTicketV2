@@ -1384,6 +1384,7 @@
                 FocusedBorderThickness: =4
                 Font: =Font.Arial
                 Height: =279
+                Overflow: =Overflow.Scroll
                 Size: =21
                 Text: |-
                     ="For immediate emergencies, please call 911.
