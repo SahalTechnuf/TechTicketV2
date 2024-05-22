@@ -199,7 +199,7 @@
                         =// If((EditForm.Height * 0.2) < 140, 140, EditForm.Height * 0.2)
                         
                         If((EditForm.Height * 0.15) < 140, 140, EditForm.Height * 0.15)
-                    Required: =true
+                    Required: =false
                     Update: =TextInputTitle_Edit.Text
                     Visible: =true
                     Width: =Parent.Width
@@ -359,7 +359,7 @@
                         Font: =Font.'Segoe UI'
                         Height: =38
                         Size: =21
-                        Text: =""
+                        Text: ="*"
                         Width: =47
                         Y: =20
                         ZIndex: =7
