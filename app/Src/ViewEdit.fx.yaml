@@ -21,8 +21,10 @@
             Height: =115
             LayoutAlignItems: =LayoutAlignItems.Center
             LayoutGap: =13
-            LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
+            LayoutJustifyContent: =LayoutJustifyContent.Center
             LayoutMode: =LayoutMode.Auto
+            PaddingLeft: =25
+            PaddingRight: =25
             RadiusBottomLeft: =4
             RadiusBottomRight: =4
             RadiusTopLeft: =4
@@ -58,7 +60,7 @@
                     Icon: =Icon.Trash
                     OnSelect: |-
                         =//false
-                        Remove(EditForm);
+                        //Remove(EditForm,true);
                         ResetForm(EditForm);
                         Navigate(Dashboard, Transition.None);
                     PressedBorderColor: =RGBA(0, 0, 0, 0)
@@ -98,7 +100,7 @@
                 Text: ="Cancel"
                 Width: |-
                     =//Parent.Width * 0.5 - 60
-                    Parent.Width * 0.5 - 60
+                    Parent.Width * 0.5 - 70
                 X: |
                     =0
                 ZIndex: =3
@@ -149,7 +151,7 @@
                 Text: ="Save"
                 Width: |-
                     =//Parent.Width * 0.5 - 50
-                    Parent.Width * 0.5 - 60
+                    Parent.Width * 0.5 - 70
                 X: =Parent.Width - (Button_Save_Edit.Width + 10)
                 ZIndex: =4
 
