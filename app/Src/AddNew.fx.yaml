@@ -172,6 +172,7 @@
                         FontWeight: =FontWeight.Semibold
                         Height: =48
                         PaddingLeft: =0
+                        PaddingTop: =3
                         Size: =21
                         Text: =Parent.DisplayName
                         Width: =Parent.Width - 60
@@ -222,7 +223,7 @@
                         Text: ="*"
                         Width: =30
                         Wrap: =false
-                        Y: =DataCardKeyTitle_Add.Y
+                        Y: =13
                         ZIndex: =3
 
                     DataCardValueTitle_Add As dropdown:
@@ -285,6 +286,7 @@
                     DisplayMode: =DisplayMode.Edit
                     Fill: =RGBA(0, 0, 0, 0)
                     Height: =Radio_Add.Height + DataCardKeyRadio_Add.Height + 10
+                    Required: =true
                     Width: =Parent.Width
                     X: =0
                     Y: =If(App.Width>App.Height, 2, 2)
@@ -368,6 +370,25 @@
                         Y: =80
                         ZIndex: =3
 
+                    StarVisiblePri_Add As label:
+                        Align: =Align.Center
+                        BorderColor: =RGBA(0, 0, 0, 0)
+                        BorderStyle: =BorderStyle.None
+                        BorderThickness: =2
+                        Color: =RGBA(255, 0, 0, 1)
+                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        FocusedBorderThickness: =4
+                        Font: =Font.'Segoe UI'
+                        FontWeight: =FontWeight.Semibold
+                        Height: =DataCardKeyRadio_Add.Height
+                        Size: =21
+                        Text: ="*"
+                        Width: =30
+                        Wrap: =false
+                        Y: =25
+                        ZIndex: =4
+
                 Add_Desc As typedDataCard.textualEditCard:
                     BorderColor: =RGBA(166, 166, 166, 1)
                     BorderStyle: =BorderStyle.Solid
@@ -403,6 +424,7 @@
                         FontWeight: =FontWeight.Semibold
                         Height: =48
                         PaddingLeft: =0
+                        PaddingTop: =4
                         Size: =21
                         Text: =Parent.DisplayName
                         Width: =Parent.Width - 60
@@ -488,7 +510,7 @@
                         Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                         Width: =30
                         Wrap: =false
-                        Y: =DataCardKeyDesc_Add.Y
+                        Y: =15
                         ZIndex: =4
 
                 Add_Image As typedDataCard.addLargePictureCard:
