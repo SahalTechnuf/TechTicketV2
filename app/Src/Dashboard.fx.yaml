@@ -561,7 +561,7 @@
                 LayoutMinWidth: =560
                 PaddingBottom: =20
                 Size: =22
-                Text: ="  Technuf Service Request"
+                Text: ="  Technuf Helpdesk"
                 Width: =Parent.Width - 40
                 X: =180
                 Y: =72

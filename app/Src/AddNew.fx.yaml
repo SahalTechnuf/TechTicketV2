@@ -238,9 +238,8 @@
                         ChevronHoverBackground: =RGBA(212, 212, 212, 1)
                         ChevronHoverFill: =RGBA(33, 33, 33, 1)
                         Color: =RGBA(51, 51, 51, 1)
-                        Default: |+
+                        Default: |
                             ="Select Category"
-                            
                         DisabledBorderColor: =RGBA(0, 0, 0, 0)
                         DisabledColor: =RGBA(166, 166, 166, 1)
                         DisabledFill: =RGBA(244, 244, 244, 1)
@@ -317,7 +316,7 @@
                         BorderColor: =RGBA(51, 51, 51, 1)
                         BorderStyle: =BorderStyle.None
                         BorderThickness: =2
-                        Color: =RGBA(51, 51, 51, 1)
+                        Color: =If(ThisItem.Priority.Value ="Emergency",Color.Red,RGBA (51, 51, 51, 1)
                         Default: =ThisItem.Priority.Value
                         DisabledBorderColor: =RGBA(0, 0, 0, 0)
                         DisabledColor: =RGBA(166, 166, 166, 1)
