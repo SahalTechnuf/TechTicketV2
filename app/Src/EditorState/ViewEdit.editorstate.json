@@ -5703,8 +5703,8 @@
         },
         {
           "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "false",
+          "AutoRuleBindingEnabled": true,
+          "AutoRuleBindingString": "",
           "InvariantPropertyName": "Required",
           "IsLockable": true,
           "NameMapSourceSchema": "?"
@@ -5815,7 +5815,7 @@
         {
           "Category": "Data",
           "PropertyName": "Required",
-          "RuleProviderType": "User"
+          "RuleProviderType": "Unknown"
         },
         {
           "Category": "Data",
@@ -12142,7 +12142,7 @@
       "MetaDataIDKey": "",
       "Name": "Radio_Edit",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 2,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -12539,7 +12539,7 @@
       "MetaDataIDKey": "",
       "Name": "Radio_Hint",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 3,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -13746,7 +13746,7 @@
       "ControlPropertyState": [
         {
           "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingEnabled": true,
           "AutoRuleBindingString": "",
           "InvariantPropertyName": "Text",
           "IsLockable": true,
@@ -13754,8 +13754,8 @@
         },
         {
           "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)",
+          "AutoRuleBindingEnabled": true,
+          "AutoRuleBindingString": "",
           "InvariantPropertyName": "Visible",
           "IsLockable": true,
           "NameMapSourceSchema": "?"
@@ -13763,14 +13763,7 @@
         "Live",
         "Overflow",
         "Role",
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "",
-          "InvariantPropertyName": "Color",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
+        "Color",
         "DisabledColor",
         "PressedColor",
         "HoverColor",
@@ -13786,14 +13779,7 @@
         "HoverFill",
         "Font",
         "FontWeight",
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "",
-          "InvariantPropertyName": "Align",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
+        "Align",
         "VerticalAlign",
         "X",
         "Y",
@@ -13961,7 +13947,7 @@
         {
           "Category": "Design",
           "PropertyName": "Visible",
-          "RuleProviderType": "User"
+          "RuleProviderType": "Unknown"
         },
         {
           "Category": "Design",
