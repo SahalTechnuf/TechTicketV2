@@ -122,7 +122,7 @@
                 LayoutMinHeight: =70
                 LayoutMinWidth: =280
                 OnSelect: |-
-                    =If( (DataCardValueTitle_Edit.Selected.Title = "Select Category") || IsBlank(DataCardValueDesc_Edit.Text) || IsBlank(DataCardValueTitle_Edit.Selected.Title) || IsBlank(Radio_Edit),
+                    =If( (DataCardValueTitle_Edit.Selected.Title = "Select Category") || IsBlank(DataCardValueDesc_Edit.Text) || IsBlank(DataCardValueTitle_Edit.Selected.Title) || IsBlank(Radio_Edit.Selected.Value),
                         Notify("Please fill in all required fields.", NotificationType.Error),
                     
                     Patch ('Technuf Service Request', LookUp(
