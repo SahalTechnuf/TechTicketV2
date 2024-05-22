@@ -316,7 +316,7 @@
                         BorderColor: =RGBA(51, 51, 51, 1)
                         BorderStyle: =BorderStyle.None
                         BorderThickness: =2
-                        Color: =If(ThisItem.Priority.Value ="Emergency",Color.Red,RGBA (51, 51, 51, 1)
+                        Color: =If(ThisItem.Priority.Value ="Emergency",Color.Red,RGBA (51, 51, 51, 1))
                         Default: =ThisItem.Priority.Value
                         DisabledBorderColor: =RGBA(0, 0, 0, 0)
                         DisabledColor: =RGBA(166, 166, 166, 1)
