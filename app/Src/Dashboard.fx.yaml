@@ -197,11 +197,13 @@
                         FocusedBorderThickness: =4
                         Font: =Font.'Segoe UI'
                         Height: =57
+                        LineHeight: =1
                         OnSelect: =Select(Parent)
                         PaddingLeft: =15
                         Size: =17
-                        Text: =ThisItem.Description
-                        Width: =570
+                        Text: =Substitute(ThisItem.Description,Char(10)," ") 
+                        VerticalAlign: =VerticalAlign.Top
+                        Width: =600
                         Wrap: =false
                         X: =10
                         Y: =155
