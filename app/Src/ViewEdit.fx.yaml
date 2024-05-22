@@ -371,6 +371,7 @@
                     DisplayMode: =DisplayMode.Edit
                     Fill: =RGBA(0, 0, 0, 0)
                     Height: =Radio_Edit.Height + DataCardKeyRadio_Edit.Height + 10
+                    Required: =false
                     Width: =Parent.Width
                     X: =0
                     Y: |
@@ -470,6 +471,23 @@
                         Width: =48
                         Y: =15
                         ZIndex: =4
+
+                    ErrorMessageRadio_Edit As label:
+                        BorderColor: =RGBA(0, 0, 0, 0)
+                        BorderStyle: =BorderStyle.None
+                        BorderThickness: =2
+                        Color: =RGBA(51, 51, 51, 1)
+                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        FocusedBorderThickness: =4
+                        Font: =Font.'Segoe UI'
+                        Height: =6
+                        Size: =21
+                        Text: =Parent.Error
+                        Width: =560
+                        X: =30
+                        Y: =270
+                        ZIndex: =5
 
                 Edit_Image As typedDataCard.addLargePictureCard:
                     BorderColor: =RGBA(166, 166, 166, 1)
