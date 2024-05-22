@@ -630,8 +630,7 @@
             RadiusTopLeft: =4
             RadiusTopRight: =4
             Width: =Parent.Width
-            Y: |
-                =Parent.Height/6
+            Y: =189
             ZIndex: =10
 
             SearchTicket As text:
