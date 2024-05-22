@@ -267,7 +267,7 @@
                             =Text(ThisItem.'Issue Date and Time',    "mm/dd/yyyy            hh:mm AM/PM")
                         Width: =323
                         X: =212
-                        Y: =131
+                        Y: =125
                         ZIndex: =5
 
                     ImagePreview As image:
@@ -312,7 +312,7 @@
                         PressedFill: =RGBA(0, 0, 0, 0)
                         Width: =28
                         X: =172
-                        Y: =133
+                        Y: =127
                         ZIndex: =7
 
                     Time As icon.Clock:
@@ -333,7 +333,7 @@
                         PressedFill: =RGBA(0, 0, 0, 0)
                         Width: =38
                         X: =363
-                        Y: =138
+                        Y: =130
                         ZIndex: =8
 
                     DashEmail As label:
@@ -507,7 +507,7 @@
         HeaderContDash As groupContainer.verticalAutoLayoutContainer:
             BorderColor: =RGBA(255, 255, 255, 1)
             BorderStyle: =BorderStyle.None
-            Height: =Parent.Height/6
+            Height: =Parent.Height/7
             LayoutAlignItems: =LayoutAlignItems.Center
             LayoutDirection: =LayoutDirection.Vertical
             LayoutJustifyContent: =LayoutJustifyContent.Center
