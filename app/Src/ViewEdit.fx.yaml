@@ -60,7 +60,7 @@
                     Icon: =Icon.Trash
                     OnSelect: |-
                         =//false
-                        Remove('Technuf Service Request',EditForm.LastSubmit );
+                        Remove('Technuf Service Request',DashTickets.Selected);
                         ResetForm(EditForm);
                         Navigate(Dashboard, Transition.None);
                     PressedBorderColor: =RGBA(0, 0, 0, 0)
