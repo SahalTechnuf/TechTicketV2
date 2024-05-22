@@ -199,7 +199,7 @@
                         =// If((EditForm.Height * 0.2) < 140, 140, EditForm.Height * 0.2)
                         
                         If((EditForm.Height * 0.15) < 140, 140, EditForm.Height * 0.15)
-                    Required: =false
+                    Required: =true
                     Update: =TextInputTitle_Edit.Text
                     Visible: =true
                     Width: =Parent.Width
@@ -347,6 +347,22 @@
                         X: =40
                         Y: =60
                         ZIndex: =6
+
+                    StarVisibleCat_Edit As label:
+                        BorderColor: =RGBA(0, 0, 0, 0)
+                        BorderStyle: =BorderStyle.None
+                        BorderThickness: =2
+                        Color: =RGBA(255, 0, 0, 1)
+                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        FocusedBorderThickness: =4
+                        Font: =Font.'Segoe UI'
+                        Height: =38
+                        Size: =21
+                        Text: ="*"
+                        Width: =47
+                        Y: =20
+                        ZIndex: =7
 
                 Edit_Radio As typedDataCard.blankCard:
                     BorderColor: =RGBA(166, 166, 166, 1)
