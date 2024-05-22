@@ -554,7 +554,7 @@
                 FocusedBorderThickness: =4
                 Font: =Font.'Segoe UI'
                 FontWeight: =FontWeight.Bold
-                Height: =75
+                Height: =70
                 LayoutMinHeight: =70
                 LayoutMinWidth: =560
                 PaddingBottom: =20
@@ -624,7 +624,7 @@
             ZIndex: =9
 
         SearchBarCont As groupContainer.manualLayoutContainer:
-            Height: =60
+            Height: =58
             RadiusBottomLeft: =4
             RadiusBottomRight: =4
             RadiusTopLeft: =4
@@ -644,7 +644,7 @@
                 DisabledFill: =RGBA(244, 244, 244, 1)
                 FocusedBorderThickness: =4
                 Font: =Font.'Segoe UI'
-                Height: =50
+                Height: =48
                 HintText: ="Search"
                 HoverBorderColor: =ColorFade(RGBA(0, 134, 208, 1), -30%)
                 HoverColor: =RGBA(51, 51, 51, 1)
@@ -659,8 +659,8 @@
                 RadiusTopRight: =15
                 Size: =20
                 Width: =Parent.Width - RefreshIcon.Width - 20 //Left Padding
-                X: =20
-                Y: =5
+                X: =30
+                Y: =4
                 ZIndex: =1
 
             SearchIcon As icon.Search:
@@ -685,6 +685,7 @@
                 Tooltip: ="Search"
                 Width: =69
                 X: =32
+                Y: =4
                 ZIndex: =2
 
             RefreshIcon As icon.Reload:
