@@ -405,7 +405,7 @@
                         BorderStyle: =BorderStyle.None
                         BorderThickness: =2
                         Color: =RGBA(51, 51, 51, 1)
-                        Default: =If(ThisItem.Priority.Value = "", Blank(), ThisItem.Priority.Value)
+                        Default: =If(selectedItem.Priority.Value = "", Blank(), selectedItem.Priority.Value)
                         DisabledBorderColor: =RGBA(0, 0, 0, 0)
                         DisabledColor: =RGBA(166, 166, 166, 1)
                         FocusedBorderThickness: =4
