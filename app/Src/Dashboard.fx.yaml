@@ -513,11 +513,12 @@
                         Color: |-
                             =Switch(
                                 ThisItem.Priority.Value,
-                                "Emergency", RGBA(255, 0, 0, 1),  // Red
-                                "High", RGBA(255, 105, 180, 1),   // Pink
-                                "Medium", RGBA(255, 165, 0, 1),   // Orange
-                                "Low", RGBA(0, 0, 255, 1),        // Blue
-                                RGBA(0, 0, 0, 1)                  // Default to black if none match
+                            
+                                "Emergency", Color.Red,
+                                "High", Color.HotPink,
+                                "Medium", Color.DarkOrange,
+                                "Low", Color.SteelBlue,
+                                RGBA(0, 0, 0, 1)                  
                             )
                         DisabledBorderColor: =RGBA(0, 0, 0, 0)
                         DisabledColor: =RGBA(166, 166, 166, 1)
