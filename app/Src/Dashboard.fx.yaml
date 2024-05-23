@@ -199,14 +199,13 @@
                         Height: =38
                         LineHeight: =1
                         OnSelect: =Select(Parent)
-                        PaddingLeft: =15
                         Size: =17
                         Text: =Substitute(ThisItem.Description,Char(10)," ") 
                         VerticalAlign: =VerticalAlign.Top
-                        Width: =600
+                        Width: =560
                         Wrap: =false
-                        X: =10
-                        Y: =170
+                        X: =22
+                        Y: =183
                         ZIndex: =2
 
                     Label_DashAuthor As label:
@@ -506,6 +505,52 @@
                         X: =40
                         Y: =54
                         ZIndex: =14
+
+                    Priority As label:
+                        BorderColor: =RGBA(0, 0, 0, 0)
+                        BorderStyle: =BorderStyle.None
+                        BorderThickness: =2
+                        Color: |-
+                            =Switch(
+                                ThisItem.Priority.Value,
+                                "Emergency", RGBA(255, 0, 0, 1),  // Red
+                                "High", RGBA(255, 105, 180, 1),   // Pink
+                                "Medium", RGBA(255, 165, 0, 1),   // Orange
+                                "Low", RGBA(0, 0, 255, 1),        // Blue
+                                RGBA(0, 0, 0, 1)                  // Default to black if none match
+                            )
+                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        FocusedBorderThickness: =4
+                        Font: =Font.'Segoe UI'
+                        Height: =28
+                        OnSelect: =Select(Parent)
+                        Size: =17
+                        Text: =ThisItem.Priority.Value
+                        Width: =152
+                        X: =118
+                        Y: =160
+                        ZIndex: =15
+
+                    Label_Priority As label:
+                        BorderColor: =RGBA(0, 0, 0, 0)
+                        BorderStyle: =BorderStyle.None
+                        BorderThickness: =2
+                        Color: =RGBA(51, 51, 51, 1)
+                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        FocusedBorderThickness: =4
+                        Font: =Font.'Segoe UI'
+                        FontWeight: =FontWeight.Bold
+                        Height: =28
+                        OnSelect: =Select(Parent)
+                        Size: =17
+                        Text: |-
+                            ="Priority:"
+                        Width: =101
+                        X: =22
+                        Y: =160
+                        ZIndex: =16
 
         HeaderContDash As groupContainer.verticalAutoLayoutContainer:
             BorderColor: =RGBA(255, 255, 255, 1)
