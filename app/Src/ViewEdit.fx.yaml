@@ -915,7 +915,7 @@
                 LineHeight: =20
                 PaddingBottom: =0
                 Size: =If((App.Width / App.Height) > 2, 18, 22)
-                Text: ="Helpdesk Details"
+                Text: ="Help Desk Details"
                 Width: =Parent.Width - 40
                 Y: =30 + DashLogoV.Y
                 ZIndex: =2
