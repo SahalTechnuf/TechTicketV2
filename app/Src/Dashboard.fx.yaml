@@ -206,7 +206,7 @@
                         Width: =600
                         Wrap: =false
                         X: =10
-                        Y: =188
+                        Y: =170
                         ZIndex: =2
 
                     Label_DashAuthor As label:
@@ -506,44 +506,6 @@
                         X: =40
                         Y: =54
                         ZIndex: =14
-
-                    "'Priority label' As label":
-                        BorderColor: =RGBA(0, 0, 0, 0)
-                        BorderStyle: =BorderStyle.None
-                        BorderThickness: =2
-                        Color: =RGBA(51, 51, 51, 1)
-                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                        DisabledColor: =RGBA(166, 166, 166, 1)
-                        FocusedBorderThickness: =4
-                        Font: =Font.'Segoe UI'
-                        FontWeight: =FontWeight.Bold
-                        Height: =30
-                        OnSelect: =Select(Parent)
-                        Size: =17
-                        Text: |-
-                            ="Priority:"
-                        Width: =122
-                        X: =22
-                        Y: =158
-                        ZIndex: =15
-
-                    Label5 As label:
-                        BorderColor: =RGBA(0, 0, 0, 0)
-                        BorderStyle: =BorderStyle.None
-                        BorderThickness: =2
-                        Color: =RGBA(51, 51, 51, 1)
-                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                        DisabledColor: =RGBA(166, 166, 166, 1)
-                        FocusedBorderThickness: =4
-                        Font: =Font.'Segoe UI'
-                        Height: =26
-                        OnSelect: =Select(Parent)
-                        Size: =21
-                        Text: =ThisItem.Priority.Value
-                        Width: =450
-                        X: =120
-                        Y: =162
-                        ZIndex: =16
 
         HeaderContDash As groupContainer.verticalAutoLayoutContainer:
             BorderColor: =RGBA(255, 255, 255, 1)
