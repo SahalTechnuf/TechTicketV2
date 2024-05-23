@@ -763,7 +763,7 @@
                         Visible: =!IsBlank(ImageImage_Add.Image)
                         Width: =46
                         X: =AddPictureImage_Add.Width - 10
-                        Y: =AddPictureImage_Add.Height - 190
+                        Y: =DataCardKeyImage_Add.Height + 25
                         ZIndex: =10
 
         HeaderContAdd As groupContainer.verticalAutoLayoutContainer:

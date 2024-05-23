@@ -733,7 +733,7 @@
                         Visible: =!IsBlank(ImageImage_Edit.Image)
                         Width: =46
                         X: =AddPictureImage_Edit.Width - 10
-                        Y: =DataCardKeyImage_Add.Height + 25
+                        Y: =DataCardKeyImage_Edit.Height + 25
                         ZIndex: =10
 
                 Edit_Desc As typedDataCard.textualEditCard:
