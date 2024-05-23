@@ -2104,8 +2104,8 @@
         },
         {
           "Category": "Design",
-          "PropertyName": "Color",
-          "RuleProviderType": "User"
+          "PropertyName": "Visible",
+          "RuleProviderType": "Unknown"
         },
         {
           "Category": "Design",
@@ -2119,8 +2119,8 @@
         },
         {
           "Category": "Design",
-          "PropertyName": "Visible",
-          "RuleProviderType": "User"
+          "PropertyName": "Color",
+          "RuleProviderType": "Unknown"
         },
         {
           "Category": "Behavior",
@@ -2236,8 +2236,8 @@
       "Properties": [
         {
           "Category": "Design",
-          "PropertyName": "Fill",
-          "RuleProviderType": "User"
+          "PropertyName": "BorderColor",
+          "RuleProviderType": "Unknown"
         },
         {
           "Category": "Design",
@@ -2256,8 +2256,8 @@
         },
         {
           "Category": "Design",
-          "PropertyName": "BorderColor",
-          "RuleProviderType": "User"
+          "PropertyName": "Fill",
+          "RuleProviderType": "Unknown"
         },
         {
           "Category": "Design",
@@ -2398,8 +2398,8 @@
       "Properties": [
         {
           "Category": "Design",
-          "PropertyName": "Fill",
-          "RuleProviderType": "User"
+          "PropertyName": "Visible",
+          "RuleProviderType": "Unknown"
         },
         {
           "Category": "Design",
@@ -2468,8 +2468,8 @@
         },
         {
           "Category": "Design",
-          "PropertyName": "Visible",
-          "RuleProviderType": "User"
+          "PropertyName": "Fill",
+          "RuleProviderType": "Unknown"
         },
         {
           "Category": "Behavior",
@@ -9480,7 +9480,7 @@
         {
           "Category": "Behavior",
           "PropertyName": "OnSelect",
-          "RuleProviderType": "User"
+          "RuleProviderType": "Unknown"
         }
       ],
       "StyleName": "defaultIconStyle",
@@ -13467,7 +13467,7 @@
         {
           "Category": "Design",
           "PropertyName": "Fill",
-          "RuleProviderType": "User"
+          "RuleProviderType": "Unknown"
         },
         {
           "Category": "Design",
@@ -13647,7 +13647,7 @@
         {
           "Category": "Design",
           "PropertyName": "Fill",
-          "RuleProviderType": "User"
+          "RuleProviderType": "Unknown"
         },
         {
           "Category": "Design",
