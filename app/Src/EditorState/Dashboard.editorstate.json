@@ -688,7 +688,7 @@
       "MetaDataIDKey": "",
       "Name": "DashAuthor",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 8,
+      "ParentIndex": 7,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1103,7 +1103,7 @@
       "MetaDataIDKey": "",
       "Name": "DashCat",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 3,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1443,7 +1443,7 @@
       "MetaDataIDKey": "",
       "Name": "DashClick",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 2,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1774,7 +1774,7 @@
       "MetaDataIDKey": "",
       "Name": "DashDesc",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 16,
+      "ParentIndex": 14,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2096,7 +2096,7 @@
       "MetaDataIDKey": "",
       "Name": "DashDnT",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 12,
+      "ParentIndex": 11,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2428,7 +2428,7 @@
       "MetaDataIDKey": "",
       "Name": "DashEmail",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 10,
+      "ParentIndex": 9,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3949,7 +3949,7 @@
       "MetaDataIDKey": "",
       "Name": "Date",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 13,
+      "ParentIndex": 12,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4309,7 +4309,7 @@
       "MetaDataIDKey": "",
       "Name": "galleryTemplate4_1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 1,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4612,7 +4612,7 @@
       "MetaDataIDKey": "",
       "Name": "ID_Dash",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 9,
+      "ParentIndex": 8,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4932,7 +4932,7 @@
       "MetaDataIDKey": "",
       "Name": "ImagePreview",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 5,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5194,7 +5194,7 @@
       "MetaDataIDKey": "",
       "Name": "Label_DashAuthor",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 7,
+      "ParentIndex": 6,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5532,7 +5532,7 @@
       "MetaDataIDKey": "",
       "Name": "Label_DashEmail",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 11,
+      "ParentIndex": 10,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -7442,7 +7442,7 @@
       "MetaDataIDKey": "",
       "Name": "PHimage",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 6,
+      "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -9087,7 +9087,7 @@
       "MetaDataIDKey": "",
       "Name": "StatusButton",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 4,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -9341,7 +9341,7 @@
       "MetaDataIDKey": "",
       "Name": "Time",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 14,
+      "ParentIndex": 13,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {

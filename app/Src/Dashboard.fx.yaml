@@ -67,7 +67,7 @@
 
         BodyContDash As groupContainer.verticalAutoLayoutContainer:
             BorderStyle: =BorderStyle.None
-            Height: =716
+            Height: =Parent.Height - (HeaderContDash.Height + SearchBarCont.Height + FooterContDash.Height)
             LayoutDirection: =LayoutDirection.Vertical
             LayoutMode: =LayoutMode.Auto
             RadiusBottomLeft: =4
@@ -75,7 +75,7 @@
             RadiusTopLeft: =4
             RadiusTopRight: =4
             Width: =Parent.Width
-            Y: =302
+            Y: =HeaderContDash.Height + SearchBarCont.Height
             ZIndex: =2
 
             DashGallery As groupContainer.verticalAutoLayoutContainer:
@@ -671,7 +671,7 @@
             RadiusTopLeft: =4
             RadiusTopRight: =4
             Width: =Parent.Width
-            Y: =189
+            Y: =HeaderContDash.Height
             ZIndex: =10
 
             SearchTicket As text:
