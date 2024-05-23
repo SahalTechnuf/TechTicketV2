@@ -288,7 +288,7 @@
       "MetaDataIDKey": "",
       "Name": "Add_Image",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 3,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -426,7 +426,7 @@
       "MetaDataIDKey": "",
       "Name": "Add_Radio",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 2,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1874,7 +1874,7 @@
       "MetaDataIDKey": "",
       "Name": "Button_DeleteImage_Add",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 4,
+      "ParentIndex": 7,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6455,7 +6455,7 @@
       "MetaDataIDKey": "",
       "Name": "format_Add",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 7,
+      "ParentIndex": 6,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6951,7 +6951,7 @@
       "MetaDataIDKey": "",
       "Name": "Icon_upload_Add",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 5,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -10604,7 +10604,7 @@
       "MetaDataIDKey": "",
       "Name": "upload_Add",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 6,
+      "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
