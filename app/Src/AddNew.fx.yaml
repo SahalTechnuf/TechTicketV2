@@ -849,7 +849,6 @@
                 ZIndex: =1
 
             Popup_Add As label:
-                Align: =Align.Center
                 BorderColor: =RGBA(0, 0, 0, 0)
                 BorderStyle: =BorderStyle.None
                 BorderThickness: =2
@@ -859,7 +858,7 @@
                 Fill: =RGBA(202, 202, 202, 1)
                 FocusedBorderThickness: =4
                 Font: =Font.Arial
-                Height: =279
+                Height: =650
                 Size: =21
                 Text: |-
                     ="For immediate emergencies, please call 911.
@@ -884,6 +883,7 @@
                 ZIndex: =2
 
             Popup_Close_Add As button:
+                Align: =Align.Left
                 BorderColor: =RGBA(255, 255, 255, 1)
                 BorderThickness: =3
                 DisabledBorderColor: =RGBA(0, 0, 0, 0)
