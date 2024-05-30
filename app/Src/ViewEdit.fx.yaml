@@ -1415,8 +1415,7 @@
                 BorderStyle: =BorderStyle.None
                 BorderThickness: =2
                 Color: |
-                    =//RGBA(51, 51, 51, 1)
-                    If ("For immediate emergencies, please call 911.", Color.Red,Color.Black)
+                    =RGBA(51, 51, 51, 1)
                 DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Fill: =RGBA(202, 202, 202, 1)
