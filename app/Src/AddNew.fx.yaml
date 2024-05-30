@@ -859,7 +859,7 @@
                 Fill: =RGBA(202, 202, 202, 1)
                 FocusedBorderThickness: =4
                 Font: =Font.Arial
-                Height: =640
+                Height: =740
                 Size: =21
                 Text: =
                 Width: =570
@@ -915,7 +915,7 @@
                 Text: ="For immediate emergencies, please call 911."
                 Width: =571
                 X: =Parent.Width/2 - Self.Width/2
-                Y: =Parent.Height/2 - 300
+                Y: =Parent.Height/2 - 340
                 ZIndex: =4
 
             popuptext2 As label:
@@ -927,8 +927,8 @@
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 FocusedBorderThickness: =4
                 Font: =Font.'Segoe UI'
-                Height: =545
-                PaddingTop: =150
+                Height: =497
+                PaddingTop: =50
                 Size: =21
                 Text: |-
                     ="For emergency maintenance requests, please call the office at (301) 678-9995.
@@ -947,6 +947,6 @@
                      . Sewer backup "
                 Width: =560
                 X: =Parent.Width/2 - Self.Width/2
-                Y: =Parent.Width/2 +10
+                Y: =275
                 ZIndex: =5
 
