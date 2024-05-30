@@ -896,7 +896,7 @@
                 Visible: =showHint
                 Width: =26
                 X: =Parent.Width/2 + Popup_Add.Width/2 - 25
-                Y: =Parent.Height/2 - Popup_Add.Height/2 - 30 
+                Y: =Parent.Height/2 - Popup_Add.Height/2 + 2 
                 ZIndex: =3
 
             Popuptext1 As label:
