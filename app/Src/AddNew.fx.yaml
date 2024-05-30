@@ -945,6 +945,6 @@
                      . Sewer backup "
                 Width: =560
                 X: =Parent.Width/2 - Self.Width/2
-                Y: =Parent.Width/2 
+                Y: =Parent.Width/2
                 ZIndex: =5
 
