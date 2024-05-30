@@ -546,8 +546,7 @@
                         Height: =28
                         OnSelect: =Select(Parent)
                         Size: =17
-                        Text: |-
-                            ="Priority:"
+                        Text: ="Priority"
                         Width: =101
                         X: =22
                         Y: =160
