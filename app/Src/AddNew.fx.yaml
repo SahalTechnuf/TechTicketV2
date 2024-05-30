@@ -928,6 +928,7 @@
                 FocusedBorderThickness: =4
                 Font: =Font.'Segoe UI'
                 Height: =497
+                PaddingLeft: =0
                 PaddingTop: =50
                 Size: =21
                 Text: |-
