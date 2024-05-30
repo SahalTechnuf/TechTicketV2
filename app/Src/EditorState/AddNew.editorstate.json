@@ -8638,7 +8638,7 @@
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "5",
+          "AutoRuleBindingString": "",
           "InvariantPropertyName": "PaddingTop",
           "IsLockable": false,
           "NameMapSourceSchema": "?"
@@ -8734,7 +8734,7 @@
         {
           "Category": "Design",
           "PropertyName": "PaddingTop",
-          "RuleProviderType": "User"
+          "RuleProviderType": "Unknown"
         },
         {
           "Category": "Design",
