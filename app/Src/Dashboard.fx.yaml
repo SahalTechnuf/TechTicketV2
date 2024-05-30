@@ -550,7 +550,7 @@
                         Text: |-
                             ="Priority:"
                         Width: =105
-                        X: =22
+                        X: =20
                         Y: =160
                         ZIndex: =16
 
