@@ -529,8 +529,8 @@
                         Size: =17
                         Text: =ThisItem.Priority.Value
                         Width: =152
-                        X: =118
-                        Y: =160
+                        X: =115
+                        Y: =163
                         ZIndex: =15
 
                     Label_Priority As label:
