@@ -530,7 +530,7 @@
                         Text: =ThisItem.Priority.Value
                         Width: =152
                         X: =115
-                        Y: =163
+                        Y: =162
                         ZIndex: =15
 
                     Label_Priority As label:
@@ -546,8 +546,7 @@
                         Height: =32
                         OnSelect: =Select(Parent)
                         Size: =17
-                        Text: |-
-                            ="Priority:"
+                        Text: ="Priority"
                         Width: =101
                         X: =22
                         Y: =160
