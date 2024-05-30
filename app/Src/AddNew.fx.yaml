@@ -914,7 +914,7 @@
                 Text: ="For immediate emergencies, please call 911."
                 Width: =571
                 X: =Parent.Width/2 - Self.Width/2
-                Y: =281
+                Y: =Parent.Height/2 - 300
                 ZIndex: =4
 
             popuptext2 As label:
