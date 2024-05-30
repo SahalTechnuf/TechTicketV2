@@ -543,10 +543,11 @@
                         FocusedBorderThickness: =4
                         Font: =Font.'Segoe UI'
                         FontWeight: =FontWeight.Bold
-                        Height: =32
+                        Height: =34
                         OnSelect: =Select(Parent)
                         Size: =17
-                        Text: ="Priority"
+                        Text: |-
+                            ="Priority:"
                         Width: =101
                         X: =22
                         Y: =160
