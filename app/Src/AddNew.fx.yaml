@@ -870,7 +870,8 @@
             Popup_Close_Add As button:
                 Align: =Align.Left
                 BorderColor: =RGBA(255, 255, 255, 1)
-                BorderThickness: =3
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =0
                 DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisabledFill: =RGBA(244, 244, 244, 1)
