@@ -534,6 +534,7 @@
                         ZIndex: =15
 
                     Label_Priority As label:
+                        Align: =Align.Center
                         BorderColor: =RGBA(0, 0, 0, 0)
                         BorderStyle: =BorderStyle.None
                         BorderThickness: =2
