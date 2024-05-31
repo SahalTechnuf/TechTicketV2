@@ -459,9 +459,8 @@
                         BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                         BorderThickness: =2
                         Color: =RGBA(51, 51, 51, 1)
-                        Default: |-
-                            =//Parent.Default
-                            LookUp('Work Progress Tracker', Title = DataCardValueTitle_Add.Selected.Title, 'Service Description')
+                        Default: |
+                            =Parent.Default
                         DelayOutput: =true
                         DisabledBorderColor: =RGBA(0, 0, 0, 0)
                         DisabledColor: =RGBA(166, 166, 166, 1)
@@ -470,6 +469,7 @@
                         FocusedBorderThickness: =4
                         Font: =Font.'Segoe UI'
                         Height: =Add_Desc.Height - DataCardKeyDesc_Add.Height - 35
+                        HintText: =LookUp('Work Progress Tracker', Title = DataCardValueTitle_Add.Selected.Title, 'Service Description')
                         HoverBorderColor: =RGBA(0, 94, 146, 1)
                         HoverColor: =RGBA(51, 51, 51, 1)
                         HoverFill: =RGBA(255, 255, 255, 1)
