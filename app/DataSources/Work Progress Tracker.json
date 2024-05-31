@@ -3,7 +3,7 @@
     "ApiId": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
     "CdpRevision": {
       "BaseUrl": "/",
-      "LastChangedTimeString": "2024-03-28T20:39:59.8460000Z",
+      "LastChangedTimeString": "2024-04-24T17:00:22.2290000Z",
       "RevisionNumber": 1
     },
     "ConnectedDataSourceInfoNameMapping": {
@@ -37,6 +37,7 @@
       "ID": "ID",
       "Modified": "Modified",
       "OData__ColorTag": "Color Tag",
+      "ServiceDescription": "Service Description",
       "Title": "Title"
     },
     "DatasetName": "https://netorg4829107.sharepoint.com/sites/TechnufTicketingSystem2",
