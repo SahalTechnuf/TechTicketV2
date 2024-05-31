@@ -143,7 +143,7 @@
                     AllowedValues: =DataSourceInfo([@'Technuf Service Request'], DataSourceInfo.AllowedValues, Title)
                     BorderColor: =RGBA(166, 166, 166, 1)
                     BorderStyle: =BorderStyle.Solid
-                    DataField: ="Select category"
+                    DataField: ="Select Category"
                     Default: ="Select category"
                     DisplayMode: =Parent.DisplayMode
                     DisplayName: =DataSourceInfo([@'Technuf Service Request'],DataSourceInfo.DisplayName,Title)
