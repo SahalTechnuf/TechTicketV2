@@ -934,7 +934,7 @@
                 Text: |-
                     ="For emergency maintenance requests, please call the office at                           .
                     
-                    Emergencies include:
+                    
                      . Fire 
                      . Water Leak/Flooding
                      . Gas Leak
@@ -970,4 +970,23 @@
                 X: =Parent.Width/2
                 Y: =Parent.Height/2 -210
                 ZIndex: =6
+
+            Label3 As label:
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                Color: =RGBA(51, 51, 51, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FocusedBorderThickness: =4
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Bold
+                Height: =70
+                Size: =21
+                Text: |-
+                    ="Emergencies include:"
+                Width: =560
+                X: =60
+                Y: =60
+                ZIndex: =7
 
