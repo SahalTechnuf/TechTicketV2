@@ -466,10 +466,10 @@
                                 "Maintenance requests covers repairs, HVAC maintenance, plumbing, electrical fixes, cleaning services, and overseeing building security.",
                                 If(
                                     DataCardValueTitle_Add.Selected.Title = "Office Supply",
-                                    "Office supply requests cover office stationery, furniture, and other office essentials.",
+                                    "Office support encompasses a range of administrative and clerical tasks essential for smooth office operations. This includes managing office supplies, handling mail and correspondence, filing and documentation, and providing general administrative assistance. Ensure daily operations run smoothly and efficiently by effectively managing office support activities.",
                                     If(
                                         DataCardValueTitle_Add.Selected.Title = "IT",
-                                        "IT requests cover hardware issues, software installation, network problems, and other technical support.",
+                                        "IT support involves managing and maintaining the office’s technological infrastructure. This includes providing technical assistance to employees, troubleshooting hardware and software issues, managing network security, and ensuring data integrity.",
                                         ""
                                     )
                         DelayOutput: =true
