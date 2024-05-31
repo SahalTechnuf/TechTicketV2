@@ -86,7 +86,7 @@
                             Defaults('Technuf Service Request'),
                             {
                                 Title: DataCardValueTitle_Add.Selected.Title,
-                                Description:LookUp('Work Progress Tracker', Title =  DataCardValueDesc_Add.Selected.Title).'Service Description',
+                                Description:LookUp('Work Progress Tracker', Title =  DataCardValueDesc_Add.Selected.Title,'Service Description'),
                                 'Image (Optional)': ImageImage_Add.Image,
                                 'Progress/Status': { Value: "New" },
                                 'Issue Date and Time': Now(),
@@ -461,17 +461,7 @@
                         Color: =RGBA(51, 51, 51, 1)
                         Default: |-
                             =//Parent.Default
-                            If(
-                                DataCardValueTitle_Add.Selected.Title = "Maintenance",
-                                "Maintenance requests covers repairs, HVAC maintenance, plumbing, electrical fixes, cleaning services, and overseeing building security.",
-                                If(
-                                    DataCardValueTitle_Add.Selected.Title = "Office Supply",
-                                    "Office support encompasses a range of administrative and clerical tasks essential for smooth office operations. This includes managing office supplies, handling mail and correspondence, filing and documentation, and providing general administrative assistance. Ensure daily operations run smoothly and efficiently by effectively managing office support activities.",
-                                    If(
-                                        DataCardValueTitle_Add.Selected.Title = "IT",
-                                        "IT support involves managing and maintaining the office’s technological infrastructure. This includes providing technical assistance to employees, troubleshooting hardware and software issues, managing network security, and ensuring data integrity.",
-                                        ""
-                                    )
+                            LookUp('Work Progress Tracker', Title = DataCardValueTitle_Add.Selected.Title, 'Service Description')
                         DelayOutput: =true
                         DisabledBorderColor: =RGBA(0, 0, 0, 0)
                         DisabledColor: =RGBA(166, 166, 166, 1)
