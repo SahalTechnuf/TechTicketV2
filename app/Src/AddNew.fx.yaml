@@ -955,17 +955,19 @@
                 BorderColor: =RGBA(0, 0, 0, 0)
                 BorderStyle: =BorderStyle.None
                 BorderThickness: =2
-                Color: =RGBA(51, 51, 51, 1)
+                Color: =RGBA(0, 0, 0, 1)
                 DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 FocusedBorderThickness: =4
                 Font: =Font.'Segoe UI'
                 FontWeight: =FontWeight.Bold
                 Height: =70
+                PaddingLeft: =0
+                PaddingTop: =3
                 Size: =21
                 Text: =" (301) 678-9995"
                 Width: =230
-                X: =312
-                Y: =356
+                X: =Parent.Width/2
+                Y: =Parent.Height/2 -210
                 ZIndex: =6
 
