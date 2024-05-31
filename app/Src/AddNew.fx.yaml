@@ -86,7 +86,7 @@
                             Defaults('Technuf Service Request'),
                             {
                                 Title: DataCardValueTitle_Add.Selected.Title,
-                                Description:LookUp('Work Progress Tracker', Service Description =  DataCardValueDesc_Add.Text,)
+                                Description:LookUp('Work Progress Tracker', Title =  DataCardValueDesc_Add.Selected.Title).'Service Description',
                                 'Image (Optional)': ImageImage_Add.Image,
                                 'Progress/Status': { Value: "New" },
                                 'Issue Date and Time': Now(),
