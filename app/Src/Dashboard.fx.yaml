@@ -515,9 +515,9 @@
                                 ThisItem.Priority.Value,
                             
                                 "Emergency", Color.Red,
-                                "High", Color.Pink,
+                                "High", Color.DeepPink,
                                 "Medium", Color.Orange,
-                                "Low", Color.Blue,
+                                "Low", Color.SteelBlue,
                                 RGBA(0, 0, 0, 1)                  
                             )
                         DisabledBorderColor: =RGBA(0, 0, 0, 0)
