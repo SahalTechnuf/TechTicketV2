@@ -517,7 +517,7 @@
                                 "Emergency", Color.Red,
                                 "High", RGBA ( 224, 78, 230, 100),
                                 "Medium", Color.Orange,
-                                "Low", Color.Blue,
+                                "Low", RGBA(22, 124, 219, 100),
                                 RGBA(0, 0, 0, 1)                  
                             )
                         DisabledBorderColor: =RGBA(0, 0, 0, 0)
