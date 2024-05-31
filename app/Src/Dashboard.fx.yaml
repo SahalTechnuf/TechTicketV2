@@ -515,7 +515,7 @@
                                 ThisItem.Priority.Value,
                             
                                 "Emergency", Color.Red,
-                                "High", Color.DeepPink,
+                                "High", RGBA ( 224, 78, 230, 100),
                                 "Medium", Color.Orange,
                                 "Low", Color.Blue,
                                 RGBA(0, 0, 0, 1)                  
