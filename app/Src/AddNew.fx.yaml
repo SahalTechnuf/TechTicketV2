@@ -971,7 +971,7 @@
                 Y: =Parent.Height/2 -210
                 ZIndex: =6
 
-            Label3 As label:
+            Popuptext4 As label:
                 BorderColor: =RGBA(0, 0, 0, 0)
                 BorderStyle: =BorderStyle.None
                 BorderThickness: =2
@@ -986,7 +986,7 @@
                 Text: |-
                     ="Emergencies include:"
                 Width: =560
-                X: =60
-                Y: =60
+                X: =Parent.Width/2 -280
+                Y: =Parent.Height/2 -170
                 ZIndex: =7
 
