@@ -933,21 +933,20 @@
                 PaddingTop: =50
                 Size: =21
                 Text: |-
-                    ="For emergency maintenance requests, please call the office at                           .
+                    ="For emergency maintenance requests, please call the office at                           . " & Char(10) &  Char(10) &
                     
                     
-                     . Fire 
-                     . Water Leak/Flooding
-                     . Gas Leak
-                     . Non-Functional Toilet
-                     . Broken/non-functional door, windows
-                       or locks
-                     . No AC/Heat
-                     . No water
-                     . No electricity
-                     . Brocken Refrigerator
-                     . Sewer backup "
-                Width: =560
+                    "• Fire" & Char(10) &
+                    "• Water Leak/Flooding" & Char(10) &
+                    "• Gas Leak" & Char(10) &
+                    "• Non-Functional Toilet" & Char(10) &
+                    "• Broken/non-functional door, windows or locks" & Char(10) &
+                    "• No AC/Heat" & Char(10) &
+                    "• No water" & Char(10) &
+                    "• No electricity" & Char(10) &
+                    "• Broken Refrigerator" & Char(10) &
+                    "• Sewer backup"
+                Width: =580
                 X: =Parent.Width/2 - Self.Width/2
                 Y: =Parent.Height/2 - Self.Height/2
                 ZIndex: =5
