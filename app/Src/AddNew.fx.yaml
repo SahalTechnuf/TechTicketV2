@@ -968,7 +968,7 @@
                 Size: =21
                 Text: =" (301) 678-9995"
                 Width: =230
-                X: =Parent.Width/2 + 4
+                X: =Parent.Width -410
                 Y: =Parent.Height/2 -210
                 ZIndex: =6
 
@@ -989,7 +989,7 @@
                 Text: |-
                     ="Emergencies include:"
                 Width: =560
-                X: =Parent.Width/2 -280
+                X: =Parent.Width/2 -290
                 Y: =Parent.Height/2 -170
                 ZIndex: =7
 
