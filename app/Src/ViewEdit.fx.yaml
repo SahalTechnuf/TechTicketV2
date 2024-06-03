@@ -1207,7 +1207,7 @@
                         OnSelect: =Select(Parent)
                         PressedFill: =RGBA(135, 100, 184, 1)
                         Visible: |
-                            =If (ThisItem.Value = "Resolved", false,true)
+                            =If (ThisItem.Value = "Closed", false,true)
                         Width: =Parent.TemplateWidth - (Circle1.X + Circle1.Width) + 12
                         X: =80
                         Y: =25
