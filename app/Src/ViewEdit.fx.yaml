@@ -1531,7 +1531,7 @@
                 Text: ="(301) 678-9995"
                 Width: =234
                 X: =234
-                Y: =342
+                Y: =Parent.Height/2 -227
                 ZIndex: =6
 
             TextLabel4 As label:
