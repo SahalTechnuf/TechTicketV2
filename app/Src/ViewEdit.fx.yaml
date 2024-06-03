@@ -1491,7 +1491,7 @@
                 Height: =769
                 Size: =21
                 Text: |+
-                    ="For emergency maintenance requests, please call the office at                           .
+                    ="For emergency maintenance requests, please call the office at                            .
                     
                     
                     •	Fire 
@@ -1528,7 +1528,7 @@
                 Size: =21
                 Text: ="(301) 678-9995"
                 Width: =234
-                X: =Parent.Width/2 + 13
+                X: =Parent.Width/2 + 15
                 Y: =Parent.Height/2 -217
                 ZIndex: =6
 
