@@ -1509,9 +1509,9 @@
                     "
                     
                     
-                Width: =560
+                Width: =590
                 X: =Parent.Width/2 - Self.Width/2
-                Y: =Parent.Height/2 - Self.Height/2
+                Y: =Parent.Height/2 - Self.Height/2 + 10
                 ZIndex: =5
 
             TextLabe3 As label:
@@ -1530,8 +1530,8 @@
                 Size: =21
                 Text: ="(301) 678-9995"
                 Width: =234
-                X: =Parent.Width/2 + 17
-                Y: =Parent.Height/2 -230
+                X: =234
+                Y: =342
                 ZIndex: =6
 
             TextLabel4 As label:
