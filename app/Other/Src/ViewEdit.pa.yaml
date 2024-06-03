@@ -834,9 +834,9 @@ ViewEdit:
                               ) <= Switch(
                                   DashTickets.Selected.'Progress/Status'.Value,
                                   "Queued", 1,
-                                  "Initiated", 2,
-                                  "In Progress", 3,
-                                  "Resolved", 4,
+                                  "In Progress", 2,
+                                  "Resolved", 3,
+                                  "Closed", 4,
                                   0
                               ),
                               If(ThisItem.Value =  DashTickets.Selected.'Progress/Status'.Value, RGBA(0, 134, 208, 1))
