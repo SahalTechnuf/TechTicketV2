@@ -962,14 +962,14 @@
                 FocusedBorderThickness: =4
                 Font: =Font.'Segoe UI'
                 FontWeight: =FontWeight.Bold
-                Height: =70
+                Height: =57
                 PaddingLeft: =0
-                PaddingTop: =3
+                PaddingTop: =8
                 Size: =21
                 Text: =" (301) 678-9995"
                 Width: =230
-                X: =328
-                Y: =356
+                X: =Parent.Width/2
+                Y: =Parent.Height/2 -208
                 ZIndex: =6
 
             Popuptext4 As label:
