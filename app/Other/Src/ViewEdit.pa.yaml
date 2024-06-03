@@ -965,7 +965,7 @@ ViewEdit:
                           )
                         Height: =2
                         Visible: |
-                          =If (ThisItem.Value = "New", false,true)
+                          =If (ThisItem.Value = "Queued", false,true)
                         Width: =Parent.TemplateWidth - (Circle1.Width + Rectangle1.Width) + 12
                         Y: =Rectangle1.Y
                   - Rectangle1:
