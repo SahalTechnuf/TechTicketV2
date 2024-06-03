@@ -1545,11 +1545,12 @@
                 Font: =Font.'Segoe UI'
                 FontWeight: =FontWeight.Bold
                 Height: =70
+                PaddingLeft: =0
                 Size: =21
                 Text: |-
                     ="Emergencies include:"
-                Width: =560
-                X: =Parent.Width/2 -280
+                Width: =590
+                X: =Parent.Width/2 -290
                 Y: =Parent.Height/2 -170
                 ZIndex: =7
 
