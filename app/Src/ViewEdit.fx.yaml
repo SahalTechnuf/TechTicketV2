@@ -1474,7 +1474,7 @@
                 Height: =70
                 Size: =21
                 Text: ="For immediate emergencies, please call 911."
-                Width: =560
+                Width: =590
                 X: =Parent.Width/2 - Self.Width/2
                 Y: =Parent.Height/2 - 340
                 ZIndex: =4
