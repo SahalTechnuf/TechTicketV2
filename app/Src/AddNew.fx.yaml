@@ -941,7 +941,8 @@
                     "• Water Leak/Flooding" & Char(10) &
                     "• Gas Leak" & Char(10) &
                     "• Non-Functional Toilet" & Char(10) &
-                    "• Broken/non-functional door, windows or locks" & Char(10) &
+                    "• Broken/non-functional door, windows"  & Char(10) &
+                      "or locks" & Char(10) &
                     "• No AC/Heat" & Char(10) &
                     "• No water" & Char(10) &
                     "• No electricity" & Char(10) &
