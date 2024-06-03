@@ -1191,7 +1191,7 @@
                                     "Resolved", 3,
                                     "Closed", 4,
                                     0
-                                ) < Switch(
+                                ) <= Switch(
                                     DashTickets.Selected.'Progress/Status'.Value,
                                     "Queued", 1,
                                     "In Progress", 2,
