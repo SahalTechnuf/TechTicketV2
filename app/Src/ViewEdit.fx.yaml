@@ -1359,14 +1359,14 @@
                             If(
                                 Switch(
                                     ThisItem.Value,
-                                    "New", 1,
-                                    "Initiated", 2,
-                                    "In Progress", 3,
-                                    "Resolved", 4,
+                                    "Queued", 1,
+                                    "In Progress", 2,
+                                    "Resolved", 3,
+                                    "Closed", 4,
                                     0
                                 ) <= Switch(
                                     DashTickets.Selected.'Progress/Status'.Value,
-                                    "New", 1,
+                                    "Queued", 1,
                                     "Initiated", 2,
                                     "In Progress", 3,
                                     "Resolved", 4,
