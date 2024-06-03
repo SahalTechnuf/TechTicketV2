@@ -88,7 +88,7 @@
                                 Title: DataCardValueTitle_Add.Selected.Title,
                                 Description: DataCardValueDesc_Add.Text,
                                 'Image (Optional)': ImageImage_Add.Image,
-                                'Progress/Status': { Value: "New" },
+                                'Progress/Status': { Value: "Queued" },
                                 'Issue Date and Time': Now(),
                                 'Admin Info': LookUp('Work Progress Tracker', Title = DataCardValueTitle_Add.Selected.Title).Admin,
                                 Priority: Radio_Add.Selected
