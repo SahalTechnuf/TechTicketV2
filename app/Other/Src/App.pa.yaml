@@ -1,0 +1,23 @@
+App:
+  Control: App
+  Properties:
+    OnStart: |-
+      =Set(lol, 100);
+
+      ClearCollect(
+          ConcatenatedList,
+          AddColumns(
+              'Work Progress Tracker',
+              ConcatenatedText,
+              Title
+          )
+      )
+    MinScreenHeight: |
+      =640
+    MinScreenWidth: |
+      =640
+    Theme: =PowerAppsTheme
+  Children:
+  - Host:
+      Control: Host
+      Variant: DefaultHostControlVariant

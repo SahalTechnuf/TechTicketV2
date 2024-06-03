@@ -416,13 +416,12 @@
                             =ColorFade(
                                 Switch(
                                     Text(ThisItem.'Progress/Status'.Value),
-                                    "Initiated",
-                                    RGBA(153,207,236,1),
+                                    
                                     "In Progress",
                                     RGBA(252, 228, 10, 100),
                                     "Resolved",
                                     RGBA(10,84,48,1),
-                                    "New",
+                                    "Queued",
                                     RGBA(184, 0, 0, 1),
                                     "Closed",
                                     RGBA(250, 192, 230, 100)

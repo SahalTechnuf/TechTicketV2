@@ -1,0 +1,681 @@
+AddNew:
+  Control: Screen
+  Variant: phoneBrowseLayout_ver3.0
+  Properties:
+    Fill: |
+      =RGBA(255, 255, 255, 1)
+  Children:
+  - ParentContAdd:
+      Control: GroupContainer
+      Variant: manualLayoutContainer
+      Properties:
+        Height: =App.Height
+        Width: =App.Width
+        X: |
+          =0
+      Children:
+      - FooterContAdd:
+          Control: GroupContainer
+          Variant: verticalAutoLayoutContainer
+          Properties:
+            BorderStyle: =BorderStyle.None
+            Height: =115
+            LayoutAlignItems: =LayoutAlignItems.Center
+            LayoutGap: =20
+            LayoutJustifyContent: =LayoutJustifyContent.Center
+            LayoutMode: =LayoutMode.Auto
+            Width: =Parent.Width
+            Y: |-
+              =//1022
+              Parent.Height - FooterContAdd.Height
+          Children:
+          - Button_Cancel_Add:
+              Control: Button
+              Properties:
+                OnSelect: |
+                  =ResetForm(AddForm);
+                  Navigate(Dashboard, Transition.None);
+                Text: ="Cancel"
+                BorderColor: =RGBA(39, 113, 194, 1)
+                Color: =RGBA(0, 134, 208, 1)
+                DisabledBorderColor: =RGBA(204, 231, 246, 1)
+                Fill: =RGBA(255, 255, 255, 1)
+                HoverBorderColor: =RGBA(0, 134, 208, 1)
+                HoverFill: =ColorFade(RGBA(0, 134, 208, 1), -10%)
+                LayoutMinHeight: =70
+                LayoutMinWidth: =280
+                PressedBorderColor: =ColorFade(RGBA(0, 94, 146, 1), -50%)
+                PressedFill: =ColorFade(RGBA(0, 94, 146, 1), -30%)
+                RadiusBottomLeft: =15
+                RadiusBottomRight: =15
+                RadiusTopLeft: =15
+                RadiusTopRight: =15
+                Width: =Parent.Width * 0.5 - 50
+          - Button_Save_Add:
+              Control: Button
+              Properties:
+                OnSelect: |-
+                  =If( (DataCardValueTitle_Add.Selected.Title = "Select Category") || IsBlank(DataCardValueDesc_Add.Text) || IsBlank(DataCardValueTitle_Add.Selected.Title) || IsBlank(Radio_Add.Selected.Value),
+                      Notify("Please fill in all required fields.", NotificationType.Error),
+                      Patch(
+                          'Technuf Service Request',
+                          Defaults('Technuf Service Request'),
+                          {
+                              Title: DataCardValueTitle_Add.Selected.Title,
+                              Description: DataCardValueDesc_Add.Text,
+                              'Image (Optional)': ImageImage_Add.Image,
+                              'Progress/Status': { Value: "New" },
+                              'Issue Date and Time': Now(),
+                              'Admin Info': LookUp('Work Progress Tracker', Title = DataCardValueTitle_Add.Selected.Title).Admin,
+                              Priority: Radio_Add.Selected
+                          }
+                      );
+                      ResetForm(AddForm);
+                      Notify("Saved Successfully", NotificationType.Success);
+                      Navigate(Dashboard, Transition.None)
+                  )
+                Text: ="Save"
+                DisabledBorderColor: =RGBA(153, 207, 236, 1)
+                DisabledColor: =RGBA(255, 255, 255, 1)
+                DisabledFill: =RGBA(0, 134, 208, 1)
+                Fill: =RGBA(0, 134, 208, 1)
+                HoverBorderColor: =RGBA(0, 134, 208, 1)
+                HoverFill: =ColorFade(RGBA(0, 134, 208, 1), -10%)
+                LayoutMinHeight: =70
+                LayoutMinWidth: =280
+                PressedBorderColor: =ColorFade(RGBA(0, 134, 208, 1), -50%)
+                PressedFill: =ColorFade(RGBA(0, 134, 208, 1), -30%)
+                RadiusBottomLeft: =15
+                RadiusBottomRight: =15
+                RadiusTopLeft: =15
+                RadiusTopRight: =15
+                Width: =Parent.Width * 0.5 - 50
+      - BodyContAdd:
+          Control: GroupContainer
+          Variant: verticalAutoLayoutContainer
+          Properties:
+            BorderStyle: =BorderStyle.None
+            Height: |
+              =Parent.Height - HeaderContAdd.Height - FooterContAdd.Height
+            LayoutDirection: =LayoutDirection.Vertical
+            LayoutMode: =LayoutMode.Auto
+            Width: =Parent.Width
+            Y: |-
+              =//188
+              HeaderContAdd.Height
+          Children:
+          - AddForm:
+              Control: Form
+              Layout: vertical
+              Properties:
+                DataSource: ='Technuf Service Request'
+                DefaultMode: =FormMode.New
+                AlignInContainer: =AlignInContainer.Stretch
+                BorderStyle: =BorderStyle.None
+                Height: =Parent.Height
+                LayoutMinHeight: =700
+                LayoutMinWidth: =320
+                NumberOfColumns: =2
+                Width: =Parent.Width
+              Children:
+              - Add_Desc:
+                  Control: TypedDataCard
+                  Variant: textualEditCard
+                  Properties:
+                    DataField: ="Description"
+                    Default: =ThisItem.Description
+                    DisplayName: =DataSourceInfo([@'Technuf Service Request'],DataSourceInfo.DisplayName,Description)
+                    MaxLength: =DataSourceInfo([@'Technuf Service Request'], DataSourceInfo.MaxLength, Description)
+                    Required: =true
+                    Update: =DataCardValueDesc_Add.Text
+                    DisplayMode: =Parent.DisplayMode
+                    Height: |-
+                      =//150
+                      //AddForm.Height*0.180
+                      If((App.Width > App.Height), AddForm.Height - Add_Title.Height, (AddForm.Height - Add_Title.Height) * 0.5)
+                    Width: |-
+                      =//320
+                      If((App.Width > App.Height), AddForm.Width/2, Parent.Width)
+                    Y: =If(App.Width>App.Height, 1, 1)
+                  Children:
+                  - StarVisibleDesc_Add:
+                      Control: Label
+                      Properties:
+                        Text: ="*"
+                        Align: =Align.Center
+                        Color: =RGBA(255, 0, 0, 1)
+                        FontWeight: =FontWeight.Semibold
+                        Height: =DataCardKeyDesc_Add.Height
+                        PaddingLeft: =0
+                        Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                        Width: =30
+                        Wrap: =false
+                        Y: =15
+                  - ErrorMessageDesc_Add:
+                      Control: Label
+                      Properties:
+                        Live: =Live.Assertive
+                        Text: =Parent.Error
+                        AutoHeight: =true
+                        Color: =RGBA(168, 0, 0, 1)
+                        DisabledColor: =RGBA(168, 0, 0, 1)
+                        FontWeight: =FontWeight.Semibold
+                        Height: =10
+                        PaddingBottom: =0
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        Size: =21
+                        Visible: =Parent.DisplayMode=DisplayMode.Edit
+                        Width: =Parent.Width - 60
+                        X: =30
+                        Y: =DataCardValueDesc_Add.Y + DataCardValueDesc_Add.Height
+                  - DataCardValueDesc_Add:
+                      Control: Text
+                      Properties:
+                        Default: |
+                          =Parent.Default
+                        DelayOutput: =true
+                        HintText: =LookUp('Work Progress Tracker', Title = DataCardValueTitle_Add.Selected.Title, 'Service Description')
+                        MaxLength: =Parent.MaxLength
+                        Tooltip: =Parent.DisplayName
+                        BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                        DisplayMode: =Parent.DisplayMode
+                        Height: =Add_Desc.Height - DataCardKeyDesc_Add.Height - 35
+                        HoverBorderColor: =RGBA(0, 94, 146, 1)
+                        Mode: =TextMode.MultiLine
+                        PaddingLeft: =15
+                        PaddingTop: =20
+                        PressedBorderColor: =RGBA(153, 207, 236, 1)
+                        RadiusBottomLeft: =15
+                        RadiusBottomRight: =15
+                        RadiusTopLeft: =15
+                        RadiusTopRight: =15
+                        Width: =Parent.Width - 80
+                        X: =40
+                        Y: =DataCardKeyDesc_Add.Y + DataCardKeyDesc_Add.Height + 5
+                  - DataCardKeyDesc_Add:
+                      Control: Label
+                      Properties:
+                        Text: =Parent.DisplayName
+                        AutoHeight: =true
+                        FontWeight: =FontWeight.Semibold
+                        Height: =48
+                        PaddingLeft: =0
+                        PaddingTop: =4
+                        Width: =Parent.Width - 60
+                        Wrap: =false
+                        X: =30
+                        Y: =10
+              - Add_Image:
+                  Control: TypedDataCard
+                  Variant: addLargePictureCard
+                  Properties:
+                    DataField: ="Image_x0028_Optional_x0029_"
+                    Default: =ThisItem.'Image (Optional)'
+                    DisplayName: =DataSourceInfo([@'Technuf Service Request'],DataSourceInfo.DisplayName,'Image (Optional)')
+                    Update: =ImageImage_Add.Image
+                    DisplayMode: =Parent.DisplayMode
+                    Height: |-
+                      =//384
+                      //AddForm.Height*0.461
+                      If((App.Width > App.Height), AddForm.Height - Add_Title.Height, (AddForm.Height - Add_Title.Height) * 0.5)
+                    Width: =If((App.Width > App.Height), AddForm.Width/2, Parent.Width)
+                    X: =If(App.Width>App.Height, 1, 0)
+                    Y: =If(App.Width>App.Height, 1, 3)
+                  Children:
+                  - Button_DeleteImage_Add:
+                      Control: Icon
+                      Variant: Trash
+                      Properties:
+                        OnSelect: =Set(ClearImage, true)
+                        Color: =RGBA(0, 121, 187, 1)
+                        Height: =36
+                        HoverColor: =Color.DarkGray
+                        Icon: =Icon.Trash
+                        Visible: =!IsBlank(ImageImage_Add.Image)
+                        Width: =46
+                        X: =AddPictureImage_Add.Width - 10
+                        Y: =DataCardKeyImage_Add.Height + 25
+                  - AddPictureImage_Add:
+                      Control: AddMedia
+                      Properties:
+                        OnSelect: =Set(ClearImage, false)
+                        ChangePictureText: =""
+                        Text: =""
+                        BorderColor: =RGBA(153, 207, 236, 1)
+                        BorderStyle: =BorderStyle.None
+                        Color: =RGBA(0, 0, 0, 1)
+                        DisabledFill: =RGBA(0, 134, 208, 1)
+                        Fill: =RGBA(102, 182, 227, 1)
+                        Height: =Add_Image.Height - DataCardKeyImage_Add.Height - 35
+                        HoverFill: =ColorFade(RGBA(135, 100, 184, 1), 80%)
+                        PressedBorderColor: =ColorFade(RGBA(0, 134, 208, 1), -50%)
+                        Size: =18
+                        Width: =Parent.Width - 80
+                        X: =40
+                        Y: |-
+                          =//62
+                          DataCardKeyImage_Add.Y + DataCardKeyImage_Add.Height + 5
+                  - format_Add:
+                      Control: Label
+                      Layout: vertical
+                      Properties:
+                        Text: |-
+                          ="Supported format: PNG, JPEG, GIF"
+                        Align: =Align.Center
+                        FontWeight: =FontWeight.Lighter
+                        Height: =35
+                        PaddingLeft: =20
+                        Size: =18
+                        Visible: =IsBlank(ImageImage_Add.Image)
+                        X: =Parent.Width/2 - Self.Width/2
+                        Y: |
+                          =AddPictureImage_Add.Y + AddPictureImage_Add.Height/2 + Self.Height
+                  - upload_Add:
+                      Control: Label
+                      Layout: vertical
+                      Properties:
+                        Text: ="Upload a photo"
+                        Align: =Align.Center
+                        FontWeight: =FontWeight.Bold
+                        Height: =35
+                        Size: =18
+                        Visible: =IsBlank(ImageImage_Add.Image)
+                        X: =Parent.Width/2 - Self.Width/2
+                        Y: |
+                          =AddPictureImage_Add.Y + AddPictureImage_Add.Height/2
+                  - Icon_upload_Add:
+                      Control: Image
+                      Layout: vertical
+                      Properties:
+                        Image: ='file-upload_10015516'
+                        Height: =71
+                        Visible: =IsBlank(ImageImage_Add.Image)
+                        Width: =104
+                        X: =Parent.Width/2 - Self.Width/2
+                        Y: |-
+                          =AddPictureImage_Add.Y + AddPictureImage_Add.Height/2 - Self.Height
+
+                          //120
+                  - StarVisibleImage_Add:
+                      Control: Label
+                      Properties:
+                        Text: ="*"
+                        Align: =Align.Center
+                        FontWeight: =FontWeight.Semibold
+                        Height: =DataCardKeyImage_Add.Height
+                        PaddingLeft: =0
+                        Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                        Width: =30
+                        Wrap: =false
+                        Y: =DataCardKeyImage_Add.Y
+                  - ErrorMessageImage_Add:
+                      Control: Label
+                      Properties:
+                        Live: =Live.Assertive
+                        Text: =Parent.Error
+                        AutoHeight: =true
+                        Color: =RGBA(168, 0, 0, 1)
+                        DisabledColor: =RGBA(168, 0, 0, 1)
+                        FontWeight: =FontWeight.Semibold
+                        Height: =10
+                        PaddingBottom: =0
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        Size: =21
+                        Visible: =Parent.DisplayMode=DisplayMode.Edit
+                        Width: =Parent.Width - 60
+                        X: =30
+                        Y: =ImageImage_Add.Y + ImageImage_Add.Height
+                  - ImageImage_Add:
+                      Control: Image
+                      Properties:
+                        Image: |-
+                          =If(ClearImage, Blank(), If(IsBlank(AddPictureImage_Add.Media), Parent.Default, AddPictureImage_Add.Media))
+
+                          //If(IsBlank(AddPictureImage_Add.Media), Parent.Default, AddPictureImage_Add.Media)
+                        Tooltip: =Parent.DisplayName
+                        BorderColor: =RGBA(153, 207, 236, 1)
+                        BorderStyle: =BorderStyle.Dashed
+                        DisplayMode: =Parent.DisplayMode
+                        Fill: =RGBA(204, 231, 246, 1)
+                        Height: =AddPictureImage_Add.Height
+                        ImagePosition: =ImagePosition.Fill
+                        RadiusBottomLeft: =15
+                        RadiusBottomRight: =15
+                        RadiusTopLeft: =15
+                        RadiusTopRight: =15
+                        Width: =Parent.Width - 80
+                        X: |
+                          =40
+                        Y: =DataCardKeyImage_Add.Y + DataCardKeyImage_Add.Height + 5
+                  - DataCardKeyImage_Add:
+                      Control: Label
+                      Properties:
+                        Text: =Parent.DisplayName
+                        AutoHeight: =true
+                        FontWeight: =FontWeight.Semibold
+                        Height: =48
+                        PaddingLeft: =0
+                        Width: =Parent.Width - 60
+                        Wrap: =false
+                        X: =30
+                        Y: =10
+              - Add_Title:
+                  Control: TypedDataCard
+                  Variant: allowedValuesStringEditCard
+                  Properties:
+                    AllowedValues: =DataSourceInfo([@'Technuf Service Request'], DataSourceInfo.AllowedValues, Title)
+                    DataField: ="Select Category"
+                    Default: ="Select category"
+                    DisplayName: =DataSourceInfo([@'Technuf Service Request'],DataSourceInfo.DisplayName,Title)
+                    Update: =DataCardValueTitle_Add.Selected.Title
+                    DisplayMode: =Parent.DisplayMode
+                    Height: |-
+                      =//50
+                      //AddForm.Height*0.0600
+                      If((AddForm.Height * 0.15) < 140, 140, AddForm.Height * 0.15)
+                    Width: =Parent.Width
+                  Children:
+                  - DataCardValueTitle_Add:
+                      Control: Dropdown
+                      Properties:
+                        OnChange: |-
+                          =/*Patch(
+                              'Technuf Service Request',
+                              Defaults('Technuf Service Request'),
+                              {
+                                  Title: DataCardValueTitle_Add.Selected.Title, // Assuming TicketCategory is the column name for ticket category
+                                  'Admin Info': LookUp('Work Progress Tracker', Title = DataCardValueTitle_Add.Selected.Title).Admin // Assuming CategoryColumn is the column name for ticket category in Work Progress Tracker list
+                              }
+                          )*/
+                        AllowEmptySelection: =true
+                        Default: =
+                        Items: |-
+                          ='Work Progress Tracker'.Title
+                          //[ "Office Supplies and Admin", "Maintenance", "IT"]
+                        Tooltip: =Parent.DisplayName
+                        BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                        ChevronBackground: =RGBA(219, 219, 219, 1)
+                        ChevronDisabledBackground: =RGBA(255, 255, 255, 1)
+                        ChevronDisabledFill: =RGBA(237, 237, 237, 1)
+                        DisplayMode: =Parent.DisplayMode
+                        Height: =59
+                        HoverBorderColor: =Color.LightSkyBlue
+                        HoverFill: =RGBA(153, 207, 236, 1)
+                        PaddingLeft: =15
+                        PressedBorderColor: =ColorFade(Color.AliceBlue, -30%)
+                        PressedColor: =RGBA(0, 0, 0, 1)
+                        PressedFill: =RGBA(153, 207, 236, 1)
+                        SelectionFill: =RGBA(153, 207, 236, 1)
+                        Width: =Parent.Width - 80
+                        X: =40
+                        Y: |-
+                          =//DataCardKeyTitle_Add.Y + DataCardKeyTitle_Add.Height + 5
+                          60
+                  - StarVisibleTitle_Add:
+                      Control: Label
+                      Properties:
+                        Text: ="*"
+                        Align: =Align.Center
+                        Color: =RGBA(255, 0, 0, 1)
+                        FontWeight: =FontWeight.Semibold
+                        Height: =DataCardKeyTitle_Add.Height
+                        PaddingLeft: =0
+                        Width: =30
+                        Wrap: =false
+                        Y: =13
+                  - ErrorMessageTitle_Add:
+                      Control: Label
+                      Properties:
+                        Live: =Live.Assertive
+                        Text: =Parent.Error
+                        AutoHeight: =true
+                        Color: =RGBA(168, 0, 0, 1)
+                        DisabledColor: =RGBA(168, 0, 0, 1)
+                        FontWeight: =FontWeight.Semibold
+                        Height: =10
+                        PaddingBottom: =0
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        Size: =21
+                        Visible: =Parent.DisplayMode=DisplayMode.Edit
+                        Width: =Parent.Width - 60
+                        X: =30
+                        Y: =DataCardValueTitle_Add.Y + DataCardValueTitle_Add.Height
+                  - DataCardKeyTitle_Add:
+                      Control: Label
+                      Properties:
+                        Text: |-
+                          =//Parent.DisplayName
+                          "Category:"
+                        AutoHeight: =true
+                        FontWeight: =FontWeight.Semibold
+                        Height: =48
+                        PaddingLeft: =0
+                        PaddingTop: =3
+                        Width: =Parent.Width - 60
+                        Wrap: =false
+                        X: =30
+                        Y: =10
+              - Add_Radio:
+                  Control: TypedDataCard
+                  Variant: blankCard
+                  Properties:
+                    DataField: =ThisItem.Priority.Value
+                    Required: =true
+                    Height: =Radio_Add.Height + DataCardKeyRadio_Add.Height + 10
+                    Width: =Parent.Width
+                    Y: =If(App.Width>App.Height, 2, 2)
+                  Children:
+                  - ErrorMessage_Add:
+                      Control: Label
+                      Properties:
+                        Text: =Parent.Error
+                        Height: =5
+                        Visible: =Parent.DisplayMode=DisplayMode.Edit
+                        X: =30
+                        Y: =271
+                  - StarVisiblePri_Add:
+                      Control: Label
+                      Properties:
+                        Text: ="*"
+                        Align: =Align.Center
+                        Color: =RGBA(255, 0, 0, 1)
+                        FontWeight: =FontWeight.Semibold
+                        Height: =DataCardKeyRadio_Add.Height
+                        Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                        Width: =30
+                        Wrap: =false
+                        Y: =16
+                  - Radio_Hint_Add:
+                      Control: Button
+                      Properties:
+                        OnSelect: |-
+                          =UpdateContext({showHint: true})
+                        Text: ="!"
+                        BorderColor: =RGBA(250, 155, 112, 1)
+                        BorderThickness: =3
+                        Color: =RGBA(250, 155, 112, 1)
+                        Fill: =RGBA(0, 0, 0, 0)
+                        FontWeight: =FontWeight.Bold
+                        Height: =25
+                        RadiusBottomLeft: =45
+                        RadiusBottomRight: =45
+                        RadiusTopLeft: =45
+                        RadiusTopRight: =45
+                        Size: =18
+                        Width: =26
+                        X: =240
+                        Y: =80
+                  - Radio_Add:
+                      Control: Radio
+                      Properties:
+                        OnSelect: =Radio_Add.Selected.Value
+                        Default: =ThisItem.Priority.Value
+                        Items: =["Emergency", "High", "Medium", "Low"]
+                        Color: |-
+                          =//If(ThisItem.Priority.Value ="Emergency",Color.Red,RGBA (51, 51, 51, 1))
+                          RGBA (51, 51, 51, 1)
+                        Height: =216
+                        PaddingLeft: =20
+                        RadioSize: =50
+                        Width: =Parent.Width
+                        Y: =DataCardKeyRadio_Add.Y + DataCardKeyRadio_Add.Height + 5
+                  - DataCardKeyRadio_Add:
+                      Control: Label
+                      Properties:
+                        Text: ="Priority"
+                        AutoHeight: =true
+                        FontWeight: =FontWeight.Semibold
+                        Height: =48
+                        Width: =Parent.Width - 60
+                        X: =30
+                        Y: =10
+      - HeaderContAdd:
+          Control: GroupContainer
+          Variant: verticalAutoLayoutContainer
+          Properties:
+            BorderStyle: =BorderStyle.None
+            Height: =DashLogoA.Height + DashHeaderA.Height
+            LayoutAlignItems: =LayoutAlignItems.Center
+            LayoutDirection: =LayoutDirection.Vertical
+            LayoutJustifyContent: =LayoutJustifyContent.Center
+            LayoutMode: =LayoutMode.Auto
+            Width: =Parent.Width
+            X: =Parent.Width/2 - Self.Width/2
+          Children:
+          - DashLogoA:
+              Control: Image
+              Properties:
+                Image: =download
+                Height: =110
+                LayoutMinHeight: =320
+                LayoutMinWidth: =320
+                PaddingTop: =30
+                Width: =Parent.Width - 40
+          - DashHeaderA:
+              Control: Label
+              Properties:
+                Text: ="  Add New Ticket"
+                Align: =Align.Center
+                FontWeight: =FontWeight.Bold
+                Height: =60
+                LayoutMinHeight: =70
+                LayoutMinWidth: =560
+                PaddingBottom: =0
+                Size: =22
+                Width: =Parent.Width - 40
+                X: =180
+                Y: =72
+      - RadioHintCont_Add:
+          Control: GroupContainer
+          Variant: manualLayoutContainer
+          Properties:
+            Height: =Parent.Height
+            Visible: =showHint
+            Width: =Parent.Width
+          Children:
+          - RadioHint_Add:
+              Control: Rectangle
+              Properties:
+                DisabledFill: =RGBA(0, 0, 0, 0.5)
+                Fill: =RGBA(0, 0, 0, 0.5)
+                Height: =Parent.Height
+                HoverFill: =RGBA(0, 0, 0, 0.5)
+                PressedFill: =RGBA(0, 0, 0, 0.5)
+                Width: =Parent.Width
+          - Popup_Add:
+              Control: Label
+              Properties:
+                Text: =
+                Color: |
+                  =RGBA(51, 51, 51, 1)
+                Fill: =RGBA(202, 202, 202, 1)
+                Font: =Font.Arial
+                Height: =740
+                Width: =620
+                X: =Parent.Width/2 - Self.Width/2
+                Y: =Parent.Height/2 - Self.Height/2
+          - Popup_Close_Add:
+              Control: Button
+              Properties:
+                OnSelect: |-
+                  =UpdateContext({showHint: false})
+                Text: ="X"
+                Align: =Align.Left
+                BorderColor: =RGBA(255, 255, 255, 1)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =0
+                Fill: =RGBA(0, 0, 0, 0)
+                FontWeight: =FontWeight.Bold
+                Height: =25
+                RadiusBottomLeft: =45
+                RadiusBottomRight: =45
+                RadiusTopLeft: =45
+                RadiusTopRight: =45
+                Size: =18
+                Visible: =showHint
+                Width: =26
+                X: =Parent.Width/2 + Popup_Add.Width/2 - 25
+                Y: '=Parent.Height/2 - Popup_Add.Height/2 + 2 '
+          - Popuptext1:
+              Control: Label
+              Properties:
+                Text: ="For immediate emergencies, please call 911."
+                Color: =RGBA(255, 0, 0, 1)
+                Height: =68
+                PaddingLeft: =8
+                Width: =590
+                X: =Parent.Width/2 - Self.Width/2 + 0
+                Y: =Parent.Height/2 - 340
+          - popuptext2:
+              Control: Label
+              Properties:
+                Text: |-
+                  ="For emergency maintenance requests, please call the office at                            . " & Char(10) &  Char(10) &  Char(10) &
+
+
+
+                  "• Fire" & Char(10) &
+                  "• Water Leak/Flooding" & Char(10) &
+                  "• Gas Leak" & Char(10) &
+                  "• Non-Functional Toilet" & Char(10) &
+                  "• Broken/non-functional door, windows 
+                     or locks" & Char(10) &
+                  "• No AC/Heat" & Char(10) &
+                  "• No water" & Char(10) &
+                  "• No electricity" & Char(10) &
+                  "• Broken Refrigerator" & Char(10) &
+                  "• Sewer backup"
+                Height: =769
+                PaddingLeft: =0
+                PaddingTop: =50
+                Width: =590
+                X: =Parent.Width/2 - Self.Width/2
+                Y: =Parent.Height/2 -Self.Height/2
+          - Popuptext3:
+              Control: Label
+              Properties:
+                Text: =" (301) 678-9995"
+                Color: =RGBA(0, 0, 0, 1)
+                FontWeight: =FontWeight.Bold
+                Height: =57
+                PaddingLeft: =0
+                PaddingTop: =8
+                Width: =230
+                X: =Parent.Width/2 + Popup_Add.Width/2 -405
+                Y: =Parent.Height/2 -206
+          - Popuptext4:
+              Control: Label
+              Properties:
+                Text: ="Emergencies include:"
+                FontWeight: =FontWeight.Bold
+                PaddingBottom: =0
+                PaddingLeft: =0
+                Width: =590
+                X: =Parent.Width/2 -294
+                Y: =Parent.Height/2 -170
