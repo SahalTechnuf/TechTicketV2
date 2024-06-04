@@ -1491,7 +1491,7 @@
                 Height: =769
                 Size: =21
                 Text: |+
-                    ="For emergency maintenance requests, please call the office at                            .
+                    ="For emergency maintenance requests, please call the office at                                      .
                     
                     
                     
@@ -1515,6 +1515,7 @@
                 ZIndex: =5
 
             TextLabe3 As label:
+                Align: =Align.Right
                 BorderColor: =RGBA(0, 0, 0, 0)
                 BorderStyle: =BorderStyle.None
                 BorderThickness: =2
@@ -1530,7 +1531,7 @@
                 Size: =21
                 Text: ="(301) 678-9995"
                 Width: =234
-                X: =Parent.Width/2 + Popup.Width/2 -400
+                X: =Parent.Width/2 + Popup.Width/2 -350
                 Y: =Parent.Height/2 - Popup.Height/2 + 145
                 ZIndex: =6
 
