@@ -969,7 +969,7 @@
                 PaddingTop: =50
                 Size: =21
                 Text: |-
-                    ="For emergency maintenance requests, please call the office at                               . " & Char(10) &  Char(10) &  Char(10) &
+                    ="For emergency maintenance requests, please call the office at                            . " & Char(10) &  Char(10) &  Char(10) &
                     
                     
                     
