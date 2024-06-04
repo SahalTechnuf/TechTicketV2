@@ -1046,7 +1046,7 @@
                 Size: =25
                 Text: ="Emergency"
                 Width: =560
-                X: =Parent.Width/2 - Self.Width/2 
-                Y: =Popup_Add.Height - 820 
+                X: =Parent.Width/2 - Self.Width/2
+                Y: =Parent.Height/2 - Self.Height - 380
                 ZIndex: =8
 
