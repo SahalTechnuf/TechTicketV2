@@ -1549,7 +1549,7 @@
                 Text: |-
                     ="Emergencies include:"
                 Width: =590
-                X: =Parent.Width/2 -290
+                X: =Parent.Width/2 -287
                 Y: =Parent.Height/2 -170
                 ZIndex: =7
 
