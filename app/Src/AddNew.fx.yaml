@@ -281,7 +281,8 @@
 
                     DefaultValue_Add As text:
                         BorderColor: =RGBA(166, 166, 166, 1)
-                        BorderThickness: =2
+                        BorderStyle: =BorderStyle.None
+                        BorderThickness: =0
                         Color: =RGBA(51, 51, 51, 1)
                         Default: =
                         DisabledBorderColor: =RGBA(0, 0, 0, 0)
@@ -289,7 +290,7 @@
                         DisabledFill: =RGBA(244, 244, 244, 1)
                         FocusedBorderThickness: =4
                         Font: =Font.'Segoe UI'
-                        Height: =65
+                        Height: =58
                         HintText: ="Select Category"
                         HoverBorderColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
                         HoverColor: =RGBA(51, 51, 51, 1)
@@ -302,9 +303,9 @@
                         RadiusTopLeft: =0
                         RadiusTopRight: =0
                         Size: =21
-                        Width: =495
-                        X: =DataCardValueTitle_Add.Width - 520
-                        Y: =DataCardValueTitle_Add.Height -2
+                        Width: =500
+                        X: =DataCardValueTitle_Add.Width - 516
+                        Y: =DataCardValueTitle_Add.Height -1
                         ZIndex: =6
 
                 Add_Radio As typedDataCard.blankCard:
