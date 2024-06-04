@@ -1028,7 +1028,7 @@
                     ="Emergencies include:"
                 Width: =590
                 X: =Parent.Width/2 -280
-                Y: =Parent.Height/2 -170
+                Y: =Parent.Height/2 -160
                 ZIndex: =7
 
             TopLabel As label:
