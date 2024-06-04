@@ -1411,7 +1411,6 @@
                 ZIndex: =1
 
             Popup As label:
-                BorderColor: =RGBA(0, 0, 0, 0)
                 BorderStyle: =BorderStyle.None
                 BorderThickness: =2
                 Color: |
@@ -1421,7 +1420,7 @@
                 Fill: =RGBA(202, 202, 202, 1)
                 FocusedBorderThickness: =4
                 Font: =Font.Arial
-                Height: =740
+                Height: =980
                 Overflow: =Overflow.Scroll
                 Size: =21
                 Text: =
@@ -1440,8 +1439,7 @@
                 Fill: =RGBA(0, 0, 0, 0)
                 FocusedBorderColor: =ColorFade(Self.Fill, -75%)
                 Font: =Font.'Segoe UI'
-                FontWeight: =FontWeight.Bold
-                Height: =25
+                FontWeight: =FontWeight.Semibold
                 HoverBorderColor: =RGBA(0, 0, 0, 0)
                 HoverColor: =RGBA(255, 255, 255, 1)
                 HoverFill: =ColorFade(RGBA(135, 100, 184, 1), -10%)
@@ -1454,12 +1452,12 @@
                 RadiusBottomRight: =45
                 RadiusTopLeft: =45
                 RadiusTopRight: =45
-                Size: =18
+                Size: =24
                 Text: ="X"
                 Visible: =showHint
-                Width: =26
-                X: =Parent.Width/2 + Popup.Width/2 - 25
-                Y: =Parent.Height/2 - Popup.Height/2 - 2
+                Width: =40
+                X: =Parent.Width/2 + Popup.Width/2 - 50
+                Y: =Parent.Height/2 - Popup.Height/2 + 10
                 ZIndex: =3
 
             Textlabel1 As label:
@@ -1488,11 +1486,11 @@
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 FocusedBorderThickness: =4
                 Font: =Font.'Segoe UI'
-                Height: =769
+                Height: =800
+                LineHeight: =1.8
                 Size: =21
                 Text: |+
                     ="For emergency maintenance requests, please call the office at                            .
-                    
                     
                     
                     •	Fire 
@@ -1510,8 +1508,8 @@
                     
                     
                 Width: =590
-                X: =Parent.Width/2 - Self.Width/2
-                Y: =Parent.Height/2 - Self.Height/2 + 10
+                X: =Parent.Width/2 - Self.Width/2 + 6
+                Y: =Parent.Height/2 - Self.Height/2 + 80
                 ZIndex: =5
 
             TextLabe3 As label:
