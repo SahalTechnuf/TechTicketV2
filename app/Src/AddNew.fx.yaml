@@ -984,7 +984,7 @@
                     "• Broken Refrigerator" & Char(10) &
                     "• Sewer backup"
                 Width: =590
-                X: =Parent.Width/2 - Self.Width/2 +8
+                X: =Parent.Width/2 - Self.Width/2 + 10
                 Y: =Parent.Height/2 - Self.Height +440
                 ZIndex: =5
 
@@ -1006,7 +1006,7 @@
                 Size: =21
                 Text: =" (301) 678-9995"
                 Width: =230
-                X: =Popup_Add.Width -335
+                X: =Popup_Add.Width -330
                 Y: =Parent.Height/2 - Popup_Add.Height/2 + 242
                 ZIndex: =6
 
@@ -1027,7 +1027,7 @@
                 Text: |-
                     ="Emergencies include:"
                 Width: =590
-                X: =Parent.Width/2 -290
+                X: =Parent.Width/2 -280
                 Y: =Parent.Height/2 -170
                 ZIndex: =7
 
