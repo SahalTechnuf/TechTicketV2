@@ -417,7 +417,7 @@
                                 Switch(
                                     Text(ThisItem.'Progress/Status'.Value),
                                      "Queued",
-                                    RGBA(184, 0, 0, 1),
+                                    RGBA(15, 125, 242, 100),
                                     "In Progress",
                                     RGBA(252, 228, 10, 100),
                                     "Resolved",
