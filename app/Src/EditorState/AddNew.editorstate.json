@@ -4716,7 +4716,7 @@
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "70",
+          "AutoRuleBindingString": "",
           "InvariantPropertyName": "Height",
           "IsLockable": false,
           "NameMapSourceSchema": "?"
@@ -4776,7 +4776,7 @@
       "MetaDataIDKey": "%FieldValue.ID%",
       "Name": "DataCardValueTitle_Add",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 3,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5116,6 +5116,14 @@
           "InvariantPropertyName": "HintText",
           "IsLockable": false,
           "NameMapSourceSchema": "?"
+        },
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "false",
+          "InvariantPropertyName": "Reset",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
         }
       ],
       "HasDynamicProperties": false,
@@ -5129,7 +5137,7 @@
       "MetaDataIDKey": "",
       "Name": "DefaultValue_Add",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 2,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5146,6 +5154,11 @@
           "Category": "Data",
           "PropertyName": "HintText",
           "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Data",
+          "PropertyName": "Reset",
+          "RuleProviderType": "User"
         },
         {
           "Category": "Design",

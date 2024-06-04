@@ -243,7 +243,7 @@
                         DisabledFill: =RGBA(244, 244, 244, 1)
                         DisplayMode: =Parent.DisplayMode
                         Font: =Font.'Segoe UI'
-                        Height: =59
+                        Height: =65
                         HoverBorderColor: =Color.LightSkyBlue
                         HoverColor: =RGBA(51, 51, 51, 1)
                         HoverFill: =RGBA(153, 207, 236, 1)
@@ -302,9 +302,12 @@
                         RadiusBottomRight: =0
                         RadiusTopLeft: =0
                         RadiusTopRight: =0
+                        Reset: |-
+                            =//false 
+                            true
                         Size: =21
                         Width: =500
-                        X: =DataCardValueTitle_Add.Width - 516
+                        X: =45
                         Y: =DataCardValueTitle_Add.Height -1
                         ZIndex: =6
 

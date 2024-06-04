@@ -1061,7 +1061,7 @@
       "MetaDataIDKey": "",
       "Name": "Button_Cancel_Edit",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 1,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1309,7 +1309,7 @@
       "MetaDataIDKey": "",
       "Name": "Button_DeleteImage_Edit",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 5,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5789,7 +5789,7 @@
       "MetaDataIDKey": "",
       "Name": "Edit_Desc",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 3,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5970,7 +5970,7 @@
       "MetaDataIDKey": "",
       "Name": "Edit_Image",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 2,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6101,7 +6101,7 @@
       "MetaDataIDKey": "",
       "Name": "Edit_Radio",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 1,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -9149,7 +9149,7 @@
       "MetaDataIDKey": "",
       "Name": "Icon_upload_Edit",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 4,
+      "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -16836,7 +16836,7 @@
       "MetaDataIDKey": "",
       "Name": "TrashIcon_cont",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 0,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
