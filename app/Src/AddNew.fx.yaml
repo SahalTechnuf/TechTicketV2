@@ -1006,7 +1006,7 @@
                 Size: =21
                 Text: =" (301) 678-9995"
                 Width: =230
-                X: =Parent.Width -430
+                X: =Parent.Width -425
                 Y: =Parent.Height/2 - Popup_Add.Height/2 + 246
                 ZIndex: =6
 
