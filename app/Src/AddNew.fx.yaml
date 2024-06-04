@@ -1046,7 +1046,7 @@
                 Size: =25
                 Text: ="Emergency"
                 Width: =560
-                X: =26
+                X: =Popup_Add.Width - 590
                 Y: =135
                 ZIndex: =8
 
