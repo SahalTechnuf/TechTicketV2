@@ -400,13 +400,13 @@
                         Color: |-
                             =Switch(
                                     Text(ThisItem.'Progress/Status'.Value),
-                                    "Initiated",
+                                    "Queued",
                                     RGBA(50,50,139,1),
                                     "In Progress",
                                     RGBA(140,98,14,1),
                                     "Resolved",
                                     RGBA(10,84,48,1),
-                                    "TBD",
+                                    "Closed",
                                     RGBA (0, 0, 0, 1)
                                 )
                         DisabledBorderColor: =RGBA(255, 255, 255, 1)
