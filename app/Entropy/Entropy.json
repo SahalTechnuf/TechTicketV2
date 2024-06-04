@@ -153,7 +153,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "06/04/2024 02:32:52",
+  "HeaderLastSavedDateTimeUTC": "06/04/2024 02:34:07",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "0187e4a0-d356-4e03-9fb3-2b07cd44e52d": "\"/providers/microsoft.powerapps/apis/shared_office365users/connections/4d45ee3dbdb04537ae0eb70f5c0df424\"",
@@ -191,7 +191,6 @@
     "ConcatenatedList": 8,
     "CustomGallerySample": 2,
     "Documents": 3,
-    "DropdownItems": 9,
     "DropDownSample": 4,
     "Office365Users": 0,
     "RadioSample": 5,
