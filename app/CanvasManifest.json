@@ -100,7 +100,7 @@
       "zeroalltabindexes": false
     },
     "Author": "",
-    "BindingErrorCount": 0,
+    "BindingErrorCount": 2,
     "ContainsThirdPartyPcfControls": false,
     "DefaultConnectedDataSourceMaxGetRowsCount": 500,
     "DocumentAppType": "Phone",
@@ -119,11 +119,11 @@
     "ManualOfflineProfileId": "",
     "Name": "Technuf Help Desk",
     "OriginatingVersion": "1.336",
-    "ParserErrorCount": 0,
+    "ParserErrorCount": 1,
     "ShowStatusBar": true
   },
   "PublishInfo": {
-    "AppName": "Technuf Help Desk",
+    "AppName": "fac09743-00b5-4ef8-b0d1-abe63e9e94d2",
     "BackgroundColor": "RGBA(0,176,240,1)",
     "IconColor": "RGBA(255,255,255,1)",
     "IconName": "Edit",

@@ -237,7 +237,7 @@
                         ChevronFill: =RGBA(33, 33, 33, 1)
                         ChevronHoverBackground: =RGBA(212, 212, 212, 1)
                         ChevronHoverFill: =RGBA(33, 33, 33, 1)
-                        Default: ="Select Category"
+                        Default: =If(IsBlank(DataCardValueTitle_Add.Selected.Title, "Select Category", DataCardValueTitle_Add.Selected.Title)
                         DisabledBorderColor: =RGBA(0, 0, 0, 0)
                         DisabledColor: =RGBA(166, 166, 166, 1)
                         DisabledFill: =RGBA(244, 244, 244, 1)
@@ -250,7 +250,8 @@
                         Items: |-
                             =//'Work Progress Tracker'.Title
                             //[ "Office Supplies and Admin", "Maintenance", "IT"]
-                            Filter('Work Progress Tracker', Title <> "Select Category").Title
+                            //Filter('Work Progress Tracker', Title <> "Select Category").Title
+                            DropdownItems
                         OnChange: |-
                             =/*Patch(
                                 'Technuf Service Request',
@@ -260,6 +261,12 @@
                                     'Admin Info': LookUp('Work Progress Tracker', Title = DataCardValueTitle_Add.Selected.Title).Admin // Assuming CategoryColumn is the column name for ticket category in Work Progress Tracker list
                                 }
                             )*/
+                        OnSelect: |-
+                            =//false
+                            ClearCollect(
+                                DropdownItems,
+                                Filter('Work Progress Tracker', Title <> "Select Category").Title
+                            )
                         PaddingBottom: =5
                         PaddingLeft: =15
                         PaddingRight: =5
