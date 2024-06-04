@@ -401,7 +401,7 @@
                             =Switch(
                                     Text(ThisItem.'Progress/Status'.Value),
                                     "Queued",
-                                    RGBA(50,50,139,1),
+                                    RGBA(15,125,242,100),
                                     "In Progress",
                                     RGBA(140,98,14,1),
                                     "Resolved",
