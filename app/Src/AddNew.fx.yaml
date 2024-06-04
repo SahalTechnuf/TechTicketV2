@@ -250,9 +250,9 @@
                         HoverColor: =RGBA(51, 51, 51, 1)
                         HoverFill: =RGBA(153, 207, 236, 1)
                         Items: |
-                            ='Work Progress Tracker'.Title
+                            =//'Work Progress Tracker'.Title
                             //[ "Office Supplies and Admin", "Maintenance", "IT"]
-                            //Filter('Work Progress Tracker', Title <> "Select Category").Title
+                            Filter('Work Progress Tracker', Title <> "Select Category").Title
                         OnChange: |-
                             =/*Patch(
                                 'Technuf Service Request',
