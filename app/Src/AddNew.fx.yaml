@@ -237,7 +237,9 @@
                         ChevronFill: =RGBA(33, 33, 33, 1)
                         ChevronHoverBackground: =RGBA(212, 212, 212, 1)
                         ChevronHoverFill: =RGBA(33, 33, 33, 1)
-                        Default: =If(IsBlank(DataCardValueTitle_Add.Selected.Title, "Select Category", DataCardValueTitle_Add.Selected.Title)
+                        Default: |-
+                            =
+                                "Select Category"
                         DisabledBorderColor: =RGBA(0, 0, 0, 0)
                         DisabledColor: =RGBA(166, 166, 166, 1)
                         DisabledFill: =RGBA(244, 244, 244, 1)
