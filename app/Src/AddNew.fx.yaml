@@ -896,7 +896,7 @@
                 Fill: =RGBA(202, 202, 202, 1)
                 FocusedBorderThickness: =4
                 Font: =Font.Arial
-                Height: =740
+                Height: =940
                 Size: =21
                 Text: =
                 Width: =620
@@ -915,8 +915,7 @@
                 Fill: =RGBA(0, 0, 0, 0)
                 FocusedBorderColor: =ColorFade(Self.Fill, -75%)
                 Font: =Font.'Segoe UI'
-                FontWeight: =FontWeight.Bold
-                Height: =25
+                FontWeight: =FontWeight.Semibold
                 HoverBorderColor: =RGBA(0, 0, 0, 0)
                 HoverColor: =RGBA(255, 255, 255, 1)
                 HoverFill: =ColorFade(RGBA(135, 100, 184, 1), -10%)
@@ -929,11 +928,11 @@
                 RadiusBottomRight: =45
                 RadiusTopLeft: =45
                 RadiusTopRight: =45
-                Size: =18
+                Size: =24
                 Text: ="X"
                 Visible: =showHint
-                Width: =26
-                X: =Parent.Width/2 + Popup_Add.Width/2 - 25
+                Width: =40
+                X: =Parent.Width/2 + Popup_Add.Width/2 - 35
                 Y: =Parent.Height/2 - Popup_Add.Height/2 + 2 
                 ZIndex: =3
 
@@ -947,12 +946,12 @@
                 FocusedBorderThickness: =4
                 Font: =Font.'Segoe UI'
                 Height: =68
-                PaddingLeft: =8
+                PaddingLeft: =3
                 Size: =21
                 Text: ="For immediate emergencies, please call 911."
                 Width: =590
                 X: =Parent.Width/2 - Self.Width/2 + 0
-                Y: =Parent.Height/2 - 340
+                Y: =Parent.Height/2 - 360
                 ZIndex: =4
 
             popuptext2 As label:
@@ -964,12 +963,14 @@
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 FocusedBorderThickness: =4
                 Font: =Font.'Segoe UI'
-                Height: =769
+                Height: =746
+                LineHeight: =1.7
                 PaddingLeft: =0
                 PaddingTop: =50
                 Size: =21
                 Text: |-
-                    ="For emergency maintenance requests, please call the office at                            . " & Char(10) &  Char(10) &  Char(10) &
+                    ="For emergency maintenance requests, please call the office at                            . " & Char(10) &  Char(10) &  Char(10) & 
+                    
                     
                     
                     
@@ -986,7 +987,7 @@
                     "• Sewer backup"
                 Width: =590
                 X: =Parent.Width/2 - Self.Width/2
-                Y: =Parent.Height/2 -Self.Height/2
+                Y: =Parent.Height/2 - Self.Height +440
                 ZIndex: =5
 
             Popuptext3 As label:
@@ -1007,8 +1008,8 @@
                 Size: =21
                 Text: =" (301) 678-9995"
                 Width: =230
-                X: =Parent.Width/2 + Popup.Width -643
-                Y: =Parent.Height/2 -206
+                X: =289
+                Y: =341
                 ZIndex: =6
 
             Popuptext4 As label:
@@ -1031,4 +1032,23 @@
                 X: =Parent.Width/2 -294
                 Y: =Parent.Height/2 -170
                 ZIndex: =7
+
+            Label1 As label:
+                Align: =Align.Center
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                Color: =RGBA(51, 51, 51, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FocusedBorderThickness: =4
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Bold
+                Height: =70
+                Size: =25
+                Text: ="Emergency"
+                Width: =560
+                X: =26
+                Y: =135
+                ZIndex: =8
 
