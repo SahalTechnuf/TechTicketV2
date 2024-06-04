@@ -1007,7 +1007,7 @@
                 Text: =" (301) 678-9995"
                 Width: =230
                 X: =Popup_Add.Width -400
-                Y: =Popup_Add.Height - 600
+                Y: =Popup_Add.Height/2 - 130
                 ZIndex: =6
 
             Popuptext4 As label:
