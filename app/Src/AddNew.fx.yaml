@@ -306,6 +306,9 @@
                             =//false 
                             true
                         Size: =21
+                        Visible: |-
+                            =//true
+                            IsBlank(DataCardValueTitle_Add.Selected.Title)
                         Width: =500
                         X: =45
                         Y: =DataCardValueTitle_Add.Height -1
