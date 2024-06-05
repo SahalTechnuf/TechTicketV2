@@ -1177,7 +1177,7 @@
                         Size: =17
                         Text: =ThisItem.Value 
                         Width: =131.6
-                        X: =If(ThisItem.Value = "New", 37,10)
+                        X: =If(ThisItem.Value = "Queued", 0,0)
                         Y: =45
                         ZIndex: =1
 
