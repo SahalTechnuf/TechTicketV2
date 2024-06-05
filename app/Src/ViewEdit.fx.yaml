@@ -411,7 +411,7 @@
                             =//If(selectedItem.Priority.Value = "", Blank(), selectedItem.Priority.Value)
                             //If(IsBlank(selectedItem.Priority = "", Blank(),selectedItem.Priority)
                             
-                            ThisItem.Priority.Value
+                            Priority.Text
                             
                             //If(ThisItem.Priority.Value = "", Blank(), ThisItem.Priority.Value)
                             //Edit_Radio.selectedItem.Value
@@ -1178,7 +1178,7 @@
                         Height: =30
                         OnSelect: =Select(Parent)
                         PaddingLeft: =0
-                        PaddingRight: =3
+                        PaddingRight: =0
                         Size: =17
                         Text: =ThisItem.Value 
                         Width: =131.6
