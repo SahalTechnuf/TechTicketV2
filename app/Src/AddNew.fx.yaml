@@ -948,7 +948,7 @@
                 PaddingLeft: =3
                 Size: =20
                 Text: ="For immediate emergencies, please call 911."
-                Width: =590
+                Width: =620
                 X: =Parent.Width/2 - Self.Width/2 + 8
                 Y: =Parent.Height/2 - 380
                 ZIndex: =4
