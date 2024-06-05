@@ -1534,7 +1534,7 @@
                 Size: =21
                 Text: ="(301) 678-9995"
                 Width: =234
-                X: =Parent.Width/2 - Popup.Width/2 + 250  
+                X: =Parent.Width/2 - Popup.Width/2 + 280  
                 Y: =Parent.Height/2 - Popup_Add.Height/2 + 250
                 ZIndex: =6
 

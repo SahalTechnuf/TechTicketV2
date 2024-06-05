@@ -15663,7 +15663,7 @@
       "MetaDataIDKey": "",
       "Name": "TextLabe3",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 7,
+      "ParentIndex": 6,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -16557,7 +16557,7 @@
       "MetaDataIDKey": "",
       "Name": "TextLabel4",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 6,
+      "ParentIndex": 7,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
