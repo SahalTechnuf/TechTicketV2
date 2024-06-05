@@ -1477,8 +1477,9 @@
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 FocusedBorderThickness: =4
                 Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Bold
                 Height: =70
-                Size: =21
+                Size: =20
                 Text: ="For immediate emergencies, please call 911."
                 Width: =590
                 X: =Parent.Width/2 - Self.Width/2 + 8

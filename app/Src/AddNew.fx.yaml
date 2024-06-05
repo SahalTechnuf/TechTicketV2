@@ -946,7 +946,7 @@
                 FontWeight: =FontWeight.Bold
                 Height: =68
                 PaddingLeft: =3
-                Size: =21
+                Size: =20
                 Text: ="For immediate emergencies, please call 911."
                 Width: =590
                 X: =Parent.Width/2 - Self.Width/2 + 8
