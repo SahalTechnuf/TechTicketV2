@@ -411,11 +411,7 @@
                             =//If(selectedItem.Priority.Value = "", Blank(), selectedItem.Priority.Value)
                             //If(IsBlank(selectedItem.Priority = "", Blank(),selectedItem.Priority)
                             
-                            If(
-                                IsBlank(ThisItem.Priority.Value),
-                                Blank(),
-                                ThisItem.Priority.Value
-                            )
+                            ThisItem.Priority.Value
                             
                             //If(ThisItem.Priority.Value = "", Blank(), ThisItem.Priority.Value)
                             //Edit_Radio.selectedItem.Value
