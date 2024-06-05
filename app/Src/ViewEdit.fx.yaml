@@ -409,7 +409,7 @@
                             //If(Radio_Edit.Selected.Value="Emergency",RGBA(255,0,0,1),RGBA(0,0,0,1))
                         Default: |-
                             =//If(selectedItem.Priority.Value = "", Blank(), selectedItem.Priority.Value)
-                            //If(ThisItem.Priority.Value = "", Blank(), ThisItem.Priority.Value)
+                            If(ThisItem.Priority.Value = "", Blank(), ThisItem.Priority.Value)
                             //Edit_Radio.selectedItem.Value
                         DisabledBorderColor: =RGBA(0, 0, 0, 0)
                         DisabledColor: =RGBA(166, 166, 166, 1)
