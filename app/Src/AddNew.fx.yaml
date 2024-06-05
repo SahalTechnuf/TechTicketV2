@@ -91,7 +91,7 @@
                                 'Progress/Status': { Value: "Queued" },
                                 'Issue Date and Time': Now(),
                                 'Admin Info': LookUp('Work Progress Tracker', Title = DataCardValueTitle_Add.Selected.Title).Admin,
-                                Priority: { Value: Radio_Edit.Selected.Value }
+                                Priority: Radio_Edit.Selected
                             }
                         );
                         ResetForm(AddForm);
