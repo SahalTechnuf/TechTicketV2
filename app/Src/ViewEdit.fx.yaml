@@ -136,9 +136,7 @@
                             'Image (Optional)': ImageImage_Edit.Image,
                             'Issue Date and Time': Now(),
                             //ID: Value(selectedItem.ID)
-                            Priority: {
-                                    Value: Radio_Edit.Selected.Value
-                                }
+                            Priority: { Value: Radio_Edit.Selected.Value }
                         }
                     );
                     
