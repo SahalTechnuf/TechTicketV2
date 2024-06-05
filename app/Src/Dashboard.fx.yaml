@@ -274,7 +274,7 @@
                     ImagePreview As image:
                         BorderColor: =RGBA(0, 134, 208, 1)
                         BorderStyle: =BorderStyle.Dotted
-                        BorderThickness: =4
+                        BorderThickness: =3
                         DisabledBorderColor: =RGBA(0, 0, 0, 0)
                         DisabledFill: =RGBA(0, 0, 0, 0)
                         FocusedBorderThickness: =4
