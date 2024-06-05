@@ -1178,6 +1178,7 @@
                         Height: =30
                         OnSelect: =Select(Parent)
                         PaddingLeft: =0
+                        PaddingRight: =3
                         Size: =17
                         Text: =ThisItem.Value 
                         Width: =131.6
