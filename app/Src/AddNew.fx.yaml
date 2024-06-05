@@ -967,7 +967,7 @@
                 PaddingTop: =50
                 Size: =21
                 Text: |-
-                    ="For emergency maintenance requests, please call the office at                            . " & Char(10) &  Char(10) &  Char(10) & 
+                    ="For emergency maintenance requests, please call the office at                             . " & Char(10) &  Char(10) &  Char(10) & 
                     
                     
                     
@@ -1006,7 +1006,7 @@
                 Size: =21
                 Text: =" (301) 678-9995"
                 Width: =230
-                X: =Parent.Width/2 - Popup.Width/2 + 292
+                X: =Parent.Width/2 - Popup.Width/2 + 294
                 Y: =Parent.Height/2 - Popup_Add.Height/2 + 232
                 ZIndex: =6
 
