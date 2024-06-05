@@ -205,7 +205,7 @@
                         Width: =560
                         Wrap: =false
                         X: =22
-                        Y: =185
+                        Y: =190
                         ZIndex: =2
 
                     Label_DashAuthor As label:
@@ -274,7 +274,7 @@
                     ImagePreview As image:
                         BorderColor: =RGBA(0, 134, 208, 1)
                         BorderStyle: =BorderStyle.Dotted
-                        BorderThickness: =2
+                        BorderThickness: =4
                         DisabledBorderColor: =RGBA(0, 0, 0, 0)
                         DisabledFill: =RGBA(0, 0, 0, 0)
                         FocusedBorderThickness: =4
@@ -461,7 +461,7 @@
                         FocusedBorderColor: =ColorFade(Self.Fill, -75%)
                         Font: =Font.'Segoe UI'
                         FontWeight: =FontWeight.Semibold
-                        Height: =217
+                        Height: =230
                         HoverBorderColor: =RGBA(153, 207, 236, 1)
                         HoverColor: =RGBA(153, 207, 236, 1)
                         HoverFill: =RGBA(0, 0, 0, 0)
