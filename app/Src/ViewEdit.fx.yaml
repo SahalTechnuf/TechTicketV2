@@ -428,6 +428,8 @@
                         RadioSelectionFill: =RGBA(135, 100, 184, 1)
                         RadioSize: =50
                         Size: =21
+                        Visible: |
+                            =true
                         Width: =Parent.Width
                         Y: =DataCardKeyRadio_Edit.Y + DataCardKeyRadio_Edit.Height + 5
                         ZIndex: =2
