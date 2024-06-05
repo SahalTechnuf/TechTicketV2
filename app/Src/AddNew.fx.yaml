@@ -943,6 +943,7 @@
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 FocusedBorderThickness: =4
                 Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Bold
                 Height: =68
                 PaddingLeft: =3
                 Size: =21
@@ -1006,7 +1007,7 @@
                 Size: =21
                 Text: =" (301) 678-9995"
                 Width: =230
-                X: =Parent.Width/2 - Popup.Width/2 + 295
+                X: =Parent.Width/2 - Popup.Width/2 + 310
                 Y: =Parent.Height/2 - Popup_Add.Height/2 + 232
                 ZIndex: =6
 
