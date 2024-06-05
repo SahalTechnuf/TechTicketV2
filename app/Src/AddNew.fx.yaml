@@ -877,7 +877,7 @@
                 BorderStyle: =BorderStyle.None
                 BorderThickness: =2
                 DisabledFill: =RGBA(0, 0, 0, 0.5)
-                Fill: =RGBA(0, 0, 0, 0.3)
+                Fill: =RGBA(0, 0, 0, 0.4)
                 FocusedBorderThickness: =4
                 Height: =Parent.Height
                 HoverFill: =RGBA(0, 0, 0, 0.5)
