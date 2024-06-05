@@ -419,7 +419,7 @@
                                      "Queued",
                                     RGBA(15, 125, 242, 100),
                                     "In Progress",
-                                    RGBA(252, 228, 10, 100),
+                                    RGBA(237, 208, 7, 100),
                                     "Resolved",
                                     RGBA(10,84,48,1),
                                     "Closed",
