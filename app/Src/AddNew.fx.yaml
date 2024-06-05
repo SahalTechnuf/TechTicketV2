@@ -903,22 +903,22 @@
                 ZIndex: =2
 
             Popup_Close_Add As button:
-                Align: =Align.Left
                 BorderColor: =RGBA(255, 255, 255, 1)
                 BorderStyle: =BorderStyle.None
                 BorderThickness: =0
+                Color: =RGBA(153, 153, 153, 1)
                 DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisabledFill: =RGBA(244, 244, 244, 1)
                 Fill: =RGBA(0, 0, 0, 0)
                 FocusedBorderColor: =ColorFade(Self.Fill, -75%)
                 Font: =Font.'Segoe UI'
-                FontWeight: =FontWeight.Semibold
                 HoverBorderColor: =RGBA(0, 0, 0, 0)
                 HoverColor: =RGBA(255, 255, 255, 1)
                 HoverFill: =ColorFade(RGBA(135, 100, 184, 1), -10%)
                 OnSelect: |-
                     =UpdateContext({showHint: false})
+                PaddingRight: =3
                 PressedBorderColor: =ColorFade(RGBA(135, 100, 184, 1), -50%)
                 PressedColor: =RGBA(255, 255, 255, 1)
                 PressedFill: =ColorFade(RGBA(135, 100, 184, 1), -30%)
