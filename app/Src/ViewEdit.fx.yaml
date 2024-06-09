@@ -367,6 +367,142 @@
                         Y: =20
                         ZIndex: =7
 
+                Edit_Radio As typedDataCard.blankCard:
+                    BorderColor: =RGBA(166, 166, 166, 1)
+                    BorderStyle: =BorderStyle.Solid
+                    DataField: =ThisItem.Priority.Value
+                    DisplayMode: =DisplayMode.Edit
+                    Fill: =RGBA(0, 0, 0, 0)
+                    Height: =Radio_Edit.Height + DataCardKeyRadio_Edit.Height + 10
+                    Required: =false
+                    Width: =Parent.Width
+                    X: =0
+                    Y: |
+                        =If(App.Width>App.Height, 1, 1)
+                    ZIndex: =1
+
+                    DataCardKeyRadio_Edit As label:
+                        AutoHeight: =true
+                        BorderColor: =RGBA(0, 0, 0, 0)
+                        BorderStyle: =BorderStyle.None
+                        BorderThickness: =2
+                        Color: =RGBA(51, 51, 51, 1)
+                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        FocusedBorderThickness: =4
+                        Font: =Font.'Segoe UI'
+                        FontWeight: =FontWeight.Semibold
+                        Height: =48
+                        Size: =21
+                        Text: ="Priority"
+                        Width: =Parent.Width - 60
+                        X: =30
+                        Y: =10
+                        ZIndex: =1
+
+                    Radio_Edit As radio:
+                        BorderColor: =RGBA(51, 51, 51, 1)
+                        BorderStyle: =BorderStyle.None
+                        BorderThickness: =2
+                        Color: |-
+                            =RGBA(51, 51, 51, 1)
+                            //If(Radio_Edit.Selected.Value="Emergency",RGBA(255,0,0,1),RGBA(0,0,0,1))
+                        Default: |-
+                            =//If(selectedItem.Priority.Value = "", Blank(), selectedItem.Priority.Value)
+                            //If(IsBlank(selectedItem.Priority = "", Blank(),selectedItem.Priority)
+                            
+                            Priority.Text
+                            
+                            //If(ThisItem.Priority.Value = "", Blank(), ThisItem.Priority.Value)
+                            //Edit_Radio.selectedItem.Value
+                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        FocusedBorderThickness: =4
+                        Font: =Font.'Segoe UI'
+                        Height: =216
+                        HoverColor: =RGBA(51, 51, 51, 1)
+                        HoverFill: =RGBA(0, 0, 0, 0)
+                        Items: =["Emergency", "High", "Medium", "Low"]
+                        OnSelect: =Radio_Edit.Selected.Value
+                        PaddingBottom: =5
+                        PaddingLeft: =20
+                        PaddingTop: =5
+                        PressedColor: =RGBA(51, 51, 51, 1)
+                        PressedFill: =RGBA(0, 0, 0, 0)
+                        RadioBorderColor: =RGBA(51, 51, 51, 1)
+                        RadioSelectionFill: =RGBA(135, 100, 184, 1)
+                        RadioSize: =50
+                        Size: =21
+                        Visible: |
+                            =true
+                        Width: =Parent.Width
+                        Y: =DataCardKeyRadio_Edit.Y + DataCardKeyRadio_Edit.Height + 5
+                        ZIndex: =2
+
+                    Radio_Hint As button:
+                        BorderColor: =RGBA(250, 155, 112, 1)
+                        BorderThickness: =3
+                        Color: =RGBA(250, 155, 112, 1)
+                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        DisabledFill: =RGBA(244, 244, 244, 1)
+                        Fill: =RGBA(0, 0, 0, 0)
+                        FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+                        Font: =Font.'Segoe UI'
+                        FontWeight: =FontWeight.Bold
+                        Height: =25
+                        HoverBorderColor: =RGBA(0, 0, 0, 0)
+                        HoverColor: =RGBA(255, 255, 255, 1)
+                        HoverFill: =ColorFade(RGBA(135, 100, 184, 1), -10%)
+                        OnSelect: |-
+                            =UpdateContext({showHint: true})
+                        PressedBorderColor: =ColorFade(RGBA(135, 100, 184, 1), -50%)
+                        PressedColor: =RGBA(255, 255, 255, 1)
+                        PressedFill: =ColorFade(RGBA(135, 100, 184, 1), -30%)
+                        RadiusBottomLeft: =45
+                        RadiusBottomRight: =45
+                        RadiusTopLeft: =45
+                        RadiusTopRight: =45
+                        Size: =18
+                        Text: ="!"
+                        Width: =26
+                        X: =240
+                        Y: =79
+                        ZIndex: =3
+
+                    StarVisiblePri_Edit As label:
+                        BorderColor: =RGBA(0, 0, 0, 0)
+                        BorderStyle: =BorderStyle.None
+                        BorderThickness: =2
+                        Color: =RGBA(255, 0, 0, 1)
+                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        FocusedBorderThickness: =4
+                        Font: =Font.'Segoe UI'
+                        Height: =39
+                        Size: =21
+                        Text: ="*"
+                        Width: =48
+                        Y: =15
+                        ZIndex: =4
+
+                    ErrorMessageRadio_Edit As label:
+                        BorderColor: =RGBA(0, 0, 0, 0)
+                        BorderStyle: =BorderStyle.None
+                        BorderThickness: =2
+                        Color: =RGBA(51, 51, 51, 1)
+                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        FocusedBorderThickness: =4
+                        Font: =Font.'Segoe UI'
+                        Height: =6
+                        Size: =21
+                        Text: =Parent.Error
+                        Width: =560
+                        X: =30
+                        Y: =270
+                        ZIndex: =5
+
                 Edit_Image As typedDataCard.addLargePictureCard:
                     BorderColor: =RGBA(166, 166, 166, 1)
                     BorderStyle: =BorderStyle.Solid
@@ -388,8 +524,8 @@
                     Required: =false
                     Update: =ImageImage_Edit.Image
                     Width: =If((App.Width > App.Height), EditForm.Width/2, Parent.Width)
-                    X: =If(App.Width>App.Height, 1, 0)
-                    Y: =If(App.Width>App.Height, 1, 3)
+                    X: =If(App.Width>App.Height, 2, 0)
+                    Y: =If(App.Width>App.Height, 2, 3)
                     ZIndex: =1
 
                     DataCardKeyImage_Edit As label:
@@ -611,142 +747,6 @@
                         Y: =DataCardKeyImage_Edit.Height + 25
                         ZIndex: =10
 
-                Edit_Radio As typedDataCard.blankCard:
-                    BorderColor: =RGBA(166, 166, 166, 1)
-                    BorderStyle: =BorderStyle.Solid
-                    DataField: =ThisItem.Priority.Value
-                    DisplayMode: =DisplayMode.Edit
-                    Fill: =RGBA(0, 0, 0, 0)
-                    Height: =Radio_Edit.Height + DataCardKeyRadio_Edit.Height + 10
-                    Required: =false
-                    Width: =Parent.Width
-                    X: =0
-                    Y: |
-                        =If(App.Width>App.Height, 2, 2)
-                    ZIndex: =1
-
-                    DataCardKeyRadio_Edit As label:
-                        AutoHeight: =true
-                        BorderColor: =RGBA(0, 0, 0, 0)
-                        BorderStyle: =BorderStyle.None
-                        BorderThickness: =2
-                        Color: =RGBA(51, 51, 51, 1)
-                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                        DisabledColor: =RGBA(166, 166, 166, 1)
-                        FocusedBorderThickness: =4
-                        Font: =Font.'Segoe UI'
-                        FontWeight: =FontWeight.Semibold
-                        Height: =48
-                        Size: =21
-                        Text: ="Priority"
-                        Width: =Parent.Width - 60
-                        X: =30
-                        Y: =10
-                        ZIndex: =1
-
-                    Radio_Edit As radio:
-                        BorderColor: =RGBA(51, 51, 51, 1)
-                        BorderStyle: =BorderStyle.None
-                        BorderThickness: =2
-                        Color: |-
-                            =RGBA(51, 51, 51, 1)
-                            //If(Radio_Edit.Selected.Value="Emergency",RGBA(255,0,0,1),RGBA(0,0,0,1))
-                        Default: |-
-                            =//If(selectedItem.Priority.Value = "", Blank(), selectedItem.Priority.Value)
-                            //If(IsBlank(selectedItem.Priority = "", Blank(),selectedItem.Priority)
-                            
-                            Priority.Text
-                            
-                            //If(ThisItem.Priority.Value = "", Blank(), ThisItem.Priority.Value)
-                            //Edit_Radio.selectedItem.Value
-                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                        DisabledColor: =RGBA(166, 166, 166, 1)
-                        FocusedBorderThickness: =4
-                        Font: =Font.'Segoe UI'
-                        Height: =216
-                        HoverColor: =RGBA(51, 51, 51, 1)
-                        HoverFill: =RGBA(0, 0, 0, 0)
-                        Items: =["Emergency", "High", "Medium", "Low"]
-                        OnSelect: =Radio_Edit.Selected.Value
-                        PaddingBottom: =5
-                        PaddingLeft: =20
-                        PaddingTop: =5
-                        PressedColor: =RGBA(51, 51, 51, 1)
-                        PressedFill: =RGBA(0, 0, 0, 0)
-                        RadioBorderColor: =RGBA(51, 51, 51, 1)
-                        RadioSelectionFill: =RGBA(135, 100, 184, 1)
-                        RadioSize: =50
-                        Size: =21
-                        Visible: |
-                            =true
-                        Width: =Parent.Width
-                        Y: =DataCardKeyRadio_Edit.Y + DataCardKeyRadio_Edit.Height + 5
-                        ZIndex: =2
-
-                    Radio_Hint As button:
-                        BorderColor: =RGBA(250, 155, 112, 1)
-                        BorderThickness: =3
-                        Color: =RGBA(250, 155, 112, 1)
-                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                        DisabledColor: =RGBA(166, 166, 166, 1)
-                        DisabledFill: =RGBA(244, 244, 244, 1)
-                        Fill: =RGBA(0, 0, 0, 0)
-                        FocusedBorderColor: =ColorFade(Self.Fill, -75%)
-                        Font: =Font.'Segoe UI'
-                        FontWeight: =FontWeight.Bold
-                        Height: =25
-                        HoverBorderColor: =RGBA(0, 0, 0, 0)
-                        HoverColor: =RGBA(255, 255, 255, 1)
-                        HoverFill: =ColorFade(RGBA(135, 100, 184, 1), -10%)
-                        OnSelect: |-
-                            =UpdateContext({showHint: true})
-                        PressedBorderColor: =ColorFade(RGBA(135, 100, 184, 1), -50%)
-                        PressedColor: =RGBA(255, 255, 255, 1)
-                        PressedFill: =ColorFade(RGBA(135, 100, 184, 1), -30%)
-                        RadiusBottomLeft: =45
-                        RadiusBottomRight: =45
-                        RadiusTopLeft: =45
-                        RadiusTopRight: =45
-                        Size: =18
-                        Text: ="!"
-                        Width: =26
-                        X: =240
-                        Y: =79
-                        ZIndex: =3
-
-                    StarVisiblePri_Edit As label:
-                        BorderColor: =RGBA(0, 0, 0, 0)
-                        BorderStyle: =BorderStyle.None
-                        BorderThickness: =2
-                        Color: =RGBA(255, 0, 0, 1)
-                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                        DisabledColor: =RGBA(166, 166, 166, 1)
-                        FocusedBorderThickness: =4
-                        Font: =Font.'Segoe UI'
-                        Height: =39
-                        Size: =21
-                        Text: ="*"
-                        Width: =48
-                        Y: =15
-                        ZIndex: =4
-
-                    ErrorMessageRadio_Edit As label:
-                        BorderColor: =RGBA(0, 0, 0, 0)
-                        BorderStyle: =BorderStyle.None
-                        BorderThickness: =2
-                        Color: =RGBA(51, 51, 51, 1)
-                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                        DisabledColor: =RGBA(166, 166, 166, 1)
-                        FocusedBorderThickness: =4
-                        Font: =Font.'Segoe UI'
-                        Height: =6
-                        Size: =21
-                        Text: =Parent.Error
-                        Width: =560
-                        X: =30
-                        Y: =270
-                        ZIndex: =5
-
                 Edit_Desc As typedDataCard.textualEditCard:
                     BorderColor: =RGBA(166, 166, 166, 1)
                     BorderStyle: =BorderStyle.Solid
@@ -768,7 +768,7 @@
                     Update: =DataCardValueDesc_Edit.Text
                     Width: =If((App.Width > App.Height), EditForm.Width/2, Parent.Width)
                     X: =0
-                    Y: =If(App.Width>App.Height, 1, 1)
+                    Y: =If(App.Width>App.Height, 2, 2)
                     ZIndex: =2
 
                     DataCardKeyDesc_Edit As label:
