@@ -913,15 +913,14 @@
                 Fill: =RGBA(0, 0, 0, 0)
                 FocusedBorderColor: =ColorFade(Self.Fill, -75%)
                 Font: =Font.Verdana
-                HoverBorderColor: =RGBA(0, 0, 0, 0)
+                HoverBorderColor: =RGBA(202, 202, 202, 1)
                 HoverColor: =RGBA(255, 255, 255, 1)
-                HoverFill: =ColorFade(RGBA(135, 100, 184, 1), -10%)
+                HoverFill: =RGBA(202, 202, 202, 1)
                 OnSelect: |-
                     =UpdateContext({showHint: false})
-                PaddingRight: =3
-                PressedBorderColor: =ColorFade(RGBA(135, 100, 184, 1), -50%)
+                PressedBorderColor: =RGBA(149, 149, 149, 1)
                 PressedColor: =RGBA(255, 255, 255, 1)
-                PressedFill: =ColorFade(RGBA(135, 100, 184, 1), -30%)
+                PressedFill: =RGBA(149, 149, 149, 1)
                 RadiusBottomLeft: =45
                 RadiusBottomRight: =45
                 RadiusTopLeft: =45
