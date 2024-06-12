@@ -868,7 +868,7 @@
             RadiusBottomRight: =4
             RadiusTopLeft: =4
             RadiusTopRight: =4
-            Visible: =showHint
+            Visible: =true//showHint
             Width: =Parent.Width
             ZIndex: =4
 
@@ -934,7 +934,7 @@
                 Y: =Parent.Height/2 - Popup_Add.Height/2 + 10 
                 ZIndex: =3
 
-            Popuptext1 As label:
+            Highlight_Add As label:
                 BorderColor: =RGBA(0, 0, 0, 0)
                 BorderStyle: =BorderStyle.None
                 BorderThickness: =2
@@ -953,7 +953,7 @@
                 Y: =Parent.Height/2 - 380
                 ZIndex: =4
 
-            popuptext2 As label:
+            Description_Add As label:
                 BorderColor: =RGBA(0, 0, 0, 0)
                 BorderStyle: =BorderStyle.None
                 BorderThickness: =2
@@ -989,7 +989,7 @@
                 Y: =Parent.Height/2 - Self.Height + 450
                 ZIndex: =5
 
-            Popuptext3 As label:
+            Number_Add As label:
                 Align: =Align.Right
                 BorderColor: =RGBA(0, 0, 0, 0)
                 BorderStyle: =BorderStyle.None
@@ -1007,11 +1007,11 @@
                 Size: =21
                 Text: =" (301) 678-9995"
                 Width: =230
-                X: =Parent.Width/2 - Popup.Width/2 + 310
+                X: =Parent.Width/2 - Popup_View.Width/2 + 310
                 Y: =Parent.Height/2 - Popup_Add.Height/2 + 232
                 ZIndex: =6
 
-            Popuptext4 As label:
+            Emergencies_Add As label:
                 BorderColor: =RGBA(0, 0, 0, 0)
                 BorderStyle: =BorderStyle.None
                 BorderThickness: =2
@@ -1032,7 +1032,7 @@
                 Y: =Parent.Height/2 -190
                 ZIndex: =7
 
-            TopLabel As label:
+            TopLabel_Add As label:
                 Align: =Align.Center
                 BorderColor: =RGBA(0, 0, 0, 0)
                 BorderStyle: =BorderStyle.None

@@ -1404,7 +1404,7 @@
             Width: =Parent.Width
             ZIndex: =4
 
-            RadioHint As rectangle:
+            RadioHint_View As rectangle:
                 BorderColor: =RGBA(0, 0, 0, 0)
                 BorderStyle: =BorderStyle.None
                 BorderThickness: =2
@@ -1417,7 +1417,7 @@
                 Width: =Parent.Width
                 ZIndex: =1
 
-            Popup As label:
+            Popup_View As label:
                 BorderThickness: =2
                 Color: |
                     =RGBA(51, 51, 51, 1)
@@ -1435,7 +1435,7 @@
                 Y: =Parent.Height/2 - Self.Height/2
                 ZIndex: =2
 
-            Popup_Close As button:
+            Popup_Close_View As button:
                 BorderColor: =RGBA(255, 255, 255, 1)
                 BorderStyle: =BorderStyle.None
                 BorderThickness: =0
@@ -1461,13 +1461,13 @@
                 RadiusTopRight: =45
                 Size: =24
                 Text: ="X"
-                Visible: =showHint
+                Visible: =true//showHint
                 Width: =40
-                X: =Parent.Width/2 + Popup.Width/2 - 50
-                Y: =Parent.Height/2 - Popup.Height/2 + 10
+                X: =Parent.Width/2 + Popup_View.Width/2 - 50
+                Y: =Parent.Height/2 - Popup_View.Height/2 + 10
                 ZIndex: =3
 
-            Highlight As label:
+            Highlight_View As label:
                 BorderColor: =RGBA(0, 0, 0, 0)
                 BorderStyle: =BorderStyle.None
                 BorderThickness: =2
@@ -1485,7 +1485,7 @@
                 Y: = Parent.Height/2 - 380
                 ZIndex: =4
 
-            Description As label:
+            Description_View As label:
                 BorderColor: =RGBA(0, 0, 0, 0)
                 BorderStyle: =BorderStyle.None
                 BorderThickness: =2
@@ -1518,7 +1518,7 @@
                 Y: =Parent.Height/2 - Self.Height/2 + 80
                 ZIndex: =5
 
-            Number As label:
+            Number_View As label:
                 Align: =Align.Right
                 BorderColor: =RGBA(0, 0, 0, 0)
                 BorderStyle: =BorderStyle.None
@@ -1539,7 +1539,7 @@
                 Y: =327
                 ZIndex: =6
 
-            Emergencies As label:
+            Emergencies_View As label:
                 BorderColor: =RGBA(0, 0, 0, 0)
                 BorderStyle: =BorderStyle.None
                 BorderThickness: =2
