@@ -401,7 +401,7 @@
                         ZIndex: =1
 
                     Radio_Edit As radio:
-                        BorderColor: =RGBA(51, 51, 51, 1)
+                        BorderColor: =RGBA(204, 231, 246, 1)
                         BorderStyle: =BorderStyle.None
                         BorderThickness: =2
                         Color: |-
@@ -417,16 +417,16 @@
                         Font: =Font.'Segoe UI'
                         Height: =216
                         HoverColor: =RGBA(51, 51, 51, 1)
-                        HoverFill: =RGBA(0, 0, 0, 0)
+                        HoverFill: =RGBA(204, 231, 246, 1)
                         Items: =["Emergency", "High", "Medium", "Low"]
                         OnSelect: =Radio_Edit.Selected.Value
                         PaddingBottom: =5
                         PaddingLeft: =20
                         PaddingTop: =5
                         PressedColor: =RGBA(51, 51, 51, 1)
-                        PressedFill: =RGBA(0, 0, 0, 0)
-                        RadioBorderColor: =RGBA(51, 51, 51, 1)
-                        RadioSelectionFill: =RGBA(135, 100, 184, 1)
+                        PressedFill: =RGBA(153, 207, 236, 1)
+                        RadioBorderColor: =RGBA(116, 116, 116, 1)
+                        RadioSelectionFill: =RGBA(0, 134, 208, 1)
                         RadioSize: =50
                         Size: =21
                         Visible: |
@@ -439,22 +439,22 @@
                         BorderColor: =RGBA(250, 155, 112, 1)
                         BorderThickness: =3
                         Color: =RGBA(250, 155, 112, 1)
-                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                        DisabledColor: =RGBA(166, 166, 166, 1)
-                        DisabledFill: =RGBA(244, 244, 244, 1)
+                        DisabledBorderColor: =RGBA(255, 191, 0, 1)
+                        DisabledColor: =RGBA(255, 255, 255, 1)
+                        DisabledFill: =RGBA(255, 191, 0, 1)
                         Fill: =RGBA(0, 0, 0, 0)
                         FocusedBorderColor: =ColorFade(Self.Fill, -75%)
                         Font: =Font.'Segoe UI'
                         FontWeight: =FontWeight.Bold
                         Height: =25
-                        HoverBorderColor: =RGBA(0, 0, 0, 0)
+                        HoverBorderColor: =RGBA(255, 191, 0, 1)
                         HoverColor: =RGBA(255, 255, 255, 1)
-                        HoverFill: =ColorFade(RGBA(135, 100, 184, 1), -10%)
+                        HoverFill: =RGBA(255, 191, 0, 1)
                         OnSelect: |-
                             =UpdateContext({showHint: true})
-                        PressedBorderColor: =ColorFade(RGBA(135, 100, 184, 1), -50%)
+                        PressedBorderColor: =RGBA(246, 88, 16, 1)
                         PressedColor: =RGBA(255, 255, 255, 1)
-                        PressedFill: =ColorFade(RGBA(135, 100, 184, 1), -30%)
+                        PressedFill: =RGBA(246, 88, 16, 1)
                         RadiusBottomLeft: =45
                         RadiusBottomRight: =45
                         RadiusTopLeft: =45
