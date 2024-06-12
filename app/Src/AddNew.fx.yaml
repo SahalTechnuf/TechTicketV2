@@ -868,7 +868,7 @@
             RadiusBottomRight: =4
             RadiusTopLeft: =4
             RadiusTopRight: =4
-            Visible: =true//showHint
+            Visible: =showHint
             Width: =Parent.Width
             ZIndex: =4
 
@@ -928,7 +928,7 @@
                 RadiusTopRight: =45
                 Size: =22
                 Text: ="X"
-                Visible: =true//showHint
+                Visible: =showHint
                 Width: =40
                 X: =Parent.Width/2 + Popup_Add.Width/2 - 50
                 Y: =Parent.Height/2 - Popup_Add.Height/2 + 10 

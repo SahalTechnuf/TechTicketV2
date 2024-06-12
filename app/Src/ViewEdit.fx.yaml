@@ -1458,7 +1458,7 @@
                 RadiusTopRight: =45
                 Size: =22
                 Text: ="X"
-                Visible: =true//showHint
+                Visible: =showHint
                 Width: =40
                 X: =Parent.Width/2 + Popup_View.Width/2 - 50
                 Y: =Parent.Height/2 - Popup_View.Height/2 + 10
