@@ -912,7 +912,7 @@
                 DisabledFill: =RGBA(244, 244, 244, 1)
                 Fill: =RGBA(0, 0, 0, 0)
                 FocusedBorderColor: =ColorFade(Self.Fill, -75%)
-                Font: =Font.'Segoe UI'
+                Font: =Font.Verdana
                 HoverBorderColor: =RGBA(0, 0, 0, 0)
                 HoverColor: =RGBA(255, 255, 255, 1)
                 HoverFill: =ColorFade(RGBA(135, 100, 184, 1), -10%)
@@ -926,7 +926,7 @@
                 RadiusBottomRight: =45
                 RadiusTopLeft: =45
                 RadiusTopRight: =45
-                Size: =24
+                Size: =22
                 Text: ="X"
                 Visible: =true//showHint
                 Width: =40
@@ -944,13 +944,12 @@
                 FocusedBorderThickness: =4
                 Font: =Font.'Segoe UI'
                 FontWeight: =FontWeight.Bold
-                Height: =68
-                PaddingLeft: =3
+                Height: =70
                 Size: =20
                 Text: ="For immediate emergencies, please call 911."
-                Width: =620
-                X: =Parent.Width/2 - Self.Width/2 + 8
-                Y: =Parent.Height/2 - 380
+                Width: =607
+                X: =Parent.Width/2 - Self.Width/2 + 6
+                Y: =Parent.Height/2 - Self.Height/2 - 345
                 ZIndex: =4
 
             Description_Add As label:
@@ -965,7 +964,6 @@
                 Height: =800
                 LineHeight: =1.8
                 PaddingLeft: =0
-                PaddingTop: =50
                 Size: =21
                 Text: |-
                     ="For emergency maintenance requests, please call the office at                            . " & Char(10) &  Char(10) &  Char(10) & 
@@ -985,8 +983,8 @@
                     "• Broken Refrigerator" & Char(10) &
                     "• Sewer backup"
                 Width: =590
-                X: =Parent.Width/2 - Self.Width/2 + 10
-                Y: =Parent.Height/2 - Self.Height + 450
+                X: =Parent.Width/2 - Self.Width/2 + 6
+                Y: =Parent.Height/2 - Self.Height/2 + 80
                 ZIndex: =5
 
             Number_Add As label:
@@ -1001,14 +999,13 @@
                 FocusedBorderThickness: =4
                 Font: =Font.'Segoe UI'
                 FontWeight: =FontWeight.Bold
-                Height: =57
+                Height: =36
                 PaddingLeft: =0
-                PaddingTop: =8
                 Size: =21
                 Text: =" (301) 678-9995"
-                Width: =230
-                X: =Parent.Width/2 - Popup_View.Width/2 + 310
-                Y: =Parent.Height/2 - Popup_Add.Height/2 + 232
+                Width: =215
+                X: =Parent.Width/2 - Self.Width/2 + 15
+                Y: =Parent.Height/2 - Self.Height/2 - 222
                 ZIndex: =6
 
             Emergencies_Add As label:
@@ -1022,14 +1019,13 @@
                 Font: =Font.'Segoe UI'
                 FontWeight: =FontWeight.Bold
                 Height: =70
-                PaddingBottom: =0
                 PaddingLeft: =0
                 Size: =21
                 Text: |-
                     ="Emergencies include:"
                 Width: =590
-                X: =Parent.Width/2 -280
-                Y: =Parent.Height/2 -190
+                X: =Parent.Width/2 - 287
+                Y: =Parent.Height/2 - 170
                 ZIndex: =7
 
             TopLabel_Add As label:
