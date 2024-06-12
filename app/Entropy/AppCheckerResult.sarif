@@ -1054,6 +1054,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "AddNew.showHint"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "AddNew.showHint",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "showHint",
+                "module": "AddNew",
+                "type": "AddNew"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "ViewEdit.showHint"
                 }
               ],
