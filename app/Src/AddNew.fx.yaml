@@ -895,7 +895,7 @@
                 Fill: =RGBA(255, 255, 255, 1)
                 FocusedBorderThickness: =15
                 Font: =Font.Arial
-                Height: =917
+                Height: =860
                 Size: =21
                 Text: =
                 Width: =620
@@ -931,7 +931,7 @@
                 Visible: =showHint
                 Width: =40
                 X: =Parent.Width/2 + Popup_Add.Width/2 - 50
-                Y: =Parent.Height/2 - Popup_Add.Height/2 + 49 
+                Y: =Parent.Height/2 - Popup_Add.Height/2 + 19 
                 ZIndex: =3
 
             Highlight_Add As label:
