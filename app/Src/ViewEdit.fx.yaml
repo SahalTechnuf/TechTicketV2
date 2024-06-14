@@ -1551,7 +1551,7 @@
                 PaddingLeft: =0
                 Size: =21
                 Text: |-
-                    ="Urgent Maintenance  Requests:"
+                    ="Urgent Maintenance Requests:"
                 Width: =590
                 X: =Parent.Width/2 -287
                 Y: =Parent.Height/2 - Self.Height/2 - 180
