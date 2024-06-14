@@ -1423,7 +1423,7 @@
                 Fill: =RGBA(255, 255, 255, 1)
                 FocusedBorderThickness: =4
                 Font: =Font.Arial
-                Height: =980
+                Height: =900
                 Overflow: =Overflow.Scroll
                 Size: =21
                 Text: =
