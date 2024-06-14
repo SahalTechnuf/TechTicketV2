@@ -945,6 +945,7 @@
                 Font: =Font.'Segoe UI'
                 FontWeight: =FontWeight.Bold
                 Height: =70
+                PaddingLeft: =0
                 Size: =20
                 Text: ="For immediate emergencies, please call 911."
                 Width: =590
