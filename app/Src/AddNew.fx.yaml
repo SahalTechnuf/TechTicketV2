@@ -895,7 +895,7 @@
                 Fill: =RGBA(255, 255, 255, 1)
                 FocusedBorderThickness: =15
                 Font: =Font.Arial
-                Height: =980
+                Height: =917
                 Size: =21
                 Text: =
                 Width: =620
@@ -931,7 +931,7 @@
                 Visible: =showHint
                 Width: =40
                 X: =Parent.Width/2 + Popup_Add.Width/2 - 50
-                Y: =Parent.Height/2 - Popup_Add.Height/2 + 10 
+                Y: =Parent.Height/2 - Popup_Add.Height/2 + 49 
                 ZIndex: =3
 
             Highlight_Add As label:
@@ -950,7 +950,7 @@
                 Text: ="For safety/security emergencies, call 911."
                 Width: =590
                 X: =Parent.Width/2 - Self.Width/2 + 6
-                Y: =Parent.Height/2 - Self.Height/2 - 345
+                Y: =Parent.Height/2 - Self.Height/2 - 315
                 ZIndex: =4
 
             Description_Add As label:
@@ -1025,7 +1025,7 @@
                     ="Urgent Maintenance Requests:"
                 Width: =590
                 X: =Parent.Width/2 - 287
-                Y: =Parent.Height/2 - Self.Height/2 - 180
+                Y: =Parent.Height/2 - Self.Height/2 - 120
                 ZIndex: =7
 
             TopLabel_Add As label:
@@ -1044,14 +1044,14 @@
                 Text: ="Emergency"
                 Width: =560
                 X: =Parent.Width/2 - Self.Width/2
-                Y: =Parent.Height/2 - Self.Height - 380
+                Y: =Parent.Height/2 - Self.Height - 330
                 ZIndex: =8
 
             HtmlDesc_Add As htmlViewer:
                 Font: =Font.'Segoe UI'
                 Height: =800
                 HtmlText: |-
-                    ="<div style='line-height: 1.8;'>For urgent maintenance requests, please call the office at <b>(301) 678-9995</b>. <br><br>
+                    ="<div style='line-height: 1.8;'>For urgent maintenance requests, please call the office at <b>(301) 678-9995</b>. <br><br><br>
                     • Water leak/flooding <br>
                     • Non-functional Toilet <br>
                     • Broken/non-functional door, windows or locks <br>
@@ -1063,6 +1063,6 @@
                 Size: =21
                 Width: =590
                 X: =Parent.Width/2 - Self.Width/2 + 6
-                Y: =Parent.Height/2 - Self.Height/2 + 80
+                Y: =Parent.Height/2 - Self.Height/2 + 119
                 ZIndex: =9
 
