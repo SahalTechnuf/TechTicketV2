@@ -1580,7 +1580,7 @@
                 Font: =Font.'Segoe UI'
                 Height: =800
                 HtmlText: |-
-                    ="<div style='line-height: 1.8;'>For urgent maintenance requests, please call the office at <b>(301) 678-9995</b>. <br><br>
+                    ="<div style='line-height: 1.8;'>For urgent maintenance requests, please call the office at <b>(301) 678-9995</b>. <br><br><br>
                     • Water Leak/Flooding <br>
                     • Non-Functional Toilet <br>
                     • Broken/non-functional door, windows or locks <br>
