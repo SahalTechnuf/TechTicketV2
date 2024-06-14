@@ -895,7 +895,7 @@
                 Fill: =RGBA(255, 255, 255, 1)
                 FocusedBorderThickness: =15
                 Font: =Font.Arial
-                Height: =870
+                Height: =880
                 Size: =21
                 Text: =
                 Width: =620
