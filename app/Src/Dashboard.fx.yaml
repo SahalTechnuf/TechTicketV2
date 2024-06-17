@@ -430,7 +430,7 @@
                         FocusedBorderColor: =ColorFade(Self.Fill, -75%)
                         FocusedBorderThickness: =0
                         Font: =Font.'Segoe UI'
-                        FontWeight: =FontWeight.Semibold
+                        FontWeight: =FontWeight.Bold
                         Height: =37
                         HoverBorderColor: =RGBA(255, 255, 255, 1)
                         HoverColor: =RGBA(255, 255, 255, 1)
