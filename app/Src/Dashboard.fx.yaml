@@ -558,7 +558,7 @@
         HeaderContDash As groupContainer.verticalAutoLayoutContainer:
             BorderColor: =RGBA(255, 255, 255, 1)
             BorderStyle: =BorderStyle.None
-            Height: =Parent.Height/7
+            Height: =Parent.Height/6
             LayoutAlignItems: =LayoutAlignItems.Center
             LayoutDirection: =LayoutDirection.Vertical
             LayoutJustifyContent: =LayoutJustifyContent.Center
@@ -675,7 +675,7 @@
             ZIndex: =9
 
         SearchBarCont As groupContainer.manualLayoutContainer:
-            Height: =58
+            Height: =72
             RadiusBottomLeft: =4
             RadiusBottomRight: =4
             RadiusTopLeft: =4
@@ -695,7 +695,7 @@
                 DisabledFill: =RGBA(244, 244, 244, 1)
                 FocusedBorderThickness: =4
                 Font: =Font.'Segoe UI'
-                Height: =48
+                Height: =65
                 HintText: ="Search"
                 HoverBorderColor: =ColorFade(RGBA(0, 134, 208, 1), -30%)
                 HoverColor: =RGBA(51, 51, 51, 1)
@@ -744,7 +744,7 @@
                 DisabledColor: =RGBA(220, 220, 220, 1)
                 DisabledFill: =RGBA(0, 0, 0, 0)
                 FocusedBorderThickness: =4
-                Height: =50
+                Height: =65
                 HoverBorderColor: =RGBA(0, 0, 0, 0)
                 HoverColor: =ColorFade(RGBA(135, 100, 184, 1), -30%)
                 HoverFill: =RGBA(0, 0, 0, 0)
