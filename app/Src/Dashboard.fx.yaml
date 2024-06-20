@@ -710,7 +710,7 @@
                 RadiusTopRight: =15
                 Size: =20
                 Width: =Parent.Width - RefreshIcon.Width - 20 //Left Padding
-                X: =30
+                X: =22
                 Y: =4
                 ZIndex: =1
 
@@ -734,7 +734,7 @@
                 Tooltip: ="Search"
                 Width: =60
                 X: =32
-                Y: =4
+                Y: =18
                 ZIndex: =2
 
             RefreshIcon As icon.Reload:
