@@ -73,7 +73,7 @@
       "MetaDataIDKey": "",
       "Name": "BodyContDash",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 3,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -104,7 +104,7 @@
         {
           "Category": "Design",
           "PropertyName": "Height",
-          "RuleProviderType": "User"
+          "RuleProviderType": "Unknown"
         },
         {
           "Category": "Design",
@@ -6539,7 +6539,7 @@
       "MetaDataIDKey": "",
       "Name": "NoImage",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 4,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6800,7 +6800,7 @@
       "MetaDataIDKey": "",
       "Name": "NoImage_Label1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 5,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -7104,7 +7104,7 @@
       "MetaDataIDKey": "",
       "Name": "NoImage_Label2",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 1,
+      "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -8305,7 +8305,7 @@
       "MetaDataIDKey": "",
       "Name": "SearchBarCont",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 2,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {

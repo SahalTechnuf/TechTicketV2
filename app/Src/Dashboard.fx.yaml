@@ -67,7 +67,7 @@
 
         BodyContDash As groupContainer.verticalAutoLayoutContainer:
             BorderStyle: =BorderStyle.None
-            Height: =Parent.Height - (HeaderContDash.Height + SearchBarCont.Height + FooterContDash.Height)
+            Height: =781
             LayoutDirection: =LayoutDirection.Vertical
             LayoutMode: =LayoutMode.Auto
             RadiusBottomLeft: =4
