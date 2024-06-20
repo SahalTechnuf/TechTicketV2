@@ -11,7 +11,7 @@
   },
   "Properties": {
     "AppCreationSource": "AppFromData",
-    "AppDescription": "V5.0 6/14 1344",
+    "AppDescription": "The Technuf Service Request App streamlines issue reporting by allowing Technuf employees to easily create tickets for maintenance, equipment malfunctions, and more. Administrators can monitor, update, and resolve these tickets, ensuring a more efficient and comfortable workplace.",
     "AppPreviewFlagsMap": {
       "aibuilderserviceenrollment": false,
       "allowmultiplescreensincanvaspages": false,
