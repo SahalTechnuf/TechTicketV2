@@ -19,7 +19,7 @@
 
         FooterContDash As groupContainer.verticalAutoLayoutContainer:
             BorderStyle: =BorderStyle.None
-            Height: =115
+            Height: =147
             LayoutAlignItems: =LayoutAlignItems.Center
             LayoutDirection: =LayoutDirection.Vertical
             LayoutJustifyContent: =LayoutJustifyContent.Center
@@ -67,7 +67,7 @@
 
         BodyContDash As groupContainer.verticalAutoLayoutContainer:
             BorderStyle: =BorderStyle.None
-            Height: =781
+            Height: =771
             LayoutDirection: =LayoutDirection.Vertical
             LayoutMode: =LayoutMode.Auto
             RadiusBottomLeft: =4
