@@ -610,7 +610,7 @@
                 LayoutMinWidth: =560
                 PaddingBottom: =20
                 Size: =22
-                Text: ="  Technuf Help Desk"
+                Text: ="Need help? Report your issues here"
                 Width: =Parent.Width - 40
                 X: =180
                 Y: =72
