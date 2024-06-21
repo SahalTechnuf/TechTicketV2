@@ -131,7 +131,7 @@
                     DelayItemLoading: =true
                     Fill: =RGBA(255, 255, 255, 1)
                     FocusedBorderThickness: =
-                    Height: =Parent.Height
+                    Height: =BodyContDash.Height
                     Items: |-
                         =Sort(
                             Filter(
