@@ -1145,7 +1145,9 @@
                     Height: =120
                     Items: |-
                         =
-                        Choices('Technuf Service Request'.'Progress/Status')
+                        ["Queued", "In Progress", "Resolved/Closed"]
+                        
+                        //Choices('Technuf Service Request'.'Progress/Status')
                     LayoutMinHeight: =120
                     LayoutMinWidth: =160
                     LoadingSpinner: =LoadingSpinner.Data

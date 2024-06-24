@@ -4,7 +4,7 @@ App As appinfo:
         =640
     MinScreenWidth: |
         =640
-    OnStart: |-
+    OnStart: |
         =Set(lol, 100);
         
         ClearCollect(
@@ -14,7 +14,7 @@ App As appinfo:
                 ConcatenatedText,
                 Title
             )
-        )
+        );
     Theme: =PowerAppsTheme
 
     Host As hostControl.DefaultHostControlVariant:
