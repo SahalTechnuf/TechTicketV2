@@ -1144,8 +1144,10 @@
                     FillPortions: =0
                     Height: =120
                     Items: |-
-                        =
-                        ["Queued", "In Progress", "Resolved/Closed"]
+                        =Filter(
+                                Choices('Technuf Service Request'.'Progress/Status'),
+                                Value in ["Queued", "In Progress", "Resolved"]
+                            )
                         
                         //Choices('Technuf Service Request'.'Progress/Status')
                     LayoutMinHeight: =120
@@ -1178,7 +1180,12 @@
                         PaddingLeft: =
                         PaddingRight: =10
                         Size: =17
-                        Text: =ThisItem.Value 
+                        Text: |-
+                            =If(
+                                ThisItem.Value = "Resolved" || ThisItem.Value = "Closed",
+                                "Resolved/Closed",
+                                ThisItem.Value
+                            )
                         Width: =131.6
                         X: =If(ThisItem.Value = "Resolved", 12,0)
                         Y: =45
