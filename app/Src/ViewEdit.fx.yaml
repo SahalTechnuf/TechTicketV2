@@ -1134,7 +1134,7 @@
                 ZIndex: =4
 
                 BreadCrumbGallery As gallery.galleryHorizontal:
-                    AlignInContainer: =AlignInContainer.Center
+                    AlignInContainer: =AlignInContainer.End
                     BorderColor: =RGBA(166, 166, 166, 1)
                     BorderStyle: =BorderStyle.None
                     DelayItemLoading: =true
@@ -1154,7 +1154,6 @@
                     LayoutMinWidth: =160
                     LoadingSpinner: =LoadingSpinner.Data
                     ShowScrollbar: =false
-                    TemplatePadding: =4
                     TemplateSize: =Parent.Width / 2.8
                     Visible: |
                         =true
@@ -1175,7 +1174,7 @@
                         DisabledColor: =RGBA(166, 166, 166, 1)
                         FocusedBorderThickness: =4
                         Font: =Font.'Segoe UI'
-                        Height: =30
+                        Height: =50
                         OnSelect: =Select(Parent)
                         PaddingLeft: =
                         PaddingRight: =10
@@ -1183,7 +1182,7 @@
                         Text: |-
                             =If(
                                 ThisItem.Value = "Resolved" || ThisItem.Value = "Closed",
-                                "Resolved/Closed",
+                                "Resolved/ Closed",
                                 ThisItem.Value
                             )
                         Width: =131.6
