@@ -150,10 +150,21 @@
                     LayoutMinHeight: =287
                     LayoutMinWidth: =320
                     LoadingSpinner: =LoadingSpinner.Data
-                    OnSelect: |
-                        =If(
-                            DashTickets.Selected.'Progress/Status'.Value = "Resolved",
-                            Notify("This ticket is resolved and cannot be edited.", NotificationType.Error),
+                    OnSelect: |-
+                        =//If(DashTickets.Selected.'Progress/Status'.Value="Resolved",Notify("This ticket is resolved and cannot be edited.",NotificationType.Error),Set(selectedItem,DashTickets.Selected);Navigate(ViewEdit,Transition.None,{selectedItem:selectedItem}))
+                        If(
+                            Or(
+                                DashTickets.Selected.'Progress/Status'.Value = "Resolved",
+                                DashTickets.Selected.'Progress/Status'.Value = "Closed"
+                            ),
+                            Notify(
+                                If(
+                                    DashTickets.Selected.'Progress/Status'.Value = "Resolved",
+                                    "This ticket is resolved and cannot be edited.",
+                                    "This ticket is closed and cannot be edited."
+                                ),
+                                NotificationType.Error
+                            ),
                             Set(selectedItem, DashTickets.Selected);
                             Navigate(ViewEdit, Transition.None, {selectedItem: selectedItem})
                         )
