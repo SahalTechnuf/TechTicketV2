@@ -1156,15 +1156,14 @@
                     LoadingSpinner: =LoadingSpinner.Data
                     ShowScrollbar: =false
                     TemplatePadding: =7
-                    TemplateSize: =Parent.Width / 2.5
+                    TemplateSize: =Parent.Width / 2.6
                     Visible: |
                         =true
                         
                          
                     Width: =Parent.Width 
                     X: =
-                    Y: |
-                        =0
+                    Y: =
                     ZIndex: =1
 
                     Label4 As label:
@@ -1191,7 +1190,7 @@
                                 ThisItem.Value
                             )
                         Width: =131.6
-                        X: =If(ThisItem.Value = "Resolved", 12,0)
+                        X: =If(ThisItem.Value = "Resolved", 0,0)
                         Y: =45
                         ZIndex: =1
 
