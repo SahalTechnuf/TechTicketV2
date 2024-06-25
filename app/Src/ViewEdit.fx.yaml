@@ -1119,6 +1119,7 @@
                         ZIndex: =2
 
             ProgressBar As groupContainer.horizontalAutoLayoutContainer:
+                AlignInContainer: =AlignInContainer.Center
                 FillPortions: =0
                 Height: |
                     =BreadCrumbGallery.Height
@@ -1154,12 +1155,12 @@
                     LayoutMinWidth: =160
                     LoadingSpinner: =LoadingSpinner.Data
                     ShowScrollbar: =false
-                    TemplateSize: =Parent.Width / 3
+                    TemplateSize: =Parent.Width / 2.5
                     Visible: |
                         =true
                         
                          
-                    Width: =Parent.Width
+                    Width: =Parent.Width 
                     Y: |
                         =0
                     ZIndex: =1
