@@ -1155,6 +1155,7 @@
                     LayoutMinWidth: =160
                     LoadingSpinner: =LoadingSpinner.Data
                     ShowScrollbar: =false
+                    TemplatePadding: =7
                     TemplateSize: =Parent.Width / 2.5
                     Visible: |
                         =true
