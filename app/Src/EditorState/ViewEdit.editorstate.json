@@ -8124,7 +8124,7 @@
       "MetaDataIDKey": "",
       "Name": "ErrorMessageImage_Edit",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 5,
+      "ParentIndex": 8,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -9248,7 +9248,7 @@
       "MetaDataIDKey": "",
       "Name": "format_Edit",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 8,
+      "ParentIndex": 7,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -10264,7 +10264,7 @@
       "MetaDataIDKey": "",
       "Name": "Icon_upload_Edit",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 6,
+      "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -17825,7 +17825,7 @@
       "MetaDataIDKey": "",
       "Name": "upload_Edit",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 7,
+      "ParentIndex": 6,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {

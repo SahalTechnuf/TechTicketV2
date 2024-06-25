@@ -311,7 +311,7 @@
                         Visible: |-
                             =//true
                             IsBlank(DataCardValueTitle_Add.Selected.Title)
-                        Width: =215
+                        Width: =220
                         X: =45
                         Y: =DataCardValueTitle_Add.Height -1
                         ZIndex: =6
