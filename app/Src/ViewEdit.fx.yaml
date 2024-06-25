@@ -1168,7 +1168,9 @@
                     ZIndex: =1
 
                     Label4 As label:
-                        Align: =If(ThisItem.Value = "New" Or ThisItem.Value = "Resolved",Align.Left,Align.Center)
+                        Align: |-
+                            =//If(ThisItem.Value = "New" Or ThisItem.Value = "Resolved",Align.Left,Align.Center)
+                            If( ThisItem.Value = "Resolved" Or ThisItem.Value = "Closed",Align.Center,Align.Center)
                         BorderColor: =RGBA(0, 0, 0, 0)
                         BorderStyle: =BorderStyle.None
                         BorderThickness: =2
